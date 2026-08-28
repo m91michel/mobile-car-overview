@@ -36,6 +36,41 @@ function SortControl({ className, label, sortKey, setSortKey, desc, setDesc }) {
   );
 }
 
+function CarOption({ car, active, onToggle, favourite, onFavourite }) {
+  return (
+    <label
+      className={`car-option ${active ? 'on' : ''} ${isSold(car) ? 'sold' : ''}`}
+      title={`${carRef(car)} ${carLabel(car)}`.trim()}
+    >
+      <input type="checkbox" checked={active} onChange={onToggle} />
+      {car.images?.[0] && (
+        <img src={photo(car.images[0], 'mo-240')} alt="" referrerPolicy="no-referrer" />
+      )}
+      <span className="car-option-text">
+        <span className="car-option-title">
+          {carRef(car) && <span className="ref">{carRef(car)}</span>}
+          {carLabel(car)}
+        </span>
+        <span className="muted">
+          {car.price?.localized ?? '—'} · {carSubline(car)}
+          {isSold(car) && <span className="gone">verkauft</span>}
+        </span>
+      </span>
+      <button
+        className={`fav ${favourite ? 'on' : ''}`}
+        // Inside a <label>, a click would otherwise reach the checkbox too.
+        onClick={(event) => {
+          event.preventDefault();
+          onFavourite();
+        }}
+        title={favourite ? 'Favorit entfernen' : 'Als Favorit merken'}
+      >
+        {favourite ? '★' : '☆'}
+      </button>
+    </label>
+  );
+}
+
 /** A native <dialog> brings Escape, the backdrop and focus trapping along. */
 function useDrawer(open) {
   const ref = useRef(null);
@@ -64,9 +99,13 @@ export default function App() {
   const [listDesc, setListDesc] = useLocalStorage(key('sort-list-desc'), false);
   const [columnSort, setColumnSort] = useLocalStorage(key('sort-columns'), 'price');
   const [columnDesc, setColumnDesc] = useLocalStorage(key('sort-columns-desc'), false);
+  // A shortlist you keep while working through the field, independent of which
+  // cars happen to be in the table right now.
+  const [favourites, setFavourites] = useLocalStorage(key('favourites'), []);
   const [dragKey, setDragKey] = useState(null);
-  const [openDrawer, setOpenDrawer] = useState(null); // 'cars' | 'rows' | null
+  const [openDrawer, setOpenDrawer] = useState(null); // 'cars' | 'favourites' | 'rows' | null
   const carDrawer = useDrawer(openDrawer === 'cars');
+  const favDrawer = useDrawer(openDrawer === 'favourites');
   const rowDrawer = useDrawer(openDrawer === 'rows');
 
   const load = useCallback(() => {
@@ -133,6 +172,16 @@ export default function App() {
       return base.includes(id) ? base.filter((x) => x !== id) : [...base, id];
     });
 
+  const isFavourite = (id) => favourites.includes(id);
+
+  const toggleFavourite = (id) =>
+    setFavourites((ids) => (ids.includes(id) ? ids.filter((x) => x !== id) : [...ids, id]));
+
+  const favouriteCars = useMemo(
+    () => listCars.filter((car) => favourites.includes(car.id)),
+    [listCars, favourites],
+  );
+
   const toggleRow = (rowKey) =>
     setHiddenKeys((keys) =>
       keys.includes(rowKey) ? keys.filter((k) => k !== rowKey) : [...keys, rowKey],
@@ -180,6 +229,9 @@ export default function App() {
         <button className="drawer-open" onClick={() => setOpenDrawer('cars')}>
           Fahrzeuge <strong>{shown.length}</strong>
           <span className="muted">/ {cars.length}</span>
+        </button>
+        <button className="drawer-open" onClick={() => setOpenDrawer('favourites')}>
+          <span className="star">★</span> <strong>{favourites.length}</strong>
         </button>
         <button className="drawer-open" onClick={() => setOpenDrawer('rows')}>
           Zeilen <strong>{visibleRows.length}</strong>
@@ -244,33 +296,62 @@ export default function App() {
           setDesc={setListDesc}
         />
         <ul className="drawer-list">
-          {listCars.map((car) => {
-            const active = selectedIds.includes(car.id);
-            return (
-              <li key={car.id}>
-                <label
-                  className={`car-option ${active ? 'on' : ''} ${isSold(car) ? 'sold' : ''}`}
-                  title={`${carRef(car)} ${carLabel(car)}`.trim()}
-                >
-                  <input type="checkbox" checked={active} onChange={() => toggleCar(car.id)} />
-                  {car.images?.[0] && (
-                    <img src={photo(car.images[0], 'mo-240')} alt="" referrerPolicy="no-referrer" />
-                  )}
-                  <span className="car-option-text">
-                    <span className="car-option-title">
-                      {carRef(car) && <span className="ref">{carRef(car)}</span>}
-                      {carLabel(car)}
-                    </span>
-                    <span className="muted">
-                      {car.price?.localized ?? '—'} · {carSubline(car)}
-                      {isSold(car) && <span className="gone">verkauft</span>}
-                    </span>
-                  </span>
-                </label>
-              </li>
-            );
-          })}
+          {listCars.map((car) => (
+            <li key={car.id}>
+              <CarOption
+                car={car}
+                active={selectedIds.includes(car.id)}
+                onToggle={() => toggleCar(car.id)}
+                favourite={isFavourite(car.id)}
+                onFavourite={() => toggleFavourite(car.id)}
+              />
+            </li>
+          ))}
         </ul>
+      </dialog>
+
+      <dialog
+        className="drawer"
+        ref={favDrawer}
+        onClose={() => setOpenDrawer(null)}
+        onClick={(e) => {
+          if (e.target === favDrawer.current) setOpenDrawer(null); // backdrop
+        }}
+      >
+        <header className="drawer-head">
+          <strong>Favoriten</strong>
+          <span className="muted">{favouriteCars.length}</span>
+          <div className="spacer" />
+          <button
+            onClick={() => setSelected(favouriteCars.map((c) => c.id))}
+            disabled={favouriteCars.length === 0}
+            title="Nur die Favoriten vergleichen"
+          >
+            Vergleichen
+          </button>
+          <button onClick={() => setOpenDrawer(null)} title="Schließen">
+            ✕
+          </button>
+        </header>
+        {favouriteCars.length === 0 ? (
+          <p className="drawer-empty muted">
+            Noch keine Favoriten. Der Stern oben links auf dem Fahrzeugbild merkt einen vor.
+          </p>
+        ) : (
+          <ul className="drawer-list">
+            {favouriteCars.map((car) => (
+              <li key={car.id}>
+                <CarOption
+                  car={car}
+                  active={selectedIds.includes(car.id)}
+                  onToggle={() => toggleCar(car.id)}
+                  favourite
+                  onFavourite={() => toggleFavourite(car.id)}
+                />
+              </li>
+            ))}
+          </ul>
+        )}
       </dialog>
 
       {shown.length === 0 ? (
@@ -295,6 +376,13 @@ export default function App() {
                           referrerPolicy="no-referrer"
                         />
                       )}
+                      <button
+                        className={`col-fav ${isFavourite(car.id) ? 'on' : ''}`}
+                        onClick={() => toggleFavourite(car.id)}
+                        title={isFavourite(car.id) ? 'Favorit entfernen' : 'Als Favorit merken'}
+                      >
+                        {isFavourite(car.id) ? '★' : '☆'}
+                      </button>
                       <button
                         className="col-remove"
                         onClick={() => toggleCar(car.id)}
