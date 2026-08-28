@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T13:15:53.703Z",
+  "updatedAt": "2026-08-28T13:41:58.376Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -241,7 +241,7 @@
         "distanceFromHomeKm": 263,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 06/2024, after the changeover"
+        "faceliftBasis": "Erstzulassung 06/2024, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -749,7 +749,7 @@
         "distanceFromHomeKm": 148,
         "generation": "G81",
         "facelift": "lci",
-        "faceliftBasis": "first registered 06/2025, after the changeover"
+        "faceliftBasis": "Erstzulassung 06/2025, nach der Umstellung"
       },
       "ref": 2,
       "assessment": {
@@ -1116,7 +1116,7 @@
         "distanceFromHomeKm": 199,
         "generation": null,
         "facelift": "lci",
-        "faceliftBasis": "first registered 03/2023, after the changeover"
+        "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
       },
       "ref": 3,
       "assessment": {
@@ -1490,7 +1490,7 @@
         "distanceFromHomeKm": 167,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 01/2025, after the changeover"
+        "faceliftBasis": "Erstzulassung 01/2025, nach der Umstellung"
       },
       "ref": 4,
       "assessment": {
@@ -1846,7 +1846,7 @@
         "distanceFromHomeKm": 208,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 03/2024, after the changeover"
+        "faceliftBasis": "Erstzulassung 03/2024, nach der Umstellung"
       },
       "ref": 5,
       "assessment": {
@@ -2204,7 +2204,7 @@
         "distanceFromHomeKm": 208,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 06/2024, after the changeover"
+        "faceliftBasis": "Erstzulassung 06/2024, nach der Umstellung"
       },
       "ref": 6,
       "assessment": {
@@ -2574,7 +2574,7 @@
         "distanceFromHomeKm": 240,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 03/2024, after the changeover"
+        "faceliftBasis": "Erstzulassung 03/2024, nach der Umstellung"
       },
       "ref": 7,
       "assessment": {
@@ -2953,7 +2953,7 @@
         "distanceFromHomeKm": 263,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 03/2023, after the changeover"
+        "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
       },
       "ref": 8,
       "assessment": {
@@ -3281,7 +3281,7 @@
         "distanceFromHomeKm": 426,
         "generation": null,
         "facelift": "lci",
-        "faceliftBasis": "first registered 03/2025, after the changeover"
+        "faceliftBasis": "Erstzulassung 03/2025, nach der Umstellung"
       },
       "ref": 9,
       "assessment": {
@@ -3668,7 +3668,7 @@
         "distanceFromHomeKm": 263,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 07/2024, after the changeover"
+        "faceliftBasis": "Erstzulassung 07/2024, nach der Umstellung"
       },
       "ref": 10,
       "assessment": {
@@ -4031,7 +4031,7 @@
         "distanceFromHomeKm": 203,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 03/2023, after the changeover"
+        "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
       },
       "ref": 11,
       "assessment": {
@@ -4368,7 +4368,7 @@
         "distanceFromHomeKm": 134,
         "generation": "G81",
         "facelift": "lci",
-        "faceliftBasis": "first registered 06/2023, after the changeover"
+        "faceliftBasis": "Erstzulassung 06/2023, nach der Umstellung"
       },
       "ref": 12,
       "assessment": {
@@ -4718,7 +4718,7 @@
         "distanceFromHomeKm": 289,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 12/2023, after the changeover"
+        "faceliftBasis": "Erstzulassung 12/2023, nach der Umstellung"
       },
       "ref": 13,
       "assessment": {
@@ -5129,7 +5129,7 @@
         "distanceFromHomeKm": 423,
         "generation": "G81",
         "facelift": "lci",
-        "faceliftBasis": "first registered 07/2023, after the changeover"
+        "faceliftBasis": "Erstzulassung 07/2023, nach der Umstellung"
       },
       "ref": 14,
       "assessment": {
@@ -5505,7 +5505,7 @@
         "distanceFromHomeKm": 240,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 02/2024, after the changeover"
+        "faceliftBasis": "Erstzulassung 02/2024, nach der Umstellung"
       },
       "ref": 15,
       "assessment": {
@@ -5861,7 +5861,7 @@
         "distanceFromHomeKm": 208,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 04/2024, after the changeover"
+        "faceliftBasis": "Erstzulassung 04/2024, nach der Umstellung"
       },
       "ref": 16,
       "assessment": {
@@ -6227,7 +6227,7 @@
         "distanceFromHomeKm": 216,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 07/2023, after the changeover"
+        "faceliftBasis": "Erstzulassung 07/2023, nach der Umstellung"
       },
       "ref": 17,
       "assessment": {
@@ -6565,7 +6565,7 @@
         "distanceFromHomeKm": 148,
         "generation": "G81",
         "facelift": "lci",
-        "faceliftBasis": "first registered 08/2023, after the changeover"
+        "faceliftBasis": "Erstzulassung 08/2023, nach der Umstellung"
       },
       "ref": 18,
       "assessment": {
@@ -6933,7 +6933,7 @@
         "distanceFromHomeKm": 168,
         "generation": "G21",
         "facelift": "pre-lci",
-        "faceliftBasis": "first registered 01/2022, before the changeover"
+        "faceliftBasis": "Erstzulassung 01/2022, vor der Umstellung"
       },
       "ref": 19,
       "assessment": {
@@ -7288,7 +7288,7 @@
         "distanceFromHomeKm": 56,
         "generation": "G81",
         "facelift": "unknown",
-        "faceliftBasis": "registered during the changeover; the data cannot decide"
+        "faceliftBasis": "Zulassung im Umstellungsfenster – aus den Daten nicht entscheidbar"
       },
       "ref": 20,
       "assessment": {
@@ -7612,7 +7612,7 @@
         "distanceFromHomeKm": 20,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 06/2024, after the changeover"
+        "faceliftBasis": "Erstzulassung 06/2024, nach der Umstellung"
       },
       "ref": 22,
       "assessment": {
@@ -7953,7 +7953,7 @@
         "distanceFromHomeKm": 21,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 02/2023, after the changeover"
+        "faceliftBasis": "Erstzulassung 02/2023, nach der Umstellung"
       },
       "ref": 23,
       "assessment": {
@@ -8323,7 +8323,7 @@
         "distanceFromHomeKm": 2,
         "generation": "F31",
         "facelift": "other-generation",
-        "faceliftBasis": "F31 is the previous 3-series Touring, not a G20/G21"
+        "faceliftBasis": "F31 ist der Vorgänger-3er-Touring, kein G20/G21"
       },
       "ref": 24,
       "assessment": {
@@ -8552,7 +8552,7 @@
         "distanceFromHomeKm": 275,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 02/2023, after the changeover"
+        "faceliftBasis": "Erstzulassung 02/2023, nach der Umstellung"
       },
       "features": [
         "ABS",
@@ -8969,7 +8969,7 @@
         "distanceFromHomeKm": 327,
         "generation": "G81",
         "facelift": "unknown",
-        "faceliftBasis": "registered during the changeover; the data cannot decide"
+        "faceliftBasis": "Zulassung im Umstellungsfenster – aus den Daten nicht entscheidbar"
       },
       "features": [
         "ABS",
@@ -9346,7 +9346,7 @@
         "distanceFromHomeKm": 337,
         "generation": "G81",
         "facelift": "pre-lci",
-        "faceliftBasis": "first registered 03/2021, before the changeover"
+        "faceliftBasis": "Erstzulassung 03/2021, vor der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -9755,7 +9755,7 @@
         "distanceFromHomeKm": 315,
         "generation": "G81",
         "facelift": "lci",
-        "faceliftBasis": "first registered 08/2023, after the changeover"
+        "faceliftBasis": "Erstzulassung 08/2023, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -10130,7 +10130,7 @@
         "distanceFromHomeKm": 200,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 03/2023, after the changeover"
+        "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -10496,7 +10496,7 @@
         "distanceFromHomeKm": 148,
         "generation": "G81",
         "facelift": "lci",
-        "faceliftBasis": "first registered 10/2025, after the changeover"
+        "faceliftBasis": "Erstzulassung 10/2025, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -10840,7 +10840,7 @@
         "distanceFromHomeKm": 56,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "the listing says LCI/facelift"
+        "faceliftBasis": "Inserat nennt LCI/Facelift ausdrücklich"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -11238,7 +11238,7 @@
         "distanceFromHomeKm": 159,
         "generation": null,
         "facelift": "lci",
-        "faceliftBasis": "first registered 09/2024, after the changeover"
+        "faceliftBasis": "Erstzulassung 09/2024, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -11608,7 +11608,7 @@
         "distanceFromHomeKm": 167,
         "generation": null,
         "facelift": "lci",
-        "faceliftBasis": "the listing says LCI/facelift"
+        "faceliftBasis": "Inserat nennt LCI/Facelift ausdrücklich"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -11975,7 +11975,7 @@
         "distanceFromHomeKm": 56,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "the listing says LCI/facelift"
+        "faceliftBasis": "Inserat nennt LCI/Facelift ausdrücklich"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -12340,7 +12340,7 @@
         "distanceFromHomeKm": 167,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 05/2024, after the changeover"
+        "faceliftBasis": "Erstzulassung 05/2024, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -12704,7 +12704,7 @@
         "distanceFromHomeKm": 412,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "first registered 09/2025, after the changeover"
+        "faceliftBasis": "Erstzulassung 09/2025, nach der Umstellung"
       },
       "features": [
         "ABS",
@@ -13040,7 +13040,7 @@
         "distanceFromHomeKm": 167,
         "generation": null,
         "facelift": "lci",
-        "faceliftBasis": "the listing says LCI/facelift"
+        "faceliftBasis": "Inserat nennt LCI/Facelift ausdrücklich"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -13406,7 +13406,7 @@
         "distanceFromHomeKm": 487,
         "generation": "G21",
         "facelift": "lci",
-        "faceliftBasis": "the listing says LCI/facelift"
+        "faceliftBasis": "Inserat nennt LCI/Facelift ausdrücklich"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -13791,7 +13791,7 @@
         "distanceFromHomeKm": 125,
         "generation": "G21",
         "facelift": "unknown",
-        "faceliftBasis": "registered during the changeover; the data cannot decide"
+        "faceliftBasis": "Zulassung im Umstellungsfenster – aus den Daten nicht entscheidbar"
       },
       "features": [
         "Abgedunkelte Scheiben",
