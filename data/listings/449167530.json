@@ -1,0 +1,385 @@
+{
+  "id": "449167530",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-330e-touring-hybrid-m-acc-cockpit-kamera-spur-19-rennerod/449167530.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=449167530&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T18:17:00.437Z",
+  "title": "BMW 330e Touring Hybrid M/ACC/Cockpit/KAMERA/SPUR/19",
+  "shortTitle": "BMW 330",
+  "subTitle": "e Touring Hybrid M/ACC/Cockpit/KAMERA/SPUR/19",
+  "make": "BMW",
+  "model": "330",
+  "category": "EstateCar",
+  "sku": "057",
+  "isNew": true,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYZ"
+  },
+  "price": {
+    "gross": 27950,
+    "net": null,
+    "currency": "EUR",
+    "localized": "27.950 €",
+    "vatRate": null,
+    "vatNote": null,
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "VERY_GOOD_PRICE",
+    "label": "Sehr guter Preis",
+    "offset": 66,
+    "thresholds": [
+      "23.300 €",
+      "30.300 €",
+      "32.600 €",
+      "36.300 €",
+      "39.000 €",
+      "43.300 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "M Sport",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "057",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "EU-Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "31.407 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "190 kW (258 PS)",
+      "group": "vehicle"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Hybrid (Benzin/Elektro)",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "-- l/100km",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "05/2021",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Hinten, Kamera, Vorne",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "MINERALGRAU",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Grau Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Alcantara, Schwarz",
+      "group": "vehicle"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.500 kg",
+      "group": "vehicle"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg",
+      "group": "vehicle"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.905 kg",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "40 l",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 31407,
+    "powerKw": 190,
+    "powerHp": 258,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2021-05",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": null,
+    "weightKg": 1905,
+    "fuelTankLitres": 40,
+    "co2GramsPerKm": null,
+    "consumptionL100km": 100,
+    "distanceFromHomeKm": 243,
+    "generation": "G21",
+    "facelift": "pre-lci",
+    "faceliftBasis": "Erstzulassung 05/2021, vor der Umstellung"
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Android Auto",
+    "Apple CarPlay",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Blendfreies Fernlicht",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Lichtsensor",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Navigationssystem",
+    "Nebelscheinwerfer",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Pannenkit",
+    "Panorama-Dach",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Schiebedach",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sommerreifen",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "USB",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/5e/5ede9ca9-32df-467b-821e-2313d2f19c45",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2a/2a1e0c28-0a40-4e17-9d05-e0b6cc517a04",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d0a4435-cac8-4ca7-8316-862c44aa0de8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7f/7fce20e1-e5d6-4981-b435-bf63bd849fd5",
+    "https://img.classistatic.de/api/v1/mo-prod/images/cd/cd81f252-eee1-419f-9521-f24968f3ca6e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/29/2921ce02-3a51-4059-b870-d93527bd3da1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a884789-1726-4bcc-a86f-356bb22e4095",
+    "https://img.classistatic.de/api/v1/mo-prod/images/85/8595bf79-19ae-445b-a400-01631390447a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/40/40503766-d537-40eb-bf3d-254ad2e8c18c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/30/308e9b7b-1736-4431-b981-ec0669544fb2",
+    "https://img.classistatic.de/api/v1/mo-prod/images/93/932285a9-ba92-46e1-9ff3-afb34a587839",
+    "https://img.classistatic.de/api/v1/mo-prod/images/61/61f808ed-315d-4921-99b1-6812b863f28f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/39/394da515-08a1-4c9d-9e56-9955c22e894a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d5cf78e-32c2-439c-9a28-699e195be5c3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0a15952-9378-42b0-b760-d2b251ac53bf",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae582909-0133-4034-8cb0-7374686bc5e2",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d3/d36e3bed-84e5-4afb-9eaa-4bb06496a7bc",
+    "https://img.classistatic.de/api/v1/mo-prod/images/27/27845991-08e0-4c6d-95dd-4186f908c2e8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/21/218315b5-95f2-4b70-8ccc-27850e011001",
+    "https://img.classistatic.de/api/v1/mo-prod/images/31/315aea1f-4d0f-45ff-8f0a-d23feed0b640",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7c/7c814e6d-ed89-4120-8a7a-0939d9ba24d2",
+    "https://img.classistatic.de/api/v1/mo-prod/images/34/34eed8c7-508b-4592-8d77-736c6a8c2ab8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/dc/dc5a0072-bcff-4a7d-8c9b-3bff724b56ba",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ef/efa5b8a0-9342-4788-873b-efebe5adf8fc",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0a/0a41d8f1-e0df-4c54-af3c-8b6f07beb6c3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b3/b33c3a2c-f82d-4f4e-96d0-eb715feb50b6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/41/41ab81e3-ddc8-4a9f-a72f-1fa1bc78b1a1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c9/c92a366b-b220-4f39-99ed-34504bb71333",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bc/bc4c39a0-5d7e-47d2-8dd7-e767ca31574f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d1/d17b2fd4-2bbe-40e5-86d5-27a2203b10c5",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3c/3cf36829-b5b1-4cce-8769-0705618c6016",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb5e3955-f752-4336-b522-79340c507722",
+    "https://img.classistatic.de/api/v1/mo-prod/images/47/47617a11-d9e2-4b24-938e-b3320ac86693",
+    "https://img.classistatic.de/api/v1/mo-prod/images/20/204469d1-821a-4e46-87f1-40466f663fc3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/26/26745813-1bef-490b-8df3-5c486e5e75b7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/43/4385fe87-3413-48cc-974e-7c71ef927376",
+    "https://img.classistatic.de/api/v1/mo-prod/images/59/594b2be9-fe3f-493b-afeb-b17f5e753288",
+    "https://img.classistatic.de/api/v1/mo-prod/images/41/41501230-3a1e-43a3-ac3d-0eddd50f414b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bc/bcc3ef02-77f8-4fb4-b5ae-79f9d3afd537"
+  ],
+  "dealer": {
+    "name": "Autohaus Kiefer Vermittlungs-GmbH",
+    "type": "Händler",
+    "street": "Hauptstraße 2 a",
+    "city": "DE-56477 Rennerod",
+    "country": "DE",
+    "phone": "+49 (0)2664 9974771",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=32326550",
+    "location": {
+      "lat": 50.6013043,
+      "lon": 8.0641914
+    },
+    "openingHours": [
+      {
+        "day": "Mo - Fr",
+        "time": "09:00 Uhr - 17:00 Uhr"
+      },
+      {
+        "day": "Sa",
+        "time": "09:00 Uhr - 14:00 Uhr"
+      }
+    ],
+    "rating": {
+      "score": 4.6,
+      "count": 117,
+      "recommendationRate": 92
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=449167530",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 5590,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 22360,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 296.32,
+        "finalInstallment": 9223.5,
+        "totalInterest": 4346.44,
+        "totalAmount": 26706.44,
+        "localized": {
+          "downPayment": "5.590,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "22.360,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "297 €",
+          "finalInstallment": "9.223,50 €",
+          "totalInterest": "4.346,44 €",
+          "totalAmount": "26.706,44 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 41,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "effectivePrice": 29550
+  }
+}
