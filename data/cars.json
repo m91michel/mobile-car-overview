@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T16:04:42.880Z",
+  "updatedAt": "2026-08-28T16:24:36.618Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -6941,14 +6941,14 @@
         "note": "Einziges Portimao Blau mit M Sport und ACC — älteste Basis, Vor-Facelift, Kamera fehlt.",
         "retrofit": [
           {
-            "key": "camera",
-            "label": "Rückfahrkamera, Nachrüstung",
-            "cost": 1200
-          },
-          {
             "key": "ahk",
             "label": "AHK abnehmbar, Nachrüstung Fürth",
             "cost": 1600
+          },
+          {
+            "key": "camera",
+            "label": "Rückfahrkamera, Nachrüstung",
+            "cost": 1200
           }
         ],
         "retrofitCost": 2800,
@@ -10641,7 +10641,14 @@
           }
         }
       ],
-      "ref": 30
+      "ref": 30,
+      "assessment": {
+        "verdict": null,
+        "note": null,
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 33980
+      }
     },
     {
       "id": "461340137",
@@ -10997,7 +11004,14 @@
           "showInGallery": false
         }
       ],
-      "ref": 31
+      "ref": 31,
+      "assessment": {
+        "verdict": null,
+        "note": null,
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 33400
+      }
     },
     {
       "id": "460259599",
@@ -11774,7 +11788,14 @@
           }
         }
       ],
-      "ref": 33
+      "ref": 33,
+      "assessment": {
+        "verdict": null,
+        "note": null,
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 34180
+      }
     },
     {
       "id": "461339389",
@@ -12496,7 +12517,14 @@
           }
         }
       ],
-      "ref": 35
+      "ref": 35,
+      "assessment": {
+        "verdict": null,
+        "note": null,
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 33890
+      }
     },
     {
       "id": "40939067025760",
@@ -12851,7 +12879,14 @@
           }
         }
       ],
-      "ref": 36
+      "ref": 36,
+      "assessment": {
+        "verdict": null,
+        "note": null,
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 34900
+      }
     },
     {
       "id": "459209462",
@@ -13207,7 +13242,14 @@
           }
         }
       ],
-      "ref": 37
+      "ref": 37,
+      "assessment": {
+        "verdict": null,
+        "note": null,
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 31990
+      }
     },
     {
       "id": "454329674",
@@ -13558,7 +13600,14 @@
           }
         }
       ],
-      "ref": 38
+      "ref": 38,
+      "assessment": {
+        "verdict": null,
+        "note": null,
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 32450
+      }
     },
     {
       "id": "40431129186720",
@@ -13945,13 +13994,20 @@
           }
         }
       ],
-      "ref": 39
+      "ref": 39,
+      "assessment": {
+        "verdict": null,
+        "note": null,
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 32900
+      }
     },
     {
       "id": "460520128",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-touring-advantage-waldshut-tiengen/460520128.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460520128&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T16:04:42.871Z",
+      "fetchedAt": "2026-08-28T16:24:36.614Z",
       "title": "BMW 320i Touring Advantage",
       "shortTitle": "BMW 320",
       "subTitle": "i Touring Advantage",
@@ -14298,7 +14354,25 @@
           }
         }
       ],
-      "ref": 40
+      "ref": 40,
+      "assessment": {
+        "verdict": null,
+        "note": null,
+        "retrofit": [
+          {
+            "key": "ahk",
+            "label": "AHK abnehmbar, Nachrüstung Fürth",
+            "cost": 1600
+          },
+          {
+            "key": "camera",
+            "label": "Rückfahrkamera, Nachrüstung",
+            "cost": 1200
+          }
+        ],
+        "retrofitCost": 2800,
+        "effectivePrice": 30390
+      }
     }
   ]
 }

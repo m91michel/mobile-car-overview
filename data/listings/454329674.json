@@ -347,5 +347,12 @@
       }
     }
   ],
-  "ref": 38
+  "ref": 38,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 32450
+  }
 }

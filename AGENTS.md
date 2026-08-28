@@ -271,6 +271,35 @@ Two dead ends, both checked against real data:
   as indicative only; it is trustworthy for spotting a different generation
   (F3x) and not much else.
 
+## Effective price
+
+`car.assessment.effectivePrice` is the asking price plus what the missing
+must-haves cost to retrofit, so two cars can be compared on what they actually
+cost rather than on the sticker.
+
+The retrofit list is **derived from the listing** (`deriveRetrofit` in
+`scripts/assessment.mjs`) and applied by both `pnpm scrape` and
+`pnpm renormalize`, so a newly scraped car has an effective price immediately:
+
+- no `Anhängerkupplung*` feature (fixed, detachable or swivelling) -> `ahk`
+- no `Kamera` in the `parkAssists` fact -> `camera`
+
+Two deliberate exclusions:
+
+- **ACC is never a retrofit cost.** The requirements note that retrofitting it
+  on a G21 is barely economical, so a missing ACC is a permanent gap, shown by
+  the viewer under "Nicht nachrüstbar" (`permanentGaps`), not a price to add.
+- **A car with `verdict: "raus"` is priced as-is.** Costing up a retrofit for a
+  car that is out anyway only adds noise.
+
+Prices live once in `retrofitPrices`, so changing `ahk` re-prices every car that
+needs one. An entry may still pin the list with an explicit `retrofit` array
+when a judgement should beat the derivation.
+
+`verdict` and `note` stay editorial and hand-written. A car without an entry
+therefore has an effective price but a null verdict, and still reads as
+un-judged in the viewer.
+
 ## Data quality
 
 ```bash
