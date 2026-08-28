@@ -1,0 +1,293 @@
+{
+  "id": "457556716",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318da-touring-widescreen-led-carplay-navi-tempo-baiersdorf/457556716.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=457556716&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T06:28:39.220Z",
+  "title": "BMW 318dA Touring -WIDESCREEN-LED-CARPLAY-NAVI-TEMPO",
+  "shortTitle": "BMW 318",
+  "subTitle": "dA Touring -WIDESCREEN-LED-CARPLAY-NAVI-TEMPO",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "isNew": false,
+  "kba": null,
+  "price": {
+    "gross": 23999,
+    "net": 20167.23,
+    "currency": "EUR",
+    "localized": "23.999 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "REASONABLE_PRICE",
+    "label": "Fairer Preis",
+    "offset": 26,
+    "thresholds": [
+      "16.700 €",
+      "21.700 €",
+      "23.300 €",
+      "25.900 €",
+      "27.800 €",
+      "30.900 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "BUSINESS-Paket"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "78.000 km"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.995 cm³"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "110 kW (150 PS)"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Diesel"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "-- l/100km"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "-- g/km"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "02/2023"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "01/2028"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Vorne, Hinten"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Schwarz 2"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Stoff, Schwarz"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4"
+    }
+  },
+  "features": [
+    "ABS",
+    "Abstandswarner",
+    "Android Auto",
+    "Apple CarPlay",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Blendfreies Fernlicht",
+    "Bluetooth",
+    "Bordcomputer",
+    "CD-Spieler",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Isofix Beifahrersitz",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Pannenkit",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sommerreifen",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Tempomat",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/ac/acd7f7b5-7ab2-451f-82de-ac4df7d727c0",
+    "https://img.classistatic.de/api/v1/mo-prod/images/64/6426eb41-305a-4aba-be38-e44cc5c041e7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f3/f3975bca-12b1-4225-bffc-42ebe213557b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ed/edd91830-45fd-4e6a-a1cb-8b671c3bb941",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9ca6672-621b-47ac-a18c-e56d1b6b3e86",
+    "https://img.classistatic.de/api/v1/mo-prod/images/99/99ef15da-33ce-4392-9c56-5500cecd2bca",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7a/7ac65e28-dc4e-43ba-9079-12e8ae2a15aa",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1fa296e-a48b-4d06-b4a3-d06aea47538c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/77/77429e1b-feb8-46d7-9b8f-3cf46bf8e377",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2c/2c6af908-13e0-4ea8-a9e6-d1a1c6614ed6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e6/e6a8eeda-3a48-4dd1-a5d4-5f781082a156",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca49603f-72f3-4d36-82c4-f6f8d42b1f50",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1e/1e7acbdb-8b78-4bbd-a117-bff7914bfebe",
+    "https://img.classistatic.de/api/v1/mo-prod/images/76/767d2216-a6fa-4c6b-9e4b-1f69ab055953"
+  ],
+  "dealer": {
+    "name": "1.Autohaus M.Loew",
+    "type": "Händler",
+    "street": "Industriestr. 33",
+    "city": "DE-91083 Baiersdorf",
+    "country": "DE",
+    "phone": "+49 (0)9133 767640",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=459118",
+    "location": {
+      "lat": 49.6650851,
+      "lon": 11.0430439
+    },
+    "openingHours": [
+      {
+        "day": "Mo - Fr",
+        "time": "09:00 Uhr - 17:00 Uhr"
+      },
+      {
+        "day": "Sa",
+        "time": "08:00 Uhr - 12:00 Uhr"
+      }
+    ],
+    "rating": {
+      "score": 4.8,
+      "count": 1473,
+      "recommendationRate": 98
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=457556716",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 4799,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 19200,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 254.45,
+        "finalInstallment": 7919.67,
+        "totalInterest": 3732.15,
+        "totalAmount": 22932.15,
+        "localized": {
+          "downPayment": "4.799,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "19.200,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "255 €",
+          "finalInstallment": "7.919,67 €",
+          "totalInterest": "3.732,15 €",
+          "totalAmount": "22.932,15 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ]
+}

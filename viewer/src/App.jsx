@@ -217,7 +217,9 @@ export default function App() {
                   >
                     <div className="row-head-inner">
                       <span className="grip" aria-hidden="true">⠿</span>
-                      <span className="label">{row.label}</span>
+                      <span className="label" title={row.label}>
+                        {row.label}
+                      </span>
                       <span className="row-actions">
                         <button onClick={() => pinRow(row.key)} title="Nach ganz oben">⤒</button>
                         <button onClick={() => moveRow(row.key, -1)} title="Nach oben">↑</button>

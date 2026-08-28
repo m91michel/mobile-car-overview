@@ -1,0 +1,313 @@
+{
+  "id": "452562130",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-320-320-i-sport-line-shadow-head-up-service-neu-f%C3%BCrth/452562130.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=452562130&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T06:29:00.910Z",
+  "title": "BMW 320 320 i Sport Line Shadow Head Up* Service Neu",
+  "shortTitle": "BMW 320",
+  "subTitle": "320 i Sport Line Shadow Head Up* Service Neu",
+  "make": "BMW",
+  "model": "320",
+  "category": "EstateCar",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "BLA"
+  },
+  "price": {
+    "gross": 18990,
+    "net": null,
+    "currency": "EUR",
+    "localized": "18.990 €",
+    "vatRate": null,
+    "vatNote": null,
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 35,
+    "thresholds": [
+      "14.200 €",
+      "18.500 €",
+      "19.900 €",
+      "22.100 €",
+      "23.800 €",
+      "26.400 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "3 Touring (F31N)(2015->)"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "320 i Sport Line Shadow"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "45.000 km"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "135 kW (184 PS)"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "10/2017"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "2"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "2-Zonen-Klimaautomatik"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Vorne, Hinten"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "MEDITERRANBLAU METALLIC"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Blau Metallic"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Teilleder, Schwarz"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.595 kg"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4"
+    }
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Blendfreies Fernlicht",
+    "Bluetooth",
+    "Bordcomputer",
+    "CD-Spieler",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Multifunktionslenkrad",
+    "Navigationssystem",
+    "Nebelscheinwerfer",
+    "Nichtraucher-Fahrzeug",
+    "Notrufsystem",
+    "Pannenkit",
+    "Radio DAB",
+    "Raucherpaket",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Skisack",
+    "Sommerreifen",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Winterpaket",
+    "Zentralverriegelung"
+  ],
+  "highlights": [
+    "Garantie",
+    "Finanzierung",
+    "Inzahlungnahme"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/9e/9e4b0912-525c-4854-96fa-9b964ad4526a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/07/073932fa-0420-4b1c-a127-94c9422f7828",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d8fce97-e94d-4a07-8956-89390c1928f9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/eb/eb4977ea-3924-4b6f-aea9-5b0eeee50e11",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c5/c52909fb-02bb-4e8b-8822-1b82666fec3a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d2/d2aed15c-fa1d-4400-ab3f-e08c4fa80964",
+    "https://img.classistatic.de/api/v1/mo-prod/images/01/01e94bdd-d5e8-4c41-9add-1b78431799ff",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ba/babd8237-492d-49f0-83f0-a7ba43f32b72",
+    "https://img.classistatic.de/api/v1/mo-prod/images/07/0740f191-3dbb-482a-8522-f92ae64729ed",
+    "https://img.classistatic.de/api/v1/mo-prod/images/32/3200cc35-9332-4709-b6ba-6adf64f259d5",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ad/ade1c724-5db3-41e9-b769-d0c26188ec98",
+    "https://img.classistatic.de/api/v1/mo-prod/images/71/71d9279f-2b03-45ab-a83d-9a3e50043878",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3e3396d-4d0e-47a2-bee1-0d49ece76cf2",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5a/5aac5cf9-19d4-4a00-91b6-5134bb25ae57",
+    "https://img.classistatic.de/api/v1/mo-prod/images/95/95ada0a2-8a41-48b0-a446-7e22e53b911d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad3e3242-f882-445e-9566-3cf278d64d3b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c4/c4270c67-5950-4255-840d-549c8f51d4c2",
+    "https://img.classistatic.de/api/v1/mo-prod/images/80/80ff3ad9-0cbd-4d67-9cbc-f5cbd6bac7d7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9f/9f68eb0e-c0e3-4ce5-bf0d-6b53ffeb8b45",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad61f4af-d972-470d-9824-dbf42cf7f6c1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/63/6312ed58-a2cf-42a7-aabb-2e8fffc60c9c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/24/244188f9-fa11-4d80-9370-c5299a8cdf8a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f1/f1d8dbff-1b01-4dcf-a2e7-cd714b5f79bd",
+    "https://img.classistatic.de/api/v1/mo-prod/images/70/709689aa-2a34-45ec-9dc1-e4fe298c79b7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3136f01-7b6b-4a2f-9c0a-dd6c628666ff",
+    "https://img.classistatic.de/api/v1/mo-prod/images/40/40f04eec-d72c-49c9-897c-87b7ebcdfdd9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/be/beb58e02-2f9f-45a9-9b22-393c134fe76b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/db/db465839-e1bf-430b-9c57-395d1621d8b0",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8c/8c3f158f-d1c7-4c24-ad5c-2f55aee480cf"
+  ],
+  "dealer": {
+    "name": "///FY- Automobile",
+    "type": "Händler",
+    "street": "Erlanger Str. 180",
+    "city": "DE-90765 Fürth",
+    "country": "DE",
+    "phone": null,
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=12643476",
+    "location": {
+      "lat": 49.4926119,
+      "lon": 10.9903311
+    },
+    "openingHours": [
+      {
+        "time": "10:00 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "10:00 Uhr - 15:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 4.3,
+      "count": 161,
+      "recommendationRate": 79
+    }
+  },
+  "financePlans": [
+    {
+      "type": "DF",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=452562130",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": true,
+      "bankId": "Santander",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 3798,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 15192,
+        "interestRateNominal": 5.83,
+        "interestRateEffective": 5.99,
+        "monthlyInstallment": 172,
+        "finalInstallment": 8545.5,
+        "totalInterest": 3500.44,
+        "totalAmount": 18692.44,
+        "localized": {
+          "downPayment": "3.798,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "15.192,00 €",
+          "interestRateNominal": "5,83%",
+          "interestRateEffective": "5,99%",
+          "monthlyInstallment": "172 €",
+          "finalInstallment": "8.545,50 €",
+          "totalInterest": "3.500,44 €",
+          "totalAmount": "18.692,44 €",
+          "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ]
+}

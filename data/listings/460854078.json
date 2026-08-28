@@ -1,0 +1,279 @@
+{
+  "id": "460854078",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318ia-widescreen-dab-tempo-sitzh-pdc-navi-baiersdorf/460854078.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460854078&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T06:28:17.525Z",
+  "title": "BMW 318iA*Widescreen*DAB*Tempo*Sitzh*PDC*Navi....",
+  "shortTitle": "BMW 318",
+  "subTitle": "iA*Widescreen*DAB*Tempo*Sitzh*PDC*Navi....",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYI"
+  },
+  "price": {
+    "gross": 24999,
+    "net": 21007.56,
+    "currency": "EUR",
+    "localized": "24.999 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 21,
+    "thresholds": [
+      "18.900 €",
+      "24.600 €",
+      "26.500 €",
+      "29.400 €",
+      "31.600 €",
+      "35.100 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "-"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "45.000 km"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "6,5 l/100km"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "145 g/km"
+    },
+    "envkv.co2Class": {
+      "label": "CO₂-Klasse",
+      "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": [
+        "6,5 l/100km (kombiniert)"
+      ]
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "06/2024"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Vorne, Hinten, Selbstlenkende Systeme"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Stoff, Schwarz"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4"
+    }
+  },
+  "features": [
+    "ABS",
+    "Abstandswarner",
+    "Android Auto",
+    "Apple CarPlay",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Elektr. Fensterheber",
+    "Elektr. Seitenspiegel",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Tempomat",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/40/4069105a-da6a-4f92-a414-cf3c13fbaf04",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b3/b30cc805-8474-469d-b0aa-a3c0c6769572",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0a/0a6f4de0-3bb7-4fe8-92e0-1180ae16608c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4c/4c77cec0-399c-49c7-8669-5bb7c4d586ab",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e9/e9233ce4-93fb-4d01-adcc-9710caa7bcf6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/71/71bc9e25-a3fc-4eed-8b5c-dc42c2f568f0",
+    "https://img.classistatic.de/api/v1/mo-prod/images/75/75ea4410-8e46-4c6b-88dc-243afcf9fe96",
+    "https://img.classistatic.de/api/v1/mo-prod/images/85/8582063f-1350-494d-8332-81963069cb9b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7288c5a-9ff1-4059-9df2-db887b4aa3fb",
+    "https://img.classistatic.de/api/v1/mo-prod/images/eb/eb78500f-5270-451d-85e3-d597943c4a8b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e9/e92ae9e4-aae3-4cf3-b24c-6c9a2739925f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ed/ed169b9e-531b-4ab8-be47-6a41b5c4f0be",
+    "https://img.classistatic.de/api/v1/mo-prod/images/52/52dba732-e7c7-49ab-8043-b9d5d18c82f9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/09/09dcb6db-fc28-42b3-b51e-a9d752d75d43",
+    "https://img.classistatic.de/api/v1/mo-prod/images/76/76b14979-1496-4d94-b2b1-1bc724b65293"
+  ],
+  "dealer": {
+    "name": "Autohaus Moritz GbR",
+    "type": "Händler",
+    "street": "Fritz Hartmann Strasse 1",
+    "city": "DE-91083 Baiersdorf",
+    "country": "DE",
+    "phone": "+49 (0)9133 4140",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=453830",
+    "location": {
+      "lat": 49.6571814,
+      "lon": 11.040316
+    },
+    "openingHours": [
+      {
+        "time": "09:00 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "11:00 Uhr - 14:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 4.8,
+      "count": 464,
+      "recommendationRate": 93
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=460854078",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 4999,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 20000,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 265.05,
+        "finalInstallment": 8249.67,
+        "totalInterest": 3887.65,
+        "totalAmount": 23887.65,
+        "localized": {
+          "downPayment": "4.999,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "20.000,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "266 €",
+          "finalInstallment": "8.249,67 €",
+          "totalInterest": "3.887,65 €",
+          "totalAmount": "23.887,65 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ]
+}

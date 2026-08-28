@@ -1,0 +1,290 @@
+{
+  "id": "460807870",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318d-tour-m-sportpaket-navi-led-ahk-kamera-driv-neusitz-rothenburg/460807870.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460807870&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T06:27:33.909Z",
+  "title": "BMW 318d Tour. M Sportpaket Navi LED AHK Kamera Driv",
+  "shortTitle": "BMW 318",
+  "subTitle": "d Tour. M Sportpaket Navi LED AHK Kamera Driv",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "216575",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "DDH"
+  },
+  "price": {
+    "gross": 29999,
+    "net": null,
+    "currency": "EUR",
+    "localized": "29.999 €",
+    "vatRate": null,
+    "vatNote": null,
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "REASONABLE_PRICE",
+    "label": "Fairer Preis",
+    "offset": 9,
+    "thresholds": [
+      "21.200 €",
+      "27.600 €",
+      "29.700 €",
+      "33.000 €",
+      "35.500 €",
+      "39.400 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug, Unfallfrei"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G81"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "M Sportpaket"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "216575"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "47.150 km"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.995 cm³"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "110 kW (150 PS)"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Diesel"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "09/2022"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "2-Zonen-Klimaautomatik"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "BLACK SAPPHIRE METALLIC"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz Metallic"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Alcantara, Schwarz"
+    }
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Android Auto",
+    "Anhängerkupplung schwenkbar",
+    "Apple CarPlay",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Sitzeinstellung",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Tagfahrlicht",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Volldigitales Kombiinstrument",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/4c/4cd9126d-a0fd-41e7-a02c-e269560dce43",
+    "https://img.classistatic.de/api/v1/mo-prod/images/14/14c17d77-88a2-4b8e-98ce-5a1753a515c5",
+    "https://img.classistatic.de/api/v1/mo-prod/images/90/908dab8a-79d1-4a5d-a4e7-6e3633d7a1d7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/db/dbaf692c-0518-4ea3-a225-cf79e98a8e36",
+    "https://img.classistatic.de/api/v1/mo-prod/images/15/1528f361-0010-429c-af60-848b9751fd90",
+    "https://img.classistatic.de/api/v1/mo-prod/images/61/614b58d7-b9c3-49ad-9a0e-0d8da3a7e416",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3c/3c57f4c4-15ac-49b5-9b6e-b762f382fbdf",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d5/d5149259-b058-4069-9578-6eab533d134a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f119fed-35c9-421e-bb39-9591e7ee5c48",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8c/8c6178ce-cf2e-4959-8556-447a459d9a17",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c7/c7b2f2b7-4c1a-4af6-bec0-4f1778e7d562",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6e/6ea1041a-588f-4f27-aa4a-4675dd14e2d5",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f5/f5725d2c-f73f-4dc3-9309-fa5002b5a215",
+    "https://img.classistatic.de/api/v1/mo-prod/images/36/36e79014-dd01-4bbf-9ec2-aea88ce2badc"
+  ],
+  "dealer": {
+    "name": "Autohaus Rhein Rothenburg Zwndl. der Heermann und Rhein GmbH BMW-Vertragshändler",
+    "type": "Händler",
+    "street": "Schaffeldstrasse 5",
+    "city": "DE-91616 Neusitz/Rothenburg",
+    "country": "DE",
+    "phone": "+49 (0)9861 95339990",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=10059870",
+    "location": {
+      "lat": 49.3750175,
+      "lon": 10.2335425
+    },
+    "openingHours": [
+      {
+        "time": "08:00 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "09:00 Uhr - 12:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 4.9,
+      "count": 146,
+      "recommendationRate": 100
+    }
+  },
+  "financePlans": [
+    {
+      "type": "DF",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=460807870",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "bankId": "Santander",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 5999,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 24000,
+        "interestRateNominal": 6.3,
+        "interestRateEffective": 6.49,
+        "monthlyInstallment": 280,
+        "finalInstallment": 13499.55,
+        "totalInterest": 5988.57,
+        "totalAmount": 29988.57,
+        "localized": {
+          "downPayment": "5.999,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "24.000,00 €",
+          "interestRateNominal": "6,30%",
+          "interestRateEffective": "6,49%",
+          "monthlyInstallment": "280 €",
+          "finalInstallment": "13.499,55 €",
+          "totalInterest": "5.988,57 €",
+          "totalAmount": "29.988,57 €",
+          "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    },
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=460807870",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false
+    }
+  ]
+}
