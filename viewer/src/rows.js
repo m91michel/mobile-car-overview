@@ -85,6 +85,16 @@ export const carSubline = (car) =>
 export const photo = (url, rule = 'mo-360') =>
   url ? `${url.replace(/\$_\d+\.[A-Za-z]+$/, '')}?rule=${rule}` : null;
 
+/** Where a car stands in the process. Nothing stored yet means "Offen". */
+export const STATUSES = [
+  { key: '', label: 'Offen' },
+  { key: 'to-contact', label: 'Anschreiben' },
+  { key: 'contacted', label: 'Angeschrieben' },
+  { key: 'appointment', label: 'Termin vereinbart' },
+  { key: 'viewed', label: 'Besichtigt' },
+  { key: 'declined', label: 'Abgesagt' },
+];
+
 export function buildRows(cars) {
   const rows = [];
 
@@ -144,7 +154,15 @@ export function buildRows(cars) {
     value: (car) => car.assessment?.note,
   });
 
-  // Your own notes from data/notes.json, kept apart from the assessment above:
+  rows.push({
+    key: 'status',
+    label: 'Status',
+    kind: 'status',
+    // Never null: every car has a status, and an untouched one is open.
+    value: (car) => STATUSES.find((s) => s.key === (car.status ?? ''))?.label ?? car.status,
+  });
+
+  // Your own notes, kept apart from the assessment above:
   // that one is a verdict on the car, this is whatever you want to remember.
   rows.push({
     key: 'notes:note',

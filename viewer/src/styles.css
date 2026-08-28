@@ -10,6 +10,7 @@
   --bad: #c0392b;
   --star: #d99413;
   --warn: #b45309;
+  --info: #7c4dcc;
   color-scheme: light dark;
 }
 
@@ -26,6 +27,7 @@
     --bad: #f87171;
     --star: #fbbf24;
     --warn: #f59e0b;
+    --info: #a78bfa;
   }
 }
 
@@ -361,6 +363,24 @@ thead th .price { display: block; color: var(--muted); font-weight: 400; }
 .col-note:hover { background: var(--panel); }
 
 .note-link { display: block; color: var(--accent); }
+
+/* Where a car stands in the process, changed straight from the table. */
+.status {
+  font: inherit;
+  color: var(--muted);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 3px 6px;
+  max-width: 100%;
+}
+/* Orange is the one that wants something from you; the rest are states you
+   are already in. */
+.status[data-status='to-contact'] { color: var(--warn); border-color: var(--warn); }
+.status[data-status='contacted'] { color: var(--accent); border-color: var(--accent); }
+.status[data-status='appointment'] { color: var(--info); border-color: var(--info); }
+.status[data-status='viewed'] { color: var(--good); border-color: var(--good); }
+.status[data-status='declined'] { color: var(--bad); border-color: var(--bad); }
 
 .star { color: var(--star); }
 

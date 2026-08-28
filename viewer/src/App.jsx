@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useLocalStorage } from 'usehooks-ts';
 import {
   SORTS,
+  STATUSES,
   buildRows,
   carLabel,
   carRef,
@@ -197,6 +198,7 @@ export default function App() {
   // door back through 30 checkboxes.
   const [lists, setLists] = useLocalStorage(key('lists'), []);
   const [notes, setNotes] = useLocalStorage(key('notes'), {});
+  const [statuses, setStatuses] = useLocalStorage(key('status'), {});
   const [dragKey, setDragKey] = useState(null);
   const [openDrawer, setOpenDrawer] = useState(null); // 'cars' | 'favourites' | 'lists' | 'rows'
   const carDrawer = useDrawer(openDrawer === 'cars');
@@ -219,9 +221,17 @@ export default function App() {
   // Notes are yours, not scraped, so they live beside the view state rather
   // than in the listing files, and are joined onto the cars here.
   const withNotes = useMemo(
-    () => (cars ?? []).map((car) => ({ ...car, notes: notes[car.id] })),
-    [cars, notes],
+    () => (cars ?? []).map((car) => ({ ...car, notes: notes[car.id], status: statuses[car.id] })),
+    [cars, notes, statuses],
   );
+
+  const setStatus = (id, value) =>
+    setStatuses((all) => {
+      const next = { ...all };
+      if (value) next[id] = value;
+      else delete next[id];
+      return next;
+    });
 
   const saveNotes = (id, entry) => {
     const cleaned = {
@@ -597,6 +607,27 @@ export default function App() {
                     </div>
                   </th>
                   {shown.map((car) => {
+                    if (row.kind === 'status') {
+                      return (
+                        <td key={car.id} className={isSold(car) ? 'sold' : ''}>
+                          <div className="cell">
+                            <select
+                              className="status"
+                              data-status={car.status ?? ''}
+                              value={car.status ?? ''}
+                              onChange={(e) => setStatus(car.id, e.target.value)}
+                              aria-label="Status"
+                            >
+                              {STATUSES.map((status) => (
+                                <option key={status.key} value={status.key}>
+                                  {status.label}
+                                </option>
+                              ))}
+                            </select>
+                          </div>
+                        </td>
+                      );
+                    }
                     if (row.kind === 'links') {
                       const links = car.notes?.links ?? [];
                       return (
