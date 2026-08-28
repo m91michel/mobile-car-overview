@@ -13,11 +13,43 @@ const KEY_FEATURES = new Set([
   'Apple CarPlay',
 ]);
 
+/**
+ * Paint names map to a colour family, not to the exact factory paint: BMW's
+ * "Portimao Blau" and "Phytonicblau" both show the same blue chip. The swatch
+ * is there to make the row scannable, not to match a paint code.
+ * Black before blue, so "Black Saphir" does not read as sapphire blue.
+ */
+const FAMILIES = [
+  [/schwarz|black/i, 'schwarz', '#1b1c1e'],
+  [/wei(ß|ss)|white|alpin/i, 'weiß', '#eef0f2'],
+  [/grau|gray|grey|graphit/i, 'grau', '#8b9096'],
+  [/silber|silver/i, 'silber', '#c3c8cd'],
+  [/blau|blue/i, 'blau', '#2a5db0'],
+  [/rot|red/i, 'rot', '#b32b23'],
+  [/grün|gruen|green/i, 'grün', '#2f7d4f'],
+  [/braun|brown/i, 'braun', '#6d4a30'],
+  [/beige/i, 'beige', '#d9caa9'],
+  [/gold/i, 'gold', '#c8a13a'],
+  [/bronze/i, 'bronze', '#a9762f'],
+  [/orange/i, 'orange', '#e08420'],
+  [/gelb|yellow/i, 'gelb', '#e3c018'],
+  [/violett|lila|purple/i, 'violett', '#6d43a8'],
+];
+
+const familyOf = (value) => FAMILIES.find(([pattern]) => pattern.test(value));
+
 /** Blau, Grau und Schwarz sind gewünscht; Weiß ist raus. Rest: neutral. */
 const paint = (value) => {
-  if (/wei(ß|ss)/i.test(value)) return 'bad';
-  if (/blau|grau|schwarz|anthrazit|saphir/i.test(value)) return 'good';
+  const name = familyOf(value)?.[1];
+  if (name === 'weiß') return 'bad';
+  if (name === 'blau' || name === 'grau' || name === 'schwarz') return 'good';
   return null;
+};
+
+const swatchFor = (value) => {
+  const family = familyOf(value);
+  if (!family) return null;
+  return { color: family[2], metallic: /metallic|met\.|perl/i.test(value) };
 };
 
 /**
@@ -52,7 +84,15 @@ export function cellFor(row, car) {
 
   if (!raw) return { mark: '', text: '–', tone: 'empty' };
 
-  const rule = row.key.startsWith('fact:') ? FACT_RULES[row.key.slice('fact:'.length)] : null;
-  const tone = rule ? rule(raw) : null;
+  const fact = row.key.startsWith('fact:') ? row.key.slice('fact:'.length) : null;
+  const tone = FACT_RULES[fact] ? FACT_RULES[fact](raw) : null;
+
+  // Colour rows show the paint itself instead of a green tick — a chip says
+  // "Skyscraper Grau" faster than a mark does. The ❌ stays, because "kein
+  // Weiß" is one of the non-negotiables.
+  if (fact === 'color' || fact === 'manufacturerColorName') {
+    return { mark: tone === 'bad' ? '❌' : '', text: raw, tone, swatch: swatchFor(raw) };
+  }
+
   return { mark: tone === 'good' ? '✅' : tone === 'bad' ? '❌' : '', text: raw, tone };
 }
