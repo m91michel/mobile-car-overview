@@ -11,6 +11,7 @@ import {
   sortCars,
   toCsv,
 } from './rows.js';
+import { cellFor } from './wishlist.js';
 
 const key = (name) => `car-compare/${name}`;
 
@@ -340,10 +341,14 @@ export default function App() {
                     </div>
                   </th>
                   {shown.map((car) => {
-                    const value = row.value(car);
+                    const { mark, text, tone } = cellFor(row, car);
                     return (
-                      <td key={car.id} className={value ? '' : 'empty'}>
-                        <div className="cell">{value ?? '–'}</div>
+                      <td key={car.id} className={tone === 'empty' ? 'empty' : ''}>
+                        <div className="cell">
+                          {mark && <span className={`mark ${tone}`}>{mark}</span>}
+                          {mark && text ? ' ' : ''}
+                          {text}
+                        </div>
                       </td>
                     );
                   })}
