@@ -1,0 +1,8 @@
+# One listing per line: a bare id, a detail URL, or a compare URL.
+# Blank lines and #-comments are ignored.
+#
+#   pnpm scrape -- --from cars.txt
+
+462145366
+459175992
+https://suchen.mobile.de/fahrzeuge/details.html?id=424825114&scopeId=C&action=compareItem

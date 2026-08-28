@@ -1,0 +1,295 @@
+{
+  "id": "461488465",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-lc-plus-sportsitze-gra-parkassist-gie%C3%9Fen/461488465.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461488465&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-27T18:01:40.904Z",
+  "title": "BMW 318i TOURING LC PLUS SPORTSITZE GRA PARKASSIST  ",
+  "shortTitle": "BMW 318",
+  "subTitle": "i TOURING LC PLUS SPORTSITZE GRA PARKASSIST  ",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "257099",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 28790,
+    "net": 24193.28,
+    "currency": "EUR",
+    "localized": "28.790 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "REASONABLE_PRICE",
+    "label": "Fairer Preis",
+    "offset": 18,
+    "thresholds": [
+      "20.200 €",
+      "26.200 €",
+      "28.200 €",
+      "31.400 €",
+      "33.700 €",
+      "37.400 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "TOURING LC PLUS SPORTSITZE GRA PARKASSIST   DACHRELING…"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "257099"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "34.700 km"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "03/2024"
+    },
+    "constructionYear": {
+      "label": "Baujahr",
+      "value": "2024"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Skyscraper Grau"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Grau Metallic"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Stoff, Schwarz"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.300 kg"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.650 kg"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "59 l"
+    }
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandswarner",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Navigationssystem",
+    "Nebelscheinwerfer",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sommerreifen",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Tempomat",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/17/17c60d67-1e1a-472e-98ac-1bdfb91e6f6d$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/36/36603af2-a07c-40ac-b94a-c8fb709931ab$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/59/5967aa24-6497-4400-af09-5fdad85cf7ef$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d3/d351968f-cf80-4248-8bbc-666ca95fd4f5$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/48/483483af-94ab-4e2a-a6f3-b7cec1244b7e$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/83/832945e3-02e5-4210-9f7a-36291058acaf$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7c1f2ba-c14a-4266-be9f-e344972d61ab$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4f/4f74d904-bc58-4b8b-985b-e0a70b14a6f2$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0dbd802-96ee-4b6c-b0f7-c03b8ee14f7d$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/94/94acc05d-872d-4cec-af68-1c5489ac1308$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ef5aa1f-a5ff-44d2-aef3-59663cf97bb4$_60.JPG"
+  ],
+  "dealer": {
+    "name": "Alfred Wahl GmbH & Co. KG | Filiale Gießen",
+    "type": "Händler",
+    "street": "Gottlieb-Daimler-Straße 1",
+    "city": "DE-35398 Gießen",
+    "country": "DE",
+    "phone": "+49 (0)641 61066222",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=32951042",
+    "location": {
+      "lat": 50.5859006,
+      "lon": 8.6509622
+    },
+    "openingHours": [],
+    "rating": {
+      "score": 4.9,
+      "count": 73,
+      "recommendationRate": 91
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=461488465",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 5758,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 23032,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 305.23,
+        "finalInstallment": 9500.7,
+        "totalInterest": 4477.07,
+        "totalAmount": 27509.07,
+        "localized": {
+          "downPayment": "5.758,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "23.032,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "306 €",
+          "finalInstallment": "9.500,70 €",
+          "totalInterest": "4.477,07 €",
+          "totalAmount": "27.509,07 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ]
+}

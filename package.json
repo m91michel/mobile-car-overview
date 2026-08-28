@@ -1,0 +1,19 @@
+{
+  "name": "car-compare-tool",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.22.0",
+  "description": "Fetch mobile.de listings into JSON and compare them in a viewer that mobile.de's own compare page can't match.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "scrape": "node scripts/scrape.mjs",
+    "saved": "node scripts/scrape.mjs --saved",
+    "refresh": "node scripts/scrape.mjs --refresh",
+    "park": "node scripts/chrome.mjs --open https://www.mobile.de/park?layout=list",
+    "chrome": "node scripts/chrome.mjs",
+    "chrome:stop": "node scripts/chrome.mjs --stop"
+  }
+}

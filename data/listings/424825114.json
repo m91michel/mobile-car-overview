@@ -1,0 +1,304 @@
+{
+  "id": "424825114",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-aut-ettlingen/424825114.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=424825114&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-27T18:02:03.722Z",
+  "title": "BMW 318i Touring Aut.",
+  "shortTitle": "BMW 318",
+  "subTitle": "i Touring Aut.",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "102998455",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 28989.99,
+    "net": 24361.34,
+    "currency": "EUR",
+    "localized": "28.990 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 94,
+    "thresholds": [
+      "20.800 €",
+      "27.000 €",
+      "29.100 €",
+      "32.400 €",
+      "34.700 €",
+      "38.600 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "3er"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "Basis"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "102998455"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "In 1 Woche ab Bestellung verfügbar"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "47.508 km"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "03/2023"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "2"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Saphirschwarz Metallic"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz Metallic"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Alcantara, Blau"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4"
+    }
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandswarner",
+    "Adaptives Kurvenlicht",
+    "Ambiente-Beleuchtung",
+    "Android Auto",
+    "Apple CarPlay",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Head-Up Display",
+    "Heckantrieb",
+    "Innenspiegel autom. abblendend",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Servolenkung",
+    "Sitzheizung",
+    "Skisack",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Tempomat",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb726068-6d08-4fc8-a079-10bec0040058$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ec/ec0cf719-57f8-4518-9a7f-2b0a87719eef$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/70/70ec7c2a-57ec-4bc8-b5e4-06ee48f179ec$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c4/c4a36f2e-f193-478f-a035-7a4c9d4a476a$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/65/650542e6-466f-4d0d-aebe-97b8fb5c2af3$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d05faf5-64b7-490d-856a-15898acc7829$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/58/588689a7-b6ac-4381-8700-ff7939babb6a$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ec/ec40c23e-280d-4357-af55-fe69bf1e927a$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c8/c81ac6f3-6931-4d84-957a-4b7d79821cb0$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1d/1df934d5-7fef-4bb3-9313-d90eb581aa69$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a928b0c-dd24-4cdc-8ae9-47060c6e6bff$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0a/0a40f6d8-bded-46f9-9db8-ea72667725ee$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d0/d034ea15-ffd5-41d6-bf85-51a4ab182bae$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ee/eec88177-56c5-4f41-bace-75f043fd9ee2$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a99f5f0-1356-422e-af03-ef88bcd83260$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3b/3bc59a5e-7f05-4062-85a3-c485574df069$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9f/9f2ff9b0-d3c4-4fb7-ba2e-11e8a20aefc7$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c5/c5e2646d-4210-42fb-af0c-6b63252bf66b$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c5/c5863944-205c-4863-a399-412770f2f4a6$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/85/855368ae-c8f6-4c85-a37f-aa25f0f2b3ff$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/35/3559fc2c-1a96-4ec9-9259-4d837dd0e6f3$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ff/ffd6bdb2-1c1d-4e02-9de1-88048e8023a2$_60.JPG"
+  ],
+  "dealer": {
+    "name": "Emil Frey Ungeheuer Automobile",
+    "type": "Händler",
+    "street": "Hertzstraße 31",
+    "city": "DE-76275 Ettlingen",
+    "country": "DE",
+    "phone": "+49 (0)7243 3513030",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=462777",
+    "location": {
+      "lat": 48.9382964,
+      "lon": 8.3819654
+    },
+    "openingHours": [
+      {
+        "time": "08:00 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "09:00 Uhr - 13:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 4.6,
+      "count": 231,
+      "recommendationRate": 100
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=424825114",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 5797,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 23192,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 307.35,
+        "finalInstallment": 9566.37,
+        "totalInterest": 4508.13,
+        "totalAmount": 27700.13,
+        "localized": {
+          "downPayment": "5.797,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "23.192,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "308 €",
+          "finalInstallment": "9.566,37 €",
+          "totalInterest": "4.508,13 €",
+          "totalAmount": "27.700,13 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ]
+}

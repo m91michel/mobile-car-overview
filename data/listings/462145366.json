@@ -1,0 +1,322 @@
+{
+  "id": "462145366",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-hifi-livecockpit-widescree-siegen/462145366.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=462145366&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-27T18:01:39.926Z",
+  "title": "BMW 318i TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREE",
+  "shortTitle": "BMW 318",
+  "subTitle": "i TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREE",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "B00139259287",
+  "isNew": true,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 31890,
+    "net": 26798.32,
+    "currency": "EUR",
+    "localized": "31.890 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 64,
+    "thresholds": [
+      "23.400 €",
+      "30.400 €",
+      "32.700 €",
+      "36.400 €",
+      "39.100 €",
+      "43.400 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREEN"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "B00139259287"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "43.285 km"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "06/2024"
+    },
+    "constructionYear": {
+      "label": "Baujahr",
+      "value": "2024"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Alpinweiß uni"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Weiß"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Alcantara, Schwarz"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.300 kg"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.650 kg"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "59 l"
+    }
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandswarner",
+    "Android Auto",
+    "Apple CarPlay",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sommerreifen",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Tempomat",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [
+    "18\" Doppelspeiche 848M",
+    "Parkassistenzsystem",
+    "Active Guard"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e80efc2-4ccb-4adb-9927-78e77b1c9624$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/98/980ccbbe-9f59-4686-a6c0-a90c19d65822$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0e/0e930445-3e7e-4190-bad0-ee908d001f62$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e0/e0b52ea3-517c-4264-bc85-52b559f2a787$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/60/607cadca-c4a3-4622-8def-946e90bdbf0c$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0856818-6e79-4680-97cf-aeb46ac2f9ec$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/70/7002bebc-aca1-4ff3-9399-d5bde8efda76$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0e/0e128b56-fc20-48b8-b7b1-eb1d91d68a0b$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/13/13150fb7-fddb-4686-bb3f-3fe1eb902faa$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6c/6caa6359-597f-4126-a4b6-c240e7b402b9$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0d/0d6c6540-426e-4044-bc4a-67b9da5e85a7$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/00/0099e018-0f21-4df7-9c81-da62b927a7b3$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/78/783e0351-b393-42a0-a5f4-f8d4df242750$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a9/a97d8e07-d179-42c6-ba87-cf67716edc9a$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/73/73390d3f-e303-480d-85c1-1a71524655a6$_60.JPG",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ef5aa1f-a5ff-44d2-aef3-59663cf97bb4$_60.JPG"
+  ],
+  "dealer": {
+    "name": "WAHL-GROUP Alfred Wahl GmbH & Co. KG | Filiale Siegen",
+    "type": "Händler",
+    "street": "Weidenauer Straße 217-225",
+    "city": "DE-57076 Siegen",
+    "country": "DE",
+    "phone": "+49 (0)271 4020",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=452549",
+    "location": {
+      "lat": 50.8925442,
+      "lon": 8.0288005
+    },
+    "openingHours": [
+      {
+        "day": "Mo - Fr",
+        "time": "08:00 Uhr - 18:00 Uhr"
+      },
+      {
+        "day": "Sa",
+        "time": "09:00 Uhr - 13:00 Uhr"
+      }
+    ],
+    "rating": {
+      "score": 4.3,
+      "count": 296,
+      "recommendationRate": 88
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=462145366",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": true,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 6378,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 25512,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 338.09,
+        "finalInstallment": 10523.7,
+        "totalInterest": 4959.14,
+        "totalAmount": 30471.14,
+        "localized": {
+          "downPayment": "6.378,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "25.512,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "339 €",
+          "finalInstallment": "10.523,70 €",
+          "totalInterest": "4.959,14 €",
+          "totalAmount": "30.471,14 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ]
+}
