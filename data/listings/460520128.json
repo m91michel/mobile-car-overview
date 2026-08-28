@@ -1,0 +1,353 @@
+{
+  "id": "460520128",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-touring-advantage-waldshut-tiengen/460520128.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460520128&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T16:04:42.871Z",
+  "title": "BMW 320i Touring Advantage",
+  "shortTitle": "BMW 320",
+  "subTitle": "i Touring Advantage",
+  "make": "BMW",
+  "model": "320",
+  "category": "EstateCar",
+  "sku": "65000541",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "BLA"
+  },
+  "price": {
+    "gross": 27590,
+    "net": 23184.87,
+    "currency": "EUR",
+    "localized": "27.590 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "REASONABLE_PRICE",
+    "label": "Fairer Preis",
+    "offset": 71,
+    "thresholds": [
+      "18.300 €",
+      "23.800 €",
+      "25.600 €",
+      "28.400 €",
+      "30.500 €",
+      "33.900 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "Touring Advantage",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "65000541",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "44.580 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "135 kW (184 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "11/2021",
+      "group": "vehicle"
+    },
+    "constructionYear": {
+      "label": "Baujahr",
+      "value": "2021",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "2",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Hinten, Vorne",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "MINERALGRAU",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Silber Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Stoff, Schwarz",
+      "group": "vehicle"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.600 kg",
+      "group": "vehicle"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg",
+      "group": "vehicle"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.645 kg",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "59 l",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 44580,
+    "powerKw": 135,
+    "powerHp": 184,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2021-11",
+    "constructionYear": 2021,
+    "seats": 5,
+    "previousOwners": 2,
+    "weightKg": 1645,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 289,
+    "generation": "G21",
+    "facelift": "pre-lci",
+    "faceliftBasis": "Erstzulassung 11/2021, vor der Umstellung"
+  },
+  "features": [
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Alarmanlage",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Sitzeinstellung",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Navigationssystem",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Soundsystem",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/bb/bbdca98b-266a-4f8a-9a44-6510f8e3edf0",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2e/2e35ac3a-daf0-48e8-8dbd-ef561499d42c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1f/1f00d337-8e44-4c45-ad14-23b5a2a01067",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b7/b73bd07d-44bc-4f2e-9a1e-8e4dbf37f0fd",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9c0a51b-dfc8-4c5e-94c3-ab6440cfc960",
+    "https://img.classistatic.de/api/v1/mo-prod/images/40/402983b0-e776-478a-ac94-3a983ba98c93",
+    "https://img.classistatic.de/api/v1/mo-prod/images/30/3000b8f1-5e83-4582-9d8b-8822ce18aebb",
+    "https://img.classistatic.de/api/v1/mo-prod/images/83/83917ebe-6840-491f-b94a-70e8483600d8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9d6f272-1e2d-4958-af17-4584e550a738",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d143382-8a98-48ba-926c-62e55027ba70",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0d/0d0ae8c8-0552-44f5-b6b3-b70b3a1c3452",
+    "https://img.classistatic.de/api/v1/mo-prod/images/be/be956edd-9bd4-48eb-9caa-62e44aa9ac72",
+    "https://img.classistatic.de/api/v1/mo-prod/images/11/11091311-9732-401d-8448-c9f4dd457cdd",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c5/c53c5d1a-df26-4248-9d14-ac994a73858e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/19/190d43c6-f2ea-4ff7-99bd-2b3999d2eb44",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5e/5e01dc28-bb1f-425f-8b8b-598235870f41",
+    "https://img.classistatic.de/api/v1/mo-prod/images/33/339a07d6-e64f-4f06-8a0e-5b2bd4557368",
+    "https://img.classistatic.de/api/v1/mo-prod/images/90/908433de-6e17-4076-8063-581bab091a8e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b3/b3c85654-78c9-41ea-84f1-550c71fa7b4a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7e/7e037bb8-c8c0-464c-9b8e-b9a60c35fbb6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4c/4ca5bc73-8b22-4e25-aa07-8d3482be4361",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9b/9b901457-617b-4ce0-b658-d1517fe85d6f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3a/3a785119-07d3-4c2a-9e71-e081208cf998",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a8/a807ef5c-7626-4243-9851-3f28c2bb289c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f3d5691-2288-46e0-b684-02fc875ab224"
+  ],
+  "dealer": {
+    "name": "Gottstein GmbH Automobile & Motorräder",
+    "type": "Händler",
+    "street": "Karl Ziegler Strasse 4",
+    "city": "DE-79761 Waldshut-Tiengen",
+    "country": "DE",
+    "phone": "+49 (0)7751 83920",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=452090",
+    "location": {
+      "lat": 47.6162465,
+      "lon": 8.2457357
+    },
+    "openingHours": [],
+    "rating": {
+      "score": 4.7,
+      "count": 157,
+      "recommendationRate": 92
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=460520128",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 5518,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 22072,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 292.5,
+        "finalInstallment": 9104.7,
+        "totalInterest": 4290.46,
+        "totalAmount": 26362.46,
+        "localized": {
+          "downPayment": "5.518,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "22.072,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "293 €",
+          "finalInstallment": "9.104,70 €",
+          "totalInterest": "4.290,46 €",
+          "totalAmount": "26.362,46 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 40
+}
