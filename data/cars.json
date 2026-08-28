@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T18:23:36.522Z",
+  "updatedAt": "2026-08-28T18:41:43.775Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -15109,6 +15109,371 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 29499
+      }
+    },
+    {
+      "id": "452624993",
+      "url": "https://suchen.mobile.de/auto-inserat/bmw-320-e-m-sport-pro-touring-allblack-facelift-1hd-eging-am-see/452624993.html",
+      "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=452624993&scopeId=C&action=compareItem",
+      "fetchedAt": "2026-08-28T18:41:43.773Z",
+      "title": "BMW 320 e M Sport Pro Touring AllBlack Facelift 1Hd",
+      "shortTitle": "BMW 320",
+      "subTitle": "e M Sport Pro Touring AllBlack Facelift 1Hd",
+      "make": "BMW",
+      "model": "320",
+      "category": "EstateCar",
+      "isNew": false,
+      "kba": {
+        "hsn": "0005",
+        "tsn": "CYJ"
+      },
+      "price": {
+        "gross": 27790,
+        "net": 23352.94,
+        "currency": "EUR",
+        "localized": "27.790 €",
+        "vatRate": 19,
+        "vatNote": "19,00% MwSt.",
+        "type": "FIXED"
+      },
+      "priceRating": {
+        "rating": "VERY_GOOD_PRICE",
+        "label": "Sehr guter Preis",
+        "offset": 54,
+        "thresholds": [
+          "23.900 €",
+          "31.000 €",
+          "33.400 €",
+          "37.200 €",
+          "39.900 €",
+          "44.300 €"
+        ]
+      },
+      "facts": {
+        "damageCondition": {
+          "label": "Fahrzeugzustand",
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
+        },
+        "category": {
+          "label": "Kategorie",
+          "value": "Kombi",
+          "group": "vehicle"
+        },
+        "modelRange": {
+          "label": "Baureihe",
+          "value": "G80",
+          "group": "vehicle"
+        },
+        "trimLine": {
+          "label": "Ausstattungslinie",
+          "value": "320 e M Sport",
+          "group": "vehicle"
+        },
+        "mileage": {
+          "label": "Kilometerstand",
+          "value": "32.700 km",
+          "group": "vehicle"
+        },
+        "cubicCapacity": {
+          "label": "Hubraum",
+          "value": "1.998 cm³",
+          "group": "vehicle"
+        },
+        "power": {
+          "label": "Leistung",
+          "value": "120 kW (163 PS)",
+          "group": "vehicle"
+        },
+        "fuel": {
+          "label": "Kraftstoffart",
+          "value": "Hybrid (Benzin/Elektro)",
+          "group": "vehicle"
+        },
+        "envkv.energyConsumption": {
+          "label": "Energieverbrauch (komb.)",
+          "value": "-- l/100km",
+          "group": "envkv"
+        },
+        "numSeats": {
+          "label": "Anzahl Sitzplätze",
+          "value": "5",
+          "group": "vehicle"
+        },
+        "doorCount": {
+          "label": "Anzahl der Türen",
+          "value": "4/5",
+          "group": "vehicle"
+        },
+        "transmission": {
+          "label": "Getriebe",
+          "value": "Automatik",
+          "group": "vehicle"
+        },
+        "emissionClass": {
+          "label": "Schadstoffklasse",
+          "value": "Euro6",
+          "group": "vehicle"
+        },
+        "emissionsSticker": {
+          "label": "Umweltplakette",
+          "value": "4 (Grün)",
+          "group": "vehicle"
+        },
+        "firstRegistration": {
+          "label": "Erstzulassung",
+          "value": "03/2023",
+          "group": "vehicle"
+        },
+        "numberOfPreviousOwners": {
+          "label": "Anzahl der Fahrzeughalter",
+          "value": "1",
+          "group": "vehicle"
+        },
+        "parkAssists": {
+          "label": "Einparkhilfe",
+          "value": "Hinten, Kamera, Vorne",
+          "group": "vehicle"
+        },
+        "airbag": {
+          "label": "Airbags",
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
+        },
+        "manufacturerColorName": {
+          "label": "Farbe (Hersteller)",
+          "value": "SAPHIRSCHWARZ",
+          "group": "vehicle"
+        },
+        "color": {
+          "label": "Farbe",
+          "value": "Schwarz Metallic",
+          "group": "vehicle"
+        },
+        "interior": {
+          "label": "Innenausstattung",
+          "value": "Alcantara, Schwarz",
+          "group": "vehicle"
+        },
+        "trailerLoadBraked": {
+          "label": "Anhängelast gebremst",
+          "value": "1.500 kg",
+          "group": "vehicle"
+        },
+        "trailerLoadUnbraked": {
+          "label": "Anhängelast ungebremst",
+          "value": "750 kg",
+          "group": "vehicle"
+        },
+        "netWeight": {
+          "label": "Gewicht",
+          "value": "1.900 kg",
+          "group": "vehicle"
+        },
+        "cylinder": {
+          "label": "Zylinder",
+          "value": "4",
+          "group": "vehicle"
+        },
+        "fuelTankVolume": {
+          "label": "Tankgröße",
+          "value": "40 l",
+          "group": "vehicle"
+        }
+      },
+      "derived": {
+        "mileageKm": 32700,
+        "powerKw": 120,
+        "powerHp": 163,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-03",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1900,
+        "fuelTankLitres": 40,
+        "co2GramsPerKm": null,
+        "consumptionL100km": 100,
+        "distanceFromHomeKm": 186,
+        "generation": "G80",
+        "facelift": "lci",
+        "faceliftBasis": "Inserat nennt LCI/Facelift ausdrücklich"
+      },
+      "features": [
+        "Abgedunkelte Scheiben",
+        "ABS",
+        "Abstandswarner",
+        "Adaptives Fahrwerk",
+        "Alarmanlage",
+        "Ambiente-Beleuchtung",
+        "Android Auto",
+        "Apple CarPlay",
+        "Armlehne",
+        "Berganfahrassistent",
+        "Blendfreies Fernlicht",
+        "Bluetooth",
+        "Bordcomputer",
+        "CD-Spieler",
+        "Dachreling",
+        "Elektr. Fensterheber",
+        "Elektr. Heckklappe",
+        "Elektr. Seitenspiegel",
+        "Elektr. Seitenspiegel anklappbar",
+        "Elektr. Sitzeinstellung",
+        "Elektr. Wegfahrsperre",
+        "ESP",
+        "Fernlichtassistent",
+        "Freisprecheinrichtung",
+        "Gepäckraumabtrennung",
+        "Geschwindigkeitsbegrenzer",
+        "Heckantrieb",
+        "Induktionsladen für Smartphones",
+        "Innenspiegel autom. abblendend",
+        "Kurvenlicht",
+        "Lederlenkrad",
+        "LED-Scheinwerfer",
+        "LED-Tagfahrlicht",
+        "Leichtmetallfelgen",
+        "Lichtsensor",
+        "Lordosenstütze",
+        "Müdigkeitswarner",
+        "Multifunktionslenkrad",
+        "Musikstreaming integriert",
+        "Navigationssystem",
+        "Navigationsvorbereitung",
+        "Nichtraucher-Fahrzeug",
+        "Notbremsassistent",
+        "Notrufsystem",
+        "Radio DAB",
+        "Regensensor",
+        "Reifendruckkontrolle",
+        "Schaltwippen",
+        "Scheckheftgepflegt",
+        "Scheinwerferreinigung",
+        "Schlüssellose Zentralverriegelung (Keyless)",
+        "Servolenkung",
+        "Sitzheizung",
+        "Sommerreifen",
+        "Soundsystem",
+        "Sportfahrwerk",
+        "Sportpaket",
+        "Sportsitze",
+        "Sprachsteuerung",
+        "Spurhalteassistent",
+        "Start/Stopp-Automatik",
+        "Tempomat",
+        "Touchscreen",
+        "Traktionskontrolle",
+        "Tuner/Radio",
+        "USB",
+        "Verkehrszeichenerkennung",
+        "Volldigitales Kombiinstrument",
+        "Zentralverriegelung"
+      ],
+      "highlights": [],
+      "images": [
+        "https://img.classistatic.de/api/v1/mo-prod/images/3c/3c4074f0-dc10-4955-8901-e16a4adce59b",
+        "https://img.classistatic.de/api/v1/mo-prod/images/36/36354746-18ad-4bf8-baf1-adbb25d81cb0",
+        "https://img.classistatic.de/api/v1/mo-prod/images/99/9962ee87-9b9f-43fa-b4be-51d2f0f509fe",
+        "https://img.classistatic.de/api/v1/mo-prod/images/78/78e29923-a2cb-458e-832b-7d5899f9716f",
+        "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d5241ae-5b2b-450e-9aac-35b4735adb5f",
+        "https://img.classistatic.de/api/v1/mo-prod/images/5e/5e3abcac-f53a-46e9-b775-f81bf920bd42",
+        "https://img.classistatic.de/api/v1/mo-prod/images/62/62aa6520-001a-48ec-ba01-89462d22b28d",
+        "https://img.classistatic.de/api/v1/mo-prod/images/23/2395aa93-8a73-4385-9055-8f6325ab64f8",
+        "https://img.classistatic.de/api/v1/mo-prod/images/ed/edcab2e6-17fb-46a5-9cb5-68191c7121e8",
+        "https://img.classistatic.de/api/v1/mo-prod/images/e9/e9b8b455-c3b8-410a-8715-9b22f6ef730f",
+        "https://img.classistatic.de/api/v1/mo-prod/images/cd/cd14a56f-4ca8-4ca1-af78-4115da0e98c6",
+        "https://img.classistatic.de/api/v1/mo-prod/images/09/092c72db-7106-4d97-b639-b47a5c999faa",
+        "https://img.classistatic.de/api/v1/mo-prod/images/91/91d1ff5d-35d7-455f-b4c6-d11747eb8f1c",
+        "https://img.classistatic.de/api/v1/mo-prod/images/f8/f8866e69-3816-49e6-9002-0aacf29349f0",
+        "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a2cd4c2-0ea4-49e9-9bc2-1380baa376aa",
+        "https://img.classistatic.de/api/v1/mo-prod/images/31/314c939f-69d0-4e63-949f-7a6a59048a76",
+        "https://img.classistatic.de/api/v1/mo-prod/images/41/41c2b139-e991-4b81-a778-891c937ebea3",
+        "https://img.classistatic.de/api/v1/mo-prod/images/c5/c5d43b58-3142-4840-a56d-696d8260bb61",
+        "https://img.classistatic.de/api/v1/mo-prod/images/ef/efd2e3f9-51c3-4da6-9c16-4150bfd5cde7",
+        "https://img.classistatic.de/api/v1/mo-prod/images/25/254bdfde-cf30-40ec-85f9-ffbd76c42cdd",
+        "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e0ef627-915b-4900-9280-a85507f9f695",
+        "https://img.classistatic.de/api/v1/mo-prod/images/95/95192e5d-2438-4b2e-b85b-0185ae7bfe78",
+        "https://img.classistatic.de/api/v1/mo-prod/images/b8/b8fd6f41-ba9c-49b6-920d-c78ad8858ed5",
+        "https://img.classistatic.de/api/v1/mo-prod/images/ec/ec737c99-c595-4e89-b6da-182d81a9891c",
+        "https://img.classistatic.de/api/v1/mo-prod/images/c1/c15053a4-bf07-4712-bb36-1307ef459252"
+      ],
+      "dealer": {
+        "name": "KFZ Stetter",
+        "type": "Händler",
+        "street": "Albersdorfer Straße 4",
+        "city": "DE-94535 Eging am See",
+        "country": "DE",
+        "phone": null,
+        "homepage": "https://home.mobile.de/home/redirect.html?customerId=37324116",
+        "location": {
+          "lat": 48.7105875,
+          "lon": 13.2643785
+        },
+        "openingHours": [
+          {
+            "time": "08:00 Uhr - 17:00 Uhr",
+            "day": "Mo - Fr"
+          }
+        ],
+        "rating": {
+          "score": 4.7,
+          "count": 5,
+          "recommendationRate": 80
+        }
+      },
+      "financePlans": [
+        {
+          "type": "AO",
+          "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=452624993",
+          "shortFlow": true,
+          "promotion": false,
+          "showInGallery": false,
+          "offer": {
+            "bankName": "Openbank Deutschland AG",
+            "loanBroker": "Check24 GmbH",
+            "loanType": "BALLOON",
+            "downPayment": 5558,
+            "creditTerm": 60,
+            "yearlyMileage": 10000,
+            "creditAmount": 22232,
+            "interestRateNominal": 5.41,
+            "interestRateEffective": 5.55,
+            "monthlyInstallment": 294.62,
+            "finalInstallment": 9170.7,
+            "totalInterest": 4321.56,
+            "totalAmount": 26553.56,
+            "localized": {
+              "downPayment": "5.558,00 €",
+              "downPaymentInPercent": "20%",
+              "creditTerm": "60",
+              "creditTermInYears": "5",
+              "yearlyMileage": "10.000",
+              "creditAmount": "22.232,00 €",
+              "interestRateNominal": "5,41%",
+              "interestRateEffective": "5,55%",
+              "monthlyInstallment": "295 €",
+              "finalInstallment": "9.170,70 €",
+              "totalInterest": "4.321,56 €",
+              "totalAmount": "26.553,56 €",
+              "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+            }
+          }
+        }
+      ],
+      "ref": 43,
+      "assessment": {
+        "verdict": null,
+        "note": null,
+        "retrofit": [
+          {
+            "key": "ahk",
+            "label": "AHK abnehmbar, Nachrüstung Fürth",
+            "cost": 1600
+          }
+        ],
+        "retrofitCost": 1600,
+        "effectivePrice": 29390
       }
     }
   ]
