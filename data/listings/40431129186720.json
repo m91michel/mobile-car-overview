@@ -1,0 +1,384 @@
+{
+  "id": "40431129186720",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-330ia-touring-g21-m-sport-lc-pr-ahk-acc-cam-willmering-bei-cham/40431129186720.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40431129186720&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T12:55:06.529Z",
+  "title": "BMW 330iA TOURING G21 ///M-SPORT/LC\"PR\"/AHK/ACC/CAM",
+  "shortTitle": "BMW 330",
+  "subTitle": "iA TOURING G21 ///M-SPORT/LC\"PR\"/AHK/ACC/CAM",
+  "make": "BMW",
+  "model": "330",
+  "category": "EstateCar",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CVU"
+  },
+  "price": {
+    "gross": 32900,
+    "net": 27647.06,
+    "currency": "EUR",
+    "localized": "32.900 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 40,
+    "thresholds": [
+      "24.600 €",
+      "31.900 €",
+      "34.400 €",
+      "38.300 €",
+      "41.100 €",
+      "45.600 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "///M-SPORT",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Ab 31.08.2026",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "34.200 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "190 kW (258 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "6,3 l/100km",
+      "group": "envkv"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "144 g/km",
+      "group": "envkv"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": "6,3 l/100km (kombiniert)",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "07/2022",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "07/2027",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Selbstlenkende Systeme, Hinten, Vorne, Kamera",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "portimaoblau metallic (C31)",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Blau Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Alcantara, Schwarz",
+      "group": "vehicle"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.600 kg",
+      "group": "vehicle"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg",
+      "group": "vehicle"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.670 kg",
+      "group": "vehicle"
+    },
+    "lastMaintenanceDate": {
+      "label": "Letzte Wartung (Datum)",
+      "value": "07/2024",
+      "group": "vehicle"
+    },
+    "lastMaintenanceMileage": {
+      "label": "Letzte Wartung (km)",
+      "value": "14.554 km",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "59 l",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 34200,
+    "powerKw": 190,
+    "powerHp": 258,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2022-07",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1670,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": 144,
+    "consumptionL100km": 6.3,
+    "distanceFromHomeKm": 125
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Anhängerkupplung schwenkbar",
+    "Apple CarPlay",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Innenspiegel autom. abblendend",
+    "Inspektion neu",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Navigationssystem",
+    "Nebelscheinwerfer",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Servolenkung",
+    "Sitzheizung",
+    "Skisack",
+    "Sommerreifen",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/58/58814439-43a5-4e03-81d6-dd176a57fbcd"
+  ],
+  "dealer": {
+    "name": "KORDICK Automobile Vertriebs GmbH",
+    "type": "Händler",
+    "street": "Hauptstraße 1",
+    "city": "DE-93497 Willmering bei Cham",
+    "country": "DE",
+    "phone": "+49 (0)9971 200100",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=465734",
+    "location": {
+      "lat": 49.2446117,
+      "lon": 12.6703942
+    },
+    "openingHours": [
+      {
+        "time": "09:00 Uhr - 17:00 Uhr",
+        "day": "Mo"
+      },
+      {
+        "time": "09:00 Uhr - 17:00 Uhr",
+        "day": "Di"
+      },
+      {
+        "time": "09:00 Uhr - 12:00 Uhr",
+        "day": "Mi"
+      },
+      {
+        "time": "09:00 Uhr - 17:00 Uhr",
+        "day": "Do"
+      },
+      {
+        "time": "09:00 Uhr - 17:00 Uhr",
+        "day": "Fr"
+      },
+      {
+        "time": "09:00 Uhr - 12:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 4.8,
+      "count": 123,
+      "recommendationRate": 100
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=40431129186720",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 6580,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 26320,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 348.8,
+        "finalInstallment": 10857,
+        "totalInterest": 5116.21,
+        "totalAmount": 31436.21,
+        "localized": {
+          "downPayment": "6.580,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "26.320,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "349 €",
+          "finalInstallment": "10.857,00 €",
+          "totalInterest": "5.116,21 €",
+          "totalAmount": "31.436,21 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 39
+}
