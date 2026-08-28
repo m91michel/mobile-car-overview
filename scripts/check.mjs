@@ -10,6 +10,8 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
+import { HOME } from './geo.mjs';
+
 const INDEX_FILE = resolve('data/cars.json');
 const OUT_DIR = resolve('data/listings');
 
@@ -34,6 +36,50 @@ const fact = (car, tag) => car.facts?.[tag]?.value ?? null;
 const label = (car) => `${car.id} ${car.shortTitle ?? ''} ${car.price?.localized ?? ''}`.trim();
 
 console.log(`Checking ${cars.length} car(s).\n`);
+
+// --- reference numbers ------------------------------------------------------
+// These are quoted by a human ("what about #7?"), so a duplicate or a silently
+// renumbered car is worse than a missing one.
+console.log('== reference numbers ==');
+const missingRef = cars.filter((car) => typeof car.ref !== 'number');
+const seenRef = new Map();
+for (const car of cars) {
+  if (typeof car.ref !== 'number') continue;
+  (seenRef.get(car.ref) ?? seenRef.set(car.ref, []).get(car.ref)).push(car.id);
+}
+const collisions = [...seenRef].filter(([, ids]) => ids.length > 1);
+
+if (missingRef.length) {
+  console.log(`  ${missingRef.length} car(s) without a number - run pnpm renormalize:`);
+  for (const car of missingRef) console.log(`      ${car.id}`);
+}
+for (const [ref, ids] of collisions) {
+  console.log(`  COLLISION #${ref} used by ${ids.length} cars: ${ids.join(', ')}`);
+}
+
+if (existsSync(resolve('data/refs.json'))) {
+  const registry = JSON.parse(readFileSync(resolve('data/refs.json'), 'utf8'));
+  const assigned = Object.keys(registry.refs ?? {}).length;
+  // Any car whose stored number disagrees with the registry has been renumbered.
+  const drifted = cars.filter(
+    (car) => registry.refs?.[car.id] && registry.refs[car.id] !== car.ref,
+  );
+  for (const car of drifted) {
+    console.log(
+      `  DRIFT ${car.id}: file says #${car.ref}, registry says #${registry.refs[car.id]}`,
+    );
+  }
+  if (!missingRef.length && !collisions.length && !drifted.length) {
+    const numbers = cars.map((car) => car.ref).sort((a, b) => a - b);
+    console.log(
+      `  ok: ${cars.length} numbered, #${numbers[0]}..#${numbers.at(-1)}, ` +
+        `${assigned} reserved overall (gaps are sold cars).`,
+    );
+  }
+} else {
+  console.log('  no data/refs.json yet - run pnpm renormalize to assign numbers.');
+}
+
 
 // --- duplicates -------------------------------------------------------------
 // Ranked by how much they actually prove. A dealer reusing stock photography is
@@ -130,6 +176,40 @@ if (stockPhotos.length) {
     `\n  (${stockPhotos.length} pair(s) share photos but differ in mileage/registration -` +
       ' dealer stock photography, not duplicates.)',
   );
+}
+
+// --- seller location --------------------------------------------------------
+// You have to drive to the car, so a missing location is a blocker, not a nicety.
+console.log('\n== seller location ==');
+const locationFields = {
+  name: (car) => car.dealer?.name,
+  city: (car) => car.dealer?.city,
+  coordinates: (car) => car.dealer?.location,
+  rating: (car) => car.dealer?.rating?.score,
+  phone: (car) => car.dealer?.phone,
+  distance: (car) => car.derived?.distanceFromHomeKm,
+};
+for (const [field, read] of Object.entries(locationFields)) {
+  const missing = cars.filter((car) => read(car) == null);
+  const status = missing.length
+    ? `MISSING on ${missing.length}: ${missing.map((c) => `#${c.ref ?? c.id}`).join(', ')}`
+    : 'complete';
+  console.log(`  ${field.padEnd(12)} ${status}`);
+}
+
+const withDistance = cars
+  .filter((car) => car.derived?.distanceFromHomeKm != null)
+  .sort((a, b) => a.derived.distanceFromHomeKm - b.derived.distanceFromHomeKm);
+if (withDistance.length) {
+  const near = withDistance[0];
+  const far = withDistance.at(-1);
+  console.log(
+    `  straight-line km from ${HOME.label}: ` +
+      `nearest #${near.ref} ${near.dealer.city} (${near.derived.distanceFromHomeKm}), ` +
+      `farthest #${far.ref} ${far.dealer.city} (${far.derived.distanceFromHomeKm})`,
+  );
+  const within = (limit) => withDistance.filter((c) => c.derived.distanceFromHomeKm <= limit).length;
+  console.log(`  reachable: ${within(100)} within 100km, ${within(200)} within 200km`);
 }
 
 // --- normalization ----------------------------------------------------------

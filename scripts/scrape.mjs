@@ -24,6 +24,7 @@ import { ensureChrome, PORT } from './chrome.mjs';
 import { openPage } from './cdp.mjs';
 import { parseListingHtml, LISTING_READY_PROBE } from './extract.mjs';
 import { readParkplatz } from './parkplatz.mjs';
+import { loadRefs, saveRefs, assignRef } from './refs.mjs';
 
 const OUT_DIR = resolve('data/listings');
 const INDEX_FILE = resolve('data/cars.json');
@@ -224,6 +225,8 @@ if (!ids.length) {
 
 mkdirSync(OUT_DIR, { recursive: true });
 
+const refs = loadRefs();
+
 const workerCount = Math.min(options.concurrency, ids.length);
 console.log(
   `Fetching ${ids.length} listing(s)` +
@@ -242,10 +245,11 @@ async function worker() {
       const id = queue.shift();
       try {
         const car = await fetchListing(page, id, options);
+        car.ref = assignRef(refs, car.id);
         writeFileSync(resolve(OUT_DIR, `${car.id}.json`), JSON.stringify(car, null, 2));
         cars.push(car);
         console.log(
-          `  [${++done}/${ids.length}] ${id} ${car.shortTitle} - ${car.price.localized ?? 'n/a'}`,
+          `  [${++done}/${ids.length}] #${car.ref} ${id} ${car.shortTitle} - ${car.price.localized ?? 'n/a'}`,
         );
       } catch (error) {
         if (/no longer available/.test(error.message)) unavailable[id] = new Date().toISOString();
@@ -264,6 +268,8 @@ await Promise.all(Array.from({ length: workerCount }, worker));
 // Merge, so fetching one car never drops the rest of the comparison.
 const merged = new Map(index.map((car) => [car.id, car]));
 for (const car of cars) merged.set(car.id, car);
+
+saveRefs(refs);
 
 // A car we just fetched is plainly not sold any more.
 for (const car of cars) delete unavailable[car.id];

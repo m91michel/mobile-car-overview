@@ -141,6 +141,58 @@ Vite + React in `viewer/`, started with `pnpm viewer`.
   (`?rule=mo-240`, `mo-360`, `mo-1024`, `mo-1600`), which is why `images[]` is
   stored without a size. Nothing is downloaded.
 
+## Reference numbers
+
+Every car carries a short internal number (`car.ref`) so a human can say "#7"
+instead of quoting `462145366`. The viewer prefixes it to every car label.
+
+The registry lives in `data/refs.json`:
+
+```json
+{ "nextRef": 25, "refs": { "462145366": 1, "459175992": 2 } }
+```
+
+Three properties make the number safe to quote, and all three are deliberate:
+
+- **Assigned once, on first sight** — `pnpm scrape` numbers each car as it is
+  fetched, `pnpm renormalize` backfills anything already on disk.
+- **Never changed.** Adding or removing cars must not shift existing numbers, so
+  the registry is the authority and is kept in its own file: regenerating
+  `data/cars.json` cannot lose it.
+- **Never reused.** A sold car keeps its number forever, so **gaps in the
+  sequence are normal** — they are sold cars, not bugs.
+
+`pnpm check` fails loudly on a missing number, a collision, or drift between a
+car file and the registry, because a silently renumbered car is worse than an
+unnumbered one. Do not "tidy up" the gaps: renumbering invalidates every note
+and screenshot that referred to the old numbers.
+
+## Seller location and distance
+
+The listing payload carries the seller's name, address, phone, rating **and
+coordinates**, so `car.dealer` is populated for every car and no geocoding
+service is needed. Verified across a real 24-car set: name, city, coordinates
+and rating complete on all 24; one listing omitted a phone number.
+
+Note the field is `car.dealer`, not `car.contact` — `contact` is mobile.de's own
+name for it in the raw payload and does not survive normalization.
+
+`car.derived.distanceFromHomeKm` is the straight-line distance from home to the
+seller. Home defaults to Fürth and is overridable:
+
+```bash
+HOME_LOCATION="48.1351,11.5820" HOME_LABEL="München" pnpm renormalize
+```
+
+It is deliberately great-circle distance: no API key, no network call, and for
+triaging two dozen cars across Germany it produces the same ranking a routing
+service would. **Do not label it a driving distance** — real routes run 20-30%
+longer. The viewer therefore calls the row "Entfernung (Luftlinie)".
+
+`pnpm check` treats a missing location as a blocker rather than a nicety, since
+you have to physically drive to the car, and reports how many are within 100 and
+200 km.
+
 ## Data quality
 
 ```bash

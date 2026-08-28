@@ -7,6 +7,8 @@
 // is a far better source than scraping the rendered DOM, which splits the same
 // data across tabs and lazy sections.
 
+import { distanceFromHomeKm } from './geo.mjs';
+
 /** Concatenate the RSC flight chunks embedded in the page HTML. */
 export function readFlightPayload(html) {
   const chunks = [];
@@ -113,7 +115,7 @@ export function normalizeFacts(attributes = []) {
 }
 
 /** Numeric views of the facts worth sorting, diffing or charting on. */
-export function deriveNumbers(facts) {
+export function deriveNumbers(facts, sellerLatLong = null) {
   const get = (tag) => facts[tag]?.value ?? null;
   const power = get('power') ?? '';
   const registration = (get('firstRegistration') ?? '').match(/(\d{2})\/(\d{4})/);
@@ -131,6 +133,9 @@ export function deriveNumbers(facts) {
     fuelTankLitres: toNumber(get('fuelTankVolume')),
     co2GramsPerKm: toNumber(get('envkv.co2Emissions')),
     consumptionL100km: toNumber(get('envkv.energyConsumption')),
+    // Straight-line km from HOME to the seller -- see geo.mjs. Null when the
+    // listing carries no coordinates.
+    distanceFromHomeKm: distanceFromHomeKm(sellerLatLong),
   };
 }
 
@@ -177,7 +182,7 @@ export function normalize(listing, sourceUrl) {
     // Keyed by mobile.de's own tag (mileage, power, transmission, ...) so the
     // viewer can lay out hard facts and features in a single table.
     facts,
-    derived: deriveNumbers(facts),
+    derived: deriveNumbers(facts, contact.latLong),
     features: (listing.features ?? []).map(clean),
     highlights: listing.highlights ?? [],
 

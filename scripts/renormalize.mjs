@@ -10,6 +10,7 @@ import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 import { normalizeFacts, deriveNumbers } from './extract.mjs';
+import { loadRefs, saveRefs, assignRef } from './refs.mjs';
 
 const OUT_DIR = resolve('data/listings');
 const INDEX_FILE = resolve('data/cars.json');
@@ -20,6 +21,16 @@ if (!existsSync(OUT_DIR)) {
 }
 
 const files = readdirSync(OUT_DIR).filter((f) => f.endsWith('.json'));
+const refs = loadRefs();
+
+// Number in the index's existing order first, so the sequence matches the order
+// the cars were already listed in rather than the filesystem's.
+if (existsSync(INDEX_FILE)) {
+  for (const car of JSON.parse(readFileSync(INDEX_FILE, 'utf8')).cars ?? []) {
+    assignRef(refs, car.id);
+  }
+}
+
 const cars = [];
 let changed = 0;
 
@@ -35,10 +46,11 @@ for (const file of files) {
     value: fact.values ?? fact.value,
   }));
 
-  const before = JSON.stringify({ facts: car.facts, derived: car.derived });
+  const before = JSON.stringify({ facts: car.facts, derived: car.derived, ref: car.ref });
   car.facts = normalizeFacts(attributes);
-  car.derived = deriveNumbers(car.facts);
-  const after = JSON.stringify({ facts: car.facts, derived: car.derived });
+  car.derived = deriveNumbers(car.facts, car.dealer?.location);
+  car.ref = assignRef(refs, car.id);
+  const after = JSON.stringify({ facts: car.facts, derived: car.derived, ref: car.ref });
 
   if (before !== after) {
     changed++;
@@ -63,4 +75,7 @@ writeFileSync(
   ),
 );
 
+saveRefs(refs);
+
 console.log(`Renormalized ${files.length} file(s); ${changed} changed.`);
+console.log(`Reference numbers: #1..#${refs.nextRef - 1} (gaps are sold cars).`);
