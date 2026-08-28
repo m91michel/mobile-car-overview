@@ -1,0 +1,362 @@
+{
+  "id": "454917686",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-m-sportpaket-acc-hifi-kamera-ahk-reutlingen/454917686.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=454917686&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T12:49:32.950Z",
+  "title": "BMW 318i M Sportpaket/ACC/HiFi/Kamera/AHK",
+  "shortTitle": "BMW 318",
+  "subTitle": "i M Sportpaket/ACC/HiFi/Kamera/AHK",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "B00114067009",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 33890,
+    "net": 28478.99,
+    "currency": "EUR",
+    "localized": "33.890 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 59,
+    "thresholds": [
+      "24.900 €",
+      "32.400 €",
+      "34.900 €",
+      "38.800 €",
+      "41.700 €",
+      "46.300 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "M Sportpaket/ACC/HiFi/Kamera/AHK",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "B00114067009",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "28.600 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "05/2024",
+      "group": "vehicle"
+    },
+    "constructionYear": {
+      "label": "Baujahr",
+      "value": "2024",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Dravitgrau metallic",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Grau Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Teilleder, Schwarz",
+      "group": "vehicle"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.300 kg",
+      "group": "vehicle"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg",
+      "group": "vehicle"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.650 kg",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "59 l",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 28600,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2024-05",
+    "constructionYear": 2024,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1650,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 167
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Android Auto",
+    "Anhängerkupplung schwenkbar",
+    "Apple CarPlay",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Blendfreies Fernlicht",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Sitzeinstellung",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Head-Up Display",
+    "Heckantrieb",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Kurvenlicht",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "Winterreifen",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/f4/f4c11b24-4c65-4992-8ce6-9a42df6de794",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c15f166-fb7f-4626-b28b-73361a30ae8c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d5/d538cdac-18b4-408f-ac06-3f4c7878a262",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a6/a6558591-ce28-4aa6-8fb1-edd580f177dd",
+    "https://img.classistatic.de/api/v1/mo-prod/images/38/385f9523-0f04-4010-bdc5-718a05e6bc13",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8f/8f9d2f32-f240-4252-af05-7bcb9661914f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bb/bbb4242e-b442-4973-b6fe-e4a6840e9e42",
+    "https://img.classistatic.de/api/v1/mo-prod/images/81/814f8402-86b1-4f67-b62d-f8cb030b531e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a0/a0ab7d90-cb32-4068-bbe2-cf684209b824",
+    "https://img.classistatic.de/api/v1/mo-prod/images/95/95483b53-e22d-4132-8be0-bc77d4d73624",
+    "https://img.classistatic.de/api/v1/mo-prod/images/02/02286952-8094-41b9-80f8-6a6d193dd7f3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2e/2e428323-d5f6-4a7d-ae56-a1fc62b3a258",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c2/c2747454-e3e5-496d-ae49-9281252d36f6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a7/a7efaaf7-506f-4441-8e9c-8875752c0f73",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ef5aa1f-a5ff-44d2-aef3-59663cf97bb4"
+  ],
+  "dealer": {
+    "name": "Hermann Menton GmbH & Co KG",
+    "type": "Händler",
+    "street": "Am Heilbrunnen 145",
+    "city": "DE-72766 Reutlingen",
+    "country": "DE",
+    "phone": "+49 (0)7121 1480418",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=461442",
+    "location": {
+      "lat": 48.5136744,
+      "lon": 9.231258100000002
+    },
+    "openingHours": [
+      {
+        "time": "08:00 Uhr - 18:30 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "09:00 Uhr - 13:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 4.3,
+      "count": 318,
+      "recommendationRate": 100
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=454917686",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 6778,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 27112,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 359.3,
+        "finalInstallment": 11183.7,
+        "totalInterest": 5270.16,
+        "totalAmount": 32382.16,
+        "localized": {
+          "downPayment": "6.778,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "27.112,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "360 €",
+          "finalInstallment": "11.183,70 €",
+          "totalInterest": "5.270,16 €",
+          "totalAmount": "32.382,16 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 35
+}
