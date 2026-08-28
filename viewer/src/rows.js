@@ -161,3 +161,22 @@ export function rowDiffers(row, cars) {
   const values = cars.map((car) => row.value(car) ?? '');
   return values.some((v) => v !== values[0]);
 }
+
+/**
+ * The visible comparison as CSV — same cars, same rows, same order as on
+ * screen. Features become ja/nein rather than the table's ✓, since the file
+ * is meant to be read by something other than a person.
+ */
+export function toCsv(rows, cars) {
+  const cell = (value) => `"${String(value ?? '').replace(/"/g, '""')}"`;
+  const header = ['Merkmal', ...cars.map((car) => `${carRef(car)} ${carLabel(car)}`.trim())];
+  const body = rows.map((row) => [
+    row.label,
+    ...cars.map((car) => {
+      const value = row.value(car);
+      return row.kind === 'feature' ? (value ? 'ja' : 'nein') : (value ?? '');
+    }),
+  ]);
+  // Leading BOM so Excel reads the umlauts; invisible to everything else.
+  return `\ufeff${[header, ...body].map((line) => line.map(cell).join(',')).join('\r\n')}`;
+}

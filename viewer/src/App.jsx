@@ -1,6 +1,16 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useLocalStorage } from 'usehooks-ts';
-import { SORTS, buildRows, carLabel, carRef, carSubline, photo, rowDiffers, sortCars } from './rows.js';
+import {
+  SORTS,
+  buildRows,
+  carLabel,
+  carRef,
+  carSubline,
+  photo,
+  rowDiffers,
+  sortCars,
+  toCsv,
+} from './rows.js';
 
 const key = (name) => `car-compare/${name}`;
 
@@ -117,6 +127,16 @@ export default function App() {
     setOrder(keys);
   };
 
+  const exportCsv = () => {
+    const blob = new Blob([toCsv(visibleRows, shown)], { type: 'text/csv;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `fahrzeugvergleich-${new Date().toISOString().slice(0, 10)}.csv`;
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
   const pinRow = (rowKey) =>
     setOrder([rowKey, ...orderedRows.map((r) => r.key).filter((k) => k !== rowKey)]);
 
@@ -154,6 +174,9 @@ export default function App() {
           />
           Nur Ausstattung
         </label>
+        <button onClick={exportCsv} disabled={shown.length === 0} title="Sichtbaren Vergleich als CSV">
+          CSV
+        </button>
         <button onClick={load}>Neu laden</button>
       </header>
 
