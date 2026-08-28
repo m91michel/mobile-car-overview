@@ -98,15 +98,22 @@ const MILEAGE_TARGET = 70000; // "Zielregion: unter ca. 60.000-70.000 km"
 const MILEAGE_LIMIT = 100000; // "deutlich über 100.000 km kommen nicht infrage"
 const AGE_TARGET_YEARS = 4; // Zielbild: ca. 2022-2024
 const AGE_LIMIT_YEARS = 8;
+// The price scale starts at 20.000 rather than zero: nothing in this field is
+// cheaper, and a bar from zero would squeeze the whole comparison into its
+// last third.
+const PRICE_FLOOR = 20000;
+const PRICE_TARGET = 30000; // "Preis möglichst um 30.000 EUR"
+const PRICE_LIMIT = 35000; // beyond this the car has to be near the Zielbild
 
-const meter = (value, target, limit) => {
+const meter = (value, { target, max, min = 0 }) => {
   if (typeof value !== 'number' || !Number.isFinite(value)) return null;
-  return {
-    fill: Math.min(1, Math.max(0, value / limit)),
-    target: target / limit,
-    over: value > target,
-  };
+  const at = (n) => Math.min(1, Math.max(0, (n - min) / (max - min)));
+  // Never a truly empty bar: a value below the scale's floor is a very good
+  // one, and should not read as a missing figure.
+  return { fill: Math.max(0.03, at(value)), target: at(target), over: value > target };
 };
+
+const euros = (n) => `${n.toLocaleString('de-DE')} €`;
 
 /** Years since first registration, from derived's "2024-06". */
 const ageYears = (car) => {
@@ -116,15 +123,23 @@ const ageYears = (car) => {
   return (Date.now() - from.getTime()) / (365.25 * 24 * 3600 * 1000);
 };
 
-function meterFor(fact, car) {
-  if (fact === 'mileage') {
-    const bar = meter(car.derived?.mileageKm, MILEAGE_TARGET, MILEAGE_LIMIT);
-    return bar && { ...bar, hint: `Ziel bis ${MILEAGE_TARGET.toLocaleString('de-DE')} km` };
+function meterFor(row, car) {
+  if (row.key === 'fact:mileage') {
+    const bar = meter(car.derived?.mileageKm, { target: MILEAGE_TARGET, max: MILEAGE_LIMIT });
+    return bar && { ...bar, hint: `Ziel bis ${euros(MILEAGE_TARGET).replace(' €', ' km')}` };
   }
-  if (fact === 'firstRegistration') {
+  if (row.key === 'fact:firstRegistration') {
     const years = ageYears(car);
-    const bar = meter(years, AGE_TARGET_YEARS, AGE_LIMIT_YEARS);
+    const bar = meter(years, { target: AGE_TARGET_YEARS, max: AGE_LIMIT_YEARS });
     return bar && { ...bar, hint: `${years.toFixed(1)} Jahre, Ziel bis ${AGE_TARGET_YEARS}` };
+  }
+  // Both price rows share one scale, so the retrofit cost is visible as the
+  // distance between the two bars.
+  if (row.key === 'price' || row.key === 'assessment:effectivePrice') {
+    const gross =
+      row.key === 'price' ? car.price?.gross : car.assessment?.effectivePrice ?? car.price?.gross;
+    const bar = meter(gross, { target: PRICE_TARGET, max: PRICE_LIMIT, min: PRICE_FLOOR });
+    return bar && { ...bar, hint: `Ziel bis ${euros(PRICE_TARGET)} (Skala ab ${euros(PRICE_FLOOR)})` };
   }
   return null;
 }
@@ -161,6 +176,6 @@ export function cellFor(row, car) {
     mark: tone === 'good' ? '✅' : tone === 'bad' ? '❌' : '',
     text: raw,
     tone,
-    meter: meterFor(fact, car),
+    meter: meterFor(row, car),
   };
 }
