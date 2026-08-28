@@ -193,10 +193,10 @@ function PricingSettings({ pricing, onChange, onReset, onClose }) {
             checked={pricing.lciMalusEnabled}
             onChange={(e) => onChange({ lciMalusEnabled: e.target.checked })}
           />
-          Malus für Fahrzeuge ohne Facelift (vor LCI)
+          Negativpunkte für Fahrzeuge ohne Facelift (vor LCI)
         </label>
         <label className="field">
-          <span className="muted">Facelift-Malus (€)</span>
+          <span className="muted">Facelift-Negativpunkte (€)</span>
           <input
             type="number"
             min="0"

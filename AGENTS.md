@@ -371,20 +371,21 @@ with garage-queen mileage) from producing an outsized bonus the linear
 km/year model was never meant to price; that model breaks down at the
 extremes, where warranty and tech age matter more than kilometers.
 
-### Facelift malus and per-browser pricing settings
+### Facelift negative points and per-browser pricing settings
 
 The viewer re-derives the mileage adjustment client-side and adds a second,
-optional one: a flat malus for a car the facelift research
-(`car.derived.facelift`) actually places `pre-lci` — never for `unknown`
-(genuinely undecidable registration months) or `other-generation`, where a
-malus would be a guess rather than a judgement. It adds to the effective price
-the same direction the mileage deviation does, not a discount off it: a
-pre-LCI car is worth less at the same asking price, so it takes more money to
-reach an equivalent LCI car.
+optional one: flat negative points ("Negativpunkte" in the settings dialog —
+"Malus" reads as a speaking error in German, not a real word there) for a car
+the facelift research (`car.derived.facelift`) actually places `pre-lci` —
+never for `unknown` (genuinely undecidable registration months) or
+`other-generation`, where a penalty would be a guess rather than a judgement.
+It adds to the effective price the same direction the mileage deviation does,
+not a discount off it: a pre-LCI car is worth less at the same asking price,
+so it takes more money to reach an equivalent LCI car.
 
-Both the mileage reference/rate and the facelift malus are editable from the
-**Preisanpassung** dialog (⚙ menu) and persisted in `localStorage` under
-`car-compare/pricing` — `viewer/src/pricing.js` (`applyPricingSettings`)
+Both the mileage reference/rate and the facelift negative points are editable
+from the **Preisanpassung** dialog (⚙ menu) and persisted in `localStorage`
+under `car-compare/pricing` — `viewer/src/pricing.js` (`applyPricingSettings`)
 overrides the `car.assessment` the server baked into `data/cars.json` with
 whatever this browser's settings compute, so two people comparing the same
 cars can each weigh mileage or the facelift gap differently without touching
@@ -392,11 +393,12 @@ cars can each weigh mileage or the facelift gap differently without touching
 `car-compare/` prefix, `pricing` rides along in the existing JSON export/import
 with no extra code.
 
-The breakdown (each retrofit item, the mileage deviation, the facelift malus)
-is not its own row — three components would mean three mostly-empty rows. It
-lives in a hover tooltip on the Effektivpreis cell instead (the ⓘ icon,
-`effectivePriceBreakdown` in `viewer/src/wishlist.js`), and that row carries
-the same price meter bar as the plain `Preis` row above it.
+The breakdown (each retrofit item, the mileage deviation, the facelift
+negative points) is not its own row — three components would mean three
+mostly-empty rows. It lives in a hover tooltip on the Effektivpreis cell
+instead (the ⓘ icon, `effectivePriceBreakdown` in `viewer/src/wishlist.js`),
+and that row carries the same price meter bar as the plain `Preis` row above
+it.
 
 ## Data quality
 
