@@ -250,7 +250,22 @@ instead of crying duplicate.
 
 ## Conventions
 
-- Node ESM (`"type": "module"`), no build step, dependency-free at runtime.
+- Node ESM (`"type": "module"`). The scraper stays dependency-free and needs no
+  build step; the viewer is the only part with dependencies.
 - Fetching and comparing stay decoupled: the viewer reads JSON only and never
   talks to mobile.de.
 - Be polite: fetch sequentially, no parallel hammering.
+
+### Git
+
+- **Commit straight to `main`.** This is a small personal project with no remote
+  and no review flow, so feature branches only fragment the work — the more so
+  because a second session may be committing to `main` at the same time. No need
+  to ask, and no need to branch first.
+- **Do not commit another session's in-flight changes.** More than one Claude
+  session works in this repo, so `git status` regularly shows files you did not
+  touch. Leave those out of your commit rather than attributing someone else's
+  half-finished work, and check whether they have already committed your shared
+  files before editing them again.
+- Keep regenerated `data/` artifacts in their own commit, so a logic change stays
+  readable instead of being buried under two dozen JSON files.
