@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T10:21:07.746Z",
+  "updatedAt": "2026-08-28T11:02:51.300Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -20,7 +20,8 @@
     "461243027": "2026-08-28T06:30:00.000Z",
     "461427786": "2026-08-28T06:30:00.000Z",
     "461805828": "2026-08-28T06:30:00.000Z",
-    "42077822262016": "2026-08-28T06:30:00.000Z"
+    "42077822262016": "2026-08-28T06:30:00.000Z",
+    "40935871674400": "2026-08-28T10:48:43.856Z"
   },
   "cars": [
     {
@@ -398,6 +399,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 31890
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:48:43.856Z"
       }
     },
     {
@@ -753,6 +758,10 @@
         ],
         "retrofitCost": 1600,
         "effectivePrice": 30495
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T11:02:51.300Z"
       }
     },
     {
@@ -1113,6 +1122,10 @@
         ],
         "retrofitCost": 1600,
         "effectivePrice": 30590
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -1474,6 +1487,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 32580
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -1823,6 +1840,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 28790
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T11:02:51.300Z"
       }
     },
     {
@@ -2174,6 +2195,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 30890
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:48:43.856Z"
       }
     },
     {
@@ -2913,6 +2938,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 28790
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -3240,6 +3269,10 @@
         ],
         "retrofitCost": 1600,
         "effectivePrice": 33400
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -3614,6 +3647,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 28970
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -3970,6 +4007,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 29900
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -4300,6 +4341,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 28680
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -4643,6 +4688,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 30660
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -5053,6 +5102,10 @@
         ],
         "retrofitCost": 1600,
         "effectivePrice": 30590
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T11:02:51.300Z"
       }
     },
     {
@@ -6138,6 +6191,10 @@
         ],
         "retrofitCost": 1200,
         "effectivePrice": 31180
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -6469,6 +6526,10 @@
         ],
         "retrofitCost": 1600,
         "effectivePrice": 27395
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -6835,6 +6896,10 @@
         ],
         "retrofitCost": 2800,
         "effectivePrice": 30373
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -7553,6 +7618,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 25990
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -8212,6 +8281,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 23999
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:48:43.856Z"
       }
     },
     {
@@ -8575,6 +8648,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 18990
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -8950,6 +9027,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 27480
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -9361,6 +9442,10 @@
         ],
         "retrofitCost": 1600,
         "effectivePrice": 29250
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:48:43.856Z"
       }
     },
     {
@@ -9722,6 +9807,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 28490
+      },
+      "availability": {
+        "status": "sold",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -10126,6 +10215,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 28850
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T10:52:29.801Z"
       }
     },
     {
@@ -10502,6 +10595,10 @@
         "retrofit": [],
         "retrofitCost": 0,
         "effectivePrice": 29835
+      },
+      "availability": {
+        "status": "available",
+        "checkedAt": "2026-08-28T11:02:51.300Z"
       }
     }
   ]

@@ -356,5 +356,9 @@
     ],
     "retrofitCost": 1600,
     "effectivePrice": 30590
+  },
+  "availability": {
+    "status": "available",
+    "checkedAt": "2026-08-28T10:51:56.331Z"
   }
 }
