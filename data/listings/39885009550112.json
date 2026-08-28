@@ -1,0 +1,352 @@
+{
+  "id": "39885009550112",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-320-e-touring-m-sport-opf-shadow-line-ahk-wagenfeld-str%C3%B6hen/39885009550112.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=39885009550112&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T18:23:36.519Z",
+  "title": "BMW 320 e Touring, M Sport OPF, Shadow-Line, AHK",
+  "shortTitle": "BMW 320",
+  "subTitle": "e Touring, M Sport OPF, Shadow-Line, AHK",
+  "make": "BMW",
+  "model": "320",
+  "category": "EstateCar",
+  "isNew": true,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYJ"
+  },
+  "price": {
+    "gross": 29499,
+    "net": 24789.08,
+    "currency": "EUR",
+    "localized": "29.499 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 4,
+    "thresholds": [
+      "22.600 €",
+      "29.400 €",
+      "31.700 €",
+      "35.200 €",
+      "37.800 €",
+      "42.000 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G80",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "320 e M Sport",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "67.572 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "120 kW (163 PS)",
+      "group": "vehicle"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Hybrid (Benzin/Elektro)",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "-- l/100km",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "04/2023",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "04/2028",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "SAPHIRSCHWARZ",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Alcantara, Schwarz",
+      "group": "vehicle"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.500 kg",
+      "group": "vehicle"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg",
+      "group": "vehicle"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.900 kg",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "40 l",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 67572,
+    "powerKw": 120,
+    "powerHp": 163,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-04",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1900,
+    "fuelTankLitres": 40,
+    "co2GramsPerKm": null,
+    "consumptionL100km": 100,
+    "distanceFromHomeKm": 377,
+    "generation": "G80",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 04/2023, nach der Umstellung"
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Ambiente-Beleuchtung",
+    "Android Auto",
+    "Anhängerkupplung schwenkbar",
+    "Apple CarPlay",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Servolenkung",
+    "Sitzheizung",
+    "Skisack",
+    "Sommerreifen",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Tagfahrlicht",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/4f/4ffc6b54-2245-4e42-ac0c-d239136918bc",
+    "https://img.classistatic.de/api/v1/mo-prod/images/83/83c3beee-11b4-4a71-b0d4-e41d6048902f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a7/a722ae2b-7509-41bd-8261-0302716a1d2b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac93c016-4b8f-4b1e-8ffe-445e0dea252c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7a/7a323d93-41ea-44b6-bdef-d1a2d5d150ff",
+    "https://img.classistatic.de/api/v1/mo-prod/images/70/701f57e0-0558-4ecf-8826-9c56ac50f05e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e3/e364914b-aab2-4659-8e22-585151bf5316",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c3/c36311bd-c06e-4331-9c57-917de992c40b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/82/829c5036-c5f6-4f25-a9fd-e1c3097e0576",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0b/0be87b34-f557-46e8-a1e2-a12d7b5fbb17",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e7/e76dca38-23e9-4e50-a121-b21c2e2b0f67",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3c/3c50ce50-dcd3-4b67-b3d6-692f2ef10944",
+    "https://img.classistatic.de/api/v1/mo-prod/images/77/7721a94b-16be-438b-8e27-d17ef60effb8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9f/9f6c36b0-f0a9-4ddb-9dfe-1d98ec7bb0fb",
+    "https://img.classistatic.de/api/v1/mo-prod/images/47/471531bf-8047-4098-8268-d976c707b7c9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e6/e6cc58a5-303a-46c8-a10b-9ced433fe63d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bd/bd2465f4-dda9-41cd-874e-c41be61eba72",
+    "https://img.classistatic.de/api/v1/mo-prod/images/99/99ca5c32-85ed-4593-abb5-396607dd7e98"
+  ],
+  "dealer": {
+    "name": "Pivot GmbH",
+    "type": "Händler",
+    "street": "Pilotenstraße 1-5",
+    "city": "DE-49419 Wagenfeld-Ströhen",
+    "country": "DE",
+    "phone": "+49 (0)5774 9976050",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=454444",
+    "location": {
+      "lat": 52.53745,
+      "lon": 8.67409
+    },
+    "openingHours": [
+      {
+        "day": "Mo - Fr",
+        "time": "08:00 Uhr - 17:00 Uhr"
+      }
+    ],
+    "rating": {
+      "score": 5,
+      "count": 12,
+      "recommendationRate": 100
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=39885009550112",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 5899,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 23600,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 312.76,
+        "finalInstallment": 9734.67,
+        "totalInterest": 4587.44,
+        "totalAmount": 28187.44,
+        "localized": {
+          "downPayment": "5.899,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "23.600,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "313 €",
+          "finalInstallment": "9.734,67 €",
+          "totalInterest": "4.587,44 €",
+          "totalAmount": "28.187,44 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 42,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 29499
+  }
+}
