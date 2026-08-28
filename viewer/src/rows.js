@@ -251,7 +251,28 @@ export function buildRows(cars) {
 
   const features = new Set();
   for (const car of cars) for (const feature of car.features ?? []) features.add(feature);
-  for (const feature of [...features].sort((a, b) => a.localeCompare(b, 'de'))) {
+
+  // Swivelling or fixed is a detail of one wish, not two of them, so the two
+  // listing flags collapse into a single row that says which kind it is.
+  const TOWBAR = ['Anhängerkupplung schwenkbar', 'Anhängerkupplung fest'];
+  const names = [...features].filter((name) => !TOWBAR.includes(name));
+  if (TOWBAR.some((name) => features.has(name))) names.push('Anhängerkupplung');
+
+  for (const feature of names.sort((a, b) => a.localeCompare(b, 'de'))) {
+    if (feature === 'Anhängerkupplung') {
+      rows.push({
+        key: 'wish:towbar',
+        label: 'Anhängerkupplung',
+        kind: 'wish',
+        value: (car) => {
+          const own = car.features ?? [];
+          if (own.includes(TOWBAR[0])) return 'Schwenkbar';
+          if (own.includes(TOWBAR[1])) return 'Fest';
+          return null;
+        },
+      });
+      continue;
+    }
     rows.push({
       key: `feature:${feature}`,
       label: feature,

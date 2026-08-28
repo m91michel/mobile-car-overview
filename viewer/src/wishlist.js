@@ -8,8 +8,6 @@
  */
 const KEY_FEATURES = new Set([
   'Abstandstempomat', // ACC, kaum wirtschaftlich nachrüstbar
-  'Anhängerkupplung schwenkbar',
-  'Anhängerkupplung fest',
   'Apple CarPlay',
 ]);
 
@@ -176,6 +174,14 @@ function meterFor(row, car) {
 /** What one table cell shows: an optional mark, the text, and its tone. */
 export function cellFor(row, car) {
   const raw = row.value(car);
+
+  // A high-priority wish that carries a detail rather than a plain yes: the
+  // mark answers "has it", the text says which kind.
+  if (row.kind === 'wish') {
+    return raw
+      ? { mark: '✅', text: raw, tone: 'good' }
+      : { mark: '❌', text: '', tone: 'bad' };
+  }
 
   if (row.kind === 'feature') {
     const wanted = KEY_FEATURES.has(row.key.slice('feature:'.length));
