@@ -1,0 +1,397 @@
+{
+  "id": "39939637985408",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-touring-lc-prof-hud-led-rfk-ahk-st-go-17-detmold/39939637985408.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=39939637985408&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T09:48:08.965Z",
+  "title": "BMW 320i Touring LC-Prof HUD LED RFK AHK St+Go 17\"",
+  "shortTitle": "BMW 320",
+  "subTitle": "i Touring LC-Prof HUD LED RFK AHK St+Go 17\"",
+  "make": "BMW",
+  "model": "320",
+  "category": "EstateCar",
+  "sku": "8025995",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CVS"
+  },
+  "price": {
+    "gross": 28850,
+    "net": null,
+    "currency": "EUR",
+    "localized": "28.850 €",
+    "vatRate": null,
+    "vatNote": null,
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 92,
+    "thresholds": [
+      "20.700 €",
+      "26.900 €",
+      "29.000 €",
+      "32.300 €",
+      "34.600 €",
+      "38.500 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G81",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "8025995",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "68.900 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "135 kW (184 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "6,9 l/100km",
+      "group": "envkv"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "156 g/km",
+      "group": "envkv"
+    },
+    "envkv.co2Class": {
+      "label": "CO₂-Klasse",
+      "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "group": "envkv"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": "6,9 l/100km (kombiniert) · 9,5 l/100km (Innenstadt) · 6,9 l/100km (Stadtrand) · 5,9 l/100km (Landstraße) · 6,9 l/100km (Autobahn)",
+      "values": [
+        "6,9 l/100km (kombiniert)",
+        "9,5 l/100km (Innenstadt)",
+        "6,9 l/100km (Stadtrand)",
+        "5,9 l/100km (Landstraße)",
+        "6,9 l/100km (Autobahn)"
+      ],
+      "group": "envkv"
+    },
+    "envkv.consumptionCosts": {
+      "label": "Energiekosten bei 15.000 km Jahresfahrleistung",
+      "value": "1.805 €/Jahr",
+      "group": "envkv"
+    },
+    "envkv.fuel.price": {
+      "label": "Kraftstoffpreis",
+      "value": "1,74 €/l (Jahresdurchschnitt 2025)",
+      "group": "envkv"
+    },
+    "envkv.co2Costs": {
+      "label": "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)",
+      "value": "3.334 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 142 €/t) · 1.404 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t) · 5.148 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 220 €/t)",
+      "values": [
+        "3.334 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 142 €/t)",
+        "1.404 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t)",
+        "5.148 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 220 €/t)"
+      ],
+      "group": "envkv"
+    },
+    "envkv.tax": {
+      "label": "Kraftfahrzeugsteuer",
+      "value": "176 €/Jahr",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "08/2023",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Schwarz",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Stoff, Andere",
+      "group": "vehicle"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.600 kg",
+      "group": "vehicle"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 68900,
+    "powerKw": 135,
+    "powerHp": 184,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-08",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": 156,
+    "consumptionL100km": 6.9,
+    "distanceFromHomeKm": 315
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Ambiente-Beleuchtung",
+    "Anhängerkupplung schwenkbar",
+    "Apple CarPlay",
+    "Armlehne",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Sitzeinstellung",
+    "Elektr. Sitzeinstellung mit Memory-Funktion",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Geschwindigkeitsbegrenzer",
+    "Head-Up Display",
+    "Heckantrieb",
+    "Innenspiegel autom. abblendend",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notrufsystem",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "Zentralverriegelung"
+  ],
+  "highlights": [
+    "Navi"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/c5/c555d982-114c-4ec9-9897-7c1c90157002",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6c/6ccd1702-6fee-4fdf-b84a-7aaa26b65dc6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/20/203a2777-2b52-462d-ac75-88eefc147e48",
+    "https://img.classistatic.de/api/v1/mo-prod/images/60/60dbe65d-ed61-4fc6-89f9-75849e3093ee",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d1/d151bd91-08a5-4f2d-b885-60321cd1b727",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1b/1b8f4174-dadc-4c0f-8433-106c45b75db7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef9a0587-74e0-4302-96dd-3d900194da2e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca02c453-2d16-42e6-ad51-e4b77d786349",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f4/f4b4e3c4-07e2-495c-91c1-4ff802149831",
+    "https://img.classistatic.de/api/v1/mo-prod/images/de/de90f9f8-1fd3-4513-bd95-cdb1202bb69b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6d/6ddc5e7d-ed2a-4507-a83b-0eaa187f8c31",
+    "https://img.classistatic.de/api/v1/mo-prod/images/38/385bda03-7aac-425a-9029-bfcdc6af281b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c6/c6c0e44d-a166-4a4a-912f-6e48b2c65d23",
+    "https://img.classistatic.de/api/v1/mo-prod/images/58/586f0bee-3352-4130-a92e-7f5221eec423",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a7/a764f2aa-4cbe-42a5-ac10-2d2d39963e2b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3c/3c0a96e2-e69b-4410-8131-c16bd6929100",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a0/a09cc802-6100-404f-be49-574593385f7d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/db/dbea3893-6ad8-46ef-b90a-65430c456196"
+  ],
+  "dealer": {
+    "name": "WELLER Premium GmbH - BMW & MINI Vertragshändler",
+    "type": "Händler",
+    "street": "Windmeierweg 12",
+    "city": "DE-32758 Detmold",
+    "country": "DE",
+    "phone": "+49 (0)5231 4673070",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=454159",
+    "location": {
+      "lat": 51.9561706,
+      "lon": 8.8251724
+    },
+    "openingHours": [
+      {
+        "time": "08:30 Uhr - 19:00 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "09:00 Uhr - 14:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 4.1,
+      "count": 258,
+      "recommendationRate": 84
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=39939637985408",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 5770,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 23080,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 305.86,
+        "finalInstallment": 9520.5,
+        "totalInterest": 4486.4,
+        "totalAmount": 27566.4,
+        "localized": {
+          "downPayment": "5.770,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "23.080,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "306 €",
+          "finalInstallment": "9.520,50 €",
+          "totalInterest": "4.486,40 €",
+          "totalAmount": "27.566,40 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 28
+}
