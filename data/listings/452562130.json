@@ -350,7 +350,10 @@
     "fuelTankLitres": null,
     "co2GramsPerKm": null,
     "consumptionL100km": null,
-    "distanceFromHomeKm": 2
+    "distanceFromHomeKm": 2,
+    "generation": "F31",
+    "facelift": "other-generation",
+    "faceliftBasis": "F31 is the previous 3-series Touring, not a G20/G21"
   },
   "ref": 24,
   "assessment": {

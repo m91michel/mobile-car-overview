@@ -208,7 +208,10 @@
     "fuelTankLitres": 59,
     "co2GramsPerKm": null,
     "consumptionL100km": null,
-    "distanceFromHomeKm": 200
+    "distanceFromHomeKm": 200,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "first registered 03/2023, after the changeover"
   },
   "features": [
     "Abgedunkelte Scheiben",

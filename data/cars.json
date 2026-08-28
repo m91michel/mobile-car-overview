@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T13:11:14.163Z",
+  "updatedAt": "2026-08-28T13:15:53.703Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -238,7 +238,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 263
+        "distanceFromHomeKm": 263,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 06/2024, after the changeover"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -743,7 +746,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": 153,
         "consumptionL100km": 6.8,
-        "distanceFromHomeKm": 148
+        "distanceFromHomeKm": 148,
+        "generation": "G81",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 06/2025, after the changeover"
       },
       "ref": 2,
       "assessment": {
@@ -1107,7 +1113,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 199
+        "distanceFromHomeKm": 199,
+        "generation": null,
+        "facelift": "lci",
+        "faceliftBasis": "first registered 03/2023, after the changeover"
       },
       "ref": 3,
       "assessment": {
@@ -1478,7 +1487,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 167
+        "distanceFromHomeKm": 167,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 01/2025, after the changeover"
       },
       "ref": 4,
       "assessment": {
@@ -1831,7 +1843,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 208
+        "distanceFromHomeKm": 208,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 03/2024, after the changeover"
       },
       "ref": 5,
       "assessment": {
@@ -2186,7 +2201,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 208
+        "distanceFromHomeKm": 208,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 06/2024, after the changeover"
       },
       "ref": 6,
       "assessment": {
@@ -2553,7 +2571,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 240
+        "distanceFromHomeKm": 240,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 03/2024, after the changeover"
       },
       "ref": 7,
       "assessment": {
@@ -2929,7 +2950,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 263
+        "distanceFromHomeKm": 263,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 03/2023, after the changeover"
       },
       "ref": 8,
       "assessment": {
@@ -3254,7 +3278,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 426
+        "distanceFromHomeKm": 426,
+        "generation": null,
+        "facelift": "lci",
+        "faceliftBasis": "first registered 03/2025, after the changeover"
       },
       "ref": 9,
       "assessment": {
@@ -3638,7 +3665,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 263
+        "distanceFromHomeKm": 263,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 07/2024, after the changeover"
       },
       "ref": 10,
       "assessment": {
@@ -3998,7 +4028,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 203
+        "distanceFromHomeKm": 203,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 03/2023, after the changeover"
       },
       "ref": 11,
       "assessment": {
@@ -4332,7 +4365,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 134
+        "distanceFromHomeKm": 134,
+        "generation": "G81",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 06/2023, after the changeover"
       },
       "ref": 12,
       "assessment": {
@@ -4679,7 +4715,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 289
+        "distanceFromHomeKm": 289,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 12/2023, after the changeover"
       },
       "ref": 13,
       "assessment": {
@@ -5087,7 +5126,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": 154,
         "consumptionL100km": 6.8,
-        "distanceFromHomeKm": 423
+        "distanceFromHomeKm": 423,
+        "generation": "G81",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 07/2023, after the changeover"
       },
       "ref": 14,
       "assessment": {
@@ -5460,7 +5502,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 240
+        "distanceFromHomeKm": 240,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 02/2024, after the changeover"
       },
       "ref": 15,
       "assessment": {
@@ -5813,7 +5858,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 208
+        "distanceFromHomeKm": 208,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 04/2024, after the changeover"
       },
       "ref": 16,
       "assessment": {
@@ -6176,7 +6224,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 216
+        "distanceFromHomeKm": 216,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 07/2023, after the changeover"
       },
       "ref": 17,
       "assessment": {
@@ -6511,7 +6562,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 148
+        "distanceFromHomeKm": 148,
+        "generation": "G81",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 08/2023, after the changeover"
       },
       "ref": 18,
       "assessment": {
@@ -6876,7 +6930,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 168
+        "distanceFromHomeKm": 168,
+        "generation": "G21",
+        "facelift": "pre-lci",
+        "faceliftBasis": "first registered 01/2022, before the changeover"
       },
       "ref": 19,
       "assessment": {
@@ -7228,7 +7285,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 56
+        "distanceFromHomeKm": 56,
+        "generation": "G81",
+        "facelift": "unknown",
+        "faceliftBasis": "registered during the changeover; the data cannot decide"
       },
       "ref": 20,
       "assessment": {
@@ -7549,7 +7609,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": 145,
         "consumptionL100km": 6.5,
-        "distanceFromHomeKm": 20
+        "distanceFromHomeKm": 20,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 06/2024, after the changeover"
       },
       "ref": 22,
       "assessment": {
@@ -7887,7 +7950,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
         "consumptionL100km": 100,
-        "distanceFromHomeKm": 21
+        "distanceFromHomeKm": 21,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 02/2023, after the changeover"
       },
       "ref": 23,
       "assessment": {
@@ -8254,7 +8320,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 2
+        "distanceFromHomeKm": 2,
+        "generation": "F31",
+        "facelift": "other-generation",
+        "faceliftBasis": "F31 is the previous 3-series Touring, not a G20/G21"
       },
       "ref": 24,
       "assessment": {
@@ -8480,7 +8549,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 275
+        "distanceFromHomeKm": 275,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 02/2023, after the changeover"
       },
       "features": [
         "ABS",
@@ -8894,7 +8966,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": 159,
         "consumptionL100km": 7,
-        "distanceFromHomeKm": 327
+        "distanceFromHomeKm": 327,
+        "generation": "G81",
+        "facelift": "unknown",
+        "faceliftBasis": "registered during the changeover; the data cannot decide"
       },
       "features": [
         "ABS",
@@ -9268,7 +9343,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": 155,
         "consumptionL100km": 6.8,
-        "distanceFromHomeKm": 337
+        "distanceFromHomeKm": 337,
+        "generation": "G81",
+        "facelift": "pre-lci",
+        "faceliftBasis": "first registered 03/2021, before the changeover"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -9674,7 +9752,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": 156,
         "consumptionL100km": 6.9,
-        "distanceFromHomeKm": 315
+        "distanceFromHomeKm": 315,
+        "generation": "G81",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 08/2023, after the changeover"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -10046,7 +10127,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 200
+        "distanceFromHomeKm": 200,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 03/2023, after the changeover"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -10409,7 +10493,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": 153,
         "consumptionL100km": 6.8,
-        "distanceFromHomeKm": 148
+        "distanceFromHomeKm": 148,
+        "generation": "G81",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 10/2025, after the changeover"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -10750,7 +10837,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": 161,
         "consumptionL100km": 7.1,
-        "distanceFromHomeKm": 56
+        "distanceFromHomeKm": 56,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "the listing says LCI/facelift"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -11145,7 +11235,10 @@
         "fuelTankLitres": 58,
         "co2GramsPerKm": null,
         "consumptionL100km": 7,
-        "distanceFromHomeKm": 159
+        "distanceFromHomeKm": 159,
+        "generation": null,
+        "facelift": "lci",
+        "faceliftBasis": "first registered 09/2024, after the changeover"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -11512,7 +11605,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 167
+        "distanceFromHomeKm": 167,
+        "generation": null,
+        "facelift": "lci",
+        "faceliftBasis": "the listing says LCI/facelift"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -11876,7 +11972,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": 161,
         "consumptionL100km": 7.1,
-        "distanceFromHomeKm": 56
+        "distanceFromHomeKm": 56,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "the listing says LCI/facelift"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -12238,7 +12337,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 167
+        "distanceFromHomeKm": 167,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 05/2024, after the changeover"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -12599,7 +12701,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 412
+        "distanceFromHomeKm": 412,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "first registered 09/2025, after the changeover"
       },
       "features": [
         "ABS",
@@ -12932,7 +13037,10 @@
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 167
+        "distanceFromHomeKm": 167,
+        "generation": null,
+        "facelift": "lci",
+        "faceliftBasis": "the listing says LCI/facelift"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -13295,7 +13403,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
         "consumptionL100km": null,
-        "distanceFromHomeKm": 487
+        "distanceFromHomeKm": 487,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "the listing says LCI/facelift"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -13677,7 +13788,10 @@
         "fuelTankLitres": 59,
         "co2GramsPerKm": 144,
         "consumptionL100km": 6.3,
-        "distanceFromHomeKm": 125
+        "distanceFromHomeKm": 125,
+        "generation": "G21",
+        "facelift": "unknown",
+        "faceliftBasis": "registered during the changeover; the data cannot decide"
       },
       "features": [
         "Abgedunkelte Scheiben",

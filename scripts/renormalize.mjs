@@ -9,7 +9,7 @@
 import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-import { normalizeFacts, deriveNumbers } from './extract.mjs';
+import { normalizeFacts, deriveNumbers, deriveModel } from './extract.mjs';
 import { loadRefs, saveRefs, assignRef } from './refs.mjs';
 import { loadAssessments, applyAssessment } from './assessment.mjs';
 
@@ -60,7 +60,10 @@ for (const file of files) {
 
   const before = fingerprint();
   car.facts = normalizeFacts(attributes);
-  car.derived = deriveNumbers(car.facts, car.dealer?.location);
+  car.derived = {
+    ...deriveNumbers(car.facts, car.dealer?.location),
+    ...deriveModel(car.facts, car.features ?? [], car.title ?? ''),
+  };
   car.ref = assignRef(refs, car.id);
   applyAssessment(assessments, car);
   const after = fingerprint();

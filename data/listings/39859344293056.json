@@ -317,7 +317,10 @@
     "fuelTankLitres": null,
     "co2GramsPerKm": null,
     "consumptionL100km": null,
-    "distanceFromHomeKm": 134
+    "distanceFromHomeKm": 134,
+    "generation": "G81",
+    "facelift": "lci",
+    "faceliftBasis": "first registered 06/2023, after the changeover"
   },
   "ref": 12,
   "assessment": {

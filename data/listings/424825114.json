@@ -341,7 +341,10 @@
     "fuelTankLitres": null,
     "co2GramsPerKm": null,
     "consumptionL100km": null,
-    "distanceFromHomeKm": 199
+    "distanceFromHomeKm": 199,
+    "generation": null,
+    "facelift": "lci",
+    "faceliftBasis": "first registered 03/2023, after the changeover"
   },
   "ref": 3,
   "assessment": {

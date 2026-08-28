@@ -234,7 +234,10 @@
     "fuelTankLitres": 58,
     "co2GramsPerKm": null,
     "consumptionL100km": 7,
-    "distanceFromHomeKm": 159
+    "distanceFromHomeKm": 159,
+    "generation": null,
+    "facelift": "lci",
+    "faceliftBasis": "first registered 09/2024, after the changeover"
   },
   "features": [
     "Abgedunkelte Scheiben",

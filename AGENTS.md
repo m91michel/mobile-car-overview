@@ -243,6 +243,34 @@ longer. The viewer therefore calls the row "Entfernung (Luftlinie)".
 you have to physically drive to the car, and reports how many are within 100 and
 200 km.
 
+## Facelift (G20/G21 LCI)
+
+`derived.facelift` is `lci` / `pre-lci` / `unknown` / `other-generation`, with
+`derived.faceliftBasis` naming the evidence used. The facelift went into
+production around mid-2022, so a 2022 registration year alone cannot settle it.
+
+What the listing data supports, in descending order of reliability:
+
+1. The dealer writes "LCI" or "Facelift" in the title — only 4 of 38 did.
+2. `modelRange` sometimes carries BMW's own N suffix (`G21N`, `F31N`). Correct
+   when present, but only 1 of 38 dealers filled it in that way.
+3. First registration from 2023 on is LCI; up to 06/2022 is pre-facelift. The
+   months in between are genuinely undecidable and are reported as `unknown`
+   rather than guessed.
+4. A **missing** "Volldigitales Kombiinstrument" implies pre-facelift, since the
+   LCI has the curved display as standard. **One direction only**: a 03/2021 car
+   in this set has the digital cluster, so its presence proves nothing.
+
+Two dead ends, both checked against real data:
+
+- **The KBA type number does not work.** TSN encodes the variant (CYW = 318i,
+  DDH = 318d, CVS = 320i, CVU = 330i) and the same code appears on both
+  generations — `CYW` sits on a 03/2021 car and on cars whose titles say LCI.
+- **`modelRange` is dealer-entered and often wrong.** `G81` is the M3 Touring
+  code, yet it appears on plain 318d listings here. Treat `derived.generation`
+  as indicative only; it is trustworthy for spotting a different generation
+  (F3x) and not much else.
+
 ## Data quality
 
 ```bash

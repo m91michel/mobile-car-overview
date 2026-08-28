@@ -203,7 +203,10 @@
     "fuelTankLitres": 59,
     "co2GramsPerKm": 155,
     "consumptionL100km": 6.8,
-    "distanceFromHomeKm": 337
+    "distanceFromHomeKm": 337,
+    "generation": "G81",
+    "facelift": "pre-lci",
+    "faceliftBasis": "first registered 03/2021, before the changeover"
   },
   "features": [
     "Abgedunkelte Scheiben",

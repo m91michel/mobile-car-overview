@@ -324,7 +324,10 @@
     "fuelTankLitres": null,
     "co2GramsPerKm": null,
     "consumptionL100km": null,
-    "distanceFromHomeKm": 56
+    "distanceFromHomeKm": 56,
+    "generation": "G81",
+    "facelift": "unknown",
+    "faceliftBasis": "registered during the changeover; the data cannot decide"
   },
   "ref": 20,
   "assessment": {

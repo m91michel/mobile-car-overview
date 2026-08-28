@@ -226,7 +226,10 @@
     "fuelTankLitres": 59,
     "co2GramsPerKm": 144,
     "consumptionL100km": 6.3,
-    "distanceFromHomeKm": 125
+    "distanceFromHomeKm": 125,
+    "generation": "G21",
+    "facelift": "unknown",
+    "faceliftBasis": "registered during the changeover; the data cannot decide"
   },
   "features": [
     "Abgedunkelte Scheiben",

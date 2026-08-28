@@ -209,7 +209,10 @@
     "fuelTankLitres": 59,
     "co2GramsPerKm": null,
     "consumptionL100km": null,
-    "distanceFromHomeKm": 275
+    "distanceFromHomeKm": 275,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "first registered 02/2023, after the changeover"
   },
   "features": [
     "ABS",

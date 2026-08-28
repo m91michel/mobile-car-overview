@@ -114,6 +114,68 @@ export function normalizeFacts(attributes = []) {
   return facts;
 }
 
+/**
+ * Which 3-series generation, and pre-facelift or LCI?
+ *
+ * The G20/G21 facelift (LCI) went into production around mid-2022, so cars
+ * registered in 2022 come in both versions and the year alone cannot settle it.
+ * What the listing data actually supports, in descending order of reliability:
+ *
+ *  1. The dealer says "LCI" or "Facelift" in the title. Only a few do.
+ *  2. mobile.de's `modelRange` sometimes carries BMW's own N suffix for a
+ *     facelift ("G21N", "F31N"). Rarely filled in correctly.
+ *  3. First registration from 2023 on: LCI. Up to 06/2022: pre-facelift.
+ *     The months in between are genuinely undecidable.
+ *  4. A missing "Volldigitales Kombiinstrument" implies pre-facelift, because
+ *     the LCI has the curved display as standard. This works in one direction
+ *     only: pre-facelift cars could be ordered with it (a 03/2021 car in this
+ *     set has it), so its presence proves nothing.
+ *
+ * The KBA type number (TSN) is NOT usable: it encodes the variant (CYW = 318i,
+ * DDH = 318d, CVS = 320i), and the same code appears on both generations.
+ */
+export function deriveModel(facts, features = [], title = '') {
+  const range = (facts.modelRange?.value ?? '').toUpperCase();
+  const registration = facts.firstRegistration?.value ?? '';
+  const heading = title.toUpperCase();
+
+  // Generation, read out of whatever the dealer typed into modelRange.
+  const generation =
+    /F3\d/.test(range) ? range.match(/F3\d/)[0]
+    : /G2\d|G8\d/.test(range) ? range.match(/G2\d|G8\d/)[0]
+    : null;
+
+  const saysLci = /\bLCI\b|FACELIFT/.test(heading) || /\d N$|G2\dN|F3\dN/.test(range.replace(/\s+/g, ' '));
+  const digitalCluster = features.includes('Volldigitales Kombiinstrument');
+  const month = registration.match(/(\d{2})\/(\d{4})/);
+  const yyyymm = month ? `${month[2]}-${month[1]}` : null;
+
+  let facelift = null;
+  let basis = null;
+
+  if (generation && /F3/.test(generation)) {
+    facelift = 'other-generation';
+    basis = `${generation} is the previous 3-series Touring, not a G20/G21`;
+  } else if (saysLci) {
+    facelift = 'lci';
+    basis = 'the listing says LCI/facelift';
+  } else if (yyyymm && yyyymm >= '2023-01') {
+    facelift = 'lci';
+    basis = `first registered ${registration}, after the changeover`;
+  } else if (yyyymm && yyyymm < '2022-07') {
+    facelift = 'pre-lci';
+    basis = `first registered ${registration}, before the changeover`;
+  } else if (yyyymm && !digitalCluster) {
+    facelift = 'pre-lci';
+    basis = 'registered during the changeover, and no digital instrument cluster';
+  } else if (yyyymm) {
+    facelift = 'unknown';
+    basis = 'registered during the changeover; the data cannot decide';
+  }
+
+  return { generation, facelift, faceliftBasis: basis };
+}
+
 /** Numeric views of the facts worth sorting, diffing or charting on. */
 export function deriveNumbers(facts, sellerLatLong = null) {
   const get = (tag) => facts[tag]?.value ?? null;
@@ -182,7 +244,10 @@ export function normalize(listing, sourceUrl) {
     // Keyed by mobile.de's own tag (mileage, power, transmission, ...) so the
     // viewer can lay out hard facts and features in a single table.
     facts,
-    derived: deriveNumbers(facts, contact.latLong),
+    derived: {
+      ...deriveNumbers(facts, contact.latLong),
+      ...deriveModel(facts, listing.features ?? [], listing.title ?? ''),
+    },
     features: (listing.features ?? []).map(clean),
     highlights: listing.highlights ?? [],
 

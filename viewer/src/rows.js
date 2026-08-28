@@ -171,6 +171,20 @@ export function buildRows(cars) {
   }
 
   rows.push({
+    key: 'model:facelift',
+    label: 'Modellpflege',
+    kind: 'fact',
+    value: (car) => {
+      const labels = {
+        lci: 'LCI (Facelift)',
+        'pre-lci': 'vor Facelift',
+        unknown: 'unklar (Umstellung 2022)',
+        'other-generation': `andere Generation (${car.derived?.generation ?? '?'})`,
+      };
+      return labels[car.derived?.facelift] ?? null;
+    },
+  });
+  rows.push({
     key: 'dealer',
     label: 'Anbieter',
     kind: 'fact',
