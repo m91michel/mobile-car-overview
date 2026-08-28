@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T08:46:53.981Z",
+  "updatedAt": "2026-08-28T08:52:02.459Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -8727,6 +8727,404 @@
         }
       ],
       "ref": 25
+    },
+    {
+      "id": "461760316",
+      "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-tour-sport-line-liveprof-st-go-led-hifi-shz-g%C3%BCtersloh/461760316.html",
+      "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461760316&scopeId=C&action=compareItem",
+      "fetchedAt": "2026-08-28T08:52:02.457Z",
+      "title": "BMW 320i Tour Sport Line LiveProf St+Go LED HiFi SHZ",
+      "shortTitle": "BMW 320",
+      "subTitle": "i Tour Sport Line LiveProf St+Go LED HiFi SHZ",
+      "make": "BMW",
+      "model": "320",
+      "category": "EstateCar",
+      "sku": "0013219",
+      "isNew": false,
+      "kba": {
+        "hsn": "0005",
+        "tsn": "BLA"
+      },
+      "price": {
+        "gross": 27650,
+        "net": 23235.29,
+        "currency": "EUR",
+        "localized": "27.650 €",
+        "vatRate": 19,
+        "vatNote": "19,00% MwSt.",
+        "type": "FIXED"
+      },
+      "priceRating": {
+        "rating": "GOOD_PRICE",
+        "label": "Guter Preis",
+        "offset": 92,
+        "thresholds": [
+          "19.900 €",
+          "25.800 €",
+          "27.800 €",
+          "31.000 €",
+          "33.200 €",
+          "36.900 €"
+        ]
+      },
+      "facts": {
+        "damageCondition": {
+          "label": "Fahrzeugzustand",
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
+        },
+        "category": {
+          "label": "Kategorie",
+          "value": "Kombi",
+          "group": "vehicle"
+        },
+        "modelRange": {
+          "label": "Baureihe",
+          "value": "G81",
+          "group": "vehicle"
+        },
+        "trimLine": {
+          "label": "Ausstattungslinie",
+          "value": "Sport Line",
+          "group": "vehicle"
+        },
+        "sku": {
+          "label": "Fahrzeugnummer",
+          "value": "0013219",
+          "group": "vehicle"
+        },
+        "availability": {
+          "label": "Verfügbarkeit",
+          "value": "Sofort",
+          "group": "vehicle"
+        },
+        "mileage": {
+          "label": "Kilometerstand",
+          "value": "41.763 km",
+          "group": "vehicle"
+        },
+        "cubicCapacity": {
+          "label": "Hubraum",
+          "value": "1.998 cm³",
+          "group": "vehicle"
+        },
+        "power": {
+          "label": "Leistung",
+          "value": "135 kW (184 PS)",
+          "group": "vehicle"
+        },
+        "envkv.engineType": {
+          "label": "Antriebsart",
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
+        },
+        "fuel": {
+          "label": "Kraftstoffart",
+          "value": "Benzin",
+          "group": "vehicle"
+        },
+        "envkv.energyConsumption": {
+          "label": "Energieverbrauch (komb.)",
+          "value": "7,0 l/100km",
+          "group": "envkv"
+        },
+        "envkv.co2Emissions": {
+          "label": "CO₂-Emissionen (komb.)",
+          "value": "159 g/km",
+          "group": "envkv"
+        },
+        "envkv.co2Class": {
+          "label": "CO₂-Klasse",
+          "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+          "group": "envkv"
+        },
+        "envkv.consumptionDetails.fuel": {
+          "label": "Kraftstoffverbrauch",
+          "value": "7,0 l/100km (kombiniert) · 9,4 l/100km (Innenstadt) · 7,0 l/100km (Stadtrand) · 6,0 l/100km (Landstraße) · 7,0 l/100km (Autobahn)",
+          "values": [
+            "7,0 l/100km (kombiniert)",
+            "9,4 l/100km (Innenstadt)",
+            "7,0 l/100km (Stadtrand)",
+            "6,0 l/100km (Landstraße)",
+            "7,0 l/100km (Autobahn)"
+          ],
+          "group": "envkv"
+        },
+        "envkv.consumptionCosts": {
+          "label": "Energiekosten bei 15.000 km Jahresfahrleistung",
+          "value": "1.831 €/Jahr",
+          "group": "envkv"
+        },
+        "envkv.fuel.price": {
+          "label": "Kraftstoffpreis",
+          "value": "1,74 €/l (Jahresdurchschnitt 2025)",
+          "group": "envkv"
+        },
+        "envkv.co2Costs": {
+          "label": "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)",
+          "value": "3.399 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 142 €/t) · 1.431 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t) · 5.247 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 220 €/t)",
+          "values": [
+            "3.399 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 142 €/t)",
+            "1.431 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t)",
+            "5.247 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 220 €/t)"
+          ],
+          "group": "envkv"
+        },
+        "envkv.tax": {
+          "label": "Kraftfahrzeugsteuer",
+          "value": "185 €/Jahr",
+          "group": "envkv"
+        },
+        "numSeats": {
+          "label": "Anzahl Sitzplätze",
+          "value": "5",
+          "group": "vehicle"
+        },
+        "doorCount": {
+          "label": "Anzahl der Türen",
+          "value": "4/5",
+          "group": "vehicle"
+        },
+        "transmission": {
+          "label": "Getriebe",
+          "value": "Automatik",
+          "group": "vehicle"
+        },
+        "emissionClass": {
+          "label": "Schadstoffklasse",
+          "value": "Euro6d",
+          "group": "vehicle"
+        },
+        "emissionsSticker": {
+          "label": "Umweltplakette",
+          "value": "4 (Grün)",
+          "group": "vehicle"
+        },
+        "firstRegistration": {
+          "label": "Erstzulassung",
+          "value": "07/2022",
+          "group": "vehicle"
+        },
+        "numberOfPreviousOwners": {
+          "label": "Anzahl der Fahrzeughalter",
+          "value": "2",
+          "group": "vehicle"
+        },
+        "hu": {
+          "label": "HU",
+          "value": "Neu",
+          "group": "vehicle"
+        },
+        "climatisation": {
+          "label": "Klimatisierung",
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
+        },
+        "parkAssists": {
+          "label": "Einparkhilfe",
+          "value": "Hinten, Kamera, Selbstlenkende Systeme, Vorne",
+          "group": "vehicle"
+        },
+        "airbag": {
+          "label": "Airbags",
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
+        },
+        "manufacturerColorName": {
+          "label": "Farbe (Hersteller)",
+          "value": "Black Sapphire",
+          "group": "vehicle"
+        },
+        "color": {
+          "label": "Farbe",
+          "value": "Schwarz Metallic",
+          "group": "vehicle"
+        },
+        "interior": {
+          "label": "Innenausstattung",
+          "value": "Kunstleder, Schwarz",
+          "group": "vehicle"
+        },
+        "trailerLoadBraked": {
+          "label": "Anhängelast gebremst",
+          "value": "1.600 kg",
+          "group": "vehicle"
+        },
+        "trailerLoadUnbraked": {
+          "label": "Anhängelast ungebremst",
+          "value": "750 kg",
+          "group": "vehicle"
+        },
+        "cylinder": {
+          "label": "Zylinder",
+          "value": "4",
+          "group": "vehicle"
+        }
+      },
+      "derived": {
+        "mileageKm": 41763,
+        "powerKw": 135,
+        "powerHp": 184,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2022-07",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 2,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": 159,
+        "consumptionL100km": 7,
+        "distanceFromHomeKm": 327
+      },
+      "features": [
+        "ABS",
+        "Abstandstempomat",
+        "Abstandswarner",
+        "Alarmanlage",
+        "Ambiente-Beleuchtung",
+        "Armlehne",
+        "Bluetooth",
+        "Bordcomputer",
+        "Dachreling",
+        "Elektr. Fensterheber",
+        "Elektr. Heckklappe",
+        "Elektr. Seitenspiegel",
+        "Elektr. Seitenspiegel anklappbar",
+        "Elektr. Wegfahrsperre",
+        "ESP",
+        "Fernlichtassistent",
+        "Freisprecheinrichtung",
+        "Garantie",
+        "Geschwindigkeitsbegrenzer",
+        "Heckantrieb",
+        "Induktionsladen für Smartphones",
+        "Innenspiegel autom. abblendend",
+        "Isofix",
+        "Lederlenkrad",
+        "LED-Scheinwerfer",
+        "LED-Tagfahrlicht",
+        "Leichtmetallfelgen",
+        "Lichtsensor",
+        "Lordosenstütze",
+        "Müdigkeitswarner",
+        "Multifunktionslenkrad",
+        "Musikstreaming integriert",
+        "Navigationssystem",
+        "Nebelscheinwerfer",
+        "Notrufsystem",
+        "Partikelfilter",
+        "Radio DAB",
+        "Regensensor",
+        "Reifendruckkontrolle",
+        "Schaltwippen",
+        "Schlüssellose Zentralverriegelung (Keyless)",
+        "Servolenkung",
+        "Sitzheizung",
+        "Soundsystem",
+        "Sportsitze",
+        "Sprachsteuerung",
+        "Spurhalteassistent",
+        "Start/Stopp-Automatik",
+        "Totwinkel-Assistent",
+        "Touchscreen",
+        "Traktionskontrolle",
+        "Tuner/Radio",
+        "USB",
+        "Verkehrszeichenerkennung",
+        "Volldigitales Kombiinstrument",
+        "WLAN / Wifi Hotspot",
+        "Zentralverriegelung"
+      ],
+      "highlights": [
+        "Navi"
+      ],
+      "images": [
+        "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b3ba9c9-6542-4f04-9b4b-877252c6f8c1",
+        "https://img.classistatic.de/api/v1/mo-prod/images/e4/e41781b2-243e-4d50-8c86-524b520653a5",
+        "https://img.classistatic.de/api/v1/mo-prod/images/d2/d27f66ca-52ba-4e14-a63f-896fa4130a09",
+        "https://img.classistatic.de/api/v1/mo-prod/images/e2/e26e53f4-423f-40ca-88f6-a80398d86d0c",
+        "https://img.classistatic.de/api/v1/mo-prod/images/dd/ddfb207e-1ae3-411b-965e-84aaeebb7cc8",
+        "https://img.classistatic.de/api/v1/mo-prod/images/e6/e66a9198-2e33-4817-be05-13fd87ff4a54",
+        "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef9a0587-74e0-4302-96dd-3d900194da2e",
+        "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca02c453-2d16-42e6-ad51-e4b77d786349",
+        "https://img.classistatic.de/api/v1/mo-prod/images/c9/c9bbbf72-1d04-435c-95b7-5b16fbe39af6",
+        "https://img.classistatic.de/api/v1/mo-prod/images/0e/0ef61b5d-bdf8-463a-8c03-313238326de5",
+        "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3f0d412-1c33-47b8-a59b-43650da382f3",
+        "https://img.classistatic.de/api/v1/mo-prod/images/ef/effda629-e1d9-4512-8976-643f7a65920e",
+        "https://img.classistatic.de/api/v1/mo-prod/images/62/6272afec-245f-4411-9ac6-0b7705cb83b3",
+        "https://img.classistatic.de/api/v1/mo-prod/images/9f/9fe72ca4-5d76-4092-b92c-0680562526c2",
+        "https://img.classistatic.de/api/v1/mo-prod/images/9f/9f399cc4-4e4a-425d-8ed3-144bbae809d2",
+        "https://img.classistatic.de/api/v1/mo-prod/images/40/406315a2-008b-4f8c-88bb-c204bd306d7e",
+        "https://img.classistatic.de/api/v1/mo-prod/images/cc/cc16bed9-2071-4ad4-994a-5ec1c8493b3d"
+      ],
+      "dealer": {
+        "name": "WELLER Premium Deutschland GmbH - BMW & MINI Vertragshändler",
+        "type": "Händler",
+        "street": "Hülsbrockstr. 83 + 87",
+        "city": "DE-33334 Gütersloh",
+        "country": "DE",
+        "phone": "+49 (0)5241 2152007",
+        "homepage": "https://home.mobile.de/home/redirect.html?customerId=28701932",
+        "location": {
+          "lat": 51.9190635,
+          "lon": 8.4105703
+        },
+        "openingHours": [
+          {
+            "time": "08:00 Uhr - 18:30 Uhr",
+            "day": "Mo - Fr"
+          },
+          {
+            "time": "09:00 Uhr - 13:00 Uhr",
+            "day": "Sa"
+          }
+        ],
+        "rating": {
+          "score": 4.6,
+          "count": 134,
+          "recommendationRate": 89
+        }
+      },
+      "financePlans": [
+        {
+          "type": "AO",
+          "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=461760316",
+          "shortFlow": true,
+          "promotion": false,
+          "showInGallery": false,
+          "offer": {
+            "bankName": "Openbank Deutschland AG",
+            "loanBroker": "Check24 GmbH",
+            "loanType": "BALLOON",
+            "downPayment": 5530,
+            "creditTerm": 60,
+            "yearlyMileage": 10000,
+            "creditAmount": 22120,
+            "interestRateNominal": 5.41,
+            "interestRateEffective": 5.55,
+            "monthlyInstallment": 293.14,
+            "finalInstallment": 9124.5,
+            "totalInterest": 4299.79,
+            "totalAmount": 26419.79,
+            "localized": {
+              "downPayment": "5.530,00 €",
+              "downPaymentInPercent": "20%",
+              "creditTerm": "60",
+              "creditTermInYears": "5",
+              "yearlyMileage": "10.000",
+              "creditAmount": "22.120,00 €",
+              "interestRateNominal": "5,41%",
+              "interestRateEffective": "5,55%",
+              "monthlyInstallment": "294 €",
+              "finalInstallment": "9.124,50 €",
+              "totalInterest": "4.299,79 €",
+              "totalAmount": "26.419,79 €",
+              "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+            }
+          }
+        }
+      ],
+      "ref": 26
     }
   ]
 }
