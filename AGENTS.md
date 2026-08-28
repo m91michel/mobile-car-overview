@@ -134,12 +134,56 @@ Vite + React in `viewer/`, started with `pnpm viewer`.
   stored as a full key list, and moves target the next *visible* row, so hidden
   rows never swallow a click.
 - **Settings persist** per key in localStorage via `useLocalStorage` from
-  `usehooks-ts`: selected cars, row order, hidden rows, both filters.
+  `usehooks-ts`, all under the `car-compare/` prefix: selected cars, row order,
+  hidden rows, both filters, favourites, named lists, notes and per-car status.
+- **The ⚙ menu** in the header holds everything that is not a view control:
+  Neu laden, CSV-Export, JSON-Export, JSON-Import. It is a native `<details>`,
+  for the same reason the drawers are `<dialog>`s — only closing on an outside
+  click and on Escape is wired up by hand.
 - **Plain CSS**, one file, palette in custom properties, light and dark via
   `prefers-color-scheme`. No framework, no component library.
 - **Photos are hotlinked.** mobile.de's CDN sizes them by query rule
   (`?rule=mo-240`, `mo-360`, `mo-1024`, `mo-1600`), which is why `images[]` is
   stored without a size. Nothing is downloaded.
+
+## Exporting and importing the setup
+
+localStorage is per browser and per origin, so a second instance — another
+machine, another browser, the deployed build instead of the dev server — starts
+empty with no way to carry over three dozen judgements. `viewer/src/settings.js`
+therefore writes the whole setup out as one JSON file and reads it back.
+
+```json
+{
+  "format": "car-compare-settings",
+  "version": 1,
+  "exportedAt": "2026-08-28T12:00:00.000Z",
+  "settings": { "favourites": ["452520909"], "hidden": ["feature:Sitzheizung"] }
+}
+```
+
+Four decisions worth keeping:
+
+- **Settings are collected by prefix, not from a list of names.** More than one
+  session works on this viewer, so a hand-kept list would go stale the first
+  time somebody adds a `useLocalStorage` and forgets to register it — and a
+  setting missing from an export is invisible until the import lands somewhere
+  else. The prefix scan cannot go stale.
+- **Values are stored parsed, not as the raw localStorage strings.** The file
+  reads and hand-edits as ordinary JSON instead of as JSON escaped inside JSON.
+  `useLocalStorage` always writes `JSON.stringify`, so anything that fails to
+  parse was not written by the viewer and is skipped.
+- **Import replaces, it does not merge.** An import is meant to reproduce the
+  setup it came from; merging would leave the target browser's own hidden rows
+  and favourites in place and the result would be neither setup. Because that
+  overwrites hand-typed notes and lists, it asks first.
+- **No page reload after an import.** `useLocalStorage` re-reads on its own
+  `local-storage` event, and an event with no `key` makes *every* hook re-read —
+  so `importSettings` dispatches one and the table updates in place. A reload
+  would work too, but would wipe the confirmation message off the screen.
+
+The CSV export is a different thing and stays separate: it is the comparison as
+it stands on screen (`toCsv` in `rows.js`), not the setup that produced it.
 
 ## Reference numbers
 

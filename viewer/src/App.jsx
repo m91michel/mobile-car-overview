@@ -14,8 +14,7 @@ import {
   toCsv,
 } from './rows.js';
 import { cellFor } from './wishlist.js';
-
-const key = (name) => `car-compare/${name}`;
+import { download, exportSettings, importSettings, key, today } from './settings.js';
 
 function SortControl({ className, label, sortKey, setSortKey, desc, setDesc }) {
   return (
@@ -162,6 +161,41 @@ function CarOption({ car, active, onToggle, favourite, onFavourite }) {
   );
 }
 
+/**
+ * The header's settings menu. A native <details> for the same reason the
+ * drawers are <dialog>s: the open/close toggle and the keyboard handling come
+ * with the element. Only the two things it does not give -- closing on an
+ * outside click and on Escape -- are wired up by hand.
+ */
+function Menu({ label, title, children }) {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const close = (event) => {
+      if (!ref.current?.open) return;
+      if (event.type === 'keydown' && event.key !== 'Escape') return;
+      if (event.type === 'pointerdown' && ref.current.contains(event.target)) return;
+      ref.current.open = false;
+    };
+    document.addEventListener('pointerdown', close);
+    document.addEventListener('keydown', close);
+    return () => {
+      document.removeEventListener('pointerdown', close);
+      document.removeEventListener('keydown', close);
+    };
+  }, []);
+
+  return (
+    <details className="menu" ref={ref}>
+      <summary title={title}>{label}</summary>
+      {/* Clicks bubble to here, so picking any item closes the menu. */}
+      <div className="menu-items" onClick={() => { ref.current.open = false; }}>
+        {children}
+      </div>
+    </details>
+  );
+}
+
 /** A native <dialog> brings Escape, the backdrop and focus trapping along. */
 function useDrawer(open) {
   const ref = useRef(null);
@@ -207,6 +241,8 @@ export default function App() {
   const listDrawer = useDrawer(openDrawer === 'lists');
   const rowDrawer = useDrawer(openDrawer === 'rows');
   const [listName, setListName] = useState('');
+  const [flash, setFlash] = useState(null);
+  const fileInput = useRef(null);
 
   const load = useCallback(() => {
     fetch('/api/cars.json')
@@ -357,14 +393,30 @@ export default function App() {
     setOrder(keys);
   };
 
-  const exportCsv = () => {
-    const blob = new Blob([toCsv(visibleRows, shown)], { type: 'text/csv;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `fahrzeugvergleich-${new Date().toISOString().slice(0, 10)}.csv`;
-    link.click();
-    URL.revokeObjectURL(url);
+  // The CSV is the comparison as it stands on screen; the JSON is the setup that
+  // produced it. Different things, so they are two separate exports.
+  const exportCsv = () =>
+    download(`fahrzeugvergleich-${today()}.csv`, toCsv(visibleRows, shown), 'text/csv;charset=utf-8');
+
+  const exportJson = () =>
+    download(
+      `fahrzeugvergleich-einstellungen-${today()}.json`,
+      JSON.stringify(exportSettings(), null, 2),
+      'application/json',
+    );
+
+  const runImport = async (file) => {
+    if (!file) return;
+    // An import replaces the whole setup, and notes and lists are typed by hand
+    // and nowhere else -- so ask before overwriting them.
+    if (!window.confirm('Importieren ersetzt Auswahl, Zeilen, Favoriten, Listen, Notizen und Status in diesem Browser. Fortfahren?'))
+      return;
+    try {
+      const count = importSettings(await file.text());
+      setFlash(`${count} Einstellungen aus ${file.name} importiert.`);
+    } catch (err) {
+      setFlash(`Import fehlgeschlagen: ${err.message}`);
+    }
   };
 
   const pinRow = (rowKey) =>
@@ -425,11 +477,40 @@ export default function App() {
           desc={columnDesc}
           setDesc={setColumnDesc}
         />
-        <button onClick={exportCsv} disabled={shown.length === 0} title="Sichtbaren Vergleich als CSV">
-          CSV
-        </button>
-        <button onClick={load}>Neu laden</button>
+        <Menu label="⚙" title="Einstellungen">
+          <button onClick={load}>Neu laden</button>
+          <button onClick={exportCsv} disabled={shown.length === 0}>
+            CSV-Export <span className="muted">sichtbarer Vergleich</span>
+          </button>
+          <button onClick={exportJson}>
+            JSON-Export <span className="muted">Auswahl, Listen, Notizen</span>
+          </button>
+          <button onClick={() => fileInput.current?.click()}>
+            JSON-Import <span className="muted">ersetzt die Einstellungen</span>
+          </button>
+        </Menu>
       </header>
+
+      {/* Kept out of the menu: it has to survive the menu closing on the click
+          that opens the file picker. */}
+      <input
+        ref={fileInput}
+        type="file"
+        accept="application/json,.json"
+        hidden
+        onChange={(event) => {
+          const file = event.target.files?.[0];
+          // Reset first, so picking the same file twice fires onChange again.
+          event.target.value = '';
+          runImport(file);
+        }}
+      />
+
+      {flash && (
+        <p className="flash" onClick={() => setFlash(null)} title="Ausblenden">
+          {flash}
+        </p>
+      )}
 
       {editing && (
         <NoteEditor

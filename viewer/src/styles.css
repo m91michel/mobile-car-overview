@@ -72,6 +72,58 @@ button {
 button:hover { border-color: var(--accent); }
 button:disabled { opacity: 0.45; cursor: default; border-color: var(--line); }
 
+/* Settings menu ---------------------------------------------------------- */
+.menu { position: relative; }
+.menu summary {
+  /* Styled as a button; the marker is the only thing <summary> adds. */
+  list-style: none;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 5px 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.menu summary::-webkit-details-marker { display: none; }
+.menu summary:hover,
+.menu[open] summary { border-color: var(--accent); }
+.menu-items {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  padding: 5px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--panel);
+  box-shadow: 0 10px 28px rgb(0 0 0 / 0.16);
+}
+/* Full-width rows rather than pills: this is a list of commands, not a toolbar. */
+.menu-items button {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  justify-content: space-between;
+  border: 0;
+  border-radius: 5px;
+  padding: 7px 9px;
+  text-align: left;
+  white-space: nowrap;
+}
+.menu-items button:hover:not(:disabled) { background: var(--accent-soft); }
+
+.flash {
+  margin: 0;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--accent-soft);
+  cursor: pointer;
+}
+
 /* Car picker (drawer) --------------------------------------------------- */
 .drawer-open { display: flex; align-items: center; gap: 5px; }
 
