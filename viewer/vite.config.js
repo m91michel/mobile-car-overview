@@ -47,6 +47,17 @@ const carsApi = () => {
     configurePreviewServer(server) {
       server.middlewares.use(middleware);
     },
+    // A static host has no dev server to run the middleware, so the build
+    // freezes the same response into a file. The URL stays `/api/cars.json`
+    // either way; in dev the middleware answers it from disk on every request,
+    // so a `pnpm scrape` run still shows up on a plain reload.
+    async generateBundle() {
+      this.emitFile({
+        type: 'asset',
+        fileName: 'api/cars.json',
+        source: JSON.stringify({ cars: await readCars() }),
+      });
+    },
   };
 };
 

@@ -114,7 +114,7 @@ export default function App() {
   const [listName, setListName] = useState('');
 
   const load = useCallback(() => {
-    fetch('/api/cars')
+    fetch('/api/cars.json')
       .then((res) => res.json())
       .then((data) => {
         setCars(data.cars);
