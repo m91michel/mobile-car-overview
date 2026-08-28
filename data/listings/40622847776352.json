@@ -1,70 +1,66 @@
 {
-  "id": "451774892",
-  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-headup-acc-ahk-360-kam-b%C3%B6blingen/451774892.html",
-  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=451774892&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:22:25.812Z",
-  "title": "BMW 318i Touring M Sport HeadUp ACC AHK 360°Kam",
+  "id": "40622847776352",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318-i-touring-m-sport-adap-led-parkass-plus-hi-bremen/40622847776352.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40622847776352&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T06:21:42.214Z",
+  "title": "BMW 318 i Touring M Sport adap. LED Parkass. PLUS Hi",
   "shortTitle": "BMW 318",
-  "subTitle": "i Touring M Sport HeadUp ACC AHK 360°Kam",
+  "subTitle": "i Touring M Sport adap. LED Parkass. PLUS Hi",
   "make": "BMW",
   "model": "318",
   "category": "EstateCar",
-  "sku": "07224",
+  "sku": "11779",
   "isNew": false,
   "kba": {
     "hsn": "0005",
     "tsn": "CYW"
   },
   "price": {
-    "gross": 32580,
-    "net": 27378.15,
+    "gross": 31800,
+    "net": 26722.69,
     "currency": "EUR",
-    "localized": "32.580 €",
+    "localized": "31.800 €",
     "vatRate": 19,
     "vatNote": "19,00% MwSt.",
     "type": "FIXED"
   },
   "priceRating": {
-    "rating": "GOOD_PRICE",
-    "label": "Guter Preis",
-    "offset": 27,
+    "rating": "VERY_GOOD_PRICE",
+    "label": "Sehr guter Preis",
+    "offset": 85,
     "thresholds": [
-      "24.600 €",
-      "31.900 €",
-      "34.400 €",
-      "38.300 €",
-      "41.100 €",
-      "45.600 €"
+      "25.300 €",
+      "32.900 €",
+      "35.400 €",
+      "39.300 €",
+      "42.200 €",
+      "46.900 €"
     ]
   },
   "facts": {
     "damageCondition": {
       "label": "Fahrzeugzustand",
-      "value": "Gebrauchtfahrzeug"
+      "value": "Gebrauchtfahrzeug, Unfallfrei"
     },
     "category": {
       "label": "Kategorie",
       "value": "Kombi"
     },
-    "modelRange": {
-      "label": "Baureihe",
-      "value": "G21"
-    },
     "trimLine": {
       "label": "Ausstattungslinie",
-      "value": "M Sportpaket"
+      "value": "-"
     },
     "sku": {
       "label": "Fahrzeugnummer",
-      "value": "07224"
+      "value": "11779"
     },
-    "countryVersion": {
-      "label": "Herkunft",
-      "value": "Deutsche Ausführung"
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort"
     },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "41.600 km"
+      "value": "23.000 km"
     },
     "cubicCapacity": {
       "label": "Hubraum",
@@ -80,7 +76,7 @@
     },
     "fuel": {
       "label": "Kraftstoffart",
-      "value": "Benzin, E10-geeignet"
+      "value": "Benzin"
     },
     "numSeats": {
       "label": "Anzahl Sitzplätze",
@@ -94,25 +90,21 @@
       "label": "Getriebe",
       "value": "Automatik"
     },
-    "emissionClass": {
-      "label": "Schadstoffklasse",
-      "value": "Euro 6e"
-    },
     "emissionsSticker": {
       "label": "Umweltplakette",
       "value": "4 (Grün)"
     },
     "firstRegistration": {
       "label": "Erstzulassung",
-      "value": "01/2025"
+      "value": "03/2025"
+    },
+    "constructionYear": {
+      "label": "Baujahr",
+      "value": "2024"
     },
     "numberOfPreviousOwners": {
       "label": "Anzahl der Fahrzeughalter",
       "value": "1"
-    },
-    "hu": {
-      "label": "HU",
-      "value": "Neu"
     },
     "climatisation": {
       "label": "Klimatisierung",
@@ -120,7 +112,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Hinten, 360°-Kamera, Vorne, Selbstlenkende Systeme"
+      "value": "Selbstlenkende Systeme, 360°-Kamera, Vorne, Hinten"
     },
     "airbag": {
       "label": "Airbags",
@@ -128,15 +120,15 @@
     },
     "manufacturerColorName": {
       "label": "Farbe (Hersteller)",
-      "value": "Black Saphir Metallic"
+      "value": "Skyscraper Grau metallic"
     },
     "color": {
       "label": "Farbe",
-      "value": "Schwarz Metallic"
+      "value": "Grau Metallic"
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Teilleder, Andere"
+      "value": "Alcantara, Andere"
     },
     "cylinder": {
       "label": "Zylinder",
@@ -144,22 +136,13 @@
     }
   },
   "features": [
-    "Abgedunkelte Scheiben",
     "ABS",
     "Abstandstempomat",
     "Abstandswarner",
-    "Adaptives Fahrwerk",
     "Adaptives Kurvenlicht",
     "Alarmanlage",
-    "Ambiente-Beleuchtung",
-    "Android Auto",
-    "Anhängerkupplung schwenkbar",
-    "Anhängerrangierassistent",
-    "Apple CarPlay",
     "Armlehne",
     "Ausparkassistent",
-    "Beheizbare Frontscheibe",
-    "Berganfahrassistent",
     "Blendfreies Fernlicht",
     "Bluetooth",
     "Bordcomputer",
@@ -172,8 +155,7 @@
     "ESP",
     "Fernlichtassistent",
     "Freisprecheinrichtung",
-    "Garantie",
-    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
     "Head-Up Display",
     "Heckantrieb",
     "Innenspiegel autom. abblendend",
@@ -183,22 +165,16 @@
     "LED-Tagfahrlicht",
     "Leichtmetallfelgen",
     "Lichtsensor",
-    "Lordosenstütze",
     "Müdigkeitswarner",
     "Multifunktionslenkrad",
     "Musikstreaming integriert",
     "Navigationssystem",
-    "Nebelscheinwerfer",
-    "Nichtraucher-Fahrzeug",
     "Notbremsassistent",
     "Notrufsystem",
-    "Partikelfilter",
     "Radio DAB",
     "Regensensor",
     "Reifendruckkontrolle",
     "Schaltwippen",
-    "Scheckheftgepflegt",
-    "Schlüssellose Zentralverriegelung (Keyless)",
     "Servolenkung",
     "Sitzheizung",
     "Soundsystem",
@@ -208,72 +184,63 @@
     "Sprachsteuerung",
     "Spurhalteassistent",
     "Start/Stopp-Automatik",
-    "Totwinkel-Assistent",
     "Touchscreen",
     "Traktionskontrolle",
     "Tuner/Radio",
     "USB",
     "Verkehrszeichenerkennung",
     "Volldigitales Kombiinstrument",
-    "Winterpaket",
-    "Winterreifen",
     "WLAN / Wifi Hotspot",
     "Zentralverriegelung"
   ],
-  "highlights": [
-    "Ambente Licht+ Sound"
-  ],
+  "highlights": [],
   "images": [
-    "https://img.classistatic.de/api/v1/mo-prod/images/65/657689b0-9f01-4de2-b205-a410bc61d02d",
-    "https://img.classistatic.de/api/v1/mo-prod/images/74/748b7684-162a-4758-9cd3-9119951429db",
-    "https://img.classistatic.de/api/v1/mo-prod/images/01/0146a7cd-7330-4f69-b9fb-3ed057e5f160",
-    "https://img.classistatic.de/api/v1/mo-prod/images/33/339d3e9c-3f34-4ec0-b3a7-71d31274ed7e",
-    "https://img.classistatic.de/api/v1/mo-prod/images/e7/e795f8b9-ab85-47b8-a31d-b5b878657fd3",
-    "https://img.classistatic.de/api/v1/mo-prod/images/28/28666016-5cd6-4977-bbb6-0a8a0892992b",
-    "https://img.classistatic.de/api/v1/mo-prod/images/7c/7c5c72ba-d511-4e20-9df7-16d81b601659",
-    "https://img.classistatic.de/api/v1/mo-prod/images/08/08262b74-8275-4188-ae8b-59c55ef6c26e",
-    "https://img.classistatic.de/api/v1/mo-prod/images/0d/0db15e7a-488a-4e8c-8524-820c6938c58c",
-    "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2e50ab8-5e38-46a3-b38b-7e9f8ae4467a",
-    "https://img.classistatic.de/api/v1/mo-prod/images/02/028f8635-8dc9-40b2-ab18-77ef807c7bce",
-    "https://img.classistatic.de/api/v1/mo-prod/images/33/3374c309-41f2-4a4b-b41f-0643abc7d256",
-    "https://img.classistatic.de/api/v1/mo-prod/images/60/60e03074-9ac5-4c95-9edf-16f558ba970a",
-    "https://img.classistatic.de/api/v1/mo-prod/images/53/53e21cb2-baa4-403f-b30e-f32138e8b3c6",
-    "https://img.classistatic.de/api/v1/mo-prod/images/b9/b9aee72a-e5ef-4ef2-8cf6-342fa32045e1",
-    "https://img.classistatic.de/api/v1/mo-prod/images/b5/b5a9c4cc-0d56-4ffe-93bc-347da48c2e92",
-    "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bd76a12-dd78-460d-9dec-a9067150125b"
+    "https://img.classistatic.de/api/v1/mo-prod/images/bc/bc9d4874-abfb-47f3-9d64-e0c14db0c890",
+    "https://img.classistatic.de/api/v1/mo-prod/images/dd/dd99fc26-0327-4198-870c-7b1cad0cb78f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/00/00e8c090-f737-4d86-959b-ba3d645bbe4b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f4/f490ea12-b9e4-4a86-bd66-4bc231fe4e2c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/58/58226122-03d1-4455-8ccf-3e3d95cacb91",
+    "https://img.classistatic.de/api/v1/mo-prod/images/98/983b834f-5222-4507-80d9-431fee323bf9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/37/37cc3204-88d2-43b4-a202-0b497c856005",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ab/ab22cc60-9e93-48f9-8a6d-f67f92c8292a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bf/bfc03764-9eec-4e5a-b537-f01b9897781f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/43/43731d51-da1a-4494-8c17-2fe0e4469be7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba1b560a-b11d-4105-9949-631490483415",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba44cbaf-b532-4321-be4e-7a19b4b7a404",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1f/1fe94508-e7b9-439b-a93c-b89eb67c9ad6"
   ],
   "dealer": {
-    "name": "Jargstorf-Automobile",
+    "name": "Bobrink & Co. GmbH",
     "type": "Händler",
-    "street": "Stuttgarter Straße 134-136",
-    "city": "DE-71032 Böblingen",
+    "street": "Henri-Dunant-Strasse 1",
+    "city": "DE-28329 Bremen",
     "country": "DE",
-    "phone": "+49 (0)7031 222077",
-    "homepage": "https://home.mobile.de/home/redirect.html?customerId=466856",
+    "phone": "+49 (0)421 436460",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=461922",
     "location": {
-      "lat": 48.6926105,
-      "lon": 9.0253148
+      "lat": 53.07967840000001,
+      "lon": 8.8824308
     },
     "openingHours": [
       {
-        "time": "09:30 Uhr - 18:00 Uhr",
+        "time": "08:00 Uhr - 18:00 Uhr",
         "day": "Mo - Fr"
       },
       {
-        "time": "10:00 Uhr - 14:00 Uhr",
+        "time": "09:00 Uhr - 13:00 Uhr",
         "day": "Sa"
       }
     ],
     "rating": {
-      "score": 4.5,
-      "count": 391,
-      "recommendationRate": 91
+      "score": 4,
+      "count": 142,
+      "recommendationRate": 66
     }
   },
   "financePlans": [
     {
       "type": "AO",
-      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=451774892",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=40622847776352",
       "shortFlow": true,
       "promotion": false,
       "showInGallery": false,
@@ -281,29 +248,29 @@
         "bankName": "Openbank Deutschland AG",
         "loanBroker": "Check24 GmbH",
         "loanType": "BALLOON",
-        "downPayment": 6516,
+        "downPayment": 6360,
         "creditTerm": 60,
         "yearlyMileage": 10000,
-        "creditAmount": 26064,
+        "creditAmount": 25440,
         "interestRateNominal": 5.41,
         "interestRateEffective": 5.55,
-        "monthlyInstallment": 345.41,
-        "finalInstallment": 10751.4,
-        "totalInterest": 5066.44,
-        "totalAmount": 31130.44,
+        "monthlyInstallment": 337.14,
+        "finalInstallment": 10494,
+        "totalInterest": 4945.15,
+        "totalAmount": 30385.15,
         "localized": {
-          "downPayment": "6.516,00 €",
+          "downPayment": "6.360,00 €",
           "downPaymentInPercent": "20%",
           "creditTerm": "60",
           "creditTermInYears": "5",
           "yearlyMileage": "10.000",
-          "creditAmount": "26.064,00 €",
+          "creditAmount": "25.440,00 €",
           "interestRateNominal": "5,41%",
           "interestRateEffective": "5,55%",
-          "monthlyInstallment": "346 €",
-          "finalInstallment": "10.751,40 €",
-          "totalInterest": "5.066,44 €",
-          "totalAmount": "31.130,44 €",
+          "monthlyInstallment": "338 €",
+          "finalInstallment": "10.494,00 €",
+          "totalInterest": "4.945,15 €",
+          "totalAmount": "30.385,15 €",
           "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
         }
       }

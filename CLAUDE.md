@@ -1,4 +1,4 @@
-See [AGENTS.md](AGENTS.md) for the project goal, architecture, and constraints.
+@AGENTS.md
 
 Two rules worth repeating here:
 

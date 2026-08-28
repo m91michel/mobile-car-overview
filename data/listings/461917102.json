@@ -1,0 +1,348 @@
+{
+  "id": "461917102",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-tour-lico-da-pa-tempo-pano-memory-hifi-l%C3%BCneburg/461917102.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461917102&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T06:25:23.755Z",
+  "title": "BMW 320i Tour. LiCo+ DA,PA+,Tempo,Pano,Memory,HiFi",
+  "shortTitle": "BMW 320",
+  "subTitle": "i Tour. LiCo+ DA,PA+,Tempo,Pano,Memory,HiFi",
+  "make": "BMW",
+  "model": "320",
+  "category": "EstateCar",
+  "sku": "14168750",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CVS"
+  },
+  "price": {
+    "gross": 28989.99,
+    "net": 24361.34,
+    "currency": "EUR",
+    "localized": "28.990 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "VERY_GOOD_PRICE",
+    "label": "Sehr guter Preis",
+    "offset": 78,
+    "thresholds": [
+      "23.500 €",
+      "30.500 €",
+      "32.800 €",
+      "36.500 €",
+      "39.200 €",
+      "43.600 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G81"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "-"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "14168750"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "40.296 km"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "135 kW (184 PS)"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "6,8 l/100km"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "154 g/km"
+    },
+    "envkv.co2Class": {
+      "label": "CO₂-Klasse",
+      "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": [
+        "6,8 l/100km (kombiniert)",
+        "9,6 l/100km (Innenstadt)",
+        "6,9 l/100km (Stadtrand)",
+        "5,8 l/100km (Landstraße)",
+        "6,7 l/100km (Autobahn)"
+      ]
+    },
+    "envkv.consumptionCosts": {
+      "label": "Energiekosten bei 15.000 km Jahresfahrleistung",
+      "value": "1.779 €/Jahr"
+    },
+    "envkv.fuel.price": {
+      "label": "Kraftstoffpreis",
+      "value": "1,74 €/l (Jahresdurchschnitt 2025)"
+    },
+    "envkv.co2Costs": {
+      "label": "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)",
+      "value": [
+        "3.292 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 142 €/t)",
+        "1.386 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t)",
+        "5.082 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 220 €/t)"
+      ]
+    },
+    "envkv.tax": {
+      "label": "Kraftfahrzeugsteuer",
+      "value": "171 €/Jahr"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "07/2023"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "360°-Kamera, Vorne, Selbstlenkende Systeme, Hinten"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Tansanitblau II"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Blau Metallic"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Vollleder"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.600 kg"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4"
+    }
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandswarner",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Armlehne",
+    "Beheizbares Lenkrad",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Sitzeinstellung",
+    "Elektr. Sitzeinstellung mit Memory-Funktion",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notrufsystem",
+    "Panorama-Dach",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Schiebedach",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Tempomat",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "Zentralverriegelung"
+  ],
+  "highlights": [
+    "Navi"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/d6/d6794c32-18d0-449b-8515-815afde13bc2",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7c/7c23509a-5860-426f-896b-8b57bf5a3c25",
+    "https://img.classistatic.de/api/v1/mo-prod/images/69/69fad32e-e2ed-4adf-b937-78e38658f0c9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/77/77b758e2-9b06-45e6-8629-ef68bb055a4b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/82/8248fd7c-12a2-4dbb-b8e8-8677137a0d71",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bd/bd1b0245-9ff1-4802-a827-b2c15cd7a5fa",
+    "https://img.classistatic.de/api/v1/mo-prod/images/28/28cbb32c-61af-4abe-8265-277c9500b041",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca02c453-2d16-42e6-ad51-e4b77d786349",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d0de640-479b-4066-8da4-c4015116cc23",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e0/e0160b2a-7378-49ac-870e-ffb57ade98a7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3a/3ab7659f-f250-4ada-9d53-7642f8cb9dcb",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1e/1ee4af9d-bb58-4927-ab33-3c15072654af",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9f/9f9e9ed9-089f-4f59-b3ea-78c2745cc764",
+    "https://img.classistatic.de/api/v1/mo-prod/images/da/da143464-c958-43e4-81e4-9cdb60f478ac",
+    "https://img.classistatic.de/api/v1/mo-prod/images/af/af7c438b-e15a-47fe-b678-f04a4d4a565e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a1/a165d705-a0f1-458d-bbf1-58879b1ff948",
+    "https://img.classistatic.de/api/v1/mo-prod/images/09/0912dd8a-321c-43f2-9a23-9df6c9af0df3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/20/20062931-b223-417a-8eb1-f0bbe172ea87"
+  ],
+  "dealer": {
+    "name": "WELLER Premium GmbH - BMW & MINI Vertragshändler",
+    "type": "Händler",
+    "street": "Hamburger Straße 1",
+    "city": "DE-21339 Lüneburg",
+    "country": "DE",
+    "phone": "+49 (0)4131 2719000",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=457682",
+    "location": {
+      "lat": 53.2658245,
+      "lon": 10.4053526
+    },
+    "openingHours": [
+      {
+        "day": "Mo - Fr",
+        "time": "09:00 Uhr - 18:00 Uhr"
+      },
+      {
+        "day": "Sa",
+        "time": "09:00 Uhr - 14:00 Uhr"
+      }
+    ],
+    "rating": {
+      "score": 4.6,
+      "count": 279,
+      "recommendationRate": 88
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=461917102",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 5797,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 23192,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 307.35,
+        "finalInstallment": 9566.37,
+        "totalInterest": 4508.13,
+        "totalAmount": 27700.13,
+        "localized": {
+          "downPayment": "5.797,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "23.192,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "308 €",
+          "finalInstallment": "9.566,37 €",
+          "totalInterest": "4.508,13 €",
+          "totalAmount": "27.700,13 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ]
+}

@@ -98,10 +98,21 @@ thead th {
   z-index: 2;
   background: var(--panel);
   padding: 10px 12px;
-  vertical-align: bottom;
+  vertical-align: top;
   border-bottom: 2px solid var(--line);
 }
-thead th a { display: block; color: inherit; max-width: 230px; }
+
+/* Photo, title and price line up across columns regardless of title length:
+   top-aligned cells plus a title box that is always two lines tall. */
+.head-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  min-height: 2.9em;
+  color: inherit;
+  max-width: 230px;
+}
 thead th .price { display: block; color: var(--muted); font-weight: 400; }
 .hero {
   display: block;

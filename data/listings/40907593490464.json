@@ -1,25 +1,25 @@
 {
-  "id": "451774892",
-  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-headup-acc-ahk-360-kam-b%C3%B6blingen/451774892.html",
-  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=451774892&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:22:25.812Z",
-  "title": "BMW 318i Touring M Sport HeadUp ACC AHK 360°Kam",
+  "id": "40907593490464",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-hifi-ahk-widescreen-kamera-siegen/40907593490464.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40907593490464&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T06:24:15.940Z",
+  "title": "BMW 318i TOURING HIFI AHK WIDESCREEN KAMERA",
   "shortTitle": "BMW 318",
-  "subTitle": "i Touring M Sport HeadUp ACC AHK 360°Kam",
+  "subTitle": "i TOURING HIFI AHK WIDESCREEN KAMERA",
   "make": "BMW",
   "model": "318",
   "category": "EstateCar",
-  "sku": "07224",
-  "isNew": false,
+  "sku": "B00139259285",
+  "isNew": true,
   "kba": {
     "hsn": "0005",
     "tsn": "CYW"
   },
   "price": {
-    "gross": 32580,
-    "net": 27378.15,
+    "gross": 28970,
+    "net": 24344.54,
     "currency": "EUR",
-    "localized": "32.580 €",
+    "localized": "28.970 €",
     "vatRate": 19,
     "vatNote": "19,00% MwSt.",
     "type": "FIXED"
@@ -27,20 +27,20 @@
   "priceRating": {
     "rating": "GOOD_PRICE",
     "label": "Guter Preis",
-    "offset": 27,
+    "offset": 84,
     "thresholds": [
-      "24.600 €",
-      "31.900 €",
-      "34.400 €",
-      "38.300 €",
-      "41.100 €",
-      "45.600 €"
+      "20.900 €",
+      "27.200 €",
+      "29.300 €",
+      "32.600 €",
+      "35.000 €",
+      "38.900 €"
     ]
   },
   "facts": {
     "damageCondition": {
       "label": "Fahrzeugzustand",
-      "value": "Gebrauchtfahrzeug"
+      "value": "Gebrauchtfahrzeug, Unfallfrei"
     },
     "category": {
       "label": "Kategorie",
@@ -52,11 +52,15 @@
     },
     "trimLine": {
       "label": "Ausstattungslinie",
-      "value": "M Sportpaket"
+      "value": "TOURING HIFI AHK WIDESCREEN KAMERA "
     },
     "sku": {
       "label": "Fahrzeugnummer",
-      "value": "07224"
+      "value": "B00139259285"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort"
     },
     "countryVersion": {
       "label": "Herkunft",
@@ -64,7 +68,7 @@
     },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "41.600 km"
+      "value": "42.963 km"
     },
     "cubicCapacity": {
       "label": "Hubraum",
@@ -96,7 +100,7 @@
     },
     "emissionClass": {
       "label": "Schadstoffklasse",
-      "value": "Euro 6e"
+      "value": "Euro6"
     },
     "emissionsSticker": {
       "label": "Umweltplakette",
@@ -104,7 +108,11 @@
     },
     "firstRegistration": {
       "label": "Erstzulassung",
-      "value": "01/2025"
+      "value": "07/2024"
+    },
+    "constructionYear": {
+      "label": "Baujahr",
+      "value": "2024"
     },
     "numberOfPreviousOwners": {
       "label": "Anzahl der Fahrzeughalter",
@@ -120,7 +128,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Hinten, 360°-Kamera, Vorne, Selbstlenkende Systeme"
+      "value": "Kamera, Selbstlenkende Systeme, Hinten, Vorne"
     },
     "airbag": {
       "label": "Airbags",
@@ -128,7 +136,7 @@
     },
     "manufacturerColorName": {
       "label": "Farbe (Hersteller)",
-      "value": "Black Saphir Metallic"
+      "value": "saphirschwarz"
     },
     "color": {
       "label": "Farbe",
@@ -136,31 +144,38 @@
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Teilleder, Andere"
+      "value": "Teilleder, Schwarz"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.300 kg"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.650 kg"
     },
     "cylinder": {
       "label": "Zylinder",
       "value": "4"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "59 l"
     }
   },
   "features": [
     "Abgedunkelte Scheiben",
     "ABS",
-    "Abstandstempomat",
     "Abstandswarner",
-    "Adaptives Fahrwerk",
-    "Adaptives Kurvenlicht",
-    "Alarmanlage",
-    "Ambiente-Beleuchtung",
     "Android Auto",
     "Anhängerkupplung schwenkbar",
-    "Anhängerrangierassistent",
     "Apple CarPlay",
     "Armlehne",
-    "Ausparkassistent",
-    "Beheizbare Frontscheibe",
     "Berganfahrassistent",
-    "Blendfreies Fernlicht",
     "Bluetooth",
     "Bordcomputer",
     "Dachreling",
@@ -174,8 +189,9 @@
     "Freisprecheinrichtung",
     "Garantie",
     "Gepäckraumabtrennung",
-    "Head-Up Display",
+    "Geschwindigkeitsbegrenzer",
     "Heckantrieb",
+    "Induktionsladen für Smartphones",
     "Innenspiegel autom. abblendend",
     "Isofix",
     "Lederlenkrad",
@@ -188,7 +204,6 @@
     "Multifunktionslenkrad",
     "Musikstreaming integriert",
     "Navigationssystem",
-    "Nebelscheinwerfer",
     "Nichtraucher-Fahrzeug",
     "Notbremsassistent",
     "Notrufsystem",
@@ -198,112 +213,104 @@
     "Reifendruckkontrolle",
     "Schaltwippen",
     "Scheckheftgepflegt",
-    "Schlüssellose Zentralverriegelung (Keyless)",
     "Servolenkung",
     "Sitzheizung",
+    "Sommerreifen",
     "Soundsystem",
-    "Sportfahrwerk",
-    "Sportpaket",
     "Sportsitze",
     "Sprachsteuerung",
     "Spurhalteassistent",
     "Start/Stopp-Automatik",
-    "Totwinkel-Assistent",
+    "Tempomat",
     "Touchscreen",
     "Traktionskontrolle",
     "Tuner/Radio",
     "USB",
     "Verkehrszeichenerkennung",
     "Volldigitales Kombiinstrument",
-    "Winterpaket",
-    "Winterreifen",
     "WLAN / Wifi Hotspot",
     "Zentralverriegelung"
   ],
   "highlights": [
-    "Ambente Licht+ Sound"
+    "Parkassistent",
+    "Live Cockpit Plus",
+    "Active Guard Plus"
   ],
   "images": [
-    "https://img.classistatic.de/api/v1/mo-prod/images/65/657689b0-9f01-4de2-b205-a410bc61d02d",
-    "https://img.classistatic.de/api/v1/mo-prod/images/74/748b7684-162a-4758-9cd3-9119951429db",
-    "https://img.classistatic.de/api/v1/mo-prod/images/01/0146a7cd-7330-4f69-b9fb-3ed057e5f160",
-    "https://img.classistatic.de/api/v1/mo-prod/images/33/339d3e9c-3f34-4ec0-b3a7-71d31274ed7e",
-    "https://img.classistatic.de/api/v1/mo-prod/images/e7/e795f8b9-ab85-47b8-a31d-b5b878657fd3",
-    "https://img.classistatic.de/api/v1/mo-prod/images/28/28666016-5cd6-4977-bbb6-0a8a0892992b",
-    "https://img.classistatic.de/api/v1/mo-prod/images/7c/7c5c72ba-d511-4e20-9df7-16d81b601659",
-    "https://img.classistatic.de/api/v1/mo-prod/images/08/08262b74-8275-4188-ae8b-59c55ef6c26e",
-    "https://img.classistatic.de/api/v1/mo-prod/images/0d/0db15e7a-488a-4e8c-8524-820c6938c58c",
-    "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2e50ab8-5e38-46a3-b38b-7e9f8ae4467a",
-    "https://img.classistatic.de/api/v1/mo-prod/images/02/028f8635-8dc9-40b2-ab18-77ef807c7bce",
-    "https://img.classistatic.de/api/v1/mo-prod/images/33/3374c309-41f2-4a4b-b41f-0643abc7d256",
-    "https://img.classistatic.de/api/v1/mo-prod/images/60/60e03074-9ac5-4c95-9edf-16f558ba970a",
-    "https://img.classistatic.de/api/v1/mo-prod/images/53/53e21cb2-baa4-403f-b30e-f32138e8b3c6",
-    "https://img.classistatic.de/api/v1/mo-prod/images/b9/b9aee72a-e5ef-4ef2-8cf6-342fa32045e1",
-    "https://img.classistatic.de/api/v1/mo-prod/images/b5/b5a9c4cc-0d56-4ffe-93bc-347da48c2e92",
-    "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bd76a12-dd78-460d-9dec-a9067150125b"
+    "https://img.classistatic.de/api/v1/mo-prod/images/77/771bac78-e24d-475e-aa87-9f8ed8e5c53f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4b/4b59eed1-b9d1-4e7f-a044-8c631b3861b6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc7cb1c8-c514-4573-afdf-435f19c69978",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a94736e-a6b2-45e2-a570-efdfb4fb6cbd",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5c/5cb350b8-0691-46e7-87f8-7878b0dc7bf8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0c/0c8fde94-2fce-4bbf-8b06-d542cf05f1f4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac02d870-8000-4262-b442-e12e52994d9a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/45/45a259aa-eeb4-49d5-89f1-b4928f76e4ca",
+    "https://img.classistatic.de/api/v1/mo-prod/images/69/69b4adee-81e4-441a-a14c-1b8e846d06cd",
+    "https://img.classistatic.de/api/v1/mo-prod/images/50/50878b48-da33-4743-af8f-163d4c09ba98",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ef5aa1f-a5ff-44d2-aef3-59663cf97bb4"
   ],
   "dealer": {
-    "name": "Jargstorf-Automobile",
+    "name": "WAHL-GROUP Alfred Wahl GmbH & Co. KG | Filiale Siegen",
     "type": "Händler",
-    "street": "Stuttgarter Straße 134-136",
-    "city": "DE-71032 Böblingen",
+    "street": "Weidenauer Straße 217-225",
+    "city": "DE-57076 Siegen",
     "country": "DE",
-    "phone": "+49 (0)7031 222077",
-    "homepage": "https://home.mobile.de/home/redirect.html?customerId=466856",
+    "phone": "+49 (0)271 4020",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=452549",
     "location": {
-      "lat": 48.6926105,
-      "lon": 9.0253148
+      "lat": 50.8925442,
+      "lon": 8.0288005
     },
     "openingHours": [
       {
-        "time": "09:30 Uhr - 18:00 Uhr",
-        "day": "Mo - Fr"
+        "day": "Mo - Fr",
+        "time": "08:00 Uhr - 18:00 Uhr"
       },
       {
-        "time": "10:00 Uhr - 14:00 Uhr",
-        "day": "Sa"
+        "day": "Sa",
+        "time": "09:00 Uhr - 13:00 Uhr"
       }
     ],
     "rating": {
-      "score": 4.5,
-      "count": 391,
-      "recommendationRate": 91
+      "score": 4.3,
+      "count": 296,
+      "recommendationRate": 88
     }
   },
   "financePlans": [
     {
       "type": "AO",
-      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=451774892",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=40907593490464",
       "shortFlow": true,
       "promotion": false,
-      "showInGallery": false,
+      "showInGallery": true,
       "offer": {
         "bankName": "Openbank Deutschland AG",
         "loanBroker": "Check24 GmbH",
         "loanType": "BALLOON",
-        "downPayment": 6516,
+        "downPayment": 5794,
         "creditTerm": 60,
         "yearlyMileage": 10000,
-        "creditAmount": 26064,
+        "creditAmount": 23176,
         "interestRateNominal": 5.41,
         "interestRateEffective": 5.55,
-        "monthlyInstallment": 345.41,
-        "finalInstallment": 10751.4,
-        "totalInterest": 5066.44,
-        "totalAmount": 31130.44,
+        "monthlyInstallment": 307.13,
+        "finalInstallment": 9560.1,
+        "totalInterest": 4505.06,
+        "totalAmount": 27681.06,
         "localized": {
-          "downPayment": "6.516,00 €",
+          "downPayment": "5.794,00 €",
           "downPaymentInPercent": "20%",
           "creditTerm": "60",
           "creditTermInYears": "5",
           "yearlyMileage": "10.000",
-          "creditAmount": "26.064,00 €",
+          "creditAmount": "23.176,00 €",
           "interestRateNominal": "5,41%",
           "interestRateEffective": "5,55%",
-          "monthlyInstallment": "346 €",
-          "finalInstallment": "10.751,40 €",
-          "totalInterest": "5.066,44 €",
-          "totalAmount": "31.130,44 €",
+          "monthlyInstallment": "308 €",
+          "finalInstallment": "9.560,10 €",
+          "totalInterest": "4.505,06 €",
+          "totalAmount": "27.681,06 €",
           "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
         }
       }

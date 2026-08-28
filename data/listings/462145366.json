@@ -2,7 +2,7 @@
   "id": "462145366",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-hifi-livecockpit-widescree-siegen/462145366.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=462145366&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-27T18:01:39.926Z",
+  "fetchedAt": "2026-08-28T06:22:47.577Z",
   "title": "BMW 318i TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREE",
   "shortTitle": "BMW 318",
   "subTitle": "i TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREE",
@@ -128,7 +128,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme"
+      "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera"
     },
     "airbag": {
       "label": "Airbags",
@@ -235,22 +235,22 @@
     "Active Guard"
   ],
   "images": [
-    "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e80efc2-4ccb-4adb-9927-78e77b1c9624$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/98/980ccbbe-9f59-4686-a6c0-a90c19d65822$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/0e/0e930445-3e7e-4190-bad0-ee908d001f62$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/e0/e0b52ea3-517c-4264-bc85-52b559f2a787$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/60/607cadca-c4a3-4622-8def-946e90bdbf0c$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0856818-6e79-4680-97cf-aeb46ac2f9ec$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/70/7002bebc-aca1-4ff3-9399-d5bde8efda76$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/0e/0e128b56-fc20-48b8-b7b1-eb1d91d68a0b$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/13/13150fb7-fddb-4686-bb3f-3fe1eb902faa$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/6c/6caa6359-597f-4126-a4b6-c240e7b402b9$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/0d/0d6c6540-426e-4044-bc4a-67b9da5e85a7$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/00/0099e018-0f21-4df7-9c81-da62b927a7b3$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/78/783e0351-b393-42a0-a5f4-f8d4df242750$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/a9/a97d8e07-d179-42c6-ba87-cf67716edc9a$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/73/73390d3f-e303-480d-85c1-1a71524655a6$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ef5aa1f-a5ff-44d2-aef3-59663cf97bb4$_60.JPG"
+    "https://img.classistatic.de/api/v1/mo-prod/images/4e/4e80efc2-4ccb-4adb-9927-78e77b1c9624",
+    "https://img.classistatic.de/api/v1/mo-prod/images/98/980ccbbe-9f59-4686-a6c0-a90c19d65822",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0e/0e930445-3e7e-4190-bad0-ee908d001f62",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e0/e0b52ea3-517c-4264-bc85-52b559f2a787",
+    "https://img.classistatic.de/api/v1/mo-prod/images/60/607cadca-c4a3-4622-8def-946e90bdbf0c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0856818-6e79-4680-97cf-aeb46ac2f9ec",
+    "https://img.classistatic.de/api/v1/mo-prod/images/70/7002bebc-aca1-4ff3-9399-d5bde8efda76",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0e/0e128b56-fc20-48b8-b7b1-eb1d91d68a0b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/13/13150fb7-fddb-4686-bb3f-3fe1eb902faa",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6c/6caa6359-597f-4126-a4b6-c240e7b402b9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0d/0d6c6540-426e-4044-bc4a-67b9da5e85a7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/00/0099e018-0f21-4df7-9c81-da62b927a7b3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/78/783e0351-b393-42a0-a5f4-f8d4df242750",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a9/a97d8e07-d179-42c6-ba87-cf67716edc9a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/73/73390d3f-e303-480d-85c1-1a71524655a6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ef5aa1f-a5ff-44d2-aef3-59663cf97bb4"
   ],
   "dealer": {
     "name": "WAHL-GROUP Alfred Wahl GmbH & Co. KG | Filiale Siegen",

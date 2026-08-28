@@ -1,0 +1,304 @@
+{
+  "id": "452520909",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-m-sport-acc-sitzheizung-navi-klimaautomatik-dietzenbach-bei-frankfurt/452520909.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=452520909&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T06:27:12.158Z",
+  "title": "BMW 318i M-Sport ACC|Sitzheizung|Navi|Klimaautomatik",
+  "shortTitle": "BMW 318",
+  "subTitle": "i M-Sport ACC|Sitzheizung|Navi|Klimaautomatik",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "333569",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 27573,
+    "net": 23170.59,
+    "currency": "EUR",
+    "localized": "27.573 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 88,
+    "thresholds": [
+      "19.900 €",
+      "25.800 €",
+      "27.800 €",
+      "31.000 €",
+      "33.200 €",
+      "36.900 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "M-Sport"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "333569"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "57.348 km"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "01/2022"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Hinten, Vorne"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Portimao Blau"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Blau Metallic"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Alcantara, Schwarz"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "59 l"
+    }
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Android Auto",
+    "Apple CarPlay",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Navigationssystem",
+    "Nebelscheinwerfer",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Scheckheftgepflegt",
+    "Servolenkung",
+    "Sitzheizung",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Zentralverriegelung"
+  ],
+  "highlights": [
+    "Direkt v. Leasinggeber",
+    "BMW Live Cockpit Prof.",
+    "Active Guard Plus"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9237e5a-1ebd-4c9a-8d84-abdf26155985",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c2/c24b2a7f-5071-4170-9288-56331a2f5a36",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa9b8b50-b280-4171-9d3e-e7d6468154af",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0b/0bd35d24-ef98-4fa5-8c3b-b07271495b05",
+    "https://img.classistatic.de/api/v1/mo-prod/images/95/951a25b1-1f5e-48e9-93de-764ce7579ea9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae32d1f5-017f-41c3-b8ea-f8810faee855",
+    "https://img.classistatic.de/api/v1/mo-prod/images/27/2712824b-cf39-45c6-bdf4-a2035fb8d04e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6f/6f9cf9a6-1199-44a9-b733-7369609e43ea",
+    "https://img.classistatic.de/api/v1/mo-prod/images/99/9951faa6-ec5b-4527-a8cc-535a1d3c9c38",
+    "https://img.classistatic.de/api/v1/mo-prod/images/92/922c3efc-6cf6-4e87-ad93-6740d68cd800",
+    "https://img.classistatic.de/api/v1/mo-prod/images/63/639fa173-6ed3-42a9-bc15-03fae22d6431",
+    "https://img.classistatic.de/api/v1/mo-prod/images/40/40f1c712-695c-4b22-b612-d281762a3264",
+    "https://img.classistatic.de/api/v1/mo-prod/images/15/15f993fd-4ba9-48ac-beca-3c2e45b1b81b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d5f2f86-fd5d-43f7-a856-9a266b9e276c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/80/800cde5c-c656-4ec1-8269-d6f85b73620b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/22/223e49b1-11ba-4d4f-bc11-a06f525c64d4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/cb/cbfd7d10-73f2-478c-86ff-7df60a0e1e1f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/56/56db5634-21b4-4224-99fa-bd41b9384460"
+  ],
+  "dealer": {
+    "name": "MeinAuto.de Gebrauchtwagen",
+    "type": "Händler",
+    "street": "Voltastraße 8",
+    "city": "DE-63128 Dietzenbach bei Frankfurt",
+    "country": "DE",
+    "phone": "+49 (0)6074 8187200",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=30610537",
+    "location": {
+      "lat": 50.00261219999999,
+      "lon": 8.7902773
+    },
+    "openingHours": [
+      {
+        "day": "Mo - Fr",
+        "time": "09:00 Uhr - 18:30 Uhr"
+      },
+      {
+        "day": "Sa",
+        "time": "09:00 Uhr - 15:00 Uhr"
+      }
+    ],
+    "rating": {
+      "score": 4.8,
+      "count": 532,
+      "recommendationRate": 96
+    }
+  },
+  "financePlans": [
+    {
+      "type": "DF",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=452520909",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": true,
+      "bankId": "Renault",
+      "offer": {
+        "bankId": "Renault",
+        "bankName": "Mobilize Financial Services, Geschäftsbereich der RCI Banque S.A. Niederlassung Deutschland",
+        "loanType": "BALLOON",
+        "downPayment": 5514,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 22059,
+        "interestRateNominal": 5.83,
+        "interestRateEffective": 5.99,
+        "monthlyInstallment": 262.61,
+        "finalInstallment": 11525.51,
+        "totalInterest": 4960.5,
+        "totalAmount": 27019.5,
+        "localized": {
+          "downPayment": "5.514,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "22.059,00 €",
+          "interestRateNominal": "5,83%",
+          "interestRateEffective": "5,99%",
+          "monthlyInstallment": "263 €",
+          "finalInstallment": "11.525,51 €",
+          "totalInterest": "4.960,50 €",
+          "totalAmount": "27.019,50 €",
+          "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Mobilize Financial Services, Geschäftsbereich der RCI Banque S.A. Niederlassung Deutschland (Darlehensgeber), Jagenbergstraße 1, 41468 Neuss. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ]
+}

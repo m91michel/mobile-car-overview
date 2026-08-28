@@ -1,40 +1,39 @@
 {
-  "id": "462155994",
-  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-lc-plus-sportsitze-gra-parkassist-l-gie%C3%9Fen/462155994.html",
-  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=462155994&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:23:31.024Z",
-  "title": "BMW 318i TOURING LC PLUS SPORTSITZE GRA PARKASSIST L",
-  "shortTitle": "BMW 318",
-  "subTitle": "i TOURING LC PLUS SPORTSITZE GRA PARKASSIST L",
+  "id": "454575246",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-touring-head-up-led-rfk-komfortzg-bad-d%C3%BCrkheim/454575246.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=454575246&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T06:24:37.671Z",
+  "title": "BMW 320i Touring Head-Up LED RFK Komfortzg.",
+  "shortTitle": "BMW 320",
+  "subTitle": "i Touring Head-Up LED RFK Komfortzg.",
   "make": "BMW",
-  "model": "318",
+  "model": "320",
   "category": "EstateCar",
-  "sku": "259281",
   "isNew": false,
   "kba": {
     "hsn": "0005",
-    "tsn": "CYW"
+    "tsn": "CVS"
   },
   "price": {
-    "gross": 30890,
-    "net": 25957.98,
+    "gross": 29900,
+    "net": 25126.05,
     "currency": "EUR",
-    "localized": "30.890 €",
+    "localized": "29.900 €",
     "vatRate": 19,
     "vatNote": "19,00% MwSt.",
     "type": "FIXED"
   },
   "priceRating": {
-    "rating": "REASONABLE_PRICE",
-    "label": "Fairer Preis",
-    "offset": 90,
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 86,
     "thresholds": [
-      "20.000 €",
-      "26.000 €",
+      "21.600 €",
       "28.000 €",
-      "31.200 €",
-      "33.500 €",
-      "37.200 €"
+      "30.200 €",
+      "33.600 €",
+      "36.000 €",
+      "40.000 €"
     ]
   },
   "facts": {
@@ -52,23 +51,15 @@
     },
     "trimLine": {
       "label": "Ausstattungslinie",
-      "value": "TOURING LC PLUS SPORTSITZE GRA PARKASSIST  LORDOSE  LE…"
-    },
-    "sku": {
-      "label": "Fahrzeugnummer",
-      "value": "259281"
+      "value": "Touring Head-Up LED RFK Komfortzg."
     },
     "availability": {
       "label": "Verfügbarkeit",
       "value": "Sofort"
     },
-    "countryVersion": {
-      "label": "Herkunft",
-      "value": "Deutsche Ausführung"
-    },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "38.900 km"
+      "value": "48.400 km"
     },
     "cubicCapacity": {
       "label": "Hubraum",
@@ -76,7 +67,7 @@
     },
     "power": {
       "label": "Leistung",
-      "value": "115 kW (156 PS)"
+      "value": "135 kW (184 PS)"
     },
     "envkv.engineType": {
       "label": "Antriebsart",
@@ -100,15 +91,15 @@
     },
     "emissionClass": {
       "label": "Schadstoffklasse",
-      "value": "Euro6"
+      "value": "Euro6d"
     },
     "firstRegistration": {
       "label": "Erstzulassung",
-      "value": "06/2024"
+      "value": "03/2023"
     },
     "constructionYear": {
       "label": "Baujahr",
-      "value": "2024"
+      "value": "2023"
     },
     "numberOfPreviousOwners": {
       "label": "Anzahl der Fahrzeughalter",
@@ -116,7 +107,7 @@
     },
     "hu": {
       "label": "HU",
-      "value": "Neu"
+      "value": "04/2028"
     },
     "climatisation": {
       "label": "Klimatisierung",
@@ -124,7 +115,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera"
+      "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme"
     },
     "airbag": {
       "label": "Airbags",
@@ -132,19 +123,19 @@
     },
     "manufacturerColorName": {
       "label": "Farbe (Hersteller)",
-      "value": "Saphirschwarz"
+      "value": "Schwarz Uni"
     },
     "color": {
       "label": "Farbe",
-      "value": "Schwarz Metallic"
+      "value": "Schwarz"
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Stoff, Schwarz"
+      "value": "Teilleder, Schwarz"
     },
     "trailerLoadBraked": {
       "label": "Anhängelast gebremst",
-      "value": "1.300 kg"
+      "value": "1.600 kg"
     },
     "trailerLoadUnbraked": {
       "label": "Anhängelast ungebremst",
@@ -152,11 +143,7 @@
     },
     "netWeight": {
       "label": "Gewicht",
-      "value": "1.650 kg"
-    },
-    "cylinder": {
-      "label": "Zylinder",
-      "value": "4"
+      "value": "1.660 kg"
     },
     "fuelTankVolume": {
       "label": "Tankgröße",
@@ -167,8 +154,12 @@
     "Abgedunkelte Scheiben",
     "ABS",
     "Abstandswarner",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Anhängerkupplung schwenkbar",
     "Armlehne",
     "Berganfahrassistent",
+    "Blendfreies Fernlicht",
     "Bluetooth",
     "Bordcomputer",
     "Dachreling",
@@ -183,10 +174,11 @@
     "Garantie",
     "Gepäckraumabtrennung",
     "Geschwindigkeitsbegrenzer",
+    "Head-Up Display",
     "Heckantrieb",
-    "Induktionsladen für Smartphones",
     "Innenspiegel autom. abblendend",
     "Isofix",
+    "Kurvenlicht",
     "Lederlenkrad",
     "LED-Scheinwerfer",
     "LED-Tagfahrlicht",
@@ -196,8 +188,6 @@
     "Müdigkeitswarner",
     "Multifunktionslenkrad",
     "Navigationssystem",
-    "Nebelscheinwerfer",
-    "Nichtraucher-Fahrzeug",
     "Notbremsassistent",
     "Notrufsystem",
     "Partikelfilter",
@@ -205,60 +195,78 @@
     "Regensensor",
     "Reifendruckkontrolle",
     "Schaltwippen",
-    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
     "Servolenkung",
     "Sitzheizung",
-    "Sommerreifen",
-    "Soundsystem",
     "Sportsitze",
     "Sprachsteuerung",
     "Spurhalteassistent",
     "Start/Stopp-Automatik",
     "Tempomat",
+    "Totwinkel-Assistent",
+    "Touchscreen",
     "Traktionskontrolle",
     "Tuner/Radio",
-    "USB",
     "Verkehrszeichenerkennung",
     "Volldigitales Kombiinstrument",
     "Zentralverriegelung"
   ],
   "highlights": [],
   "images": [
-    "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d7d767f-9bce-47fe-a83c-885366bd2559",
-    "https://img.classistatic.de/api/v1/mo-prod/images/b6/b65a2d39-1d71-466f-8784-170e92ff9a73",
-    "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc7cb1c8-c514-4573-afdf-435f19c69978",
-    "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a94736e-a6b2-45e2-a570-efdfb4fb6cbd",
-    "https://img.classistatic.de/api/v1/mo-prod/images/12/12d61807-094a-45c8-aecc-46cbf8f3a34a",
-    "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d8fdff2-3a77-46cf-866e-0d915ffeac09",
-    "https://img.classistatic.de/api/v1/mo-prod/images/e0/e034c6ed-999c-41ff-89a3-1f0f4cfc656b",
-    "https://img.classistatic.de/api/v1/mo-prod/images/59/5993a94f-4ab9-4e2f-b747-c1ef6b1c507f",
-    "https://img.classistatic.de/api/v1/mo-prod/images/0e/0efac8fc-485a-436d-8c27-8b923f9bf9cb",
-    "https://img.classistatic.de/api/v1/mo-prod/images/98/98c0bbdb-b310-46cb-99c4-d11f41276a1c",
-    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ef5aa1f-a5ff-44d2-aef3-59663cf97bb4"
+    "https://img.classistatic.de/api/v1/mo-prod/images/19/194b55b3-b494-4fd0-92de-4ff310289d4e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1f/1fe0d65d-bac3-4173-9f8d-96cf2b93300d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8c/8cea64b6-9d42-4720-a809-f70d6765505c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/54/545f40db-2946-43ff-8e8c-fb5e365da0aa",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b1/b1a14d02-d9a9-47ee-8853-6d6f63c440c1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/58/58004668-e54f-4627-a34d-ce17e8e8492a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/08/08cc6785-c542-402d-ba2a-2520e8ba5fea",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0cbb9ad-5986-4b88-8e42-f2e1b39c981f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/30/3038aebb-6692-4f84-a12c-c55e9955de13",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a4/a4b04914-6d76-4cdc-9f34-ad206e3248f6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6c/6c39317d-a590-4295-8a14-2494d59aeea3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/08/08c8c440-cfac-4073-aa2b-fe49b2f48218",
+    "https://img.classistatic.de/api/v1/mo-prod/images/65/653afa7e-1fe6-49c2-977f-8a0b053076a9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d3/d3c64616-4bf4-4f1a-b956-8682fd3c9c82",
+    "https://img.classistatic.de/api/v1/mo-prod/images/45/459f7cca-142e-4146-951e-da24c0e94671",
+    "https://img.classistatic.de/api/v1/mo-prod/images/32/32f5ef16-eeb7-45d9-ba51-7f147bc0a89e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e9/e91ce28b-3a3e-4bb1-9cd2-b4e91d236747",
+    "https://img.classistatic.de/api/v1/mo-prod/images/54/549814c2-bbcf-4ffb-a02f-c2664f7712d9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6c/6caf2790-b66f-49dc-b4e2-4b9633bb1827",
+    "https://img.classistatic.de/api/v1/mo-prod/images/46/464bcce2-302f-4c1e-9e26-666ddd4a499e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/85/8596d330-b48a-4220-8f6c-162984126c23"
   ],
   "dealer": {
-    "name": "Alfred Wahl GmbH & Co. KG | Filiale Gießen",
+    "name": "Klaus Scheller GmbH",
     "type": "Händler",
-    "street": "Gottlieb-Daimler-Straße 1",
-    "city": "DE-35398 Gießen",
+    "street": "Triftweg 10",
+    "city": "DE-67098 Bad Dürkheim",
     "country": "DE",
-    "phone": "+49 (0)641 61066222",
-    "homepage": "https://home.mobile.de/home/redirect.html?customerId=32951042",
+    "phone": "+49 (0)6322 94250",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=461790",
     "location": {
-      "lat": 50.5859006,
-      "lon": 8.6509622
+      "lat": 49.46332,
+      "lon": 8.1796557
     },
-    "openingHours": [],
+    "openingHours": [
+      {
+        "day": "Mo - Fr",
+        "time": "07:15 Uhr - 18:00 Uhr"
+      },
+      {
+        "day": "Sa",
+        "time": "09:00 Uhr - 12:30 Uhr"
+      }
+    ],
     "rating": {
       "score": 4.9,
-      "count": 73,
-      "recommendationRate": 91
+      "count": 78,
+      "recommendationRate": 100
     }
   },
   "financePlans": [
     {
       "type": "AO",
-      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=462155994",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=454575246",
       "shortFlow": true,
       "promotion": false,
       "showInGallery": false,
@@ -266,29 +274,29 @@
         "bankName": "Openbank Deutschland AG",
         "loanBroker": "Check24 GmbH",
         "loanType": "BALLOON",
-        "downPayment": 6178,
+        "downPayment": 5980,
         "creditTerm": 60,
         "yearlyMileage": 10000,
-        "creditAmount": 24712,
+        "creditAmount": 23920,
         "interestRateNominal": 5.41,
         "interestRateEffective": 5.55,
-        "monthlyInstallment": 327.49,
-        "finalInstallment": 10193.7,
-        "totalInterest": 4803.64,
-        "totalAmount": 29515.64,
+        "monthlyInstallment": 316.99,
+        "finalInstallment": 9867,
+        "totalInterest": 4649.68,
+        "totalAmount": 28569.68,
         "localized": {
-          "downPayment": "6.178,00 €",
+          "downPayment": "5.980,00 €",
           "downPaymentInPercent": "20%",
           "creditTerm": "60",
           "creditTermInYears": "5",
           "yearlyMileage": "10.000",
-          "creditAmount": "24.712,00 €",
+          "creditAmount": "23.920,00 €",
           "interestRateNominal": "5,41%",
           "interestRateEffective": "5,55%",
-          "monthlyInstallment": "328 €",
-          "finalInstallment": "10.193,70 €",
-          "totalInterest": "4.803,64 €",
-          "totalAmount": "29.515,64 €",
+          "monthlyInstallment": "317 €",
+          "finalInstallment": "9.867,00 €",
+          "totalInterest": "4.649,68 €",
+          "totalAmount": "28.569,68 €",
           "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
         }
       }

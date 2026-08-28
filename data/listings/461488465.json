@@ -2,7 +2,7 @@
   "id": "461488465",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-lc-plus-sportsitze-gra-parkassist-gie%C3%9Fen/461488465.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461488465&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-27T18:01:40.904Z",
+  "fetchedAt": "2026-08-28T06:23:09.103Z",
   "title": "BMW 318i TOURING LC PLUS SPORTSITZE GRA PARKASSIST  ",
   "shortTitle": "BMW 318",
   "subTitle": "i TOURING LC PLUS SPORTSITZE GRA PARKASSIST  ",
@@ -124,7 +124,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme"
+      "value": "Kamera, Hinten, Vorne, Selbstlenkende Systeme"
     },
     "airbag": {
       "label": "Airbags",
@@ -222,17 +222,17 @@
   ],
   "highlights": [],
   "images": [
-    "https://img.classistatic.de/api/v1/mo-prod/images/17/17c60d67-1e1a-472e-98ac-1bdfb91e6f6d$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/36/36603af2-a07c-40ac-b94a-c8fb709931ab$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/59/5967aa24-6497-4400-af09-5fdad85cf7ef$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/d3/d351968f-cf80-4248-8bbc-666ca95fd4f5$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/48/483483af-94ab-4e2a-a6f3-b7cec1244b7e$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/83/832945e3-02e5-4210-9f7a-36291058acaf$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7c1f2ba-c14a-4266-be9f-e344972d61ab$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/4f/4f74d904-bc58-4b8b-985b-e0a70b14a6f2$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0dbd802-96ee-4b6c-b0f7-c03b8ee14f7d$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/94/94acc05d-872d-4cec-af68-1c5489ac1308$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ef5aa1f-a5ff-44d2-aef3-59663cf97bb4$_60.JPG"
+    "https://img.classistatic.de/api/v1/mo-prod/images/17/17c60d67-1e1a-472e-98ac-1bdfb91e6f6d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/36/36603af2-a07c-40ac-b94a-c8fb709931ab",
+    "https://img.classistatic.de/api/v1/mo-prod/images/59/5967aa24-6497-4400-af09-5fdad85cf7ef",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d3/d351968f-cf80-4248-8bbc-666ca95fd4f5",
+    "https://img.classistatic.de/api/v1/mo-prod/images/48/483483af-94ab-4e2a-a6f3-b7cec1244b7e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/83/832945e3-02e5-4210-9f7a-36291058acaf",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7c1f2ba-c14a-4266-be9f-e344972d61ab",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4f/4f74d904-bc58-4b8b-985b-e0a70b14a6f2",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0dbd802-96ee-4b6c-b0f7-c03b8ee14f7d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/94/94acc05d-872d-4cec-af68-1c5489ac1308",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ef5aa1f-a5ff-44d2-aef3-59663cf97bb4"
   ],
   "dealer": {
     "name": "Alfred Wahl GmbH & Co. KG | Filiale Gießen",

@@ -181,7 +181,13 @@ export default function App() {
                         referrerPolicy="no-referrer"
                       />
                     )}
-                    <a href={car.url} target="_blank" rel="noreferrer">
+                    <a
+                      className="head-title"
+                      href={car.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      title={carLabel(car)}
+                    >
                       {carLabel(car)}
                     </a>
                     <span className="price">{car.price?.localized ?? '—'}</span>

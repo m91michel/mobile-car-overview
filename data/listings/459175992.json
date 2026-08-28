@@ -2,7 +2,7 @@
   "id": "459175992",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-tour-adled-drive-parkassist-sportsitze-sh-bietigheim-bissingen/459175992.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=459175992&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-27T18:01:40.245Z",
+  "fetchedAt": "2026-08-28T06:22:03.873Z",
   "title": "BMW 318i Tour. adLED Drive/Parkassist Sportsitze SH",
   "shortTitle": "BMW 318",
   "subTitle": "i Tour. adLED Drive/Parkassist Sportsitze SH",
@@ -131,7 +131,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme"
+      "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme"
     },
     "airbag": {
       "label": "Airbags",
@@ -214,21 +214,21 @@
   ],
   "highlights": [],
   "images": [
-    "https://img.classistatic.de/api/v1/mo-prod/images/0b/0b699f95-f5a5-46ba-a752-11e68eaa9769$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/75/75c919bc-4bb4-4906-8649-d1736a575384$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/e5/e5d6bb39-22ce-419d-8abe-30269fa4ef2d$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/3b/3b39e64b-6fbc-4af4-96b0-ee0d2a173d73$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/91/913a43f8-feb8-41af-9985-d3e09ced44fd$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/81/8182c95d-9b83-4737-8297-51e85af83dd1$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/93/939cf66e-5b3e-4a2b-b37b-451b1301711a$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/31/31034725-26b4-4996-ad55-1e4ed61c2e8f$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/23/238bbad9-f80e-459b-bc3b-2bffdfb1b5a4$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d3fe838-926d-4e6e-b62a-25ab20c9d554$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f68ca2f-380f-4fce-8cca-cd25066f046c$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/69/694758e4-70fb-4aa3-83fa-ae540dd5f703$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/21/21bdf0f7-5c64-431e-b68d-8f789324f9c9$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/a4/a4286f78-c6fb-4380-a7db-b55c4759d47b$_60.JPG",
-    "https://img.classistatic.de/api/v1/mo-prod/images/eb/eb581c70-04c7-4ac1-8523-d9f1139fc0b2$_60.JPG"
+    "https://img.classistatic.de/api/v1/mo-prod/images/0b/0b699f95-f5a5-46ba-a752-11e68eaa9769",
+    "https://img.classistatic.de/api/v1/mo-prod/images/75/75c919bc-4bb4-4906-8649-d1736a575384",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e5/e5d6bb39-22ce-419d-8abe-30269fa4ef2d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3b/3b39e64b-6fbc-4af4-96b0-ee0d2a173d73",
+    "https://img.classistatic.de/api/v1/mo-prod/images/91/913a43f8-feb8-41af-9985-d3e09ced44fd",
+    "https://img.classistatic.de/api/v1/mo-prod/images/81/8182c95d-9b83-4737-8297-51e85af83dd1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/93/939cf66e-5b3e-4a2b-b37b-451b1301711a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/31/31034725-26b4-4996-ad55-1e4ed61c2e8f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/23/238bbad9-f80e-459b-bc3b-2bffdfb1b5a4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d3fe838-926d-4e6e-b62a-25ab20c9d554",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f68ca2f-380f-4fce-8cca-cd25066f046c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/69/694758e4-70fb-4aa3-83fa-ae540dd5f703",
+    "https://img.classistatic.de/api/v1/mo-prod/images/21/21bdf0f7-5c64-431e-b68d-8f789324f9c9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a4/a4286f78-c6fb-4380-a7db-b55c4759d47b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/eb/eb581c70-04c7-4ac1-8523-d9f1139fc0b2"
   ],
   "dealer": {
     "name": "Autohaus Stadel Zweigniederlassung der AH Heermann und Rhein GmbH",
