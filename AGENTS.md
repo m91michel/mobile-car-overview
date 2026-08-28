@@ -413,11 +413,10 @@ instead of crying duplicate.
   flow, so feature branches only fragment the work — the more so because a second
   session may be committing to `main` at the same time. No need to ask, and no
   need to branch first.
-- **Always push after committing.** `origin` is
-  `github.com/m91michel/mobile-car-overview`, and Vercel deploys `main`
-  (`vercel.json`: `pnpm viewer:build` → `viewer/dist`). An unpushed commit is a
-  change the deployed viewer does not have, so pushing is part of finishing the
-  work, not a separate favour to ask about.
+- **Pushing is a deploy, so it is not yours to do.** `origin` is
+  `github.com/m91michel/mobile-car-overview` and Vercel deploys `main`
+  (`vercel.json`: `pnpm viewer:build` → `viewer/dist`), which makes every push a
+  publish. Commit freely, then leave the push alone unless asked for it.
 - **A push can be rejected, because `main` is shared.** Another session may have
   pushed in the meantime. Rebase onto the remote and push again
   (`git pull --rebase origin main`) rather than forcing — and never
