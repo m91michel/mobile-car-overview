@@ -1,0 +1,322 @@
+{
+  "id": "40022702478304",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-320e-touring-hifi-dab-tempomat-parkassistent-n%C3%BCrtingen/40022702478304.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40022702478304&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T18:43:03.620Z",
+  "title": "BMW 320e Touring HiFi DAB Tempomat Parkassistent",
+  "shortTitle": "BMW 320",
+  "subTitle": "e Touring HiFi DAB Tempomat Parkassistent",
+  "make": "BMW",
+  "model": "320",
+  "category": "EstateCar",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYX"
+  },
+  "price": {
+    "gross": 29800,
+    "net": 25042.02,
+    "currency": "EUR",
+    "localized": "29.800 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 72,
+    "thresholds": [
+      "21.700 €",
+      "28.200 €",
+      "30.400 €",
+      "33.800 €",
+      "36.300 €",
+      "40.300 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "3-er (G21)",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "Touring HiFi DAB Tempomat Parkassistent",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "34.500 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "120 kW (163 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Plug-in-Hybrid",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Hybrid (Benzin/Elektro), Plug-in-Hybrid",
+      "group": "vehicle"
+    },
+    "envkv.otherEnergySource": {
+      "label": "Anderer Energieträger",
+      "value": "Strom",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "05/2023",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "2",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front- und Seiten-Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "schwarz II",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Stoff, Schwarz",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 34500,
+    "powerKw": 120,
+    "powerHp": 163,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-05",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 2,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 152,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 05/2023, nach der Umstellung"
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Ambiente-Beleuchtung",
+    "Anhängerkupplung schwenkbar",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Seitenspiegel",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Garantie",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Navigationssystem",
+    "Notrufsystem",
+    "Radio DAB",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Servolenkung",
+    "Sitzheizung",
+    "Soundsystem",
+    "Sportsitze",
+    "Tempomat",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "Volldigitales Kombiinstrument",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/97/977c1a94-bff6-4d85-83f0-c1b0920c048f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e8/e840223b-4c9b-4916-8a27-9aeb6716dc4a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f7/f7422ee5-21fb-4f69-bc5d-d3550ff57b6a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d8/d8d3a9fd-00a8-45b8-b3d1-5de5764555f6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1c/1c0122be-400d-48cc-be97-e62c2dc57c71",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a1/a18d4ecc-fca5-46e0-9e17-e6646c40dea8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/02/0212adde-6a17-4ed6-a48b-7177e68ad00f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/93/93ffd637-bb6b-4009-9fab-4a985b6dc765",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c8/c853c1a5-7152-4b83-9892-3af8f32025c6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c4/c4b0bb30-2993-42da-b177-a7e114854cee",
+    "https://img.classistatic.de/api/v1/mo-prod/images/57/57b4bee9-d8c4-43ee-ab95-107a8a874018",
+    "https://img.classistatic.de/api/v1/mo-prod/images/47/47df14fb-0b9c-44d6-8f99-9eb0175f2452",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f1/f13730f6-69bf-4482-840a-953c92b51e46",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bf/bf831bfa-e192-485e-bc11-e5a8e859f0c7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/db/db7f7ff8-242a-4a89-be93-4a21695c9e74"
+  ],
+  "dealer": {
+    "name": "Autohaus Briem Nürtingen GmbH",
+    "type": "Händler",
+    "street": "In der Au 1",
+    "city": "DE-72622 Nürtingen",
+    "country": "DE",
+    "phone": "+49 (0)7022 957095",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=491718",
+    "location": {
+      "lat": 48.6369154,
+      "lon": 9.340938399999999
+    },
+    "openingHours": [
+      {
+        "day": "Mo",
+        "time": "08:00 Uhr - 18:30 Uhr"
+      },
+      {
+        "day": "Di",
+        "time": "08:00 Uhr - 18:30 Uhr"
+      },
+      {
+        "day": "Mi",
+        "time": "08:00 Uhr - 18:30 Uhr"
+      },
+      {
+        "day": "Do",
+        "time": "08:00 Uhr - 18:30 Uhr"
+      },
+      {
+        "day": "Fr",
+        "time": "08:00 Uhr - 18:00 Uhr"
+      },
+      {
+        "day": "Sa",
+        "time": "09:00 Uhr - 13:00 Uhr"
+      }
+    ],
+    "rating": {
+      "score": 4.2,
+      "count": 137,
+      "recommendationRate": 80
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=40022702478304",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 5960,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 23840,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 315.93,
+        "finalInstallment": 9834,
+        "totalInterest": 4634.13,
+        "totalAmount": 28474.13,
+        "localized": {
+          "downPayment": "5.960,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "23.840,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "316 €",
+          "finalInstallment": "9.834,00 €",
+          "totalInterest": "4.634,13 €",
+          "totalAmount": "28.474,13 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 44,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 29800
+  }
+}
