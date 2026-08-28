@@ -171,9 +171,46 @@ function meterFor(row, car) {
   return null;
 }
 
+/**
+ * What the Effektivpreis is made of, as signed lines for a hover tooltip —
+ * kept off the table itself so three components don't cost three mostly-empty
+ * rows. Retrofit items always add; the mileage deviation and facelift malus
+ * (computed live from the ⚙-menu pricing settings in
+ * applyPricingSettings/viewer/src/pricing.js) can each be zero and are left
+ * out when they are, so a car with nothing adjusted gets no hint at all.
+ */
+function effectivePriceBreakdown(car) {
+  const lines = [];
+  for (const item of car.assessment?.retrofit ?? []) {
+    lines.push(`+ ${euros(item.cost)} ${item.label}`);
+  }
+  const mileage = car.assessment?.mileageAdjustment;
+  if (mileage && mileage.adjustment !== 0) {
+    const sign = mileage.adjustment > 0 ? '+' : '−';
+    const km = mileage.deviationKm > 0 ? `+${mileage.deviationKm.toLocaleString('de-DE')}` : mileage.deviationKm.toLocaleString('de-DE');
+    lines.push(`${sign} ${euros(Math.abs(mileage.adjustment))} Laufleistung (${km} km ggü. Erwartung)`);
+  }
+  const lciMalus = car.assessment?.lciMalus;
+  if (lciMalus) {
+    lines.push(`+ ${euros(lciMalus)} kein Facelift (LCI)`);
+  }
+  return lines;
+}
+
 /** What one table cell shows: an optional mark, the text, and its tone. */
 export function cellFor(row, car) {
   const raw = row.value(car);
+
+  if (row.key === 'assessment:effectivePrice' && raw) {
+    const lines = effectivePriceBreakdown(car);
+    return {
+      mark: '',
+      text: raw,
+      tone: null,
+      hint: lines.length ? lines.join('\n') : null,
+      meter: meterFor(row, car),
+    };
+  }
 
   // A high-priority wish that carries a detail rather than a plain yes: the
   // mark answers "has it", the text says which kind.

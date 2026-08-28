@@ -527,6 +527,10 @@ td.sold, .car-option.sold .car-option .fav {
 .mark.good { color: var(--good); }
 .mark.bad { color: var(--bad); }
 
+/* Marks the Effektivpreis cell as having a retrofit/mileage/facelift
+   breakdown behind it; the breakdown itself is the native title tooltip. */
+.hint { margin-left: 5px; color: var(--muted); cursor: help; }
+
 /* The paint itself, so a colour row reads without parsing the name. The
    border keeps a white or black chip visible against either theme. */
 .swatch {

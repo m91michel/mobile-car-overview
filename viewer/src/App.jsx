@@ -15,6 +15,7 @@ import {
 } from './rows.js';
 import { cellFor } from './wishlist.js';
 import { download, exportSettings, importSettings, key, today } from './settings.js';
+import { DEFAULT_PRICING, applyPricingSettings } from './pricing.js';
 
 function SortControl({ className, label, sortKey, setSortKey, desc, setDesc }) {
   return (
@@ -120,6 +121,97 @@ function NoteEditor({ car, onSave, onClose }) {
         <button onClick={onClose}>Abbrechen</button>
         <button className="primary" onClick={() => onSave({ note, links })}>
           Speichern
+        </button>
+      </footer>
+    </dialog>
+  );
+}
+
+/**
+ * The Effektivpreis's mileage/facelift knobs, per browser via localStorage
+ * (car-compare/pricing) rather than the data/assessment.json server default
+ * -- so two people comparing the same 47 cars can each weigh mileage or the
+ * facelift gap the way they personally would.
+ */
+function PricingSettings({ pricing, onChange, onReset, onClose }) {
+  const ref = useDrawer(true);
+  const num = (key, fallback = 0) => (e) => onChange({ [key]: Number(e.target.value) || fallback });
+
+  return (
+    <dialog
+      className="editor"
+      ref={ref}
+      onClose={onClose}
+      onClick={(e) => {
+        if (e.target === ref.current) onClose();
+      }}
+    >
+      <header className="drawer-head">
+        <strong>Preisanpassung</strong>
+        <span className="muted">wirkt auf den Effektivpreis, nur in diesem Browser</span>
+        <div className="spacer" />
+        <button onClick={onClose} title="Schließen">
+          ✕
+        </button>
+      </header>
+
+      <div className="editor-body">
+        <label className="check">
+          <input
+            type="checkbox"
+            checked={pricing.mileageEnabled}
+            onChange={(e) => onChange({ mileageEnabled: e.target.checked })}
+          />
+          Laufleistung/Alter berücksichtigen
+        </label>
+        <label className="field">
+          <span className="muted">Referenz-Laufleistung (km/Jahr)</span>
+          <input
+            type="number"
+            min="0"
+            step="500"
+            disabled={!pricing.mileageEnabled}
+            value={pricing.referenceKmPerYear}
+            onChange={num('referenceKmPerYear')}
+          />
+        </label>
+        <label className="field">
+          <span className="muted">€ pro km Abweichung</span>
+          <input
+            type="number"
+            min="0"
+            step="0.01"
+            disabled={!pricing.mileageEnabled}
+            value={pricing.ratePerKm}
+            onChange={num('ratePerKm')}
+          />
+        </label>
+
+        <label className="check">
+          <input
+            type="checkbox"
+            checked={pricing.lciMalusEnabled}
+            onChange={(e) => onChange({ lciMalusEnabled: e.target.checked })}
+          />
+          Malus für Fahrzeuge ohne Facelift (vor LCI)
+        </label>
+        <label className="field">
+          <span className="muted">Facelift-Malus (€)</span>
+          <input
+            type="number"
+            min="0"
+            step="50"
+            disabled={!pricing.lciMalusEnabled}
+            value={pricing.lciMalus}
+            onChange={num('lciMalus')}
+          />
+        </label>
+      </div>
+
+      <footer className="editor-foot">
+        <button onClick={onReset}>Zurücksetzen</button>
+        <button className="primary" onClick={onClose}>
+          Fertig
         </button>
       </footer>
     </dialog>
@@ -234,6 +326,9 @@ export default function App() {
   const [notes, setNotes] = useLocalStorage(key('notes'), {});
   const [statuses, setStatuses] = useLocalStorage(key('status'), {});
   const [favouritesFirst, setFavouritesFirst] = useLocalStorage(key('favourites-first'), false);
+  // The Effektivpreis's mileage/facelift knobs -- see PricingSettings above.
+  const [pricing, setPricing] = useLocalStorage(key('pricing'), DEFAULT_PRICING);
+  const [pricingOpen, setPricingOpen] = useState(false);
   const [dragKey, setDragKey] = useState(null);
   const [openDrawer, setOpenDrawer] = useState(null); // 'cars' | 'favourites' | 'lists' | 'rows'
   const carDrawer = useDrawer(openDrawer === 'cars');
@@ -255,11 +350,18 @@ export default function App() {
   }, []);
   useEffect(load, [load]);
 
+  // Re-derives the Effektivpreis with the live pricing settings, overriding
+  // the server default baked into data/cars.json (scripts/assessment.mjs).
+  const priced = useMemo(
+    () => (cars ?? []).map((car) => applyPricingSettings(car, pricing)),
+    [cars, pricing],
+  );
+
   // Notes are yours, not scraped, so they live beside the view state rather
   // than in the listing files, and are joined onto the cars here.
   const withNotes = useMemo(
-    () => (cars ?? []).map((car) => ({ ...car, notes: notes[car.id], status: statuses[car.id] })),
-    [cars, notes, statuses],
+    () => priced.map((car) => ({ ...car, notes: notes[car.id], status: statuses[car.id] })),
+    [priced, notes, statuses],
   );
 
   const setStatus = (id, value) =>
@@ -479,6 +581,9 @@ export default function App() {
         />
         <Menu label="⚙" title="Einstellungen">
           <button onClick={load}>Neu laden</button>
+          <button onClick={() => setPricingOpen(true)}>
+            Preisanpassung <span className="muted">Effektivpreis</span>
+          </button>
           <button onClick={exportCsv} disabled={shown.length === 0}>
             CSV-Export <span className="muted">sichtbarer Vergleich</span>
           </button>
@@ -510,6 +615,15 @@ export default function App() {
         <p className="flash" onClick={() => setFlash(null)} title="Ausblenden">
           {flash}
         </p>
+      )}
+
+      {pricingOpen && (
+        <PricingSettings
+          pricing={pricing}
+          onChange={(patch) => setPricing((current) => ({ ...current, ...patch }))}
+          onReset={() => setPricing(DEFAULT_PRICING)}
+          onClose={() => setPricingOpen(false)}
+        />
       )}
 
       {editing && (
@@ -752,7 +866,7 @@ export default function App() {
                         </td>
                       );
                     }
-                    const { mark, text, tone, swatch, meter } = cellFor(row, car);
+                    const { mark, text, tone, swatch, meter, hint } = cellFor(row, car);
                     return (
                       <td
                         key={car.id}
@@ -768,6 +882,11 @@ export default function App() {
                           {mark && <span className={`mark ${tone}`}>{mark}</span>}
                           {mark && text ? ' ' : ''}
                           {text}
+                          {hint && (
+                            <span className="hint" title={hint} aria-label="Aufschlüsselung">
+                              ⓘ
+                            </span>
+                          )}
                           {meter && (
                             <span className={`meter ${meter.zone}`} title={meter.hint}>
                               <span className="meter-fill" style={{ width: `${meter.fill * 100}%` }} />

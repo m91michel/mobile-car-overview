@@ -117,40 +117,19 @@ export function buildRows(cars) {
     value: (car) => car.priceRating?.label,
   });
 
-  // Hand-kept assessment from data/assessment.json. The effective price is what
-  // the car costs once the missing must-haves are retrofitted, which is the only
-  // number two cars with different factory equipment can be compared on.
+  // Hand-kept assessment from data/assessment.json plus the live pricing
+  // settings (viewer/src/pricing.js). The effective price is what the car
+  // costs once the missing must-haves are retrofitted and the mileage/facelift
+  // adjustments are applied — the only number two differently equipped, aged
+  // cars can be compared on. What makes it up (retrofit items, km vs. age,
+  // facelift malus) sits in a hover hint on the cell rather than its own row —
+  // see effectivePriceBreakdown in wishlist.js — so the table stays one row
+  // per number instead of three mostly-empty ones.
   rows.push({
     key: 'assessment:effectivePrice',
     label: 'Effektivpreis',
     kind: 'fact',
     value: (car) => euro(car.assessment?.effectivePrice),
-  });
-  rows.push({
-    key: 'assessment:retrofit',
-    label: 'Nachrüstung',
-    kind: 'fact',
-    value: (car) => {
-      const retrofit = car.assessment?.retrofit;
-      if (!retrofit?.length) return null;
-      return retrofit.map((item) => `${item.label} ${euro(item.cost)}`).join(' + ');
-    },
-  });
-  // How much of the Effektivpreis gap to `price` above comes from mileage vs.
-  // age, not from retrofit cost. Positive deviation (more km than the standard
-  // 15.000 km/Jahr assumption implies for its age) raises the effective price,
-  // negative lowers it — see deriveMileageAdjustment in scripts/assessment.mjs.
-  rows.push({
-    key: 'assessment:mileageAdjustment',
-    label: 'km ggü. Alter',
-    kind: 'fact',
-    value: (car) => {
-      const m = car.assessment?.mileageAdjustment;
-      if (!m || m.adjustment === 0) return null;
-      const km = m.deviationKm > 0 ? `+${m.deviationKm.toLocaleString('de-DE')}` : m.deviationKm.toLocaleString('de-DE');
-      const eur = m.adjustment > 0 ? `+${euro(m.adjustment)}` : euro(m.adjustment);
-      return `${km} km (${eur})`;
-    },
   });
   // Must sit next to Nachrüstung: that row only prices what a workshop can add,
   // so without this one a car with nothing retrofittable looks complete.
