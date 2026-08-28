@@ -171,16 +171,16 @@ th, td {
   text-align: left;
   vertical-align: middle;
 }
-td { min-width: 200px; }
+td { min-width: 150px; }
 /* Caps how wide one long value (a dealer name) can push its column. */
-.cell { max-width: 270px; overflow-wrap: anywhere; }
+.cell { max-width: 200px; overflow-wrap: anywhere; }
 
 thead th {
   position: sticky;
   top: 0;
   z-index: 2;
   background: var(--panel);
-  padding: 10px 12px;
+  padding: 10px 10px;
   vertical-align: top;
   border-bottom: 2px solid var(--line);
 }
@@ -194,7 +194,7 @@ thead th {
   overflow: hidden;
   min-height: 2.9em;
   color: inherit;
-  max-width: 230px;
+  max-width: 190px;
   overflow-wrap: anywhere;
   /* Underline on hover only, so it never strikes through the #ref badge. */
   text-decoration: none;
@@ -204,7 +204,7 @@ thead th .price { display: block; color: var(--muted); font-weight: 400; }
 /* Drop a car without opening the drawer. Anchored inside the photo's
    top-right corner so it costs no column width; the translucent disc keeps
    it legible over both a white studio shot and a dark forecourt one. */
-.hero-wrap { position: relative; width: 230px; min-height: 26px; margin-bottom: 6px; }
+.hero-wrap { position: relative; width: 190px; min-height: 26px; margin-bottom: 6px; }
 
 .col-remove {
   position: absolute;
@@ -226,8 +226,8 @@ thead th .price { display: block; color: var(--muted); font-weight: 400; }
 
 .hero {
   display: block;
-  width: 230px;
-  height: 130px;
+  width: 190px;
+  height: 108px;
   object-fit: cover;
   border-radius: 6px;
   background: var(--bg);
@@ -297,7 +297,7 @@ td.empty { color: var(--muted); }
   border-radius: 4px;
   vertical-align: -2px;
   background: var(--paint);
-  border: 1px solid rgb(128 128 128 / 0.45);
+  border: 1px solid rgb(128 128 128 / 0.6);
 }
 .swatch.metallic {
   background-image: linear-gradient(135deg, rgb(255 255 255 / 0.4), transparent 55%);

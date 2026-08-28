@@ -20,7 +20,7 @@ const KEY_FEATURES = new Set([
  * Black before blue, so "Black Saphir" does not read as sapphire blue.
  */
 const FAMILIES = [
-  [/schwarz|black/i, 'schwarz', '#1b1c1e'],
+  [/schwarz|black/i, 'schwarz', '#0c0d10'], // darker than the dark panel, or it reads as an empty chip
   [/wei(ß|ss)|white|alpin/i, 'weiß', '#eef0f2'],
   [/grau|gray|grey|graphit/i, 'grau', '#8b9096'],
   [/silber|silver/i, 'silber', '#c3c8cd'],
