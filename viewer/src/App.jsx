@@ -14,6 +14,26 @@ import {
 
 const key = (name) => `car-compare/${name}`;
 
+function SortControl({ className, label, sortKey, setSortKey, desc, setDesc }) {
+  return (
+    <div className={`sort ${className ?? ''}`}>
+      <span className="muted">{label}</span>
+      {SORTS.map((sort) => (
+        <button
+          key={sort.key}
+          className={sortKey === sort.key ? 'on' : ''}
+          onClick={() => setSortKey(sort.key)}
+        >
+          {sort.label}
+        </button>
+      ))}
+      <button onClick={() => setDesc(!desc)} title={desc ? 'Absteigend' : 'Aufsteigend'}>
+        {desc ? '↓' : '↑'}
+      </button>
+    </div>
+  );
+}
+
 /** A native <dialog> brings Escape, the backdrop and focus trapping along. */
 function useDrawer(open) {
   const ref = useRef(null);
@@ -36,8 +56,12 @@ export default function App() {
   const [hiddenKeys, setHiddenKeys] = useLocalStorage(key('hidden'), []);
   const [diffOnly, setDiffOnly] = useLocalStorage(key('diff-only'), false);
   const [featuresOnly, setFeaturesOnly] = useLocalStorage(key('features-only'), false);
-  const [sortKey, setSortKey] = useLocalStorage(key('sort'), 'ref');
-  const [sortDesc, setSortDesc] = useLocalStorage(key('sort-desc'), false);
+  // Two independent orders: the drawer is for finding a car, the columns are
+  // for reading the comparison, and those want different sorts.
+  const [listSort, setListSort] = useLocalStorage(key('sort-list'), 'ref');
+  const [listDesc, setListDesc] = useLocalStorage(key('sort-list-desc'), false);
+  const [columnSort, setColumnSort] = useLocalStorage(key('sort-columns'), 'price');
+  const [columnDesc, setColumnDesc] = useLocalStorage(key('sort-columns-desc'), false);
   const [dragKey, setDragKey] = useState(null);
   const [openDrawer, setOpenDrawer] = useState(null); // 'cars' | 'rows' | null
   const carDrawer = useDrawer(openDrawer === 'cars');
@@ -54,8 +78,10 @@ export default function App() {
   }, []);
   useEffect(load, [load]);
 
-  // One order for both the drawer list and the table columns.
-  const sortedCars = useMemo(() => sortCars(cars ?? [], sortKey, sortDesc), [cars, sortKey, sortDesc]);
+  const listCars = useMemo(
+    () => sortCars(cars ?? [], listSort, listDesc),
+    [cars, listSort, listDesc],
+  );
 
   const selectedIds = useMemo(() => {
     if (!cars) return [];
@@ -64,8 +90,8 @@ export default function App() {
   }, [cars, selected]);
 
   const shown = useMemo(
-    () => sortedCars.filter((c) => selectedIds.includes(c.id)),
-    [sortedCars, selectedIds],
+    () => sortCars((cars ?? []).filter((c) => selectedIds.includes(c.id)), columnSort, columnDesc),
+    [cars, selectedIds, columnSort, columnDesc],
   );
 
   const allRows = useMemo(() => buildRows(shown), [shown]);
@@ -174,6 +200,13 @@ export default function App() {
           />
           Nur Ausstattung
         </label>
+        <SortControl
+          label="Spalten"
+          sortKey={columnSort}
+          setSortKey={setColumnSort}
+          desc={columnDesc}
+          setDesc={setColumnDesc}
+        />
         <button onClick={exportCsv} disabled={shown.length === 0} title="Sichtbaren Vergleich als CSV">
           CSV
         </button>
@@ -200,26 +233,16 @@ export default function App() {
             ✕
           </button>
         </header>
-        <div className="drawer-sort">
-          <span className="muted">Sortierung</span>
-          {SORTS.map((sort) => (
-            <button
-              key={sort.key}
-              className={sortKey === sort.key ? 'on' : ''}
-              onClick={() => setSortKey(sort.key)}
-            >
-              {sort.label}
-            </button>
-          ))}
-          <button
-            onClick={() => setSortDesc(!sortDesc)}
-            title={sortDesc ? 'Absteigend' : 'Aufsteigend'}
-          >
-            {sortDesc ? '↓' : '↑'}
-          </button>
-        </div>
+        <SortControl
+          className="drawer-sort"
+          label="Liste"
+          sortKey={listSort}
+          setSortKey={setListSort}
+          desc={listDesc}
+          setDesc={setListDesc}
+        />
         <ul className="drawer-list">
-          {sortedCars.map((car) => {
+          {listCars.map((car) => {
             const active = selectedIds.includes(car.id);
             return (
               <li key={car.id}>
