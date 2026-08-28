@@ -94,7 +94,8 @@ export const permanentGaps = (car) =>
 // Scales for the two numbers the requirements put a range on. Fixed rather
 // than relative to the current selection, so a bar means the same thing
 // whichever cars happen to be in the table.
-const MILEAGE_TARGET = 70000; // "Zielregion: unter ca. 60.000-70.000 km"
+const MILEAGE_TARGET = 45000;
+const MILEAGE_WARN = 60000;
 const MILEAGE_LIMIT = 100000; // "deutlich über 100.000 km kommen nicht infrage"
 const AGE_TARGET_YEARS = 4; // Zielbild: ca. 2022-2024
 const AGE_LIMIT_YEARS = 8;
@@ -138,8 +139,13 @@ const ageYears = (car) => {
 
 function meterFor(row, car) {
   if (row.key === 'fact:mileage') {
-    const bar = meter(car.derived?.mileageKm, { target: MILEAGE_TARGET, max: MILEAGE_LIMIT });
-    return bar && { ...bar, hint: `Ziel bis ${euros(MILEAGE_TARGET).replace(' €', ' km')}` };
+    const bar = meter(car.derived?.mileageKm, {
+      target: MILEAGE_TARGET,
+      warn: MILEAGE_WARN,
+      max: MILEAGE_LIMIT,
+    });
+    const km = (n) => `${n.toLocaleString('de-DE')} km`;
+    return bar && { ...bar, hint: `Ziel bis ${km(MILEAGE_TARGET)}, bis ${km(MILEAGE_WARN)} mit Mehrwert` };
   }
   if (row.key === 'fact:firstRegistration') {
     const years = ageYears(car);
