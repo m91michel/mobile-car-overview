@@ -199,6 +199,7 @@ export default function App() {
   const [lists, setLists] = useLocalStorage(key('lists'), []);
   const [notes, setNotes] = useLocalStorage(key('notes'), {});
   const [statuses, setStatuses] = useLocalStorage(key('status'), {});
+  const [favouritesFirst, setFavouritesFirst] = useLocalStorage(key('favourites-first'), false);
   const [dragKey, setDragKey] = useState(null);
   const [openDrawer, setOpenDrawer] = useState(null); // 'cars' | 'favourites' | 'lists' | 'rows'
   const carDrawer = useDrawer(openDrawer === 'cars');
@@ -260,10 +261,19 @@ export default function App() {
     return cars.filter((c) => selected.includes(c.id)).map((c) => c.id);
   }, [cars, selected]);
 
-  const shown = useMemo(
-    () => sortCars(withNotes.filter((c) => selectedIds.includes(c.id)), columnSort, columnDesc),
-    [withNotes, selectedIds, columnSort, columnDesc],
-  );
+  const shown = useMemo(() => {
+    const picked = sortCars(
+      withNotes.filter((c) => selectedIds.includes(c.id)),
+      columnSort,
+      columnDesc,
+    );
+    if (!favouritesFirst) return picked;
+    // Pulled to the front, but each group keeps the chosen sort.
+    return [
+      ...picked.filter((c) => favourites.includes(c.id)),
+      ...picked.filter((c) => !favourites.includes(c.id)),
+    ];
+  }, [withNotes, selectedIds, columnSort, columnDesc, favouritesFirst, favourites]);
 
   const allRows = useMemo(() => buildRows(shown), [shown]);
   const hidden = useMemo(() => new Set(hiddenKeys), [hiddenKeys]);
@@ -399,6 +409,14 @@ export default function App() {
             onChange={(e) => setFeaturesOnly(e.target.checked)}
           />
           Nur Ausstattung
+        </label>
+        <label className="check" title="Favoriten stehen links, unabhängig von der Spaltensortierung">
+          <input
+            type="checkbox"
+            checked={favouritesFirst}
+            onChange={(e) => setFavouritesFirst(e.target.checked)}
+          />
+          <span className="star">★</span> zuerst
         </label>
         <SortControl
           label="Spalten"
