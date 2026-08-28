@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T07:03:00.687Z",
+  "updatedAt": "2026-08-28T08:46:53.981Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -8361,6 +8361,372 @@
         "distanceFromHomeKm": 2
       },
       "ref": 24
+    },
+    {
+      "id": "41966966984672",
+      "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-led-head-up-display-r%C3%BCckfahrkamera-st-wendel/41966966984672.html",
+      "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=41966966984672&scopeId=C&action=compareItem",
+      "fetchedAt": "2026-08-28T08:46:53.977Z",
+      "title": "BMW 318i TOURING LED HEAD UP DISPLAY RÜCKFAHRKAMERA",
+      "shortTitle": "BMW 318",
+      "subTitle": "i TOURING LED HEAD UP DISPLAY RÜCKFAHRKAMERA",
+      "make": "BMW",
+      "model": "318",
+      "category": "EstateCar",
+      "sku": "B35481FP48770",
+      "isNew": true,
+      "kba": {
+        "hsn": "0005",
+        "tsn": "CYW"
+      },
+      "price": {
+        "gross": 27480,
+        "net": null,
+        "currency": "EUR",
+        "localized": "27.480 €",
+        "vatRate": null,
+        "vatNote": null,
+        "type": "FIXED"
+      },
+      "priceRating": {
+        "rating": "REASONABLE_PRICE",
+        "label": "Fairer Preis",
+        "offset": 15,
+        "thresholds": [
+          "19.300 €",
+          "25.100 €",
+          "27.000 €",
+          "30.100 €",
+          "32.300 €",
+          "35.900 €"
+        ]
+      },
+      "facts": {
+        "damageCondition": {
+          "label": "Fahrzeugzustand",
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
+        },
+        "category": {
+          "label": "Kategorie",
+          "value": "Kombi",
+          "group": "vehicle"
+        },
+        "modelRange": {
+          "label": "Baureihe",
+          "value": "G21",
+          "group": "vehicle"
+        },
+        "trimLine": {
+          "label": "Ausstattungslinie",
+          "value": "TOURING LED HEAD UP DISPLAY RÜCKFAHRKAMERA",
+          "group": "vehicle"
+        },
+        "sku": {
+          "label": "Fahrzeugnummer",
+          "value": "B35481FP48770",
+          "group": "vehicle"
+        },
+        "availability": {
+          "label": "Verfügbarkeit",
+          "value": "Sofort",
+          "group": "vehicle"
+        },
+        "countryVersion": {
+          "label": "Herkunft",
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
+        },
+        "mileage": {
+          "label": "Kilometerstand",
+          "value": "64.329 km",
+          "group": "vehicle"
+        },
+        "cubicCapacity": {
+          "label": "Hubraum",
+          "value": "1.998 cm³",
+          "group": "vehicle"
+        },
+        "power": {
+          "label": "Leistung",
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
+        },
+        "envkv.engineType": {
+          "label": "Antriebsart",
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
+        },
+        "fuel": {
+          "label": "Kraftstoffart",
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
+        },
+        "numSeats": {
+          "label": "Anzahl Sitzplätze",
+          "value": "5",
+          "group": "vehicle"
+        },
+        "doorCount": {
+          "label": "Anzahl der Türen",
+          "value": "4/5",
+          "group": "vehicle"
+        },
+        "transmission": {
+          "label": "Getriebe",
+          "value": "Automatik",
+          "group": "vehicle"
+        },
+        "emissionClass": {
+          "label": "Schadstoffklasse",
+          "value": "Euro6d",
+          "group": "vehicle"
+        },
+        "firstRegistration": {
+          "label": "Erstzulassung",
+          "value": "02/2023",
+          "group": "vehicle"
+        },
+        "constructionYear": {
+          "label": "Baujahr",
+          "value": "2023",
+          "group": "vehicle"
+        },
+        "numberOfPreviousOwners": {
+          "label": "Anzahl der Fahrzeughalter",
+          "value": "2",
+          "group": "vehicle"
+        },
+        "hu": {
+          "label": "HU",
+          "value": "02/2026",
+          "group": "vehicle"
+        },
+        "climatisation": {
+          "label": "Klimatisierung",
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
+        },
+        "parkAssists": {
+          "label": "Einparkhilfe",
+          "value": "Kamera, Selbstlenkende Systeme, Hinten, Vorne",
+          "group": "vehicle"
+        },
+        "airbag": {
+          "label": "Airbags",
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
+        },
+        "manufacturerColorName": {
+          "label": "Farbe (Hersteller)",
+          "value": "Skyscraper Grau",
+          "group": "vehicle"
+        },
+        "color": {
+          "label": "Farbe",
+          "value": "Grau Metallic",
+          "group": "vehicle"
+        },
+        "interior": {
+          "label": "Innenausstattung",
+          "value": "Stoff, Schwarz",
+          "group": "vehicle"
+        },
+        "trailerLoadBraked": {
+          "label": "Anhängelast gebremst",
+          "value": "1.300 kg",
+          "group": "vehicle"
+        },
+        "trailerLoadUnbraked": {
+          "label": "Anhängelast ungebremst",
+          "value": "750 kg",
+          "group": "vehicle"
+        },
+        "netWeight": {
+          "label": "Gewicht",
+          "value": "1.650 kg",
+          "group": "vehicle"
+        },
+        "cylinder": {
+          "label": "Zylinder",
+          "value": "4",
+          "group": "vehicle"
+        },
+        "fuelTankVolume": {
+          "label": "Tankgröße",
+          "value": "59 l",
+          "group": "vehicle"
+        }
+      },
+      "derived": {
+        "mileageKm": 64329,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-02",
+        "constructionYear": 2023,
+        "seats": 5,
+        "previousOwners": 2,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 275
+      },
+      "features": [
+        "ABS",
+        "Abstandstempomat",
+        "Abstandswarner",
+        "Alarmanlage",
+        "Android Auto",
+        "Anhängerkupplung schwenkbar",
+        "Apple CarPlay",
+        "Armlehne",
+        "Berganfahrassistent",
+        "Blendfreies Fernlicht",
+        "Bluetooth",
+        "Bordcomputer",
+        "Dachreling",
+        "Elektr. Fensterheber",
+        "Elektr. Heckklappe",
+        "Elektr. Seitenspiegel",
+        "Elektr. Seitenspiegel anklappbar",
+        "Elektr. Wegfahrsperre",
+        "ESP",
+        "Fernlichtassistent",
+        "Freisprecheinrichtung",
+        "Garantie",
+        "Gepäckraumabtrennung",
+        "Geschwindigkeitsbegrenzer",
+        "Head-Up Display",
+        "Heckantrieb",
+        "Induktionsladen für Smartphones",
+        "Innenspiegel autom. abblendend",
+        "Isofix",
+        "Kurvenlicht",
+        "Lederlenkrad",
+        "LED-Scheinwerfer",
+        "LED-Tagfahrlicht",
+        "Leichtmetallfelgen",
+        "Lichtsensor",
+        "Lordosenstütze",
+        "Müdigkeitswarner",
+        "Multifunktionslenkrad",
+        "Navigationssystem",
+        "Notbremsassistent",
+        "Notrufsystem",
+        "Partikelfilter",
+        "Radio DAB",
+        "Regensensor",
+        "Reifendruckkontrolle",
+        "Schaltwippen",
+        "Servolenkung",
+        "Sitzheizung",
+        "Sportsitze",
+        "Sprachsteuerung",
+        "Spurhalteassistent",
+        "Start/Stopp-Automatik",
+        "Totwinkel-Assistent",
+        "Touchscreen",
+        "Traktionskontrolle",
+        "Tuner/Radio",
+        "Verkehrszeichenerkennung",
+        "Volldigitales Kombiinstrument",
+        "Zentralverriegelung"
+      ],
+      "highlights": [],
+      "images": [
+        "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2b8a47e-5f02-42a5-967b-604cd0d463f6",
+        "https://img.classistatic.de/api/v1/mo-prod/images/fa/fabca348-9587-41d6-a2bb-f9ee19f7298e",
+        "https://img.classistatic.de/api/v1/mo-prod/images/09/09f4cdc4-17de-4378-a79b-2adb9c5c9c74",
+        "https://img.classistatic.de/api/v1/mo-prod/images/80/8096891b-4512-496e-873f-71a49d677460",
+        "https://img.classistatic.de/api/v1/mo-prod/images/59/59a827d6-28ca-4e21-bda7-9038a9b44ab2",
+        "https://img.classistatic.de/api/v1/mo-prod/images/22/221b6605-1768-4d3d-a7d4-2c341eb20712",
+        "https://img.classistatic.de/api/v1/mo-prod/images/d6/d631540f-31f7-489d-b4de-f6ae98515581",
+        "https://img.classistatic.de/api/v1/mo-prod/images/b7/b711b1b2-695d-465e-b4f8-a5f5fcdf668b",
+        "https://img.classistatic.de/api/v1/mo-prod/images/1f/1f251d6a-ba2a-48ac-a7b9-06f2708fa2ee",
+        "https://img.classistatic.de/api/v1/mo-prod/images/81/813c1281-f9b0-4ea1-b8a7-f50ab0866fe2",
+        "https://img.classistatic.de/api/v1/mo-prod/images/d1/d1d63bc4-5d4a-4fc4-b84a-767dac51f0d3",
+        "https://img.classistatic.de/api/v1/mo-prod/images/6f/6f862374-f7f1-4290-9855-7a42801ba5ed",
+        "https://img.classistatic.de/api/v1/mo-prod/images/da/da8624eb-8092-49c4-8abd-5fac093a98e3",
+        "https://img.classistatic.de/api/v1/mo-prod/images/05/0542412c-2a3c-45a2-8919-8fb93a865a50",
+        "https://img.classistatic.de/api/v1/mo-prod/images/9e/9e5f656c-a415-4014-ac49-3d2671685392",
+        "https://img.classistatic.de/api/v1/mo-prod/images/0a/0a6d415e-2a27-4870-b299-07552f6bb72e",
+        "https://img.classistatic.de/api/v1/mo-prod/images/34/346f74bd-5de8-42dd-8e67-c35ae5a07e76",
+        "https://img.classistatic.de/api/v1/mo-prod/images/97/970c9ac9-1035-4992-b87b-584e36c0fc58",
+        "https://img.classistatic.de/api/v1/mo-prod/images/97/97407e0d-d1f7-4731-b866-976c9fefbe50",
+        "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d734156-aeee-4732-acf8-69967dd66e42",
+        "https://img.classistatic.de/api/v1/mo-prod/images/89/894b5652-8b85-409a-96cd-eac27f4be44c",
+        "https://img.classistatic.de/api/v1/mo-prod/images/99/998fc048-b525-4341-80a1-d66688977fc5",
+        "https://img.classistatic.de/api/v1/mo-prod/images/c7/c7900c5f-5008-4c4e-b5d1-25d6f6703938"
+      ],
+      "dealer": {
+        "name": "Müller-Dynamic GmbH",
+        "type": "Händler",
+        "street": "Werschweilerstrasse 52-54",
+        "city": "DE-66606 St. Wendel",
+        "country": "DE",
+        "phone": "+49 (0)651 8408899",
+        "homepage": "https://home.mobile.de/home/redirect.html?customerId=4183153",
+        "location": {
+          "lat": 49.455916,
+          "lon": 7.177960499999998
+        },
+        "openingHours": [
+          {
+            "time": "08:00 Uhr - 18:00 Uhr",
+            "day": "Mo - Fr"
+          },
+          {
+            "time": "09:00 Uhr - 13:00 Uhr",
+            "day": "Sa"
+          }
+        ],
+        "rating": {
+          "score": 4,
+          "count": 19
+        }
+      },
+      "financePlans": [
+        {
+          "type": "AO",
+          "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=41966966984672",
+          "shortFlow": true,
+          "promotion": false,
+          "showInGallery": false,
+          "offer": {
+            "bankName": "Openbank Deutschland AG",
+            "loanBroker": "Check24 GmbH",
+            "loanType": "BALLOON",
+            "downPayment": 5496,
+            "creditTerm": 60,
+            "yearlyMileage": 10000,
+            "creditAmount": 21984,
+            "interestRateNominal": 5.41,
+            "interestRateEffective": 5.55,
+            "monthlyInstallment": 291.34,
+            "finalInstallment": 9068.4,
+            "totalInterest": 4273.36,
+            "totalAmount": 26257.36,
+            "localized": {
+              "downPayment": "5.496,00 €",
+              "downPaymentInPercent": "20%",
+              "creditTerm": "60",
+              "creditTermInYears": "5",
+              "yearlyMileage": "10.000",
+              "creditAmount": "21.984,00 €",
+              "interestRateNominal": "5,41%",
+              "interestRateEffective": "5,55%",
+              "monthlyInstallment": "292 €",
+              "finalInstallment": "9.068,40 €",
+              "totalInterest": "4.273,36 €",
+              "totalAmount": "26.257,36 €",
+              "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+            }
+          }
+        }
+      ],
+      "ref": 25
     }
   ]
 }
