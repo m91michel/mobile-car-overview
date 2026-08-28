@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T12:58:40.841Z",
+  "updatedAt": "2026-08-28T13:11:14.163Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -402,7 +402,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:48:43.856Z"
+        "checkedAt": "2026-08-28T10:48:42.217Z"
       }
     },
     {
@@ -761,7 +761,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T11:02:51.300Z"
+        "checkedAt": "2026-08-28T10:57:28.927Z"
       }
     },
     {
@@ -1125,7 +1125,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:51:56.331Z"
       }
     },
     {
@@ -1490,7 +1490,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:52:01.898Z"
       }
     },
     {
@@ -1843,7 +1843,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T11:02:51.300Z"
+        "checkedAt": "2026-08-28T11:02:47.205Z"
       }
     },
     {
@@ -2198,7 +2198,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:48:43.856Z"
+        "checkedAt": "2026-08-28T10:48:43.852Z"
       }
     },
     {
@@ -2941,7 +2941,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:52:11.536Z"
       }
     },
     {
@@ -3272,7 +3272,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:51:44.026Z"
       }
     },
     {
@@ -3650,7 +3650,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:51:46.860Z"
       }
     },
     {
@@ -4010,7 +4010,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:52:08.732Z"
       }
     },
     {
@@ -4344,7 +4344,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:51:32.838Z"
       }
     },
     {
@@ -4691,7 +4691,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:51:59.106Z"
       }
     },
     {
@@ -5105,7 +5105,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T11:02:51.300Z"
+        "checkedAt": "2026-08-28T11:02:51.299Z"
       }
     },
     {
@@ -6194,7 +6194,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:51:35.670Z"
       }
     },
     {
@@ -6529,7 +6529,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:51:41.220Z"
       }
     },
     {
@@ -6899,7 +6899,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:52:04.669Z"
       }
     },
     {
@@ -7899,7 +7899,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:48:43.856Z"
+        "checkedAt": "2026-08-28T10:45:24.205Z"
       }
     },
     {
@@ -8266,7 +8266,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:52:06.747Z"
       }
     },
     {
@@ -8645,7 +8645,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:51:54.312Z"
       }
     },
     {
@@ -9060,7 +9060,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:48:43.856Z"
+        "checkedAt": "2026-08-28T10:48:18.941Z"
       }
     },
     {
@@ -9425,7 +9425,7 @@
       },
       "availability": {
         "status": "sold",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:51:48.618Z"
       }
     },
     {
@@ -9833,7 +9833,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T10:52:29.801Z"
+        "checkedAt": "2026-08-28T10:51:38.450Z"
       }
     },
     {
@@ -10213,7 +10213,7 @@
       },
       "availability": {
         "status": "available",
-        "checkedAt": "2026-08-28T11:02:51.300Z"
+        "checkedAt": "2026-08-28T11:02:42.771Z"
       }
     },
     {
@@ -11096,8 +11096,10 @@
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Stoff, Schwarz",
-          "group": "vehicle"
+          "value": "Stoff/Alcantara Kombination, Schwarz",
+          "group": "vehicle",
+          "listedValue": "Stoff, Schwarz",
+          "corrected": true
         },
         "trailerLoadBraked": {
           "label": "Anhängelast gebremst",
@@ -11317,7 +11319,14 @@
           }
         }
       ],
-      "ref": 32
+      "ref": 32,
+      "assessment": {
+        "verdict": null,
+        "note": "Sitze am Foto geprüft: M-Sport-Sitz mit Stoffbahnen und Alcantara-Wangen, keine reine Stoffausstattung.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 33900
+      }
     },
     {
       "id": "461727403",
@@ -11848,8 +11857,10 @@
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Stoff, Schwarz",
-          "group": "vehicle"
+          "value": "Stoff/Alcantara Kombination, Schwarz",
+          "group": "vehicle",
+          "listedValue": "Stoff, Schwarz",
+          "corrected": true
         }
       },
       "derived": {
@@ -12014,7 +12025,14 @@
           "showInGallery": false
         }
       ],
-      "ref": 34
+      "ref": 34,
+      "assessment": {
+        "verdict": null,
+        "note": "Sitze am Foto geprüft: M-Sport-Sitz mit Stoffbahnen und Alcantara-Wangen, keine reine Stoffausstattung.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 32900
+      }
     },
     {
       "id": "454917686",

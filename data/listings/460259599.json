@@ -185,8 +185,10 @@
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Stoff, Schwarz",
-      "group": "vehicle"
+      "value": "Stoff/Alcantara Kombination, Schwarz",
+      "group": "vehicle",
+      "listedValue": "Stoff, Schwarz",
+      "corrected": true
     },
     "trailerLoadBraked": {
       "label": "Anhängelast gebremst",
@@ -406,5 +408,12 @@
       }
     }
   ],
-  "ref": 32
+  "ref": 32,
+  "assessment": {
+    "verdict": null,
+    "note": "Sitze am Foto geprüft: M-Sport-Sitz mit Stoffbahnen und Alcantara-Wangen, keine reine Stoffausstattung.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 33900
+  }
 }

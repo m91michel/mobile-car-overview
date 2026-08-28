@@ -10,17 +10,10 @@
     }
   },
   "cars": {
-    "462145366": {
+    "419188575": {
       "verdict": "raus",
       "retrofit": [],
-      "note": "Raus: Alpinweiß. Sonst M Sport, Alcantara und Kamera — aber kein ACC."
-    },
-    "459175992": {
-      "verdict": "kandidat",
-      "retrofit": [
-        "ahk"
-      ],
-      "note": "Jüngstes Auto im Feld, BMW-Garantie bis 06/2027 — aber kein ACC, und das ist nicht nachrüstbar."
+      "note": "Raus: Cupra Leon, kein BMW — und reine Stoffsitze."
     },
     "424825114": {
       "verdict": "kandidat",
@@ -29,30 +22,124 @@
       ],
       "note": "M Sport, HUD und Kamera ab Werk in Alcantara Blau — kein ACC, 2 Halter."
     },
+    "450754039": {
+      "verdict": "kandidat",
+      "retrofit": [],
+      "note": "ACC, AHK und Kamera ab Werk — verliert nach der 1.600-€-AHK gegen #26: teurer, weniger Motor."
+    },
     "451774892": {
       "verdict": "top",
       "retrofit": [],
       "note": "Zielbild komplett ab Werk bis auf den Motor; nichts nachzurüsten, aber das teuerste Auto."
     },
-    "461488465": {
-      "verdict": "raus",
-      "retrofit": [],
-      "note": "Raus: reine Stoffsitze. Auch kein ACC."
+    "452520909": {
+      "verdict": "top",
+      "retrofit": [
+        "camera",
+        "ahk"
+      ],
+      "note": "Einziges Portimao Blau mit M Sport und ACC — älteste Basis, Vor-Facelift, Kamera fehlt."
     },
-    "462155994": {
+    "452562130": {
       "verdict": "raus",
       "retrofit": [],
-      "note": "Raus: reine Stoffsitze. Ohne ACC und relativ zum Marktband zu teuer."
+      "note": "Raus: F31 von 2017, nicht G21 — verzerrt nur das Preisgefühl."
+    },
+    "454575246": {
+      "verdict": "kandidat",
+      "retrofit": [],
+      "note": "320i mit AHK, Kamera und HUD ab Werk, nichts nachzurüsten — aber kein ACC."
+    },
+    "457056589": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: Diesel und 83.530 km."
+    },
+    "457556716": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: Diesel, Stoffsitze und 78.000 km."
     },
     "458139136": {
       "verdict": "raus",
       "retrofit": [],
       "note": "Raus: reine Stoffsitze. 28.613 km wären stark, aber ACC fehlt."
     },
-    "457056589": {
+    "458712598": {
       "verdict": "raus",
       "retrofit": [],
-      "note": "Raus: Diesel und 83.530 km."
+      "note": "Raus: reine Stoffsitze. Auch kein ACC."
+    },
+    "459175992": {
+      "verdict": "kandidat",
+      "retrofit": [
+        "ahk"
+      ],
+      "note": "Jüngstes Auto im Feld, BMW-Garantie bis 06/2027 — aber kein ACC, und das ist nicht nachrüstbar."
+    },
+    "460051224": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: reine Stoffsitze. AHK und Kamera ab Werk, aber kein ACC."
+    },
+    "460259599": {
+      "factOverrides": {
+        "interior": "Stoff/Alcantara Kombination, Schwarz"
+      },
+      "note": "Sitze am Foto geprüft: M-Sport-Sitz mit Stoffbahnen und Alcantara-Wangen, keine reine Stoffausstattung."
+    },
+    "460807870": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: Diesel. Wäre mit ACC, AHK, Kamera und M Sport sonst komplett."
+    },
+    "460854078": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: reine Stoffsitze. Ohne ACC und Kamera trotz 20 km Anfahrt kein Kandidat."
+    },
+    "461144700": {
+      "verdict": "top",
+      "retrofit": [],
+      "factOverrides": {
+        "interior": "Stoff/Sensatec Kombination, Schwarz"
+      },
+      "note": "Sitze am Foto geprüft: Stoff/Sensatec, keine reine Stoffausstattung. 320i mit ACC, AHK, 360°, HUD, Harman Kardon, Phytonicblau, unter Marktband."
+    },
+    "461339389": {
+      "factOverrides": {
+        "interior": "Stoff/Alcantara Kombination, Schwarz"
+      },
+      "note": "Sitze am Foto geprüft: M-Sport-Sitz mit Stoffbahnen und Alcantara-Wangen, keine reine Stoffausstattung."
+    },
+    "461488465": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: reine Stoffsitze. Auch kein ACC."
+    },
+    "461760316": {
+      "verdict": "top",
+      "retrofit": [
+        "ahk"
+      ],
+      "note": "Einziger 320i mit ACC im Set, Sensatec, BMW-Vertragshändler — Sport Line statt M Sport, 327 km."
+    },
+    "461917102": {
+      "verdict": "kandidat",
+      "retrofit": [
+        "ahk"
+      ],
+      "note": "320i mit Vollleder, Panorama und Memory — aber kein ACC und 423 km Anfahrt."
+    },
+    "462145366": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: Alpinweiß. Sonst M Sport, Alcantara und Kamera — aber kein ACC."
+    },
+    "462155994": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: reine Stoffsitze. Ohne ACC und relativ zum Marktband zu teuer."
     },
     "40622847776352": {
       "verdict": "kandidat",
@@ -66,37 +153,10 @@
       "retrofit": [],
       "note": "AHK, Kamera und Teilleder ab Werk, jung und günstig — aber kein ACC."
     },
-    "454575246": {
-      "verdict": "kandidat",
-      "retrofit": [],
-      "note": "320i mit AHK, Kamera und HUD ab Werk, nichts nachzurüsten — aber kein ACC."
-    },
     "39859344293056": {
       "verdict": "raus",
       "retrofit": [],
       "note": "Raus: Diesel. ACC, AHK, Kamera und HUD wären sonst stark."
-    },
-    "450754039": {
-      "verdict": "kandidat",
-      "retrofit": [],
-      "note": "ACC, AHK und Kamera ab Werk — verliert nach der 1.600-€-AHK gegen #26: teurer, weniger Motor."
-    },
-    "461917102": {
-      "verdict": "kandidat",
-      "retrofit": [
-        "ahk"
-      ],
-      "note": "320i mit Vollleder, Panorama und Memory — aber kein ACC und 423 km Anfahrt."
-    },
-    "460051224": {
-      "verdict": "raus",
-      "retrofit": [],
-      "note": "Raus: reine Stoffsitze. AHK und Kamera ab Werk, aber kein ACC."
-    },
-    "458712598": {
-      "verdict": "raus",
-      "retrofit": [],
-      "note": "Raus: reine Stoffsitze. Auch kein ACC."
     },
     "39886296760608": {
       "verdict": "kandidat",
@@ -112,39 +172,6 @@
       ],
       "note": "Günstigster Weg zu ACC und Kamera, 148 km, Händler 4,9 — kostet M-Sport-Optik und 50.960 km."
     },
-    "452520909": {
-      "verdict": "top",
-      "retrofit": [
-        "camera",
-        "ahk"
-      ],
-      "note": "Einziges Portimao Blau mit M Sport und ACC — älteste Basis, Vor-Facelift, Kamera fehlt."
-    },
-    "460807870": {
-      "verdict": "raus",
-      "retrofit": [],
-      "note": "Raus: Diesel. Wäre mit ACC, AHK, Kamera und M Sport sonst komplett."
-    },
-    "419188575": {
-      "verdict": "raus",
-      "retrofit": [],
-      "note": "Raus: Cupra Leon, kein BMW — und reine Stoffsitze."
-    },
-    "460854078": {
-      "verdict": "raus",
-      "retrofit": [],
-      "note": "Raus: reine Stoffsitze. Ohne ACC und Kamera trotz 20 km Anfahrt kein Kandidat."
-    },
-    "457556716": {
-      "verdict": "raus",
-      "retrofit": [],
-      "note": "Raus: Diesel, Stoffsitze und 78.000 km."
-    },
-    "452562130": {
-      "verdict": "raus",
-      "retrofit": [],
-      "note": "Raus: F31 von 2017, nicht G21 — verzerrt nur das Preisgefühl."
-    },
     "41966966984672": {
       "verdict": "top",
       "retrofit": [],
@@ -152,13 +179,6 @@
         "interior": "Stoff/Sensatec Kombination, Schwarz"
       },
       "note": "Sitze am Foto geprüft: Stoff/Sensatec. Günstigster Wagen mit ACC, AHK, Kamera und HUD - dafür 64.329 km, 2 Halter."
-    },
-    "461760316": {
-      "verdict": "top",
-      "retrofit": [
-        "ahk"
-      ],
-      "note": "Einziger 320i mit ACC im Set, Sensatec, BMW-Vertragshändler — Sport Line statt M Sport, 327 km."
     },
     "40935871674400": {
       "verdict": "kandidat",
@@ -169,14 +189,6 @@
       "verdict": "raus",
       "retrofit": [],
       "note": "Raus: am Foto bestätigt reine Stoffausstattung in Hellgrau. Zudem 68.900 km, keine Sportsitze, Basis-Lenkrad."
-    },
-    "461144700": {
-      "verdict": "top",
-      "retrofit": [],
-      "factOverrides": {
-        "interior": "Stoff/Sensatec Kombination, Schwarz"
-      },
-      "note": "Sitze am Foto geprüft: Stoff/Sensatec, keine reine Stoffausstattung. 320i mit ACC, AHK, 360°, HUD, Harman Kardon, Phytonicblau, unter Marktband."
     }
   }
 }
