@@ -150,6 +150,54 @@ button:disabled { opacity: 0.45; cursor: default; border-color: var(--line); }
 
 .drawer-empty { padding: 20px 16px; }
 
+.list-save {
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.list-save input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  color: inherit;
+  padding: 5px 9px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--bg);
+}
+.list-save input:focus { outline: none; border-color: var(--accent); }
+
+.list-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+.list-row.on { border-color: var(--accent); background: var(--accent-soft); }
+.list-row:hover { background: var(--accent-soft); }
+.list-load {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  padding: 5px 4px;
+}
+.list-name {
+  flex: 1;
+  min-width: 0;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .car-option-title {
   font-weight: 500;
   /* Some listings are one long "*"-joined word with no break opportunity. */
@@ -337,6 +385,54 @@ td.sold, .car-option.sold .car-option .fav {
 .car-option .fav:hover { color: var(--star); }
 
 .drawer-empty { padding: 20px 16px; }
+
+.list-save {
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.list-save input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  color: inherit;
+  padding: 5px 9px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--bg);
+}
+.list-save input:focus { outline: none; border-color: var(--accent); }
+
+.list-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+.list-row.on { border-color: var(--accent); background: var(--accent-soft); }
+.list-row:hover { background: var(--accent-soft); }
+.list-load {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  padding: 5px 4px;
+}
+.list-name {
+  flex: 1;
+  min-width: 0;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .car-option-title { opacity: 0.5; }
 .gone {

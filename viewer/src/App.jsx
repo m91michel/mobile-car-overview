@@ -102,11 +102,16 @@ export default function App() {
   // A shortlist you keep while working through the field, independent of which
   // cars happen to be in the table right now.
   const [favourites, setFavourites] = useLocalStorage(key('favourites'), []);
+  // Named selections, so narrowing the table to a shortlist is not a one-way
+  // door back through 30 checkboxes.
+  const [lists, setLists] = useLocalStorage(key('lists'), []);
   const [dragKey, setDragKey] = useState(null);
-  const [openDrawer, setOpenDrawer] = useState(null); // 'cars' | 'favourites' | 'rows' | null
+  const [openDrawer, setOpenDrawer] = useState(null); // 'cars' | 'favourites' | 'lists' | 'rows'
   const carDrawer = useDrawer(openDrawer === 'cars');
   const favDrawer = useDrawer(openDrawer === 'favourites');
+  const listDrawer = useDrawer(openDrawer === 'lists');
   const rowDrawer = useDrawer(openDrawer === 'rows');
+  const [listName, setListName] = useState('');
 
   const load = useCallback(() => {
     fetch('/api/cars')
@@ -172,6 +177,19 @@ export default function App() {
       return base.includes(id) ? base.filter((x) => x !== id) : [...base, id];
     });
 
+  const saveList = (name, ids) => {
+    const trimmed = name.trim();
+    if (!trimmed) return;
+    setLists((all) => [
+      ...all.filter((list) => list.name !== trimmed),
+      { name: trimmed, ids: [...ids] },
+    ]);
+    setListName('');
+  };
+
+  const sameAsSelection = (ids) =>
+    ids.length === selectedIds.length && ids.every((id) => selectedIds.includes(id));
+
   const isFavourite = (id) => favourites.includes(id);
 
   const toggleFavourite = (id) =>
@@ -232,6 +250,9 @@ export default function App() {
         </button>
         <button className="drawer-open" onClick={() => setOpenDrawer('favourites')}>
           <span className="star">★</span> <strong>{favourites.length}</strong>
+        </button>
+        <button className="drawer-open" onClick={() => setOpenDrawer('lists')}>
+          Listen <strong>{lists.length}</strong>
         </button>
         <button className="drawer-open" onClick={() => setOpenDrawer('rows')}>
           Zeilen <strong>{visibleRows.length}</strong>
@@ -481,6 +502,77 @@ export default function App() {
           </table>
         </div>
       )}
+
+      <dialog
+        className="drawer"
+        ref={listDrawer}
+        onClose={() => setOpenDrawer(null)}
+        onClick={(e) => {
+          if (e.target === listDrawer.current) setOpenDrawer(null); // backdrop
+        }}
+      >
+        <header className="drawer-head">
+          <strong>Listen</strong>
+          <span className="muted">{lists.length}</span>
+          <div className="spacer" />
+          <button onClick={() => setOpenDrawer(null)} title="Schließen">
+            ✕
+          </button>
+        </header>
+        <form
+          className="list-save"
+          onSubmit={(e) => {
+            e.preventDefault();
+            saveList(listName, selectedIds);
+          }}
+        >
+          <input
+            value={listName}
+            onChange={(e) => setListName(e.target.value)}
+            placeholder="z. B. unter 30k"
+            aria-label="Name der Liste"
+          />
+          <button type="submit" disabled={!listName.trim() || shown.length === 0}>
+            {shown.length} sichern
+          </button>
+        </form>
+        {lists.length === 0 ? (
+          <p className="drawer-empty muted">
+            Noch keine Liste. Die aktuelle Fahrzeugauswahl lässt sich oben unter einem Namen
+            ablegen und später mit einem Klick zurückholen.
+          </p>
+        ) : (
+          <ul className="drawer-list">
+            {lists.map((list) => (
+              <li key={list.name}>
+                <div className={`list-row ${sameAsSelection(list.ids) ? 'on' : ''}`}>
+                  <button
+                    className="list-load"
+                    onClick={() => setSelected([...list.ids])}
+                    title="Diese Liste vergleichen"
+                  >
+                    <span className="list-name">{list.name}</span>
+                    <span className="muted">{list.ids.length}</span>
+                  </button>
+                  <button
+                    onClick={() => saveList(list.name, selectedIds)}
+                    disabled={sameAsSelection(list.ids)}
+                    title="Liste auf die aktuelle Auswahl setzen"
+                  >
+                    Aktualisieren
+                  </button>
+                  <button
+                    onClick={() => setLists((all) => all.filter((x) => x.name !== list.name))}
+                    title="Liste löschen"
+                  >
+                    ✕
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
+      </dialog>
 
       <dialog
         className="drawer"
