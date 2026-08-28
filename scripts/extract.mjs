@@ -59,7 +59,6 @@ export function findListingObject(flight) {
   return candidates.sort((a, b) => Object.keys(b).length - Object.keys(a).length)[0] ?? null;
 }
 
-const IMAGE_SIZE = '$_60.JPG'; // mobile.de's large-image suffix
 
 /** Flatten the raw listing into the shape the compare viewer consumes. */
 export function normalize(listing, sourceUrl) {
@@ -111,8 +110,10 @@ export function normalize(listing, sourceUrl) {
     features: listing.features ?? [],
     highlights: listing.highlights ?? [],
 
+    // Stored without a size: the CDN takes `?rule=mo-240|mo-360|mo-1024|mo-1600`,
+    // so the viewer picks the size it needs per slot.
     images: (listing.images ?? []).map((img) =>
-      img.uri?.startsWith('http') ? img.uri : `https://${img.uri}${IMAGE_SIZE}`,
+      img.uri?.startsWith('http') ? img.uri : `https://${img.uri}`,
     ),
 
     dealer: {
