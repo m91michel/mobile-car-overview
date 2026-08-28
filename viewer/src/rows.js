@@ -1,3 +1,5 @@
+import { permanentGaps } from './wishlist.js';
+
 // Turns the scraped listings into one flat list of comparison rows.
 // Flat on purpose: mobile.de splits hard facts and Ausstattung across tabs,
 // which is exactly what makes its own compare page useless.
@@ -117,9 +119,19 @@ export function buildRows(cars) {
     kind: 'fact',
     value: (car) => {
       const retrofit = car.assessment?.retrofit;
-      if (!retrofit) return null;
-      if (!retrofit.length) return 'nichts';
+      if (!retrofit?.length) return null;
       return retrofit.map((item) => `${item.label} ${euro(item.cost)}`).join(' + ');
+    },
+  });
+  // Must sit next to Nachrüstung: that row only prices what a workshop can add,
+  // so without this one a car with nothing retrofittable looks complete.
+  rows.push({
+    key: 'assessment:gaps',
+    label: 'Nicht nachrüstbar',
+    kind: 'fact',
+    value: (car) => {
+      const gaps = permanentGaps(car);
+      return gaps.length ? gaps.join(', ') : null;
     },
   });
   rows.push({

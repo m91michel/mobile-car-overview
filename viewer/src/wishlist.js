@@ -70,6 +70,25 @@ const FACT_RULES = {
   },
 };
 
+/**
+ * What money cannot fix on a G21, and therefore what the "Nachrüstung" row can
+ * never contain: ACC needs radar, loom and coding, the M Sport look is bumpers
+ * and suspension, and the seat material means a retrim that costs as much as
+ * buying the better car. Stated as its own row because a car with nothing
+ * retrofittable otherwise reads as a car with nothing missing.
+ */
+const PERMANENT_GAPS = [
+  { label: 'ACC', missing: (car) => !car.features?.includes('Abstandstempomat') },
+  { label: 'M Sport', missing: (car) => !car.features?.includes('Sportpaket') },
+  {
+    label: 'Sitzmaterial',
+    missing: (car) => FACT_RULES.interior(car.facts?.interior?.value ?? '') === 'bad',
+  },
+];
+
+export const permanentGaps = (car) =>
+  PERMANENT_GAPS.filter((gap) => gap.missing(car)).map((gap) => gap.label);
+
 /** What one table cell shows: an optional mark, the text, and its tone. */
 export function cellFor(row, car) {
   const raw = row.value(car);
@@ -83,6 +102,10 @@ export function cellFor(row, car) {
   }
 
   if (!raw) return { mark: '', text: '–', tone: 'empty' };
+
+  // Anything listed here is permanently missing, so it is always a ❌ — never a
+  // neutral value the eye can skip over.
+  if (row.key === 'assessment:gaps') return { mark: '❌', text: raw, tone: 'bad' };
 
   const fact = row.key.startsWith('fact:') ? row.key.slice('fact:'.length) : null;
   const tone = FACT_RULES[fact] ? FACT_RULES[fact](raw) : null;
