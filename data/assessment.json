@@ -17,12 +17,16 @@
     },
     "459175992": {
       "verdict": "kandidat",
-      "retrofit": ["ahk"],
+      "retrofit": [
+        "ahk"
+      ],
       "note": "Jüngstes Auto im Feld, BMW-Garantie bis 06/2027 — aber kein ACC, und das ist nicht nachrüstbar."
     },
     "424825114": {
       "verdict": "kandidat",
-      "retrofit": ["ahk"],
+      "retrofit": [
+        "ahk"
+      ],
       "note": "M Sport, HUD und Kamera ab Werk in Alcantara Blau — kein ACC, 2 Halter."
     },
     "451774892": {
@@ -52,7 +56,9 @@
     },
     "40622847776352": {
       "verdict": "kandidat",
-      "retrofit": ["ahk"],
+      "retrofit": [
+        "ahk"
+      ],
       "note": "ACC, M Sport, 360° und nur 23.000 km — aber 426 km Anfahrt und nach AHK teurer als #4."
     },
     "40907593490464": {
@@ -77,7 +83,9 @@
     },
     "461917102": {
       "verdict": "kandidat",
-      "retrofit": ["ahk"],
+      "retrofit": [
+        "ahk"
+      ],
       "note": "320i mit Vollleder, Panorama und Memory — aber kein ACC und 423 km Anfahrt."
     },
     "460051224": {
@@ -92,17 +100,24 @@
     },
     "39886296760608": {
       "verdict": "kandidat",
-      "retrofit": ["camera"],
+      "retrofit": [
+        "camera"
+      ],
       "note": "M Sport in Individual-Tansanitblau mit AHK — aber weder ACC noch Kamera."
     },
     "40586751728608": {
       "verdict": "top",
-      "retrofit": ["ahk"],
+      "retrofit": [
+        "ahk"
+      ],
       "note": "Günstigster Weg zu ACC und Kamera, 148 km, Händler 4,9 — kostet M-Sport-Optik und 50.960 km."
     },
     "452520909": {
       "verdict": "top",
-      "retrofit": ["camera", "ahk"],
+      "retrofit": [
+        "camera",
+        "ahk"
+      ],
       "note": "Einziges Portimao Blau mit M Sport und ACC — älteste Basis, Vor-Facelift, Kamera fehlt."
     },
     "460807870": {
@@ -137,13 +152,25 @@
     },
     "461760316": {
       "verdict": "top",
-      "retrofit": ["ahk"],
+      "retrofit": [
+        "ahk"
+      ],
       "note": "Einziger 320i mit ACC im Set, Sensatec, BMW-Vertragshändler — Sport Line statt M Sport, 327 km."
     },
     "40935871674400": {
       "verdict": "raus",
       "retrofit": [],
       "note": "Raus: reine Stoffsitze. Zudem starre AHK, 03/2021 und ein Händler ohne Bewertungen."
+    },
+    "39939637985408": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: reine Stoffsitze. Zudem 68.900 km an der Obergrenze, keine Sportsitze, 17-Zoll."
+    },
+    "461144700": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: reine Stoffsitze - sonst das stärkste Auto im Set: 320i, ACC, AHK, 360 Grad, HUD, Phytonicblau, unter Marktband."
     }
   }
 }

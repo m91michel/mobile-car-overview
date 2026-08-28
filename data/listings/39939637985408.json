@@ -393,5 +393,12 @@
       }
     }
   ],
-  "ref": 28
+  "ref": 28,
+  "assessment": {
+    "verdict": "raus",
+    "note": "Raus: reine Stoffsitze. Zudem 68.900 km an der Obergrenze, keine Sportsitze, 17-Zoll.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 28850
+  }
 }

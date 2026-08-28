@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T10:07:49.047Z",
+  "updatedAt": "2026-08-28T10:10:00.493Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -10117,7 +10117,14 @@
           }
         }
       ],
-      "ref": 28
+      "ref": 28,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: reine Stoffsitze. Zudem 68.900 km an der Obergrenze, keine Sportsitze, 17-Zoll.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 28850
+      }
     },
     {
       "id": "461144700",
@@ -10484,7 +10491,14 @@
           "showInGallery": false
         }
       ],
-      "ref": 29
+      "ref": 29,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: reine Stoffsitze - sonst das stärkste Auto im Set: 320i, ACC, AHK, 360 Grad, HUD, Phytonicblau, unter Marktband.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 29835
+      }
     }
   ]
 }

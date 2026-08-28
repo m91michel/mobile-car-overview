@@ -363,5 +363,12 @@
       "showInGallery": false
     }
   ],
-  "ref": 29
+  "ref": 29,
+  "assessment": {
+    "verdict": "raus",
+    "note": "Raus: reine Stoffsitze - sonst das stärkste Auto im Set: 320i, ACC, AHK, 360 Grad, HUD, Phytonicblau, unter Marktband.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 29835
+  }
 }
