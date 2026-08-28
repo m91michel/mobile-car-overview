@@ -88,7 +88,9 @@ th, td {
   text-align: left;
   vertical-align: middle;
 }
-td { min-width: 170px; }
+td { min-width: 200px; }
+/* Caps how wide one long value (a dealer name) can push its column. */
+.cell { max-width: 270px; overflow-wrap: anywhere; }
 
 thead th {
   position: sticky;
@@ -119,18 +121,17 @@ thead th .price { display: block; color: var(--muted); font-weight: 400; }
   background: var(--panel);
   font-weight: 500;
   border-right: 1px solid var(--line);
-  min-width: 260px;
 }
 thead .row-head { z-index: 3; }
 
 tbody .row-head { cursor: grab; }
-.row-head-inner { display: flex; align-items: center; gap: 8px; }
+.row-head-inner { display: flex; align-items: center; gap: 8px; width: 300px; }
 tbody tr:nth-child(even) td, tbody tr:nth-child(even) .row-head { background: color-mix(in srgb, var(--bg) 45%, var(--panel)); }
 tbody tr:hover td, tbody tr:hover .row-head { background: var(--accent-soft); }
 tr.dragging { opacity: 0.4; }
 
 .grip { color: var(--muted); cursor: grab; }
-.label { flex: 1; }
+.label { flex: 1; overflow-wrap: anywhere; }
 .row-actions { display: flex; gap: 2px; opacity: 0; }
 tbody tr:hover .row-actions, .row-head:focus-within .row-actions { opacity: 1; }
 .row-actions button { padding: 1px 6px; line-height: 1.3; background: transparent; }

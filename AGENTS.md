@@ -67,6 +67,8 @@ pnpm scrape -- 'https://www.mobile.de/park/compare?id=462145366&id=459175992'
 pnpm scrape -- --from cars.txt
 pnpm chrome                   # start the scraping Chrome on its own
 pnpm chrome:stop              # shut it down
+
+pnpm viewer                   # compare viewer on http://localhost:5180
 ```
 
 Quote any URL — the `&` between `id` params would otherwise be swallowed by the
@@ -110,6 +112,27 @@ can be refreshed without pasting URLs.
 `scripts/parkplatz.mjs` harvests ids from three places at once — detail links,
 the compare-button URL, and the RSC payload — and dedupes, so a markup change in
 any one of them does not break the run.
+
+## The viewer
+
+Vite + React in `viewer/`, started with `pnpm viewer`.
+
+- **It reads the folder, not a bundle.** A dev-server middleware in
+  `viewer/vite.config.js` serves `data/listings/*.json` from disk on every
+  `/api/cars` request, so a scrape run shows up on a plain reload. Nothing is
+  imported at build time and no data is copied into the app.
+- **One flat table.** `viewer/src/rows.js` turns the listings into a single row
+  list: price, the union of all `facts` keys, dealer, then the union of all
+  features as ✓/–. Union, not intersection — a figure one car is missing shows
+  as a gap instead of dropping the row.
+- **Rows move.** Drag a row by its label, or use ⤒ / ↑ / ↓; ✕ hides it. Order is
+  stored as a full key list, and moves target the next *visible* row, so hidden
+  rows never swallow a click.
+- **Settings persist** per key in localStorage via `useLocalStorage` from
+  `usehooks-ts`: selected cars, row order, hidden rows, both filters.
+- **Photos are hotlinked.** mobile.de's CDN sizes them by query rule
+  (`?rule=mo-240`, `mo-360`, `mo-1024`, `mo-1600`), which is why `images[]` is
+  stored without a size. Nothing is downloaded.
 
 ## Known limits
 

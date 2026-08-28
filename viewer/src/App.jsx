@@ -224,7 +224,7 @@ export default function App() {
                     const value = row.value(car);
                     return (
                       <td key={car.id} className={value ? '' : 'empty'}>
-                        {value ?? '–'}
+                        <div className="cell">{value ?? '–'}</div>
                       </td>
                     );
                   })}
