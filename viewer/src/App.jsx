@@ -536,13 +536,41 @@ export default function App() {
             {shown.length} sichern
           </button>
         </form>
-        {lists.length === 0 ? (
+        {lists.length === 0 && favourites.length === 0 ? (
           <p className="drawer-empty muted">
             Noch keine Liste. Die aktuelle Fahrzeugauswahl lässt sich oben unter einem Namen
             ablegen und später mit einem Klick zurückholen.
           </p>
         ) : (
           <ul className="drawer-list">
+            {/* The starred cars behave like any other list here. Their two
+                buttons act on the stars themselves, which is why they say
+                what they do rather than reusing the plain labels. */}
+            {favourites.length > 0 && (
+              <li>
+                <div className={`list-row ${sameAsSelection(favourites) ? 'on' : ''}`}>
+                  <button
+                    className="list-load"
+                    onClick={() => setSelected([...favourites])}
+                    title="Die Favoriten vergleichen"
+                  >
+                    <span className="star">★</span>
+                    <span className="list-name">Favoriten</span>
+                    <span className="muted">{favourites.length}</span>
+                  </button>
+                  <button
+                    onClick={() => setFavourites([...selectedIds])}
+                    disabled={sameAsSelection(favourites)}
+                    title="Genau die Fahrzeuge der aktuellen Auswahl mit einem Stern versehen"
+                  >
+                    Aktualisieren
+                  </button>
+                  <button onClick={() => setFavourites([])} title="Alle Sterne entfernen">
+                    ✕
+                  </button>
+                </div>
+              </li>
+            )}
             {lists.map((list) => (
               <li key={list.name}>
                 <div className={`list-row ${sameAsSelection(list.ids) ? 'on' : ''}`}>
