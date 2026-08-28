@@ -1,0 +1,352 @@
+{
+  "id": "40939067025760",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-ahk-rfk-lordose-led-shz-tempomat-bt-syke/40939067025760.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40939067025760&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T12:52:57.404Z",
+  "title": "BMW 318i Touring AHK RFK LORDOSE LED SHZ TEMPOMAT BT",
+  "shortTitle": "BMW 318",
+  "subTitle": "i Touring AHK RFK LORDOSE LED SHZ TEMPOMAT BT",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 34900,
+    "net": 29327.73,
+    "currency": "EUR",
+    "localized": "34.900 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "REASONABLE_PRICE",
+    "label": "Fairer Preis",
+    "offset": 18,
+    "thresholds": [
+      "24.400 €",
+      "31.800 €",
+      "34.200 €",
+      "38.000 €",
+      "40.800 €",
+      "45.400 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi, Jahreswagen",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "Touring AHK RFK LORDOSE LED SHZ TEMPOMAT BT",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "11.859 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "09/2025",
+      "group": "vehicle"
+    },
+    "constructionYear": {
+      "label": "Baujahr",
+      "value": "2025",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Hinten, Vorne, Kamera, Selbstlenkende Systeme",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "TANSANITBLAU II",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Blau Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Stoff, Schwarz",
+      "group": "vehicle"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.300 kg",
+      "group": "vehicle"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg",
+      "group": "vehicle"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.650 kg",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "59 l",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 11859,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2025-09",
+    "constructionYear": 2025,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1650,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 412
+  },
+  "features": [
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Android Auto",
+    "Anhängerkupplung schwenkbar",
+    "Apple CarPlay",
+    "Armlehne",
+    "Ausparkassistent",
+    "Berganfahrassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/e7/e74f9ac8-9b4c-4942-93f1-5d8da258640e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/20/20f50113-0cbb-40c6-bb89-7384f9ab80f8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b4/b471e058-e68e-4ecf-9379-88b6c471534f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4b49465-e51e-46d8-9650-9d132d0c9f87",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4f/4faf018f-691c-472e-9eb7-d88ffab689e8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb398182-38dd-481c-8a07-90e3eab95355",
+    "https://img.classistatic.de/api/v1/mo-prod/images/66/662a168f-92d9-4ae1-a247-fdd216022470",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e0/e0aa78e2-b908-4663-8313-f379debba8da",
+    "https://img.classistatic.de/api/v1/mo-prod/images/78/78a21a08-6202-41ad-aaa5-cf0c01d0f9d1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ee2d57b-4395-4611-8b48-723b9cd74940",
+    "https://img.classistatic.de/api/v1/mo-prod/images/04/04a5b0cc-507e-42d9-879f-df219d14b679",
+    "https://img.classistatic.de/api/v1/mo-prod/images/18/18e6ca28-7804-4dd9-8f9f-5151c6a47007",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa70542e-ce22-4b1a-b7b8-8e62558b4062",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff2a03f3-d542-448a-b183-a98d5823c6e4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ab/ab9c9317-694e-4808-a738-9022185023d2",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1a/1aaf3d73-7191-41cd-b986-a1e143f8c42d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/cd/cdc8b04b-bcf0-4bdc-a53d-018d4aaddfa4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/95/95abe367-7f67-40be-a4da-db9e29a4b5c3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9e/9eaed59f-fd7b-4003-8351-8d18a1f724e3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb727b9b-546c-454d-ba65-db93f092bf05",
+    "https://img.classistatic.de/api/v1/mo-prod/images/23/23cc2d0d-5976-464d-ace5-6a9a992780fe"
+  ],
+  "dealer": {
+    "name": "Freese-Süd GmbH",
+    "type": "Händler",
+    "street": "Siemensstraße 9",
+    "city": "DE-28857 Syke",
+    "country": "DE",
+    "phone": "+49 (0)4242 840330111",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=47460219",
+    "location": {
+      "lat": 52.9167982,
+      "lon": 8.8011611
+    },
+    "openingHours": [],
+    "rating": {
+      "score": 3.3,
+      "count": 1
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=40939067025760",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 6980,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 27920,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 370,
+        "finalInstallment": 11517,
+        "totalInterest": 5427.22,
+        "totalAmount": 33347.22,
+        "localized": {
+          "downPayment": "6.980,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "27.920,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "370 €",
+          "finalInstallment": "11.517,00 €",
+          "totalInterest": "5.427,22 €",
+          "totalAmount": "33.347,22 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 36
+}
