@@ -409,10 +409,23 @@ instead of crying duplicate.
 
 ### Git
 
-- **Commit straight to `main`.** This is a small personal project with no remote
-  and no review flow, so feature branches only fragment the work — the more so
-  because a second session may be committing to `main` at the same time. No need
-  to ask, and no need to branch first.
+- **Commit straight to `main`.** This is a small personal project with no review
+  flow, so feature branches only fragment the work — the more so because a second
+  session may be committing to `main` at the same time. No need to ask, and no
+  need to branch first.
+- **Always push after committing.** `origin` is
+  `github.com/m91michel/mobile-car-overview`, and Vercel deploys `main`
+  (`vercel.json`: `pnpm viewer:build` → `viewer/dist`). An unpushed commit is a
+  change the deployed viewer does not have, so pushing is part of finishing the
+  work, not a separate favour to ask about.
+- **A push can be rejected, because `main` is shared.** Another session may have
+  pushed in the meantime. Rebase onto the remote and push again
+  (`git pull --rebase origin main`) rather than forcing — and never
+  `--force-with-lease` over a commit you did not write.
+- **A `data/` commit is a deploy too.** The build freezes `data/listings/*.json`
+  into `dist/api/cars.json` (`generateBundle` in `viewer/vite.config.js`), so the
+  deployed site shows the cars as of the last pushed commit. A scrape run that is
+  committed but not pushed is invisible online.
 - **Do not commit another session's in-flight changes.** More than one Claude
   session works in this repo, so `git status` regularly shows files you did not
   touch. Leave those out of your commit rather than attributing someone else's
