@@ -40,6 +40,29 @@ export const carRef = (car) => (typeof car.ref === 'number' ? `#${car.ref}` : ''
 export const carLabel = (car) =>
   car.title || [car.make, car.model].filter(Boolean).join(' ') || car.id;
 
+const numberFrom = (text) => {
+  const digits = typeof text === 'string' ? text.replace(/\D/g, '') : '';
+  return digits ? Number(digits) : null;
+};
+
+/** Sort options offered for the car list and, with it, the table columns. */
+export const SORTS = [
+  { key: 'ref', label: '#', value: (car) => (typeof car.ref === 'number' ? car.ref : null) },
+  { key: 'price', label: 'Preis', value: (car) => car.price?.gross ?? null },
+  { key: 'mileage', label: 'km', value: (car) => numberFrom(car.facts?.mileage?.value) },
+];
+
+/** Cars without the sorted-on value go last, in both directions. */
+export function sortCars(cars, sortKey, desc = false) {
+  const pick = (SORTS.find((s) => s.key === sortKey) ?? SORTS[0]).value;
+  return [...cars].sort((a, b) => {
+    const left = pick(a);
+    const right = pick(b);
+    if (left === null || right === null) return left === right ? 0 : left === null ? 1 : -1;
+    return desc ? right - left : left - right;
+  });
+}
+
 /** Enough to tell two "BMW 318" apart in the picker. */
 export const carSubline = (car) =>
   [car.facts?.firstRegistration?.value, car.facts?.mileage?.value].filter(Boolean).join(' · ');

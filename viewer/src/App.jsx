@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useLocalStorage } from 'usehooks-ts';
-import { buildRows, carLabel, carRef, carSubline, photo, rowDiffers } from './rows.js';
+import { SORTS, buildRows, carLabel, carRef, carSubline, photo, rowDiffers, sortCars } from './rows.js';
 
 const key = (name) => `car-compare/${name}`;
 
@@ -26,6 +26,8 @@ export default function App() {
   const [hiddenKeys, setHiddenKeys] = useLocalStorage(key('hidden'), []);
   const [diffOnly, setDiffOnly] = useLocalStorage(key('diff-only'), false);
   const [featuresOnly, setFeaturesOnly] = useLocalStorage(key('features-only'), false);
+  const [sortKey, setSortKey] = useLocalStorage(key('sort'), 'ref');
+  const [sortDesc, setSortDesc] = useLocalStorage(key('sort-desc'), false);
   const [dragKey, setDragKey] = useState(null);
   const [openDrawer, setOpenDrawer] = useState(null); // 'cars' | 'rows' | null
   const carDrawer = useDrawer(openDrawer === 'cars');
@@ -35,13 +37,15 @@ export default function App() {
     fetch('/api/cars')
       .then((res) => res.json())
       .then((data) => {
-        const sorted = [...data.cars].sort((a, b) => (a.price?.gross ?? 0) - (b.price?.gross ?? 0));
-        setCars(sorted);
+        setCars(data.cars);
         setError(null);
       })
       .catch((err) => setError(String(err)));
   }, []);
   useEffect(load, [load]);
+
+  // One order for both the drawer list and the table columns.
+  const sortedCars = useMemo(() => sortCars(cars ?? [], sortKey, sortDesc), [cars, sortKey, sortDesc]);
 
   const selectedIds = useMemo(() => {
     if (!cars) return [];
@@ -50,8 +54,8 @@ export default function App() {
   }, [cars, selected]);
 
   const shown = useMemo(
-    () => (cars ?? []).filter((c) => selectedIds.includes(c.id)),
-    [cars, selectedIds],
+    () => sortedCars.filter((c) => selectedIds.includes(c.id)),
+    [sortedCars, selectedIds],
   );
 
   const allRows = useMemo(() => buildRows(shown), [shown]);
@@ -173,8 +177,26 @@ export default function App() {
             ✕
           </button>
         </header>
+        <div className="drawer-sort">
+          <span className="muted">Sortierung</span>
+          {SORTS.map((sort) => (
+            <button
+              key={sort.key}
+              className={sortKey === sort.key ? 'on' : ''}
+              onClick={() => setSortKey(sort.key)}
+            >
+              {sort.label}
+            </button>
+          ))}
+          <button
+            onClick={() => setSortDesc(!sortDesc)}
+            title={sortDesc ? 'Absteigend' : 'Aufsteigend'}
+          >
+            {sortDesc ? '↓' : '↑'}
+          </button>
+        </div>
         <ul className="drawer-list">
-          {cars.map((car) => {
+          {sortedCars.map((car) => {
             const active = selectedIds.includes(car.id);
             return (
               <li key={car.id}>
