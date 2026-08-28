@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T08:52:02.459Z",
+  "updatedAt": "2026-08-28T08:53:42.034Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -9125,6 +9125,360 @@
         }
       ],
       "ref": 26
+    },
+    {
+      "id": "40935871674400",
+      "url": "https://suchen.mobile.de/auto-inserat/bmw-318-i-sport-line-ahk-acc-navi-led-shz-ambie-kam-l%C3%BCbben/40935871674400.html",
+      "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40935871674400&scopeId=C&action=compareItem",
+      "fetchedAt": "2026-08-28T08:53:42.032Z",
+      "title": "BMW 318 i Sport-Line AHK ACC Navi LED SHZ Ambie. KAM",
+      "shortTitle": "BMW 318",
+      "subTitle": "i Sport-Line AHK ACC Navi LED SHZ Ambie. KAM",
+      "make": "BMW",
+      "model": "318",
+      "category": "EstateCar",
+      "isNew": false,
+      "kba": {
+        "hsn": "0005",
+        "tsn": "CYW"
+      },
+      "price": {
+        "gross": 28490,
+        "net": null,
+        "currency": "EUR",
+        "localized": "28.490 €",
+        "vatRate": null,
+        "vatNote": null,
+        "type": "FIXED"
+      },
+      "priceRating": {
+        "rating": "REASONABLE_PRICE",
+        "label": "Fairer Preis",
+        "offset": 78,
+        "thresholds": [
+          "18.700 €",
+          "24.300 €",
+          "26.200 €",
+          "29.100 €",
+          "31.200 €",
+          "34.700 €"
+        ]
+      },
+      "facts": {
+        "damageCondition": {
+          "label": "Fahrzeugzustand",
+          "value": "Gebrauchtfahrzeug, Unfallfrei",
+          "group": "vehicle"
+        },
+        "category": {
+          "label": "Kategorie",
+          "value": "Kombi",
+          "group": "vehicle"
+        },
+        "modelRange": {
+          "label": "Baureihe",
+          "value": "G81",
+          "group": "vehicle"
+        },
+        "availability": {
+          "label": "Verfügbarkeit",
+          "value": "Sofort",
+          "group": "vehicle"
+        },
+        "mileage": {
+          "label": "Kilometerstand",
+          "value": "43.400 km",
+          "group": "vehicle"
+        },
+        "cubicCapacity": {
+          "label": "Hubraum",
+          "value": "1.998 cm³",
+          "group": "vehicle"
+        },
+        "power": {
+          "label": "Leistung",
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
+        },
+        "envkv.engineType": {
+          "label": "Antriebsart",
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
+        },
+        "fuel": {
+          "label": "Kraftstoffart",
+          "value": "Benzin",
+          "group": "vehicle"
+        },
+        "envkv.energyConsumption": {
+          "label": "Energieverbrauch (komb.)",
+          "value": "6,8 l/100km",
+          "group": "envkv"
+        },
+        "envkv.co2Emissions": {
+          "label": "CO₂-Emissionen (komb.)",
+          "value": "155 g/km",
+          "group": "envkv"
+        },
+        "envkv.co2Class": {
+          "label": "CO₂-Klasse",
+          "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+          "group": "envkv"
+        },
+        "envkv.consumptionDetails.fuel": {
+          "label": "Kraftstoffverbrauch",
+          "value": "6,8 l/100km (kombiniert) · 9,4 l/100km (Innenstadt) · 6,8 l/100km (Stadtrand) · 5,7 l/100km (Landstraße) · 6,8 l/100km (Autobahn)",
+          "values": [
+            "6,8 l/100km (kombiniert)",
+            "9,4 l/100km (Innenstadt)",
+            "6,8 l/100km (Stadtrand)",
+            "5,7 l/100km (Landstraße)",
+            "6,8 l/100km (Autobahn)"
+          ],
+          "group": "envkv"
+        },
+        "numSeats": {
+          "label": "Anzahl Sitzplätze",
+          "value": "5",
+          "group": "vehicle"
+        },
+        "doorCount": {
+          "label": "Anzahl der Türen",
+          "value": "4/5",
+          "group": "vehicle"
+        },
+        "transmission": {
+          "label": "Getriebe",
+          "value": "Automatik",
+          "group": "vehicle"
+        },
+        "emissionClass": {
+          "label": "Schadstoffklasse",
+          "value": "Euro6d",
+          "group": "vehicle"
+        },
+        "emissionsSticker": {
+          "label": "Umweltplakette",
+          "value": "4 (Grün)",
+          "group": "vehicle"
+        },
+        "firstRegistration": {
+          "label": "Erstzulassung",
+          "value": "03/2021",
+          "group": "vehicle"
+        },
+        "numberOfPreviousOwners": {
+          "label": "Anzahl der Fahrzeughalter",
+          "value": "2",
+          "group": "vehicle"
+        },
+        "hu": {
+          "label": "HU",
+          "value": "Neu",
+          "group": "vehicle"
+        },
+        "climatisation": {
+          "label": "Klimatisierung",
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
+        },
+        "parkAssists": {
+          "label": "Einparkhilfe",
+          "value": "Kamera, Hinten, Vorne",
+          "group": "vehicle"
+        },
+        "airbag": {
+          "label": "Airbags",
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
+        },
+        "manufacturerColorName": {
+          "label": "Farbe (Hersteller)",
+          "value": "dravitgrau",
+          "group": "vehicle"
+        },
+        "color": {
+          "label": "Farbe",
+          "value": "Grau Metallic",
+          "group": "vehicle"
+        },
+        "interior": {
+          "label": "Innenausstattung",
+          "value": "Stoff, Schwarz",
+          "group": "vehicle"
+        },
+        "cylinder": {
+          "label": "Zylinder",
+          "value": "4",
+          "group": "vehicle"
+        },
+        "fuelTankVolume": {
+          "label": "Tankgröße",
+          "value": "59 l",
+          "group": "vehicle"
+        }
+      },
+      "derived": {
+        "mileageKm": 43400,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2021-03",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 2,
+        "weightKg": null,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": 155,
+        "consumptionL100km": 6.8,
+        "distanceFromHomeKm": 337
+      },
+      "features": [
+        "Abgedunkelte Scheiben",
+        "ABS",
+        "Abstandstempomat",
+        "Abstandswarner",
+        "Alarmanlage",
+        "Ambiente-Beleuchtung",
+        "Android Auto",
+        "Anhängerkupplung fest",
+        "Apple CarPlay",
+        "Armlehne",
+        "Berganfahrassistent",
+        "Blendfreies Fernlicht",
+        "Bluetooth",
+        "Bordcomputer",
+        "Dachreling",
+        "Elektr. Fensterheber",
+        "Elektr. Heckklappe",
+        "Elektr. Seitenspiegel",
+        "Elektr. Seitenspiegel anklappbar",
+        "Elektr. Sitzeinstellung",
+        "Elektr. Wegfahrsperre",
+        "ESP",
+        "Fernlichtassistent",
+        "Freisprecheinrichtung",
+        "Garantie",
+        "Gepäckraumabtrennung",
+        "Geschwindigkeitsbegrenzer",
+        "Induktionsladen für Smartphones",
+        "Innenspiegel autom. abblendend",
+        "Isofix",
+        "Lederlenkrad",
+        "LED-Scheinwerfer",
+        "Leichtmetallfelgen",
+        "Lichtsensor",
+        "Lordosenstütze",
+        "Müdigkeitswarner",
+        "Musikstreaming integriert",
+        "Navigationssystem",
+        "Nebelscheinwerfer",
+        "Nichtraucher-Fahrzeug",
+        "Notbremsassistent",
+        "Notrufsystem",
+        "Partikelfilter",
+        "Radio DAB",
+        "Regensensor",
+        "Reifendruckkontrolle",
+        "Schaltwippen",
+        "Scheckheftgepflegt",
+        "Schlüssellose Zentralverriegelung (Keyless)",
+        "Servolenkung",
+        "Sitzheizung",
+        "Soundsystem",
+        "Sportpaket",
+        "Sportsitze",
+        "Sprachsteuerung",
+        "Spurhalteassistent",
+        "Start/Stopp-Automatik",
+        "Totwinkel-Assistent",
+        "Touchscreen",
+        "Traktionskontrolle",
+        "Tuner/Radio",
+        "USB",
+        "Verkehrszeichenerkennung",
+        "Volldigitales Kombiinstrument",
+        "WLAN / Wifi Hotspot",
+        "Zentralverriegelung"
+      ],
+      "highlights": [],
+      "images": [
+        "https://img.classistatic.de/api/v1/mo-prod/images/15/15956877-2248-4194-b77c-b34ba4312979",
+        "https://img.classistatic.de/api/v1/mo-prod/images/42/42e834eb-ed13-43ab-a0c2-c3d76896755c",
+        "https://img.classistatic.de/api/v1/mo-prod/images/24/246ef02a-9c56-4d27-810e-cd3a8aa6c3db",
+        "https://img.classistatic.de/api/v1/mo-prod/images/37/37b6f48f-f2b1-40b9-b49d-84a2fa11b90a",
+        "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe9f04b7-d497-4f4c-bb38-074811a48696",
+        "https://img.classistatic.de/api/v1/mo-prod/images/26/263f2bba-bbe1-49a5-8971-3d536f6b89ef",
+        "https://img.classistatic.de/api/v1/mo-prod/images/15/15989f04-1b68-4671-bc35-6977f8d5a5cc",
+        "https://img.classistatic.de/api/v1/mo-prod/images/c3/c320ec47-90ed-4ac7-81e5-9815e2c1e3b8",
+        "https://img.classistatic.de/api/v1/mo-prod/images/83/83a04442-9353-422c-928b-726842580315",
+        "https://img.classistatic.de/api/v1/mo-prod/images/5c/5cec261a-b078-458e-92c4-a5ba4499e310",
+        "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2f3218b-687d-4b32-8788-b27d597090b1",
+        "https://img.classistatic.de/api/v1/mo-prod/images/a1/a1005b19-9415-4418-aeb2-fa3db224ea9e",
+        "https://img.classistatic.de/api/v1/mo-prod/images/b7/b7ae1c0b-3cde-4384-b282-9bb575cc368c",
+        "https://img.classistatic.de/api/v1/mo-prod/images/38/38df6286-d86a-481d-b1b2-d56074f413dc",
+        "https://img.classistatic.de/api/v1/mo-prod/images/c4/c4c08888-5c5e-4063-b896-4f05c71e7fd7",
+        "https://img.classistatic.de/api/v1/mo-prod/images/aa/aa0e6ff2-538d-4a91-bff9-e2ed746fb1d5",
+        "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0e79fa9-eda7-4b00-9eaa-ee84a82d2171",
+        "https://img.classistatic.de/api/v1/mo-prod/images/a5/a50f65a9-f1bf-4ed4-a914-875bf3ca867f",
+        "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1a62c16-da54-42b9-8869-ab75dee74621",
+        "https://img.classistatic.de/api/v1/mo-prod/images/3e/3eda8db1-9cf6-40ab-a2a8-fd37fdff02eb"
+      ],
+      "dealer": {
+        "name": "Autohaus Cottbus GmbH",
+        "type": "Händler",
+        "street": "Mühlbergweg 6",
+        "city": "DE-15907 Lübben",
+        "country": "DE",
+        "phone": "+49 (0)3546 225719",
+        "homepage": "https://home.mobile.de/home/redirect.html?customerId=48260161",
+        "location": {
+          "lat": 51.9052288,
+          "lon": 13.8534283
+        },
+        "openingHours": [],
+        "rating": null
+      },
+      "financePlans": [
+        {
+          "type": "AO",
+          "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=40935871674400",
+          "shortFlow": true,
+          "promotion": false,
+          "showInGallery": false,
+          "offer": {
+            "bankName": "Openbank Deutschland AG",
+            "loanBroker": "Check24 GmbH",
+            "loanType": "BALLOON",
+            "downPayment": 5698,
+            "creditTerm": 60,
+            "yearlyMileage": 10000,
+            "creditAmount": 22792,
+            "interestRateNominal": 5.41,
+            "interestRateEffective": 5.55,
+            "monthlyInstallment": 302.05,
+            "finalInstallment": 9401.7,
+            "totalInterest": 4430.42,
+            "totalAmount": 27222.42,
+            "localized": {
+              "downPayment": "5.698,00 €",
+              "downPaymentInPercent": "20%",
+              "creditTerm": "60",
+              "creditTermInYears": "5",
+              "yearlyMileage": "10.000",
+              "creditAmount": "22.792,00 €",
+              "interestRateNominal": "5,41%",
+              "interestRateEffective": "5,55%",
+              "monthlyInstallment": "303 €",
+              "finalInstallment": "9.401,70 €",
+              "totalInterest": "4.430,42 €",
+              "totalAmount": "27.222,42 €",
+              "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+            }
+          }
+        }
+      ],
+      "ref": 27
     }
   ]
 }
