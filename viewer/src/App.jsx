@@ -6,6 +6,7 @@ import {
   carLabel,
   carRef,
   carSubline,
+  isSold,
   photo,
   rowDiffers,
   sortCars,
@@ -248,7 +249,7 @@ export default function App() {
             return (
               <li key={car.id}>
                 <label
-                  className={`car-option ${active ? 'on' : ''}`}
+                  className={`car-option ${active ? 'on' : ''} ${isSold(car) ? 'sold' : ''}`}
                   title={`${carRef(car)} ${carLabel(car)}`.trim()}
                 >
                   <input type="checkbox" checked={active} onChange={() => toggleCar(car.id)} />
@@ -262,6 +263,7 @@ export default function App() {
                     </span>
                     <span className="muted">
                       {car.price?.localized ?? '—'} · {carSubline(car)}
+                      {isSold(car) && <span className="gone">verkauft</span>}
                     </span>
                   </span>
                 </label>
@@ -283,7 +285,7 @@ export default function App() {
               <tr>
                 <th className="row-head">Merkmal</th>
                 {shown.map((car) => (
-                  <th key={car.id}>
+                  <th key={car.id} className={isSold(car) ? 'sold' : ''}>
                     <div className="hero-wrap">
                       {car.images?.[0] && (
                         <img
@@ -311,7 +313,10 @@ export default function App() {
                       {carRef(car) && <span className="ref">{carRef(car)}</span>}
                       {carLabel(car)}
                     </a>
-                    <span className="price">{car.price?.localized ?? '—'}</span>
+                    <span className="price">
+                      {car.price?.localized ?? '—'}
+                      {isSold(car) && <span className="gone">verkauft</span>}
+                    </span>
                   </th>
                 ))}
               </tr>
@@ -352,7 +357,10 @@ export default function App() {
                   {shown.map((car) => {
                     const { mark, text, tone, swatch } = cellFor(row, car);
                     return (
-                      <td key={car.id} className={tone === 'empty' ? 'empty' : ''}>
+                      <td
+                        key={car.id}
+                        className={`${tone === 'empty' ? 'empty' : ''} ${isSold(car) ? 'sold' : ''}`}
+                      >
                         <div className="cell">
                           {swatch && (
                             <span

@@ -70,6 +70,9 @@ export function sortCars(cars, sortKey, desc = false) {
   });
 }
 
+/** Set by pnpm available. A sold car is kept and greyed out, not dropped. */
+export const isSold = (car) => car.availability?.status === 'sold';
+
 /** Enough to tell two "BMW 318" apart in the picker. */
 export const carSubline = (car) =>
   [car.facts?.firstRegistration?.value, car.facts?.mileage?.value].filter(Boolean).join(' · ');

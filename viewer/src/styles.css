@@ -279,6 +279,24 @@ tbody tr:hover .row-actions, .row-head:focus-within .row-actions { opacity: 1; }
 
 td.empty { color: var(--muted); }
 
+/* Sold cars stay in the comparison, faded: dropping them would silently
+   change a table you were in the middle of reading. pnpm available sets the
+   flag. */
+.sold .hero, .sold img { filter: grayscale(1); opacity: 0.45; }
+.sold .head-title { text-decoration: line-through; }
+td.sold, .car-option.sold .car-option-title { opacity: 0.5; }
+.gone {
+  margin-left: 6px;
+  padding: 0 5px;
+  border-radius: 4px;
+  background: var(--bad);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 /* A green tick reads as "has it" at a glance; ✅ / ❌ are reserved for the
    high-priority wishes and the judged facts, where absence matters as much
    as presence. */

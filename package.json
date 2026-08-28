@@ -18,7 +18,8 @@
     "viewer": "vite viewer",
     "viewer:build": "vite build viewer",
     "renormalize": "node scripts/renormalize.mjs",
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs",
+    "available": "node scripts/availability.mjs"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.2.0",
