@@ -201,14 +201,15 @@ thead th {
 }
 .head-title:hover { text-decoration: underline; }
 thead th .price { display: block; color: var(--muted); font-weight: 400; }
-/* Drop a car without opening the drawer — the way mobile.de's own compare
-   does it: a bare ✕ on the photo's top-right corner, always there. The
-   translucent disc keeps it legible over both a white studio shot and a
-   dark forecourt one. */
+/* Drop a car without opening the drawer. Anchored inside the photo's
+   top-right corner so it costs no column width; the translucent disc keeps
+   it legible over both a white studio shot and a dark forecourt one. */
+.hero-wrap { position: relative; width: 230px; min-height: 26px; margin-bottom: 6px; }
+
 .col-remove {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 6px;
+  right: 6px;
   z-index: 1;
   width: 26px;
   height: 26px;
@@ -229,7 +230,6 @@ thead th .price { display: block; color: var(--muted); font-weight: 400; }
   height: 130px;
   object-fit: cover;
   border-radius: 6px;
-  margin-bottom: 6px;
   background: var(--bg);
 }
 

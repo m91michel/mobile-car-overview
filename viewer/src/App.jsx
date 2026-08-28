@@ -284,21 +284,23 @@ export default function App() {
                 <th className="row-head">Merkmal</th>
                 {shown.map((car) => (
                   <th key={car.id}>
-                    <button
-                      className="col-remove"
-                      onClick={() => toggleCar(car.id)}
-                      title="Fahrzeug aus dem Vergleich nehmen"
-                    >
-                      ✕
-                    </button>
-                    {car.images?.[0] && (
-                      <img
-                        className="hero"
-                        src={photo(car.images[0], 'mo-1024')}
-                        alt=""
-                        referrerPolicy="no-referrer"
-                      />
-                    )}
+                    <div className="hero-wrap">
+                      {car.images?.[0] && (
+                        <img
+                          className="hero"
+                          src={photo(car.images[0], 'mo-1024')}
+                          alt=""
+                          referrerPolicy="no-referrer"
+                        />
+                      )}
+                      <button
+                        className="col-remove"
+                        onClick={() => toggleCar(car.id)}
+                        title="Fahrzeug aus dem Vergleich nehmen"
+                      >
+                        ✕
+                      </button>
+                    </div>
                     <a
                       className="head-title"
                       href={car.url}
