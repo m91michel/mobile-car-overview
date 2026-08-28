@@ -443,7 +443,7 @@ export default function App() {
                     </div>
                   </th>
                   {shown.map((car) => {
-                    const { mark, text, tone, swatch } = cellFor(row, car);
+                    const { mark, text, tone, swatch, meter } = cellFor(row, car);
                     return (
                       <td
                         key={car.id}
@@ -459,6 +459,15 @@ export default function App() {
                           {mark && <span className={`mark ${tone}`}>{mark}</span>}
                           {mark && text ? ' ' : ''}
                           {text}
+                          {meter && (
+                            <span
+                              className={`meter ${meter.over ? 'over' : ''}`}
+                              title={meter.hint}
+                            >
+                              <span className="meter-fill" style={{ width: `${meter.fill * 100}%` }} />
+                              <span className="meter-target" style={{ left: `${meter.target * 100}%` }} />
+                            </span>
+                          )}
                         </div>
                       </td>
                     );

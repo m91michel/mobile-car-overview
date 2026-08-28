@@ -89,6 +89,44 @@ const PERMANENT_GAPS = [
 export const permanentGaps = (car) =>
   PERMANENT_GAPS.filter((gap) => gap.missing(car)).map((gap) => gap.label);
 
+// Scales for the two numbers the requirements put a range on. Fixed rather
+// than relative to the current selection, so a bar means the same thing
+// whichever cars happen to be in the table.
+const MILEAGE_TARGET = 70000; // "Zielregion: unter ca. 60.000-70.000 km"
+const MILEAGE_LIMIT = 100000; // "deutlich über 100.000 km kommen nicht infrage"
+const AGE_TARGET_YEARS = 4; // Zielbild: ca. 2022-2024
+const AGE_LIMIT_YEARS = 8;
+
+const meter = (value, target, limit) => {
+  if (typeof value !== 'number' || !Number.isFinite(value)) return null;
+  return {
+    fill: Math.min(1, Math.max(0, value / limit)),
+    target: target / limit,
+    over: value > target,
+  };
+};
+
+/** Years since first registration, from derived's "2024-06". */
+const ageYears = (car) => {
+  const match = /^(\d{4})-(\d{2})$/.exec(car.derived?.firstRegistration ?? '');
+  if (!match) return null;
+  const from = new Date(Number(match[1]), Number(match[2]) - 1, 1);
+  return (Date.now() - from.getTime()) / (365.25 * 24 * 3600 * 1000);
+};
+
+function meterFor(fact, car) {
+  if (fact === 'mileage') {
+    const bar = meter(car.derived?.mileageKm, MILEAGE_TARGET, MILEAGE_LIMIT);
+    return bar && { ...bar, hint: `Ziel bis ${MILEAGE_TARGET.toLocaleString('de-DE')} km` };
+  }
+  if (fact === 'firstRegistration') {
+    const years = ageYears(car);
+    const bar = meter(years, AGE_TARGET_YEARS, AGE_LIMIT_YEARS);
+    return bar && { ...bar, hint: `${years.toFixed(1)} Jahre, Ziel bis ${AGE_TARGET_YEARS}` };
+  }
+  return null;
+}
+
 /** What one table cell shows: an optional mark, the text, and its tone. */
 export function cellFor(row, car) {
   const raw = row.value(car);
@@ -117,5 +155,10 @@ export function cellFor(row, car) {
     return { mark: tone === 'bad' ? '❌' : '', text: raw, tone, swatch: swatchFor(raw) };
   }
 
-  return { mark: tone === 'good' ? '✅' : tone === 'bad' ? '❌' : '', text: raw, tone };
+  return {
+    mark: tone === 'good' ? '✅' : tone === 'bad' ? '❌' : '',
+    text: raw,
+    tone,
+    meter: meterFor(fact, car),
+  };
 }

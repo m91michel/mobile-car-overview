@@ -369,6 +369,34 @@ td.sold, .car-option.sold .car-option .fav {
   background: var(--paint);
   border: 1px solid rgb(128 128 128 / 0.6);
 }
+/* Where a car sits on the ranges CAR-REQUIREMENTS.md gives for mileage and
+   age. The tick is the target; past it the bar turns red. */
+.meter {
+  position: relative;
+  display: block;
+  width: 110px;
+  max-width: 100%;
+  height: 5px;
+  margin-top: 5px;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--muted) 28%, transparent);
+}
+.meter-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 3px;
+  background: var(--good);
+}
+.meter.over .meter-fill { background: var(--bad); }
+.meter-target {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  width: 1px;
+  background: var(--ink);
+  opacity: 0.5;
+}
+
 .swatch.metallic {
   background-image: linear-gradient(135deg, rgb(255 255 255 / 0.4), transparent 55%);
 }
