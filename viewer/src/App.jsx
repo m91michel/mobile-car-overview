@@ -36,6 +36,96 @@ function SortControl({ className, label, sortKey, setSortKey, desc, setDesc }) {
   );
 }
 
+const hostOf = (url) => {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return url;
+  }
+};
+
+/** Note and links for one car; drafts locally and only reports on save. */
+function NoteEditor({ car, onSave, onClose }) {
+  const ref = useDrawer(true);
+  const [note, setNote] = useState(car.notes?.note ?? '');
+  const [links, setLinks] = useState(
+    car.notes?.links?.length ? car.notes.links.map((l) => ({ ...l })) : [{ label: '', url: '' }],
+  );
+
+  const setLink = (index, patch) =>
+    setLinks((all) => all.map((link, i) => (i === index ? { ...link, ...patch } : link)));
+
+  return (
+    <dialog
+      className="editor"
+      ref={ref}
+      onClose={onClose}
+      onClick={(e) => {
+        if (e.target === ref.current) onClose();
+      }}
+    >
+      <header className="drawer-head">
+        <strong>Notiz</strong>
+        <span className="muted">
+          {carRef(car)} {car.shortTitle ?? carLabel(car)}
+        </span>
+        <div className="spacer" />
+        <button onClick={onClose} title="Schließen">
+          ✕
+        </button>
+      </header>
+
+      <div className="editor-body">
+        <label className="field">
+          <span className="muted">Notiz</span>
+          <textarea
+            rows={5}
+            value={note}
+            onChange={(e) => setNote(e.target.value)}
+            placeholder="Was du dir zu diesem Fahrzeug merken willst"
+          />
+        </label>
+
+        <div className="field">
+          <span className="muted">Links</span>
+          {links.map((link, index) => (
+            <div className="link-row" key={index}>
+              <input
+                value={link.label}
+                onChange={(e) => setLink(index, { label: e.target.value })}
+                placeholder="Bezeichnung"
+                aria-label="Bezeichnung"
+              />
+              <input
+                value={link.url}
+                onChange={(e) => setLink(index, { url: e.target.value })}
+                placeholder="https://..."
+                aria-label="URL"
+              />
+              <button
+                onClick={() => setLinks((all) => all.filter((_, i) => i !== index))}
+                title="Link entfernen"
+              >
+                ✕
+              </button>
+            </div>
+          ))}
+          <button onClick={() => setLinks((all) => [...all, { label: '', url: '' }])}>
+            Link hinzufügen
+          </button>
+        </div>
+      </div>
+
+      <footer className="editor-foot">
+        <button onClick={onClose}>Abbrechen</button>
+        <button className="primary" onClick={() => onSave({ note, links })}>
+          Speichern
+        </button>
+      </footer>
+    </dialog>
+  );
+}
+
 function CarOption({ car, active, onToggle, favourite, onFavourite }) {
   return (
     <label
@@ -85,6 +175,7 @@ function useDrawer(open) {
 
 export default function App() {
   const [cars, setCars] = useState(null);
+  const [editing, setEditing] = useState(null); // car id being edited
   const [error, setError] = useState(null);
   // Every view setting is persisted, so a reload after `pnpm scrape` lands on
   // the same comparison. null selection = "nothing picked yet" -> show all.
@@ -105,6 +196,7 @@ export default function App() {
   // Named selections, so narrowing the table to a shortlist is not a one-way
   // door back through 30 checkboxes.
   const [lists, setLists] = useLocalStorage(key('lists'), []);
+  const [notes, setNotes] = useLocalStorage(key('notes'), {});
   const [dragKey, setDragKey] = useState(null);
   const [openDrawer, setOpenDrawer] = useState(null); // 'cars' | 'favourites' | 'lists' | 'rows'
   const carDrawer = useDrawer(openDrawer === 'cars');
@@ -124,9 +216,32 @@ export default function App() {
   }, []);
   useEffect(load, [load]);
 
+  // Notes are yours, not scraped, so they live beside the view state rather
+  // than in the listing files, and are joined onto the cars here.
+  const withNotes = useMemo(
+    () => (cars ?? []).map((car) => ({ ...car, notes: notes[car.id] })),
+    [cars, notes],
+  );
+
+  const saveNotes = (id, entry) => {
+    const cleaned = {
+      note: entry.note.trim(),
+      links: entry.links
+        .map((link) => ({ label: link.label.trim(), url: link.url.trim() }))
+        .filter((link) => link.url),
+    };
+    const next = { ...notes };
+    if (cleaned.note || cleaned.links.length) {
+      next[id] = { ...cleaned, updatedAt: new Date().toISOString() };
+    } else {
+      delete next[id]; // An emptied note should not leave a husk behind.
+    }
+    setNotes(next);
+  };
+
   const listCars = useMemo(
-    () => sortCars(cars ?? [], listSort, listDesc),
-    [cars, listSort, listDesc],
+    () => sortCars(withNotes, listSort, listDesc),
+    [withNotes, listSort, listDesc],
   );
 
   const selectedIds = useMemo(() => {
@@ -136,8 +251,8 @@ export default function App() {
   }, [cars, selected]);
 
   const shown = useMemo(
-    () => sortCars((cars ?? []).filter((c) => selectedIds.includes(c.id)), columnSort, columnDesc),
-    [cars, selectedIds, columnSort, columnDesc],
+    () => sortCars(withNotes.filter((c) => selectedIds.includes(c.id)), columnSort, columnDesc),
+    [withNotes, selectedIds, columnSort, columnDesc],
   );
 
   const allRows = useMemo(() => buildRows(shown), [shown]);
@@ -288,6 +403,17 @@ export default function App() {
         <button onClick={load}>Neu laden</button>
       </header>
 
+      {editing && (
+        <NoteEditor
+          car={withNotes.find((car) => car.id === editing)}
+          onClose={() => setEditing(null)}
+          onSave={(entry) => {
+            saveNotes(editing, entry);
+            setEditing(null);
+          }}
+        />
+      )}
+
       <dialog
         className="drawer"
         ref={carDrawer}
@@ -405,6 +531,13 @@ export default function App() {
                         {isFavourite(car.id) ? '★' : '☆'}
                       </button>
                       <button
+                        className={`col-note ${car.notes ? 'on' : ''}`}
+                        onClick={() => setEditing(car.id)}
+                        title={car.notes ? 'Notiz bearbeiten' : 'Notiz hinzufügen'}
+                      >
+                        ✎
+                      </button>
+                      <button
                         className="col-remove"
                         onClick={() => toggleCar(car.id)}
                         title="Fahrzeug aus dem Vergleich nehmen"
@@ -464,6 +597,31 @@ export default function App() {
                     </div>
                   </th>
                   {shown.map((car) => {
+                    if (row.kind === 'links') {
+                      const links = car.notes?.links ?? [];
+                      return (
+                        <td
+                          key={car.id}
+                          className={`${links.length ? '' : 'empty'} ${isSold(car) ? 'sold' : ''}`}
+                        >
+                          <div className="cell">
+                            {links.length === 0
+                              ? '–'
+                              : links.map((link) => (
+                                  <a
+                                    key={link.url}
+                                    className="note-link"
+                                    href={link.url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    {link.label || hostOf(link.url)}
+                                  </a>
+                                ))}
+                          </div>
+                        </td>
+                      );
+                    }
                     const { mark, text, tone, swatch, meter } = cellFor(row, car);
                     return (
                       <td

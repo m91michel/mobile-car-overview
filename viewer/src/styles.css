@@ -156,6 +156,32 @@ button:disabled { opacity: 0.45; cursor: default; border-color: var(--line); }
   padding: 10px 14px;
   border-bottom: 1px solid var(--line);
 }
+/* Note editor ------------------------------------------------------------ */
+.editor {
+  width: min(560px, 92vw);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--ink);
+}
+.editor::backdrop { background: rgb(0 0 0 / 0.45); }
+.editor-body { display: flex; flex-direction: column; gap: 16px; padding: 16px 14px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.link-row { display: flex; gap: 6px; }
+.link-row input:first-child { flex: 0 0 33%; }
+.editor-foot {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 12px 14px;
+  border-top: 1px solid var(--line);
+}
+button.primary { border-color: var(--accent); background: var(--accent); color: #fff; }
+
+.editor textarea,
+.editor input,
 .list-save input {
   flex: 1;
   min-width: 0;
@@ -166,6 +192,10 @@ button:disabled { opacity: 0.45; cursor: default; border-color: var(--line); }
   border-radius: 7px;
   background: var(--bg);
 }
+.editor textarea { resize: vertical; min-height: 90px; }
+.editor input { flex: 1; min-width: 0; }
+.editor textarea:focus,
+.editor input:focus,
 .list-save input:focus { outline: none; border-color: var(--accent); }
 
 .list-row {
@@ -239,7 +269,7 @@ th, td {
 }
 td { min-width: 150px; }
 /* Caps how wide one long value (a dealer name) can push its column. */
-.cell { max-width: 200px; overflow-wrap: anywhere; }
+.cell { max-width: 200px; overflow-wrap: anywhere; white-space: pre-wrap; }
 
 thead th {
   position: sticky;
@@ -309,6 +339,28 @@ thead th .price { display: block; color: var(--muted); font-weight: 400; }
 }
 .col-fav.on { color: var(--star); }
 .col-fav:hover { background: var(--panel); }
+
+/* Third corner of the photo: notes and links for this car. */
+.col-note {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  z-index: 1;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--panel) 72%, transparent);
+  backdrop-filter: blur(4px);
+}
+.col-note.on { color: var(--accent); }
+.col-note:hover { background: var(--panel); }
+
+.note-link { display: block; color: var(--accent); }
 
 .star { color: var(--star); }
 
@@ -380,58 +432,6 @@ td.sold, .car-option.sold .car-option .fav {
   font-size: 15px;
   line-height: 1;
   color: var(--muted);
-}
-.car-option .fav.on { color: var(--star); }
-.car-option .fav:hover { color: var(--star); }
-
-.drawer-empty { padding: 20px 16px; }
-
-.list-save {
-  display: flex;
-  gap: 8px;
-  padding: 10px 14px;
-  border-bottom: 1px solid var(--line);
-}
-.list-save input {
-  flex: 1;
-  min-width: 0;
-  font: inherit;
-  color: inherit;
-  padding: 5px 9px;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: var(--bg);
-}
-.list-save input:focus { outline: none; border-color: var(--accent); }
-
-.list-row {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 4px 8px;
-  border: 1px solid transparent;
-  border-radius: 8px;
-}
-.list-row.on { border-color: var(--accent); background: var(--accent-soft); }
-.list-row:hover { background: var(--accent-soft); }
-.list-load {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  min-width: 0;
-  border: 0;
-  background: none;
-  text-align: left;
-  padding: 5px 4px;
-}
-.list-name {
-  flex: 1;
-  min-width: 0;
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .car-option-title { opacity: 0.5; }

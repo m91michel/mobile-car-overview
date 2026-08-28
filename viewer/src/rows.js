@@ -144,6 +144,26 @@ export function buildRows(cars) {
     value: (car) => car.assessment?.note,
   });
 
+  // Your own notes from data/notes.json, kept apart from the assessment above:
+  // that one is a verdict on the car, this is whatever you want to remember.
+  rows.push({
+    key: 'notes:note',
+    label: 'Notiz',
+    kind: 'fact',
+    value: (car) => car.notes?.note || null,
+  });
+  rows.push({
+    key: 'notes:links',
+    label: 'Links',
+    kind: 'links',
+    // A flat string as well, so the CSV export and the differences filter keep
+    // working without knowing about links.
+    value: (car) => {
+      const links = car.notes?.links ?? [];
+      return links.length ? links.map((link) => `${link.label}: ${link.url}`).join('\n') : null;
+    },
+  });
+
   // Union of every fact key any car has, so a missing figure shows as a gap
   // instead of shifting the row out from under the others.
   const factLabels = new Map();
