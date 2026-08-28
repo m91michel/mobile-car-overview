@@ -51,6 +51,18 @@ export function applyAssessment(registry, car) {
     return { key, label: price.label, cost: price.cost };
   });
 
+  // mobile.de's fact fields offer a fixed set of options, so a seller describing
+  // a combination seat has to pick one of them - "Stoff" for a Stoff/Sensatec
+  // seat, verified on the listing photos. Overriding keeps the listed value
+  // visible next to the corrected one: this is a judgement, not a scrape.
+  for (const [tag, corrected] of Object.entries(entry.factOverrides ?? {})) {
+    const fact = car.facts?.[tag];
+    if (!fact) throw new Error(`Car ${car.id}: factOverrides names unknown tag "${tag}".`);
+    fact.listedValue ??= fact.value;
+    fact.value = corrected;
+    fact.corrected = true;
+  }
+
   const retrofitCost = retrofit.reduce((sum, item) => sum + item.cost, 0);
   const gross = car.price?.gross;
 

@@ -146,9 +146,12 @@
       "note": "Raus: F31 von 2017, nicht G21 — verzerrt nur das Preisgefühl."
     },
     "41966966984672": {
-      "verdict": "raus",
+      "verdict": "top",
       "retrofit": [],
-      "note": "Raus: reine Stoffsitze — sonst mit ACC, AHK, Kamera und HUD das Preis-Leistungs-Maximum."
+      "factOverrides": {
+        "interior": "Stoff/Sensatec Kombination, Schwarz"
+      },
+      "note": "Sitze am Foto geprüft: Stoff/Sensatec. Günstigster Wagen mit ACC, AHK, Kamera und HUD - dafür 64.329 km, 2 Halter."
     },
     "461760316": {
       "verdict": "top",
@@ -158,19 +161,22 @@
       "note": "Einziger 320i mit ACC im Set, Sensatec, BMW-Vertragshändler — Sport Line statt M Sport, 327 km."
     },
     "40935871674400": {
-      "verdict": "raus",
+      "verdict": "kandidat",
       "retrofit": [],
-      "note": "Raus: reine Stoffsitze. Zudem starre AHK, 03/2021 und ein Händler ohne Bewertungen."
+      "note": "Sensatec-Wangen am Foto sichtbar, Sitzmitte unklar - Material beim Händler klären. Starre AHK, 03/2021 Vor-Facelift, Händler ohne Bewertungen."
     },
     "39939637985408": {
       "verdict": "raus",
       "retrofit": [],
-      "note": "Raus: reine Stoffsitze. Zudem 68.900 km an der Obergrenze, keine Sportsitze, 17-Zoll."
+      "note": "Raus: am Foto bestätigt reine Stoffausstattung in Hellgrau. Zudem 68.900 km, keine Sportsitze, Basis-Lenkrad."
     },
     "461144700": {
-      "verdict": "raus",
+      "verdict": "top",
       "retrofit": [],
-      "note": "Raus: reine Stoffsitze - sonst das stärkste Auto im Set: 320i, ACC, AHK, 360 Grad, HUD, Phytonicblau, unter Marktband."
+      "factOverrides": {
+        "interior": "Stoff/Sensatec Kombination, Schwarz"
+      },
+      "note": "Sitze am Foto geprüft: Stoff/Sensatec, keine reine Stoffausstattung. 320i mit ACC, AHK, 360°, HUD, Harman Kardon, Phytonicblau, unter Marktband."
     }
   }
 }

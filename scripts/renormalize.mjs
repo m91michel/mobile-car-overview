@@ -44,8 +44,10 @@ for (const file of files) {
   const attributes = Object.entries(car.facts ?? {}).map(([tag, fact]) => ({
     tag,
     label: fact.label,
-    // Prefer the untouched array when a previous run kept one.
-    value: fact.values ?? fact.value,
+    // Prefer the untouched array when a previous run kept one, and the seller's
+    // own wording over an assessment override - otherwise re-running this would
+    // normalize the correction and lose the value the listing actually stated.
+    value: fact.values ?? fact.listedValue ?? fact.value,
   }));
 
   const fingerprint = () =>

@@ -164,8 +164,10 @@
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Stoff, Schwarz",
-      "group": "vehicle"
+      "value": "Stoff/Sensatec Kombination, Schwarz",
+      "group": "vehicle",
+      "listedValue": "Stoff, Schwarz",
+      "corrected": true
     },
     "trailerLoadBraked": {
       "label": "Anhängelast gebremst",
@@ -365,8 +367,8 @@
   ],
   "ref": 29,
   "assessment": {
-    "verdict": "raus",
-    "note": "Raus: reine Stoffsitze - sonst das stärkste Auto im Set: 320i, ACC, AHK, 360 Grad, HUD, Phytonicblau, unter Marktband.",
+    "verdict": "top",
+    "note": "Sitze am Foto geprüft: Stoff/Sensatec, keine reine Stoffausstattung. 320i mit ACC, AHK, 360°, HUD, Harman Kardon, Phytonicblau, unter Marktband.",
     "retrofit": [],
     "retrofitCost": 0,
     "effectivePrice": 29835

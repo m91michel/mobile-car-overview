@@ -165,8 +165,10 @@
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Stoff, Schwarz",
-      "group": "vehicle"
+      "value": "Stoff/Sensatec Kombination, Schwarz",
+      "group": "vehicle",
+      "listedValue": "Stoff, Schwarz",
+      "corrected": true
     },
     "trailerLoadBraked": {
       "label": "Anhängelast gebremst",
@@ -364,8 +366,8 @@
   ],
   "ref": 25,
   "assessment": {
-    "verdict": "raus",
-    "note": "Raus: reine Stoffsitze — sonst mit ACC, AHK, Kamera und HUD das Preis-Leistungs-Maximum.",
+    "verdict": "top",
+    "note": "Sitze am Foto geprüft: Stoff/Sensatec. Günstigster Wagen mit ACC, AHK, Kamera und HUD - dafür 64.329 km, 2 Halter.",
     "retrofit": [],
     "retrofitCost": 0,
     "effectivePrice": 27480

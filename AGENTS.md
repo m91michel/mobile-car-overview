@@ -203,6 +203,19 @@ rebuilds each car from the RSC payload and would otherwise drop it.
   the viewer instead of as a car whose effective price equals its asking price.
 - `verdict` is one of `top`, `kandidat`, `raus`, and is deliberately not rendered
   as a row — it exists so a script can filter.
+- **`factOverrides` corrects a fact the listing states wrongly.** mobile.de's
+  fields offer a fixed set of options, so a seller with a Stoff/Sensatec
+  combination seat has to tick plain `Stoff` — verified on the listing photos for
+  #25 and #29, while #28 really is pure cloth. An override sets `facts[tag]
+  .value`, keeps the seller's wording in `.listedValue` and flags `.corrected`,
+  and the viewer renders both (`Stoff/Sensatec… (laut Inserat: Stoff, Schwarz)`)
+  so the table never passes a judgement off as scraped data. Only override what
+  you actually verified, and say where in the `note`.
+
+`renormalize` feeds `listedValue` back into the normalizer rather than the
+corrected value, so re-running it cannot turn a correction into the new baseline.
+Both are covered by running `pnpm renormalize` twice: the second run must report
+`0 changed`.
 
 ## Seller location and distance
 

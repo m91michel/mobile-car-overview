@@ -143,7 +143,15 @@ export function buildRows(cars) {
       key: `fact:${key}`,
       label: factLabels.get(key),
       kind: 'fact',
-      value: (car) => car.facts?.[key]?.value,
+      // A corrected fact keeps the seller's own wording alongside it, so the
+      // table never hides that the value is a judgement rather than scraped.
+      value: (car) => {
+        const fact = car.facts?.[key];
+        if (!fact) return null;
+        return fact.corrected && fact.listedValue
+          ? `${fact.value} (laut Inserat: ${fact.listedValue})`
+          : fact.value;
+      },
     });
   }
 
