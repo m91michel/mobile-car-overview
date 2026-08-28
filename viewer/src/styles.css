@@ -201,20 +201,27 @@ thead th {
 }
 .head-title:hover { text-decoration: underline; }
 thead th .price { display: block; color: var(--muted); font-weight: 400; }
-/* Drop a car without opening the drawer. Sits on the photo's top-right
-   corner and only shows while the column is hovered. */
+/* Drop a car without opening the drawer — the way mobile.de's own compare
+   does it: a bare ✕ on the photo's top-right corner, always there. The
+   translucent disc keeps it legible over both a white studio shot and a
+   dark forecourt one. */
 .col-remove {
   position: absolute;
-  top: 14px;
+  top: 16px;
   right: 16px;
   z-index: 1;
-  padding: 1px 7px;
-  opacity: 0;
-  background: color-mix(in srgb, var(--panel) 80%, transparent);
-  backdrop-filter: blur(3px);
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  font-size: 15px;
+  line-height: 1;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--panel) 72%, transparent);
+  backdrop-filter: blur(4px);
 }
-thead th:hover .col-remove { opacity: 1; }
-.col-remove:hover { border-color: var(--bad); color: var(--bad); }
+.col-remove:hover { color: var(--bad); background: var(--panel); }
 
 .hero {
   display: block;
