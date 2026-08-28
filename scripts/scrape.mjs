@@ -25,6 +25,7 @@ import { openPage } from './cdp.mjs';
 import { parseListingHtml, LISTING_READY_PROBE } from './extract.mjs';
 import { readParkplatz } from './parkplatz.mjs';
 import { loadRefs, saveRefs, assignRef } from './refs.mjs';
+import { loadAssessments, applyAssessment } from './assessment.mjs';
 
 const OUT_DIR = resolve('data/listings');
 const INDEX_FILE = resolve('data/cars.json');
@@ -226,6 +227,7 @@ if (!ids.length) {
 mkdirSync(OUT_DIR, { recursive: true });
 
 const refs = loadRefs();
+const assessments = loadAssessments();
 
 const workerCount = Math.min(options.concurrency, ids.length);
 console.log(
@@ -246,6 +248,7 @@ async function worker() {
       try {
         const car = await fetchListing(page, id, options);
         car.ref = assignRef(refs, car.id);
+        applyAssessment(assessments, car);
         writeFileSync(resolve(OUT_DIR, `${car.id}.json`), JSON.stringify(car, null, 2));
         cars.push(car);
         console.log(

@@ -1,0 +1,149 @@
+{
+  "retrofitPrices": {
+    "ahk": {
+      "label": "AHK abnehmbar, Nachrüstung Fürth",
+      "cost": 1600
+    },
+    "camera": {
+      "label": "Rückfahrkamera, Nachrüstung",
+      "cost": 1200
+    }
+  },
+  "cars": {
+    "462145366": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: Alpinweiß. Sonst M Sport, Alcantara und Kamera — aber kein ACC."
+    },
+    "459175992": {
+      "verdict": "kandidat",
+      "retrofit": ["ahk"],
+      "note": "Jüngstes Auto im Feld, BMW-Garantie bis 06/2027 — aber kein ACC, und das ist nicht nachrüstbar."
+    },
+    "424825114": {
+      "verdict": "kandidat",
+      "retrofit": ["ahk"],
+      "note": "M Sport, HUD und Kamera ab Werk in Alcantara Blau — kein ACC, 2 Halter."
+    },
+    "451774892": {
+      "verdict": "top",
+      "retrofit": [],
+      "note": "Zielbild komplett ab Werk bis auf den Motor; nichts nachzurüsten, aber das teuerste Auto."
+    },
+    "461488465": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: reine Stoffsitze. Auch kein ACC."
+    },
+    "462155994": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: reine Stoffsitze. Ohne ACC und relativ zum Marktband zu teuer."
+    },
+    "458139136": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: reine Stoffsitze. 28.613 km wären stark, aber ACC fehlt."
+    },
+    "457056589": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: Diesel und 83.530 km."
+    },
+    "40622847776352": {
+      "verdict": "kandidat",
+      "retrofit": ["ahk"],
+      "note": "ACC, M Sport, 360° und nur 23.000 km — aber 426 km Anfahrt und nach AHK teurer als #4."
+    },
+    "40907593490464": {
+      "verdict": "kandidat",
+      "retrofit": [],
+      "note": "AHK, Kamera und Teilleder ab Werk, jung und günstig — aber kein ACC."
+    },
+    "454575246": {
+      "verdict": "kandidat",
+      "retrofit": [],
+      "note": "320i mit AHK, Kamera und HUD ab Werk, nichts nachzurüsten — aber kein ACC."
+    },
+    "39859344293056": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: Diesel. ACC, AHK, Kamera und HUD wären sonst stark."
+    },
+    "450754039": {
+      "verdict": "kandidat",
+      "retrofit": [],
+      "note": "ACC, AHK und Kamera ab Werk — verliert nach der 1.600-€-AHK gegen #26: teurer, weniger Motor."
+    },
+    "461917102": {
+      "verdict": "kandidat",
+      "retrofit": ["ahk"],
+      "note": "320i mit Vollleder, Panorama und Memory — aber kein ACC und 423 km Anfahrt."
+    },
+    "460051224": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: reine Stoffsitze. AHK und Kamera ab Werk, aber kein ACC."
+    },
+    "458712598": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: reine Stoffsitze. Auch kein ACC."
+    },
+    "39886296760608": {
+      "verdict": "kandidat",
+      "retrofit": ["camera"],
+      "note": "M Sport in Individual-Tansanitblau mit AHK — aber weder ACC noch Kamera."
+    },
+    "40586751728608": {
+      "verdict": "top",
+      "retrofit": ["ahk"],
+      "note": "Günstigster Weg zu ACC und Kamera, 148 km, Händler 4,9 — kostet M-Sport-Optik und 50.960 km."
+    },
+    "452520909": {
+      "verdict": "top",
+      "retrofit": ["camera", "ahk"],
+      "note": "Einziges Portimao Blau mit M Sport und ACC — älteste Basis, Vor-Facelift, Kamera fehlt."
+    },
+    "460807870": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: Diesel. Wäre mit ACC, AHK, Kamera und M Sport sonst komplett."
+    },
+    "419188575": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: Cupra Leon, kein BMW — und reine Stoffsitze."
+    },
+    "460854078": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: reine Stoffsitze. Ohne ACC und Kamera trotz 20 km Anfahrt kein Kandidat."
+    },
+    "457556716": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: Diesel, Stoffsitze und 78.000 km."
+    },
+    "452562130": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: F31 von 2017, nicht G21 — verzerrt nur das Preisgefühl."
+    },
+    "41966966984672": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: reine Stoffsitze — sonst mit ACC, AHK, Kamera und HUD das Preis-Leistungs-Maximum."
+    },
+    "461760316": {
+      "verdict": "top",
+      "retrofit": ["ahk"],
+      "note": "Einziger 320i mit ACC im Set, Sensatec, BMW-Vertragshändler — Sport Line statt M Sport, 327 km."
+    },
+    "40935871674400": {
+      "verdict": "raus",
+      "retrofit": [],
+      "note": "Raus: reine Stoffsitze. Zudem starre AHK, 03/2021 und ein Händler ohne Bewertungen."
+    }
+  }
+}

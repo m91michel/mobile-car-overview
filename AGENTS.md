@@ -167,6 +167,43 @@ car file and the registry, because a silently renumbered car is worse than an
 unnumbered one. Do not "tidy up" the gaps: renumbering invalidates every note
 and screenshot that referred to the old numbers.
 
+## Assessment: effective price and verdict
+
+Two cars with different factory equipment cannot be compared on their asking
+price, because one of them still needs parts fitted. `car.assessment` therefore
+carries an **effective price** — asking price plus whatever is missing — and a
+one-line verdict, and the viewer shows both as rows (`Effektivpreis`,
+`Nachrüstung`, `Bewertung`). `Effektivpreis` is also a sort option.
+
+This is hand-written editorial data, not derived from the listing, so it lives in
+`data/assessment.json` for the same reason `data/refs.json` does: `pnpm scrape`
+rebuilds each car from the RSC payload and would otherwise drop it.
+
+```json
+{
+  "retrofitPrices": { "ahk": { "label": "AHK abnehmbar…", "cost": 1600 } },
+  "cars": {
+    "452520909": {
+      "verdict": "top",
+      "retrofit": ["camera", "ahk"],
+      "note": "Einziges Portimao Blau mit M Sport und ACC — Kamera fehlt."
+    }
+  }
+}
+```
+
+- **Retrofit costs are referenced by key, never written per car.** Changing
+  `retrofitPrices.ahk.cost` re-prices every car needing that part on the next
+  `pnpm renormalize`. Writing the number per car would guarantee drift.
+- **Only genuinely retrofittable parts belong in `retrofit`.** ACC, M Sport and
+  the seat material cannot be added to a G21 economically, so a car missing one
+  of those gets the reason in `note` rather than a cost — an effective price that
+  implied otherwise would be a lie.
+- **An unassessed car has no `assessment` key at all**, so it reads as a gap in
+  the viewer instead of as a car whose effective price equals its asking price.
+- `verdict` is one of `top`, `kandidat`, `raus`, and is deliberately not rendered
+  as a row — it exists so a script can filter.
+
 ## Seller location and distance
 
 The listing payload carries the seller's name, address, phone, rating **and

@@ -11,6 +11,7 @@ import { resolve } from 'node:path';
 
 import { normalizeFacts, deriveNumbers } from './extract.mjs';
 import { loadRefs, saveRefs, assignRef } from './refs.mjs';
+import { loadAssessments, applyAssessment } from './assessment.mjs';
 
 const OUT_DIR = resolve('data/listings');
 const INDEX_FILE = resolve('data/cars.json');
@@ -22,6 +23,7 @@ if (!existsSync(OUT_DIR)) {
 
 const files = readdirSync(OUT_DIR).filter((f) => f.endsWith('.json'));
 const refs = loadRefs();
+const assessments = loadAssessments();
 
 // Number in the index's existing order first, so the sequence matches the order
 // the cars were already listed in rather than the filesystem's.
@@ -46,11 +48,20 @@ for (const file of files) {
     value: fact.values ?? fact.value,
   }));
 
-  const before = JSON.stringify({ facts: car.facts, derived: car.derived, ref: car.ref });
+  const fingerprint = () =>
+    JSON.stringify({
+      facts: car.facts,
+      derived: car.derived,
+      ref: car.ref,
+      assessment: car.assessment,
+    });
+
+  const before = fingerprint();
   car.facts = normalizeFacts(attributes);
   car.derived = deriveNumbers(car.facts, car.dealer?.location);
   car.ref = assignRef(refs, car.id);
-  const after = JSON.stringify({ facts: car.facts, derived: car.derived, ref: car.ref });
+  applyAssessment(assessments, car);
+  const after = fingerprint();
 
   if (before !== after) {
     changed++;

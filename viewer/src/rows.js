@@ -49,6 +49,11 @@ const numberFrom = (text) => {
 export const SORTS = [
   { key: 'ref', label: '#', value: (car) => (typeof car.ref === 'number' ? car.ref : null) },
   { key: 'price', label: 'Preis', value: (car) => car.price?.gross ?? null },
+  {
+    key: 'effectivePrice',
+    label: 'Effektivpreis',
+    value: (car) => car.assessment?.effectivePrice ?? null,
+  },
   { key: 'mileage', label: 'km', value: (car) => numberFrom(car.facts?.mileage?.value) },
 ];
 
@@ -95,6 +100,33 @@ export function buildRows(cars) {
     label: 'Preisbewertung',
     kind: 'fact',
     value: (car) => car.priceRating?.label,
+  });
+
+  // Hand-kept assessment from data/assessment.json. The effective price is what
+  // the car costs once the missing must-haves are retrofitted, which is the only
+  // number two cars with different factory equipment can be compared on.
+  rows.push({
+    key: 'assessment:effectivePrice',
+    label: 'Effektivpreis',
+    kind: 'fact',
+    value: (car) => euro(car.assessment?.effectivePrice),
+  });
+  rows.push({
+    key: 'assessment:retrofit',
+    label: 'Nachrüstung',
+    kind: 'fact',
+    value: (car) => {
+      const retrofit = car.assessment?.retrofit;
+      if (!retrofit) return null;
+      if (!retrofit.length) return 'nichts';
+      return retrofit.map((item) => `${item.label} ${euro(item.cost)}`).join(' + ');
+    },
+  });
+  rows.push({
+    key: 'assessment:note',
+    label: 'Bewertung',
+    kind: 'fact',
+    value: (car) => car.assessment?.note,
   });
 
   // Union of every fact key any car has, so a missing figure shows as a gap
