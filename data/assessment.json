@@ -9,6 +9,10 @@
       "cost": 1200
     }
   },
+  "mileageAdjustment": {
+    "referenceKmPerYear": 15000,
+    "ratePerKm": 0.1
+  },
   "cars": {
     "419188575": {
       "verdict": "raus",

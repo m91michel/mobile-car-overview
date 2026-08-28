@@ -15,13 +15,22 @@ import { resolve, dirname } from 'node:path';
 
 const FILE = resolve('data/assessment.json');
 
-const EMPTY = { retrofitPrices: {}, cars: {} };
+// 15.000 km/Jahr is the standard German market assumption (leasing contracts,
+// DAT valuation) rather than something derived from this specific 47-car set,
+// so it stays meaningful as the set grows or skews toward one mileage band.
+const DEFAULT_MILEAGE_ADJUSTMENT = { referenceKmPerYear: 15000, ratePerKm: 0.1 };
+
+const EMPTY = { retrofitPrices: {}, mileageAdjustment: DEFAULT_MILEAGE_ADJUSTMENT, cars: {} };
 
 export function loadAssessments() {
   if (!existsSync(FILE)) return structuredClone(EMPTY);
   try {
     const parsed = JSON.parse(readFileSync(FILE, 'utf8'));
-    return { retrofitPrices: parsed.retrofitPrices ?? {}, cars: parsed.cars ?? {} };
+    return {
+      retrofitPrices: parsed.retrofitPrices ?? {},
+      mileageAdjustment: parsed.mileageAdjustment ?? DEFAULT_MILEAGE_ADJUSTMENT,
+      cars: parsed.cars ?? {},
+    };
   } catch {
     // Hand-written notes are not reproducible, so never silently reset the file.
     throw new Error('data/assessment.json is corrupt - fix or delete it deliberately.');
@@ -54,6 +63,41 @@ export function deriveRetrofit(car) {
   if (!/Kamera/i.test(parkAssists)) needed.push('camera');
 
   return needed;
+}
+
+/**
+ * A newer, low-mileage car and an older, high-mileage one aren't comparable on
+ * asking price alone, but "bonus for new" vs. "malus for old" is a false choice
+ * — both are the same adjustment once there is a reference point. This anchors
+ * on the mileage a car would have at its age under the standard assumption
+ * (`referenceKmPerYear`) and prices the deviation from that at `ratePerKm`:
+ * fewer km than expected lowers the effective price, more raises it, symmetric
+ * around zero instead of an arbitrary direction.
+ *
+ * Returns null when there is nothing to anchor on (age or mileage missing).
+ */
+export function deriveMileageAdjustment(registry, car) {
+  const { referenceKmPerYear, ratePerKm } = registry.mileageAdjustment ?? DEFAULT_MILEAGE_ADJUSTMENT;
+  const mileageKm = car.derived?.mileageKm;
+  const firstRegistration = car.derived?.firstRegistration;
+  if (typeof mileageKm !== 'number' || !firstRegistration) return null;
+
+  const [year, month] = firstRegistration.split('-').map(Number);
+  if (!year || !month) return null;
+
+  const regDate = new Date(Date.UTC(year, month - 1, 1));
+  const now = new Date();
+  const ageMonths =
+    (now.getUTCFullYear() - regDate.getUTCFullYear()) * 12 + (now.getUTCMonth() - regDate.getUTCMonth());
+  const ageYears = Math.max(ageMonths, 0) / 12;
+
+  const expectedKm = Math.round(ageYears * referenceKmPerYear);
+  const deviationKm = mileageKm - expectedKm;
+  // Rounded to the nearest 10 €: the underlying age is only known to the
+  // month, so a cent-precise adjustment would imply precision it doesn't have.
+  const adjustment = Math.round((deviationKm * ratePerKm) / 10) * 10;
+
+  return { expectedKm, deviationKm, adjustment };
 }
 
 /**
@@ -96,6 +140,12 @@ export function applyAssessment(registry, car) {
   const retrofitCost = retrofit.reduce((sum, item) => sum + item.cost, 0);
   const gross = car.price?.gross;
 
+  // A rejected car is priced as-is for the same reason its retrofit list is
+  // empty above: weighing the mileage of a car that is out anyway only adds
+  // noise. This also keeps an old, low-mileage "raus" outlier from producing
+  // an outsized bonus the linear km/year model was never meant to cover.
+  const mileageAdjustment = entry?.verdict === 'raus' ? null : deriveMileageAdjustment(registry, car);
+
   car.assessment = {
     // Editorial, and only ever hand-written: a car without an entry keeps a null
     // verdict so it still reads as un-judged in the viewer, even though its
@@ -104,9 +154,13 @@ export function applyAssessment(registry, car) {
     note: entry?.note ?? null,
     retrofit,
     retrofitCost,
+    mileageAdjustment,
     // Rounded: a cent-precise effective price would imply precision the
-    // retrofit estimates do not have.
-    effectivePrice: typeof gross === 'number' ? Math.round(gross + retrofitCost) : null,
+    // retrofit and mileage estimates do not have.
+    effectivePrice:
+      typeof gross === 'number'
+        ? Math.round(gross + retrofitCost + (mileageAdjustment?.adjustment ?? 0))
+        : null,
   };
   return car;
 }

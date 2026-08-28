@@ -136,6 +136,22 @@ export function buildRows(cars) {
       return retrofit.map((item) => `${item.label} ${euro(item.cost)}`).join(' + ');
     },
   });
+  // How much of the Effektivpreis gap to `price` above comes from mileage vs.
+  // age, not from retrofit cost. Positive deviation (more km than the standard
+  // 15.000 km/Jahr assumption implies for its age) raises the effective price,
+  // negative lowers it — see deriveMileageAdjustment in scripts/assessment.mjs.
+  rows.push({
+    key: 'assessment:mileageAdjustment',
+    label: 'km ggü. Alter',
+    kind: 'fact',
+    value: (car) => {
+      const m = car.assessment?.mileageAdjustment;
+      if (!m || m.adjustment === 0) return null;
+      const km = m.deviationKm > 0 ? `+${m.deviationKm.toLocaleString('de-DE')}` : m.deviationKm.toLocaleString('de-DE');
+      const eur = m.adjustment > 0 ? `+${euro(m.adjustment)}` : euro(m.adjustment);
+      return `${km} km (${eur})`;
+    },
+  });
   // Must sit next to Nachrüstung: that row only prices what a workshop can add,
   // so without this one a car with nothing retrofittable looks complete.
   rows.push({

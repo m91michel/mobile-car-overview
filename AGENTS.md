@@ -344,6 +344,33 @@ when a judgement should beat the derivation.
 therefore has an effective price but a null verdict, and still reads as
 un-judged in the viewer.
 
+### Mileage/age adjustment
+
+A newer, low-mileage car and an older, high-mileage one aren't comparable on
+asking price alone. "New-car bonus" vs. "old-car malus" is a false choice
+though — both are the same adjustment once there's a reference point, so
+`deriveMileageAdjustment` (`scripts/assessment.mjs`) anchors on the mileage a
+car would have at its age under the standard German market assumption of
+**15.000 km/Jahr**, and prices the deviation from that at **0,10 €/km**:
+
+```
+expectedKm  = ageInYears * referenceKmPerYear
+deviationKm = actualKm - expectedKm
+adjustment  = deviationKm * ratePerKm      // rounded to the nearest 10 €
+```
+
+Fewer km than expected lowers the effective price, more raises it — symmetric
+around zero rather than an arbitrary direction. Both constants live in
+`assessment.mileageAdjustment` in `data/assessment.json`, next to
+`retrofitPrices`, for the same reason: change the rate once, every car
+re-prices on the next `pnpm renormalize`.
+
+**A car with `verdict: "raus"` skips the adjustment**, same as its retrofit
+list — it also keeps a very old, very low-mileage reject (a decade-old car
+with garage-queen mileage) from producing an outsized bonus the linear
+km/year model was never meant to price; that model breaks down at the
+extremes, where warranty and tech age matter more than kilometers.
+
 ## Data quality
 
 ```bash
