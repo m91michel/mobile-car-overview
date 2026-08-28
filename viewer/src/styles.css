@@ -201,6 +201,21 @@ thead th {
 }
 .head-title:hover { text-decoration: underline; }
 thead th .price { display: block; color: var(--muted); font-weight: 400; }
+/* Drop a car without opening the drawer. Sits on the photo's top-right
+   corner and only shows while the column is hovered. */
+.col-remove {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  z-index: 1;
+  padding: 1px 7px;
+  opacity: 0;
+  background: color-mix(in srgb, var(--panel) 80%, transparent);
+  backdrop-filter: blur(3px);
+}
+thead th:hover .col-remove { opacity: 1; }
+.col-remove:hover { border-color: var(--bad); color: var(--bad); }
+
 .hero {
   display: block;
   width: 230px;

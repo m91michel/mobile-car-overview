@@ -284,6 +284,13 @@ export default function App() {
                 <th className="row-head">Merkmal</th>
                 {shown.map((car) => (
                   <th key={car.id}>
+                    <button
+                      className="col-remove"
+                      onClick={() => toggleCar(car.id)}
+                      title="Fahrzeug aus dem Vergleich nehmen"
+                    >
+                      ✕
+                    </button>
                     {car.images?.[0] && (
                       <img
                         className="hero"
