@@ -1,0 +1,340 @@
+{
+  "id": "456447943",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-park-ass-anh%C3%A4ngerkuppl-asperg/456447943.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=456447943&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T12:39:28.164Z",
+  "title": "BMW 318i Touring M Sport Park Ass. Anhängerkuppl.",
+  "shortTitle": "BMW 318",
+  "subTitle": "i Touring M Sport Park Ass. Anhängerkuppl.",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 33980,
+    "net": 28554.62,
+    "currency": "EUR",
+    "localized": "33.980 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 71,
+    "thresholds": [
+      "24.800 €",
+      "32.200 €",
+      "34.700 €",
+      "38.600 €",
+      "41.400 €",
+      "46.000 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi, Jahreswagen",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G81",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "M Sportpaket",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "9.290 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "6,8 l/100km",
+      "group": "envkv"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "153 g/km",
+      "group": "envkv"
+    },
+    "envkv.co2Class": {
+      "label": "CO₂-Klasse",
+      "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "group": "envkv"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": "6,8 l/100km (kombiniert)",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "10/2025",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "2-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Selbstlenkende Systeme, 360°-Kamera",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "M Portimao Blau",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Blau Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Teilleder, Schwarz",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 9290,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2025-10",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": 153,
+    "consumptionL100km": 6.8,
+    "distanceFromHomeKm": 148
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Anhängerkupplung fest",
+    "Armlehne",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Geschwindigkeitsbegrenzer",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Tagfahrlicht",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/68/6844bf71-fc9e-4536-a590-1889aa0ef78a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8c/8c5e8161-b5bf-4b83-9ce7-5312d7529966",
+    "https://img.classistatic.de/api/v1/mo-prod/images/57/57dae853-92fb-4076-a898-0a4182ef9b7e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fd/fd009e56-c780-4dc6-b609-62a60d194fd6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/98/985a90cf-2278-463f-ba09-914a425619f9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/36/3637bd8b-e646-47e1-b2d7-b5b8ca5e102f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b3/b368a384-d76a-4905-9b4f-f566f97a6f62",
+    "https://img.classistatic.de/api/v1/mo-prod/images/55/553eee11-4f97-40e8-8133-050b87c671af",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc5485f9-3cec-4990-9cfa-2908614d702c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c4/c4f5a6d9-4d37-4c74-9260-15f062352c25",
+    "https://img.classistatic.de/api/v1/mo-prod/images/cc/cce0cca6-0c4f-44a7-916b-339f86a08b8c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/26/26412557-9948-4778-bb4c-4e5e044f0fdd",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0a/0aac81d4-c65d-4bdc-8d0e-f7f1c8913b7e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7d/7d67a6eb-6949-40ce-88ce-2daed7b30b09",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f1/f1963c7b-d46b-49fb-a632-a537f79cbbd7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ecaacb0-a90e-45ad-aba0-944883ac7dd7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2c/2c967743-a599-4b03-9cfe-8812572da937"
+  ],
+  "dealer": {
+    "name": "Autohaus Rhein Ludwigsburg - Zw. NL der Autohaus Heermann und Rhein GmbH",
+    "type": "Händler",
+    "street": "Zeissstr. 2",
+    "city": "DE-71679 Asperg",
+    "country": "DE",
+    "phone": "+49 (0)7141 1469910",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=11662789",
+    "location": {
+      "lat": 48.898497,
+      "lon": 9.1546865
+    },
+    "openingHours": [
+      {
+        "time": "08:00 Uhr - 18:30 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "09:00 Uhr - 14:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 4.6,
+      "count": 188,
+      "recommendationRate": 83
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=456447943",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 6796,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 27184,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 360.25,
+        "finalInstallment": 11213.4,
+        "totalInterest": 5284.16,
+        "totalAmount": 32468.16,
+        "localized": {
+          "downPayment": "6.796,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "27.184,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "361 €",
+          "finalInstallment": "11.213,40 €",
+          "totalInterest": "5.284,16 €",
+          "totalAmount": "32.468,16 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 30
+}
