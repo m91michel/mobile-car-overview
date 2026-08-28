@@ -16,7 +16,9 @@
     "chrome": "node scripts/chrome.mjs",
     "chrome:stop": "node scripts/chrome.mjs --stop",
     "viewer": "vite viewer",
-    "viewer:build": "vite build viewer"
+    "viewer:build": "vite build viewer",
+    "renormalize": "node scripts/renormalize.mjs",
+    "check": "node scripts/check.mjs"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.2.0",

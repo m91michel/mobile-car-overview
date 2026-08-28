@@ -39,111 +39,138 @@
   "facts": {
     "damageCondition": {
       "label": "Fahrzeugzustand",
-      "value": "Gebrauchtfahrzeug"
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
     },
     "category": {
       "label": "Kategorie",
-      "value": "Kombi"
+      "value": "Kombi",
+      "group": "vehicle"
     },
     "modelRange": {
       "label": "Baureihe",
-      "value": "3 Touring (F31N)(2015->)"
+      "value": "3 Touring (F31N)(2015->)",
+      "group": "vehicle"
     },
     "trimLine": {
       "label": "Ausstattungslinie",
-      "value": "320 i Sport Line Shadow"
+      "value": "320 i Sport Line Shadow",
+      "group": "vehicle"
     },
     "availability": {
       "label": "Verfügbarkeit",
-      "value": "Sofort"
+      "value": "Sofort",
+      "group": "vehicle"
     },
     "countryVersion": {
       "label": "Herkunft",
-      "value": "Deutsche Ausführung"
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
     },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "45.000 km"
+      "value": "45.000 km",
+      "group": "vehicle"
     },
     "cubicCapacity": {
       "label": "Hubraum",
-      "value": "1.998 cm³"
+      "value": "1.998 cm³",
+      "group": "vehicle"
     },
     "power": {
       "label": "Leistung",
-      "value": "135 kW (184 PS)"
+      "value": "135 kW (184 PS)",
+      "group": "vehicle"
     },
     "envkv.engineType": {
       "label": "Antriebsart",
-      "value": "Verbrennungsmotor"
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
     },
     "fuel": {
       "label": "Kraftstoffart",
-      "value": "Benzin"
+      "value": "Benzin",
+      "group": "vehicle"
     },
     "numSeats": {
       "label": "Anzahl Sitzplätze",
-      "value": "5"
+      "value": "5",
+      "group": "vehicle"
     },
     "doorCount": {
       "label": "Anzahl der Türen",
-      "value": "4/5"
+      "value": "4/5",
+      "group": "vehicle"
     },
     "transmission": {
       "label": "Getriebe",
-      "value": "Automatik"
+      "value": "Automatik",
+      "group": "vehicle"
     },
     "emissionClass": {
       "label": "Schadstoffklasse",
-      "value": "Euro6"
+      "value": "Euro6",
+      "group": "vehicle"
     },
     "emissionsSticker": {
       "label": "Umweltplakette",
-      "value": "4 (Grün)"
+      "value": "4 (Grün)",
+      "group": "vehicle"
     },
     "firstRegistration": {
       "label": "Erstzulassung",
-      "value": "10/2017"
+      "value": "10/2017",
+      "group": "vehicle"
     },
     "numberOfPreviousOwners": {
       "label": "Anzahl der Fahrzeughalter",
-      "value": "2"
+      "value": "2",
+      "group": "vehicle"
     },
     "hu": {
       "label": "HU",
-      "value": "Neu"
+      "value": "Neu",
+      "group": "vehicle"
     },
     "climatisation": {
       "label": "Klimatisierung",
-      "value": "2-Zonen-Klimaautomatik"
+      "value": "2-Zonen-Klimaautomatik",
+      "group": "vehicle"
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Hinten"
+      "value": "Vorne, Hinten",
+      "group": "vehicle"
     },
     "airbag": {
       "label": "Airbags",
-      "value": "Front-, Seiten- und weitere Airbags"
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
     },
     "manufacturerColorName": {
       "label": "Farbe (Hersteller)",
-      "value": "MEDITERRANBLAU METALLIC"
+      "value": "MEDITERRANBLAU METALLIC",
+      "group": "vehicle"
     },
     "color": {
       "label": "Farbe",
-      "value": "Blau Metallic"
+      "value": "Blau Metallic",
+      "group": "vehicle"
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Teilleder, Schwarz"
+      "value": "Teilleder, Schwarz",
+      "group": "vehicle"
     },
     "netWeight": {
       "label": "Gewicht",
-      "value": "1.595 kg"
+      "value": "1.595 kg",
+      "group": "vehicle"
     },
     "cylinder": {
       "label": "Zylinder",
-      "value": "4"
+      "value": "4",
+      "group": "vehicle"
     }
   },
   "features": [
@@ -309,5 +336,19 @@
         }
       }
     }
-  ]
+  ],
+  "derived": {
+    "mileageKm": 45000,
+    "powerKw": 135,
+    "powerHp": 184,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2017-10",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 2,
+    "weightKg": 1595,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null
+  }
 }

@@ -40,157 +40,190 @@
   "facts": {
     "damageCondition": {
       "label": "Fahrzeugzustand",
-      "value": "Gebrauchtfahrzeug"
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
     },
     "category": {
       "label": "Kategorie",
-      "value": "Kombi"
+      "value": "Kombi",
+      "group": "vehicle"
     },
     "modelRange": {
       "label": "Baureihe",
-      "value": "G81"
-    },
-    "trimLine": {
-      "label": "Ausstattungslinie",
-      "value": "-"
+      "value": "G81",
+      "group": "vehicle"
     },
     "sku": {
       "label": "Fahrzeugnummer",
-      "value": "14168750"
+      "value": "14168750",
+      "group": "vehicle"
     },
     "availability": {
       "label": "Verfügbarkeit",
-      "value": "Sofort"
+      "value": "Sofort",
+      "group": "vehicle"
     },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "40.296 km"
+      "value": "40.296 km",
+      "group": "vehicle"
     },
     "cubicCapacity": {
       "label": "Hubraum",
-      "value": "1.998 cm³"
+      "value": "1.998 cm³",
+      "group": "vehicle"
     },
     "power": {
       "label": "Leistung",
-      "value": "135 kW (184 PS)"
+      "value": "135 kW (184 PS)",
+      "group": "vehicle"
     },
     "envkv.engineType": {
       "label": "Antriebsart",
-      "value": "Verbrennungsmotor"
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
     },
     "fuel": {
       "label": "Kraftstoffart",
-      "value": "Benzin"
+      "value": "Benzin",
+      "group": "vehicle"
     },
     "envkv.energyConsumption": {
       "label": "Energieverbrauch (komb.)",
-      "value": "6,8 l/100km"
+      "value": "6,8 l/100km",
+      "group": "envkv"
     },
     "envkv.co2Emissions": {
       "label": "CO₂-Emissionen (komb.)",
-      "value": "154 g/km"
+      "value": "154 g/km",
+      "group": "envkv"
     },
     "envkv.co2Class": {
       "label": "CO₂-Klasse",
-      "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)"
+      "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "group": "envkv"
     },
     "envkv.consumptionDetails.fuel": {
       "label": "Kraftstoffverbrauch",
-      "value": [
+      "value": "6,8 l/100km (kombiniert) · 9,6 l/100km (Innenstadt) · 6,9 l/100km (Stadtrand) · 5,8 l/100km (Landstraße) · 6,7 l/100km (Autobahn)",
+      "values": [
         "6,8 l/100km (kombiniert)",
         "9,6 l/100km (Innenstadt)",
         "6,9 l/100km (Stadtrand)",
         "5,8 l/100km (Landstraße)",
         "6,7 l/100km (Autobahn)"
-      ]
+      ],
+      "group": "envkv"
     },
     "envkv.consumptionCosts": {
       "label": "Energiekosten bei 15.000 km Jahresfahrleistung",
-      "value": "1.779 €/Jahr"
+      "value": "1.779 €/Jahr",
+      "group": "envkv"
     },
     "envkv.fuel.price": {
       "label": "Kraftstoffpreis",
-      "value": "1,74 €/l (Jahresdurchschnitt 2025)"
+      "value": "1,74 €/l (Jahresdurchschnitt 2025)",
+      "group": "envkv"
     },
     "envkv.co2Costs": {
       "label": "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)",
-      "value": [
-        "3.292 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 142 €/t)",
-        "1.386 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t)",
-        "5.082 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 220 €/t)"
-      ]
+      "value": "3.292 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 142 €/t) · 1.386 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t) · 5.082 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 220 €/t)",
+      "values": [
+        "3.292 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 142 €/t)",
+        "1.386 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t)",
+        "5.082 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 220 €/t)"
+      ],
+      "group": "envkv"
     },
     "envkv.tax": {
       "label": "Kraftfahrzeugsteuer",
-      "value": "171 €/Jahr"
+      "value": "171 €/Jahr",
+      "group": "envkv"
     },
     "numSeats": {
       "label": "Anzahl Sitzplätze",
-      "value": "5"
+      "value": "5",
+      "group": "vehicle"
     },
     "doorCount": {
       "label": "Anzahl der Türen",
-      "value": "4/5"
+      "value": "4/5",
+      "group": "vehicle"
     },
     "transmission": {
       "label": "Getriebe",
-      "value": "Automatik"
+      "value": "Automatik",
+      "group": "vehicle"
     },
     "emissionClass": {
       "label": "Schadstoffklasse",
-      "value": "Euro6d"
+      "value": "Euro6d",
+      "group": "vehicle"
     },
     "emissionsSticker": {
       "label": "Umweltplakette",
-      "value": "4 (Grün)"
+      "value": "4 (Grün)",
+      "group": "vehicle"
     },
     "firstRegistration": {
       "label": "Erstzulassung",
-      "value": "07/2023"
+      "value": "07/2023",
+      "group": "vehicle"
     },
     "numberOfPreviousOwners": {
       "label": "Anzahl der Fahrzeughalter",
-      "value": "1"
+      "value": "1",
+      "group": "vehicle"
     },
     "hu": {
       "label": "HU",
-      "value": "Neu"
+      "value": "Neu",
+      "group": "vehicle"
     },
     "climatisation": {
       "label": "Klimatisierung",
-      "value": "3-Zonen-Klimaautomatik"
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "360°-Kamera, Vorne, Selbstlenkende Systeme, Hinten"
+      "value": "360°-Kamera, Vorne, Selbstlenkende Systeme, Hinten",
+      "group": "vehicle"
     },
     "airbag": {
       "label": "Airbags",
-      "value": "Front-, Seiten- und weitere Airbags"
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
     },
     "manufacturerColorName": {
       "label": "Farbe (Hersteller)",
-      "value": "Tansanitblau II"
+      "value": "Tansanitblau II",
+      "group": "vehicle"
     },
     "color": {
       "label": "Farbe",
-      "value": "Blau Metallic"
+      "value": "Blau Metallic",
+      "group": "vehicle"
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Vollleder"
+      "value": "Vollleder",
+      "group": "vehicle"
     },
     "trailerLoadBraked": {
       "label": "Anhängelast gebremst",
-      "value": "1.600 kg"
+      "value": "1.600 kg",
+      "group": "vehicle"
     },
     "trailerLoadUnbraked": {
       "label": "Anhängelast ungebremst",
-      "value": "750 kg"
+      "value": "750 kg",
+      "group": "vehicle"
     },
     "cylinder": {
       "label": "Zylinder",
-      "value": "4"
+      "value": "4",
+      "group": "vehicle"
     }
   },
   "features": [
@@ -344,5 +377,19 @@
         }
       }
     }
-  ]
+  ],
+  "derived": {
+    "mileageKm": 40296,
+    "powerKw": 135,
+    "powerHp": 184,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-07",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": 154,
+    "consumptionL100km": 6.8
+  }
 }

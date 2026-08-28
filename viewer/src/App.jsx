@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useLocalStorage } from 'usehooks-ts';
 import { buildRows, carLabel, carSubline, photo, rowDiffers } from './rows.js';
 
@@ -15,6 +15,16 @@ export default function App() {
   const [diffOnly, setDiffOnly] = useLocalStorage(key('diff-only'), false);
   const [featuresOnly, setFeaturesOnly] = useLocalStorage(key('features-only'), false);
   const [dragKey, setDragKey] = useState(null);
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const drawer = useRef(null);
+
+  // A native <dialog> brings Escape, the backdrop and focus trapping along.
+  useEffect(() => {
+    const el = drawer.current;
+    if (!el) return;
+    if (pickerOpen && !el.open) el.showModal();
+    if (!pickerOpen && el.open) el.close();
+  }, [pickerOpen]);
 
   const load = useCallback(() => {
     fetch('/api/cars')
@@ -107,9 +117,11 @@ export default function App() {
     <div className="app">
       <header className="bar">
         <h1>Fahrzeugvergleich</h1>
-        <span className="muted">
-          {shown.length} von {cars.length} Fahrzeugen · {visibleRows.length} Zeilen
-        </span>
+        <button className="picker-open" onClick={() => setPickerOpen(true)}>
+          Fahrzeuge <strong>{shown.length}</strong>
+          <span className="muted">/ {cars.length}</span>
+        </button>
+        <span className="muted">{visibleRows.length} Zeilen</span>
         <div className="spacer" />
         <label className="check">
           <input
@@ -139,32 +151,54 @@ export default function App() {
         </button>
       </header>
 
-      <section className="picker">
-        {cars.map((car) => {
-          const active = selectedIds.includes(car.id);
-          return (
-            <button
-              key={car.id}
-              className={`chip ${active ? 'on' : ''}`}
-              onClick={() => toggleCar(car.id)}
-              title={carLabel(car)}
-            >
-              {car.images?.[0] && (
-                <img src={photo(car.images[0], 'mo-240')} alt="" referrerPolicy="no-referrer" />
-              )}
-              <span className="chip-text">
-                <strong>
-                  {car.shortTitle || carLabel(car)} <span className="muted">{car.price?.localized ?? '—'}</span>
-                </strong>
-                <span className="muted">{carSubline(car)}</span>
-              </span>
-            </button>
-          );
-        })}
-      </section>
+      <dialog
+        className="drawer"
+        ref={drawer}
+        onClose={() => setPickerOpen(false)}
+        onClick={(e) => {
+          if (e.target === drawer.current) setPickerOpen(false); // backdrop
+        }}
+      >
+        <header className="drawer-head">
+          <strong>Fahrzeuge</strong>
+          <span className="muted">
+            {shown.length} von {cars.length}
+          </span>
+          <div className="spacer" />
+          <button onClick={() => setSelected(cars.map((c) => c.id))}>Alle</button>
+          <button onClick={() => setSelected([])}>Keine</button>
+          <button onClick={() => setPickerOpen(false)} title="Schließen">
+            ✕
+          </button>
+        </header>
+        <ul className="drawer-list">
+          {cars.map((car) => {
+            const active = selectedIds.includes(car.id);
+            return (
+              <li key={car.id}>
+                <label className={`car-option ${active ? 'on' : ''}`} title={carLabel(car)}>
+                  <input type="checkbox" checked={active} onChange={() => toggleCar(car.id)} />
+                  {car.images?.[0] && (
+                    <img src={photo(car.images[0], 'mo-240')} alt="" referrerPolicy="no-referrer" />
+                  )}
+                  <span className="car-option-text">
+                    <span className="car-option-title">{carLabel(car)}</span>
+                    <span className="muted">
+                      {car.price?.localized ?? '—'} · {carSubline(car)}
+                    </span>
+                  </span>
+                </label>
+              </li>
+            );
+          })}
+        </ul>
+      </dialog>
 
       {shown.length === 0 ? (
-        <p className="notice">Oben mindestens ein Fahrzeug auswählen.</p>
+        <p className="notice">
+          Kein Fahrzeug ausgewählt.{' '}
+          <button onClick={() => setPickerOpen(true)}>Fahrzeuge wählen</button>
+        </p>
       ) : (
         <div className="table-wrap">
           <table>

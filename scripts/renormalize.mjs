@@ -1,0 +1,66 @@
+#!/usr/bin/env node
+// Re-apply the current normalization to already-scraped JSON, in place.
+//
+//   pnpm renormalize
+//
+// The raw values survive in data/listings/*.json, so improving normalizeFacts()
+// does not require re-fetching every car from mobile.de.
+
+import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { resolve } from 'node:path';
+
+import { normalizeFacts, deriveNumbers } from './extract.mjs';
+
+const OUT_DIR = resolve('data/listings');
+const INDEX_FILE = resolve('data/cars.json');
+
+if (!existsSync(OUT_DIR)) {
+  console.error('No data/listings yet - run pnpm saved or pnpm scrape first.');
+  process.exit(1);
+}
+
+const files = readdirSync(OUT_DIR).filter((f) => f.endsWith('.json'));
+const cars = [];
+let changed = 0;
+
+for (const file of files) {
+  const path = resolve(OUT_DIR, file);
+  const car = JSON.parse(readFileSync(path, 'utf8'));
+
+  // Rebuild the attribute list the normalizer expects from the stored facts.
+  const attributes = Object.entries(car.facts ?? {}).map(([tag, fact]) => ({
+    tag,
+    label: fact.label,
+    // Prefer the untouched array when a previous run kept one.
+    value: fact.values ?? fact.value,
+  }));
+
+  const before = JSON.stringify({ facts: car.facts, derived: car.derived });
+  car.facts = normalizeFacts(attributes);
+  car.derived = deriveNumbers(car.facts);
+  const after = JSON.stringify({ facts: car.facts, derived: car.derived });
+
+  if (before !== after) {
+    changed++;
+    writeFileSync(path, JSON.stringify(car, null, 2));
+  }
+  cars.push(car);
+}
+
+// Keep the index in step, preserving whatever else it already tracks.
+const index = existsSync(INDEX_FILE) ? JSON.parse(readFileSync(INDEX_FILE, 'utf8')) : {};
+const byId = new Map(cars.map((car) => [car.id, car]));
+writeFileSync(
+  INDEX_FILE,
+  JSON.stringify(
+    {
+      updatedAt: new Date().toISOString(),
+      unavailable: index.unavailable ?? {},
+      cars: (index.cars ?? []).map((car) => byId.get(car.id) ?? car),
+    },
+    null,
+    2,
+  ),
+);
+
+console.log(`Renormalized ${files.length} file(s); ${changed} changed.`);

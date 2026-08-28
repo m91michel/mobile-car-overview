@@ -40,115 +40,143 @@
   "facts": {
     "damageCondition": {
       "label": "Fahrzeugzustand",
-      "value": "Gebrauchtfahrzeug, Unfallfrei"
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "group": "vehicle"
     },
     "category": {
       "label": "Kategorie",
-      "value": "Kombi"
+      "value": "Kombi",
+      "group": "vehicle"
     },
     "modelRange": {
       "label": "Baureihe",
-      "value": "KL8/KU8"
+      "value": "KL8/KU8",
+      "group": "vehicle"
     },
     "trimLine": {
       "label": "Ausstattungslinie",
-      "value": "Leon Sportstourer VZ 4Drive 2.0 TSI"
+      "value": "Leon Sportstourer VZ 4Drive 2.0 TSI",
+      "group": "vehicle"
     },
     "sku": {
       "label": "Fahrzeugnummer",
-      "value": "29"
+      "value": "29",
+      "group": "vehicle"
     },
     "availability": {
       "label": "Verfügbarkeit",
-      "value": "Sofort"
+      "value": "Sofort",
+      "group": "vehicle"
     },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "55.996 km"
+      "value": "55.996 km",
+      "group": "vehicle"
     },
     "cubicCapacity": {
       "label": "Hubraum",
-      "value": "1.984 cm³"
+      "value": "1.984 cm³",
+      "group": "vehicle"
     },
     "power": {
       "label": "Leistung",
-      "value": "228 kW (310 PS)"
+      "value": "228 kW (310 PS)",
+      "group": "vehicle"
     },
     "envkv.engineType": {
       "label": "Antriebsart",
-      "value": "Verbrennungsmotor"
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
     },
     "fuel": {
       "label": "Kraftstoffart",
-      "value": "Benzin, E10-geeignet"
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
     },
     "numSeats": {
       "label": "Anzahl Sitzplätze",
-      "value": "5"
+      "value": "5",
+      "group": "vehicle"
     },
     "doorCount": {
       "label": "Anzahl der Türen",
-      "value": "4/5"
+      "value": "4/5",
+      "group": "vehicle"
     },
     "transmission": {
       "label": "Getriebe",
-      "value": "Automatik"
+      "value": "Automatik",
+      "group": "vehicle"
     },
     "emissionClass": {
       "label": "Schadstoffklasse",
-      "value": "Euro6d"
+      "value": "Euro6d",
+      "group": "vehicle"
     },
     "emissionsSticker": {
       "label": "Umweltplakette",
-      "value": "4 (Grün)"
+      "value": "4 (Grün)",
+      "group": "vehicle"
     },
     "firstRegistration": {
       "label": "Erstzulassung",
-      "value": "01/2022"
+      "value": "01/2022",
+      "group": "vehicle"
     },
     "numberOfPreviousOwners": {
       "label": "Anzahl der Fahrzeughalter",
-      "value": "1"
+      "value": "1",
+      "group": "vehicle"
     },
     "hu": {
       "label": "HU",
-      "value": "Neu"
+      "value": "Neu",
+      "group": "vehicle"
     },
     "climatisation": {
       "label": "Klimatisierung",
-      "value": "3-Zonen-Klimaautomatik"
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Hinten"
+      "value": "Hinten",
+      "group": "vehicle"
     },
     "airbag": {
       "label": "Airbags",
-      "value": "Front-, Seiten- und weitere Airbags"
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
     },
     "manufacturerColorName": {
       "label": "Farbe (Hersteller)",
-      "value": "midnightblack"
+      "value": "midnightblack",
+      "group": "vehicle"
     },
     "color": {
       "label": "Farbe",
-      "value": "Schwarz Metallic"
+      "value": "Schwarz Metallic",
+      "group": "vehicle"
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Stoff, Schwarz"
+      "value": "Stoff, Schwarz",
+      "group": "vehicle"
     },
     "netWeight": {
       "label": "Gewicht",
-      "value": "1.640 kg"
+      "value": "1.640 kg",
+      "group": "vehicle"
     },
     "cylinder": {
       "label": "Zylinder",
-      "value": "4"
+      "value": "4",
+      "group": "vehicle"
     },
     "fuelTankVolume": {
       "label": "Tankgröße",
-      "value": "55 l"
+      "value": "55 l",
+      "group": "vehicle"
     }
   },
   "features": [
@@ -326,5 +354,19 @@
       "promotion": false,
       "showInGallery": false
     }
-  ]
+  ],
+  "derived": {
+    "mileageKm": 55996,
+    "powerKw": 228,
+    "powerHp": 310,
+    "cubicCapacityCcm": 1984,
+    "firstRegistration": "2022-01",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1640,
+    "fuelTankLitres": 55,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null
+  }
 }

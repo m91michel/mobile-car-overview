@@ -85,6 +85,7 @@ Output is `data/listings/<id>.json` per car, merged into `data/cars.json`.
 | `--saved` | read ids from Mein Parkplatz (needs a signed-in profile) |
 | `--from <file>` | newline-delimited ids/urls; blank lines and `#` comments ignored |
 | `--refresh` | re-fetch every id already in `data/cars.json` |
+| `--recheck-sold` | also re-try listings previously recorded as sold |
 | `--max-age <hours>` | skip cars fetched more recently than this |
 | `--delay <ms>` | pause between listings per worker (default 1200) |
 | `--retries <n>` | retries per listing (default 2, with backoff) |
@@ -125,14 +126,64 @@ Vite + React in `viewer/`, started with `pnpm viewer`.
   list: price, the union of all `facts` keys, dealer, then the union of all
   features as ✓/–. Union, not intersection — a figure one car is missing shows
   as a gap instead of dropping the row.
+- **Car picker in a drawer.** A native `<dialog>` (Escape, backdrop and focus
+  trapping come free) holding the full list with photo, title and price. It
+  used to be a chip grid above the table, which cost four rows of height once
+  the comparison passed a handful of cars.
 - **Rows move.** Drag a row by its label, or use ⤒ / ↑ / ↓; ✕ hides it. Order is
   stored as a full key list, and moves target the next *visible* row, so hidden
   rows never swallow a click.
 - **Settings persist** per key in localStorage via `useLocalStorage` from
   `usehooks-ts`: selected cars, row order, hidden rows, both filters.
+- **Plain CSS**, one file, palette in custom properties, light and dark via
+  `prefers-color-scheme`. No framework, no component library.
 - **Photos are hotlinked.** mobile.de's CDN sizes them by query rule
   (`?rule=mo-240`, `mo-360`, `mo-1024`, `mo-1600`), which is why `images[]` is
   stored without a size. Nothing is downloaded.
+
+## Data quality
+
+```bash
+pnpm check          # duplicates + normalization report over data/
+pnpm renormalize    # re-apply normalization to already-scraped JSON, in place
+```
+
+`renormalize` exists because the raw values survive in `data/listings/*.json`, so
+improving `normalizeFacts()` never requires re-fetching 24 cars from mobile.de.
+
+### What normalization has to handle
+
+Measured against a real 44-car Parkplatz:
+
+- **`attributes[].value` is sometimes an array.** `envkv.co2Costs` carries a
+  low/mid/high variant and `envkv.consumptionDetails.fuel` carries five. Passing
+  the array through unchanged makes consumers concatenate it into one unreadable
+  string. Facts therefore keep both a joined `value` and, when there is more than
+  one, an explicit `values` array to render as separate lines.
+- **Non-breaking spaces everywhere.** They break display and naive equality
+  checks between two cars, so they are folded to normal spaces.
+- **Placeholders masquerading as data.** A seller had typed `-- g/km` for CO2.
+  In a comparison a placeholder is worse than a blank, so dash/`k.A.`/`n/a`
+  values are dropped. Negative real numbers are deliberately still kept.
+- **`derived`** holds parsed numbers (`mileageKm`, `powerKw`, `powerHp`,
+  `firstRegistration` as `YYYY-MM`, ...) for sorting and diffing, so the viewer
+  never parses German number formatting itself.
+- **`facts[tag].group`** is `envkv` for consumption/cost disclosures and
+  `vehicle` otherwise. Only a handful of listings carry `envkv.*`, so grouping
+  lets the viewer treat them as one hideable block rather than many sparse rows.
+
+### Duplicates
+
+`pnpm check` ranks by what the evidence actually proves:
+
+1. same dealer + same `sku` (Fahrzeugnummer) — a re-listing
+2. identical make, model, mileage, first registration, power, colour and fuel
+3. shared photos **plus** matching mileage/registration
+
+Shared photos alone prove nothing: one dealer group reused the same banner image
+across nine listings, and two further pairs shared interior shots while being
+plainly different cars. That is stock photography, and `check` reports it as such
+instead of crying duplicate.
 
 ## Known limits
 

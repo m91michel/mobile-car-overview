@@ -11,6 +11,7 @@
 //   --saved             read ids from Mein Parkplatz (needs a signed-in profile)
 //   --from <file>       newline-delimited urls/ids; blank lines and # ignored
 //   --refresh           re-fetch every id already present in data/cars.json
+//   --recheck-sold      also re-try listings previously found sold
 //   --max-age <hours>   skip cars fetched more recently than this
 //   --delay <ms>        pause between listings per worker (default 1200)
 //   --retries <n>       retries per listing (default 2)
@@ -37,6 +38,7 @@ function parseArgs(argv) {
     saved: false,
     from: null,
     refresh: false,
+    recheckSold: false,
     maxAgeHours: null,
     delayMs: 1200,
     retries: 2,
@@ -51,6 +53,7 @@ function parseArgs(argv) {
     switch (arg) {
       case '--saved': options.saved = true; break;
       case '--refresh': options.refresh = true; break;
+      case '--recheck-sold': options.recheckSold = true; break;
       case '--from': options.from = value(); break;
       case '--max-age': options.maxAgeHours = Number(value()); break;
       case '--delay': options.delayMs = Number(value()); break;
@@ -93,12 +96,14 @@ function collectIds(inputs) {
 }
 
 function readIndex() {
-  if (!existsSync(INDEX_FILE)) return [];
+  const empty = { cars: [], unavailable: {} };
+  if (!existsSync(INDEX_FILE)) return empty;
   try {
-    return JSON.parse(readFileSync(INDEX_FILE, 'utf8')).cars ?? [];
+    const parsed = JSON.parse(readFileSync(INDEX_FILE, 'utf8'));
+    return { cars: parsed.cars ?? [], unavailable: parsed.unavailable ?? {} };
   } catch {
     console.warn('data/cars.json is unreadable; starting a fresh index.');
-    return [];
+    return empty;
   }
 }
 
@@ -146,7 +151,7 @@ async function fetchListing(page, id, { retries, delayMs }) {
 // ---------------------------------------------------------------------------
 
 const options = parseArgs(process.argv.slice(2));
-const index = readIndex();
+const { cars: index, unavailable } = readIndex();
 
 let ids = collectIds(options.inputs);
 if (options.from) ids.push(...readIdFile(options.from));
@@ -160,8 +165,14 @@ if (options.saved) {
   const page = await openPage(PORT);
   try {
     const parked = await readParkplatz(page);
-    console.log(`  found ${parked.length} parked vehicle(s).`);
-    ids.push(...parked);
+    const stillListed = parked.comparable.length;
+    console.log(
+      `  found ${parked.ids.length} parked vehicle(s)` +
+        (stillListed && stillListed < parked.ids.length
+          ? ` (${stillListed} still offered for comparison; the rest are likely sold).`
+          : '.'),
+    );
+    ids.push(...parked.ids);
   } catch (error) {
     // A missing login is an instruction, not a crash.
     console.error(`\n${error.message}\n`);
@@ -179,6 +190,20 @@ if (!ids.length) {
     'Nothing to fetch. Pass ids/urls, or use --saved, --refresh or --from <file>.',
   );
   process.exit(1);
+}
+
+// A car that was sold stays sold. Re-checking 20 dead listings on every run is
+// most of the runtime on a long-lived Parkplatz, so skip them unless asked.
+let soldSkipped = 0;
+if (!options.recheckSold) {
+  const before = ids.length;
+  ids = ids.filter((id) => !unavailable[id]);
+  soldSkipped = before - ids.length;
+  if (soldSkipped) {
+    console.log(
+      `Skipping ${soldSkipped} car(s) known to be sold (--recheck-sold to try again).`,
+    );
+  }
 }
 
 // Skip anything fetched recently enough to still be trustworthy.
@@ -223,6 +248,7 @@ async function worker() {
           `  [${++done}/${ids.length}] ${id} ${car.shortTitle} - ${car.price.localized ?? 'n/a'}`,
         );
       } catch (error) {
+        if (/no longer available/.test(error.message)) unavailable[id] = new Date().toISOString();
         failures.push({ id, message: error.message });
         console.log(`  [${++done}/${ids.length}] ${id} FAILED (${error.message})`);
       }
@@ -239,12 +265,21 @@ await Promise.all(Array.from({ length: workerCount }, worker));
 const merged = new Map(index.map((car) => [car.id, car]));
 for (const car of cars) merged.set(car.id, car);
 
+// A car we just fetched is plainly not sold any more.
+for (const car of cars) delete unavailable[car.id];
+
 writeFileSync(
   INDEX_FILE,
-  JSON.stringify({ updatedAt: new Date().toISOString(), cars: [...merged.values()] }, null, 2),
+  JSON.stringify(
+    { updatedAt: new Date().toISOString(), unavailable, cars: [...merged.values()] },
+    null,
+    2,
+  ),
 );
 
-console.log(`\n${cars.length} fetched, ${failures.length} failed, ${skipped} skipped.`);
+console.log(
+  `\n${cars.length} fetched, ${failures.length} failed, ${skipped + soldSkipped} skipped.`,
+);
 console.log(`Index: data/cars.json (${merged.size} car(s) total)`);
 if (failures.length) {
   for (const f of failures) console.log(`  ${f.id}: ${f.message}`);

@@ -1,5 +1,27 @@
 {
-  "updatedAt": "2026-08-28T06:29:35.702Z",
+  "updatedAt": "2026-08-28T06:38:33.935Z",
+  "unavailable": {
+    "452732524": "2026-08-28T06:38:33.934Z",
+    "453385756": "2026-08-28T06:30:00.000Z",
+    "455546694": "2026-08-28T06:30:00.000Z",
+    "456360738": "2026-08-28T06:30:00.000Z",
+    "457103311": "2026-08-28T06:30:00.000Z",
+    "457193919": "2026-08-28T06:30:00.000Z",
+    "458171777": "2026-08-28T06:30:00.000Z",
+    "458436996": "2026-08-28T06:30:00.000Z",
+    "458936239": "2026-08-28T06:30:00.000Z",
+    "459105914": "2026-08-28T06:30:00.000Z",
+    "459542669": "2026-08-28T06:30:00.000Z",
+    "459655189": "2026-08-28T06:30:00.000Z",
+    "459941383": "2026-08-28T06:30:00.000Z",
+    "460222674": "2026-08-28T06:30:00.000Z",
+    "460702227": "2026-08-28T06:30:00.000Z",
+    "460793398": "2026-08-28T06:30:00.000Z",
+    "461243027": "2026-08-28T06:30:00.000Z",
+    "461427786": "2026-08-28T06:30:00.000Z",
+    "461805828": "2026-08-28T06:30:00.000Z",
+    "42077822262016": "2026-08-28T06:30:00.000Z"
+  },
   "cars": [
     {
       "id": "462145366",
@@ -43,131 +65,163 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug"
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G21"
+          "value": "G21",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREEN"
+          "value": "TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREEN",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "B00139259287"
+          "value": "B00139259287",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "43.285 km"
+          "value": "43.285 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6"
+          "value": "Euro6",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "06/2024"
+          "value": "06/2024",
+          "group": "vehicle"
         },
         "constructionYear": {
           "label": "Baujahr",
-          "value": "2024"
+          "value": "2024",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "Neu"
+          "value": "Neu",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera"
+          "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "Alpinweiß uni"
+          "value": "Alpinweiß uni",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Weiß"
+          "value": "Weiß",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Alcantara, Schwarz"
+          "value": "Alcantara, Schwarz",
+          "group": "vehicle"
         },
         "trailerLoadBraked": {
           "label": "Anhängelast gebremst",
-          "value": "1.300 kg"
+          "value": "1.300 kg",
+          "group": "vehicle"
         },
         "trailerLoadUnbraked": {
           "label": "Anhängelast ungebremst",
-          "value": "750 kg"
+          "value": "750 kg",
+          "group": "vehicle"
         },
         "netWeight": {
           "label": "Gewicht",
-          "value": "1.650 kg"
+          "value": "1.650 kg",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         },
         "fuelTankVolume": {
           "label": "Tankgröße",
-          "value": "59 l"
+          "value": "59 l",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -321,7 +375,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 43285,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-06",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "459175992",
@@ -362,117 +430,143 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug, Unfallfrei"
+          "value": "Gebrauchtfahrzeug, Unfallfrei",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi, Jahreswagen"
+          "value": "Kombi, Jahreswagen",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G81"
+          "value": "G81",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "215822"
+          "value": "215822",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "8.621 km"
+          "value": "8.621 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "envkv.energyConsumption": {
           "label": "Energieverbrauch (komb.)",
-          "value": "6,8 l/100km"
+          "value": "6,8 l/100km",
+          "group": "envkv"
         },
         "envkv.co2Emissions": {
           "label": "CO₂-Emissionen (komb.)",
-          "value": "153 g/km"
+          "value": "153 g/km",
+          "group": "envkv"
         },
         "envkv.co2Class": {
           "label": "CO₂-Klasse",
-          "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)"
+          "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+          "group": "envkv"
         },
         "envkv.consumptionDetails.fuel": {
           "label": "Kraftstoffverbrauch",
-          "value": [
-            "6,8 l/100km (kombiniert)"
-          ]
+          "value": "6,8 l/100km (kombiniert)",
+          "group": "envkv"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6d"
+          "value": "Euro6d",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "06/2025"
+          "value": "06/2025",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme"
+          "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "Skyscraper Grau"
+          "value": "Skyscraper Grau",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Grau Metallic"
+          "value": "Grau Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Kunstleder, Schwarz"
+          "value": "Kunstleder, Schwarz",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -621,7 +715,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 8621,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2025-06",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": 153,
+        "consumptionL100km": 6.8
+      }
     },
     {
       "id": "424825114",
@@ -665,111 +773,138 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug"
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "3er"
+          "value": "3er",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "Basis"
+          "value": "Basis",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "102998455"
+          "value": "102998455",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "In 1 Woche ab Bestellung verfügbar"
+          "value": "In 1 Woche ab Bestellung verfügbar",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "47.508 km"
+          "value": "47.508 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6d"
+          "value": "Euro6d",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "03/2023"
+          "value": "03/2023",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "2"
+          "value": "2",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "Neu"
+          "value": "Neu",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme"
+          "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "Saphirschwarz Metallic"
+          "value": "Saphirschwarz Metallic",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Schwarz Metallic"
+          "value": "Schwarz Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Alcantara, Blau"
+          "value": "Alcantara, Blau",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -925,7 +1060,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 47508,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-03",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 2,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "451774892",
@@ -969,107 +1118,133 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug"
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G21"
+          "value": "G21",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "M Sportpaket"
+          "value": "M Sportpaket",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "07224"
+          "value": "07224",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "41.600 km"
+          "value": "41.600 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro 6e"
+          "value": "Euro 6e",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "01/2025"
+          "value": "01/2025",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "Neu"
+          "value": "Neu",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, 360°-Kamera, Vorne, Selbstlenkende Systeme"
+          "value": "Hinten, 360°-Kamera, Vorne, Selbstlenkende Systeme",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "Black Saphir Metallic"
+          "value": "Black Saphir Metallic",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Schwarz Metallic"
+          "value": "Schwarz Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Teilleder, Andere"
+          "value": "Teilleder, Andere",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -1237,7 +1412,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 41600,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2025-01",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "461488465",
@@ -1281,127 +1470,158 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug"
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G21"
+          "value": "G21",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "TOURING LC PLUS SPORTSITZE GRA PARKASSIST   DACHRELING…"
+          "value": "TOURING LC PLUS SPORTSITZE GRA PARKASSIST   DACHRELING…",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "257099"
+          "value": "257099",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "34.700 km"
+          "value": "34.700 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6"
+          "value": "Euro6",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "03/2024"
+          "value": "03/2024",
+          "group": "vehicle"
         },
         "constructionYear": {
           "label": "Baujahr",
-          "value": "2024"
+          "value": "2024",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "Neu"
+          "value": "Neu",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Kamera, Hinten, Vorne, Selbstlenkende Systeme"
+          "value": "Kamera, Hinten, Vorne, Selbstlenkende Systeme",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "Skyscraper Grau"
+          "value": "Skyscraper Grau",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Grau Metallic"
+          "value": "Grau Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Stoff, Schwarz"
+          "value": "Stoff, Schwarz",
+          "group": "vehicle"
         },
         "trailerLoadBraked": {
           "label": "Anhängelast gebremst",
-          "value": "1.300 kg"
+          "value": "1.300 kg",
+          "group": "vehicle"
         },
         "trailerLoadUnbraked": {
           "label": "Anhängelast ungebremst",
-          "value": "750 kg"
+          "value": "750 kg",
+          "group": "vehicle"
         },
         "netWeight": {
           "label": "Gewicht",
-          "value": "1.650 kg"
+          "value": "1.650 kg",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         },
         "fuelTankVolume": {
           "label": "Tankgröße",
-          "value": "59 l"
+          "value": "59 l",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -1532,7 +1752,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 34700,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-03",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "462155994",
@@ -1576,127 +1810,158 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug, Unfallfrei"
+          "value": "Gebrauchtfahrzeug, Unfallfrei",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G21"
+          "value": "G21",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "TOURING LC PLUS SPORTSITZE GRA PARKASSIST  LORDOSE  LE…"
+          "value": "TOURING LC PLUS SPORTSITZE GRA PARKASSIST  LORDOSE  LE…",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "259281"
+          "value": "259281",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "38.900 km"
+          "value": "38.900 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6"
+          "value": "Euro6",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "06/2024"
+          "value": "06/2024",
+          "group": "vehicle"
         },
         "constructionYear": {
           "label": "Baujahr",
-          "value": "2024"
+          "value": "2024",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "Neu"
+          "value": "Neu",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera"
+          "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "Saphirschwarz"
+          "value": "Saphirschwarz",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Schwarz Metallic"
+          "value": "Schwarz Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Stoff, Schwarz"
+          "value": "Stoff, Schwarz",
+          "group": "vehicle"
         },
         "trailerLoadBraked": {
           "label": "Anhängelast gebremst",
-          "value": "1.300 kg"
+          "value": "1.300 kg",
+          "group": "vehicle"
         },
         "trailerLoadUnbraked": {
           "label": "Anhängelast ungebremst",
-          "value": "750 kg"
+          "value": "750 kg",
+          "group": "vehicle"
         },
         "netWeight": {
           "label": "Gewicht",
-          "value": "1.650 kg"
+          "value": "1.650 kg",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         },
         "fuelTankVolume": {
           "label": "Tankgröße",
-          "value": "59 l"
+          "value": "59 l",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -1829,7 +2094,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 38900,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-06",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "458139136",
@@ -1873,127 +2152,158 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug, Unfallfrei"
+          "value": "Gebrauchtfahrzeug, Unfallfrei",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G21"
+          "value": "G21",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "TOURING LC PLUS SPORTSITZE GRA PARKASSIST SHZG DAB"
+          "value": "TOURING LC PLUS SPORTSITZE GRA PARKASSIST SHZG DAB",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "B33275257100"
+          "value": "B33275257100",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "28.613 km"
+          "value": "28.613 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6"
+          "value": "Euro6",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "03/2024"
+          "value": "03/2024",
+          "group": "vehicle"
         },
         "constructionYear": {
           "label": "Baujahr",
-          "value": "2024"
+          "value": "2024",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "Neu"
+          "value": "Neu",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme"
+          "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "Saphirschwarz "
+          "value": "Saphirschwarz",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Schwarz Metallic"
+          "value": "Schwarz Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Stoff, Schwarz"
+          "value": "Stoff, Schwarz",
+          "group": "vehicle"
         },
         "trailerLoadBraked": {
           "label": "Anhängelast gebremst",
-          "value": "1.300 kg"
+          "value": "1.300 kg",
+          "group": "vehicle"
         },
         "trailerLoadUnbraked": {
           "label": "Anhängelast ungebremst",
-          "value": "750 kg"
+          "value": "750 kg",
+          "group": "vehicle"
         },
         "netWeight": {
           "label": "Gewicht",
-          "value": "1.650 kg"
+          "value": "1.650 kg",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         },
         "fuelTankVolume": {
           "label": "Tankgröße",
-          "value": "59 l"
+          "value": "59 l",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -2138,7 +2448,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 28613,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-03",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "457056589",
@@ -2182,131 +2506,163 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug, Unfallfrei"
+          "value": "Gebrauchtfahrzeug, Unfallfrei",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G21"
+          "value": "G21",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "TOURING M SPORT HIFI LiveCockpit+ LED Wiedscreen"
+          "value": "TOURING M SPORT HIFI LiveCockpit+ LED Wiedscreen",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "B00139247851"
+          "value": "B00139247851",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "83.530 km"
+          "value": "83.530 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.995 cm³"
+          "value": "1.995 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "110 kW (150 PS)"
+          "value": "110 kW (150 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Diesel"
+          "value": "Diesel",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6d"
+          "value": "Euro6d",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "03/2023"
+          "value": "03/2023",
+          "group": "vehicle"
         },
         "constructionYear": {
           "label": "Baujahr",
-          "value": "2023"
+          "value": "2023",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "03/2028"
+          "value": "03/2028",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten"
+          "value": "Vorne, Hinten",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "saphirschwarz"
+          "value": "saphirschwarz",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Schwarz Metallic"
+          "value": "Schwarz Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Alcantara, Schwarz"
+          "value": "Alcantara, Schwarz",
+          "group": "vehicle"
         },
         "trailerLoadBraked": {
           "label": "Anhängelast gebremst",
-          "value": "1.800 kg"
+          "value": "1.800 kg",
+          "group": "vehicle"
         },
         "trailerLoadUnbraked": {
           "label": "Anhängelast ungebremst",
-          "value": "750 kg"
+          "value": "750 kg",
+          "group": "vehicle"
         },
         "netWeight": {
           "label": "Gewicht",
-          "value": "1.735 kg"
+          "value": "1.735 kg",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         },
         "fuelTankVolume": {
           "label": "Tankgröße",
-          "value": "59 l"
+          "value": "59 l",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -2459,7 +2815,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 83530,
+        "powerKw": 110,
+        "powerHp": 150,
+        "cubicCapacityCcm": 1995,
+        "firstRegistration": "2023-03",
+        "constructionYear": 2023,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1735,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "40622847776352",
@@ -2503,99 +2873,118 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug, Unfallfrei"
+          "value": "Gebrauchtfahrzeug, Unfallfrei",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
-        },
-        "trimLine": {
-          "label": "Ausstattungslinie",
-          "value": "-"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "11779"
+          "value": "11779",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "23.000 km"
+          "value": "23.000 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin"
+          "value": "Benzin",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "03/2025"
+          "value": "03/2025",
+          "group": "vehicle"
         },
         "constructionYear": {
           "label": "Baujahr",
-          "value": "2024"
+          "value": "2024",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, 360°-Kamera, Vorne, Hinten"
+          "value": "Selbstlenkende Systeme, 360°-Kamera, Vorne, Hinten",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "Skyscraper Grau metallic"
+          "value": "Skyscraper Grau metallic",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Grau Metallic"
+          "value": "Grau Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Alcantara, Andere"
+          "value": "Alcantara, Andere",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -2738,7 +3127,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 23000,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2025-03",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "40907593490464",
@@ -2782,131 +3185,163 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug, Unfallfrei"
+          "value": "Gebrauchtfahrzeug, Unfallfrei",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G21"
+          "value": "G21",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "TOURING HIFI AHK WIDESCREEN KAMERA "
+          "value": "TOURING HIFI AHK WIDESCREEN KAMERA",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "B00139259285"
+          "value": "B00139259285",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "42.963 km"
+          "value": "42.963 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6"
+          "value": "Euro6",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "07/2024"
+          "value": "07/2024",
+          "group": "vehicle"
         },
         "constructionYear": {
           "label": "Baujahr",
-          "value": "2024"
+          "value": "2024",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "Neu"
+          "value": "Neu",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Kamera, Selbstlenkende Systeme, Hinten, Vorne"
+          "value": "Kamera, Selbstlenkende Systeme, Hinten, Vorne",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "saphirschwarz"
+          "value": "saphirschwarz",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Schwarz Metallic"
+          "value": "Schwarz Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Teilleder, Schwarz"
+          "value": "Teilleder, Schwarz",
+          "group": "vehicle"
         },
         "trailerLoadBraked": {
           "label": "Anhängelast gebremst",
-          "value": "1.300 kg"
+          "value": "1.300 kg",
+          "group": "vehicle"
         },
         "trailerLoadUnbraked": {
           "label": "Anhängelast ungebremst",
-          "value": "750 kg"
+          "value": "750 kg",
+          "group": "vehicle"
         },
         "netWeight": {
           "label": "Gewicht",
-          "value": "1.650 kg"
+          "value": "1.650 kg",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         },
         "fuelTankVolume": {
           "label": "Tankgröße",
-          "value": "59 l"
+          "value": "59 l",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -3057,7 +3492,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 42963,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-07",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "454575246",
@@ -3100,115 +3549,143 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug, Unfallfrei"
+          "value": "Gebrauchtfahrzeug, Unfallfrei",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G21"
+          "value": "G21",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "Touring Head-Up LED RFK Komfortzg."
+          "value": "Touring Head-Up LED RFK Komfortzg.",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "48.400 km"
+          "value": "48.400 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "135 kW (184 PS)"
+          "value": "135 kW (184 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6d"
+          "value": "Euro6d",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "03/2023"
+          "value": "03/2023",
+          "group": "vehicle"
         },
         "constructionYear": {
           "label": "Baujahr",
-          "value": "2023"
+          "value": "2023",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "04/2028"
+          "value": "04/2028",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme"
+          "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "Schwarz Uni"
+          "value": "Schwarz Uni",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Schwarz"
+          "value": "Schwarz",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Teilleder, Schwarz"
+          "value": "Teilleder, Schwarz",
+          "group": "vehicle"
         },
         "trailerLoadBraked": {
           "label": "Anhängelast gebremst",
-          "value": "1.600 kg"
+          "value": "1.600 kg",
+          "group": "vehicle"
         },
         "trailerLoadUnbraked": {
           "label": "Anhängelast ungebremst",
-          "value": "750 kg"
+          "value": "750 kg",
+          "group": "vehicle"
         },
         "netWeight": {
           "label": "Gewicht",
-          "value": "1.660 kg"
+          "value": "1.660 kg",
+          "group": "vehicle"
         },
         "fuelTankVolume": {
           "label": "Tankgröße",
-          "value": "59 l"
+          "value": "59 l",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -3362,7 +3839,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 48400,
+        "powerKw": 135,
+        "powerHp": 184,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-03",
+        "constructionYear": 2023,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1660,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "39859344293056",
@@ -3406,99 +3897,123 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug, Unfallfrei"
+          "value": "Gebrauchtfahrzeug, Unfallfrei",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G81"
+          "value": "G81",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "217513"
+          "value": "217513",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "63.250 km"
+          "value": "63.250 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.995 cm³"
+          "value": "1.995 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "110 kW (150 PS)"
+          "value": "110 kW (150 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Diesel"
+          "value": "Diesel",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6d"
+          "value": "Euro6d",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "06/2023"
+          "value": "06/2023",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera"
+          "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "DRAVITGRAU METALLIC"
+          "value": "DRAVITGRAU METALLIC",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Grau Metallic"
+          "value": "Grau Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Kunstleder, Schwarz"
+          "value": "Kunstleder, Schwarz",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -3645,7 +4160,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 63250,
+        "powerKw": 110,
+        "powerHp": 150,
+        "cubicCapacityCcm": 1995,
+        "firstRegistration": "2023-06",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "450754039",
@@ -3689,123 +4218,153 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug"
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G21"
+          "value": "G21",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "Touring Aut."
+          "value": "Touring Aut.",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "65000203"
+          "value": "65000203",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "39.691 km"
+          "value": "39.691 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6d"
+          "value": "Euro6d",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "12/2023"
+          "value": "12/2023",
+          "group": "vehicle"
         },
         "constructionYear": {
           "label": "Baujahr",
-          "value": "2023"
+          "value": "2023",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "Neu"
+          "value": "Neu",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Kamera, Hinten, Selbstlenkende Systeme, Vorne"
+          "value": "Kamera, Hinten, Selbstlenkende Systeme, Vorne",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "SKYSCRAPER GRAU"
+          "value": "SKYSCRAPER GRAU",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Silber Metallic"
+          "value": "Silber Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Kunstleder, Schwarz"
+          "value": "Kunstleder, Schwarz",
+          "group": "vehicle"
         },
         "trailerLoadBraked": {
           "label": "Anhängelast gebremst",
-          "value": "1.300 kg"
+          "value": "1.300 kg",
+          "group": "vehicle"
         },
         "trailerLoadUnbraked": {
           "label": "Anhängelast ungebremst",
-          "value": "750 kg"
+          "value": "750 kg",
+          "group": "vehicle"
         },
         "netWeight": {
           "label": "Gewicht",
-          "value": "1.650 kg"
+          "value": "1.650 kg",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         },
         "fuelTankVolume": {
           "label": "Tankgröße",
-          "value": "59 l"
+          "value": "59 l",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -3935,7 +4494,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 39691,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-12",
+        "constructionYear": 2023,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "461917102",
@@ -3979,157 +4552,190 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug"
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G81"
-        },
-        "trimLine": {
-          "label": "Ausstattungslinie",
-          "value": "-"
+          "value": "G81",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "14168750"
+          "value": "14168750",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "40.296 km"
+          "value": "40.296 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "135 kW (184 PS)"
+          "value": "135 kW (184 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin"
+          "value": "Benzin",
+          "group": "vehicle"
         },
         "envkv.energyConsumption": {
           "label": "Energieverbrauch (komb.)",
-          "value": "6,8 l/100km"
+          "value": "6,8 l/100km",
+          "group": "envkv"
         },
         "envkv.co2Emissions": {
           "label": "CO₂-Emissionen (komb.)",
-          "value": "154 g/km"
+          "value": "154 g/km",
+          "group": "envkv"
         },
         "envkv.co2Class": {
           "label": "CO₂-Klasse",
-          "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)"
+          "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+          "group": "envkv"
         },
         "envkv.consumptionDetails.fuel": {
           "label": "Kraftstoffverbrauch",
-          "value": [
+          "value": "6,8 l/100km (kombiniert) · 9,6 l/100km (Innenstadt) · 6,9 l/100km (Stadtrand) · 5,8 l/100km (Landstraße) · 6,7 l/100km (Autobahn)",
+          "values": [
             "6,8 l/100km (kombiniert)",
             "9,6 l/100km (Innenstadt)",
             "6,9 l/100km (Stadtrand)",
             "5,8 l/100km (Landstraße)",
             "6,7 l/100km (Autobahn)"
-          ]
+          ],
+          "group": "envkv"
         },
         "envkv.consumptionCosts": {
           "label": "Energiekosten bei 15.000 km Jahresfahrleistung",
-          "value": "1.779 €/Jahr"
+          "value": "1.779 €/Jahr",
+          "group": "envkv"
         },
         "envkv.fuel.price": {
           "label": "Kraftstoffpreis",
-          "value": "1,74 €/l (Jahresdurchschnitt 2025)"
+          "value": "1,74 €/l (Jahresdurchschnitt 2025)",
+          "group": "envkv"
         },
         "envkv.co2Costs": {
           "label": "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)",
-          "value": [
-            "3.292 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 142 €/t)",
-            "1.386 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t)",
-            "5.082 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 220 €/t)"
-          ]
+          "value": "3.292 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 142 €/t) · 1.386 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t) · 5.082 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 220 €/t)",
+          "values": [
+            "3.292 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 142 €/t)",
+            "1.386 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t)",
+            "5.082 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 220 €/t)"
+          ],
+          "group": "envkv"
         },
         "envkv.tax": {
           "label": "Kraftfahrzeugsteuer",
-          "value": "171 €/Jahr"
+          "value": "171 €/Jahr",
+          "group": "envkv"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6d"
+          "value": "Euro6d",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "07/2023"
+          "value": "07/2023",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "Neu"
+          "value": "Neu",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "360°-Kamera, Vorne, Selbstlenkende Systeme, Hinten"
+          "value": "360°-Kamera, Vorne, Selbstlenkende Systeme, Hinten",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "Tansanitblau II"
+          "value": "Tansanitblau II",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Blau Metallic"
+          "value": "Blau Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Vollleder"
+          "value": "Vollleder",
+          "group": "vehicle"
         },
         "trailerLoadBraked": {
           "label": "Anhängelast gebremst",
-          "value": "1.600 kg"
+          "value": "1.600 kg",
+          "group": "vehicle"
         },
         "trailerLoadUnbraked": {
           "label": "Anhängelast ungebremst",
-          "value": "750 kg"
+          "value": "750 kg",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -4283,7 +4889,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 40296,
+        "powerKw": 135,
+        "powerHp": 184,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-07",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": 154,
+        "consumptionL100km": 6.8
+      }
     },
     {
       "id": "460051224",
@@ -4327,127 +4947,158 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug"
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "3-er (G21)"
+          "value": "3-er (G21)",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "TOURING LC PLUS AHK SPORTSITZE GRA DAB     PARKASSIST …"
+          "value": "TOURING LC PLUS AHK SPORTSITZE GRA DAB     PARKASSIST …",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "B33275255436"
+          "value": "B33275255436",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "33.095 km"
+          "value": "33.095 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6"
+          "value": "Euro6",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "02/2024"
+          "value": "02/2024",
+          "group": "vehicle"
         },
         "constructionYear": {
           "label": "Baujahr",
-          "value": "2024"
+          "value": "2024",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "06/2028"
+          "value": "06/2028",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Hinten, Vorne, Kamera"
+          "value": "Selbstlenkende Systeme, Hinten, Vorne, Kamera",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "saphirschwarz"
+          "value": "saphirschwarz",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Schwarz Metallic"
+          "value": "Schwarz Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Stoff, Schwarz"
+          "value": "Stoff, Schwarz",
+          "group": "vehicle"
         },
         "trailerLoadBraked": {
           "label": "Anhängelast gebremst",
-          "value": "1.300 kg"
+          "value": "1.300 kg",
+          "group": "vehicle"
         },
         "trailerLoadUnbraked": {
           "label": "Anhängelast ungebremst",
-          "value": "750 kg"
+          "value": "750 kg",
+          "group": "vehicle"
         },
         "netWeight": {
           "label": "Gewicht",
-          "value": "1.650 kg"
+          "value": "1.650 kg",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         },
         "fuelTankVolume": {
           "label": "Tankgröße",
-          "value": "59 l"
+          "value": "59 l",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -4592,7 +5243,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 33095,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-02",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "458712598",
@@ -4636,127 +5301,158 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug, Unfallfrei"
+          "value": "Gebrauchtfahrzeug, Unfallfrei",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G21"
+          "value": "G21",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "TOURING LC PLUS SPORTSITZE LED GRA SHZG DAB PARKASSIST…"
+          "value": "TOURING LC PLUS SPORTSITZE LED GRA SHZG DAB PARKASSIST…",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "258459"
+          "value": "258459",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "42.900 km"
+          "value": "42.900 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6"
+          "value": "Euro6",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "04/2024"
+          "value": "04/2024",
+          "group": "vehicle"
         },
         "constructionYear": {
           "label": "Baujahr",
-          "value": "2024"
+          "value": "2024",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "Neu"
+          "value": "Neu",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme"
+          "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "Skyscraper Grau"
+          "value": "Skyscraper Grau",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Grau Metallic"
+          "value": "Grau Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Stoff, Schwarz"
+          "value": "Stoff, Schwarz",
+          "group": "vehicle"
         },
         "trailerLoadBraked": {
           "label": "Anhängelast gebremst",
-          "value": "1.300 kg"
+          "value": "1.300 kg",
+          "group": "vehicle"
         },
         "trailerLoadUnbraked": {
           "label": "Anhängelast ungebremst",
-          "value": "750 kg"
+          "value": "750 kg",
+          "group": "vehicle"
         },
         "netWeight": {
           "label": "Gewicht",
-          "value": "1.650 kg"
+          "value": "1.650 kg",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         },
         "fuelTankVolume": {
           "label": "Tankgröße",
-          "value": "59 l"
+          "value": "59 l",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -4891,7 +5587,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 42900,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-04",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "39886296760608",
@@ -4934,123 +5644,153 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug"
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G21"
+          "value": "G21",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "Touring M Sport Individual AHK Widescreen"
+          "value": "Touring M Sport Individual AHK Widescreen",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "33.400 km"
+          "value": "33.400 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6d"
+          "value": "Euro6d",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "07/2023"
+          "value": "07/2023",
+          "group": "vehicle"
         },
         "constructionYear": {
           "label": "Baujahr",
-          "value": "2023"
+          "value": "2023",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "08/2028"
+          "value": "08/2028",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, Vorne"
+          "value": "Hinten, Vorne",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "BMW Individual Tansanitblau "
+          "value": "BMW Individual Tansanitblau",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Blau Metallic"
+          "value": "Blau Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Alcantara, Schwarz"
+          "value": "Alcantara, Schwarz",
+          "group": "vehicle"
         },
         "trailerLoadBraked": {
           "label": "Anhängelast gebremst",
-          "value": "1.300 kg"
+          "value": "1.300 kg",
+          "group": "vehicle"
         },
         "trailerLoadUnbraked": {
           "label": "Anhängelast ungebremst",
-          "value": "750 kg"
+          "value": "750 kg",
+          "group": "vehicle"
         },
         "netWeight": {
           "label": "Gewicht",
-          "value": "1.650 kg"
+          "value": "1.650 kg",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         },
         "fuelTankVolume": {
           "label": "Tankgröße",
-          "value": "59 l"
+          "value": "59 l",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -5201,7 +5941,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 33400,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-07",
+        "constructionYear": 2023,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "40586751728608",
@@ -5245,99 +5999,123 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug"
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G81"
+          "value": "G81",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "217582"
+          "value": "217582",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "50.960 km"
+          "value": "50.960 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6d"
+          "value": "Euro6d",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "08/2023"
+          "value": "08/2023",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Kamera, Hinten, Selbstlenkende Systeme, Vorne"
+          "value": "Kamera, Hinten, Selbstlenkende Systeme, Vorne",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "Schwarz uni"
+          "value": "Schwarz uni",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Schwarz"
+          "value": "Schwarz",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Teilleder, Schwarz"
+          "value": "Teilleder, Schwarz",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -5479,7 +6257,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 50960,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-08",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "452520909",
@@ -5523,115 +6315,143 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug"
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G21"
+          "value": "G21",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "M-Sport"
+          "value": "M-Sport",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "333569"
+          "value": "333569",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "57.348 km"
+          "value": "57.348 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin"
+          "value": "Benzin",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6"
+          "value": "Euro6",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "01/2022"
+          "value": "01/2022",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "Neu"
+          "value": "Neu",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, Vorne"
+          "value": "Hinten, Vorne",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "Portimao Blau"
+          "value": "Portimao Blau",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Blau Metallic"
+          "value": "Blau Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Alcantara, Schwarz"
+          "value": "Alcantara, Schwarz",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         },
         "fuelTankVolume": {
           "label": "Tankgröße",
-          "value": "59 l"
+          "value": "59 l",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -5783,7 +6603,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 57348,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2022-01",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "460807870",
@@ -5827,99 +6661,123 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug, Unfallfrei"
+          "value": "Gebrauchtfahrzeug, Unfallfrei",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G81"
+          "value": "G81",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "M Sportpaket"
+          "value": "M Sportpaket",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "216575"
+          "value": "216575",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "47.150 km"
+          "value": "47.150 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.995 cm³"
+          "value": "1.995 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "110 kW (150 PS)"
+          "value": "110 kW (150 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Diesel"
+          "value": "Diesel",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6d"
+          "value": "Euro6d",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "09/2022"
+          "value": "09/2022",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "2-Zonen-Klimaautomatik"
+          "value": "2-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme"
+          "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "BLACK SAPPHIRE METALLIC"
+          "value": "BLACK SAPPHIRE METALLIC",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Schwarz Metallic"
+          "value": "Schwarz Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Alcantara, Schwarz"
+          "value": "Alcantara, Schwarz",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -6073,7 +6931,21 @@
           "promotion": false,
           "showInGallery": false
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 47150,
+        "powerKw": 110,
+        "powerHp": 150,
+        "cubicCapacityCcm": 1995,
+        "firstRegistration": "2022-09",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": null,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "419188575",
@@ -6117,115 +6989,143 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug, Unfallfrei"
+          "value": "Gebrauchtfahrzeug, Unfallfrei",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "KL8/KU8"
+          "value": "KL8/KU8",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "Leon Sportstourer VZ 4Drive 2.0 TSI"
+          "value": "Leon Sportstourer VZ 4Drive 2.0 TSI",
+          "group": "vehicle"
         },
         "sku": {
           "label": "Fahrzeugnummer",
-          "value": "29"
+          "value": "29",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "55.996 km"
+          "value": "55.996 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.984 cm³"
+          "value": "1.984 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "228 kW (310 PS)"
+          "value": "228 kW (310 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6d"
+          "value": "Euro6d",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "01/2022"
+          "value": "01/2022",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "Neu"
+          "value": "Neu",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten"
+          "value": "Hinten",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "midnightblack"
+          "value": "midnightblack",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Schwarz Metallic"
+          "value": "Schwarz Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Stoff, Schwarz"
+          "value": "Stoff, Schwarz",
+          "group": "vehicle"
         },
         "netWeight": {
           "label": "Gewicht",
-          "value": "1.640 kg"
+          "value": "1.640 kg",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         },
         "fuelTankVolume": {
           "label": "Tankgröße",
-          "value": "55 l"
+          "value": "55 l",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -6403,7 +7303,21 @@
           "promotion": false,
           "showInGallery": false
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 55996,
+        "powerKw": 228,
+        "powerHp": 310,
+        "cubicCapacityCcm": 1984,
+        "firstRegistration": "2022-01",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1640,
+        "fuelTankLitres": 55,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     },
     {
       "id": "460854078",
@@ -6446,109 +7360,128 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug"
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G21"
-        },
-        "trimLine": {
-          "label": "Ausstattungslinie",
-          "value": "-"
+          "value": "G21",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "45.000 km"
+          "value": "45.000 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "115 kW (156 PS)"
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin, E10-geeignet"
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
         },
         "envkv.energyConsumption": {
           "label": "Energieverbrauch (komb.)",
-          "value": "6,5 l/100km"
+          "value": "6,5 l/100km",
+          "group": "envkv"
         },
         "envkv.co2Emissions": {
           "label": "CO₂-Emissionen (komb.)",
-          "value": "145 g/km"
+          "value": "145 g/km",
+          "group": "envkv"
         },
         "envkv.co2Class": {
           "label": "CO₂-Klasse",
-          "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)"
+          "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+          "group": "envkv"
         },
         "envkv.consumptionDetails.fuel": {
           "label": "Kraftstoffverbrauch",
-          "value": [
-            "6,5 l/100km (kombiniert)"
-          ]
+          "value": "6,5 l/100km (kombiniert)",
+          "group": "envkv"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "06/2024"
+          "value": "06/2024",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten, Selbstlenkende Systeme"
+          "value": "Vorne, Hinten, Selbstlenkende Systeme",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Schwarz"
+          "value": "Schwarz",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Stoff, Schwarz"
+          "value": "Stoff, Schwarz",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -6682,7 +7615,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 45000,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-06",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": 145,
+        "consumptionL100km": 6.5
+      }
     },
     {
       "id": "457556716",
@@ -6722,111 +7669,133 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug"
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "G21"
+          "value": "G21",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "BUSINESS-Paket"
+          "value": "BUSINESS-Paket",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "78.000 km"
+          "value": "78.000 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.995 cm³"
+          "value": "1.995 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "110 kW (150 PS)"
+          "value": "110 kW (150 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Diesel"
+          "value": "Diesel",
+          "group": "vehicle"
         },
         "envkv.energyConsumption": {
           "label": "Energieverbrauch (komb.)",
-          "value": "-- l/100km"
-        },
-        "envkv.co2Emissions": {
-          "label": "CO₂-Emissionen (komb.)",
-          "value": "-- g/km"
+          "value": "-- l/100km",
+          "group": "envkv"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6d"
+          "value": "Euro6d",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "02/2023"
+          "value": "02/2023",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "1"
+          "value": "1",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "01/2028"
+          "value": "01/2028",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "3-Zonen-Klimaautomatik"
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten"
+          "value": "Vorne, Hinten",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "Schwarz 2"
+          "value": "Schwarz 2",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Schwarz"
+          "value": "Schwarz",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Stoff, Schwarz"
+          "value": "Stoff, Schwarz",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -6975,7 +7944,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 78000,
+        "powerKw": 110,
+        "powerHp": 150,
+        "cubicCapacityCcm": 1995,
+        "firstRegistration": "2023-02",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": 100
+      }
     },
     {
       "id": "452562130",
@@ -7018,111 +8001,138 @@
       "facts": {
         "damageCondition": {
           "label": "Fahrzeugzustand",
-          "value": "Gebrauchtfahrzeug"
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
         },
         "category": {
           "label": "Kategorie",
-          "value": "Kombi"
+          "value": "Kombi",
+          "group": "vehicle"
         },
         "modelRange": {
           "label": "Baureihe",
-          "value": "3 Touring (F31N)(2015->)"
+          "value": "3 Touring (F31N)(2015->)",
+          "group": "vehicle"
         },
         "trimLine": {
           "label": "Ausstattungslinie",
-          "value": "320 i Sport Line Shadow"
+          "value": "320 i Sport Line Shadow",
+          "group": "vehicle"
         },
         "availability": {
           "label": "Verfügbarkeit",
-          "value": "Sofort"
+          "value": "Sofort",
+          "group": "vehicle"
         },
         "countryVersion": {
           "label": "Herkunft",
-          "value": "Deutsche Ausführung"
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "45.000 km"
+          "value": "45.000 km",
+          "group": "vehicle"
         },
         "cubicCapacity": {
           "label": "Hubraum",
-          "value": "1.998 cm³"
+          "value": "1.998 cm³",
+          "group": "vehicle"
         },
         "power": {
           "label": "Leistung",
-          "value": "135 kW (184 PS)"
+          "value": "135 kW (184 PS)",
+          "group": "vehicle"
         },
         "envkv.engineType": {
           "label": "Antriebsart",
-          "value": "Verbrennungsmotor"
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
         },
         "fuel": {
           "label": "Kraftstoffart",
-          "value": "Benzin"
+          "value": "Benzin",
+          "group": "vehicle"
         },
         "numSeats": {
           "label": "Anzahl Sitzplätze",
-          "value": "5"
+          "value": "5",
+          "group": "vehicle"
         },
         "doorCount": {
           "label": "Anzahl der Türen",
-          "value": "4/5"
+          "value": "4/5",
+          "group": "vehicle"
         },
         "transmission": {
           "label": "Getriebe",
-          "value": "Automatik"
+          "value": "Automatik",
+          "group": "vehicle"
         },
         "emissionClass": {
           "label": "Schadstoffklasse",
-          "value": "Euro6"
+          "value": "Euro6",
+          "group": "vehicle"
         },
         "emissionsSticker": {
           "label": "Umweltplakette",
-          "value": "4 (Grün)"
+          "value": "4 (Grün)",
+          "group": "vehicle"
         },
         "firstRegistration": {
           "label": "Erstzulassung",
-          "value": "10/2017"
+          "value": "10/2017",
+          "group": "vehicle"
         },
         "numberOfPreviousOwners": {
           "label": "Anzahl der Fahrzeughalter",
-          "value": "2"
+          "value": "2",
+          "group": "vehicle"
         },
         "hu": {
           "label": "HU",
-          "value": "Neu"
+          "value": "Neu",
+          "group": "vehicle"
         },
         "climatisation": {
           "label": "Klimatisierung",
-          "value": "2-Zonen-Klimaautomatik"
+          "value": "2-Zonen-Klimaautomatik",
+          "group": "vehicle"
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten"
+          "value": "Vorne, Hinten",
+          "group": "vehicle"
         },
         "airbag": {
           "label": "Airbags",
-          "value": "Front-, Seiten- und weitere Airbags"
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
         },
         "manufacturerColorName": {
           "label": "Farbe (Hersteller)",
-          "value": "MEDITERRANBLAU METALLIC"
+          "value": "MEDITERRANBLAU METALLIC",
+          "group": "vehicle"
         },
         "color": {
           "label": "Farbe",
-          "value": "Blau Metallic"
+          "value": "Blau Metallic",
+          "group": "vehicle"
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Teilleder, Schwarz"
+          "value": "Teilleder, Schwarz",
+          "group": "vehicle"
         },
         "netWeight": {
           "label": "Gewicht",
-          "value": "1.595 kg"
+          "value": "1.595 kg",
+          "group": "vehicle"
         },
         "cylinder": {
           "label": "Zylinder",
-          "value": "4"
+          "value": "4",
+          "group": "vehicle"
         }
       },
       "features": [
@@ -7288,7 +8298,21 @@
             }
           }
         }
-      ]
+      ],
+      "derived": {
+        "mileageKm": 45000,
+        "powerKw": 135,
+        "powerHp": 184,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2017-10",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 2,
+        "weightKg": 1595,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null
+      }
     }
   ]
 }

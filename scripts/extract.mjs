@@ -60,13 +60,83 @@ export function findListingObject(flight) {
 }
 
 
+const NBSP = /\u00a0/g;
+const clean = (text) => String(text).replace(NBSP, ' ').trim();
+
+/** German-formatted number -> Number. "43.285" -> 43285, "6,8" -> 6.8 */
+function toNumber(text) {
+  if (typeof text !== 'string') return null;
+  const match = text.match(/-?\d{1,3}(?:\.\d{3})+|-?\d+(?:,\d+)?/);
+  if (!match) return null;
+  const value = Number(match[0].replace(/\./g, '').replace(',', '.'));
+  return Number.isFinite(value) ? value : null;
+}
+
+/**
+ * Sellers sometimes type a placeholder instead of leaving a field blank -- real
+ * example: "-- g/km" for CO2. In a comparison table a placeholder is worse than
+ * an absent value, because it looks like data, so treat these as missing.
+ */
+function isPlaceholder(value) {
+  if (/\d/.test(value)) return false;
+  return /^[-\u2013\u2014]{1,3}(?:\s|$)/.test(value) || /^(k\.?\s?a\.?|keine angabe|n\/a|unbekannt)$/i.test(value);
+}
+
+/**
+ * Turn mobile.de's attribute list into a stable map keyed by tag.
+ *
+ * Two things need normalizing, both found in real listings:
+ *  - `value` is sometimes an array. `envkv.co2Costs` carries a low/mid/high
+ *    variant, and passing the array straight through makes consumers render it
+ *    as one run-on string, so keep an explicit `values` array alongside a
+ *    deliberately joined display string.
+ *  - Values are littered with non-breaking spaces, which break both display and
+ *    naive equality checks between two cars.
+ */
+export function normalizeFacts(attributes = []) {
+  const facts = {};
+  for (const attribute of attributes) {
+    const raw = Array.isArray(attribute.value) ? attribute.value : [attribute.value];
+    const values = raw.map(clean).filter(Boolean).filter((value) => !isPlaceholder(value));
+    if (!values.length) continue;
+
+    facts[attribute.tag] = {
+      label: clean(attribute.label),
+      value: values.join(' \u00b7 '),
+      ...(values.length > 1 ? { values } : {}),
+      // envkv.* are consumption/cost disclosures only a few listings carry.
+      // Tagging the group lets the viewer treat them as one hideable block.
+      group: attribute.tag.startsWith('envkv.') ? 'envkv' : 'vehicle',
+    };
+  }
+  return facts;
+}
+
+/** Numeric views of the facts worth sorting, diffing or charting on. */
+export function deriveNumbers(facts) {
+  const get = (tag) => facts[tag]?.value ?? null;
+  const power = get('power') ?? '';
+  const registration = (get('firstRegistration') ?? '').match(/(\d{2})\/(\d{4})/);
+
+  return {
+    mileageKm: toNumber(get('mileage')),
+    powerKw: toNumber(power),
+    powerHp: toNumber((power.match(/\((\d+)\s*PS\)/) ?? [])[1] ?? ''),
+    cubicCapacityCcm: toNumber(get('cubicCapacity')),
+    firstRegistration: registration ? `${registration[2]}-${registration[1]}` : null,
+    constructionYear: toNumber(get('constructionYear')),
+    seats: toNumber(get('numSeats')),
+    previousOwners: toNumber(get('numberOfPreviousOwners')),
+    weightKg: toNumber(get('netWeight')),
+    fuelTankLitres: toNumber(get('fuelTankVolume')),
+    co2GramsPerKm: toNumber(get('envkv.co2Emissions')),
+    consumptionL100km: toNumber(get('envkv.energyConsumption')),
+  };
+}
+
 /** Flatten the raw listing into the shape the compare viewer consumes. */
 export function normalize(listing, sourceUrl) {
-  const facts = {};
-  for (const { tag, label, value } of listing.attributes ?? []) {
-    facts[tag] = { label, value };
-  }
-
+  const facts = normalizeFacts(listing.attributes);
   const contact = listing.contact ?? {};
 
   return {
@@ -107,7 +177,8 @@ export function normalize(listing, sourceUrl) {
     // Keyed by mobile.de's own tag (mileage, power, transmission, ...) so the
     // viewer can lay out hard facts and features in a single table.
     facts,
-    features: listing.features ?? [],
+    derived: deriveNumbers(facts),
+    features: (listing.features ?? []).map(clean),
     highlights: listing.highlights ?? [],
 
     // Stored without a size: the CDN takes `?rule=mo-240|mo-360|mo-1024|mo-1600`,

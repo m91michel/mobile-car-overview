@@ -40,99 +40,123 @@
   "facts": {
     "damageCondition": {
       "label": "Fahrzeugzustand",
-      "value": "Gebrauchtfahrzeug, Unfallfrei"
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "group": "vehicle"
     },
     "category": {
       "label": "Kategorie",
-      "value": "Kombi"
+      "value": "Kombi",
+      "group": "vehicle"
     },
     "modelRange": {
       "label": "Baureihe",
-      "value": "G81"
+      "value": "G81",
+      "group": "vehicle"
     },
     "trimLine": {
       "label": "Ausstattungslinie",
-      "value": "M Sportpaket"
+      "value": "M Sportpaket",
+      "group": "vehicle"
     },
     "sku": {
       "label": "Fahrzeugnummer",
-      "value": "216575"
+      "value": "216575",
+      "group": "vehicle"
     },
     "availability": {
       "label": "Verfügbarkeit",
-      "value": "Sofort"
+      "value": "Sofort",
+      "group": "vehicle"
     },
     "countryVersion": {
       "label": "Herkunft",
-      "value": "Deutsche Ausführung"
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
     },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "47.150 km"
+      "value": "47.150 km",
+      "group": "vehicle"
     },
     "cubicCapacity": {
       "label": "Hubraum",
-      "value": "1.995 cm³"
+      "value": "1.995 cm³",
+      "group": "vehicle"
     },
     "power": {
       "label": "Leistung",
-      "value": "110 kW (150 PS)"
+      "value": "110 kW (150 PS)",
+      "group": "vehicle"
     },
     "envkv.engineType": {
       "label": "Antriebsart",
-      "value": "Verbrennungsmotor"
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
     },
     "fuel": {
       "label": "Kraftstoffart",
-      "value": "Diesel"
+      "value": "Diesel",
+      "group": "vehicle"
     },
     "numSeats": {
       "label": "Anzahl Sitzplätze",
-      "value": "5"
+      "value": "5",
+      "group": "vehicle"
     },
     "doorCount": {
       "label": "Anzahl der Türen",
-      "value": "4/5"
+      "value": "4/5",
+      "group": "vehicle"
     },
     "transmission": {
       "label": "Getriebe",
-      "value": "Automatik"
+      "value": "Automatik",
+      "group": "vehicle"
     },
     "emissionClass": {
       "label": "Schadstoffklasse",
-      "value": "Euro6d"
+      "value": "Euro6d",
+      "group": "vehicle"
     },
     "emissionsSticker": {
       "label": "Umweltplakette",
-      "value": "4 (Grün)"
+      "value": "4 (Grün)",
+      "group": "vehicle"
     },
     "firstRegistration": {
       "label": "Erstzulassung",
-      "value": "09/2022"
+      "value": "09/2022",
+      "group": "vehicle"
     },
     "climatisation": {
       "label": "Klimatisierung",
-      "value": "2-Zonen-Klimaautomatik"
+      "value": "2-Zonen-Klimaautomatik",
+      "group": "vehicle"
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme"
+      "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme",
+      "group": "vehicle"
     },
     "airbag": {
       "label": "Airbags",
-      "value": "Front-, Seiten- und weitere Airbags"
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
     },
     "manufacturerColorName": {
       "label": "Farbe (Hersteller)",
-      "value": "BLACK SAPPHIRE METALLIC"
+      "value": "BLACK SAPPHIRE METALLIC",
+      "group": "vehicle"
     },
     "color": {
       "label": "Farbe",
-      "value": "Schwarz Metallic"
+      "value": "Schwarz Metallic",
+      "group": "vehicle"
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Alcantara, Schwarz"
+      "value": "Alcantara, Schwarz",
+      "group": "vehicle"
     }
   },
   "features": [
@@ -286,5 +310,19 @@
       "promotion": false,
       "showInGallery": false
     }
-  ]
+  ],
+  "derived": {
+    "mileageKm": 47150,
+    "powerKw": 110,
+    "powerHp": 150,
+    "cubicCapacityCcm": 1995,
+    "firstRegistration": "2022-09",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": null,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null
+  }
 }

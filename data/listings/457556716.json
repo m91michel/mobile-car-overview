@@ -36,111 +36,133 @@
   "facts": {
     "damageCondition": {
       "label": "Fahrzeugzustand",
-      "value": "Gebrauchtfahrzeug"
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
     },
     "category": {
       "label": "Kategorie",
-      "value": "Kombi"
+      "value": "Kombi",
+      "group": "vehicle"
     },
     "modelRange": {
       "label": "Baureihe",
-      "value": "G21"
+      "value": "G21",
+      "group": "vehicle"
     },
     "trimLine": {
       "label": "Ausstattungslinie",
-      "value": "BUSINESS-Paket"
+      "value": "BUSINESS-Paket",
+      "group": "vehicle"
     },
     "countryVersion": {
       "label": "Herkunft",
-      "value": "Deutsche Ausführung"
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
     },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "78.000 km"
+      "value": "78.000 km",
+      "group": "vehicle"
     },
     "cubicCapacity": {
       "label": "Hubraum",
-      "value": "1.995 cm³"
+      "value": "1.995 cm³",
+      "group": "vehicle"
     },
     "power": {
       "label": "Leistung",
-      "value": "110 kW (150 PS)"
+      "value": "110 kW (150 PS)",
+      "group": "vehicle"
     },
     "envkv.engineType": {
       "label": "Antriebsart",
-      "value": "Verbrennungsmotor"
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
     },
     "fuel": {
       "label": "Kraftstoffart",
-      "value": "Diesel"
+      "value": "Diesel",
+      "group": "vehicle"
     },
     "envkv.energyConsumption": {
       "label": "Energieverbrauch (komb.)",
-      "value": "-- l/100km"
-    },
-    "envkv.co2Emissions": {
-      "label": "CO₂-Emissionen (komb.)",
-      "value": "-- g/km"
+      "value": "-- l/100km",
+      "group": "envkv"
     },
     "numSeats": {
       "label": "Anzahl Sitzplätze",
-      "value": "5"
+      "value": "5",
+      "group": "vehicle"
     },
     "doorCount": {
       "label": "Anzahl der Türen",
-      "value": "4/5"
+      "value": "4/5",
+      "group": "vehicle"
     },
     "transmission": {
       "label": "Getriebe",
-      "value": "Automatik"
+      "value": "Automatik",
+      "group": "vehicle"
     },
     "emissionClass": {
       "label": "Schadstoffklasse",
-      "value": "Euro6d"
+      "value": "Euro6d",
+      "group": "vehicle"
     },
     "emissionsSticker": {
       "label": "Umweltplakette",
-      "value": "4 (Grün)"
+      "value": "4 (Grün)",
+      "group": "vehicle"
     },
     "firstRegistration": {
       "label": "Erstzulassung",
-      "value": "02/2023"
+      "value": "02/2023",
+      "group": "vehicle"
     },
     "numberOfPreviousOwners": {
       "label": "Anzahl der Fahrzeughalter",
-      "value": "1"
+      "value": "1",
+      "group": "vehicle"
     },
     "hu": {
       "label": "HU",
-      "value": "01/2028"
+      "value": "01/2028",
+      "group": "vehicle"
     },
     "climatisation": {
       "label": "Klimatisierung",
-      "value": "3-Zonen-Klimaautomatik"
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Hinten"
+      "value": "Vorne, Hinten",
+      "group": "vehicle"
     },
     "airbag": {
       "label": "Airbags",
-      "value": "Front-, Seiten- und weitere Airbags"
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
     },
     "manufacturerColorName": {
       "label": "Farbe (Hersteller)",
-      "value": "Schwarz 2"
+      "value": "Schwarz 2",
+      "group": "vehicle"
     },
     "color": {
       "label": "Farbe",
-      "value": "Schwarz"
+      "value": "Schwarz",
+      "group": "vehicle"
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Stoff, Schwarz"
+      "value": "Stoff, Schwarz",
+      "group": "vehicle"
     },
     "cylinder": {
       "label": "Zylinder",
-      "value": "4"
+      "value": "4",
+      "group": "vehicle"
     }
   },
   "features": [
@@ -289,5 +311,19 @@
         }
       }
     }
-  ]
+  ],
+  "derived": {
+    "mileageKm": 78000,
+    "powerKw": 110,
+    "powerHp": 150,
+    "cubicCapacityCcm": 1995,
+    "firstRegistration": "2023-02",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": 100
+  }
 }

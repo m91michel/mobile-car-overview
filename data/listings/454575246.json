@@ -39,115 +39,143 @@
   "facts": {
     "damageCondition": {
       "label": "Fahrzeugzustand",
-      "value": "Gebrauchtfahrzeug, Unfallfrei"
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "group": "vehicle"
     },
     "category": {
       "label": "Kategorie",
-      "value": "Kombi"
+      "value": "Kombi",
+      "group": "vehicle"
     },
     "modelRange": {
       "label": "Baureihe",
-      "value": "G21"
+      "value": "G21",
+      "group": "vehicle"
     },
     "trimLine": {
       "label": "Ausstattungslinie",
-      "value": "Touring Head-Up LED RFK Komfortzg."
+      "value": "Touring Head-Up LED RFK Komfortzg.",
+      "group": "vehicle"
     },
     "availability": {
       "label": "Verfügbarkeit",
-      "value": "Sofort"
+      "value": "Sofort",
+      "group": "vehicle"
     },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "48.400 km"
+      "value": "48.400 km",
+      "group": "vehicle"
     },
     "cubicCapacity": {
       "label": "Hubraum",
-      "value": "1.998 cm³"
+      "value": "1.998 cm³",
+      "group": "vehicle"
     },
     "power": {
       "label": "Leistung",
-      "value": "135 kW (184 PS)"
+      "value": "135 kW (184 PS)",
+      "group": "vehicle"
     },
     "envkv.engineType": {
       "label": "Antriebsart",
-      "value": "Verbrennungsmotor"
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
     },
     "fuel": {
       "label": "Kraftstoffart",
-      "value": "Benzin, E10-geeignet"
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
     },
     "numSeats": {
       "label": "Anzahl Sitzplätze",
-      "value": "5"
+      "value": "5",
+      "group": "vehicle"
     },
     "doorCount": {
       "label": "Anzahl der Türen",
-      "value": "4/5"
+      "value": "4/5",
+      "group": "vehicle"
     },
     "transmission": {
       "label": "Getriebe",
-      "value": "Automatik"
+      "value": "Automatik",
+      "group": "vehicle"
     },
     "emissionClass": {
       "label": "Schadstoffklasse",
-      "value": "Euro6d"
+      "value": "Euro6d",
+      "group": "vehicle"
     },
     "firstRegistration": {
       "label": "Erstzulassung",
-      "value": "03/2023"
+      "value": "03/2023",
+      "group": "vehicle"
     },
     "constructionYear": {
       "label": "Baujahr",
-      "value": "2023"
+      "value": "2023",
+      "group": "vehicle"
     },
     "numberOfPreviousOwners": {
       "label": "Anzahl der Fahrzeughalter",
-      "value": "1"
+      "value": "1",
+      "group": "vehicle"
     },
     "hu": {
       "label": "HU",
-      "value": "04/2028"
+      "value": "04/2028",
+      "group": "vehicle"
     },
     "climatisation": {
       "label": "Klimatisierung",
-      "value": "3-Zonen-Klimaautomatik"
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme"
+      "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme",
+      "group": "vehicle"
     },
     "airbag": {
       "label": "Airbags",
-      "value": "Front-, Seiten- und weitere Airbags"
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
     },
     "manufacturerColorName": {
       "label": "Farbe (Hersteller)",
-      "value": "Schwarz Uni"
+      "value": "Schwarz Uni",
+      "group": "vehicle"
     },
     "color": {
       "label": "Farbe",
-      "value": "Schwarz"
+      "value": "Schwarz",
+      "group": "vehicle"
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Teilleder, Schwarz"
+      "value": "Teilleder, Schwarz",
+      "group": "vehicle"
     },
     "trailerLoadBraked": {
       "label": "Anhängelast gebremst",
-      "value": "1.600 kg"
+      "value": "1.600 kg",
+      "group": "vehicle"
     },
     "trailerLoadUnbraked": {
       "label": "Anhängelast ungebremst",
-      "value": "750 kg"
+      "value": "750 kg",
+      "group": "vehicle"
     },
     "netWeight": {
       "label": "Gewicht",
-      "value": "1.660 kg"
+      "value": "1.660 kg",
+      "group": "vehicle"
     },
     "fuelTankVolume": {
       "label": "Tankgröße",
-      "value": "59 l"
+      "value": "59 l",
+      "group": "vehicle"
     }
   },
   "features": [
@@ -301,5 +329,19 @@
         }
       }
     }
-  ]
+  ],
+  "derived": {
+    "mileageKm": 48400,
+    "powerKw": 135,
+    "powerHp": 184,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-03",
+    "constructionYear": 2023,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1660,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null
+  }
 }

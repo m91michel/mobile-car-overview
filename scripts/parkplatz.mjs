@@ -9,37 +9,41 @@ const PARK_URL = 'https://www.mobile.de/park?layout=list';
 
 // Harvest ids from every place the page might expose them, then dedupe. Being
 // generous here means a markup change on one of these does not break the run.
+// Harvest ids from the DOM. An earlier version also scanned the RSC payload for
+// `"id":<digits>`, but measured against a real 44-car Parkplatz that source
+// contributed nothing while being the one most likely to pick up ids from
+// recommendations and ads. The DOM attributes and link params independently
+// agreed on the exact same set, so redundancy lives there instead.
 const HARVEST = `(() => {
-  const ids = new Set();
-  const add = (value) => {
-    if (value && /^\\d{6,}$/.test(value)) ids.add(value);
+  const parked = new Set();
+  const comparable = new Set();
+  const add = (set, value) => {
+    if (value && /^\\d{6,}$/.test(value)) set.add(value);
   };
 
-  // 1. Links to detail pages (/…/<id>.html) and any ?id= parameters, which is
-  //    also how the "Fahrzeugvergleich" button encodes the whole selection.
+  // 1. Whatever the parked-vehicle cards tag themselves with.
+  for (const node of document.querySelectorAll('[data-listing-id], [data-ad-id]')) {
+    add(parked, node.getAttribute('data-listing-id') || node.getAttribute('data-ad-id'));
+  }
+
+  // 2. Links: detail slugs, ?id= params, and the "Fahrzeugvergleich" button,
+  //    which only carries the cars mobile.de still considers comparable --
+  //    a useful signal for which of the parked cars are still on sale.
   for (const anchor of document.querySelectorAll('a[href]')) {
     const href = anchor.getAttribute('href') || '';
     const slug = href.match(/(\\d{6,})\\.html/);
-    if (slug) add(slug[1]);
-    for (const param of href.matchAll(/[?&]id=(\\d{6,})/g)) add(param[1]);
-  }
-
-  // 2. The React Server Component payload, which carries the parked listings
-  //    as data even when the markup keeps them behind lazy sections.
-  const flight = (self.__next_f || [])
-    .map((chunk) => (Array.isArray(chunk) ? chunk[1] : null))
-    .filter((text) => typeof text === 'string')
-    .join('');
-  for (const match of flight.matchAll(/"id":(\\d{6,})/g)) add(match[1]);
-
-  // 3. Anything the DOM tags with an id attribute we recognise.
-  for (const node of document.querySelectorAll('[data-listing-id], [data-ad-id]')) {
-    add(node.getAttribute('data-listing-id') || node.getAttribute('data-ad-id'));
+    if (slug) add(parked, slug[1]);
+    const isCompare = href.includes('/park/compare');
+    for (const param of href.matchAll(/[?&]id=(\\d{6,})/g)) {
+      add(parked, param[1]);
+      if (isCompare) add(comparable, param[1]);
+    }
   }
 
   const text = document.body.innerText || '';
   return {
-    ids: [...ids],
+    ids: [...parked],
+    comparable: [...comparable],
     loggedIn: !/\\bAnmelden\\b/.test(text),
     empty: text.includes('Noch kein geparktes Fahrzeug'),
   };
@@ -74,7 +78,7 @@ export async function readParkplatz(page) {
     throw new Error(`No parked vehicles found.\n  ${hint}`);
   }
 
-  return result.ids;
+  return { ids: result.ids, comparable: result.comparable ?? [] };
 }
 
 export { PARK_URL };
