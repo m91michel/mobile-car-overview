@@ -103,14 +103,27 @@ const AGE_LIMIT_YEARS = 8;
 // last third.
 const PRICE_FLOOR = 20000;
 const PRICE_TARGET = 30000; // "Preis möglichst um 30.000 EUR"
+const PRICE_WARN = 32000; // 30-32k: "interessant, wenn es einen echten Mehrwert bietet"
 const PRICE_LIMIT = 35000; // beyond this the car has to be near the Zielbild
 
-const meter = (value, { target, max, min = 0 }) => {
+/**
+ * `warn` adds a middle band between target and limit, for ranges the
+ * requirements describe as "acceptable if it earns it" rather than a straight
+ * yes or no. Without it a meter is simply good up to the target and bad past.
+ */
+const meter = (value, { target, warn = null, max, min = 0 }) => {
   if (typeof value !== 'number' || !Number.isFinite(value)) return null;
   const at = (n) => Math.min(1, Math.max(0, (n - min) / (max - min)));
-  // Never a truly empty bar: a value below the scale's floor is a very good
-  // one, and should not read as a missing figure.
-  return { fill: Math.max(0.03, at(value)), target: at(target), over: value > target };
+  const zone =
+    value <= target ? 'good' : warn !== null && value <= warn ? 'warn' : 'bad';
+  return {
+    // Never a truly empty bar: a value below the scale's floor is a very good
+    // one, and should not read as a missing figure.
+    fill: Math.max(0.03, at(value)),
+    target: at(target),
+    warn: warn === null ? null : at(warn),
+    zone,
+  };
 };
 
 const euros = (n) => `${n.toLocaleString('de-DE')} €`;
@@ -138,8 +151,18 @@ function meterFor(row, car) {
   if (row.key === 'price' || row.key === 'assessment:effectivePrice') {
     const gross =
       row.key === 'price' ? car.price?.gross : car.assessment?.effectivePrice ?? car.price?.gross;
-    const bar = meter(gross, { target: PRICE_TARGET, max: PRICE_LIMIT, min: PRICE_FLOOR });
-    return bar && { ...bar, hint: `Ziel bis ${euros(PRICE_TARGET)} (Skala ab ${euros(PRICE_FLOOR)})` };
+    const bar = meter(gross, {
+      target: PRICE_TARGET,
+      warn: PRICE_WARN,
+      max: PRICE_LIMIT,
+      min: PRICE_FLOOR,
+    });
+    return (
+      bar && {
+        ...bar,
+        hint: `Ziel bis ${euros(PRICE_TARGET)}, bis ${euros(PRICE_WARN)} mit Mehrwert`,
+      }
+    );
   }
   return null;
 }

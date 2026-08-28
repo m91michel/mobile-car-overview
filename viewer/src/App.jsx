@@ -460,12 +460,15 @@ export default function App() {
                           {mark && text ? ' ' : ''}
                           {text}
                           {meter && (
-                            <span
-                              className={`meter ${meter.over ? 'over' : ''}`}
-                              title={meter.hint}
-                            >
+                            <span className={`meter ${meter.zone}`} title={meter.hint}>
                               <span className="meter-fill" style={{ width: `${meter.fill * 100}%` }} />
                               <span className="meter-target" style={{ left: `${meter.target * 100}%` }} />
+                              {meter.warn !== null && (
+                                <span
+                                  className="meter-target warn"
+                                  style={{ left: `${meter.warn * 100}%` }}
+                                />
+                              )}
                             </span>
                           )}
                         </div>
