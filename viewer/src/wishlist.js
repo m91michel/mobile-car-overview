@@ -191,6 +191,16 @@ export function cellFor(row, car) {
   // neutral value the eye can skip over.
   if (row.key === 'assessment:gaps') return { mark: '❌', text: raw, tone: 'bad' };
 
+  // The facelift row carries its verdict in derived.facelift rather than in the
+  // text, and "unklar" deliberately gets a neutral ❓ instead of a ❌: the three
+  // cars registered in the 2022 changeover window are undecided, not rejected.
+  if (row.key === 'model:facelift') {
+    const state = car.derived?.facelift;
+    if (state === 'lci') return { mark: '✅', text: raw, tone: 'good' };
+    if (state === 'unknown') return { mark: '❓', text: raw, tone: null };
+    return { mark: '❌', text: raw, tone: 'bad' };
+  }
+
   const fact = row.key.startsWith('fact:') ? row.key.slice('fact:'.length) : null;
   const tone = FACT_RULES[fact] ? FACT_RULES[fact](raw) : null;
 

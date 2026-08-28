@@ -6,7 +6,6 @@ import {
   carLabel,
   carRef,
   carSubline,
-  faceliftBadge,
   isSold,
   photo,
   rowDiffers,
@@ -51,7 +50,6 @@ function CarOption({ car, active, onToggle, favourite, onFavourite }) {
         <span className="car-option-title">
           {carRef(car) && <span className="ref">{carRef(car)}</span>}
           {carLabel(car)}
-          <FaceliftBadge car={car} />
         </span>
         <span className="muted">
           {car.price?.localized ?? '—'} · {carSubline(car)}
@@ -83,17 +81,6 @@ function useDrawer(open) {
     if (!open && el.open) el.close();
   }, [open]);
   return ref;
-}
-
-/** Badge for the G20/G21 facelift; nothing is rendered when it is unknowable. */
-function FaceliftBadge({ car }) {
-  const badge = faceliftBadge(car);
-  if (!badge) return null;
-  return (
-    <span className={`fl fl-${badge.tone}`} title={badge.title}>
-      {badge.text}
-    </span>
-  );
 }
 
 export default function App() {
@@ -417,7 +404,6 @@ export default function App() {
                     <span className="price">
                       {car.price?.localized ?? '—'}
                       {isSold(car) && <span className="gone">verkauft</span>}
-                      <FaceliftBadge car={car} />
                     </span>
                   </th>
                 ))}

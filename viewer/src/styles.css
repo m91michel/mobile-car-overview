@@ -339,34 +339,6 @@ td.sold, .car-option.sold .car-option .fav {
 .drawer-empty { padding: 20px 16px; }
 
 .car-option-title { opacity: 0.5; }
-/* Facelift marker. Tones come from the theme tokens, so it stays legible in
-   both light and dark without a second set of colours. */
-.fl {
-  margin-left: 6px;
-  padding: 0 5px;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  vertical-align: 1px;
-  white-space: nowrap;
-  cursor: help;
-}
-
-.fl-good { background: var(--good); }
-.fl-warn { background: var(--warn); }
-.fl-bad { background: var(--bad); }
-
-/* "Unklar" must not look like a verdict, so it is outlined rather than filled. */
-.fl-muted {
-  background: transparent;
-  border: 1px solid var(--muted);
-  color: var(--muted);
-  padding: 0 4px;
-}
-
 .gone {
   margin-left: 6px;
   padding: 0 5px;

@@ -71,25 +71,6 @@ export function sortCars(cars, sortKey, desc = false) {
 }
 
 /** Set by pnpm available. A sold car is kept and greyed out, not dropped. */
-// Visual marker for the G20/G21 facelift. `faceliftBasis` becomes the tooltip,
-// so a car classified purely from its registration date can be told apart from
-// one the dealer labelled explicitly -- the badge never hides how sure we are.
-const FACELIFT_BADGES = {
-  lci: { text: 'LCI', tone: 'good' },
-  'pre-lci': { text: 'vor FL', tone: 'warn' },
-  unknown: { text: 'FL?', tone: 'muted' },
-};
-
-export const faceliftBadge = (car) => {
-  const state = car.derived?.facelift;
-  if (!state) return null;
-  const badge =
-    state === 'other-generation'
-      ? { text: car.derived?.generation ?? 'andere Gen.', tone: 'bad' }
-      : FACELIFT_BADGES[state];
-  return badge ? { ...badge, title: car.derived?.faceliftBasis ?? '' } : null;
-};
-
 export const isSold = (car) => car.availability?.status === 'sold';
 
 /** Enough to tell two "BMW 318" apart in the picker. */
