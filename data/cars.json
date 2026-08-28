@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T06:38:33.935Z",
+  "updatedAt": "2026-08-28T07:03:00.687Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -27,7 +27,7 @@
       "id": "462145366",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-hifi-livecockpit-widescree-siegen/462145366.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=462145366&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:22:47.577Z",
+      "fetchedAt": "2026-08-28T06:56:54.714Z",
       "title": "BMW 318i TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREE",
       "shortTitle": "BMW 318",
       "subTitle": "i TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREE",
@@ -175,7 +175,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera",
+          "value": "Selbstlenkende Systeme, Hinten, Vorne, Kamera",
           "group": "vehicle"
         },
         "airbag": {
@@ -223,6 +223,21 @@
           "value": "59 l",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 43285,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-06",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 263
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -323,12 +338,12 @@
         },
         "openingHours": [
           {
-            "day": "Mo - Fr",
-            "time": "08:00 Uhr - 18:00 Uhr"
+            "time": "08:00 Uhr - 18:00 Uhr",
+            "day": "Mo - Fr"
           },
           {
-            "day": "Sa",
-            "time": "09:00 Uhr - 13:00 Uhr"
+            "time": "09:00 Uhr - 13:00 Uhr",
+            "day": "Sa"
           }
         ],
         "rating": {
@@ -376,20 +391,7 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 43285,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2024-06",
-        "constructionYear": 2024,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": 1650,
-        "fuelTankLitres": 59,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+      "ref": 1
     },
     {
       "id": "459175992",
@@ -728,8 +730,10 @@
         "weightKg": null,
         "fuelTankLitres": null,
         "co2GramsPerKm": 153,
-        "consumptionL100km": 6.8
-      }
+        "consumptionL100km": 6.8,
+        "distanceFromHomeKm": 148
+      },
+      "ref": 2
     },
     {
       "id": "424825114",
@@ -1073,8 +1077,10 @@
         "weightKg": null,
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 199
+      },
+      "ref": 3
     },
     {
       "id": "451774892",
@@ -1425,8 +1431,10 @@
         "weightKg": null,
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 167
+      },
+      "ref": 4
     },
     {
       "id": "461488465",
@@ -1765,8 +1773,10 @@
         "weightKg": 1650,
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 208
+      },
+      "ref": 5
     },
     {
       "id": "462155994",
@@ -2107,8 +2117,10 @@
         "weightKg": 1650,
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 208
+      },
+      "ref": 6
     },
     {
       "id": "458139136",
@@ -2461,8 +2473,10 @@
         "weightKg": 1650,
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 240
+      },
+      "ref": 7
     },
     {
       "id": "457056589",
@@ -2828,8 +2842,10 @@
         "weightKg": 1735,
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 263
+      },
+      "ref": 8
     },
     {
       "id": "40622847776352",
@@ -3140,8 +3156,10 @@
         "weightKg": null,
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 426
+      },
+      "ref": 9
     },
     {
       "id": "40907593490464",
@@ -3505,8 +3523,10 @@
         "weightKg": 1650,
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 263
+      },
+      "ref": 10
     },
     {
       "id": "454575246",
@@ -3852,8 +3872,10 @@
         "weightKg": 1660,
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 203
+      },
+      "ref": 11
     },
     {
       "id": "39859344293056",
@@ -4173,8 +4195,10 @@
         "weightKg": null,
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 134
+      },
+      "ref": 12
     },
     {
       "id": "450754039",
@@ -4507,8 +4531,10 @@
         "weightKg": 1650,
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 289
+      },
+      "ref": 13
     },
     {
       "id": "461917102",
@@ -4902,8 +4928,10 @@
         "weightKg": null,
         "fuelTankLitres": null,
         "co2GramsPerKm": 154,
-        "consumptionL100km": 6.8
-      }
+        "consumptionL100km": 6.8,
+        "distanceFromHomeKm": 423
+      },
+      "ref": 14
     },
     {
       "id": "460051224",
@@ -5256,8 +5284,10 @@
         "weightKg": 1650,
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 240
+      },
+      "ref": 15
     },
     {
       "id": "458712598",
@@ -5600,8 +5630,10 @@
         "weightKg": 1650,
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 208
+      },
+      "ref": 16
     },
     {
       "id": "39886296760608",
@@ -5954,8 +5986,10 @@
         "weightKg": 1650,
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 216
+      },
+      "ref": 17
     },
     {
       "id": "40586751728608",
@@ -6270,8 +6304,10 @@
         "weightKg": null,
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 148
+      },
+      "ref": 18
     },
     {
       "id": "452520909",
@@ -6616,8 +6652,10 @@
         "weightKg": null,
         "fuelTankLitres": 59,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 168
+      },
+      "ref": 19
     },
     {
       "id": "460807870",
@@ -6944,8 +6982,10 @@
         "weightKg": null,
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 56
+      },
+      "ref": 20
     },
     {
       "id": "419188575",
@@ -7316,8 +7356,10 @@
         "weightKg": 1640,
         "fuelTankLitres": 55,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 341
+      },
+      "ref": 21
     },
     {
       "id": "460854078",
@@ -7628,8 +7670,10 @@
         "weightKg": null,
         "fuelTankLitres": null,
         "co2GramsPerKm": 145,
-        "consumptionL100km": 6.5
-      }
+        "consumptionL100km": 6.5,
+        "distanceFromHomeKm": 20
+      },
+      "ref": 22
     },
     {
       "id": "457556716",
@@ -7957,8 +8001,10 @@
         "weightKg": null,
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
-        "consumptionL100km": 100
-      }
+        "consumptionL100km": 100,
+        "distanceFromHomeKm": 21
+      },
+      "ref": 23
     },
     {
       "id": "452562130",
@@ -8311,8 +8357,10 @@
         "weightKg": 1595,
         "fuelTankLitres": null,
         "co2GramsPerKm": null,
-        "consumptionL100km": null
-      }
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 2
+      },
+      "ref": 24
     }
   ]
 }

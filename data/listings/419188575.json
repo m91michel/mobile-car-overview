@@ -367,6 +367,8 @@
     "weightKg": 1640,
     "fuelTankLitres": 55,
     "co2GramsPerKm": null,
-    "consumptionL100km": null
-  }
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 341
+  },
+  "ref": 21
 }

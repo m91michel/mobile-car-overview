@@ -2,7 +2,7 @@
   "id": "462145366",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-hifi-livecockpit-widescree-siegen/462145366.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=462145366&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:22:47.577Z",
+  "fetchedAt": "2026-08-28T06:56:54.714Z",
   "title": "BMW 318i TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREE",
   "shortTitle": "BMW 318",
   "subTitle": "i TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREE",
@@ -150,7 +150,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera",
+      "value": "Selbstlenkende Systeme, Hinten, Vorne, Kamera",
       "group": "vehicle"
     },
     "airbag": {
@@ -198,6 +198,21 @@
       "value": "59 l",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 43285,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2024-06",
+    "constructionYear": 2024,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1650,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 263
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -298,12 +313,12 @@
     },
     "openingHours": [
       {
-        "day": "Mo - Fr",
-        "time": "08:00 Uhr - 18:00 Uhr"
+        "time": "08:00 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
       },
       {
-        "day": "Sa",
-        "time": "09:00 Uhr - 13:00 Uhr"
+        "time": "09:00 Uhr - 13:00 Uhr",
+        "day": "Sa"
       }
     ],
     "rating": {
@@ -351,18 +366,5 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 43285,
-    "powerKw": 115,
-    "powerHp": 156,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2024-06",
-    "constructionYear": 2024,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": 1650,
-    "fuelTankLitres": 59,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null
-  }
+  "ref": 1
 }
