@@ -30,7 +30,13 @@ body {
   font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
-.app { padding: 16px 20px 48px; }
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  padding: 16px 20px;
+  gap: 14px;
+}
 .notice { padding: 32px 20px; color: var(--muted); }
 .muted { color: var(--muted); font-weight: 400; }
 .spacer { flex: 1; }
@@ -40,7 +46,6 @@ body {
   align-items: center;
   gap: 14px;
   flex-wrap: wrap;
-  margin-bottom: 14px;
 }
 .bar h1 { font-size: 17px; margin: 0; letter-spacing: -0.01em; }
 .check { display: flex; align-items: center; gap: 6px; color: var(--muted); cursor: pointer; }
@@ -58,7 +63,7 @@ button:hover { border-color: var(--accent); }
 button:disabled { opacity: 0.45; cursor: default; border-color: var(--line); }
 
 /* Car picker (drawer) --------------------------------------------------- */
-.picker-open { display: flex; align-items: center; gap: 5px; }
+.drawer-open { display: flex; align-items: center; gap: 5px; }
 
 .drawer {
   position: fixed;
@@ -128,10 +133,23 @@ button:disabled { opacity: 0.45; cursor: default; border-color: var(--line); }
   overflow: hidden;
 }
 
+/* Stable internal reference (#7) from data/refs.json, quotable across sessions. */
+.ref {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 0 5px;
+  border-radius: 4px;
+  background: var(--accent);
+  color: #fff;
+  font: 600 11px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+  vertical-align: 1.5px;
+}
+
 /* Table ------------------------------------------------------------------ */
 .table-wrap {
   overflow: auto;
-  max-height: calc(100dvh - 90px);
+  flex: 1;
+  min-height: 0;
   border: 1px solid var(--line);
   border-radius: 10px;
   background: var(--panel);
@@ -168,7 +186,11 @@ thead th {
   min-height: 2.9em;
   color: inherit;
   max-width: 230px;
+  overflow-wrap: anywhere;
+  /* Underline on hover only, so it never strikes through the #ref badge. */
+  text-decoration: none;
 }
+.head-title:hover { text-decoration: underline; }
 thead th .price { display: block; color: var(--muted); font-weight: 400; }
 .hero {
   display: block;
@@ -222,4 +244,21 @@ tbody tr:hover .row-actions, .row-head:focus-within .row-actions { opacity: 1; }
 
 td.empty { color: var(--muted); }
 
-.hidden-rows { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 14px; }
+.row-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--muted);
+}
+.row-option:hover { background: var(--accent-soft); }
+.row-option.on { color: var(--ink); }
+.row-option-label {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

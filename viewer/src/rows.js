@@ -32,7 +32,13 @@ const factRank = (key) => {
 const euro = (n) =>
   typeof n === 'number' ? `${n.toLocaleString('de-DE', { maximumFractionDigits: 0 })} €` : null;
 
-export const carLabel = (car) => car.title || [car.make, car.model].filter(Boolean).join(' ') || car.id;
+// Short internal reference ("#7"), stable for the life of the car and far easier
+// to quote than a 9-digit mobile.de id.
+export const carRef = (car) => (typeof car.ref === 'number' ? `#${car.ref}` : '');
+
+// The name only; the reference is rendered as its own badge next to it.
+export const carLabel = (car) =>
+  car.title || [car.make, car.model].filter(Boolean).join(' ') || car.id;
 
 /** Enough to tell two "BMW 318" apart in the picker. */
 export const carSubline = (car) =>
@@ -91,6 +97,13 @@ export function buildRows(cars) {
     label: 'Anbieter',
     kind: 'fact',
     value: (car) => (car.dealer ? [car.dealer.name, car.dealer.city].filter(Boolean).join(' · ') : null),
+  });
+  rows.push({
+    key: 'dealer:distance',
+    label: 'Entfernung (Luftlinie)',
+    kind: 'fact',
+    value: (car) =>
+      car.derived?.distanceFromHomeKm != null ? `${car.derived.distanceFromHomeKm} km` : null,
   });
   rows.push({
     key: 'dealer:rating',

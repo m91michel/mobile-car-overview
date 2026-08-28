@@ -1,8 +1,20 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useLocalStorage } from 'usehooks-ts';
-import { buildRows, carLabel, carSubline, photo, rowDiffers } from './rows.js';
+import { buildRows, carLabel, carRef, carSubline, photo, rowDiffers } from './rows.js';
 
 const key = (name) => `car-compare/${name}`;
+
+/** A native <dialog> brings Escape, the backdrop and focus trapping along. */
+function useDrawer(open) {
+  const ref = useRef(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (open && !el.open) el.showModal();
+    if (!open && el.open) el.close();
+  }, [open]);
+  return ref;
+}
 
 export default function App() {
   const [cars, setCars] = useState(null);
@@ -15,16 +27,9 @@ export default function App() {
   const [diffOnly, setDiffOnly] = useLocalStorage(key('diff-only'), false);
   const [featuresOnly, setFeaturesOnly] = useLocalStorage(key('features-only'), false);
   const [dragKey, setDragKey] = useState(null);
-  const [pickerOpen, setPickerOpen] = useState(false);
-  const drawer = useRef(null);
-
-  // A native <dialog> brings Escape, the backdrop and focus trapping along.
-  useEffect(() => {
-    const el = drawer.current;
-    if (!el) return;
-    if (pickerOpen && !el.open) el.showModal();
-    if (!pickerOpen && el.open) el.close();
-  }, [pickerOpen]);
+  const [openDrawer, setOpenDrawer] = useState(null); // 'cars' | 'rows' | null
+  const carDrawer = useDrawer(openDrawer === 'cars');
+  const rowDrawer = useDrawer(openDrawer === 'rows');
 
   const load = useCallback(() => {
     fetch('/api/cars')
@@ -86,7 +91,10 @@ export default function App() {
       return base.includes(id) ? base.filter((x) => x !== id) : [...base, id];
     });
 
-  const hideRow = (rowKey) => setHiddenKeys((keys) => [...keys, rowKey]);
+  const toggleRow = (rowKey) =>
+    setHiddenKeys((keys) =>
+      keys.includes(rowKey) ? keys.filter((k) => k !== rowKey) : [...keys, rowKey],
+    );
 
   /** Move relative to the *visible* neighbour, so hidden rows never swallow a click. */
   const moveRow = (rowKey, direction) => {
@@ -117,11 +125,14 @@ export default function App() {
     <div className="app">
       <header className="bar">
         <h1>Fahrzeugvergleich</h1>
-        <button className="picker-open" onClick={() => setPickerOpen(true)}>
+        <button className="drawer-open" onClick={() => setOpenDrawer('cars')}>
           Fahrzeuge <strong>{shown.length}</strong>
           <span className="muted">/ {cars.length}</span>
         </button>
-        <span className="muted">{visibleRows.length} Zeilen</span>
+        <button className="drawer-open" onClick={() => setOpenDrawer('rows')}>
+          Zeilen <strong>{visibleRows.length}</strong>
+          <span className="muted">/ {allRows.length}</span>
+        </button>
         <div className="spacer" />
         <label className="check">
           <input
@@ -140,23 +151,14 @@ export default function App() {
           Nur Ausstattung
         </label>
         <button onClick={load}>Neu laden</button>
-        <button
-          onClick={() => {
-            setOrder([]);
-            setHiddenKeys([]);
-          }}
-          disabled={order.length === 0 && hiddenKeys.length === 0}
-        >
-          Zeilen zurücksetzen
-        </button>
       </header>
 
       <dialog
         className="drawer"
-        ref={drawer}
-        onClose={() => setPickerOpen(false)}
+        ref={carDrawer}
+        onClose={() => setOpenDrawer(null)}
         onClick={(e) => {
-          if (e.target === drawer.current) setPickerOpen(false); // backdrop
+          if (e.target === carDrawer.current) setOpenDrawer(null); // backdrop
         }}
       >
         <header className="drawer-head">
@@ -167,7 +169,7 @@ export default function App() {
           <div className="spacer" />
           <button onClick={() => setSelected(cars.map((c) => c.id))}>Alle</button>
           <button onClick={() => setSelected([])}>Keine</button>
-          <button onClick={() => setPickerOpen(false)} title="Schließen">
+          <button onClick={() => setOpenDrawer(null)} title="Schließen">
             ✕
           </button>
         </header>
@@ -176,13 +178,19 @@ export default function App() {
             const active = selectedIds.includes(car.id);
             return (
               <li key={car.id}>
-                <label className={`car-option ${active ? 'on' : ''}`} title={carLabel(car)}>
+                <label
+                  className={`car-option ${active ? 'on' : ''}`}
+                  title={`${carRef(car)} ${carLabel(car)}`.trim()}
+                >
                   <input type="checkbox" checked={active} onChange={() => toggleCar(car.id)} />
                   {car.images?.[0] && (
                     <img src={photo(car.images[0], 'mo-240')} alt="" referrerPolicy="no-referrer" />
                   )}
                   <span className="car-option-text">
-                    <span className="car-option-title">{carLabel(car)}</span>
+                    <span className="car-option-title">
+                      {carRef(car) && <span className="ref">{carRef(car)}</span>}
+                      {carLabel(car)}
+                    </span>
                     <span className="muted">
                       {car.price?.localized ?? '—'} · {carSubline(car)}
                     </span>
@@ -197,7 +205,7 @@ export default function App() {
       {shown.length === 0 ? (
         <p className="notice">
           Kein Fahrzeug ausgewählt.{' '}
-          <button onClick={() => setPickerOpen(true)}>Fahrzeuge wählen</button>
+          <button onClick={() => setOpenDrawer('cars')}>Fahrzeuge wählen</button>
         </p>
       ) : (
         <div className="table-wrap">
@@ -220,8 +228,9 @@ export default function App() {
                       href={car.url}
                       target="_blank"
                       rel="noreferrer"
-                      title={carLabel(car)}
+                      title={`${carRef(car)} ${carLabel(car)}`.trim()}
                     >
+                      {carRef(car) && <span className="ref">{carRef(car)}</span>}
                       {carLabel(car)}
                     </a>
                     <span className="price">{car.price?.localized ?? '—'}</span>
@@ -258,7 +267,7 @@ export default function App() {
                         <button onClick={() => pinRow(row.key)} title="Nach ganz oben">⤒</button>
                         <button onClick={() => moveRow(row.key, -1)} title="Nach oben">↑</button>
                         <button onClick={() => moveRow(row.key, 1)} title="Nach unten">↓</button>
-                        <button onClick={() => hideRow(row.key)} title="Zeile ausblenden">✕</button>
+                        <button onClick={() => toggleRow(row.key)} title="Zeile ausblenden">✕</button>
                       </span>
                     </div>
                   </th>
@@ -277,23 +286,48 @@ export default function App() {
         </div>
       )}
 
-      {hiddenKeys.length > 0 && (
-        <section className="hidden-rows">
-          <span className="muted">Ausgeblendet:</span>
-          {hiddenKeys.map((rowKey) => {
-            const row = allRows.find((r) => r.key === rowKey);
+      <dialog
+        className="drawer"
+        ref={rowDrawer}
+        onClose={() => setOpenDrawer(null)}
+        onClick={(e) => {
+          if (e.target === rowDrawer.current) setOpenDrawer(null); // backdrop
+        }}
+      >
+        <header className="drawer-head">
+          <strong>Zeilen</strong>
+          <span className="muted">
+            {allRows.length - hiddenKeys.length} von {allRows.length}
+          </span>
+          <div className="spacer" />
+          <button onClick={() => setHiddenKeys([])}>Alle</button>
+          <button onClick={() => setHiddenKeys(allRows.map((r) => r.key))}>Keine</button>
+          <button
+            onClick={() => setOrder([])}
+            disabled={order.length === 0}
+            title="Reihenfolge zurücksetzen"
+          >
+            ↺
+          </button>
+          <button onClick={() => setOpenDrawer(null)} title="Schließen">
+            ✕
+          </button>
+        </header>
+        <ul className="drawer-list">
+          {orderedRows.map((row) => {
+            const on = !hidden.has(row.key);
             return (
-              <button
-                key={rowKey}
-                className="chip small"
-                onClick={() => setHiddenKeys((keys) => keys.filter((k) => k !== rowKey))}
-              >
-                {row?.label ?? rowKey} <span className="muted">+</span>
-              </button>
+              <li key={row.key}>
+                <label className={`row-option ${on ? 'on' : ''}`} title={row.label}>
+                  <input type="checkbox" checked={on} onChange={() => toggleRow(row.key)} />
+                  <span className="row-option-label">{row.label}</span>
+                  {row.kind === 'feature' && <span className="muted">Ausstattung</span>}
+                </label>
+              </li>
             );
           })}
-        </section>
-      )}
+        </ul>
+      </dialog>
     </div>
   );
 }
