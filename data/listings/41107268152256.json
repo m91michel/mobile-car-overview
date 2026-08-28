@@ -1,0 +1,391 @@
+{
+  "id": "41107268152256",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-abstandstempomat-ahk-sportsitze-pressath/41107268152256.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=41107268152256&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T19:04:36.807Z",
+  "title": "BMW 318i ABSTANDSTEMPOMAT AHK SPORTSITZE",
+  "shortTitle": "BMW 318",
+  "subTitle": "i ABSTANDSTEMPOMAT AHK SPORTSITZE",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "027009",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 29900,
+    "net": 25126.05,
+    "currency": "EUR",
+    "localized": "29.900 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 81,
+    "thresholds": [
+      "21.600 €",
+      "28.100 €",
+      "30.300 €",
+      "33.700 €",
+      "36.200 €",
+      "40.200 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "ABSTANDSTEMPOMAT AHK SPORTSITZE",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "027009",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "22.700 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "11/2023",
+      "group": "vehicle"
+    },
+    "constructionYear": {
+      "label": "Baujahr",
+      "value": "2023",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Hinten, Vorne",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "ALPINWEISS III",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Weiß",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Stoff, Schwarz",
+      "group": "vehicle"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.300 kg",
+      "group": "vehicle"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg",
+      "group": "vehicle"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.650 kg",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "59 l",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 22700,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-11",
+    "constructionYear": 2023,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1650,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 74,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 11/2023, nach der Umstellung"
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Anhängerkupplung schwenkbar",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sommerreifen",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d3e27c6-40d2-4e6b-b601-4c9145fb9d90",
+    "https://img.classistatic.de/api/v1/mo-prod/images/54/5444e3d0-8557-47a6-a2f7-202ef453a22c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/93/93ed3ace-5b56-4420-b178-235e83cbda1a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/67/67681251-32b9-4c1e-ac19-88619fa163f7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9b/9b97366e-c673-4648-a83f-17b89d57e8ea",
+    "https://img.classistatic.de/api/v1/mo-prod/images/be/bec830eb-fcb0-4639-a10c-20a0d451f170",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0a/0a8d723c-3a70-4335-b621-fe2b574bc27c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e6f4fa7-f95b-40af-9862-fa8b71f1e6fa",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d3/d3108712-d49c-46e2-b93c-a737800badcb",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f6/f675f2a6-d96f-4098-a29f-0f2e8b1b9e11",
+    "https://img.classistatic.de/api/v1/mo-prod/images/66/66738936-7eca-4cd3-8598-26f1e2b2b032",
+    "https://img.classistatic.de/api/v1/mo-prod/images/50/50de3b44-f5d3-48b3-93ee-4264520ff4f8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb958c71-98ff-47fb-9c94-130575701365",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c0/c09b7766-409e-4846-ac32-cd057ded30fe",
+    "https://img.classistatic.de/api/v1/mo-prod/images/74/7482dad0-fc7a-4b0c-96b7-b235700a144a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2f/2f4bec8e-0611-4864-b25c-e21333854177",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8f/8f00b5eb-c02a-4fd2-aaa9-f320c7d0c10c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff38a41c-2ac0-410f-8d84-97a2580d018e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8f/8fa0beae-041f-4fea-913c-dd0381b59094",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0f/0ff53ce0-8915-498c-8e1a-32641c27c83c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/85/85d2c105-0e5b-489c-a1ac-c0ae9d6003b4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/04/045760a0-3234-45fc-b28b-7284556a529a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f1/f120eafd-0404-4ab6-be03-d525ab21d4f4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0c/0c37f30e-ee91-4d10-ae01-d05b656e8e9a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8ce6f42-8cfe-4abe-94f3-ae3f28c84118",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f8/f8c316a7-d75d-4f3c-99d4-5a200cc2d27e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/13/13ba6279-7683-4754-a4bd-8e8fe6a257d3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d3/d32526b0-a86f-4ba6-bded-b4ffd97b8c2a"
+  ],
+  "dealer": {
+    "name": "Autohaus Graser GmbH",
+    "type": "Händler",
+    "street": "Eschenbacher Str. 1",
+    "city": "DE-92690 Pressath",
+    "country": "DE",
+    "phone": "+49 (0)9644 92290",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=459853",
+    "location": {
+      "lat": 49.764281,
+      "lon": 11.9225792
+    },
+    "openingHours": [
+      {
+        "day": "Mo - Fr",
+        "time": "09:00 Uhr - 18:00 Uhr"
+      },
+      {
+        "day": "Sa",
+        "time": "09:00 Uhr - 13:00 Uhr"
+      }
+    ],
+    "rating": {
+      "score": 4.9,
+      "count": 291,
+      "recommendationRate": 94
+    }
+  },
+  "financePlans": [
+    {
+      "type": "DF",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=41107268152256",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": true,
+      "bankId": "Bank11",
+      "offer": {
+        "bankId": "Bank11",
+        "bankName": "Bank11 für Privatkunden und Handel GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 5980,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 23920,
+        "interestRateNominal": 5.83,
+        "interestRateEffective": 5.99,
+        "monthlyInstallment": 227.11,
+        "finalInstallment": 16445,
+        "totalInterest": 5924.74,
+        "totalAmount": 29844.74,
+        "localized": {
+          "downPayment": "5.980,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "23.920,00 €",
+          "interestRateNominal": "5,83%",
+          "interestRateEffective": "5,99%",
+          "monthlyInstallment": "228 €",
+          "finalInstallment": "16.445,00 €",
+          "totalInterest": "5.924,74 €",
+          "totalAmount": "29.844,74 €",
+          "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Bank11 für Privatkunden und Handel GmbH (Darlehensgeber), Hammer Landstraße 91, 41460 Neuss. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 47,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [
+      {
+        "key": "camera",
+        "label": "Rückfahrkamera, Nachrüstung",
+        "cost": 1200
+      }
+    ],
+    "retrofitCost": 1200,
+    "effectivePrice": 31100
+  }
+}
