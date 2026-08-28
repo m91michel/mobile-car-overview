@@ -1,0 +1,353 @@
+{
+  "id": "461340137",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-aut-touring-m-sport-facelift-ahk-360-kam-velburg/461340137.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461340137&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T12:44:30.043Z",
+  "title": "BMW 318i Aut. Touring M SPORT Facelift /AHK/360°Kam",
+  "shortTitle": "BMW 318",
+  "subTitle": "i Aut. Touring M SPORT Facelift /AHK/360°Kam",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "77440-1153",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 33400,
+    "net": 28067.23,
+    "currency": "EUR",
+    "localized": "33.400 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 56,
+    "thresholds": [
+      "24.600 €",
+      "32.000 €",
+      "34.500 €",
+      "38.400 €",
+      "41.200 €",
+      "45.800 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "318 i M Sport",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "77440-1153",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "19.400 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "7,1 l/100km",
+      "group": "envkv"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "161 g/km",
+      "group": "envkv"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": "7,1 l/100km (kombiniert)",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "10/2024",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Hinten, Vorne, Selbstlenkende Systeme, 360°-Kamera",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Black Sapphire-Metallic",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Stoff, Schwarz",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 19400,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2024-10",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": 161,
+    "consumptionL100km": 7.1,
+    "distanceFromHomeKm": 56
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Anhängerkupplung schwenkbar",
+    "Apple CarPlay",
+    "Armlehne",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Geschwindigkeitsbegrenzer",
+    "Head-Up Display",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Multifunktionslenkrad",
+    "Navigationssystem",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "Winterreifen",
+    "Zentralverriegelung"
+  ],
+  "highlights": [
+    "aktive Geschw.regelung"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d8819a3-8881-43d6-b50c-760822766dc0",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8e5467e2-2a37-4a46-9f35-74a6f7bc5662",
+    "https://img.classistatic.de/api/v1/mo-prod/images/19/19864aba-7f78-4510-af00-d617c92a8953",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ea/ead1a1c2-c99f-4d12-88b4-dcce190c080e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a0/a075ace3-16dd-45b7-a6f7-9fca17ea886a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa425c17-7476-4891-9eae-c3cea4e692fd",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8a/8aedb029-a26b-4a1d-908d-ac38dc9f7bef",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bf/bfc8ca08-81f1-4630-9cbc-6f5f0861cd37",
+    "https://img.classistatic.de/api/v1/mo-prod/images/40/40396c03-c916-407e-bcf1-c90efbb62677",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5e/5edf8661-0588-4889-8778-80a363e4f89c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c5/c53d4f15-eefb-4c60-b834-df876038ba0c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e9/e92f333f-acac-4942-b65e-78d74a73534e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/77/77c9416e-3b72-493e-a2fd-573791c55cd4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9b/9b3286b8-2084-4473-b746-333d4c01685d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c7/c75ec7e2-d8ea-4c8d-857b-30176071e539",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6a/6a8ffd7c-f37e-4a1b-a9d1-cb2b8bcb9caf",
+    "https://img.classistatic.de/api/v1/mo-prod/images/60/600e90da-8c7f-49b9-8f9c-b001ea2711d1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/92/926e15c1-7fbb-48d9-97dd-4d2f21a3cb88",
+    "https://img.classistatic.de/api/v1/mo-prod/images/93/9341d580-1cdd-4b3c-83d8-21303cea9129",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d7/d72e5ad7-39b3-4333-8c5e-54250677a770",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e7/e7307ea6-9f40-4414-b43c-eb4a4968dbfa"
+  ],
+  "dealer": {
+    "name": "Autoarena Stauner GmbH",
+    "type": "Händler",
+    "street": "Hainstraße 2",
+    "city": "DE-92355 Velburg",
+    "country": "DE",
+    "phone": "+49 (0)9182 1519",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=3820557",
+    "location": {
+      "lat": 49.23224459999999,
+      "lon": 11.6684028
+    },
+    "openingHours": [
+      {
+        "time": "09:00 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
+      }
+    ],
+    "rating": {
+      "score": 4.9,
+      "count": 225,
+      "recommendationRate": 100
+    }
+  },
+  "financePlans": [
+    {
+      "type": "DF",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=461340137",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "bankId": "Santander",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 6680,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 26720,
+        "interestRateNominal": 5.36,
+        "interestRateEffective": 5.49,
+        "monthlyInstallment": 294,
+        "finalInstallment": 15030,
+        "totalInterest": 5650.38,
+        "totalAmount": 32370.38,
+        "localized": {
+          "downPayment": "6.680,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "26.720,00 €",
+          "interestRateNominal": "5,36%",
+          "interestRateEffective": "5,49%",
+          "monthlyInstallment": "294 €",
+          "finalInstallment": "15.030,00 €",
+          "totalInterest": "5.650,38 €",
+          "totalAmount": "32.370,38 €",
+          "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    },
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=461340137",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false
+    }
+  ],
+  "ref": 31
+}
