@@ -131,6 +131,9 @@ export function normalizeFacts(attributes = []) {
  *     only: pre-facelift cars could be ordered with it (a 03/2021 car in this
  *     set has it), so its presence proves nothing.
  *
+ * `faceliftBasis` is German on purpose: it is shown to the user as the badge
+ * tooltip, unlike the rest of this file.
+ *
  * The KBA type number (TSN) is NOT usable: it encodes the variant (CYW = 318i,
  * DDH = 318d, CVS = 320i), and the same code appears on both generations.
  */
@@ -155,22 +158,22 @@ export function deriveModel(facts, features = [], title = '') {
 
   if (generation && /F3/.test(generation)) {
     facelift = 'other-generation';
-    basis = `${generation} is the previous 3-series Touring, not a G20/G21`;
+    basis = `${generation} ist der Vorgänger-3er-Touring, kein G20/G21`;
   } else if (saysLci) {
     facelift = 'lci';
-    basis = 'the listing says LCI/facelift';
+    basis = 'Inserat nennt LCI/Facelift ausdrücklich';
   } else if (yyyymm && yyyymm >= '2023-01') {
     facelift = 'lci';
-    basis = `first registered ${registration}, after the changeover`;
+    basis = `Erstzulassung ${registration}, nach der Umstellung`;
   } else if (yyyymm && yyyymm < '2022-07') {
     facelift = 'pre-lci';
-    basis = `first registered ${registration}, before the changeover`;
+    basis = `Erstzulassung ${registration}, vor der Umstellung`;
   } else if (yyyymm && !digitalCluster) {
     facelift = 'pre-lci';
-    basis = 'registered during the changeover, and no digital instrument cluster';
+    basis = 'Zulassung im Umstellungsfenster, kein volldigitales Kombiinstrument';
   } else if (yyyymm) {
     facelift = 'unknown';
-    basis = 'registered during the changeover; the data cannot decide';
+    basis = 'Zulassung im Umstellungsfenster – aus den Daten nicht entscheidbar';
   }
 
   return { generation, facelift, faceliftBasis: basis };
