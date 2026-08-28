@@ -19,7 +19,8 @@
     "viewer:build": "vite build viewer",
     "renormalize": "node scripts/renormalize.mjs",
     "check": "node scripts/check.mjs",
-    "available": "node scripts/availability.mjs"
+    "available": "node scripts/availability.mjs",
+    "remove-car": "node scripts/remove-car.mjs"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.2.0",

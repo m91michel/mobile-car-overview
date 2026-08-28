@@ -159,6 +159,20 @@ muss das Fahrzeug sehr nah an der Wunschkonfiguration sein, z. B.:
 
 Nur „neuer“ oder „weniger Kilometer“ rechtfertigt für uns keinen Aufpreis von mehreren Tausend Euro.
 
+## Standort / Entfernung
+
+Die Entfernung zum Händler ist **kein Kaufargument** — sie wird nur zur
+Information mitgeführt (`derived.distanceFromHomeKm`, Luftlinie ab Fürth, Zeile
+"Entfernung (Luftlinie)" im Viewer).
+
+Grund: Fahrzeuge weiter weg, insbesondere im Norden, sind tendenziell günstiger
+als in Baden-Württemberg und Bayern. Ein kurzer Anfahrtsweg gegen einen höheren
+Preis zu tauschen ist also kein Gewinn. Eine weite Anfahrt darf ein Angebot
+weder auf- noch abwerten.
+
+Angebote also **nicht** nach Erreichbarkeit sortieren, empfehlen oder zu
+Besichtigungsrouten bündeln, solange nicht ausdrücklich danach gefragt wird.
+
 ## Wie Angebote bewertet werden sollen
 
 Bitte Fahrzeuge nicht nur danach bewerten, wie viele Häkchen sie bei der Ausstattung haben.
