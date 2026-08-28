@@ -58,6 +58,8 @@ const swatchFor = (value) => {
  */
 const FACT_RULES = {
   parkAssists: (value) => (/kamera/i.test(value) ? 'good' : 'bad'),
+  // "Benziner" is one of the non-negotiables; Diesel is an outright no.
+  fuel: (value) => (/diesel/i.test(value) ? 'bad' : /benzin/i.test(value) ? 'good' : null),
   color: paint,
   manufacturerColorName: paint,
   // Leder, Alcantara, Sensatec und Teilleder sind ok, reine Stoffsitze nicht.
