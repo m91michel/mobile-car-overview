@@ -1,0 +1,338 @@
+{
+  "id": "461317258",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-320e-ahk-driv-assist-prof-harman-k-kamera-led-dreieich-sprendlingen/461317258.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461317258&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-08-28T18:47:08.748Z",
+  "title": "BMW 320e AHK Driv.Assist.Prof Harman/K Kamera LED",
+  "shortTitle": "BMW 320",
+  "subTitle": "e AHK Driv.Assist.Prof Harman/K Kamera LED",
+  "make": "BMW",
+  "model": "320",
+  "category": "EstateCar",
+  "sku": "XE723325",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYX"
+  },
+  "price": {
+    "gross": 31470,
+    "net": 26445.38,
+    "currency": "EUR",
+    "localized": "31.470 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "REASONABLE_PRICE",
+    "label": "Fairer Preis",
+    "offset": 10,
+    "thresholds": [
+      "22.200 €",
+      "28.800 €",
+      "31.100 €",
+      "34.600 €",
+      "37.100 €",
+      "41.200 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug, Reparierter Unfallschaden",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "3-er (G21)",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "AHK Driv.Assist.Prof Harman/K Kamera LED",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "XE723325",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "36.500 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "120 kW (163 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Plug-in-Hybrid",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Hybrid (Benzin/Elektro), E10-geeignet, Plug-in-Hybrid",
+      "group": "vehicle"
+    },
+    "envkv.otherEnergySource": {
+      "label": "Anderer Energieträger",
+      "value": "Strom",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "05/2023",
+      "group": "vehicle"
+    },
+    "constructionYear": {
+      "label": "Baujahr",
+      "value": "2023",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "2",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "05/2026",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Selbstlenkende Systeme, Hinten, Vorne, Kamera",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "schwarz II",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Stoff, Schwarz",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 36500,
+    "powerKw": 120,
+    "powerHp": 163,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-05",
+    "constructionYear": 2023,
+    "seats": 5,
+    "previousOwners": 2,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 176,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 05/2023, nach der Umstellung"
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Adaptives Kurvenlicht",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Anhängerkupplung schwenkbar",
+    "Armlehne",
+    "Beheizbares Lenkrad",
+    "Berganfahrassistent",
+    "Blendfreies Fernlicht",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Navigationssystem",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Servolenkung",
+    "Sitzheizung",
+    "Soundsystem",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Standheizung",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/0b/0b2bb4be-a216-4aaa-8f18-8af2a55b7d8f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bb/bbbf5884-cb65-4d20-a28a-51392686feb1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a5/a5011448-4a9b-4a68-8a01-b4b71d0081cf",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d4debca-025f-4d3f-b272-03a2461c596a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f6589cc-efe3-4e13-b9f5-c5b158912ba3"
+  ],
+  "dealer": {
+    "name": "BMW AG Niederlassung Dreieich",
+    "type": "Händler",
+    "street": "Gustav-Otto-Straße 1",
+    "city": "DE-63303 Dreieich-Sprendlingen",
+    "country": "DE",
+    "phone": "+49 (0)6103 99746593",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=452744",
+    "location": {
+      "lat": 50.03385489999999,
+      "lon": 8.701844
+    },
+    "openingHours": [
+      {
+        "time": "08:30 Uhr - 18:30 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "09:00 Uhr - 16:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 4.5,
+      "count": 839,
+      "recommendationRate": 88
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=461317258",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 6294,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 25176,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 333.64,
+        "finalInstallment": 10385.1,
+        "totalInterest": 4893.83,
+        "totalAmount": 30069.83,
+        "localized": {
+          "downPayment": "6.294,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "25.176,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "334 €",
+          "finalInstallment": "10.385,10 €",
+          "totalInterest": "4.893,83 €",
+          "totalAmount": "30.069,83 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 45,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 31470
+  }
+}
