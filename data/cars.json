@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T08:53:42.034Z",
+  "updatedAt": "2026-08-28T09:11:56.105Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -391,7 +391,14 @@
           }
         }
       ],
-      "ref": 1
+      "ref": 1,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: Alpinweiß. Sonst M Sport, Alcantara und Kamera — aber kein ACC.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 31890
+      }
     },
     {
       "id": "459175992",
@@ -733,7 +740,20 @@
         "consumptionL100km": 6.8,
         "distanceFromHomeKm": 148
       },
-      "ref": 2
+      "ref": 2,
+      "assessment": {
+        "verdict": "kandidat",
+        "note": "Jüngstes Auto im Feld, BMW-Garantie bis 06/2027 — aber kein ACC, und das ist nicht nachrüstbar.",
+        "retrofit": [
+          {
+            "key": "ahk",
+            "label": "AHK abnehmbar, Nachrüstung Fürth",
+            "cost": 1600
+          }
+        ],
+        "retrofitCost": 1600,
+        "effectivePrice": 30495
+      }
     },
     {
       "id": "424825114",
@@ -1080,7 +1100,20 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 199
       },
-      "ref": 3
+      "ref": 3,
+      "assessment": {
+        "verdict": "kandidat",
+        "note": "M Sport, HUD und Kamera ab Werk in Alcantara Blau — kein ACC, 2 Halter.",
+        "retrofit": [
+          {
+            "key": "ahk",
+            "label": "AHK abnehmbar, Nachrüstung Fürth",
+            "cost": 1600
+          }
+        ],
+        "retrofitCost": 1600,
+        "effectivePrice": 30590
+      }
     },
     {
       "id": "451774892",
@@ -1434,7 +1467,14 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 167
       },
-      "ref": 4
+      "ref": 4,
+      "assessment": {
+        "verdict": "top",
+        "note": "Zielbild komplett ab Werk bis auf den Motor; nichts nachzurüsten, aber das teuerste Auto.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 32580
+      }
     },
     {
       "id": "461488465",
@@ -1776,7 +1816,14 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 208
       },
-      "ref": 5
+      "ref": 5,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: reine Stoffsitze. Auch kein ACC.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 28790
+      }
     },
     {
       "id": "462155994",
@@ -2120,7 +2167,14 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 208
       },
-      "ref": 6
+      "ref": 6,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: reine Stoffsitze. Ohne ACC und relativ zum Marktband zu teuer.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 30890
+      }
     },
     {
       "id": "458139136",
@@ -2476,7 +2530,14 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 240
       },
-      "ref": 7
+      "ref": 7,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: reine Stoffsitze. 28.613 km wären stark, aber ACC fehlt.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 29790
+      }
     },
     {
       "id": "457056589",
@@ -2845,7 +2906,14 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 263
       },
-      "ref": 8
+      "ref": 8,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: Diesel und 83.530 km.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 28790
+      }
     },
     {
       "id": "40622847776352",
@@ -3159,7 +3227,20 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 426
       },
-      "ref": 9
+      "ref": 9,
+      "assessment": {
+        "verdict": "kandidat",
+        "note": "ACC, M Sport, 360° und nur 23.000 km — aber 426 km Anfahrt und nach AHK teurer als #4.",
+        "retrofit": [
+          {
+            "key": "ahk",
+            "label": "AHK abnehmbar, Nachrüstung Fürth",
+            "cost": 1600
+          }
+        ],
+        "retrofitCost": 1600,
+        "effectivePrice": 33400
+      }
     },
     {
       "id": "40907593490464",
@@ -3526,7 +3607,14 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 263
       },
-      "ref": 10
+      "ref": 10,
+      "assessment": {
+        "verdict": "kandidat",
+        "note": "AHK, Kamera und Teilleder ab Werk, jung und günstig — aber kein ACC.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 28970
+      }
     },
     {
       "id": "454575246",
@@ -3875,7 +3963,14 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 203
       },
-      "ref": 11
+      "ref": 11,
+      "assessment": {
+        "verdict": "kandidat",
+        "note": "320i mit AHK, Kamera und HUD ab Werk, nichts nachzurüsten — aber kein ACC.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 29900
+      }
     },
     {
       "id": "39859344293056",
@@ -4198,7 +4293,14 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 134
       },
-      "ref": 12
+      "ref": 12,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: Diesel. ACC, AHK, Kamera und HUD wären sonst stark.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 28680
+      }
     },
     {
       "id": "450754039",
@@ -4534,7 +4636,14 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 289
       },
-      "ref": 13
+      "ref": 13,
+      "assessment": {
+        "verdict": "kandidat",
+        "note": "ACC, AHK und Kamera ab Werk — verliert nach der 1.600-€-AHK gegen #26: teurer, weniger Motor.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 30660
+      }
     },
     {
       "id": "461917102",
@@ -4931,7 +5040,20 @@
         "consumptionL100km": 6.8,
         "distanceFromHomeKm": 423
       },
-      "ref": 14
+      "ref": 14,
+      "assessment": {
+        "verdict": "kandidat",
+        "note": "320i mit Vollleder, Panorama und Memory — aber kein ACC und 423 km Anfahrt.",
+        "retrofit": [
+          {
+            "key": "ahk",
+            "label": "AHK abnehmbar, Nachrüstung Fürth",
+            "cost": 1600
+          }
+        ],
+        "retrofitCost": 1600,
+        "effectivePrice": 30590
+      }
     },
     {
       "id": "460051224",
@@ -5287,7 +5409,14 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 240
       },
-      "ref": 15
+      "ref": 15,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: reine Stoffsitze. AHK und Kamera ab Werk, aber kein ACC.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 29490
+      }
     },
     {
       "id": "458712598",
@@ -5633,7 +5762,14 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 208
       },
-      "ref": 16
+      "ref": 16,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: reine Stoffsitze. Auch kein ACC.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 27890
+      }
     },
     {
       "id": "39886296760608",
@@ -5989,7 +6125,20 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 216
       },
-      "ref": 17
+      "ref": 17,
+      "assessment": {
+        "verdict": "kandidat",
+        "note": "M Sport in Individual-Tansanitblau mit AHK — aber weder ACC noch Kamera.",
+        "retrofit": [
+          {
+            "key": "camera",
+            "label": "Rückfahrkamera, Nachrüstung",
+            "cost": 1200
+          }
+        ],
+        "retrofitCost": 1200,
+        "effectivePrice": 31180
+      }
     },
     {
       "id": "40586751728608",
@@ -6307,7 +6456,20 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 148
       },
-      "ref": 18
+      "ref": 18,
+      "assessment": {
+        "verdict": "top",
+        "note": "Günstigster Weg zu ACC und Kamera, 148 km, Händler 4,9 — kostet M-Sport-Optik und 50.960 km.",
+        "retrofit": [
+          {
+            "key": "ahk",
+            "label": "AHK abnehmbar, Nachrüstung Fürth",
+            "cost": 1600
+          }
+        ],
+        "retrofitCost": 1600,
+        "effectivePrice": 27395
+      }
     },
     {
       "id": "452520909",
@@ -6655,7 +6817,25 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 168
       },
-      "ref": 19
+      "ref": 19,
+      "assessment": {
+        "verdict": "top",
+        "note": "Einziges Portimao Blau mit M Sport und ACC — älteste Basis, Vor-Facelift, Kamera fehlt.",
+        "retrofit": [
+          {
+            "key": "camera",
+            "label": "Rückfahrkamera, Nachrüstung",
+            "cost": 1200
+          },
+          {
+            "key": "ahk",
+            "label": "AHK abnehmbar, Nachrüstung Fürth",
+            "cost": 1600
+          }
+        ],
+        "retrofitCost": 2800,
+        "effectivePrice": 30373
+      }
     },
     {
       "id": "460807870",
@@ -6985,7 +7165,14 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 56
       },
-      "ref": 20
+      "ref": 20,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: Diesel. Wäre mit ACC, AHK, Kamera und M Sport sonst komplett.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 29999
+      }
     },
     {
       "id": "419188575",
@@ -7359,7 +7546,14 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 341
       },
-      "ref": 21
+      "ref": 21,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: Cupra Leon, kein BMW — und reine Stoffsitze.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 25990
+      }
     },
     {
       "id": "460854078",
@@ -7673,7 +7867,14 @@
         "consumptionL100km": 6.5,
         "distanceFromHomeKm": 20
       },
-      "ref": 22
+      "ref": 22,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: reine Stoffsitze. Ohne ACC und Kamera trotz 20 km Anfahrt kein Kandidat.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 24999
+      }
     },
     {
       "id": "457556716",
@@ -8004,7 +8205,14 @@
         "consumptionL100km": 100,
         "distanceFromHomeKm": 21
       },
-      "ref": 23
+      "ref": 23,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: Diesel, Stoffsitze und 78.000 km.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 23999
+      }
     },
     {
       "id": "452562130",
@@ -8360,7 +8568,14 @@
         "consumptionL100km": null,
         "distanceFromHomeKm": 2
       },
-      "ref": 24
+      "ref": 24,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: F31 von 2017, nicht G21 — verzerrt nur das Preisgefühl.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 18990
+      }
     },
     {
       "id": "41966966984672",
@@ -8726,7 +8941,14 @@
           }
         }
       ],
-      "ref": 25
+      "ref": 25,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: reine Stoffsitze — sonst mit ACC, AHK, Kamera und HUD das Preis-Leistungs-Maximum.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 27480
+      }
     },
     {
       "id": "461760316",
@@ -9124,7 +9346,20 @@
           }
         }
       ],
-      "ref": 26
+      "ref": 26,
+      "assessment": {
+        "verdict": "top",
+        "note": "Einziger 320i mit ACC im Set, Sensatec, BMW-Vertragshändler — Sport Line statt M Sport, 327 km.",
+        "retrofit": [
+          {
+            "key": "ahk",
+            "label": "AHK abnehmbar, Nachrüstung Fürth",
+            "cost": 1600
+          }
+        ],
+        "retrofitCost": 1600,
+        "effectivePrice": 29250
+      }
     },
     {
       "id": "40935871674400",
@@ -9478,7 +9713,14 @@
           }
         }
       ],
-      "ref": 27
+      "ref": 27,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: reine Stoffsitze. Zudem starre AHK, 03/2021 und ein Händler ohne Bewertungen.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "effectivePrice": 28490
+      }
     }
   ]
 }

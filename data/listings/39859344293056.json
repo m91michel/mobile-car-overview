@@ -319,5 +319,12 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 134
   },
-  "ref": 12
+  "ref": 12,
+  "assessment": {
+    "verdict": "raus",
+    "note": "Raus: Diesel. ACC, AHK, Kamera und HUD wären sonst stark.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 28680
+  }
 }

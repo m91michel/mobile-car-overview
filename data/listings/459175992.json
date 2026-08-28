@@ -338,5 +338,18 @@
     "consumptionL100km": 6.8,
     "distanceFromHomeKm": 148
   },
-  "ref": 2
+  "ref": 2,
+  "assessment": {
+    "verdict": "kandidat",
+    "note": "Jüngstes Auto im Feld, BMW-Garantie bis 06/2027 — aber kein ACC, und das ist nicht nachrüstbar.",
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "effectivePrice": 30495
+  }
 }

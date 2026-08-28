@@ -326,5 +326,12 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 56
   },
-  "ref": 20
+  "ref": 20,
+  "assessment": {
+    "verdict": "raus",
+    "note": "Raus: Diesel. Wäre mit ACC, AHK, Kamera und M Sport sonst komplett.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 29999
+  }
 }

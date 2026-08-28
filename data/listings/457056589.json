@@ -365,5 +365,12 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 263
   },
-  "ref": 8
+  "ref": 8,
+  "assessment": {
+    "verdict": "raus",
+    "note": "Raus: Diesel und 83.530 km.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 28790
+  }
 }

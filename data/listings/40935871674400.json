@@ -350,5 +350,12 @@
       }
     }
   ],
-  "ref": 27
+  "ref": 27,
+  "assessment": {
+    "verdict": "raus",
+    "note": "Raus: reine Stoffsitze. Zudem starre AHK, 03/2021 und ein Händler ohne Bewertungen.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 28490
+  }
 }

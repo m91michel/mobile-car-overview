@@ -340,5 +340,12 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 208
   },
-  "ref": 6
+  "ref": 6,
+  "assessment": {
+    "verdict": "raus",
+    "note": "Raus: reine Stoffsitze. Ohne ACC und relativ zum Marktband zu teuer.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 30890
+  }
 }

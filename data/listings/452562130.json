@@ -352,5 +352,12 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 2
   },
-  "ref": 24
+  "ref": 24,
+  "assessment": {
+    "verdict": "raus",
+    "note": "Raus: F31 von 2017, nicht G21 — verzerrt nur das Preisgefühl.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 18990
+  }
 }

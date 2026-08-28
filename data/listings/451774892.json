@@ -350,5 +350,12 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 167
   },
-  "ref": 4
+  "ref": 4,
+  "assessment": {
+    "verdict": "top",
+    "note": "Zielbild komplett ab Werk bis auf den Motor; nichts nachzurüsten, aber das teuerste Auto.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 32580
+  }
 }

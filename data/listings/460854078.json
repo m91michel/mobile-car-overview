@@ -310,5 +310,12 @@
     "consumptionL100km": 6.5,
     "distanceFromHomeKm": 20
   },
-  "ref": 22
+  "ref": 22,
+  "assessment": {
+    "verdict": "raus",
+    "note": "Raus: reine Stoffsitze. Ohne ACC und Kamera trotz 20 km Anfahrt kein Kandidat.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 24999
+  }
 }

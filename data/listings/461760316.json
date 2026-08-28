@@ -394,5 +394,18 @@
       }
     }
   ],
-  "ref": 26
+  "ref": 26,
+  "assessment": {
+    "verdict": "top",
+    "note": "Einziger 320i mit ACC im Set, Sensatec, BMW-Vertragshändler — Sport Line statt M Sport, 327 km.",
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "effectivePrice": 29250
+  }
 }

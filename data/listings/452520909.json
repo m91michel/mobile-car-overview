@@ -344,5 +344,23 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 168
   },
-  "ref": 19
+  "ref": 19,
+  "assessment": {
+    "verdict": "top",
+    "note": "Einziges Portimao Blau mit M Sport und ACC — älteste Basis, Vor-Facelift, Kamera fehlt.",
+    "retrofit": [
+      {
+        "key": "camera",
+        "label": "Rückfahrkamera, Nachrüstung",
+        "cost": 1200
+      },
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 2800,
+    "effectivePrice": 30373
+  }
 }

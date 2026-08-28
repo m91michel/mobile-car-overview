@@ -314,5 +314,18 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 148
   },
-  "ref": 18
+  "ref": 18,
+  "assessment": {
+    "verdict": "top",
+    "note": "Günstigster Weg zu ACC und Kamera, 148 km, Händler 4,9 — kostet M-Sport-Optik und 50.960 km.",
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "effectivePrice": 27395
+  }
 }

@@ -343,5 +343,18 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 199
   },
-  "ref": 3
+  "ref": 3,
+  "assessment": {
+    "verdict": "kandidat",
+    "note": "M Sport, HUD und Kamera ab Werk in Alcantara Blau — kein ACC, 2 Halter.",
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "effectivePrice": 30590
+  }
 }

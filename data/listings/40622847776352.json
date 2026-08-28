@@ -310,5 +310,18 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 426
   },
-  "ref": 9
+  "ref": 9,
+  "assessment": {
+    "verdict": "kandidat",
+    "note": "ACC, M Sport, 360° und nur 23.000 km — aber 426 km Anfahrt und nach AHK teurer als #4.",
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "effectivePrice": 33400
+  }
 }

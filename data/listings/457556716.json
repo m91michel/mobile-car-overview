@@ -327,5 +327,12 @@
     "consumptionL100km": 100,
     "distanceFromHomeKm": 21
   },
-  "ref": 23
+  "ref": 23,
+  "assessment": {
+    "verdict": "raus",
+    "note": "Raus: Diesel, Stoffsitze und 78.000 km.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 23999
+  }
 }

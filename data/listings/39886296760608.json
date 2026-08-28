@@ -352,5 +352,18 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 216
   },
-  "ref": 17
+  "ref": 17,
+  "assessment": {
+    "verdict": "kandidat",
+    "note": "M Sport in Individual-Tansanitblau mit AHK — aber weder ACC noch Kamera.",
+    "retrofit": [
+      {
+        "key": "camera",
+        "label": "Rückfahrkamera, Nachrüstung",
+        "cost": 1200
+      }
+    ],
+    "retrofitCost": 1200,
+    "effectivePrice": 31180
+  }
 }

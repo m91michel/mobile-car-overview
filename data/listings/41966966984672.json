@@ -362,5 +362,12 @@
       }
     }
   ],
-  "ref": 25
+  "ref": 25,
+  "assessment": {
+    "verdict": "raus",
+    "note": "Raus: reine Stoffsitze — sonst mit ACC, AHK, Kamera und HUD das Preis-Leistungs-Maximum.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 27480
+  }
 }

@@ -363,5 +363,12 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 263
   },
-  "ref": 10
+  "ref": 10,
+  "assessment": {
+    "verdict": "kandidat",
+    "note": "AHK, Kamera und Teilleder ab Werk, jung und günstig — aber kein ACC.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 28970
+  }
 }

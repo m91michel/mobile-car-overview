@@ -345,5 +345,12 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 203
   },
-  "ref": 11
+  "ref": 11,
+  "assessment": {
+    "verdict": "kandidat",
+    "note": "320i mit AHK, Kamera und HUD ab Werk, nichts nachzurüsten — aber kein ACC.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 29900
+  }
 }

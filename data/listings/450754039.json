@@ -332,5 +332,12 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 289
   },
-  "ref": 13
+  "ref": 13,
+  "assessment": {
+    "verdict": "kandidat",
+    "note": "ACC, AHK und Kamera ab Werk — verliert nach der 1.600-€-AHK gegen #26: teurer, weniger Motor.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 30660
+  }
 }

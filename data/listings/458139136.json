@@ -352,5 +352,12 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 240
   },
-  "ref": 7
+  "ref": 7,
+  "assessment": {
+    "verdict": "raus",
+    "note": "Raus: reine Stoffsitze. 28.613 km wären stark, aber ACC fehlt.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "effectivePrice": 29790
+  }
 }

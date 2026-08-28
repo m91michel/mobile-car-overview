@@ -393,5 +393,18 @@
     "consumptionL100km": 6.8,
     "distanceFromHomeKm": 423
   },
-  "ref": 14
+  "ref": 14,
+  "assessment": {
+    "verdict": "kandidat",
+    "note": "320i mit Vollleder, Panorama und Memory — aber kein ACC und 423 km Anfahrt.",
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "effectivePrice": 30590
+  }
 }
