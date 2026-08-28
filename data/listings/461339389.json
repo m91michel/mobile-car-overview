@@ -352,6 +352,11 @@
     "note": "Sitze am Foto geprüft: M-Sport-Sitz mit Stoffbahnen und Alcantara-Wangen, keine reine Stoffausstattung.",
     "retrofit": [],
     "retrofitCost": 0,
-    "effectivePrice": 32900
+    "mileageAdjustment": {
+      "expectedKm": 27500,
+      "deviationKm": 2300,
+      "adjustment": 230
+    },
+    "effectivePrice": 33130
   }
 }

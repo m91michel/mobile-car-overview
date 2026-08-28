@@ -354,7 +354,12 @@
     "note": "320i mit AHK, Kamera und HUD ab Werk, nichts nachzurüsten — aber kein ACC.",
     "retrofit": [],
     "retrofitCost": 0,
-    "effectivePrice": 29900
+    "mileageAdjustment": {
+      "expectedKm": 51250,
+      "deviationKm": -2850,
+      "adjustment": -280
+    },
+    "effectivePrice": 29620
   },
   "availability": {
     "status": "available",

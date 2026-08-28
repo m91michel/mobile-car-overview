@@ -361,6 +361,7 @@
     "note": "Raus: reine Stoffsitze. 28.613 km wären stark, aber ACC fehlt.",
     "retrofit": [],
     "retrofitCost": 0,
+    "mileageAdjustment": null,
     "effectivePrice": 29790
   }
 }

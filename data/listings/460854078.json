@@ -319,6 +319,7 @@
     "note": "Raus: reine Stoffsitze. Ohne ACC und Kamera trotz 20 km Anfahrt kein Kandidat.",
     "retrofit": [],
     "retrofitCost": 0,
+    "mileageAdjustment": null,
     "effectivePrice": 24999
   }
 }

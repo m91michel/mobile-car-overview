@@ -341,7 +341,12 @@
     "note": "ACC, AHK und Kamera ab Werk — verliert nach der 1.600-€-AHK gegen #26: teurer, weniger Motor.",
     "retrofit": [],
     "retrofitCost": 0,
-    "effectivePrice": 30660
+    "mileageAdjustment": {
+      "expectedKm": 40000,
+      "deviationKm": -309,
+      "adjustment": -30
+    },
+    "effectivePrice": 30630
   },
   "availability": {
     "status": "available",

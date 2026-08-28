@@ -361,6 +361,7 @@
     "note": "Raus: reine Stoffsitze. AHK und Kamera ab Werk, aber kein ACC.",
     "retrofit": [],
     "retrofitCost": 0,
+    "mileageAdjustment": null,
     "effectivePrice": 29490
   }
 }

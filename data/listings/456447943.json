@@ -345,6 +345,11 @@
     "note": null,
     "retrofit": [],
     "retrofitCost": 0,
-    "effectivePrice": 33980
+    "mileageAdjustment": {
+      "expectedKm": 12500,
+      "deviationKm": -3210,
+      "adjustment": -320
+    },
+    "effectivePrice": 33660
   }
 }

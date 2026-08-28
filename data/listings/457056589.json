@@ -374,6 +374,7 @@
     "note": "Raus: Diesel und 83.530 km.",
     "retrofit": [],
     "retrofitCost": 0,
+    "mileageAdjustment": null,
     "effectivePrice": 28790
   },
   "availability": {

@@ -361,6 +361,7 @@
     "note": "Raus: F31 von 2017, nicht G21 — verzerrt nur das Preisgefühl.",
     "retrofit": [],
     "retrofitCost": 0,
+    "mileageAdjustment": null,
     "effectivePrice": 18990
   },
   "availability": {

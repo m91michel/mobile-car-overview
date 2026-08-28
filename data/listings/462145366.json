@@ -375,6 +375,7 @@
     "note": "Raus: Alpinweiß. Sonst M Sport, Alcantara und Kamera — aber kein ACC.",
     "retrofit": [],
     "retrofitCost": 0,
+    "mileageAdjustment": null,
     "effectivePrice": 31890
   },
   "availability": {

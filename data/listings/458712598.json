@@ -351,6 +351,7 @@
     "note": "Raus: reine Stoffsitze. Auch kein ACC.",
     "retrofit": [],
     "retrofitCost": 0,
+    "mileageAdjustment": null,
     "effectivePrice": 27890
   }
 }

@@ -402,6 +402,7 @@
     "note": "Raus: am Foto bestätigt reine Stoffausstattung in Hellgrau. Zudem 68.900 km, keine Sportsitze, Basis-Lenkrad.",
     "retrofit": [],
     "retrofitCost": 0,
+    "mileageAdjustment": null,
     "effectivePrice": 28850
   },
   "availability": {

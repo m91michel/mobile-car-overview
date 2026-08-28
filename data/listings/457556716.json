@@ -336,6 +336,7 @@
     "note": "Raus: Diesel, Stoffsitze und 78.000 km.",
     "retrofit": [],
     "retrofitCost": 0,
+    "mileageAdjustment": null,
     "effectivePrice": 23999
   },
   "availability": {

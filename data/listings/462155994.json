@@ -349,6 +349,7 @@
     "note": "Raus: reine Stoffsitze. Ohne ACC und relativ zum Marktband zu teuer.",
     "retrofit": [],
     "retrofitCost": 0,
+    "mileageAdjustment": null,
     "effectivePrice": 30890
   },
   "availability": {

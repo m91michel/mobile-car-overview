@@ -359,7 +359,12 @@
     "note": "Sensatec-Wangen am Foto sichtbar, Sitzmitte unklar - Material beim Händler klären. Starre AHK, 03/2021 Vor-Facelift, Händler ohne Bewertungen.",
     "retrofit": [],
     "retrofitCost": 0,
-    "effectivePrice": 28490
+    "mileageAdjustment": {
+      "expectedKm": 81250,
+      "deviationKm": -37850,
+      "adjustment": -3780
+    },
+    "effectivePrice": 24710
   },
   "availability": {
     "status": "sold",

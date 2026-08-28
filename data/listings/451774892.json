@@ -359,7 +359,12 @@
     "note": "Zielbild komplett ab Werk bis auf den Motor; nichts nachzurüsten, aber das teuerste Auto.",
     "retrofit": [],
     "retrofitCost": 0,
-    "effectivePrice": 32580
+    "mileageAdjustment": {
+      "expectedKm": 23750,
+      "deviationKm": 17850,
+      "adjustment": 1790
+    },
+    "effectivePrice": 34370
   },
   "availability": {
     "status": "available",

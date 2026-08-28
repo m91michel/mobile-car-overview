@@ -372,7 +372,12 @@
     "note": "AHK, Kamera und Teilleder ab Werk, jung und günstig — aber kein ACC.",
     "retrofit": [],
     "retrofitCost": 0,
-    "effectivePrice": 28970
+    "mileageAdjustment": {
+      "expectedKm": 31250,
+      "deviationKm": 11713,
+      "adjustment": 1170
+    },
+    "effectivePrice": 30140
   },
   "availability": {
     "status": "available",

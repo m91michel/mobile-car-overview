@@ -328,6 +328,7 @@
     "note": "Raus: Diesel. ACC, AHK, Kamera und HUD wären sonst stark.",
     "retrofit": [],
     "retrofitCost": 0,
+    "mileageAdjustment": null,
     "effectivePrice": 28680
   },
   "availability": {

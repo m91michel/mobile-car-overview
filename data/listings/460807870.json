@@ -335,6 +335,7 @@
     "note": "Raus: Diesel. Wäre mit ACC, AHK, Kamera und M Sport sonst komplett.",
     "retrofit": [],
     "retrofitCost": 0,
+    "mileageAdjustment": null,
     "effectivePrice": 29999
   }
 }
