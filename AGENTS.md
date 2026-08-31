@@ -131,9 +131,23 @@ learned the same lesson earlier on its own 29-listing run:
   pnpm scrape -- --saved --refresh --max-age 6   # skips what already landed
   ```
 
-Recovering from a block is waiting, not tuning. Observed: still blocked ~10
-minutes in, cleared within the hour. A single detail page is the cheapest way
-to test whether it has lifted — do not test with a full run.
+Recovering from a block is waiting, not tuning — and the budget comes back
+more slowly than the block page goes away. Observed on one evening: blocked on
+page 41, still blocked 10 minutes later, a single detail page rendering
+normally after ~45 minutes, and then **only four more listings** before the
+next block. So a page that loads is not proof the run budget has reset; it
+only proves the hard refusal has lifted. Allow hours, not minutes, before
+resuming a large refresh.
+
+Two corollaries for testing whether a block has lifted:
+
+- Use a **single detail page**, never a full run.
+- Probe it with `AVAILABILITY_PROBE`'s title check, **not**
+  `LISTING_READY_PROBE`. Reloading one id repeatedly serves the RSC payload
+  from cache without re-pushing `self.__next_f`, so the readiness probe
+  reports `pending` on a perfectly live page and reads as a block that is
+  still in force. `availability.mjs` documents this; it is easy to walk into
+  again when writing a one-off waiter.
 
 **Do not kill a blocked run with Ctrl-C.** The index, the ref registry and the
 sold list are all written in one pass at the very end, so killing the process
