@@ -13,9 +13,18 @@
 //   --refresh           re-fetch every id already present in data/cars.json
 //   --recheck-sold      also re-try listings previously found sold
 //   --max-age <hours>   skip cars fetched more recently than this
-//   --delay <ms>        pause between listings per worker (default 1200)
+//   --delay <ms>        pause between listings per worker (default 2500, jittered)
 //   --retries <n>       retries per listing (default 2)
+//   --cooloff <ms>      first wait after a bot-block, grows per retry (default 60000)
 //   --concurrency <n>   parallel tabs (default 1; keep low to stay unremarkable)
+//
+// On pacing: a 49-listing refresh at a flat 2.5s earned an Akamai block on the
+// 41st page, and the three that followed were refused too. Volume is what gets
+// noticed, not just the gap, so the delay is jittered (a metronome is exactly
+// what a bot looks like) and the run gives up after a few blocks in a row
+// rather than grinding through them - every retry while blocked digs the hole
+// deeper. Whatever was fetched before that is still written, so an abandoned
+// run resumes with --max-age instead of starting over.
 
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -33,6 +42,13 @@ const DETAIL_URL = (id) =>
   `https://suchen.mobile.de/fahrzeuge/details.html?id=${id}&scopeId=C&action=compareItem`;
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+// A metronome is exactly what a bot looks like; spread the gap by +-40%.
+const jittered = (ms) => Math.round(ms * (0.6 + Math.random() * 0.8));
+
+// Three blocks in a row means the whole run is being refused, not one page.
+const BLOCK_LIMIT = 3;
+let consecutiveBlocks = 0;
+let abandoned = false;
 
 function parseArgs(argv) {
   const options = {
@@ -42,8 +58,9 @@ function parseArgs(argv) {
     refresh: false,
     recheckSold: false,
     maxAgeHours: null,
-    delayMs: 1200,
+    delayMs: 2500,
     retries: 2,
+    cooloffMs: 60000,
     concurrency: 1,
   };
 
@@ -60,6 +77,7 @@ function parseArgs(argv) {
       case '--max-age': options.maxAgeHours = Number(value()); break;
       case '--delay': options.delayMs = Number(value()); break;
       case '--retries': options.retries = Number(value()); break;
+      case '--cooloff': options.cooloffMs = Number(value()); break;
       case '--concurrency': options.concurrency = Math.max(1, Number(value())); break;
       default:
         if (arg.startsWith('--')) throw new Error(`Unknown flag: ${arg}`);
@@ -120,12 +138,12 @@ function readIdFile(file) {
 }
 
 /** Fetch one listing, with retries for slow renders and transient blocks. */
-async function fetchListing(page, id, { retries, delayMs }) {
+async function fetchListing(page, id, { retries, delayMs, cooloffMs }) {
   const url = DETAIL_URL(id);
   let lastError;
 
   for (let attempt = 0; attempt <= retries; attempt++) {
-    if (attempt > 0) await sleep(delayMs * (attempt + 1)); // back off a little
+    if (attempt > 0) await sleep(jittered(delayMs) * (attempt + 1)); // back off a little
     try {
       await page.goto(url);
       const status = await page.waitForStatus(LISTING_READY_PROBE, { timeoutMs: 20000 });
@@ -137,7 +155,16 @@ async function fetchListing(page, id, { retries, delayMs }) {
         });
       }
       if (status === 'blocked') {
-        lastError = new Error('bot-block page served');
+        // A block says nothing about this listing, so it must not be recorded
+        // as one. Sit out a real cooloff -- the ordinary backoff is far too
+        // short to outlast an Akamai refusal -- and flag it for the caller,
+        // which counts blocks across listings and abandons the run.
+        lastError = Object.assign(new Error('bot-block page served'), { blocked: true });
+        if (attempt < retries) {
+          const wait = cooloffMs * (attempt + 1);
+          console.log(`        bot-block, waiting ${Math.round(wait / 1000)}s before retry`);
+          await sleep(wait);
+        }
         continue;
       }
 
@@ -243,7 +270,7 @@ let done = 0;
 async function worker() {
   const page = await openPage(PORT, { newTab: workerCount > 1 });
   try {
-    while (queue.length) {
+    while (queue.length && !abandoned) {
       const id = queue.shift();
       try {
         const car = await fetchListing(page, id, options);
@@ -251,15 +278,24 @@ async function worker() {
         applyAssessment(assessments, car);
         writeFileSync(resolve(OUT_DIR, `${car.id}.json`), JSON.stringify(car, null, 2));
         cars.push(car);
+        consecutiveBlocks = 0;
         console.log(
           `  [${++done}/${ids.length}] #${car.ref} ${id} ${car.shortTitle} - ${car.price.localized ?? 'n/a'}`,
         );
       } catch (error) {
         if (/no longer available/.test(error.message)) unavailable[id] = new Date().toISOString();
+        // A blocked listing is not a failed listing: put it back so a later
+        // run retries it, and stop once the whole run is plainly being refused.
+        if (error.blocked) {
+          queue.push(id);
+          if (++consecutiveBlocks >= BLOCK_LIMIT) abandoned = true;
+          console.log(`  [${done}/${ids.length}] ${id} blocked - will retry in a later run`);
+          continue;
+        }
         failures.push({ id, message: error.message });
         console.log(`  [${++done}/${ids.length}] ${id} FAILED (${error.message})`);
       }
-      if (queue.length) await sleep(options.delayMs);
+      if (queue.length && !abandoned) await sleep(jittered(options.delayMs));
     }
   } finally {
     await page.close();
@@ -290,6 +326,16 @@ console.log(
   `\n${cars.length} fetched, ${failures.length} failed, ${skipped + soldSkipped} skipped.`,
 );
 console.log(`Index: data/cars.json (${merged.size} car(s) total)`);
+
+if (abandoned) {
+  console.log(
+    `\nStopped after ${BLOCK_LIMIT} bot-blocks in a row - mobile.de is refusing the ` +
+      'whole run, not one listing. Leave it an hour and run again; the ' +
+      `${queue.length} listing(s) left over kept their previous data, and ` +
+      '--max-age skips what this run already got.',
+  );
+}
+
 if (failures.length) {
   for (const f of failures) console.log(`  ${f.id}: ${f.message}`);
   // Sold cars are normal attrition in a long comparison, not a run failure.

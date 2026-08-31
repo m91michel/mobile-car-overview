@@ -87,11 +87,12 @@ Output is `data/listings/<id>.json` per car, merged into `data/cars.json`.
 | `--refresh` | re-fetch every id already in `data/cars.json` |
 | `--recheck-sold` | also re-try listings previously recorded as sold |
 | `--max-age <hours>` | skip cars fetched more recently than this |
-| `--delay <ms>` | pause between listings per worker (default 1200) |
+| `--delay <ms>` | pause between listings per worker (default 2500, jittered ±40%) |
 | `--retries <n>` | retries per listing (default 2, with backoff) |
+| `--cooloff <ms>` | first wait after a bot-block, grows per retry (default 60000) |
 | `--concurrency <n>` | parallel tabs (default 1) |
 
-Two things make batch runs bearable:
+Three things make batch runs bearable:
 
 - **Adaptive waiting.** Instead of sleeping a fixed few seconds per page, the
   fetcher polls a cheap in-page probe (`LISTING_READY_PROBE`) until the RSC
@@ -99,9 +100,46 @@ Two things make batch runs bearable:
 - **Failures stay local.** A sold or slow listing is retried, then recorded and
   skipped; the run continues and the index is merged rather than replaced.
   Sold-out cars alone do not fail the run's exit code.
+- **A block ends the run, it does not fail a car.** See below.
 
 Keep `--concurrency` low (1-3). It drives real tabs in one browser, which is
 ordinary behaviour, but a dozen parallel tabs is not.
+
+### What a bot-block looks like, and why the run stops
+
+A 49-listing `--saved --refresh` at a flat 2.5s delay was served
+`Zugriff verweigert` on the **41st** page, and the three pages after it were
+refused too. So the useful budget is somewhere around 40 detail pages in one
+sitting, and it is **volume that gets noticed, not only the gap** — widening
+`--delay` alone does not buy an unlimited run.
+
+Three properties follow from that, and they match `pnpm available`, which
+learned the same lesson earlier on its own 29-listing run:
+
+- **The delay is jittered ±40%.** A request exactly every 2500ms is a
+  metronome, which is precisely what a bot looks like. The mean is unchanged.
+- **A blocked listing is re-queued, never recorded.** A block says nothing
+  about the car, so it must not land in the failure list where a reader —
+  or a future script — could mistake it for a sold listing. It goes back on
+  the queue for a later run and keeps the data it already had.
+- **Three blocks in a row abandon the whole run.** Past that point mobile.de
+  is refusing the session rather than one page, and every further retry only
+  digs the hole deeper. Everything fetched before the block is still written
+  to `data/` and the index, so the run resumes rather than restarting:
+
+  ```bash
+  pnpm scrape -- --saved --refresh --max-age 6   # skips what already landed
+  ```
+
+Recovering from a block is waiting, not tuning. Observed: still blocked ~10
+minutes in, cleared within the hour. A single detail page is the cheapest way
+to test whether it has lifted — do not test with a full run.
+
+**Do not kill a blocked run with Ctrl-C.** The index, the ref registry and the
+sold list are all written in one pass at the very end, so killing the process
+leaves `data/listings/*.json` updated while `data/cars.json` still shows the old
+prices. `pnpm renormalize` rebuilds the index from the listing files and repairs
+exactly that, but letting the run abandon itself avoids the problem entirely.
 
 ### Mein Parkplatz (bookmarked cars)
 
