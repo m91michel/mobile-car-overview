@@ -2,7 +2,7 @@
   "id": "40022702478304",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-320e-touring-hifi-dab-tempomat-parkassistent-n%C3%BCrtingen/40022702478304.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40022702478304&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T18:43:03.620Z",
+  "fetchedAt": "2026-08-31T17:11:12.031Z",
   "title": "BMW 320e Touring HiFi DAB Tempomat Parkassistent",
   "shortTitle": "BMW 320",
   "subTitle": "e Touring HiFi DAB Tempomat Parkassistent",
@@ -134,7 +134,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
+      "value": "Kamera, Selbstlenkende Systeme, Vorne, Hinten",
       "group": "vehicle"
     },
     "airbag": {

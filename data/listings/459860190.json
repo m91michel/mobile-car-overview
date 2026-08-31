@@ -2,7 +2,7 @@
   "id": "459860190",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sportpaket-r%C3%BCsselsheim-am-main/459860190.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=459860190&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T19:03:18.135Z",
+  "fetchedAt": "2026-08-31T17:12:01.131Z",
   "title": "BMW 318i Touring M-Sportpaket",
   "shortTitle": "BMW 318",
   "subTitle": "i Touring M-Sportpaket",
@@ -116,7 +116,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
+      "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme",
       "group": "vehicle"
     },
     "airbag": {

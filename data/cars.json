@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T16:33:50.490Z",
+  "updatedAt": "2026-08-31T17:21:56.408Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -15213,7 +15213,7 @@
       "id": "452624993",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320-e-m-sport-pro-touring-allblack-facelift-1hd-eging-am-see/452624993.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=452624993&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T18:41:43.773Z",
+      "fetchedAt": "2026-08-31T17:10:49.117Z",
       "title": "BMW 320 e M Sport Pro Touring AllBlack Facelift 1Hd",
       "shortTitle": "BMW 320",
       "subTitle": "e M Sport Pro Touring AllBlack Facelift 1Hd",
@@ -15330,7 +15330,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, Kamera, Vorne",
+          "value": "Kamera, Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -15583,7 +15583,7 @@
       "id": "40022702478304",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320e-touring-hifi-dab-tempomat-parkassistent-n%C3%BCrtingen/40022702478304.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40022702478304&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T18:43:03.620Z",
+      "fetchedAt": "2026-08-31T17:11:12.031Z",
       "title": "BMW 320e Touring HiFi DAB Tempomat Parkassistent",
       "shortTitle": "BMW 320",
       "subTitle": "e Touring HiFi DAB Tempomat Parkassistent",
@@ -15715,7 +15715,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
+          "value": "Kamera, Selbstlenkende Systeme, Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -15910,7 +15910,7 @@
       "id": "461317258",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320e-ahk-driv-assist-prof-harman-k-kamera-led-dreieich-sprendlingen/461317258.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461317258&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T18:47:08.748Z",
+      "fetchedAt": "2026-08-31T17:11:37.527Z",
       "title": "BMW 320e AHK Driv.Assist.Prof Harman/K Kamera LED",
       "shortTitle": "BMW 320",
       "subTitle": "e AHK Driv.Assist.Prof Harman/K Kamera LED",
@@ -16058,7 +16058,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Hinten, Vorne, Kamera",
+          "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
           "group": "vehicle"
         },
         "airbag": {
@@ -16162,9 +16162,19 @@
       ],
       "highlights": [],
       "images": [
-        "https://img.classistatic.de/api/v1/mo-prod/images/0b/0b2bb4be-a216-4aaa-8f18-8af2a55b7d8f",
-        "https://img.classistatic.de/api/v1/mo-prod/images/bb/bbbf5884-cb65-4d20-a28a-51392686feb1",
-        "https://img.classistatic.de/api/v1/mo-prod/images/a5/a5011448-4a9b-4a68-8a01-b4b71d0081cf",
+        "https://img.classistatic.de/api/v1/mo-prod/images/e3/e38c70db-8907-4e8a-90bd-c8a4ac619dee",
+        "https://img.classistatic.de/api/v1/mo-prod/images/ab/ab692c4e-084f-4274-aeae-4968e5313d7d",
+        "https://img.classistatic.de/api/v1/mo-prod/images/20/20d8f2f7-39d8-4445-bcbd-ad901ecb7cd1",
+        "https://img.classistatic.de/api/v1/mo-prod/images/f8/f8a8d59a-178c-4ca4-9734-e54c5198a91f",
+        "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb1c69ff-fe42-4503-9beb-42fdbbb1bd84",
+        "https://img.classistatic.de/api/v1/mo-prod/images/28/283816cb-a8e3-4aef-bc19-45e03a4fb235",
+        "https://img.classistatic.de/api/v1/mo-prod/images/25/254214c6-2249-438c-878d-6767c7bdf490",
+        "https://img.classistatic.de/api/v1/mo-prod/images/bb/bbbb95f5-4668-49ed-b891-ccd496c03f9a",
+        "https://img.classistatic.de/api/v1/mo-prod/images/73/737c76a9-467d-4f4e-ab67-60fa1d0d10bb",
+        "https://img.classistatic.de/api/v1/mo-prod/images/8c/8cdb5e42-f949-4a00-9968-0d959f536a2a",
+        "https://img.classistatic.de/api/v1/mo-prod/images/07/074395f0-fefe-4614-b53b-7590cf8cf5ce",
+        "https://img.classistatic.de/api/v1/mo-prod/images/82/8220dff8-cedf-44c9-ac2f-18947a5f3c0f",
+        "https://img.classistatic.de/api/v1/mo-prod/images/ec/ec5981e8-2881-4335-a2fa-51b17ac1cd17",
         "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d4debca-025f-4d3f-b272-03a2461c596a",
         "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f6589cc-efe3-4e13-b9f5-c5b158912ba3"
       ],
@@ -16182,17 +16192,17 @@
         },
         "openingHours": [
           {
-            "time": "08:30 Uhr - 18:30 Uhr",
-            "day": "Mo - Fr"
+            "day": "Mo - Fr",
+            "time": "08:30 Uhr - 18:30 Uhr"
           },
           {
-            "time": "09:00 Uhr - 16:00 Uhr",
-            "day": "Sa"
+            "day": "Sa",
+            "time": "09:00 Uhr - 16:00 Uhr"
           }
         ],
         "rating": {
           "score": 4.5,
-          "count": 839,
+          "count": 840,
           "recommendationRate": 88
         }
       },
@@ -16253,7 +16263,7 @@
       "id": "459860190",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sportpaket-r%C3%BCsselsheim-am-main/459860190.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=459860190&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T19:03:18.135Z",
+      "fetchedAt": "2026-08-31T17:12:01.131Z",
       "title": "BMW 318i Touring M-Sportpaket",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring M-Sportpaket",
@@ -16367,7 +16377,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
+          "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme",
           "group": "vehicle"
         },
         "airbag": {

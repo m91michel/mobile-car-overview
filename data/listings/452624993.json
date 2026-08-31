@@ -2,7 +2,7 @@
   "id": "452624993",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-320-e-m-sport-pro-touring-allblack-facelift-1hd-eging-am-see/452624993.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=452624993&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T18:41:43.773Z",
+  "fetchedAt": "2026-08-31T17:10:49.117Z",
   "title": "BMW 320 e M Sport Pro Touring AllBlack Facelift 1Hd",
   "shortTitle": "BMW 320",
   "subTitle": "e M Sport Pro Touring AllBlack Facelift 1Hd",
@@ -119,7 +119,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Hinten, Kamera, Vorne",
+      "value": "Kamera, Vorne, Hinten",
       "group": "vehicle"
     },
     "airbag": {
