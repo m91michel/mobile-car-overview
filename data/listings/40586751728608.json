@@ -2,7 +2,7 @@
   "id": "40586751728608",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-tour-acc-sportsitze-kamera-parkassist-sh-bietigheim-bissingen/40586751728608.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40586751728608&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:26:50.579Z",
+  "fetchedAt": "2026-08-31T16:24:36.512Z",
   "title": "BMW 318i Tour. ACC Sportsitze Kamera Parkassist SH",
   "shortTitle": "BMW 318",
   "subTitle": "i Tour. ACC Sportsitze Kamera Parkassist SH",
@@ -135,7 +135,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Kamera, Hinten, Selbstlenkende Systeme, Vorne",
+      "value": "Kamera, Selbstlenkende Systeme, Vorne, Hinten",
       "group": "vehicle"
     },
     "airbag": {
@@ -158,6 +158,24 @@
       "value": "Teilleder, Schwarz",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 50960,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-08",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 148,
+    "generation": "G81",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 08/2023, nach der Umstellung"
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -299,24 +317,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 50960,
-    "powerKw": 115,
-    "powerHp": 156,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2023-08",
-    "constructionYear": null,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": null,
-    "fuelTankLitres": null,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 148,
-    "generation": "G81",
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 08/2023, nach der Umstellung"
-  },
   "ref": 18,
   "assessment": {
     "verdict": "top",
@@ -335,9 +335,5 @@
       "adjustment": 600
     },
     "effectivePrice": 27995
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:51:41.220Z"
   }
 }

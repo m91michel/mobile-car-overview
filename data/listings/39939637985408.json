@@ -2,7 +2,7 @@
   "id": "39939637985408",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-touring-lc-prof-hud-led-rfk-ahk-st-go-17-detmold/39939637985408.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=39939637985408&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T09:48:08.965Z",
+  "fetchedAt": "2026-08-31T16:27:20.732Z",
   "title": "BMW 320i Touring LC-Prof HUD LED RFK AHK St+Go 17\"",
   "shortTitle": "BMW 320",
   "subTitle": "i Touring LC-Prof HUD LED RFK AHK St+Go 17\"",
@@ -192,7 +192,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
+      "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
       "group": "vehicle"
     },
     "airbag": {
@@ -343,12 +343,12 @@
     },
     "openingHours": [
       {
-        "time": "08:30 Uhr - 19:00 Uhr",
-        "day": "Mo - Fr"
+        "day": "Mo - Fr",
+        "time": "08:30 Uhr - 19:00 Uhr"
       },
       {
-        "time": "09:00 Uhr - 14:00 Uhr",
-        "day": "Sa"
+        "day": "Sa",
+        "time": "09:00 Uhr - 14:00 Uhr"
       }
     ],
     "rating": {
@@ -404,9 +404,5 @@
     "retrofitCost": 0,
     "mileageAdjustment": null,
     "effectivePrice": 28850
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:51:38.450Z"
   }
 }

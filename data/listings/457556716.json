@@ -2,14 +2,14 @@
   "id": "457556716",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318da-touring-widescreen-led-carplay-navi-tempo-baiersdorf/457556716.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=457556716&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:28:39.220Z",
+  "fetchedAt": "2026-08-31T16:25:48.457Z",
   "title": "BMW 318dA Touring -WIDESCREEN-LED-CARPLAY-NAVI-TEMPO",
   "shortTitle": "BMW 318",
   "subTitle": "dA Touring -WIDESCREEN-LED-CARPLAY-NAVI-TEMPO",
   "make": "BMW",
   "model": "318",
   "category": "EstateCar",
-  "isNew": false,
+  "isNew": true,
   "kba": null,
   "price": {
     "gross": 23999,
@@ -165,6 +165,24 @@
       "group": "vehicle"
     }
   },
+  "derived": {
+    "mileageKm": 78000,
+    "powerKw": 110,
+    "powerHp": 150,
+    "cubicCapacityCcm": 1995,
+    "firstRegistration": "2023-02",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": 100,
+    "distanceFromHomeKm": 21,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 02/2023, nach der Umstellung"
+  },
   "features": [
     "ABS",
     "Abstandswarner",
@@ -259,12 +277,12 @@
     },
     "openingHours": [
       {
-        "day": "Mo - Fr",
-        "time": "09:00 Uhr - 17:00 Uhr"
+        "time": "09:00 Uhr - 17:00 Uhr",
+        "day": "Mo - Fr"
       },
       {
-        "day": "Sa",
-        "time": "08:00 Uhr - 12:00 Uhr"
+        "time": "08:00 Uhr - 12:00 Uhr",
+        "day": "Sa"
       }
     ],
     "rating": {
@@ -312,24 +330,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 78000,
-    "powerKw": 110,
-    "powerHp": 150,
-    "cubicCapacityCcm": 1995,
-    "firstRegistration": "2023-02",
-    "constructionYear": null,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": null,
-    "fuelTankLitres": null,
-    "co2GramsPerKm": null,
-    "consumptionL100km": 100,
-    "distanceFromHomeKm": 21,
-    "generation": "G21",
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 02/2023, nach der Umstellung"
-  },
   "ref": 23,
   "assessment": {
     "verdict": "raus",
@@ -338,9 +338,5 @@
     "retrofitCost": 0,
     "mileageAdjustment": null,
     "effectivePrice": 23999
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:45:24.205Z"
   }
 }

@@ -2,7 +2,7 @@
   "id": "460259599",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318-i-tour-m-sportp-ahk-acc-ad-led-headup-hifi-vaihingen-enz/460259599.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460259599&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T12:45:10.273Z",
+  "fetchedAt": "2026-08-31T16:28:12.799Z",
   "title": "BMW 318 i Tour M Sportp. AHK°ACC*Ad.LED°Headup+HIFI",
   "shortTitle": "BMW 318",
   "subTitle": "i Tour M Sportp. AHK°ACC*Ad.LED°Headup+HIFI",
@@ -10,7 +10,7 @@
   "model": "318",
   "category": "EstateCar",
   "sku": "61124",
-  "isNew": true,
+  "isNew": false,
   "kba": {
     "hsn": "0005",
     "tsn": "CYW"
@@ -27,14 +27,14 @@
   "priceRating": {
     "rating": "GOOD_PRICE",
     "label": "Guter Preis",
-    "offset": 11,
+    "offset": 26,
     "thresholds": [
-      "25.800 €",
-      "33.600 €",
-      "36.200 €",
-      "40.200 €",
-      "43.200 €",
-      "48.000 €"
+      "25.600 €",
+      "33.200 €",
+      "35.800 €",
+      "39.800 €",
+      "42.700 €",
+      "47.500 €"
     ]
   },
   "facts": {
@@ -165,7 +165,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Vorne, Hinten, 360°-Kamera",
+      "value": "Selbstlenkende Systeme, Hinten, 360°-Kamera, Vorne",
       "group": "vehicle"
     },
     "airbag": {

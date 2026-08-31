@@ -2,14 +2,14 @@
   "id": "460854078",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318ia-widescreen-dab-tempo-sitzh-pdc-navi-baiersdorf/460854078.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460854078&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:28:17.525Z",
+  "fetchedAt": "2026-08-31T16:25:25.489Z",
   "title": "BMW 318iA*Widescreen*DAB*Tempo*Sitzh*PDC*Navi....",
   "shortTitle": "BMW 318",
   "subTitle": "iA*Widescreen*DAB*Tempo*Sitzh*PDC*Navi....",
   "make": "BMW",
   "model": "318",
   "category": "EstateCar",
-  "isNew": false,
+  "isNew": true,
   "kba": {
     "hsn": "0005",
     "tsn": "CYI"
@@ -139,7 +139,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Hinten, Selbstlenkende Systeme",
+      "value": "Hinten, Vorne, Selbstlenkende Systeme",
       "group": "vehicle"
     },
     "airbag": {
@@ -162,6 +162,24 @@
       "value": "4",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 45000,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2024-06",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": 145,
+    "consumptionL100km": 6.5,
+    "distanceFromHomeKm": 20,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 06/2024, nach der Umstellung"
   },
   "features": [
     "ABS",
@@ -242,12 +260,12 @@
     },
     "openingHours": [
       {
-        "time": "09:00 Uhr - 18:00 Uhr",
-        "day": "Mo - Fr"
+        "day": "Mo - Fr",
+        "time": "09:00 Uhr - 18:00 Uhr"
       },
       {
-        "time": "11:00 Uhr - 14:00 Uhr",
-        "day": "Sa"
+        "day": "Sa",
+        "time": "11:00 Uhr - 14:00 Uhr"
       }
     ],
     "rating": {
@@ -295,24 +313,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 45000,
-    "powerKw": 115,
-    "powerHp": 156,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2024-06",
-    "constructionYear": null,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": null,
-    "fuelTankLitres": null,
-    "co2GramsPerKm": 145,
-    "consumptionL100km": 6.5,
-    "distanceFromHomeKm": 20,
-    "generation": "G21",
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 06/2024, nach der Umstellung"
-  },
   "ref": 22,
   "assessment": {
     "verdict": "raus",

@@ -2,7 +2,7 @@
   "id": "461144700",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-led-lc-prof-hud-ahk-360-hk-alarm-shz-pdc-t-unstruttal/461144700.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461144700&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T10:07:49.044Z",
+  "fetchedAt": "2026-08-31T16:27:43.660Z",
   "title": "BMW 320i LED LC Prof HUD AHK 360° HK Alarm SHZ PDC T",
   "shortTitle": "BMW 320",
   "subTitle": "i LED LC Prof HUD AHK 360° HK Alarm SHZ PDC T",
@@ -144,7 +144,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Hinten, Vorne, Selbstlenkende Systeme, 360°-Kamera",
+      "value": "Vorne, Hinten, Selbstlenkende Systeme, 360°-Kamera",
       "group": "vehicle"
     },
     "airbag": {
@@ -380,9 +380,5 @@
       "adjustment": 370
     },
     "effectivePrice": 30205
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T11:02:42.771Z"
   }
 }

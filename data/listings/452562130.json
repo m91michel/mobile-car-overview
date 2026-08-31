@@ -2,7 +2,7 @@
   "id": "452562130",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-320-320-i-sport-line-shadow-head-up-service-neu-f%C3%BCrth/452562130.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=452562130&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:29:00.910Z",
+  "fetchedAt": "2026-08-31T16:26:11.475Z",
   "title": "BMW 320 320 i Sport Line Shadow Head Up* Service Neu",
   "shortTitle": "BMW 320",
   "subTitle": "320 i Sport Line Shadow Head Up* Service Neu",
@@ -173,6 +173,24 @@
       "group": "vehicle"
     }
   },
+  "derived": {
+    "mileageKm": 45000,
+    "powerKw": 135,
+    "powerHp": 184,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2017-10",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 2,
+    "weightKg": 1595,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 2,
+    "generation": "F31",
+    "facelift": "other-generation",
+    "faceliftBasis": "F31 ist der Vorgänger-3er-Touring, kein G20/G21"
+  },
   "features": [
     "Abgedunkelte Scheiben",
     "ABS",
@@ -283,12 +301,12 @@
     },
     "openingHours": [
       {
-        "time": "10:00 Uhr - 18:00 Uhr",
-        "day": "Mo - Fr"
+        "day": "Mo - Fr",
+        "time": "10:00 Uhr - 18:00 Uhr"
       },
       {
-        "time": "10:00 Uhr - 15:00 Uhr",
-        "day": "Sa"
+        "day": "Sa",
+        "time": "10:00 Uhr - 15:00 Uhr"
       }
     ],
     "rating": {
@@ -337,24 +355,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 45000,
-    "powerKw": 135,
-    "powerHp": 184,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2017-10",
-    "constructionYear": null,
-    "seats": 5,
-    "previousOwners": 2,
-    "weightKg": 1595,
-    "fuelTankLitres": null,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 2,
-    "generation": "F31",
-    "facelift": "other-generation",
-    "faceliftBasis": "F31 ist der Vorgänger-3er-Touring, kein G20/G21"
-  },
   "ref": 24,
   "assessment": {
     "verdict": "raus",
@@ -363,9 +363,5 @@
     "retrofitCost": 0,
     "mileageAdjustment": null,
     "effectivePrice": 18990
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:52:06.747Z"
   }
 }

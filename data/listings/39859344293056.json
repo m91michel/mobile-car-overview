@@ -2,7 +2,7 @@
   "id": "39859344293056",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318d-touring-navi-led-acc-rfk-ahk-komfzg-hifi-heilbronn/39859344293056.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=39859344293056&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:24:39.180Z",
+  "fetchedAt": "2026-08-31T16:22:37.921Z",
   "title": "BMW 318d Touring Navi.LED.ACC.RFK.AHK.KomfZg.HiFi",
   "shortTitle": "BMW 318",
   "subTitle": "d Touring Navi.LED.ACC.RFK.AHK.KomfZg.HiFi",
@@ -16,25 +16,25 @@
     "tsn": "DDH"
   },
   "price": {
-    "gross": 28680,
-    "net": 24100.84,
+    "gross": 28300,
+    "net": 23781.51,
     "currency": "EUR",
-    "localized": "28.680 €",
+    "localized": "28.300 €",
     "vatRate": 19,
     "vatNote": "19,00% MwSt.",
     "type": "FIXED"
   },
   "priceRating": {
-    "rating": "REASONABLE_PRICE",
-    "label": "Fairer Preis",
-    "offset": 11,
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 95,
     "thresholds": [
-      "20.200 €",
-      "26.300 €",
-      "28.300 €",
-      "31.500 €",
-      "33.800 €",
-      "37.600 €"
+      "20.300 €",
+      "26.400 €",
+      "28.400 €",
+      "31.600 €",
+      "33.900 €",
+      "37.700 €"
     ]
   },
   "facts": {
@@ -135,7 +135,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera",
+      "value": "Vorne, Kamera, Selbstlenkende Systeme, Hinten",
       "group": "vehicle"
     },
     "airbag": {
@@ -158,6 +158,24 @@
       "value": "Kunstleder, Schwarz",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 63250,
+    "powerKw": 110,
+    "powerHp": 150,
+    "cubicCapacityCcm": 1995,
+    "firstRegistration": "2023-06",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 134,
+    "generation": "G81",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 06/2023, nach der Umstellung"
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -224,7 +242,7 @@
   ],
   "highlights": [],
   "images": [
-    "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a5b1a1b-03bf-4910-ba6c-03dd38500d0d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/92/927c9a5d-4746-4d9a-b2f5-2f94c2dd0af0",
     "https://img.classistatic.de/api/v1/mo-prod/images/d3/d3f0adf9-9c7b-4307-9b8a-619befad5265",
     "https://img.classistatic.de/api/v1/mo-prod/images/5b/5bb51858-e87e-4562-a281-fac956d7832d",
     "https://img.classistatic.de/api/v1/mo-prod/images/30/30e0f9d6-f4a0-405f-9c3a-38e5c017f8ce",
@@ -251,18 +269,18 @@
     },
     "openingHours": [
       {
-        "day": "Mo - Fr",
-        "time": "08:00 Uhr - 18:00 Uhr"
+        "time": "08:00 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
       },
       {
-        "day": "Sa",
-        "time": "09:00 Uhr - 12:00 Uhr"
+        "time": "09:00 Uhr - 12:00 Uhr",
+        "day": "Sa"
       }
     ],
     "rating": {
       "score": 4.7,
       "count": 225,
-      "recommendationRate": 88
+      "recommendationRate": 87
     }
   },
   "financePlans": [
@@ -276,52 +294,34 @@
         "bankName": "Openbank Deutschland AG",
         "loanBroker": "Check24 GmbH",
         "loanType": "BALLOON",
-        "downPayment": 5736,
+        "downPayment": 5660,
         "creditTerm": 60,
         "yearlyMileage": 10000,
-        "creditAmount": 22944,
+        "creditAmount": 22640,
         "interestRateNominal": 5.41,
         "interestRateEffective": 5.55,
-        "monthlyInstallment": 304.06,
-        "finalInstallment": 9464.4,
-        "totalInterest": 4459.96,
-        "totalAmount": 27403.96,
+        "monthlyInstallment": 300.03,
+        "finalInstallment": 9339,
+        "totalInterest": 4400.87,
+        "totalAmount": 27040.87,
         "localized": {
-          "downPayment": "5.736,00 €",
+          "downPayment": "5.660,00 €",
           "downPaymentInPercent": "20%",
           "creditTerm": "60",
           "creditTermInYears": "5",
           "yearlyMileage": "10.000",
-          "creditAmount": "22.944,00 €",
+          "creditAmount": "22.640,00 €",
           "interestRateNominal": "5,41%",
           "interestRateEffective": "5,55%",
-          "monthlyInstallment": "305 €",
-          "finalInstallment": "9.464,40 €",
-          "totalInterest": "4.459,96 €",
-          "totalAmount": "27.403,96 €",
+          "monthlyInstallment": "301 €",
+          "finalInstallment": "9.339,00 €",
+          "totalInterest": "4.400,87 €",
+          "totalAmount": "27.040,87 €",
           "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
         }
       }
     }
   ],
-  "derived": {
-    "mileageKm": 63250,
-    "powerKw": 110,
-    "powerHp": 150,
-    "cubicCapacityCcm": 1995,
-    "firstRegistration": "2023-06",
-    "constructionYear": null,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": null,
-    "fuelTankLitres": null,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 134,
-    "generation": "G81",
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 06/2023, nach der Umstellung"
-  },
   "ref": 12,
   "assessment": {
     "verdict": "raus",
@@ -329,10 +329,6 @@
     "retrofit": [],
     "retrofitCost": 0,
     "mileageAdjustment": null,
-    "effectivePrice": 28680
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:51:32.838Z"
+    "effectivePrice": 28300
   }
 }

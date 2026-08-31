@@ -2,7 +2,7 @@
   "id": "452520909",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-m-sport-acc-sitzheizung-navi-klimaautomatik-dietzenbach-bei-frankfurt/452520909.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=452520909&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:27:12.158Z",
+  "fetchedAt": "2026-08-31T16:24:59.430Z",
   "title": "BMW 318i M-Sport ACC|Sitzheizung|Navi|Klimaautomatik",
   "shortTitle": "BMW 318",
   "subTitle": "i M-Sport ACC|Sitzheizung|Navi|Klimaautomatik",
@@ -16,10 +16,10 @@
     "tsn": "CYW"
   },
   "price": {
-    "gross": 27573,
-    "net": 23170.59,
+    "gross": 27358,
+    "net": 22989.92,
     "currency": "EUR",
-    "localized": "27.573 €",
+    "localized": "27.358 €",
     "vatRate": 19,
     "vatNote": "19,00% MwSt.",
     "type": "FIXED"
@@ -27,7 +27,7 @@
   "priceRating": {
     "rating": "GOOD_PRICE",
     "label": "Guter Preis",
-    "offset": 88,
+    "offset": 77,
     "thresholds": [
       "19.900 €",
       "25.800 €",
@@ -179,6 +179,24 @@
       "group": "vehicle"
     }
   },
+  "derived": {
+    "mileageKm": 57348,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2022-01",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 168,
+    "generation": "G21",
+    "facelift": "pre-lci",
+    "faceliftBasis": "Erstzulassung 01/2022, vor der Umstellung"
+  },
   "features": [
     "Abgedunkelte Scheiben",
     "ABS",
@@ -275,17 +293,17 @@
     },
     "openingHours": [
       {
-        "day": "Mo - Fr",
-        "time": "09:00 Uhr - 18:30 Uhr"
+        "time": "09:00 Uhr - 18:30 Uhr",
+        "day": "Mo - Fr"
       },
       {
-        "day": "Sa",
-        "time": "09:00 Uhr - 15:00 Uhr"
+        "time": "09:00 Uhr - 15:00 Uhr",
+        "day": "Sa"
       }
     ],
     "rating": {
       "score": 4.8,
-      "count": 532,
+      "count": 533,
       "recommendationRate": 96
     }
   },
@@ -301,52 +319,34 @@
         "bankId": "Renault",
         "bankName": "Mobilize Financial Services, Geschäftsbereich der RCI Banque S.A. Niederlassung Deutschland",
         "loanType": "BALLOON",
-        "downPayment": 5514,
+        "downPayment": 5471,
         "creditTerm": 60,
         "yearlyMileage": 10000,
-        "creditAmount": 22059,
+        "creditAmount": 21887,
         "interestRateNominal": 5.83,
         "interestRateEffective": 5.99,
-        "monthlyInstallment": 262.61,
-        "finalInstallment": 11525.51,
-        "totalInterest": 4960.5,
-        "totalAmount": 27019.5,
+        "monthlyInstallment": 260.56,
+        "finalInstallment": 11435.64,
+        "totalInterest": 4921.68,
+        "totalAmount": 26808.68,
         "localized": {
-          "downPayment": "5.514,00 €",
+          "downPayment": "5.471,00 €",
           "downPaymentInPercent": "20%",
           "creditTerm": "60",
           "creditTermInYears": "5",
           "yearlyMileage": "10.000",
-          "creditAmount": "22.059,00 €",
+          "creditAmount": "21.887,00 €",
           "interestRateNominal": "5,83%",
           "interestRateEffective": "5,99%",
-          "monthlyInstallment": "263 €",
-          "finalInstallment": "11.525,51 €",
-          "totalInterest": "4.960,50 €",
-          "totalAmount": "27.019,50 €",
+          "monthlyInstallment": "261 €",
+          "finalInstallment": "11.435,64 €",
+          "totalInterest": "4.921,68 €",
+          "totalAmount": "26.808,68 €",
           "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Mobilize Financial Services, Geschäftsbereich der RCI Banque S.A. Niederlassung Deutschland (Darlehensgeber), Jagenbergstraße 1, 41468 Neuss. Bonität vorausgesetzt."
         }
       }
     }
   ],
-  "derived": {
-    "mileageKm": 57348,
-    "powerKw": 115,
-    "powerHp": 156,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2022-01",
-    "constructionYear": null,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": null,
-    "fuelTankLitres": 59,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 168,
-    "generation": "G21",
-    "facelift": "pre-lci",
-    "faceliftBasis": "Erstzulassung 01/2022, vor der Umstellung"
-  },
   "ref": 19,
   "assessment": {
     "verdict": "top",
@@ -369,10 +369,6 @@
       "deviationKm": -11402,
       "adjustment": -1140
     },
-    "effectivePrice": 29233
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:52:04.669Z"
+    "effectivePrice": 29018
   }
 }

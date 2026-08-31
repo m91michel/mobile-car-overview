@@ -2,7 +2,7 @@
   "id": "450754039",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-aut-waldshut-tiengen/450754039.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=450754039&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:25:22.205Z",
+  "fetchedAt": "2026-08-31T16:23:00.875Z",
   "title": "BMW 318i Touring Aut.",
   "shortTitle": "BMW 318",
   "subTitle": "i Touring Aut.",
@@ -140,7 +140,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Kamera, Hinten, Selbstlenkende Systeme, Vorne",
+      "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
       "group": "vehicle"
     },
     "airbag": {
@@ -188,6 +188,24 @@
       "value": "59 l",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 39691,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-12",
+    "constructionYear": 2023,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1650,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 289,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 12/2023, nach der Umstellung"
   },
   "features": [
     "ABS",
@@ -317,24 +335,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 39691,
-    "powerKw": 115,
-    "powerHp": 156,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2023-12",
-    "constructionYear": 2023,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": 1650,
-    "fuelTankLitres": 59,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 289,
-    "generation": "G21",
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 12/2023, nach der Umstellung"
-  },
   "ref": 13,
   "assessment": {
     "verdict": "kandidat",
@@ -347,9 +347,5 @@
       "adjustment": -30
     },
     "effectivePrice": 30630
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:51:59.106Z"
   }
 }

@@ -2,7 +2,7 @@
   "id": "40939067025760",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-ahk-rfk-lordose-led-shz-tempomat-bt-syke/40939067025760.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40939067025760&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T12:52:57.404Z",
+  "fetchedAt": "2026-08-31T16:29:46.379Z",
   "title": "BMW 318i Touring AHK RFK LORDOSE LED SHZ TEMPOMAT BT",
   "shortTitle": "BMW 318",
   "subTitle": "i Touring AHK RFK LORDOSE LED SHZ TEMPOMAT BT",
@@ -139,7 +139,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Hinten, Vorne, Kamera, Selbstlenkende Systeme",
+      "value": "Kamera, Selbstlenkende Systeme, Vorne, Hinten",
       "group": "vehicle"
     },
     "airbag": {
@@ -292,7 +292,7 @@
     "https://img.classistatic.de/api/v1/mo-prod/images/95/95abe367-7f67-40be-a4da-db9e29a4b5c3",
     "https://img.classistatic.de/api/v1/mo-prod/images/9e/9eaed59f-fd7b-4003-8351-8d18a1f724e3",
     "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb727b9b-546c-454d-ba65-db93f092bf05",
-    "https://img.classistatic.de/api/v1/mo-prod/images/23/23cc2d0d-5976-464d-ace5-6a9a992780fe"
+    "https://img.classistatic.de/api/v1/mo-prod/images/75/75e996e3-2838-4d2e-8f83-e00ee2e0bc5b"
   ],
   "dealer": {
     "name": "Freese-Süd GmbH",

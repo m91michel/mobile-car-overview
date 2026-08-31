@@ -2,7 +2,7 @@
   "id": "41966966984672",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-led-head-up-display-r%C3%BCckfahrkamera-st-wendel/41966966984672.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=41966966984672&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T08:46:53.977Z",
+  "fetchedAt": "2026-08-31T16:26:34.523Z",
   "title": "BMW 318i TOURING LED HEAD UP DISPLAY RÜCKFAHRKAMERA",
   "shortTitle": "BMW 318",
   "subTitle": "i TOURING LED HEAD UP DISPLAY RÜCKFAHRKAMERA",
@@ -10,7 +10,7 @@
   "model": "318",
   "category": "EstateCar",
   "sku": "B35481FP48770",
-  "isNew": true,
+  "isNew": false,
   "kba": {
     "hsn": "0005",
     "tsn": "CYW"
@@ -145,7 +145,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Kamera, Selbstlenkende Systeme, Hinten, Vorne",
+      "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
       "group": "vehicle"
     },
     "airbag": {
@@ -379,9 +379,5 @@
       "adjustment": 1180
     },
     "effectivePrice": 28660
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:51:54.312Z"
   }
 }

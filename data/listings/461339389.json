@@ -2,7 +2,7 @@
   "id": "461339389",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-facelift-ahk-360-kamera-velburg/461339389.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461339389&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T12:48:53.549Z",
+  "fetchedAt": "2026-08-31T16:28:59.506Z",
   "title": "BMW 318i Touring M SPORT Facelift /AHK/360°Kamera",
   "shortTitle": "BMW 318",
   "subTitle": "i Touring M SPORT Facelift /AHK/360°Kamera",
@@ -155,7 +155,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Selbstlenkende Systeme, Hinten, 360°-Kamera",
+      "value": "360°-Kamera, Hinten, Vorne, Selbstlenkende Systeme",
       "group": "vehicle"
     },
     "airbag": {

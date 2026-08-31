@@ -2,7 +2,7 @@
   "id": "461760316",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-tour-sport-line-liveprof-st-go-led-hifi-shz-g%C3%BCtersloh/461760316.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461760316&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T08:52:02.457Z",
+  "fetchedAt": "2026-08-31T16:26:57.682Z",
   "title": "BMW 320i Tour Sport Line LiveProf St+Go LED HiFi SHZ",
   "shortTitle": "BMW 320",
   "subTitle": "i Tour Sport Line LiveProf St+Go LED HiFi SHZ",
@@ -192,7 +192,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Hinten, Kamera, Selbstlenkende Systeme, Vorne",
+      "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
       "group": "vehicle"
     },
     "airbag": {
@@ -415,9 +415,5 @@
       "adjustment": -1950
     },
     "effectivePrice": 27300
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:48:18.941Z"
   }
 }

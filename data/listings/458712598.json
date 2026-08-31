@@ -2,7 +2,7 @@
   "id": "458712598",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-lc-plus-sportsitze-led-gra-shzg-dab-gie%C3%9Fen/458712598.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=458712598&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:26:07.206Z",
+  "fetchedAt": "2026-08-31T16:23:50.614Z",
   "title": "BMW 318i TOURING LC PLUS SPORTSITZE LED GRA SHZG DAB",
   "shortTitle": "BMW 318",
   "subTitle": "i TOURING LC PLUS SPORTSITZE LED GRA SHZG DAB",
@@ -145,7 +145,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme",
+      "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
       "group": "vehicle"
     },
     "airbag": {
@@ -193,6 +193,24 @@
       "value": "59 l",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 42900,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2024-04",
+    "constructionYear": 2024,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1650,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 208,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 04/2024, nach der Umstellung"
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -327,24 +345,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 42900,
-    "powerKw": 115,
-    "powerHp": 156,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2024-04",
-    "constructionYear": 2024,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": 1650,
-    "fuelTankLitres": 59,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 208,
-    "generation": "G21",
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 04/2024, nach der Umstellung"
-  },
   "ref": 16,
   "assessment": {
     "verdict": "raus",

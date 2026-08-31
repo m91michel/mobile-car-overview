@@ -2,7 +2,7 @@
   "id": "40907593490464",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-hifi-ahk-widescreen-kamera-siegen/40907593490464.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40907593490464&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:24:15.940Z",
+  "fetchedAt": "2026-08-31T16:21:51.766Z",
   "title": "BMW 318i TOURING HIFI AHK WIDESCREEN KAMERA",
   "shortTitle": "BMW 318",
   "subTitle": "i TOURING HIFI AHK WIDESCREEN KAMERA",
@@ -10,7 +10,7 @@
   "model": "318",
   "category": "EstateCar",
   "sku": "B00139259285",
-  "isNew": true,
+  "isNew": false,
   "kba": {
     "hsn": "0005",
     "tsn": "CYW"
@@ -150,7 +150,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Kamera, Selbstlenkende Systeme, Hinten, Vorne",
+      "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
       "group": "vehicle"
     },
     "airbag": {
@@ -198,6 +198,24 @@
       "value": "59 l",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 42963,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2024-07",
+    "constructionYear": 2024,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1650,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 263,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 07/2024, nach der Umstellung"
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -295,12 +313,12 @@
     },
     "openingHours": [
       {
-        "day": "Mo - Fr",
-        "time": "08:00 Uhr - 18:00 Uhr"
+        "time": "08:00 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
       },
       {
-        "day": "Sa",
-        "time": "09:00 Uhr - 13:00 Uhr"
+        "time": "09:00 Uhr - 13:00 Uhr",
+        "day": "Sa"
       }
     ],
     "rating": {
@@ -348,24 +366,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 42963,
-    "powerKw": 115,
-    "powerHp": 156,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2024-07",
-    "constructionYear": 2024,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": 1650,
-    "fuelTankLitres": 59,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 263,
-    "generation": "G21",
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 07/2024, nach der Umstellung"
-  },
   "ref": 10,
   "assessment": {
     "verdict": "kandidat",
@@ -378,9 +378,5 @@
       "adjustment": 1170
     },
     "effectivePrice": 30140
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:51:46.860Z"
   }
 }

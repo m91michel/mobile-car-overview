@@ -2,7 +2,7 @@
   "id": "39886296760608",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-individual-ahk-widescreen-traunstein/39886296760608.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=39886296760608&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:26:29.057Z",
+  "fetchedAt": "2026-08-31T16:24:13.549Z",
   "title": "BMW 318i Touring M Sport Individual AHK Widescreen",
   "shortTitle": "BMW 318",
   "subTitle": "i Touring M Sport Individual AHK Widescreen",
@@ -139,7 +139,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Hinten, Vorne",
+      "value": "Vorne, Hinten",
       "group": "vehicle"
     },
     "airbag": {
@@ -187,6 +187,24 @@
       "value": "59 l",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 33400,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-07",
+    "constructionYear": 2023,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1650,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 216,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 07/2023, nach der Umstellung"
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -284,12 +302,12 @@
     },
     "openingHours": [
       {
-        "time": "08:30 Uhr - 18:00 Uhr",
-        "day": "Mo - Fr"
+        "day": "Mo - Fr",
+        "time": "08:30 Uhr - 18:00 Uhr"
       },
       {
-        "time": "09:00 Uhr - 12:30 Uhr",
-        "day": "Sa"
+        "day": "Sa",
+        "time": "09:00 Uhr - 12:30 Uhr"
       }
     ],
     "rating": {
@@ -337,24 +355,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 33400,
-    "powerKw": 115,
-    "powerHp": 156,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2023-07",
-    "constructionYear": 2023,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": 1650,
-    "fuelTankLitres": 59,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 216,
-    "generation": "G21",
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 07/2023, nach der Umstellung"
-  },
   "ref": 17,
   "assessment": {
     "verdict": "kandidat",
@@ -373,9 +373,5 @@
       "adjustment": -1280
     },
     "effectivePrice": 29900
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:51:35.670Z"
   }
 }

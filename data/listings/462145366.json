@@ -2,7 +2,7 @@
   "id": "462145366",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-hifi-livecockpit-widescree-siegen/462145366.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=462145366&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:56:54.714Z",
+  "fetchedAt": "2026-08-31T16:18:43.681Z",
   "title": "BMW 318i TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREE",
   "shortTitle": "BMW 318",
   "subTitle": "i TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREE",
@@ -10,7 +10,7 @@
   "model": "318",
   "category": "EstateCar",
   "sku": "B00139259287",
-  "isNew": true,
+  "isNew": false,
   "kba": {
     "hsn": "0005",
     "tsn": "CYW"
@@ -150,7 +150,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Hinten, Vorne, Kamera",
+      "value": "Kamera, Selbstlenkende Systeme, Vorne, Hinten",
       "group": "vehicle"
     },
     "airbag": {
@@ -316,12 +316,12 @@
     },
     "openingHours": [
       {
-        "time": "08:00 Uhr - 18:00 Uhr",
-        "day": "Mo - Fr"
+        "day": "Mo - Fr",
+        "time": "08:00 Uhr - 18:00 Uhr"
       },
       {
-        "time": "09:00 Uhr - 13:00 Uhr",
-        "day": "Sa"
+        "day": "Sa",
+        "time": "09:00 Uhr - 13:00 Uhr"
       }
     ],
     "rating": {
@@ -377,9 +377,5 @@
     "retrofitCost": 0,
     "mileageAdjustment": null,
     "effectivePrice": 31890
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:48:42.217Z"
   }
 }

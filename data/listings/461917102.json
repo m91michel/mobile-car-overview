@@ -2,7 +2,7 @@
   "id": "461917102",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-tour-lico-da-pa-tempo-pano-memory-hifi-l%C3%BCneburg/461917102.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461917102&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:25:23.755Z",
+  "fetchedAt": "2026-08-31T16:23:24.107Z",
   "title": "BMW 320i Tour. LiCo+ DA,PA+,Tempo,Pano,Memory,HiFi",
   "shortTitle": "BMW 320",
   "subTitle": "i Tour. LiCo+ DA,PA+,Tempo,Pano,Memory,HiFi",
@@ -187,7 +187,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "360°-Kamera, Vorne, Selbstlenkende Systeme, Hinten",
+      "value": "Hinten, Vorne, 360°-Kamera, Selbstlenkende Systeme",
       "group": "vehicle"
     },
     "airbag": {
@@ -225,6 +225,24 @@
       "value": "4",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 40296,
+    "powerKw": 135,
+    "powerHp": 184,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-07",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": 154,
+    "consumptionL100km": 6.8,
+    "distanceFromHomeKm": 423,
+    "generation": "G81",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 07/2023, nach der Umstellung"
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -325,12 +343,12 @@
     },
     "openingHours": [
       {
-        "day": "Mo - Fr",
-        "time": "09:00 Uhr - 18:00 Uhr"
+        "time": "09:00 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
       },
       {
-        "day": "Sa",
-        "time": "09:00 Uhr - 14:00 Uhr"
+        "time": "09:00 Uhr - 14:00 Uhr",
+        "day": "Sa"
       }
     ],
     "rating": {
@@ -378,24 +396,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 40296,
-    "powerKw": 135,
-    "powerHp": 184,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2023-07",
-    "constructionYear": null,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": null,
-    "fuelTankLitres": null,
-    "co2GramsPerKm": 154,
-    "consumptionL100km": 6.8,
-    "distanceFromHomeKm": 423,
-    "generation": "G81",
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 07/2023, nach der Umstellung"
-  },
   "ref": 14,
   "assessment": {
     "verdict": "kandidat",
@@ -414,9 +414,5 @@
       "adjustment": -600
     },
     "effectivePrice": 29990
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T11:02:51.299Z"
   }
 }

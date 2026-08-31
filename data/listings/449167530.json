@@ -2,7 +2,7 @@
   "id": "449167530",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-330e-touring-hybrid-m-acc-cockpit-kamera-spur-19-rennerod/449167530.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=449167530&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T18:17:00.437Z",
+  "fetchedAt": "2026-08-31T16:31:00.819Z",
   "title": "BMW 330e Touring Hybrid M/ACC/Cockpit/KAMERA/SPUR/19",
   "shortTitle": "BMW 330",
   "subTitle": "e Touring Hybrid M/ACC/Cockpit/KAMERA/SPUR/19",
@@ -10,7 +10,7 @@
   "model": "330",
   "category": "EstateCar",
   "sku": "057",
-  "isNew": true,
+  "isNew": false,
   "kba": {
     "hsn": "0005",
     "tsn": "CYZ"
@@ -130,7 +130,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Hinten, Kamera, Vorne",
+      "value": "Hinten, Vorne, Kamera",
       "group": "vehicle"
     },
     "airbag": {
@@ -315,12 +315,12 @@
     },
     "openingHours": [
       {
-        "day": "Mo - Fr",
-        "time": "09:00 Uhr - 17:00 Uhr"
+        "time": "09:00 Uhr - 17:00 Uhr",
+        "day": "Mo - Fr"
       },
       {
-        "day": "Sa",
-        "time": "09:00 Uhr - 14:00 Uhr"
+        "time": "09:00 Uhr - 14:00 Uhr",
+        "day": "Sa"
       }
     ],
     "rating": {

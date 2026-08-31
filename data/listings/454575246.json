@@ -2,7 +2,7 @@
   "id": "454575246",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-touring-head-up-led-rfk-komfortzg-bad-d%C3%BCrkheim/454575246.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=454575246&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:24:37.671Z",
+  "fetchedAt": "2026-08-31T16:22:14.656Z",
   "title": "BMW 320i Touring Head-Up LED RFK Komfortzg.",
   "shortTitle": "BMW 320",
   "subTitle": "i Touring Head-Up LED RFK Komfortzg.",
@@ -15,10 +15,10 @@
     "tsn": "CVS"
   },
   "price": {
-    "gross": 29900,
-    "net": 25126.05,
+    "gross": 28900,
+    "net": 24285.71,
     "currency": "EUR",
-    "localized": "29.900 €",
+    "localized": "28.900 €",
     "vatRate": 19,
     "vatNote": "19,00% MwSt.",
     "type": "FIXED"
@@ -26,7 +26,7 @@
   "priceRating": {
     "rating": "GOOD_PRICE",
     "label": "Guter Preis",
-    "offset": 86,
+    "offset": 40,
     "thresholds": [
       "21.600 €",
       "28.000 €",
@@ -134,7 +134,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme",
+      "value": "Vorne, Kamera, Selbstlenkende Systeme, Hinten",
       "group": "vehicle"
     },
     "airbag": {
@@ -177,6 +177,24 @@
       "value": "59 l",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 48400,
+    "powerKw": 135,
+    "powerHp": 184,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-03",
+    "constructionYear": 2023,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1660,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 203,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -277,12 +295,12 @@
     },
     "openingHours": [
       {
-        "day": "Mo - Fr",
-        "time": "07:15 Uhr - 18:00 Uhr"
+        "time": "07:15 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
       },
       {
-        "day": "Sa",
-        "time": "09:00 Uhr - 12:30 Uhr"
+        "time": "09:00 Uhr - 12:30 Uhr",
+        "day": "Sa"
       }
     ],
     "rating": {
@@ -302,52 +320,34 @@
         "bankName": "Openbank Deutschland AG",
         "loanBroker": "Check24 GmbH",
         "loanType": "BALLOON",
-        "downPayment": 5980,
+        "downPayment": 5780,
         "creditTerm": 60,
         "yearlyMileage": 10000,
-        "creditAmount": 23920,
+        "creditAmount": 23120,
         "interestRateNominal": 5.41,
         "interestRateEffective": 5.55,
-        "monthlyInstallment": 316.99,
-        "finalInstallment": 9867,
-        "totalInterest": 4649.68,
-        "totalAmount": 28569.68,
+        "monthlyInstallment": 306.39,
+        "finalInstallment": 9537,
+        "totalInterest": 4494.18,
+        "totalAmount": 27614.18,
         "localized": {
-          "downPayment": "5.980,00 €",
+          "downPayment": "5.780,00 €",
           "downPaymentInPercent": "20%",
           "creditTerm": "60",
           "creditTermInYears": "5",
           "yearlyMileage": "10.000",
-          "creditAmount": "23.920,00 €",
+          "creditAmount": "23.120,00 €",
           "interestRateNominal": "5,41%",
           "interestRateEffective": "5,55%",
-          "monthlyInstallment": "317 €",
-          "finalInstallment": "9.867,00 €",
-          "totalInterest": "4.649,68 €",
-          "totalAmount": "28.569,68 €",
+          "monthlyInstallment": "307 €",
+          "finalInstallment": "9.537,00 €",
+          "totalInterest": "4.494,18 €",
+          "totalAmount": "27.614,18 €",
           "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
         }
       }
     }
   ],
-  "derived": {
-    "mileageKm": 48400,
-    "powerKw": 135,
-    "powerHp": 184,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2023-03",
-    "constructionYear": 2023,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": 1660,
-    "fuelTankLitres": 59,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 203,
-    "generation": "G21",
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
-  },
   "ref": 11,
   "assessment": {
     "verdict": "kandidat",
@@ -359,10 +359,6 @@
       "deviationKm": -2850,
       "adjustment": -280
     },
-    "effectivePrice": 29620
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:52:08.732Z"
+    "effectivePrice": 28620
   }
 }

@@ -2,7 +2,7 @@
   "id": "460807870",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318d-tour-m-sportpaket-navi-led-ahk-kamera-driv-neusitz-rothenburg/460807870.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460807870&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:27:33.909Z",
+  "fetchedAt": "2026-08-31T16:25:02.517Z",
   "title": "BMW 318d Tour. M Sportpaket Navi LED AHK Kamera Driv",
   "shortTitle": "BMW 318",
   "subTitle": "d Tour. M Sportpaket Navi LED AHK Kamera Driv",
@@ -16,10 +16,10 @@
     "tsn": "DDH"
   },
   "price": {
-    "gross": 29999,
+    "gross": 29880,
     "net": null,
     "currency": "EUR",
-    "localized": "29.999 €",
+    "localized": "29.880 €",
     "vatRate": null,
     "vatNote": null,
     "type": "FIXED"
@@ -27,7 +27,7 @@
   "priceRating": {
     "rating": "REASONABLE_PRICE",
     "label": "Fairer Preis",
-    "offset": 9,
+    "offset": 5,
     "thresholds": [
       "21.200 €",
       "27.600 €",
@@ -135,7 +135,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme",
+      "value": "Hinten, Selbstlenkende Systeme, Vorne, Kamera",
       "group": "vehicle"
     },
     "airbag": {
@@ -158,6 +158,24 @@
       "value": "Alcantara, Schwarz",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 47150,
+    "powerKw": 110,
+    "powerHp": 150,
+    "cubicCapacityCcm": 1995,
+    "firstRegistration": "2022-09",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": null,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 56,
+    "generation": "G81",
+    "facelift": "unknown",
+    "faceliftBasis": "Zulassung im Umstellungsfenster – aus den Daten nicht entscheidbar"
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -221,9 +239,9 @@
   ],
   "highlights": [],
   "images": [
-    "https://img.classistatic.de/api/v1/mo-prod/images/4c/4cd9126d-a0fd-41e7-a02c-e269560dce43",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f49231c-7229-4249-b537-7e4b209f5584",
     "https://img.classistatic.de/api/v1/mo-prod/images/14/14c17d77-88a2-4b8e-98ce-5a1753a515c5",
-    "https://img.classistatic.de/api/v1/mo-prod/images/90/908dab8a-79d1-4a5d-a4e7-6e3633d7a1d7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4b/4b644c08-9046-4c6b-b552-6a20c58a1fc4",
     "https://img.classistatic.de/api/v1/mo-prod/images/db/dbaf692c-0518-4ea3-a225-cf79e98a8e36",
     "https://img.classistatic.de/api/v1/mo-prod/images/15/1528f361-0010-429c-af60-848b9751fd90",
     "https://img.classistatic.de/api/v1/mo-prod/images/61/614b58d7-b9c3-49ad-9a0e-0d8da3a7e416",
@@ -276,29 +294,29 @@
         "bankId": "Santander",
         "bankName": "Openbank Deutschland AG",
         "loanType": "BALLOON",
-        "downPayment": 5999,
+        "downPayment": 5976,
         "creditTerm": 60,
         "yearlyMileage": 10000,
-        "creditAmount": 24000,
+        "creditAmount": 23904,
         "interestRateNominal": 6.3,
         "interestRateEffective": 6.49,
-        "monthlyInstallment": 280,
-        "finalInstallment": 13499.55,
-        "totalInterest": 5988.57,
-        "totalAmount": 29988.57,
+        "monthlyInstallment": 279,
+        "finalInstallment": 13446,
+        "totalInterest": 5965.71,
+        "totalAmount": 29869.71,
         "localized": {
-          "downPayment": "5.999,00 €",
+          "downPayment": "5.976,00 €",
           "downPaymentInPercent": "20%",
           "creditTerm": "60",
           "creditTermInYears": "5",
           "yearlyMileage": "10.000",
-          "creditAmount": "24.000,00 €",
+          "creditAmount": "23.904,00 €",
           "interestRateNominal": "6,30%",
           "interestRateEffective": "6,49%",
-          "monthlyInstallment": "280 €",
-          "finalInstallment": "13.499,55 €",
-          "totalInterest": "5.988,57 €",
-          "totalAmount": "29.988,57 €",
+          "monthlyInstallment": "279 €",
+          "finalInstallment": "13.446,00 €",
+          "totalInterest": "5.965,71 €",
+          "totalAmount": "29.869,71 €",
           "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
         }
       }
@@ -311,24 +329,6 @@
       "showInGallery": false
     }
   ],
-  "derived": {
-    "mileageKm": 47150,
-    "powerKw": 110,
-    "powerHp": 150,
-    "cubicCapacityCcm": 1995,
-    "firstRegistration": "2022-09",
-    "constructionYear": null,
-    "seats": 5,
-    "previousOwners": null,
-    "weightKg": null,
-    "fuelTankLitres": null,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 56,
-    "generation": "G81",
-    "facelift": "unknown",
-    "faceliftBasis": "Zulassung im Umstellungsfenster – aus den Daten nicht entscheidbar"
-  },
   "ref": 20,
   "assessment": {
     "verdict": "raus",
@@ -336,6 +336,6 @@
     "retrofit": [],
     "retrofitCost": 0,
     "mileageAdjustment": null,
-    "effectivePrice": 29999
+    "effectivePrice": 29880
   }
 }

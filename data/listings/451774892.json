@@ -2,7 +2,7 @@
   "id": "451774892",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-headup-acc-ahk-360-kam-b%C3%B6blingen/451774892.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=451774892&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:22:25.812Z",
+  "fetchedAt": "2026-08-31T16:19:33.451Z",
   "title": "BMW 318i Touring M Sport HeadUp ACC AHK 360°Kam",
   "shortTitle": "BMW 318",
   "subTitle": "i Touring M Sport HeadUp ACC AHK 360°Kam",
@@ -140,7 +140,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Hinten, 360°-Kamera, Vorne, Selbstlenkende Systeme",
+      "value": "360°-Kamera, Selbstlenkende Systeme, Vorne, Hinten",
       "group": "vehicle"
     },
     "airbag": {
@@ -168,6 +168,24 @@
       "value": "4",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 41600,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2025-01",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 167,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 01/2025, nach der Umstellung"
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -335,24 +353,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 41600,
-    "powerKw": 115,
-    "powerHp": 156,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2025-01",
-    "constructionYear": null,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": null,
-    "fuelTankLitres": null,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 167,
-    "generation": "G21",
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 01/2025, nach der Umstellung"
-  },
   "ref": 4,
   "assessment": {
     "verdict": "top",
@@ -365,9 +365,5 @@
       "adjustment": 1790
     },
     "effectivePrice": 34370
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:52:01.898Z"
   }
 }

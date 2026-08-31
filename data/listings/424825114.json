@@ -2,7 +2,7 @@
   "id": "424825114",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-aut-ettlingen/424825114.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=424825114&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:25:00.777Z",
+  "fetchedAt": "2026-08-31T16:19:10.338Z",
   "title": "BMW 318i Touring Aut.",
   "shortTitle": "BMW 318",
   "subTitle": "i Touring Aut.",
@@ -145,7 +145,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme",
+      "value": "Hinten, Selbstlenkende Systeme, Vorne, Kamera",
       "group": "vehicle"
     },
     "airbag": {
@@ -173,6 +173,24 @@
       "value": "4",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 47508,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-03",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 2,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 199,
+    "generation": null,
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -328,24 +346,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 47508,
-    "powerKw": 115,
-    "powerHp": 156,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2023-03",
-    "constructionYear": null,
-    "seats": 5,
-    "previousOwners": 2,
-    "weightKg": null,
-    "fuelTankLitres": null,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 199,
-    "generation": null,
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
-  },
   "ref": 3,
   "assessment": {
     "verdict": "kandidat",
@@ -364,9 +364,5 @@
       "adjustment": -370
     },
     "effectivePrice": 30220
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:51:56.331Z"
   }
 }

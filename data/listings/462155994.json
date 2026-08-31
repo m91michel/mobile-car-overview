@@ -2,7 +2,7 @@
   "id": "462155994",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-lc-plus-sportsitze-gra-parkassist-l-gie%C3%9Fen/462155994.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=462155994&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:23:31.024Z",
+  "fetchedAt": "2026-08-31T16:20:19.251Z",
   "title": "BMW 318i TOURING LC PLUS SPORTSITZE GRA PARKASSIST L",
   "shortTitle": "BMW 318",
   "subTitle": "i TOURING LC PLUS SPORTSITZE GRA PARKASSIST L",
@@ -145,7 +145,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera",
+      "value": "Kamera, Selbstlenkende Systeme, Vorne, Hinten",
       "group": "vehicle"
     },
     "airbag": {
@@ -193,6 +193,24 @@
       "value": "59 l",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 38900,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2024-06",
+    "constructionYear": 2024,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1650,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 208,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 06/2024, nach der Umstellung"
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -325,24 +343,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 38900,
-    "powerKw": 115,
-    "powerHp": 156,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2024-06",
-    "constructionYear": 2024,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": 1650,
-    "fuelTankLitres": 59,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 208,
-    "generation": "G21",
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 06/2024, nach der Umstellung"
-  },
   "ref": 6,
   "assessment": {
     "verdict": "raus",
@@ -351,9 +351,5 @@
     "retrofitCost": 0,
     "mileageAdjustment": null,
     "effectivePrice": 30890
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:48:43.852Z"
   }
 }

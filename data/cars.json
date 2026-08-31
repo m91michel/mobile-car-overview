@@ -1,16 +1,18 @@
 {
-  "updatedAt": "2026-08-28T19:17:58.145Z",
+  "updatedAt": "2026-08-31T16:33:50.490Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
     "455546694": "2026-08-28T06:30:00.000Z",
     "456360738": "2026-08-28T06:30:00.000Z",
+    "456447943": "2026-08-31T16:33:50.490Z",
     "457103311": "2026-08-28T06:30:00.000Z",
     "457193919": "2026-08-28T06:30:00.000Z",
     "458171777": "2026-08-28T06:30:00.000Z",
     "458436996": "2026-08-28T06:30:00.000Z",
     "458936239": "2026-08-28T06:30:00.000Z",
     "459105914": "2026-08-28T06:30:00.000Z",
+    "459175992": "2026-08-31T16:33:50.490Z",
     "459542669": "2026-08-28T06:30:00.000Z",
     "459655189": "2026-08-28T06:30:00.000Z",
     "459941383": "2026-08-28T06:30:00.000Z",
@@ -28,7 +30,7 @@
       "id": "462145366",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-hifi-livecockpit-widescree-siegen/462145366.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=462145366&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:56:54.714Z",
+      "fetchedAt": "2026-08-31T16:18:43.681Z",
       "title": "BMW 318i TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREE",
       "shortTitle": "BMW 318",
       "subTitle": "i TOURING M SPORT HIFI LIVECOCKPIT+ WIDESCREE",
@@ -36,7 +38,7 @@
       "model": "318",
       "category": "EstateCar",
       "sku": "B00139259287",
-      "isNew": true,
+      "isNew": false,
       "kba": {
         "hsn": "0005",
         "tsn": "CYW"
@@ -176,7 +178,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Hinten, Vorne, Kamera",
+          "value": "Kamera, Selbstlenkende Systeme, Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -342,12 +344,12 @@
         },
         "openingHours": [
           {
-            "time": "08:00 Uhr - 18:00 Uhr",
-            "day": "Mo - Fr"
+            "day": "Mo - Fr",
+            "time": "08:00 Uhr - 18:00 Uhr"
           },
           {
-            "time": "09:00 Uhr - 13:00 Uhr",
-            "day": "Sa"
+            "day": "Sa",
+            "time": "09:00 Uhr - 13:00 Uhr"
           }
         ],
         "rating": {
@@ -403,10 +405,6 @@
         "retrofitCost": 0,
         "mileageAdjustment": null,
         "effectivePrice": 31890
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:48:42.217Z"
       }
     },
     {
@@ -772,15 +770,15 @@
         "effectivePrice": 29605
       },
       "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:57:28.927Z"
+        "status": "sold",
+        "checkedAt": "2026-08-31T16:33:50.490Z"
       }
     },
     {
       "id": "424825114",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-aut-ettlingen/424825114.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=424825114&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:25:00.777Z",
+      "fetchedAt": "2026-08-31T16:19:10.338Z",
       "title": "BMW 318i Touring Aut.",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring Aut.",
@@ -923,7 +921,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme",
+          "value": "Hinten, Selbstlenkende Systeme, Vorne, Kamera",
           "group": "vehicle"
         },
         "airbag": {
@@ -951,6 +949,24 @@
           "value": "4",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 47508,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-03",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 2,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 199,
+        "generation": null,
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -1106,24 +1122,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 47508,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2023-03",
-        "constructionYear": null,
-        "seats": 5,
-        "previousOwners": 2,
-        "weightKg": null,
-        "fuelTankLitres": null,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 199,
-        "generation": null,
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
-      },
       "ref": 3,
       "assessment": {
         "verdict": "kandidat",
@@ -1142,17 +1140,13 @@
           "adjustment": -370
         },
         "effectivePrice": 30220
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:51:56.331Z"
       }
     },
     {
       "id": "451774892",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-headup-acc-ahk-360-kam-b%C3%B6blingen/451774892.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=451774892&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:22:25.812Z",
+      "fetchedAt": "2026-08-31T16:19:33.451Z",
       "title": "BMW 318i Touring M Sport HeadUp ACC AHK 360°Kam",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring M Sport HeadUp ACC AHK 360°Kam",
@@ -1290,7 +1284,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, 360°-Kamera, Vorne, Selbstlenkende Systeme",
+          "value": "360°-Kamera, Selbstlenkende Systeme, Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -1318,6 +1312,24 @@
           "value": "4",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 41600,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2025-01",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 167,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 01/2025, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -1485,24 +1497,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 41600,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2025-01",
-        "constructionYear": null,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": null,
-        "fuelTankLitres": null,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 167,
-        "generation": "G21",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 01/2025, nach der Umstellung"
-      },
       "ref": 4,
       "assessment": {
         "verdict": "top",
@@ -1515,17 +1509,13 @@
           "adjustment": 1790
         },
         "effectivePrice": 34370
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:52:01.898Z"
       }
     },
     {
       "id": "461488465",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-lc-plus-sportsitze-gra-parkassist-gie%C3%9Fen/461488465.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461488465&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:23:09.103Z",
+      "fetchedAt": "2026-08-31T16:19:56.315Z",
       "title": "BMW 318i TOURING LC PLUS SPORTSITZE GRA PARKASSIST  ",
       "shortTitle": "BMW 318",
       "subTitle": "i TOURING LC PLUS SPORTSITZE GRA PARKASSIST  ",
@@ -1668,7 +1658,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Kamera, Hinten, Vorne, Selbstlenkende Systeme",
+          "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
           "group": "vehicle"
         },
         "airbag": {
@@ -1716,6 +1706,24 @@
           "value": "59 l",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 34700,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-03",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 208,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 03/2024, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -1846,24 +1854,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 34700,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2024-03",
-        "constructionYear": 2024,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": 1650,
-        "fuelTankLitres": 59,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 208,
-        "generation": "G21",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 03/2024, nach der Umstellung"
-      },
       "ref": 5,
       "assessment": {
         "verdict": "raus",
@@ -1872,17 +1862,13 @@
         "retrofitCost": 0,
         "mileageAdjustment": null,
         "effectivePrice": 28790
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T11:02:47.205Z"
       }
     },
     {
       "id": "462155994",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-lc-plus-sportsitze-gra-parkassist-l-gie%C3%9Fen/462155994.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=462155994&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:23:31.024Z",
+      "fetchedAt": "2026-08-31T16:20:19.251Z",
       "title": "BMW 318i TOURING LC PLUS SPORTSITZE GRA PARKASSIST L",
       "shortTitle": "BMW 318",
       "subTitle": "i TOURING LC PLUS SPORTSITZE GRA PARKASSIST L",
@@ -2025,7 +2011,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera",
+          "value": "Kamera, Selbstlenkende Systeme, Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -2073,6 +2059,24 @@
           "value": "59 l",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 38900,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-06",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 208,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 06/2024, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -2205,24 +2209,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 38900,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2024-06",
-        "constructionYear": 2024,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": 1650,
-        "fuelTankLitres": 59,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 208,
-        "generation": "G21",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 06/2024, nach der Umstellung"
-      },
       "ref": 6,
       "assessment": {
         "verdict": "raus",
@@ -2231,17 +2217,13 @@
         "retrofitCost": 0,
         "mileageAdjustment": null,
         "effectivePrice": 30890
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:48:43.852Z"
       }
     },
     {
       "id": "458139136",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-lc-plus-sportsitze-gra-parkassist-s-dillenburg/458139136.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=458139136&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:23:52.682Z",
+      "fetchedAt": "2026-08-31T16:20:42.331Z",
       "title": "BMW 318i TOURING LC PLUS SPORTSITZE GRA PARKASSIST S",
       "shortTitle": "BMW 318",
       "subTitle": "i TOURING LC PLUS SPORTSITZE GRA PARKASSIST S",
@@ -2384,7 +2366,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme",
+          "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme",
           "group": "vehicle"
         },
         "airbag": {
@@ -2432,6 +2414,24 @@
           "value": "59 l",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 28613,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-03",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 240,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 03/2024, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -2523,17 +2523,17 @@
         },
         "openingHours": [
           {
-            "time": "07:00 Uhr - 18:00 Uhr",
-            "day": "Mo - Fr"
+            "day": "Mo - Fr",
+            "time": "07:00 Uhr - 18:00 Uhr"
           },
           {
-            "time": "09:00 Uhr - 13:00 Uhr",
-            "day": "Sa"
+            "day": "Sa",
+            "time": "09:00 Uhr - 13:00 Uhr"
           }
         ],
         "rating": {
           "score": 4.9,
-          "count": 43,
+          "count": 44,
           "recommendationRate": 100
         }
       },
@@ -2576,24 +2576,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 28613,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2024-03",
-        "constructionYear": 2024,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": 1650,
-        "fuelTankLitres": 59,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 240,
-        "generation": "G21",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 03/2024, nach der Umstellung"
-      },
       "ref": 7,
       "assessment": {
         "verdict": "raus",
@@ -2608,7 +2590,7 @@
       "id": "457056589",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318d-touring-m-sport-hifi-livecockpit-led-wieds-siegen/457056589.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=457056589&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:23:54.315Z",
+      "fetchedAt": "2026-08-31T16:21:05.776Z",
       "title": "BMW 318d TOURING M SPORT HIFI LiveCockpit+ LED Wieds",
       "shortTitle": "BMW 318",
       "subTitle": "d TOURING M SPORT HIFI LiveCockpit+ LED Wieds",
@@ -2616,7 +2598,7 @@
       "model": "318",
       "category": "EstateCar",
       "sku": "B00139247851",
-      "isNew": true,
+      "isNew": false,
       "kba": {
         "hsn": "0005",
         "tsn": "DDH"
@@ -2756,7 +2738,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten",
+          "value": "Hinten, Vorne",
           "group": "vehicle"
         },
         "airbag": {
@@ -2804,6 +2786,24 @@
           "value": "59 l",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 83530,
+        "powerKw": 110,
+        "powerHp": 150,
+        "cubicCapacityCcm": 1995,
+        "firstRegistration": "2023-03",
+        "constructionYear": 2023,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1735,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 263,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
       },
       "features": [
         "ABS",
@@ -2903,12 +2903,12 @@
         },
         "openingHours": [
           {
-            "day": "Mo - Fr",
-            "time": "08:00 Uhr - 18:00 Uhr"
+            "time": "08:00 Uhr - 18:00 Uhr",
+            "day": "Mo - Fr"
           },
           {
-            "day": "Sa",
-            "time": "09:00 Uhr - 13:00 Uhr"
+            "time": "09:00 Uhr - 13:00 Uhr",
+            "day": "Sa"
           }
         ],
         "rating": {
@@ -2956,24 +2956,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 83530,
-        "powerKw": 110,
-        "powerHp": 150,
-        "cubicCapacityCcm": 1995,
-        "firstRegistration": "2023-03",
-        "constructionYear": 2023,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": 1735,
-        "fuelTankLitres": 59,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 263,
-        "generation": "G21",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
-      },
       "ref": 8,
       "assessment": {
         "verdict": "raus",
@@ -2982,17 +2964,13 @@
         "retrofitCost": 0,
         "mileageAdjustment": null,
         "effectivePrice": 28790
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:52:11.536Z"
       }
     },
     {
       "id": "40622847776352",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318-i-touring-m-sport-adap-led-parkass-plus-hi-bremen/40622847776352.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40622847776352&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:21:42.214Z",
+      "fetchedAt": "2026-08-31T16:21:28.646Z",
       "title": "BMW 318 i Touring M Sport adap. LED Parkass. PLUS Hi",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring M Sport adap. LED Parkass. PLUS Hi",
@@ -3115,7 +3093,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, 360°-Kamera, Vorne, Hinten",
+          "value": "360°-Kamera, Selbstlenkende Systeme, Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -3143,6 +3121,24 @@
           "value": "4",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 23000,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2025-03",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 426,
+        "generation": null,
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 03/2025, nach der Umstellung"
       },
       "features": [
         "ABS",
@@ -3285,24 +3281,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 23000,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2025-03",
-        "constructionYear": 2024,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": null,
-        "fuelTankLitres": null,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 426,
-        "generation": null,
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 03/2025, nach der Umstellung"
-      },
       "ref": 9,
       "assessment": {
         "verdict": "kandidat",
@@ -3321,17 +3299,13 @@
           "adjustment": 180
         },
         "effectivePrice": 33580
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:51:44.026Z"
       }
     },
     {
       "id": "40907593490464",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-hifi-ahk-widescreen-kamera-siegen/40907593490464.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40907593490464&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:24:15.940Z",
+      "fetchedAt": "2026-08-31T16:21:51.766Z",
       "title": "BMW 318i TOURING HIFI AHK WIDESCREEN KAMERA",
       "shortTitle": "BMW 318",
       "subTitle": "i TOURING HIFI AHK WIDESCREEN KAMERA",
@@ -3339,7 +3313,7 @@
       "model": "318",
       "category": "EstateCar",
       "sku": "B00139259285",
-      "isNew": true,
+      "isNew": false,
       "kba": {
         "hsn": "0005",
         "tsn": "CYW"
@@ -3479,7 +3453,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Kamera, Selbstlenkende Systeme, Hinten, Vorne",
+          "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
           "group": "vehicle"
         },
         "airbag": {
@@ -3527,6 +3501,24 @@
           "value": "59 l",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 42963,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-07",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 263,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 07/2024, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -3624,12 +3616,12 @@
         },
         "openingHours": [
           {
-            "day": "Mo - Fr",
-            "time": "08:00 Uhr - 18:00 Uhr"
+            "time": "08:00 Uhr - 18:00 Uhr",
+            "day": "Mo - Fr"
           },
           {
-            "day": "Sa",
-            "time": "09:00 Uhr - 13:00 Uhr"
+            "time": "09:00 Uhr - 13:00 Uhr",
+            "day": "Sa"
           }
         ],
         "rating": {
@@ -3677,24 +3669,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 42963,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2024-07",
-        "constructionYear": 2024,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": 1650,
-        "fuelTankLitres": 59,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 263,
-        "generation": "G21",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 07/2024, nach der Umstellung"
-      },
       "ref": 10,
       "assessment": {
         "verdict": "kandidat",
@@ -3707,17 +3681,13 @@
           "adjustment": 1170
         },
         "effectivePrice": 30140
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:51:46.860Z"
       }
     },
     {
       "id": "454575246",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-touring-head-up-led-rfk-komfortzg-bad-d%C3%BCrkheim/454575246.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=454575246&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:24:37.671Z",
+      "fetchedAt": "2026-08-31T16:22:14.656Z",
       "title": "BMW 320i Touring Head-Up LED RFK Komfortzg.",
       "shortTitle": "BMW 320",
       "subTitle": "i Touring Head-Up LED RFK Komfortzg.",
@@ -3730,10 +3700,10 @@
         "tsn": "CVS"
       },
       "price": {
-        "gross": 29900,
-        "net": 25126.05,
+        "gross": 28900,
+        "net": 24285.71,
         "currency": "EUR",
-        "localized": "29.900 €",
+        "localized": "28.900 €",
         "vatRate": 19,
         "vatNote": "19,00% MwSt.",
         "type": "FIXED"
@@ -3741,7 +3711,7 @@
       "priceRating": {
         "rating": "GOOD_PRICE",
         "label": "Guter Preis",
-        "offset": 86,
+        "offset": 40,
         "thresholds": [
           "21.600 €",
           "28.000 €",
@@ -3849,7 +3819,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme",
+          "value": "Vorne, Kamera, Selbstlenkende Systeme, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -3892,6 +3862,24 @@
           "value": "59 l",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 48400,
+        "powerKw": 135,
+        "powerHp": 184,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-03",
+        "constructionYear": 2023,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1660,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 203,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -3992,12 +3980,12 @@
         },
         "openingHours": [
           {
-            "day": "Mo - Fr",
-            "time": "07:15 Uhr - 18:00 Uhr"
+            "time": "07:15 Uhr - 18:00 Uhr",
+            "day": "Mo - Fr"
           },
           {
-            "day": "Sa",
-            "time": "09:00 Uhr - 12:30 Uhr"
+            "time": "09:00 Uhr - 12:30 Uhr",
+            "day": "Sa"
           }
         ],
         "rating": {
@@ -4017,52 +4005,34 @@
             "bankName": "Openbank Deutschland AG",
             "loanBroker": "Check24 GmbH",
             "loanType": "BALLOON",
-            "downPayment": 5980,
+            "downPayment": 5780,
             "creditTerm": 60,
             "yearlyMileage": 10000,
-            "creditAmount": 23920,
+            "creditAmount": 23120,
             "interestRateNominal": 5.41,
             "interestRateEffective": 5.55,
-            "monthlyInstallment": 316.99,
-            "finalInstallment": 9867,
-            "totalInterest": 4649.68,
-            "totalAmount": 28569.68,
+            "monthlyInstallment": 306.39,
+            "finalInstallment": 9537,
+            "totalInterest": 4494.18,
+            "totalAmount": 27614.18,
             "localized": {
-              "downPayment": "5.980,00 €",
+              "downPayment": "5.780,00 €",
               "downPaymentInPercent": "20%",
               "creditTerm": "60",
               "creditTermInYears": "5",
               "yearlyMileage": "10.000",
-              "creditAmount": "23.920,00 €",
+              "creditAmount": "23.120,00 €",
               "interestRateNominal": "5,41%",
               "interestRateEffective": "5,55%",
-              "monthlyInstallment": "317 €",
-              "finalInstallment": "9.867,00 €",
-              "totalInterest": "4.649,68 €",
-              "totalAmount": "28.569,68 €",
+              "monthlyInstallment": "307 €",
+              "finalInstallment": "9.537,00 €",
+              "totalInterest": "4.494,18 €",
+              "totalAmount": "27.614,18 €",
               "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
             }
           }
         }
       ],
-      "derived": {
-        "mileageKm": 48400,
-        "powerKw": 135,
-        "powerHp": 184,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2023-03",
-        "constructionYear": 2023,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": 1660,
-        "fuelTankLitres": 59,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 203,
-        "generation": "G21",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
-      },
       "ref": 11,
       "assessment": {
         "verdict": "kandidat",
@@ -4074,18 +4044,14 @@
           "deviationKm": -2850,
           "adjustment": -280
         },
-        "effectivePrice": 29620
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:52:08.732Z"
+        "effectivePrice": 28620
       }
     },
     {
       "id": "39859344293056",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318d-touring-navi-led-acc-rfk-ahk-komfzg-hifi-heilbronn/39859344293056.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=39859344293056&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:24:39.180Z",
+      "fetchedAt": "2026-08-31T16:22:37.921Z",
       "title": "BMW 318d Touring Navi.LED.ACC.RFK.AHK.KomfZg.HiFi",
       "shortTitle": "BMW 318",
       "subTitle": "d Touring Navi.LED.ACC.RFK.AHK.KomfZg.HiFi",
@@ -4099,25 +4065,25 @@
         "tsn": "DDH"
       },
       "price": {
-        "gross": 28680,
-        "net": 24100.84,
+        "gross": 28300,
+        "net": 23781.51,
         "currency": "EUR",
-        "localized": "28.680 €",
+        "localized": "28.300 €",
         "vatRate": 19,
         "vatNote": "19,00% MwSt.",
         "type": "FIXED"
       },
       "priceRating": {
-        "rating": "REASONABLE_PRICE",
-        "label": "Fairer Preis",
-        "offset": 11,
+        "rating": "GOOD_PRICE",
+        "label": "Guter Preis",
+        "offset": 95,
         "thresholds": [
-          "20.200 €",
-          "26.300 €",
-          "28.300 €",
-          "31.500 €",
-          "33.800 €",
-          "37.600 €"
+          "20.300 €",
+          "26.400 €",
+          "28.400 €",
+          "31.600 €",
+          "33.900 €",
+          "37.700 €"
         ]
       },
       "facts": {
@@ -4218,7 +4184,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Vorne, Hinten, Kamera",
+          "value": "Vorne, Kamera, Selbstlenkende Systeme, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -4241,6 +4207,24 @@
           "value": "Kunstleder, Schwarz",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 63250,
+        "powerKw": 110,
+        "powerHp": 150,
+        "cubicCapacityCcm": 1995,
+        "firstRegistration": "2023-06",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 134,
+        "generation": "G81",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 06/2023, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -4307,7 +4291,7 @@
       ],
       "highlights": [],
       "images": [
-        "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a5b1a1b-03bf-4910-ba6c-03dd38500d0d",
+        "https://img.classistatic.de/api/v1/mo-prod/images/92/927c9a5d-4746-4d9a-b2f5-2f94c2dd0af0",
         "https://img.classistatic.de/api/v1/mo-prod/images/d3/d3f0adf9-9c7b-4307-9b8a-619befad5265",
         "https://img.classistatic.de/api/v1/mo-prod/images/5b/5bb51858-e87e-4562-a281-fac956d7832d",
         "https://img.classistatic.de/api/v1/mo-prod/images/30/30e0f9d6-f4a0-405f-9c3a-38e5c017f8ce",
@@ -4334,18 +4318,18 @@
         },
         "openingHours": [
           {
-            "day": "Mo - Fr",
-            "time": "08:00 Uhr - 18:00 Uhr"
+            "time": "08:00 Uhr - 18:00 Uhr",
+            "day": "Mo - Fr"
           },
           {
-            "day": "Sa",
-            "time": "09:00 Uhr - 12:00 Uhr"
+            "time": "09:00 Uhr - 12:00 Uhr",
+            "day": "Sa"
           }
         ],
         "rating": {
           "score": 4.7,
           "count": 225,
-          "recommendationRate": 88
+          "recommendationRate": 87
         }
       },
       "financePlans": [
@@ -4359,52 +4343,34 @@
             "bankName": "Openbank Deutschland AG",
             "loanBroker": "Check24 GmbH",
             "loanType": "BALLOON",
-            "downPayment": 5736,
+            "downPayment": 5660,
             "creditTerm": 60,
             "yearlyMileage": 10000,
-            "creditAmount": 22944,
+            "creditAmount": 22640,
             "interestRateNominal": 5.41,
             "interestRateEffective": 5.55,
-            "monthlyInstallment": 304.06,
-            "finalInstallment": 9464.4,
-            "totalInterest": 4459.96,
-            "totalAmount": 27403.96,
+            "monthlyInstallment": 300.03,
+            "finalInstallment": 9339,
+            "totalInterest": 4400.87,
+            "totalAmount": 27040.87,
             "localized": {
-              "downPayment": "5.736,00 €",
+              "downPayment": "5.660,00 €",
               "downPaymentInPercent": "20%",
               "creditTerm": "60",
               "creditTermInYears": "5",
               "yearlyMileage": "10.000",
-              "creditAmount": "22.944,00 €",
+              "creditAmount": "22.640,00 €",
               "interestRateNominal": "5,41%",
               "interestRateEffective": "5,55%",
-              "monthlyInstallment": "305 €",
-              "finalInstallment": "9.464,40 €",
-              "totalInterest": "4.459,96 €",
-              "totalAmount": "27.403,96 €",
+              "monthlyInstallment": "301 €",
+              "finalInstallment": "9.339,00 €",
+              "totalInterest": "4.400,87 €",
+              "totalAmount": "27.040,87 €",
               "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
             }
           }
         }
       ],
-      "derived": {
-        "mileageKm": 63250,
-        "powerKw": 110,
-        "powerHp": 150,
-        "cubicCapacityCcm": 1995,
-        "firstRegistration": "2023-06",
-        "constructionYear": null,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": null,
-        "fuelTankLitres": null,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 134,
-        "generation": "G81",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 06/2023, nach der Umstellung"
-      },
       "ref": 12,
       "assessment": {
         "verdict": "raus",
@@ -4412,18 +4378,14 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": null,
-        "effectivePrice": 28680
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:51:32.838Z"
+        "effectivePrice": 28300
       }
     },
     {
       "id": "450754039",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-aut-waldshut-tiengen/450754039.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=450754039&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:25:22.205Z",
+      "fetchedAt": "2026-08-31T16:23:00.875Z",
       "title": "BMW 318i Touring Aut.",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring Aut.",
@@ -4561,7 +4523,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Kamera, Hinten, Selbstlenkende Systeme, Vorne",
+          "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
           "group": "vehicle"
         },
         "airbag": {
@@ -4609,6 +4571,24 @@
           "value": "59 l",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 39691,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-12",
+        "constructionYear": 2023,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 289,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 12/2023, nach der Umstellung"
       },
       "features": [
         "ABS",
@@ -4738,24 +4718,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 39691,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2023-12",
-        "constructionYear": 2023,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": 1650,
-        "fuelTankLitres": 59,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 289,
-        "generation": "G21",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 12/2023, nach der Umstellung"
-      },
       "ref": 13,
       "assessment": {
         "verdict": "kandidat",
@@ -4768,17 +4730,13 @@
           "adjustment": -30
         },
         "effectivePrice": 30630
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:51:59.106Z"
       }
     },
     {
       "id": "461917102",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-tour-lico-da-pa-tempo-pano-memory-hifi-l%C3%BCneburg/461917102.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461917102&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:25:23.755Z",
+      "fetchedAt": "2026-08-31T16:23:24.107Z",
       "title": "BMW 320i Tour. LiCo+ DA,PA+,Tempo,Pano,Memory,HiFi",
       "shortTitle": "BMW 320",
       "subTitle": "i Tour. LiCo+ DA,PA+,Tempo,Pano,Memory,HiFi",
@@ -4963,7 +4921,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "360°-Kamera, Vorne, Selbstlenkende Systeme, Hinten",
+          "value": "Hinten, Vorne, 360°-Kamera, Selbstlenkende Systeme",
           "group": "vehicle"
         },
         "airbag": {
@@ -5001,6 +4959,24 @@
           "value": "4",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 40296,
+        "powerKw": 135,
+        "powerHp": 184,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-07",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": 154,
+        "consumptionL100km": 6.8,
+        "distanceFromHomeKm": 423,
+        "generation": "G81",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 07/2023, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -5101,12 +5077,12 @@
         },
         "openingHours": [
           {
-            "day": "Mo - Fr",
-            "time": "09:00 Uhr - 18:00 Uhr"
+            "time": "09:00 Uhr - 18:00 Uhr",
+            "day": "Mo - Fr"
           },
           {
-            "day": "Sa",
-            "time": "09:00 Uhr - 14:00 Uhr"
+            "time": "09:00 Uhr - 14:00 Uhr",
+            "day": "Sa"
           }
         ],
         "rating": {
@@ -5154,24 +5130,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 40296,
-        "powerKw": 135,
-        "powerHp": 184,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2023-07",
-        "constructionYear": null,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": null,
-        "fuelTankLitres": null,
-        "co2GramsPerKm": 154,
-        "consumptionL100km": 6.8,
-        "distanceFromHomeKm": 423,
-        "generation": "G81",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 07/2023, nach der Umstellung"
-      },
       "ref": 14,
       "assessment": {
         "verdict": "kandidat",
@@ -5190,17 +5148,13 @@
           "adjustment": -600
         },
         "effectivePrice": 29990
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T11:02:51.299Z"
       }
     },
     {
       "id": "460051224",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-lc-plus-ahk-sportsitze-gra-dab-pa-dillenburg/460051224.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460051224&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:25:45.434Z",
+      "fetchedAt": "2026-08-31T16:23:27.038Z",
       "title": "BMW 318i TOURING LC PLUS AHK SPORTSITZE GRA DAB   PA",
       "shortTitle": "BMW 318",
       "subTitle": "i TOURING LC PLUS AHK SPORTSITZE GRA DAB   PA",
@@ -5343,7 +5297,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Hinten, Vorne, Kamera",
+          "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
           "group": "vehicle"
         },
         "airbag": {
@@ -5391,6 +5345,24 @@
           "value": "59 l",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 33095,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-02",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 240,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 02/2024, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -5482,17 +5454,17 @@
         },
         "openingHours": [
           {
-            "time": "07:00 Uhr - 18:00 Uhr",
-            "day": "Mo - Fr"
+            "day": "Mo - Fr",
+            "time": "07:00 Uhr - 18:00 Uhr"
           },
           {
-            "time": "09:00 Uhr - 13:00 Uhr",
-            "day": "Sa"
+            "day": "Sa",
+            "time": "09:00 Uhr - 13:00 Uhr"
           }
         ],
         "rating": {
           "score": 4.9,
-          "count": 43,
+          "count": 44,
           "recommendationRate": 100
         }
       },
@@ -5535,24 +5507,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 33095,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2024-02",
-        "constructionYear": 2024,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": 1650,
-        "fuelTankLitres": 59,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 240,
-        "generation": "G21",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 02/2024, nach der Umstellung"
-      },
       "ref": 15,
       "assessment": {
         "verdict": "raus",
@@ -5567,7 +5521,7 @@
       "id": "458712598",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-lc-plus-sportsitze-led-gra-shzg-dab-gie%C3%9Fen/458712598.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=458712598&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:26:07.206Z",
+      "fetchedAt": "2026-08-31T16:23:50.614Z",
       "title": "BMW 318i TOURING LC PLUS SPORTSITZE LED GRA SHZG DAB",
       "shortTitle": "BMW 318",
       "subTitle": "i TOURING LC PLUS SPORTSITZE LED GRA SHZG DAB",
@@ -5710,7 +5664,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme",
+          "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
           "group": "vehicle"
         },
         "airbag": {
@@ -5758,6 +5712,24 @@
           "value": "59 l",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 42900,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-04",
+        "constructionYear": 2024,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 208,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 04/2024, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -5892,24 +5864,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 42900,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2024-04",
-        "constructionYear": 2024,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": 1650,
-        "fuelTankLitres": 59,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 208,
-        "generation": "G21",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 04/2024, nach der Umstellung"
-      },
       "ref": 16,
       "assessment": {
         "verdict": "raus",
@@ -5924,7 +5878,7 @@
       "id": "39886296760608",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-individual-ahk-widescreen-traunstein/39886296760608.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=39886296760608&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:26:29.057Z",
+      "fetchedAt": "2026-08-31T16:24:13.549Z",
       "title": "BMW 318i Touring M Sport Individual AHK Widescreen",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring M Sport Individual AHK Widescreen",
@@ -6061,7 +6015,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, Vorne",
+          "value": "Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -6109,6 +6063,24 @@
           "value": "59 l",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 33400,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-07",
+        "constructionYear": 2023,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 216,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 07/2023, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -6206,12 +6178,12 @@
         },
         "openingHours": [
           {
-            "time": "08:30 Uhr - 18:00 Uhr",
-            "day": "Mo - Fr"
+            "day": "Mo - Fr",
+            "time": "08:30 Uhr - 18:00 Uhr"
           },
           {
-            "time": "09:00 Uhr - 12:30 Uhr",
-            "day": "Sa"
+            "day": "Sa",
+            "time": "09:00 Uhr - 12:30 Uhr"
           }
         ],
         "rating": {
@@ -6259,24 +6231,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 33400,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2023-07",
-        "constructionYear": 2023,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": 1650,
-        "fuelTankLitres": 59,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 216,
-        "generation": "G21",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 07/2023, nach der Umstellung"
-      },
       "ref": 17,
       "assessment": {
         "verdict": "kandidat",
@@ -6295,17 +6249,13 @@
           "adjustment": -1280
         },
         "effectivePrice": 29900
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:51:35.670Z"
       }
     },
     {
       "id": "40586751728608",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-tour-acc-sportsitze-kamera-parkassist-sh-bietigheim-bissingen/40586751728608.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40586751728608&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:26:50.579Z",
+      "fetchedAt": "2026-08-31T16:24:36.512Z",
       "title": "BMW 318i Tour. ACC Sportsitze Kamera Parkassist SH",
       "shortTitle": "BMW 318",
       "subTitle": "i Tour. ACC Sportsitze Kamera Parkassist SH",
@@ -6438,7 +6388,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Kamera, Hinten, Selbstlenkende Systeme, Vorne",
+          "value": "Kamera, Selbstlenkende Systeme, Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -6461,6 +6411,24 @@
           "value": "Teilleder, Schwarz",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 50960,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-08",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 148,
+        "generation": "G81",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 08/2023, nach der Umstellung"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -6602,24 +6570,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 50960,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2023-08",
-        "constructionYear": null,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": null,
-        "fuelTankLitres": null,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 148,
-        "generation": "G81",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 08/2023, nach der Umstellung"
-      },
       "ref": 18,
       "assessment": {
         "verdict": "top",
@@ -6638,17 +6588,13 @@
           "adjustment": 600
         },
         "effectivePrice": 27995
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:51:41.220Z"
       }
     },
     {
       "id": "452520909",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-m-sport-acc-sitzheizung-navi-klimaautomatik-dietzenbach-bei-frankfurt/452520909.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=452520909&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:27:12.158Z",
+      "fetchedAt": "2026-08-31T16:24:59.430Z",
       "title": "BMW 318i M-Sport ACC|Sitzheizung|Navi|Klimaautomatik",
       "shortTitle": "BMW 318",
       "subTitle": "i M-Sport ACC|Sitzheizung|Navi|Klimaautomatik",
@@ -6662,10 +6608,10 @@
         "tsn": "CYW"
       },
       "price": {
-        "gross": 27573,
-        "net": 23170.59,
+        "gross": 27358,
+        "net": 22989.92,
         "currency": "EUR",
-        "localized": "27.573 €",
+        "localized": "27.358 €",
         "vatRate": 19,
         "vatNote": "19,00% MwSt.",
         "type": "FIXED"
@@ -6673,7 +6619,7 @@
       "priceRating": {
         "rating": "GOOD_PRICE",
         "label": "Guter Preis",
-        "offset": 88,
+        "offset": 77,
         "thresholds": [
           "19.900 €",
           "25.800 €",
@@ -6825,6 +6771,24 @@
           "group": "vehicle"
         }
       },
+      "derived": {
+        "mileageKm": 57348,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2022-01",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 168,
+        "generation": "G21",
+        "facelift": "pre-lci",
+        "faceliftBasis": "Erstzulassung 01/2022, vor der Umstellung"
+      },
       "features": [
         "Abgedunkelte Scheiben",
         "ABS",
@@ -6921,17 +6885,17 @@
         },
         "openingHours": [
           {
-            "day": "Mo - Fr",
-            "time": "09:00 Uhr - 18:30 Uhr"
+            "time": "09:00 Uhr - 18:30 Uhr",
+            "day": "Mo - Fr"
           },
           {
-            "day": "Sa",
-            "time": "09:00 Uhr - 15:00 Uhr"
+            "time": "09:00 Uhr - 15:00 Uhr",
+            "day": "Sa"
           }
         ],
         "rating": {
           "score": 4.8,
-          "count": 532,
+          "count": 533,
           "recommendationRate": 96
         }
       },
@@ -6947,52 +6911,34 @@
             "bankId": "Renault",
             "bankName": "Mobilize Financial Services, Geschäftsbereich der RCI Banque S.A. Niederlassung Deutschland",
             "loanType": "BALLOON",
-            "downPayment": 5514,
+            "downPayment": 5471,
             "creditTerm": 60,
             "yearlyMileage": 10000,
-            "creditAmount": 22059,
+            "creditAmount": 21887,
             "interestRateNominal": 5.83,
             "interestRateEffective": 5.99,
-            "monthlyInstallment": 262.61,
-            "finalInstallment": 11525.51,
-            "totalInterest": 4960.5,
-            "totalAmount": 27019.5,
+            "monthlyInstallment": 260.56,
+            "finalInstallment": 11435.64,
+            "totalInterest": 4921.68,
+            "totalAmount": 26808.68,
             "localized": {
-              "downPayment": "5.514,00 €",
+              "downPayment": "5.471,00 €",
               "downPaymentInPercent": "20%",
               "creditTerm": "60",
               "creditTermInYears": "5",
               "yearlyMileage": "10.000",
-              "creditAmount": "22.059,00 €",
+              "creditAmount": "21.887,00 €",
               "interestRateNominal": "5,83%",
               "interestRateEffective": "5,99%",
-              "monthlyInstallment": "263 €",
-              "finalInstallment": "11.525,51 €",
-              "totalInterest": "4.960,50 €",
-              "totalAmount": "27.019,50 €",
+              "monthlyInstallment": "261 €",
+              "finalInstallment": "11.435,64 €",
+              "totalInterest": "4.921,68 €",
+              "totalAmount": "26.808,68 €",
               "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Mobilize Financial Services, Geschäftsbereich der RCI Banque S.A. Niederlassung Deutschland (Darlehensgeber), Jagenbergstraße 1, 41468 Neuss. Bonität vorausgesetzt."
             }
           }
         }
       ],
-      "derived": {
-        "mileageKm": 57348,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2022-01",
-        "constructionYear": null,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": null,
-        "fuelTankLitres": 59,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 168,
-        "generation": "G21",
-        "facelift": "pre-lci",
-        "faceliftBasis": "Erstzulassung 01/2022, vor der Umstellung"
-      },
       "ref": 19,
       "assessment": {
         "verdict": "top",
@@ -7015,18 +6961,14 @@
           "deviationKm": -11402,
           "adjustment": -1140
         },
-        "effectivePrice": 29233
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:52:04.669Z"
+        "effectivePrice": 29018
       }
     },
     {
       "id": "460807870",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318d-tour-m-sportpaket-navi-led-ahk-kamera-driv-neusitz-rothenburg/460807870.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460807870&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:27:33.909Z",
+      "fetchedAt": "2026-08-31T16:25:02.517Z",
       "title": "BMW 318d Tour. M Sportpaket Navi LED AHK Kamera Driv",
       "shortTitle": "BMW 318",
       "subTitle": "d Tour. M Sportpaket Navi LED AHK Kamera Driv",
@@ -7040,10 +6982,10 @@
         "tsn": "DDH"
       },
       "price": {
-        "gross": 29999,
+        "gross": 29880,
         "net": null,
         "currency": "EUR",
-        "localized": "29.999 €",
+        "localized": "29.880 €",
         "vatRate": null,
         "vatNote": null,
         "type": "FIXED"
@@ -7051,7 +6993,7 @@
       "priceRating": {
         "rating": "REASONABLE_PRICE",
         "label": "Fairer Preis",
-        "offset": 9,
+        "offset": 5,
         "thresholds": [
           "21.200 €",
           "27.600 €",
@@ -7159,7 +7101,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten, Kamera, Selbstlenkende Systeme",
+          "value": "Hinten, Selbstlenkende Systeme, Vorne, Kamera",
           "group": "vehicle"
         },
         "airbag": {
@@ -7182,6 +7124,24 @@
           "value": "Alcantara, Schwarz",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 47150,
+        "powerKw": 110,
+        "powerHp": 150,
+        "cubicCapacityCcm": 1995,
+        "firstRegistration": "2022-09",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": null,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 56,
+        "generation": "G81",
+        "facelift": "unknown",
+        "faceliftBasis": "Zulassung im Umstellungsfenster – aus den Daten nicht entscheidbar"
       },
       "features": [
         "Abgedunkelte Scheiben",
@@ -7245,9 +7205,9 @@
       ],
       "highlights": [],
       "images": [
-        "https://img.classistatic.de/api/v1/mo-prod/images/4c/4cd9126d-a0fd-41e7-a02c-e269560dce43",
+        "https://img.classistatic.de/api/v1/mo-prod/images/5f/5f49231c-7229-4249-b537-7e4b209f5584",
         "https://img.classistatic.de/api/v1/mo-prod/images/14/14c17d77-88a2-4b8e-98ce-5a1753a515c5",
-        "https://img.classistatic.de/api/v1/mo-prod/images/90/908dab8a-79d1-4a5d-a4e7-6e3633d7a1d7",
+        "https://img.classistatic.de/api/v1/mo-prod/images/4b/4b644c08-9046-4c6b-b552-6a20c58a1fc4",
         "https://img.classistatic.de/api/v1/mo-prod/images/db/dbaf692c-0518-4ea3-a225-cf79e98a8e36",
         "https://img.classistatic.de/api/v1/mo-prod/images/15/1528f361-0010-429c-af60-848b9751fd90",
         "https://img.classistatic.de/api/v1/mo-prod/images/61/614b58d7-b9c3-49ad-9a0e-0d8da3a7e416",
@@ -7300,29 +7260,29 @@
             "bankId": "Santander",
             "bankName": "Openbank Deutschland AG",
             "loanType": "BALLOON",
-            "downPayment": 5999,
+            "downPayment": 5976,
             "creditTerm": 60,
             "yearlyMileage": 10000,
-            "creditAmount": 24000,
+            "creditAmount": 23904,
             "interestRateNominal": 6.3,
             "interestRateEffective": 6.49,
-            "monthlyInstallment": 280,
-            "finalInstallment": 13499.55,
-            "totalInterest": 5988.57,
-            "totalAmount": 29988.57,
+            "monthlyInstallment": 279,
+            "finalInstallment": 13446,
+            "totalInterest": 5965.71,
+            "totalAmount": 29869.71,
             "localized": {
-              "downPayment": "5.999,00 €",
+              "downPayment": "5.976,00 €",
               "downPaymentInPercent": "20%",
               "creditTerm": "60",
               "creditTermInYears": "5",
               "yearlyMileage": "10.000",
-              "creditAmount": "24.000,00 €",
+              "creditAmount": "23.904,00 €",
               "interestRateNominal": "6,30%",
               "interestRateEffective": "6,49%",
-              "monthlyInstallment": "280 €",
-              "finalInstallment": "13.499,55 €",
-              "totalInterest": "5.988,57 €",
-              "totalAmount": "29.988,57 €",
+              "monthlyInstallment": "279 €",
+              "finalInstallment": "13.446,00 €",
+              "totalInterest": "5.965,71 €",
+              "totalAmount": "29.869,71 €",
               "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
             }
           }
@@ -7335,24 +7295,6 @@
           "showInGallery": false
         }
       ],
-      "derived": {
-        "mileageKm": 47150,
-        "powerKw": 110,
-        "powerHp": 150,
-        "cubicCapacityCcm": 1995,
-        "firstRegistration": "2022-09",
-        "constructionYear": null,
-        "seats": 5,
-        "previousOwners": null,
-        "weightKg": null,
-        "fuelTankLitres": null,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 56,
-        "generation": "G81",
-        "facelift": "unknown",
-        "faceliftBasis": "Zulassung im Umstellungsfenster – aus den Daten nicht entscheidbar"
-      },
       "ref": 20,
       "assessment": {
         "verdict": "raus",
@@ -7360,21 +7302,21 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": null,
-        "effectivePrice": 29999
+        "effectivePrice": 29880
       }
     },
     {
       "id": "460854078",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318ia-widescreen-dab-tempo-sitzh-pdc-navi-baiersdorf/460854078.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460854078&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:28:17.525Z",
+      "fetchedAt": "2026-08-31T16:25:25.489Z",
       "title": "BMW 318iA*Widescreen*DAB*Tempo*Sitzh*PDC*Navi....",
       "shortTitle": "BMW 318",
       "subTitle": "iA*Widescreen*DAB*Tempo*Sitzh*PDC*Navi....",
       "make": "BMW",
       "model": "318",
       "category": "EstateCar",
-      "isNew": false,
+      "isNew": true,
       "kba": {
         "hsn": "0005",
         "tsn": "CYI"
@@ -7504,7 +7446,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten, Selbstlenkende Systeme",
+          "value": "Hinten, Vorne, Selbstlenkende Systeme",
           "group": "vehicle"
         },
         "airbag": {
@@ -7527,6 +7469,24 @@
           "value": "4",
           "group": "vehicle"
         }
+      },
+      "derived": {
+        "mileageKm": 45000,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2024-06",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": 145,
+        "consumptionL100km": 6.5,
+        "distanceFromHomeKm": 20,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 06/2024, nach der Umstellung"
       },
       "features": [
         "ABS",
@@ -7607,12 +7567,12 @@
         },
         "openingHours": [
           {
-            "time": "09:00 Uhr - 18:00 Uhr",
-            "day": "Mo - Fr"
+            "day": "Mo - Fr",
+            "time": "09:00 Uhr - 18:00 Uhr"
           },
           {
-            "time": "11:00 Uhr - 14:00 Uhr",
-            "day": "Sa"
+            "day": "Sa",
+            "time": "11:00 Uhr - 14:00 Uhr"
           }
         ],
         "rating": {
@@ -7660,24 +7620,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 45000,
-        "powerKw": 115,
-        "powerHp": 156,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2024-06",
-        "constructionYear": null,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": null,
-        "fuelTankLitres": null,
-        "co2GramsPerKm": 145,
-        "consumptionL100km": 6.5,
-        "distanceFromHomeKm": 20,
-        "generation": "G21",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 06/2024, nach der Umstellung"
-      },
       "ref": 22,
       "assessment": {
         "verdict": "raus",
@@ -7692,14 +7634,14 @@
       "id": "457556716",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318da-touring-widescreen-led-carplay-navi-tempo-baiersdorf/457556716.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=457556716&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:28:39.220Z",
+      "fetchedAt": "2026-08-31T16:25:48.457Z",
       "title": "BMW 318dA Touring -WIDESCREEN-LED-CARPLAY-NAVI-TEMPO",
       "shortTitle": "BMW 318",
       "subTitle": "dA Touring -WIDESCREEN-LED-CARPLAY-NAVI-TEMPO",
       "make": "BMW",
       "model": "318",
       "category": "EstateCar",
-      "isNew": false,
+      "isNew": true,
       "kba": null,
       "price": {
         "gross": 23999,
@@ -7855,6 +7797,24 @@
           "group": "vehicle"
         }
       },
+      "derived": {
+        "mileageKm": 78000,
+        "powerKw": 110,
+        "powerHp": 150,
+        "cubicCapacityCcm": 1995,
+        "firstRegistration": "2023-02",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": 100,
+        "distanceFromHomeKm": 21,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 02/2023, nach der Umstellung"
+      },
       "features": [
         "ABS",
         "Abstandswarner",
@@ -7949,12 +7909,12 @@
         },
         "openingHours": [
           {
-            "day": "Mo - Fr",
-            "time": "09:00 Uhr - 17:00 Uhr"
+            "time": "09:00 Uhr - 17:00 Uhr",
+            "day": "Mo - Fr"
           },
           {
-            "day": "Sa",
-            "time": "08:00 Uhr - 12:00 Uhr"
+            "time": "08:00 Uhr - 12:00 Uhr",
+            "day": "Sa"
           }
         ],
         "rating": {
@@ -8002,24 +7962,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 78000,
-        "powerKw": 110,
-        "powerHp": 150,
-        "cubicCapacityCcm": 1995,
-        "firstRegistration": "2023-02",
-        "constructionYear": null,
-        "seats": 5,
-        "previousOwners": 1,
-        "weightKg": null,
-        "fuelTankLitres": null,
-        "co2GramsPerKm": null,
-        "consumptionL100km": 100,
-        "distanceFromHomeKm": 21,
-        "generation": "G21",
-        "facelift": "lci",
-        "faceliftBasis": "Erstzulassung 02/2023, nach der Umstellung"
-      },
       "ref": 23,
       "assessment": {
         "verdict": "raus",
@@ -8028,17 +7970,13 @@
         "retrofitCost": 0,
         "mileageAdjustment": null,
         "effectivePrice": 23999
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:45:24.205Z"
       }
     },
     {
       "id": "452562130",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320-320-i-sport-line-shadow-head-up-service-neu-f%C3%BCrth/452562130.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=452562130&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T06:29:00.910Z",
+      "fetchedAt": "2026-08-31T16:26:11.475Z",
       "title": "BMW 320 320 i Sport Line Shadow Head Up* Service Neu",
       "shortTitle": "BMW 320",
       "subTitle": "320 i Sport Line Shadow Head Up* Service Neu",
@@ -8209,6 +8147,24 @@
           "group": "vehicle"
         }
       },
+      "derived": {
+        "mileageKm": 45000,
+        "powerKw": 135,
+        "powerHp": 184,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2017-10",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 2,
+        "weightKg": 1595,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": null,
+        "consumptionL100km": null,
+        "distanceFromHomeKm": 2,
+        "generation": "F31",
+        "facelift": "other-generation",
+        "faceliftBasis": "F31 ist der Vorgänger-3er-Touring, kein G20/G21"
+      },
       "features": [
         "Abgedunkelte Scheiben",
         "ABS",
@@ -8319,12 +8275,12 @@
         },
         "openingHours": [
           {
-            "time": "10:00 Uhr - 18:00 Uhr",
-            "day": "Mo - Fr"
+            "day": "Mo - Fr",
+            "time": "10:00 Uhr - 18:00 Uhr"
           },
           {
-            "time": "10:00 Uhr - 15:00 Uhr",
-            "day": "Sa"
+            "day": "Sa",
+            "time": "10:00 Uhr - 15:00 Uhr"
           }
         ],
         "rating": {
@@ -8373,24 +8329,6 @@
           }
         }
       ],
-      "derived": {
-        "mileageKm": 45000,
-        "powerKw": 135,
-        "powerHp": 184,
-        "cubicCapacityCcm": 1998,
-        "firstRegistration": "2017-10",
-        "constructionYear": null,
-        "seats": 5,
-        "previousOwners": 2,
-        "weightKg": 1595,
-        "fuelTankLitres": null,
-        "co2GramsPerKm": null,
-        "consumptionL100km": null,
-        "distanceFromHomeKm": 2,
-        "generation": "F31",
-        "facelift": "other-generation",
-        "faceliftBasis": "F31 ist der Vorgänger-3er-Touring, kein G20/G21"
-      },
       "ref": 24,
       "assessment": {
         "verdict": "raus",
@@ -8399,17 +8337,13 @@
         "retrofitCost": 0,
         "mileageAdjustment": null,
         "effectivePrice": 18990
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:52:06.747Z"
       }
     },
     {
       "id": "41966966984672",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-led-head-up-display-r%C3%BCckfahrkamera-st-wendel/41966966984672.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=41966966984672&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T08:46:53.977Z",
+      "fetchedAt": "2026-08-31T16:26:34.523Z",
       "title": "BMW 318i TOURING LED HEAD UP DISPLAY RÜCKFAHRKAMERA",
       "shortTitle": "BMW 318",
       "subTitle": "i TOURING LED HEAD UP DISPLAY RÜCKFAHRKAMERA",
@@ -8417,7 +8351,7 @@
       "model": "318",
       "category": "EstateCar",
       "sku": "B35481FP48770",
-      "isNew": true,
+      "isNew": false,
       "kba": {
         "hsn": "0005",
         "tsn": "CYW"
@@ -8552,7 +8486,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Kamera, Selbstlenkende Systeme, Hinten, Vorne",
+          "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
           "group": "vehicle"
         },
         "airbag": {
@@ -8786,17 +8720,13 @@
           "adjustment": 1180
         },
         "effectivePrice": 28660
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:51:54.312Z"
       }
     },
     {
       "id": "461760316",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-tour-sport-line-liveprof-st-go-led-hifi-shz-g%C3%BCtersloh/461760316.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461760316&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T08:52:02.457Z",
+      "fetchedAt": "2026-08-31T16:26:57.682Z",
       "title": "BMW 320i Tour Sport Line LiveProf St+Go LED HiFi SHZ",
       "shortTitle": "BMW 320",
       "subTitle": "i Tour Sport Line LiveProf St+Go LED HiFi SHZ",
@@ -8986,7 +8916,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, Kamera, Selbstlenkende Systeme, Vorne",
+          "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
           "group": "vehicle"
         },
         "airbag": {
@@ -9209,10 +9139,6 @@
           "adjustment": -1950
         },
         "effectivePrice": 27300
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:48:18.941Z"
       }
     },
     {
@@ -9592,7 +9518,7 @@
       "id": "39939637985408",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-touring-lc-prof-hud-led-rfk-ahk-st-go-17-detmold/39939637985408.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=39939637985408&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T09:48:08.965Z",
+      "fetchedAt": "2026-08-31T16:27:20.732Z",
       "title": "BMW 320i Touring LC-Prof HUD LED RFK AHK St+Go 17\"",
       "shortTitle": "BMW 320",
       "subTitle": "i Touring LC-Prof HUD LED RFK AHK St+Go 17\"",
@@ -9782,7 +9708,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
+          "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
           "group": "vehicle"
         },
         "airbag": {
@@ -9933,12 +9859,12 @@
         },
         "openingHours": [
           {
-            "time": "08:30 Uhr - 19:00 Uhr",
-            "day": "Mo - Fr"
+            "day": "Mo - Fr",
+            "time": "08:30 Uhr - 19:00 Uhr"
           },
           {
-            "time": "09:00 Uhr - 14:00 Uhr",
-            "day": "Sa"
+            "day": "Sa",
+            "time": "09:00 Uhr - 14:00 Uhr"
           }
         ],
         "rating": {
@@ -9994,17 +9920,13 @@
         "retrofitCost": 0,
         "mileageAdjustment": null,
         "effectivePrice": 28850
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T10:51:38.450Z"
       }
     },
     {
       "id": "461144700",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-led-lc-prof-hud-ahk-360-hk-alarm-shz-pdc-t-unstruttal/461144700.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461144700&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T10:07:49.044Z",
+      "fetchedAt": "2026-08-31T16:27:43.660Z",
       "title": "BMW 320i LED LC Prof HUD AHK 360° HK Alarm SHZ PDC T",
       "shortTitle": "BMW 320",
       "subTitle": "i LED LC Prof HUD AHK 360° HK Alarm SHZ PDC T",
@@ -10146,7 +10068,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, Vorne, Selbstlenkende Systeme, 360°-Kamera",
+          "value": "Vorne, Hinten, Selbstlenkende Systeme, 360°-Kamera",
           "group": "vehicle"
         },
         "airbag": {
@@ -10382,10 +10304,6 @@
           "adjustment": 370
         },
         "effectivePrice": 30205
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-08-28T11:02:42.771Z"
       }
     },
     {
@@ -10741,13 +10659,17 @@
           "adjustment": -320
         },
         "effectivePrice": 33660
+      },
+      "availability": {
+        "status": "sold",
+        "checkedAt": "2026-08-31T16:33:50.490Z"
       }
     },
     {
       "id": "461340137",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-aut-touring-m-sport-facelift-ahk-360-kam-velburg/461340137.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461340137&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T12:44:30.043Z",
+      "fetchedAt": "2026-08-31T16:28:09.875Z",
       "title": "BMW 318i Aut. Touring M SPORT Facelift /AHK/360°Kam",
       "shortTitle": "BMW 318",
       "subTitle": "i Aut. Touring M SPORT Facelift /AHK/360°Kam",
@@ -10900,7 +10822,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, Vorne, Selbstlenkende Systeme, 360°-Kamera",
+          "value": "Hinten, Vorne, 360°-Kamera, Selbstlenkende Systeme",
           "group": "vehicle"
         },
         "airbag": {
@@ -11115,7 +11037,7 @@
       "id": "460259599",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318-i-tour-m-sportp-ahk-acc-ad-led-headup-hifi-vaihingen-enz/460259599.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460259599&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T12:45:10.273Z",
+      "fetchedAt": "2026-08-31T16:28:12.799Z",
       "title": "BMW 318 i Tour M Sportp. AHK°ACC*Ad.LED°Headup+HIFI",
       "shortTitle": "BMW 318",
       "subTitle": "i Tour M Sportp. AHK°ACC*Ad.LED°Headup+HIFI",
@@ -11123,7 +11045,7 @@
       "model": "318",
       "category": "EstateCar",
       "sku": "61124",
-      "isNew": true,
+      "isNew": false,
       "kba": {
         "hsn": "0005",
         "tsn": "CYW"
@@ -11140,14 +11062,14 @@
       "priceRating": {
         "rating": "GOOD_PRICE",
         "label": "Guter Preis",
-        "offset": 11,
+        "offset": 26,
         "thresholds": [
-          "25.800 €",
-          "33.600 €",
-          "36.200 €",
-          "40.200 €",
-          "43.200 €",
-          "48.000 €"
+          "25.600 €",
+          "33.200 €",
+          "35.800 €",
+          "39.800 €",
+          "42.700 €",
+          "47.500 €"
         ]
       },
       "facts": {
@@ -11278,7 +11200,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Vorne, Hinten, 360°-Kamera",
+          "value": "Selbstlenkende Systeme, Hinten, 360°-Kamera, Vorne",
           "group": "vehicle"
         },
         "airbag": {
@@ -11542,7 +11464,7 @@
       "id": "461727403",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-lci-headup-acc-ahk-360-ka-b%C3%B6blingen/461727403.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461727403&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T12:46:06.347Z",
+      "fetchedAt": "2026-08-31T16:28:36.026Z",
       "title": "BMW 318i Touring M Sport LCI HeadUp ACC AHK 360°Ka",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring M Sport LCI HeadUp ACC AHK 360°Ka",
@@ -11680,7 +11602,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, 360°-Kamera, Vorne, Selbstlenkende Systeme",
+          "value": "360°-Kamera, Hinten, Vorne, Selbstlenkende Systeme",
           "group": "vehicle"
         },
         "airbag": {
@@ -11909,7 +11831,7 @@
       "id": "461339389",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-facelift-ahk-360-kamera-velburg/461339389.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461339389&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T12:48:53.549Z",
+      "fetchedAt": "2026-08-31T16:28:59.506Z",
       "title": "BMW 318i Touring M SPORT Facelift /AHK/360°Kamera",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring M SPORT Facelift /AHK/360°Kamera",
@@ -12062,7 +11984,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Selbstlenkende Systeme, Hinten, 360°-Kamera",
+          "value": "360°-Kamera, Hinten, Vorne, Selbstlenkende Systeme",
           "group": "vehicle"
         },
         "airbag": {
@@ -12271,7 +12193,7 @@
       "id": "454917686",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-m-sportpaket-acc-hifi-kamera-ahk-reutlingen/454917686.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=454917686&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T12:49:32.950Z",
+      "fetchedAt": "2026-08-31T16:29:22.482Z",
       "title": "BMW 318i M Sportpaket/ACC/HiFi/Kamera/AHK",
       "shortTitle": "BMW 318",
       "subTitle": "i M Sportpaket/ACC/HiFi/Kamera/AHK",
@@ -12409,7 +12331,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
+          "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
           "group": "vehicle"
         },
         "airbag": {
@@ -12577,12 +12499,12 @@
         },
         "openingHours": [
           {
-            "time": "08:00 Uhr - 18:30 Uhr",
-            "day": "Mo - Fr"
+            "day": "Mo - Fr",
+            "time": "08:00 Uhr - 18:30 Uhr"
           },
           {
-            "time": "09:00 Uhr - 13:00 Uhr",
-            "day": "Sa"
+            "day": "Sa",
+            "time": "09:00 Uhr - 13:00 Uhr"
           }
         ],
         "rating": {
@@ -12648,7 +12570,7 @@
       "id": "40939067025760",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-ahk-rfk-lordose-led-shz-tempomat-bt-syke/40939067025760.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40939067025760&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T12:52:57.404Z",
+      "fetchedAt": "2026-08-31T16:29:46.379Z",
       "title": "BMW 318i Touring AHK RFK LORDOSE LED SHZ TEMPOMAT BT",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring AHK RFK LORDOSE LED SHZ TEMPOMAT BT",
@@ -12785,7 +12707,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, Vorne, Kamera, Selbstlenkende Systeme",
+          "value": "Kamera, Selbstlenkende Systeme, Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -12938,7 +12860,7 @@
         "https://img.classistatic.de/api/v1/mo-prod/images/95/95abe367-7f67-40be-a4da-db9e29a4b5c3",
         "https://img.classistatic.de/api/v1/mo-prod/images/9e/9eaed59f-fd7b-4003-8351-8d18a1f724e3",
         "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb727b9b-546c-454d-ba65-db93f092bf05",
-        "https://img.classistatic.de/api/v1/mo-prod/images/23/23cc2d0d-5976-464d-ace5-6a9a992780fe"
+        "https://img.classistatic.de/api/v1/mo-prod/images/75/75e996e3-2838-4d2e-8f83-e00ee2e0bc5b"
       ],
       "dealer": {
         "name": "Freese-Süd GmbH",
@@ -13015,7 +12937,7 @@
       "id": "459209462",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-lci-headup-acc-ahk-360-ka-b%C3%B6blingen/459209462.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=459209462&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T12:53:54.364Z",
+      "fetchedAt": "2026-08-31T16:29:49.329Z",
       "title": "BMW 318i Touring M Sport LCI HeadUp ACC AHK 360°Ka",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring M Sport LCI HeadUp ACC AHK 360°Ka",
@@ -13153,7 +13075,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Selbstlenkende Systeme, Hinten, 360°-Kamera",
+          "value": "360°-Kamera, Hinten, Selbstlenkende Systeme, Vorne",
           "group": "vehicle"
         },
         "airbag": {
@@ -13383,7 +13305,7 @@
       "id": "454329674",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-t-led-navi-hud-sportsitze-kamera-19-ahk-dorf-mecklenburg-wismar/454329674.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=454329674&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T12:54:21.652Z",
+      "fetchedAt": "2026-08-31T16:29:52.191Z",
       "title": "BMW 320i T. LED NAVI HUD SPORTSITZE KAMERA 19\" AHK",
       "shortTitle": "BMW 320",
       "subTitle": "i T. LED NAVI HUD SPORTSITZE KAMERA 19\" AHK",
@@ -13521,7 +13443,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Kamera, Selbstlenkende Systeme, Hinten, Vorne",
+          "value": "Kamera, Selbstlenkende Systeme, Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -13746,7 +13668,7 @@
       "id": "40431129186720",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-330ia-touring-g21-m-sport-lc-pr-ahk-acc-cam-willmering-bei-cham/40431129186720.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40431129186720&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T12:55:06.529Z",
+      "fetchedAt": "2026-08-31T16:30:15.094Z",
       "title": "BMW 330iA TOURING G21 ///M-SPORT/LC\"PR\"/AHK/ACC/CAM",
       "shortTitle": "BMW 330",
       "subTitle": "iA TOURING G21 ///M-SPORT/LC\"PR\"/AHK/ACC/CAM",
@@ -13898,7 +13820,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Hinten, Vorne, Kamera",
+          "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
           "group": "vehicle"
         },
         "airbag": {
@@ -14042,7 +13964,30 @@
       ],
       "highlights": [],
       "images": [
-        "https://img.classistatic.de/api/v1/mo-prod/images/58/58814439-43a5-4e03-81d6-dd176a57fbcd"
+        "https://img.classistatic.de/api/v1/mo-prod/images/aa/aaaa0e7c-5cb6-4438-bb7b-5a1ccb00ea98",
+        "https://img.classistatic.de/api/v1/mo-prod/images/5a/5ac47d09-e258-434c-ba89-740fa882109f",
+        "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2d0fd8d-c531-4a3f-8148-6a6b8ea9c7f6",
+        "https://img.classistatic.de/api/v1/mo-prod/images/f4/f492795e-6259-499e-9627-54c40f371c0b",
+        "https://img.classistatic.de/api/v1/mo-prod/images/cf/cf526b3a-971a-4c27-94f6-146393ce76e0",
+        "https://img.classistatic.de/api/v1/mo-prod/images/7a/7aa40132-1e45-4637-971a-adcb83963329",
+        "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c02a22d-6a8f-438f-ae67-37632b6d9d8a",
+        "https://img.classistatic.de/api/v1/mo-prod/images/00/005ddd32-b2a9-4fe0-b30a-208236ea6010",
+        "https://img.classistatic.de/api/v1/mo-prod/images/79/79a391b6-17bf-4407-ae0e-16cec8367148",
+        "https://img.classistatic.de/api/v1/mo-prod/images/92/9216f26a-d082-4a7b-bf80-b5a2bb94b14a",
+        "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1d20ab9-78b0-4818-a11c-3f844ef6bbc1",
+        "https://img.classistatic.de/api/v1/mo-prod/images/98/9864e577-0c22-44ee-a2ea-0677ec0914ce",
+        "https://img.classistatic.de/api/v1/mo-prod/images/c1/c14600fb-a1d1-4973-ae88-0d321869b8e9",
+        "https://img.classistatic.de/api/v1/mo-prod/images/15/15dfd610-c3f6-415d-9816-c72870cbffbd",
+        "https://img.classistatic.de/api/v1/mo-prod/images/d5/d571e229-56f7-474a-b3ef-6cfe49b685eb",
+        "https://img.classistatic.de/api/v1/mo-prod/images/21/218cdfe2-b3b3-4eac-9080-6c1da0f2a88b",
+        "https://img.classistatic.de/api/v1/mo-prod/images/95/956fb308-6b4e-4c43-a063-92d04c037b29",
+        "https://img.classistatic.de/api/v1/mo-prod/images/02/02b60ef9-32ee-4e9a-900b-6bcb37a92808",
+        "https://img.classistatic.de/api/v1/mo-prod/images/e7/e77a8d3d-eec6-4136-908e-9b64a65c1550",
+        "https://img.classistatic.de/api/v1/mo-prod/images/f2/f21de34a-6397-432a-8b72-a40376b76d4f",
+        "https://img.classistatic.de/api/v1/mo-prod/images/25/2526cee7-09c6-4f08-bde6-11f2c3c31078",
+        "https://img.classistatic.de/api/v1/mo-prod/images/50/5001264e-fe10-47f5-9cc1-9eb902af5c6c",
+        "https://img.classistatic.de/api/v1/mo-prod/images/3e/3e618b76-2181-41fb-88e5-32124d08bed6",
+        "https://img.classistatic.de/api/v1/mo-prod/images/21/21670e4f-23ff-4d62-ad39-27713031d722"
       ],
       "dealer": {
         "name": "KORDICK Automobile Vertriebs GmbH",
@@ -14145,7 +14090,7 @@
       "id": "460520128",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-touring-advantage-waldshut-tiengen/460520128.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460520128&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T16:24:36.614Z",
+      "fetchedAt": "2026-08-31T16:30:37.967Z",
       "title": "BMW 320i Touring Advantage",
       "shortTitle": "BMW 320",
       "subTitle": "i Touring Advantage",
@@ -14521,7 +14466,7 @@
       "id": "449167530",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-330e-touring-hybrid-m-acc-cockpit-kamera-spur-19-rennerod/449167530.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=449167530&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T18:17:00.437Z",
+      "fetchedAt": "2026-08-31T16:31:00.819Z",
       "title": "BMW 330e Touring Hybrid M/ACC/Cockpit/KAMERA/SPUR/19",
       "shortTitle": "BMW 330",
       "subTitle": "e Touring Hybrid M/ACC/Cockpit/KAMERA/SPUR/19",
@@ -14529,7 +14474,7 @@
       "model": "330",
       "category": "EstateCar",
       "sku": "057",
-      "isNew": true,
+      "isNew": false,
       "kba": {
         "hsn": "0005",
         "tsn": "CYZ"
@@ -14649,7 +14594,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, Kamera, Vorne",
+          "value": "Hinten, Vorne, Kamera",
           "group": "vehicle"
         },
         "airbag": {
@@ -14834,12 +14779,12 @@
         },
         "openingHours": [
           {
-            "day": "Mo - Fr",
-            "time": "09:00 Uhr - 17:00 Uhr"
+            "time": "09:00 Uhr - 17:00 Uhr",
+            "day": "Mo - Fr"
           },
           {
-            "day": "Sa",
-            "time": "09:00 Uhr - 14:00 Uhr"
+            "time": "09:00 Uhr - 14:00 Uhr",
+            "day": "Sa"
           }
         ],
         "rating": {
@@ -14911,14 +14856,14 @@
       "id": "39885009550112",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320-e-touring-m-sport-opf-shadow-line-ahk-wagenfeld-str%C3%B6hen/39885009550112.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=39885009550112&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T18:23:36.519Z",
+      "fetchedAt": "2026-08-31T16:31:24.025Z",
       "title": "BMW 320 e Touring, M Sport OPF, Shadow-Line, AHK",
       "shortTitle": "BMW 320",
       "subTitle": "e Touring, M Sport OPF, Shadow-Line, AHK",
       "make": "BMW",
       "model": "320",
       "category": "EstateCar",
-      "isNew": true,
+      "isNew": false,
       "kba": {
         "hsn": "0005",
         "tsn": "CYJ"
@@ -15043,7 +14988,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
+          "value": "Vorne, Kamera, Selbstlenkende Systeme, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -15201,8 +15146,8 @@
         },
         "openingHours": [
           {
-            "day": "Mo - Fr",
-            "time": "08:00 Uhr - 17:00 Uhr"
+            "time": "08:00 Uhr - 17:00 Uhr",
+            "day": "Mo - Fr"
           }
         ],
         "rating": {

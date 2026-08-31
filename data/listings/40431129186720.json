@@ -2,7 +2,7 @@
   "id": "40431129186720",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-330ia-touring-g21-m-sport-lc-pr-ahk-acc-cam-willmering-bei-cham/40431129186720.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40431129186720&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T12:55:06.529Z",
+  "fetchedAt": "2026-08-31T16:30:15.094Z",
   "title": "BMW 330iA TOURING G21 ///M-SPORT/LC\"PR\"/AHK/ACC/CAM",
   "shortTitle": "BMW 330",
   "subTitle": "iA TOURING G21 ///M-SPORT/LC\"PR\"/AHK/ACC/CAM",
@@ -154,7 +154,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Hinten, Vorne, Kamera",
+      "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
       "group": "vehicle"
     },
     "airbag": {
@@ -298,7 +298,30 @@
   ],
   "highlights": [],
   "images": [
-    "https://img.classistatic.de/api/v1/mo-prod/images/58/58814439-43a5-4e03-81d6-dd176a57fbcd"
+    "https://img.classistatic.de/api/v1/mo-prod/images/aa/aaaa0e7c-5cb6-4438-bb7b-5a1ccb00ea98",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5a/5ac47d09-e258-434c-ba89-740fa882109f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2d0fd8d-c531-4a3f-8148-6a6b8ea9c7f6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f4/f492795e-6259-499e-9627-54c40f371c0b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/cf/cf526b3a-971a-4c27-94f6-146393ce76e0",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7a/7aa40132-1e45-4637-971a-adcb83963329",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c02a22d-6a8f-438f-ae67-37632b6d9d8a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/00/005ddd32-b2a9-4fe0-b30a-208236ea6010",
+    "https://img.classistatic.de/api/v1/mo-prod/images/79/79a391b6-17bf-4407-ae0e-16cec8367148",
+    "https://img.classistatic.de/api/v1/mo-prod/images/92/9216f26a-d082-4a7b-bf80-b5a2bb94b14a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1d20ab9-78b0-4818-a11c-3f844ef6bbc1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/98/9864e577-0c22-44ee-a2ea-0677ec0914ce",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c1/c14600fb-a1d1-4973-ae88-0d321869b8e9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/15/15dfd610-c3f6-415d-9816-c72870cbffbd",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d5/d571e229-56f7-474a-b3ef-6cfe49b685eb",
+    "https://img.classistatic.de/api/v1/mo-prod/images/21/218cdfe2-b3b3-4eac-9080-6c1da0f2a88b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/95/956fb308-6b4e-4c43-a063-92d04c037b29",
+    "https://img.classistatic.de/api/v1/mo-prod/images/02/02b60ef9-32ee-4e9a-900b-6bcb37a92808",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e7/e77a8d3d-eec6-4136-908e-9b64a65c1550",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f2/f21de34a-6397-432a-8b72-a40376b76d4f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/25/2526cee7-09c6-4f08-bde6-11f2c3c31078",
+    "https://img.classistatic.de/api/v1/mo-prod/images/50/5001264e-fe10-47f5-9cc1-9eb902af5c6c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3e/3e618b76-2181-41fb-88e5-32124d08bed6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/21/21670e4f-23ff-4d62-ad39-27713031d722"
   ],
   "dealer": {
     "name": "KORDICK Automobile Vertriebs GmbH",

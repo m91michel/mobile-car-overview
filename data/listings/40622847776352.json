@@ -2,7 +2,7 @@
   "id": "40622847776352",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318-i-touring-m-sport-adap-led-parkass-plus-hi-bremen/40622847776352.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40622847776352&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:21:42.214Z",
+  "fetchedAt": "2026-08-31T16:21:28.646Z",
   "title": "BMW 318 i Touring M Sport adap. LED Parkass. PLUS Hi",
   "shortTitle": "BMW 318",
   "subTitle": "i Touring M Sport adap. LED Parkass. PLUS Hi",
@@ -125,7 +125,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, 360°-Kamera, Vorne, Hinten",
+      "value": "360°-Kamera, Selbstlenkende Systeme, Vorne, Hinten",
       "group": "vehicle"
     },
     "airbag": {
@@ -153,6 +153,24 @@
       "value": "4",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 23000,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2025-03",
+    "constructionYear": 2024,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 426,
+    "generation": null,
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 03/2025, nach der Umstellung"
   },
   "features": [
     "ABS",
@@ -295,24 +313,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 23000,
-    "powerKw": 115,
-    "powerHp": 156,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2025-03",
-    "constructionYear": 2024,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": null,
-    "fuelTankLitres": null,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 426,
-    "generation": null,
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 03/2025, nach der Umstellung"
-  },
   "ref": 9,
   "assessment": {
     "verdict": "kandidat",
@@ -331,9 +331,5 @@
       "adjustment": 180
     },
     "effectivePrice": 33580
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:51:44.026Z"
   }
 }

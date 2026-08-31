@@ -2,7 +2,7 @@
   "id": "457056589",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318d-touring-m-sport-hifi-livecockpit-led-wieds-siegen/457056589.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=457056589&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:23:54.315Z",
+  "fetchedAt": "2026-08-31T16:21:05.776Z",
   "title": "BMW 318d TOURING M SPORT HIFI LiveCockpit+ LED Wieds",
   "shortTitle": "BMW 318",
   "subTitle": "d TOURING M SPORT HIFI LiveCockpit+ LED Wieds",
@@ -10,7 +10,7 @@
   "model": "318",
   "category": "EstateCar",
   "sku": "B00139247851",
-  "isNew": true,
+  "isNew": false,
   "kba": {
     "hsn": "0005",
     "tsn": "DDH"
@@ -150,7 +150,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Hinten",
+      "value": "Hinten, Vorne",
       "group": "vehicle"
     },
     "airbag": {
@@ -198,6 +198,24 @@
       "value": "59 l",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 83530,
+    "powerKw": 110,
+    "powerHp": 150,
+    "cubicCapacityCcm": 1995,
+    "firstRegistration": "2023-03",
+    "constructionYear": 2023,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1735,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 263,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
   },
   "features": [
     "ABS",
@@ -297,12 +315,12 @@
     },
     "openingHours": [
       {
-        "day": "Mo - Fr",
-        "time": "08:00 Uhr - 18:00 Uhr"
+        "time": "08:00 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
       },
       {
-        "day": "Sa",
-        "time": "09:00 Uhr - 13:00 Uhr"
+        "time": "09:00 Uhr - 13:00 Uhr",
+        "day": "Sa"
       }
     ],
     "rating": {
@@ -350,24 +368,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 83530,
-    "powerKw": 110,
-    "powerHp": 150,
-    "cubicCapacityCcm": 1995,
-    "firstRegistration": "2023-03",
-    "constructionYear": 2023,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": 1735,
-    "fuelTankLitres": 59,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 263,
-    "generation": "G21",
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 03/2023, nach der Umstellung"
-  },
   "ref": 8,
   "assessment": {
     "verdict": "raus",
@@ -376,9 +376,5 @@
     "retrofitCost": 0,
     "mileageAdjustment": null,
     "effectivePrice": 28790
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-08-28T10:52:11.536Z"
   }
 }

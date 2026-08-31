@@ -2,7 +2,7 @@
   "id": "454917686",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-m-sportpaket-acc-hifi-kamera-ahk-reutlingen/454917686.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=454917686&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T12:49:32.950Z",
+  "fetchedAt": "2026-08-31T16:29:22.482Z",
   "title": "BMW 318i M Sportpaket/ACC/HiFi/Kamera/AHK",
   "shortTitle": "BMW 318",
   "subTitle": "i M Sportpaket/ACC/HiFi/Kamera/AHK",
@@ -140,7 +140,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
+      "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
       "group": "vehicle"
     },
     "airbag": {
@@ -308,12 +308,12 @@
     },
     "openingHours": [
       {
-        "time": "08:00 Uhr - 18:30 Uhr",
-        "day": "Mo - Fr"
+        "day": "Mo - Fr",
+        "time": "08:00 Uhr - 18:30 Uhr"
       },
       {
-        "time": "09:00 Uhr - 13:00 Uhr",
-        "day": "Sa"
+        "day": "Sa",
+        "time": "09:00 Uhr - 13:00 Uhr"
       }
     ],
     "rating": {

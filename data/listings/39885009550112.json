@@ -2,14 +2,14 @@
   "id": "39885009550112",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-320-e-touring-m-sport-opf-shadow-line-ahk-wagenfeld-str%C3%B6hen/39885009550112.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=39885009550112&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T18:23:36.519Z",
+  "fetchedAt": "2026-08-31T16:31:24.025Z",
   "title": "BMW 320 e Touring, M Sport OPF, Shadow-Line, AHK",
   "shortTitle": "BMW 320",
   "subTitle": "e Touring, M Sport OPF, Shadow-Line, AHK",
   "make": "BMW",
   "model": "320",
   "category": "EstateCar",
-  "isNew": true,
+  "isNew": false,
   "kba": {
     "hsn": "0005",
     "tsn": "CYJ"
@@ -134,7 +134,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
+      "value": "Vorne, Kamera, Selbstlenkende Systeme, Hinten",
       "group": "vehicle"
     },
     "airbag": {
@@ -292,8 +292,8 @@
     },
     "openingHours": [
       {
-        "day": "Mo - Fr",
-        "time": "08:00 Uhr - 17:00 Uhr"
+        "time": "08:00 Uhr - 17:00 Uhr",
+        "day": "Mo - Fr"
       }
     ],
     "rating": {

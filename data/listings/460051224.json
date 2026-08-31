@@ -2,7 +2,7 @@
   "id": "460051224",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-lc-plus-ahk-sportsitze-gra-dab-pa-dillenburg/460051224.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460051224&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T06:25:45.434Z",
+  "fetchedAt": "2026-08-31T16:23:27.038Z",
   "title": "BMW 318i TOURING LC PLUS AHK SPORTSITZE GRA DAB   PA",
   "shortTitle": "BMW 318",
   "subTitle": "i TOURING LC PLUS AHK SPORTSITZE GRA DAB   PA",
@@ -145,7 +145,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Hinten, Vorne, Kamera",
+      "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
       "group": "vehicle"
     },
     "airbag": {
@@ -193,6 +193,24 @@
       "value": "59 l",
       "group": "vehicle"
     }
+  },
+  "derived": {
+    "mileageKm": 33095,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2024-02",
+    "constructionYear": 2024,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1650,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 240,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 02/2024, nach der Umstellung"
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -284,17 +302,17 @@
     },
     "openingHours": [
       {
-        "time": "07:00 Uhr - 18:00 Uhr",
-        "day": "Mo - Fr"
+        "day": "Mo - Fr",
+        "time": "07:00 Uhr - 18:00 Uhr"
       },
       {
-        "time": "09:00 Uhr - 13:00 Uhr",
-        "day": "Sa"
+        "day": "Sa",
+        "time": "09:00 Uhr - 13:00 Uhr"
       }
     ],
     "rating": {
       "score": 4.9,
-      "count": 43,
+      "count": 44,
       "recommendationRate": 100
     }
   },
@@ -337,24 +355,6 @@
       }
     }
   ],
-  "derived": {
-    "mileageKm": 33095,
-    "powerKw": 115,
-    "powerHp": 156,
-    "cubicCapacityCcm": 1998,
-    "firstRegistration": "2024-02",
-    "constructionYear": 2024,
-    "seats": 5,
-    "previousOwners": 1,
-    "weightKg": 1650,
-    "fuelTankLitres": 59,
-    "co2GramsPerKm": null,
-    "consumptionL100km": null,
-    "distanceFromHomeKm": 240,
-    "generation": "G21",
-    "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 02/2024, nach der Umstellung"
-  },
   "ref": 15,
   "assessment": {
     "verdict": "raus",
