@@ -7,8 +7,10 @@
 //
 // Gaps are therefore normal and expected: they are sold cars, not bugs.
 
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
-import { resolve, dirname } from 'node:path';
+import { readFileSync, existsSync } from 'node:fs';
+import { resolve } from 'node:path';
+
+import { writeJsonAtomic } from './atomic.mjs';
 
 const REFS_FILE = resolve('data/refs.json');
 
@@ -24,11 +26,7 @@ export function loadRefs() {
 }
 
 export function saveRefs(registry) {
-  mkdirSync(dirname(REFS_FILE), { recursive: true });
-  writeFileSync(
-    REFS_FILE,
-    JSON.stringify({ nextRef: registry.nextRef, refs: registry.refs }, null, 2),
-  );
+  writeJsonAtomic(REFS_FILE, { nextRef: registry.nextRef, refs: registry.refs });
 }
 
 /** The car's existing number, or the next free one. */

@@ -26,7 +26,7 @@
 // deeper. Whatever was fetched before that is still written, so an abandoned
 // run resumes with --max-age instead of starting over.
 
-import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'node:fs';
+import { readFileSync, existsSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 import { ensureChrome, PORT } from './chrome.mjs';
@@ -35,6 +35,7 @@ import { parseListingHtml, LISTING_READY_PROBE } from './extract.mjs';
 import { readParkplatz } from './parkplatz.mjs';
 import { loadRefs, saveRefs, assignRef } from './refs.mjs';
 import { loadAssessments, applyAssessment } from './assessment.mjs';
+import { writeJsonAtomic } from './atomic.mjs';
 
 const OUT_DIR = resolve('data/listings');
 const INDEX_FILE = resolve('data/cars.json');
@@ -267,6 +268,32 @@ const cars = [];
 const failures = [];
 let done = 0;
 
+// Merge, so fetching one car never drops the rest of the comparison. Built
+// before the workers start, because each car is now saved as it lands.
+const merged = new Map(index.map((car) => [car.id, car]));
+
+/**
+ * Save everything the run has learned so far.
+ *
+ * Called after every car rather than once at the end, so cancelling a run
+ * keeps its work: a blocked or simply long refresh can be stopped at any
+ * point and the index, the ref registry and the sold list all agree with the
+ * listing files on disk. Doing this only at the end meant a Ctrl-C left
+ * data/listings/*.json updated while data/cars.json still showed old prices,
+ * which needed a pnpm renormalize to repair.
+ *
+ * All three writes are atomic, since interrupting one is now likely rather
+ * than theoretical.
+ */
+function persist() {
+  writeJsonAtomic(INDEX_FILE, {
+    updatedAt: new Date().toISOString(),
+    unavailable,
+    cars: [...merged.values()],
+  });
+  saveRefs(refs);
+}
+
 async function worker() {
   const page = await openPage(PORT, { newTab: workerCount > 1 });
   try {
@@ -276,14 +303,21 @@ async function worker() {
         const car = await fetchListing(page, id, options);
         car.ref = assignRef(refs, car.id);
         applyAssessment(assessments, car);
-        writeFileSync(resolve(OUT_DIR, `${car.id}.json`), JSON.stringify(car, null, 2));
+        writeJsonAtomic(resolve(OUT_DIR, `${car.id}.json`), car);
         cars.push(car);
+        merged.set(car.id, car);
+        // A car we just fetched is plainly not sold any more.
+        delete unavailable[car.id];
         consecutiveBlocks = 0;
+        persist();
         console.log(
           `  [${++done}/${ids.length}] #${car.ref} ${id} ${car.shortTitle} - ${car.price.localized ?? 'n/a'}`,
         );
       } catch (error) {
-        if (/no longer available/.test(error.message)) unavailable[id] = new Date().toISOString();
+        if (/no longer available/.test(error.message)) {
+          unavailable[id] = new Date().toISOString();
+          persist();
+        }
         // A blocked listing is not a failed listing: put it back so a later
         // run retries it, and stop once the whole run is plainly being refused.
         if (error.blocked) {
@@ -304,23 +338,9 @@ async function worker() {
 
 await Promise.all(Array.from({ length: workerCount }, worker));
 
-// Merge, so fetching one car never drops the rest of the comparison.
-const merged = new Map(index.map((car) => [car.id, car]));
-for (const car of cars) merged.set(car.id, car);
-
-saveRefs(refs);
-
-// A car we just fetched is plainly not sold any more.
-for (const car of cars) delete unavailable[car.id];
-
-writeFileSync(
-  INDEX_FILE,
-  JSON.stringify(
-    { updatedAt: new Date().toISOString(), unavailable, cars: [...merged.values()] },
-    null,
-    2,
-  ),
-);
+// Everything is already on disk, saved per car. This last write only refreshes
+// updatedAt for a run that fetched nothing.
+persist();
 
 console.log(
   `\n${cars.length} fetched, ${failures.length} failed, ${skipped + soldSkipped} skipped.`,
