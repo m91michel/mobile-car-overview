@@ -17,6 +17,11 @@
 //   --retries <n>       retries per listing (default 2)
 //   --cooloff <ms>      first wait after a bot-block, grows per retry (default 60000)
 //   --concurrency <n>   parallel tabs (default 1; keep low to stay unremarkable)
+//   --via-park          reach each car by clicking its Parkplatz card, and
+//                       linger on the page, instead of opening the detail URL
+//                       cold. Falls back to direct navigation per car.
+//   --limit <n>         stop cleanly after n cars, to spread a big refresh
+//                       over several sittings rather than one long run
 //
 // On pacing: a 49-listing refresh at a flat 2.5s earned an Akamai block on the
 // 41st page, and the three that followed were refused too. Volume is what gets
@@ -36,6 +41,9 @@ import { readParkplatz } from './parkplatz.mjs';
 import { loadRefs, saveRefs, assignRef } from './refs.mjs';
 import { loadAssessments, applyAssessment } from './assessment.mjs';
 import { writeJsonAtomic } from './atomic.mjs';
+import {
+  ensureParkplatz, clickParkedCard, readListing, backToParkplatz, maybePause,
+} from './human.mjs';
 
 const OUT_DIR = resolve('data/listings');
 const INDEX_FILE = resolve('data/cars.json');
@@ -63,6 +71,8 @@ function parseArgs(argv) {
     retries: 2,
     cooloffMs: 60000,
     concurrency: 1,
+    viaPark: false,
+    limit: null,
   };
 
   for (let i = 0; i < argv.length; i++) {
@@ -79,6 +89,8 @@ function parseArgs(argv) {
       case '--delay': options.delayMs = Number(value()); break;
       case '--retries': options.retries = Number(value()); break;
       case '--cooloff': options.cooloffMs = Number(value()); break;
+      case '--via-park': options.viaPark = true; break;
+      case '--limit': options.limit = Math.max(1, Number(value())); break;
       case '--concurrency': options.concurrency = Math.max(1, Number(value())); break;
       default:
         if (arg.startsWith('--')) throw new Error(`Unknown flag: ${arg}`);
@@ -138,15 +150,50 @@ function readIdFile(file) {
   return collectIds(lines);
 }
 
+/**
+ * Put the browser on the detail page for `id`.
+ *
+ * With --via-park this is a real click on the parked card, which is what a
+ * person does. It falls back to navigating the URL whenever that is not
+ * possible - the card is missing because the car sold, or the click did not
+ * take - so the human path can never turn a fetchable car into a failure.
+ *
+ * @returns {Promise<string>} the URL the listing was actually read from
+ */
+async function reachListing(page, id, { viaPark }) {
+  if (viaPark) {
+    try {
+      await ensureParkplatz(page);
+      const clicked = await clickParkedCard(page, id);
+      if (clicked) {
+        const arrived = await page.waitForStatus(
+          `location.href.includes('${id}') ? 'ready' : 'pending'`,
+          { timeoutMs: 8000 },
+        );
+        if (arrived === 'ready') return await page.evaluate('location.href');
+      }
+      console.log(
+        clicked
+          ? `        the click on ${id} did not navigate, opening it directly`
+          : `        no parked card for ${id} (sold?), opening it directly`,
+      );
+    } catch (error) {
+      if (error.blocked) throw error;
+      console.log(`        park route failed (${error.message}), opening directly`);
+    }
+  }
+  await page.goto(DETAIL_URL(id));
+  return DETAIL_URL(id);
+}
+
 /** Fetch one listing, with retries for slow renders and transient blocks. */
-async function fetchListing(page, id, { retries, delayMs, cooloffMs }) {
-  const url = DETAIL_URL(id);
+async function fetchListing(page, id, { retries, delayMs, cooloffMs, viaPark }) {
   let lastError;
 
   for (let attempt = 0; attempt <= retries; attempt++) {
     if (attempt > 0) await sleep(jittered(delayMs) * (attempt + 1)); // back off a little
     try {
-      await page.goto(url);
+      const url = await reachListing(page, id, { viaPark });
       const status = await page.waitForStatus(LISTING_READY_PROBE, { timeoutMs: 20000 });
 
       if (status === 'unavailable') {
@@ -267,6 +314,9 @@ const queue = [...ids];
 const cars = [];
 const failures = [];
 let done = 0;
+// --limit stops a run early on purpose, which is not the same as being
+// refused, so it gets its own flag and its own closing message.
+let reachedLimit = false;
 
 // Merge, so fetching one car never drops the rest of the comparison. Built
 // before the workers start, because each car is now saved as it lands.
@@ -297,7 +347,7 @@ function persist() {
 async function worker() {
   const page = await openPage(PORT, { newTab: workerCount > 1 });
   try {
-    while (queue.length && !abandoned) {
+    while (queue.length && !abandoned && !reachedLimit) {
       const id = queue.shift();
       try {
         const car = await fetchListing(page, id, options);
@@ -313,6 +363,13 @@ async function worker() {
         console.log(
           `  [${++done}/${ids.length}] #${car.ref} ${id} ${car.shortTitle} - ${car.price.localized ?? 'n/a'}`,
         );
+        if (options.limit && cars.length >= options.limit) reachedLimit = true;
+        // The payload is already parsed, so this only changes the shape of the
+        // session: time on the page, then back to the list.
+        if (options.viaPark && !reachedLimit) {
+          await readListing(page);
+          await backToParkplatz(page);
+        }
       } catch (error) {
         if (/no longer available/.test(error.message)) {
           unavailable[id] = new Date().toISOString();
@@ -329,7 +386,10 @@ async function worker() {
         failures.push({ id, message: error.message });
         console.log(`  [${++done}/${ids.length}] ${id} FAILED (${error.message})`);
       }
-      if (queue.length && !abandoned) await sleep(jittered(options.delayMs));
+      if (queue.length && !abandoned && !reachedLimit) {
+        await sleep(jittered(options.delayMs));
+        if (options.viaPark) await maybePause();
+      }
     }
   } finally {
     await page.close();
@@ -346,6 +406,14 @@ console.log(
   `\n${cars.length} fetched, ${failures.length} failed, ${skipped + soldSkipped} skipped.`,
 );
 console.log(`Index: data/cars.json (${merged.size} car(s) total)`);
+
+if (reachedLimit) {
+  console.log(
+    `\nStopped at the --limit of ${options.limit} car(s) as asked; ` +
+      `${queue.length} still to go. Everything fetched is saved, so the next ` +
+      'run picks up where this one stopped (add --max-age to skip these).',
+  );
+}
 
 if (abandoned) {
   console.log(

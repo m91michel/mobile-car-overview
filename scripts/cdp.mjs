@@ -66,6 +66,28 @@ export async function openPage(port, { newTab = false } = {}) {
       if (settleMs) await sleep(settleMs);
     },
 
+    // Real input events, dispatched by the browser rather than synthesized in
+    // page JS: a script-made MouseEvent carries isTrusted === false, which is
+    // trivial to check for, while Input.dispatchMouseEvent is indistinguishable
+    // from a hand on the mouse.
+    async mouseMove(x, y) {
+      await send('Input.dispatchMouseEvent', { type: 'mouseMoved', x, y, button: 'none' });
+    },
+
+    async mouseClick(x, y) {
+      const base = { x, y, button: 'left', clickCount: 1 };
+      await send('Input.dispatchMouseEvent', { type: 'mousePressed', ...base });
+      // Nobody presses and releases in the same millisecond.
+      await sleep(40 + Math.round(Math.random() * 90));
+      await send('Input.dispatchMouseEvent', { type: 'mouseReleased', ...base });
+    },
+
+    async scrollBy(deltaY, { x = 500, y = 400 } = {}) {
+      await send('Input.dispatchMouseEvent', {
+        type: 'mouseWheel', x, y, deltaX: 0, deltaY,
+      });
+    },
+
     async evaluate(expression) {
       const res = await send('Runtime.evaluate', {
         expression,

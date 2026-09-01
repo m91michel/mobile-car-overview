@@ -90,6 +90,8 @@ Output is `data/listings/<id>.json` per car, merged into `data/cars.json`.
 | `--delay <ms>` | pause between listings per worker (default 2500, jittered ±40%) |
 | `--retries <n>` | retries per listing (default 2, with backoff) |
 | `--cooloff <ms>` | first wait after a bot-block, grows per retry (default 60000) |
+| `--via-park` | reach each car by clicking its Parkplatz card, and linger on it |
+| `--limit <n>` | stop cleanly after n cars, to spread a refresh over sittings |
 | `--concurrency <n>` | parallel tabs (default 1) |
 
 Three things make batch runs bearable:
@@ -130,6 +132,52 @@ learned the same lesson earlier on its own 29-listing run:
   ```bash
   pnpm scrape -- --saved --refresh --max-age 6   # skips what already landed
   ```
+
+### Looking like a person: `--via-park`
+
+By default the fetcher opens `details.html?id=…` directly, forty times in a
+row, with no referrer and no interaction of any kind. `--via-park` instead
+loads Mein Parkplatz once and **clicks each car's card**, lingers on the
+listing, and goes back to the list — the path a person actually takes.
+
+What it changes, in descending order of how much it is likely to matter:
+
+1. **Interaction telemetry.** Akamai's sensor script collects mouse movement,
+   click coordinates, scroll and timing. A session producing none of it while
+   pulling dozens of deep links is an obvious outlier. `scripts/cdp.mjs` sends
+   real `Input.dispatchMouseEvent`s, not synthesized `MouseEvent`s — a
+   script-made event carries `isTrusted === false`, which is trivial to check.
+2. **Time on page.** `readListing` scrolls the listing for a handful of
+   seconds after the payload is already parsed. It buys nothing technically;
+   it is only there so a visit does not end 180ms after the last byte.
+3. **The URL and the referrer.** Parkplatz links are
+   `…&action=parkItem`, where the direct path invents `action=compareItem` —
+   an action nobody performed. Whether the `Referer` survives depends on the
+   anchor's `rel`, which has not been checked; if mobile.de sets `noreferrer`
+   this point is worth nothing.
+
+**Be honest about what this is.** It is plausible, not measured — an A/B test
+would cost real blocks to run, and none has been done. Two things follow:
+
+- **It does not raise the ceiling.** Volume is the lever with a proven
+  mechanism: ~40 detail pages got refused regardless of how they were reached.
+  Treat `--via-park` as "not worse, probably better", never as permission to
+  fetch more. `--limit <n>` plus more than one sitting is the actual fix.
+- **It cannot make a run fail.** Every step degrades to direct navigation —
+  a missing card (the normal case for a sold car), a click that does not
+  navigate, any error on the list page. The one exception is deliberate: a
+  **block** on the Parkplatz propagates instead of falling back, because
+  retrying as a direct hit while refused only spends budget.
+
+The cards carry `target="_blank"`, so a real click would spawn a tab to chase
+and close for each car. `clickParkedCard` strips the attribute and navigates
+the current tab instead — the single deviation from what a hand would do, and
+much the cheapest.
+
+```bash
+pnpm scrape -- --saved --via-park --limit 2 --delay 9000   # try it on two
+pnpm scrape -- --saved --via-park --max-age 6              # then the rest
+```
 
 Recovering from a block is waiting, not tuning — and the budget comes back
 more slowly than the block page goes away. Observed on one evening: blocked on
