@@ -500,6 +500,33 @@ instead (the ⓘ icon, `effectivePriceBreakdown` in `viewer/src/wishlist.js`),
 and that row carries the same price meter bar as the plain `Preis` row above
 it.
 
+## Shortlisting
+
+`CAR-REQUIREMENTS.md` is binding and holds the weighting — **read all of it**.
+Recommendations built on only its first section have been rejected more than
+once. In particular: the 30k price logic, M Sport as a mere wish, and
+**distance is explicitly not a buying argument**.
+
+Filter traps, each already got wrong:
+
+- Upholstery is `facts.interior`, not `facts.upholstery`. The latter does not
+  exist, so a filter on it silently passes everything.
+- Pure cloth (`Stoff, Schwarz`) is out; `Stoff/Sensatec` and
+  `Stoff/Alcantara Kombination` are accepted. mobile.de forces combination
+  seats to be ticked as plain `Stoff` — the photo check has rescued four cars
+  this way (`factOverrides`).
+- Do not filter on `derived.facelift === "lci"`. A G21 is required, not a
+  facelift; exclude only `other-generation`.
+- Check the exterior colour. White is a hard exclusion and easy to miss while
+  comparing equipment lists.
+
+Shadow Line appears only in the dealer's free-text title, never in
+`features[]` — take optical claims from the photos, not the feature list.
+
+The saved mobile.de search caps at 30.000 € asking price, so cars that only win
+on effective price are missing from it. Anything already in `data/` stays
+comparable.
+
 ## Data quality
 
 ```bash

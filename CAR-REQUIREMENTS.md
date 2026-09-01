@@ -219,6 +219,27 @@ Wenn wir eine Anforderung streichen müssen, ungefähr in dieser Richtung:
 - extrem niedrige Kilometer
 - einzelne Komfortextras
 
+### Kilometerstand: ab wann er zählt
+
+Unter etwa **30.000–35.000 km** ist für uns praktisch ein Neuwagen — 28.000
+gegen 36.000 km ist kein Argument, und 16.000 km sind nur nice-to-have. Ab etwa
+**50.000 km** zählt die Laufleistung wirklich.
+
+Folge für den Effektivpreis: die lineare Anpassung mit 0,10 €/km überbewertet
+kleine Unterschiede im unteren Bereich. Ein paar hundert Euro zwischen zwei
+Autos unter 35.000 km sind Rauschen, keine Rangfolge.
+
+### Zu gute Angebote
+
+Auffällig günstig und trotzdem alles dabei heißt meistens: Haken. Typisch ein
+**reparierter Unfallschaden**, sonst unklare Historie, viele Halter, Reimport.
+Ein Ausreißer nach unten ist kein Fund, sondern eine offene Frage.
+
+`facts.damageCondition` sagt meist nur "Gebrauchtfahrzeug", nur wenige Inserate
+schreiben "Unfallfrei". Ein fehlendes "Unfallfrei" ist deshalb kein Hinweis auf
+einen Schaden — aber bei einem auffällig günstigen Wagen die erste Frage an den
+Händler.
+
 ### Wichtige Abwägung
 
 AHK kann sinnvoll nachgerüstet werden.
