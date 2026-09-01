@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T16:56:08.045Z",
+  "updatedAt": "2026-09-01T17:00:39.714Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -18128,7 +18128,7 @@
       "ref": 50,
       "assessment": {
         "verdict": "kandidat",
-        "note": "M Sport, Panorama-Dach, Memory und HUD, Unfallfrei ausdrücklich ausgewiesen, mit 82 km das nächstgelegene Auto — aber 49.679 km bei EZ 09/2023, und nach der AHK 31.860 €. Wird von #31 geschlagen: nur 610 € mehr für 30.279 km weniger, 13 Monate jünger, AHK und 360°-Kamera ab Werk.",
+        "note": "M Sport, Panorama-Dach, Memory und HUD, Unfallfrei ausdrücklich ausgewiesen, mit 82 km das nächstgelegene Auto — aber 49.679 km bei EZ 09/2023, und nach der AHK 31.860 €. Die günstigeren M-Sport-Alternativen sind #32 (16.980 km, +740 €) und #34 (29.800 km, +1.150 €, 56 km), beide mit AHK ab Werk und fotogeprüfter Stoff/Alcantara-Kombination.",
         "retrofit": [
           {
             "key": "ahk",
@@ -18143,6 +18143,353 @@
           "adjustment": 470
         },
         "effectivePrice": 31860
+      }
+    },
+    {
+      "id": "456478795",
+      "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-navi-kamera-adapt-led-acc-sitzheiz-erlenbach/456478795.html",
+      "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=456478795&scopeId=C&action=compareItem",
+      "fetchedAt": "2026-09-01T16:58:36.905Z",
+      "title": "BMW 318i Touring Navi,Kamera,Adapt. LED,ACC,Sitzheiz",
+      "shortTitle": "BMW 318",
+      "subTitle": "i Touring Navi,Kamera,Adapt. LED,ACC,Sitzheiz",
+      "make": "BMW",
+      "model": "318",
+      "category": "EstateCar",
+      "isNew": true,
+      "kba": {
+        "hsn": "0005",
+        "tsn": "CYW"
+      },
+      "price": {
+        "gross": 25890,
+        "net": 21756.3,
+        "currency": "EUR",
+        "localized": "25.890 €",
+        "vatRate": 19,
+        "vatNote": "19,00% MwSt.",
+        "type": "FIXED"
+      },
+      "priceRating": {
+        "rating": "GOOD_PRICE",
+        "label": "Guter Preis",
+        "offset": 54,
+        "thresholds": [
+          "19.100 €",
+          "24.800 €",
+          "26.800 €",
+          "29.800 €",
+          "31.900 €",
+          "35.500 €"
+        ]
+      },
+      "facts": {
+        "damageCondition": {
+          "label": "Fahrzeugzustand",
+          "value": "Gebrauchtfahrzeug",
+          "group": "vehicle"
+        },
+        "category": {
+          "label": "Kategorie",
+          "value": "Kombi",
+          "group": "vehicle"
+        },
+        "modelRange": {
+          "label": "Baureihe",
+          "value": "G21",
+          "group": "vehicle"
+        },
+        "countryVersion": {
+          "label": "Herkunft",
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
+        },
+        "mileage": {
+          "label": "Kilometerstand",
+          "value": "47.000 km",
+          "group": "vehicle"
+        },
+        "cubicCapacity": {
+          "label": "Hubraum",
+          "value": "1.998 cm³",
+          "group": "vehicle"
+        },
+        "power": {
+          "label": "Leistung",
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
+        },
+        "envkv.engineType": {
+          "label": "Antriebsart",
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
+        },
+        "fuel": {
+          "label": "Kraftstoffart",
+          "value": "Benzin",
+          "group": "vehicle"
+        },
+        "envkv.energyConsumption": {
+          "label": "Energieverbrauch (komb.)",
+          "value": "6,8 l/100km",
+          "group": "envkv"
+        },
+        "envkv.co2Emissions": {
+          "label": "CO₂-Emissionen (komb.)",
+          "value": "153 g/km",
+          "group": "envkv"
+        },
+        "envkv.consumptionDetails.fuel": {
+          "label": "Kraftstoffverbrauch",
+          "value": "6,8 l/100km (kombiniert)",
+          "group": "envkv"
+        },
+        "numSeats": {
+          "label": "Anzahl Sitzplätze",
+          "value": "5",
+          "group": "vehicle"
+        },
+        "doorCount": {
+          "label": "Anzahl der Türen",
+          "value": "4/5",
+          "group": "vehicle"
+        },
+        "transmission": {
+          "label": "Getriebe",
+          "value": "Automatik",
+          "group": "vehicle"
+        },
+        "emissionClass": {
+          "label": "Schadstoffklasse",
+          "value": "Euro6",
+          "group": "vehicle"
+        },
+        "emissionsSticker": {
+          "label": "Umweltplakette",
+          "value": "4 (Grün)",
+          "group": "vehicle"
+        },
+        "firstRegistration": {
+          "label": "Erstzulassung",
+          "value": "05/2023",
+          "group": "vehicle"
+        },
+        "numberOfPreviousOwners": {
+          "label": "Anzahl der Fahrzeughalter",
+          "value": "1",
+          "group": "vehicle"
+        },
+        "hu": {
+          "label": "HU",
+          "value": "Neu",
+          "group": "vehicle"
+        },
+        "climatisation": {
+          "label": "Klimatisierung",
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
+        },
+        "parkAssists": {
+          "label": "Einparkhilfe",
+          "value": "Selbstlenkende Systeme, Vorne, Kamera, Hinten",
+          "group": "vehicle"
+        },
+        "airbag": {
+          "label": "Airbags",
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
+        },
+        "manufacturerColorName": {
+          "label": "Farbe (Hersteller)",
+          "value": "schwarz",
+          "group": "vehicle"
+        },
+        "color": {
+          "label": "Farbe",
+          "value": "Schwarz",
+          "group": "vehicle"
+        },
+        "interior": {
+          "label": "Innenausstattung",
+          "value": "Stoff, Schwarz",
+          "group": "vehicle"
+        },
+        "cylinder": {
+          "label": "Zylinder",
+          "value": "4",
+          "group": "vehicle"
+        }
+      },
+      "derived": {
+        "mileageKm": 47000,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-05",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": null,
+        "fuelTankLitres": null,
+        "co2GramsPerKm": 153,
+        "consumptionL100km": 6.8,
+        "distanceFromHomeKm": 106,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 05/2023, nach der Umstellung"
+      },
+      "features": [
+        "ABS",
+        "Abstandstempomat",
+        "Abstandswarner",
+        "Adaptives Kurvenlicht",
+        "Android Auto",
+        "Apple CarPlay",
+        "Armlehne",
+        "Berganfahrassistent",
+        "Blendfreies Fernlicht",
+        "Bluetooth",
+        "Bordcomputer",
+        "Dachreling",
+        "Elektr. Fensterheber",
+        "Elektr. Heckklappe",
+        "Elektr. Seitenspiegel",
+        "Elektr. Seitenspiegel anklappbar",
+        "ESP",
+        "Fernlichtassistent",
+        "Freisprecheinrichtung",
+        "Garantie",
+        "Gepäckraumabtrennung",
+        "Geschwindigkeitsbegrenzer",
+        "Heckantrieb",
+        "Innenspiegel autom. abblendend",
+        "Isofix",
+        "Lederlenkrad",
+        "LED-Scheinwerfer",
+        "LED-Tagfahrlicht",
+        "Leichtmetallfelgen",
+        "Lichtsensor",
+        "Müdigkeitswarner",
+        "Multifunktionslenkrad",
+        "Musikstreaming integriert",
+        "Navigationssystem",
+        "Nichtraucher-Fahrzeug",
+        "Notbremsassistent",
+        "Notrufsystem",
+        "Partikelfilter",
+        "Radio DAB",
+        "Regensensor",
+        "Reifendruckkontrolle",
+        "Schaltwippen",
+        "Scheckheftgepflegt",
+        "Servolenkung",
+        "Sitzheizung",
+        "Sommerreifen",
+        "Sprachsteuerung",
+        "Spurhalteassistent",
+        "Start/Stopp-Automatik",
+        "Totwinkel-Assistent",
+        "Touchscreen",
+        "Traktionskontrolle",
+        "USB",
+        "Verkehrszeichenerkennung",
+        "Volldigitales Kombiinstrument",
+        "WLAN / Wifi Hotspot",
+        "Zentralverriegelung"
+      ],
+      "highlights": [],
+      "images": [
+        "https://img.classistatic.de/api/v1/mo-prod/images/b7/b74842d2-76f5-4272-b70d-d8d2d85b91c6",
+        "https://img.classistatic.de/api/v1/mo-prod/images/6d/6db12579-8dc3-48f5-a32b-a6d663e99b50",
+        "https://img.classistatic.de/api/v1/mo-prod/images/65/65160a12-7e8c-449c-98ba-0d9683282fab",
+        "https://img.classistatic.de/api/v1/mo-prod/images/59/599d715e-1a9e-4244-9f57-a7656374670c",
+        "https://img.classistatic.de/api/v1/mo-prod/images/70/703d7891-4d52-4814-8024-3d82d2cbcde3",
+        "https://img.classistatic.de/api/v1/mo-prod/images/b3/b31a5348-2f3b-41b0-858c-50e874cd783c",
+        "https://img.classistatic.de/api/v1/mo-prod/images/00/007a594c-4977-4a8b-afe0-df255f07952a",
+        "https://img.classistatic.de/api/v1/mo-prod/images/38/385d73a1-bab9-4c44-af36-82d528b02851",
+        "https://img.classistatic.de/api/v1/mo-prod/images/16/1687ca8e-4392-452d-8e2c-3031d4e30b4d",
+        "https://img.classistatic.de/api/v1/mo-prod/images/04/04ea5715-f5bf-4d49-9604-a39ee2474b3f",
+        "https://img.classistatic.de/api/v1/mo-prod/images/30/30d3f7d4-f479-42d0-bc16-53afaedb0e87",
+        "https://img.classistatic.de/api/v1/mo-prod/images/d6/d6a1dd71-6100-4dd0-a8cd-b961e23dd128",
+        "https://img.classistatic.de/api/v1/mo-prod/images/29/29e8f2e4-2e3c-4a77-85f2-5fe9ac8d6336",
+        "https://img.classistatic.de/api/v1/mo-prod/images/10/1087d960-75bc-43a9-8854-1dd1680e94a8",
+        "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d0e2ce2-16de-471b-842a-71e5a62326be"
+      ],
+      "dealer": {
+        "name": "Günter Reuter GmbH  BMW & MINI Service",
+        "type": "Händler",
+        "street": "Am Bäuerleinsberg 2",
+        "city": "DE-97837 Erlenbach",
+        "country": "DE",
+        "phone": "+49 (0)9391 4013",
+        "homepage": "https://home.mobile.de/home/redirect.html?customerId=458913",
+        "location": {
+          "lat": 49.8292586,
+          "lon": 9.619440899999999
+        },
+        "openingHours": [
+          {
+            "time": "07:30 Uhr - 18:00 Uhr",
+            "day": "Mo - Fr"
+          },
+          {
+            "time": "08:00 Uhr - 13:00 Uhr",
+            "day": "Sa"
+          }
+        ],
+        "rating": {
+          "score": 5,
+          "count": 56,
+          "recommendationRate": 100
+        }
+      },
+      "financePlans": [
+        {
+          "type": "AO",
+          "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=456478795",
+          "shortFlow": true,
+          "promotion": false,
+          "showInGallery": false,
+          "offer": {
+            "bankName": "Openbank Deutschland AG",
+            "loanBroker": "Check24 GmbH",
+            "loanType": "BALLOON",
+            "downPayment": 5178,
+            "creditTerm": 60,
+            "yearlyMileage": 10000,
+            "creditAmount": 20712,
+            "interestRateNominal": 5.41,
+            "interestRateEffective": 5.55,
+            "monthlyInstallment": 274.48,
+            "finalInstallment": 8543.7,
+            "totalInterest": 4026.1,
+            "totalAmount": 24738.1,
+            "localized": {
+              "downPayment": "5.178,00 €",
+              "downPaymentInPercent": "20%",
+              "creditTerm": "60",
+              "creditTermInYears": "5",
+              "yearlyMileage": "10.000",
+              "creditAmount": "20.712,00 €",
+              "interestRateNominal": "5,41%",
+              "interestRateEffective": "5,55%",
+              "monthlyInstallment": "275 €",
+              "finalInstallment": "8.543,70 €",
+              "totalInterest": "4.026,10 €",
+              "totalAmount": "24.738,10 €",
+              "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+            }
+          }
+        }
+      ],
+      "ref": 51,
+      "assessment": {
+        "verdict": "raus",
+        "note": "Raus: laut Inserat reine Stoffausstattung. Wäre mit 27.190 € effektiv sonst Platz 1 im Zielprofil, 169 € unter #49 — ACC, Kamera, LCI 05/2023, 47.000 km, BMW-Service-Betrieb, 106 km. Der Sitz-Check am Foto lohnt sich hier also, bevor er endgültig rausfällt.",
+        "retrofit": [],
+        "retrofitCost": 0,
+        "mileageAdjustment": null,
+        "effectivePrice": 25890
       }
     }
   ]

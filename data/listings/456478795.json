@@ -1,11 +1,11 @@
 {
-  "id": "42944541372224",
-  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-headup-pano-d-memory-ad-led-bopfingen/42944541372224.html",
-  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=42944541372224&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-09-01T16:54:18.608Z",
-  "title": "BMW 318I Touring M Sport/HeadUp/Pano-D/Memory/ad.LED",
+  "id": "456478795",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-navi-kamera-adapt-led-acc-sitzheiz-erlenbach/456478795.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=456478795&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-01T16:58:36.905Z",
+  "title": "BMW 318i Touring Navi,Kamera,Adapt. LED,ACC,Sitzheiz",
   "shortTitle": "BMW 318",
-  "subTitle": "I Touring M Sport/HeadUp/Pano-D/Memory/ad.LED",
+  "subTitle": "i Touring Navi,Kamera,Adapt. LED,ACC,Sitzheiz",
   "make": "BMW",
   "model": "318",
   "category": "EstateCar",
@@ -15,10 +15,10 @@
     "tsn": "CYW"
   },
   "price": {
-    "gross": 29790,
-    "net": 25033.61,
+    "gross": 25890,
+    "net": 21756.3,
     "currency": "EUR",
-    "localized": "29.790 €",
+    "localized": "25.890 €",
     "vatRate": 19,
     "vatNote": "19,00% MwSt.",
     "type": "FIXED"
@@ -26,20 +26,20 @@
   "priceRating": {
     "rating": "GOOD_PRICE",
     "label": "Guter Preis",
-    "offset": 16,
+    "offset": 54,
     "thresholds": [
-      "22.600 €",
-      "29.400 €",
-      "31.700 €",
-      "35.200 €",
-      "37.800 €",
-      "42.000 €"
+      "19.100 €",
+      "24.800 €",
+      "26.800 €",
+      "29.800 €",
+      "31.900 €",
+      "35.500 €"
     ]
   },
   "facts": {
     "damageCondition": {
       "label": "Fahrzeugzustand",
-      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "value": "Gebrauchtfahrzeug",
       "group": "vehicle"
     },
     "category": {
@@ -52,11 +52,6 @@
       "value": "G21",
       "group": "vehicle"
     },
-    "trimLine": {
-      "label": "Ausstattungslinie",
-      "value": "318 i M Sport",
-      "group": "vehicle"
-    },
     "countryVersion": {
       "label": "Herkunft",
       "value": "Deutsche Ausführung",
@@ -64,7 +59,7 @@
     },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "49.679 km",
+      "value": "47.000 km",
       "group": "vehicle"
     },
     "cubicCapacity": {
@@ -84,12 +79,22 @@
     },
     "fuel": {
       "label": "Kraftstoffart",
-      "value": "Benzin, E10-geeignet",
+      "value": "Benzin",
       "group": "vehicle"
     },
     "envkv.energyConsumption": {
       "label": "Energieverbrauch (komb.)",
-      "value": "-- l/100km",
+      "value": "6,8 l/100km",
+      "group": "envkv"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "153 g/km",
+      "group": "envkv"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": "6,8 l/100km (kombiniert)",
       "group": "envkv"
     },
     "numSeats": {
@@ -109,7 +114,7 @@
     },
     "emissionClass": {
       "label": "Schadstoffklasse",
-      "value": "Euro6d",
+      "value": "Euro6",
       "group": "vehicle"
     },
     "emissionsSticker": {
@@ -119,7 +124,7 @@
     },
     "firstRegistration": {
       "label": "Erstzulassung",
-      "value": "09/2023",
+      "value": "05/2023",
       "group": "vehicle"
     },
     "numberOfPreviousOwners": {
@@ -129,7 +134,7 @@
     },
     "hu": {
       "label": "HU",
-      "value": "03/2027",
+      "value": "Neu",
       "group": "vehicle"
     },
     "climatisation": {
@@ -149,65 +154,44 @@
     },
     "manufacturerColorName": {
       "label": "Farbe (Hersteller)",
-      "value": "BLACK SAPPHIRE",
+      "value": "schwarz",
       "group": "vehicle"
     },
     "color": {
       "label": "Farbe",
-      "value": "Schwarz Metallic",
+      "value": "Schwarz",
       "group": "vehicle"
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Alcantara, Schwarz",
-      "group": "vehicle"
-    },
-    "trailerLoadBraked": {
-      "label": "Anhängelast gebremst",
-      "value": "1.300 kg",
-      "group": "vehicle"
-    },
-    "trailerLoadUnbraked": {
-      "label": "Anhängelast ungebremst",
-      "value": "750 kg",
-      "group": "vehicle"
-    },
-    "netWeight": {
-      "label": "Gewicht",
-      "value": "1.650 kg",
+      "value": "Stoff, Schwarz",
       "group": "vehicle"
     },
     "cylinder": {
       "label": "Zylinder",
       "value": "4",
       "group": "vehicle"
-    },
-    "fuelTankVolume": {
-      "label": "Tankgröße",
-      "value": "59 l",
-      "group": "vehicle"
     }
   },
   "derived": {
-    "mileageKm": 49679,
+    "mileageKm": 47000,
     "powerKw": 115,
     "powerHp": 156,
     "cubicCapacityCcm": 1998,
-    "firstRegistration": "2023-09",
+    "firstRegistration": "2023-05",
     "constructionYear": null,
     "seats": 5,
     "previousOwners": 1,
-    "weightKg": 1650,
-    "fuelTankLitres": 59,
-    "co2GramsPerKm": null,
-    "consumptionL100km": 100,
-    "distanceFromHomeKm": 82,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": 153,
+    "consumptionL100km": 6.8,
+    "distanceFromHomeKm": 106,
     "generation": "G21",
     "facelift": "lci",
-    "faceliftBasis": "Erstzulassung 09/2023, nach der Umstellung"
+    "faceliftBasis": "Erstzulassung 05/2023, nach der Umstellung"
   },
   "features": [
-    "Abgedunkelte Scheiben",
     "ABS",
     "Abstandstempomat",
     "Abstandswarner",
@@ -215,7 +199,7 @@
     "Android Auto",
     "Apple CarPlay",
     "Armlehne",
-    "Ausparkassistent",
+    "Berganfahrassistent",
     "Blendfreies Fernlicht",
     "Bluetooth",
     "Bordcomputer",
@@ -224,16 +208,12 @@
     "Elektr. Heckklappe",
     "Elektr. Seitenspiegel",
     "Elektr. Seitenspiegel anklappbar",
-    "Elektr. Sitzeinstellung",
-    "Elektr. Sitzeinstellung mit Memory-Funktion",
-    "Elektr. Wegfahrsperre",
     "ESP",
     "Fernlichtassistent",
     "Freisprecheinrichtung",
     "Garantie",
     "Gepäckraumabtrennung",
     "Geschwindigkeitsbegrenzer",
-    "Head-Up Display",
     "Heckantrieb",
     "Innenspiegel autom. abblendend",
     "Isofix",
@@ -242,83 +222,84 @@
     "LED-Tagfahrlicht",
     "Leichtmetallfelgen",
     "Lichtsensor",
-    "Lordosenstütze",
     "Müdigkeitswarner",
     "Multifunktionslenkrad",
+    "Musikstreaming integriert",
     "Navigationssystem",
     "Nichtraucher-Fahrzeug",
     "Notbremsassistent",
     "Notrufsystem",
-    "Panorama-Dach",
     "Partikelfilter",
     "Radio DAB",
     "Regensensor",
     "Reifendruckkontrolle",
     "Schaltwippen",
     "Scheckheftgepflegt",
-    "Schiebedach",
-    "Schlüssellose Zentralverriegelung (Keyless)",
     "Servolenkung",
     "Sitzheizung",
-    "Skisack",
     "Sommerreifen",
-    "Soundsystem",
-    "Sportfahrwerk",
-    "Sportpaket",
-    "Sportsitze",
     "Sprachsteuerung",
     "Spurhalteassistent",
     "Start/Stopp-Automatik",
     "Totwinkel-Assistent",
     "Touchscreen",
     "Traktionskontrolle",
-    "Tuner/Radio",
     "USB",
     "Verkehrszeichenerkennung",
     "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
     "Zentralverriegelung"
   ],
   "highlights": [],
   "images": [
-    "https://img.classistatic.de/api/v1/mo-prod/images/bc/bc26e074-de80-4961-8caa-e5f5be08186a",
-    "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1421675-684a-46a0-a8de-1671fea7f705",
-    "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a11c6a3-ba27-4e2e-bd87-46085aab5214",
-    "https://img.classistatic.de/api/v1/mo-prod/images/bc/bc8a0f74-2688-4955-b174-077637609fab",
-    "https://img.classistatic.de/api/v1/mo-prod/images/04/0436359b-eacc-4070-a612-3bc7aa16eb70",
-    "https://img.classistatic.de/api/v1/mo-prod/images/d2/d22d6d37-897c-4dd8-bacc-de2066db0836",
-    "https://img.classistatic.de/api/v1/mo-prod/images/17/17e1a1bc-33d0-4f73-830b-fe50f549916a",
-    "https://img.classistatic.de/api/v1/mo-prod/images/22/22680188-59b0-4bbe-9d4b-f853a55c4941",
-    "https://img.classistatic.de/api/v1/mo-prod/images/14/1424d550-fefe-407b-9b6d-1619dd0b2e4d",
-    "https://img.classistatic.de/api/v1/mo-prod/images/59/5929d430-d18b-47a4-beb3-b279d364e247",
-    "https://img.classistatic.de/api/v1/mo-prod/images/b9/b92e9401-e6d0-4c2d-a3e8-8a0e6d185e12",
-    "https://img.classistatic.de/api/v1/mo-prod/images/31/31b5ffad-712d-46ce-9694-0ce3d397400d",
-    "https://img.classistatic.de/api/v1/mo-prod/images/82/82ad34a7-5044-4b9b-a9a7-a53fb333b27c",
-    "https://img.classistatic.de/api/v1/mo-prod/images/db/db7f7e4f-0ca8-42a2-b664-44c3bf582482",
-    "https://img.classistatic.de/api/v1/mo-prod/images/42/42c7ca63-3aa0-47a0-b3f3-d9c70c7e0816"
+    "https://img.classistatic.de/api/v1/mo-prod/images/b7/b74842d2-76f5-4272-b70d-d8d2d85b91c6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6d/6db12579-8dc3-48f5-a32b-a6d663e99b50",
+    "https://img.classistatic.de/api/v1/mo-prod/images/65/65160a12-7e8c-449c-98ba-0d9683282fab",
+    "https://img.classistatic.de/api/v1/mo-prod/images/59/599d715e-1a9e-4244-9f57-a7656374670c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/70/703d7891-4d52-4814-8024-3d82d2cbcde3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b3/b31a5348-2f3b-41b0-858c-50e874cd783c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/00/007a594c-4977-4a8b-afe0-df255f07952a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/38/385d73a1-bab9-4c44-af36-82d528b02851",
+    "https://img.classistatic.de/api/v1/mo-prod/images/16/1687ca8e-4392-452d-8e2c-3031d4e30b4d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/04/04ea5715-f5bf-4d49-9604-a39ee2474b3f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/30/30d3f7d4-f479-42d0-bc16-53afaedb0e87",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d6/d6a1dd71-6100-4dd0-a8cd-b961e23dd128",
+    "https://img.classistatic.de/api/v1/mo-prod/images/29/29e8f2e4-2e3c-4a77-85f2-5fe9ac8d6336",
+    "https://img.classistatic.de/api/v1/mo-prod/images/10/1087d960-75bc-43a9-8854-1dd1680e94a8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d0e2ce2-16de-471b-842a-71e5a62326be"
   ],
   "dealer": {
-    "name": "Andreas Dorn Automobile",
+    "name": "Günter Reuter GmbH  BMW & MINI Service",
     "type": "Händler",
-    "street": "Ellwanger Str. 100",
-    "city": "DE-73441 Bopfingen",
+    "street": "Am Bäuerleinsberg 2",
+    "city": "DE-97837 Erlenbach",
     "country": "DE",
-    "phone": "+49 (0)7362 956697",
-    "homepage": "https://home.mobile.de/home/redirect.html?customerId=2381263",
+    "phone": "+49 (0)9391 4013",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=458913",
     "location": {
-      "lat": 48.87303,
-      "lon": 10.34748
+      "lat": 49.8292586,
+      "lon": 9.619440899999999
     },
-    "openingHours": [],
+    "openingHours": [
+      {
+        "time": "07:30 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "08:00 Uhr - 13:00 Uhr",
+        "day": "Sa"
+      }
+    ],
     "rating": {
       "score": 5,
-      "count": 209,
+      "count": 56,
       "recommendationRate": 100
     }
   },
   "financePlans": [
     {
       "type": "AO",
-      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=42944541372224",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=456478795",
       "shortFlow": true,
       "promotion": false,
       "showInGallery": false,
@@ -326,51 +307,41 @@
         "bankName": "Openbank Deutschland AG",
         "loanBroker": "Check24 GmbH",
         "loanType": "BALLOON",
-        "downPayment": 5958,
+        "downPayment": 5178,
         "creditTerm": 60,
         "yearlyMileage": 10000,
-        "creditAmount": 23832,
+        "creditAmount": 20712,
         "interestRateNominal": 5.41,
         "interestRateEffective": 5.55,
-        "monthlyInstallment": 315.83,
-        "finalInstallment": 9830.7,
-        "totalInterest": 4632.58,
-        "totalAmount": 28464.58,
+        "monthlyInstallment": 274.48,
+        "finalInstallment": 8543.7,
+        "totalInterest": 4026.1,
+        "totalAmount": 24738.1,
         "localized": {
-          "downPayment": "5.958,00 €",
+          "downPayment": "5.178,00 €",
           "downPaymentInPercent": "20%",
           "creditTerm": "60",
           "creditTermInYears": "5",
           "yearlyMileage": "10.000",
-          "creditAmount": "23.832,00 €",
+          "creditAmount": "20.712,00 €",
           "interestRateNominal": "5,41%",
           "interestRateEffective": "5,55%",
-          "monthlyInstallment": "316 €",
-          "finalInstallment": "9.830,70 €",
-          "totalInterest": "4.632,58 €",
-          "totalAmount": "28.464,58 €",
+          "monthlyInstallment": "275 €",
+          "finalInstallment": "8.543,70 €",
+          "totalInterest": "4.026,10 €",
+          "totalAmount": "24.738,10 €",
           "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
         }
       }
     }
   ],
-  "ref": 50,
+  "ref": 51,
   "assessment": {
-    "verdict": "kandidat",
-    "note": "M Sport, Panorama-Dach, Memory und HUD, Unfallfrei ausdrücklich ausgewiesen, mit 82 km das nächstgelegene Auto — aber 49.679 km bei EZ 09/2023, und nach der AHK 31.860 €. Die günstigeren M-Sport-Alternativen sind #32 (16.980 km, +740 €) und #34 (29.800 km, +1.150 €, 56 km), beide mit AHK ab Werk und fotogeprüfter Stoff/Alcantara-Kombination.",
-    "retrofit": [
-      {
-        "key": "ahk",
-        "label": "AHK abnehmbar, Nachrüstung Fürth",
-        "cost": 1600
-      }
-    ],
-    "retrofitCost": 1600,
-    "mileageAdjustment": {
-      "expectedKm": 45000,
-      "deviationKm": 4679,
-      "adjustment": 470
-    },
-    "effectivePrice": 31860
+    "verdict": "raus",
+    "note": "Raus: laut Inserat reine Stoffausstattung. Wäre mit 27.190 € effektiv sonst Platz 1 im Zielprofil, 169 € unter #49 — ACC, Kamera, LCI 05/2023, 47.000 km, BMW-Service-Betrieb, 106 km. Der Sitz-Check am Foto lohnt sich hier also, bevor er endgültig rausfällt.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "mileageAdjustment": null,
+    "effectivePrice": 25890
   }
 }
