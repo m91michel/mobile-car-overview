@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T17:21:56.408Z",
+  "updatedAt": "2026-09-01T06:49:37.628Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -16578,7 +16578,7 @@
       "id": "41107268152256",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-abstandstempomat-ahk-sportsitze-pressath/41107268152256.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=41107268152256&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T19:04:36.807Z",
+      "fetchedAt": "2026-09-01T06:49:10.093Z",
       "title": "BMW 318i ABSTANDSTEMPOMAT AHK SPORTSITZE",
       "shortTitle": "BMW 318",
       "subTitle": "i ABSTANDSTEMPOMAT AHK SPORTSITZE",
@@ -16896,12 +16896,12 @@
         },
         "openingHours": [
           {
-            "day": "Mo - Fr",
-            "time": "09:00 Uhr - 18:00 Uhr"
+            "time": "09:00 Uhr - 18:00 Uhr",
+            "day": "Mo - Fr"
           },
           {
-            "day": "Sa",
-            "time": "09:00 Uhr - 13:00 Uhr"
+            "time": "09:00 Uhr - 13:00 Uhr",
+            "day": "Sa"
           }
         ],
         "rating": {
@@ -16963,18 +16963,18 @@
         ],
         "retrofitCost": 1200,
         "mileageAdjustment": {
-          "expectedKm": 41250,
-          "deviationKm": -18550,
-          "adjustment": -1850
+          "expectedKm": 42500,
+          "deviationKm": -19800,
+          "adjustment": -1980
         },
-        "effectivePrice": 29250
+        "effectivePrice": 29120
       }
     },
     {
       "id": "460777203",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318-i-touring-adapt-led-temp-shz-shadow-line-fulda/460777203.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460777203&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-28T19:05:21.434Z",
+      "fetchedAt": "2026-09-01T06:49:37.621Z",
       "title": "BMW 318 i Touring Adapt.LED+Temp+SHZ+Shadow-Line",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring Adapt.LED+Temp+SHZ+Shadow-Line",
@@ -17159,7 +17159,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Kamera, Hinten, Vorne, Selbstlenkende Systeme",
+          "value": "Kamera, Selbstlenkende Systeme, Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -17317,12 +17317,12 @@
         },
         "openingHours": [
           {
-            "time": "08:00 Uhr - 18:00 Uhr",
-            "day": "Mo - Fr"
+            "day": "Mo - Fr",
+            "time": "08:00 Uhr - 18:00 Uhr"
           },
           {
-            "time": "09:00 Uhr - 13:00 Uhr",
-            "day": "Sa"
+            "day": "Sa",
+            "time": "09:00 Uhr - 13:00 Uhr"
           }
         ],
         "rating": {
@@ -17383,11 +17383,11 @@
         ],
         "retrofitCost": 1600,
         "mileageAdjustment": {
-          "expectedKm": 47500,
-          "deviationKm": -18850,
-          "adjustment": -1880
+          "expectedKm": 48750,
+          "deviationKm": -20100,
+          "adjustment": -2010
         },
-        "effectivePrice": 28970
+        "effectivePrice": 28840
       }
     }
   ]

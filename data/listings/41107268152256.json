@@ -2,7 +2,7 @@
   "id": "41107268152256",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-abstandstempomat-ahk-sportsitze-pressath/41107268152256.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=41107268152256&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-28T19:04:36.807Z",
+  "fetchedAt": "2026-09-01T06:49:10.093Z",
   "title": "BMW 318i ABSTANDSTEMPOMAT AHK SPORTSITZE",
   "shortTitle": "BMW 318",
   "subTitle": "i ABSTANDSTEMPOMAT AHK SPORTSITZE",
@@ -320,12 +320,12 @@
     },
     "openingHours": [
       {
-        "day": "Mo - Fr",
-        "time": "09:00 Uhr - 18:00 Uhr"
+        "time": "09:00 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
       },
       {
-        "day": "Sa",
-        "time": "09:00 Uhr - 13:00 Uhr"
+        "time": "09:00 Uhr - 13:00 Uhr",
+        "day": "Sa"
       }
     ],
     "rating": {
@@ -387,10 +387,10 @@
     ],
     "retrofitCost": 1200,
     "mileageAdjustment": {
-      "expectedKm": 41250,
-      "deviationKm": -18550,
-      "adjustment": -1850
+      "expectedKm": 42500,
+      "deviationKm": -19800,
+      "adjustment": -1980
     },
-    "effectivePrice": 29250
+    "effectivePrice": 29120
   }
 }
