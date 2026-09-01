@@ -379,8 +379,8 @@
   ],
   "ref": 49,
   "assessment": {
-    "verdict": null,
-    "note": null,
+    "verdict": "top",
+    "note": "Günstigster Wagen im vollen Zielprofil (ACC, Kamera, Teilleder, LCI bestätigt) — die 36.300 km sind dabei nur Mittelfeld, der Vorsprung kommt aus dem Preis. M Sport fehlt, AHK auch. Unfallfrei ist nicht belegt: beim Händler klären.",
     "retrofit": [
       {
         "key": "ahk",

@@ -365,10 +365,10 @@
     ],
     "retrofitCost": 2800,
     "mileageAdjustment": {
-      "expectedKm": 68750,
-      "deviationKm": -11402,
-      "adjustment": -1140
+      "expectedKm": 70000,
+      "deviationKm": -12652,
+      "adjustment": -1270
     },
-    "effectivePrice": 29018
+    "effectivePrice": 28888
   }
 }

@@ -360,11 +360,11 @@
     "retrofit": [],
     "retrofitCost": 0,
     "mileageAdjustment": {
-      "expectedKm": 81250,
-      "deviationKm": -37850,
-      "adjustment": -3780
+      "expectedKm": 82500,
+      "deviationKm": -39100,
+      "adjustment": -3910
     },
-    "effectivePrice": 24710
+    "effectivePrice": 24580
   },
   "availability": {
     "status": "sold",

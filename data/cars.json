@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T13:22:44.643Z",
+  "updatedAt": "2026-09-01T15:34:16.838Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -763,11 +763,11 @@
         ],
         "retrofitCost": 1600,
         "mileageAdjustment": {
-          "expectedKm": 17500,
-          "deviationKm": -8879,
-          "adjustment": -890
+          "expectedKm": 18750,
+          "deviationKm": -10129,
+          "adjustment": -1010
         },
-        "effectivePrice": 29605
+        "effectivePrice": 29485
       },
       "availability": {
         "status": "sold",
@@ -1135,11 +1135,11 @@
         ],
         "retrofitCost": 1600,
         "mileageAdjustment": {
-          "expectedKm": 51250,
-          "deviationKm": -3742,
-          "adjustment": -370
+          "expectedKm": 52500,
+          "deviationKm": -4992,
+          "adjustment": -500
         },
-        "effectivePrice": 30220
+        "effectivePrice": 30090
       }
     },
     {
@@ -1504,11 +1504,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 23750,
-          "deviationKm": 17850,
-          "adjustment": 1790
+          "expectedKm": 25000,
+          "deviationKm": 16600,
+          "adjustment": 1660
         },
-        "effectivePrice": 34370
+        "effectivePrice": 34240
       }
     },
     {
@@ -3294,11 +3294,11 @@
         ],
         "retrofitCost": 1600,
         "mileageAdjustment": {
-          "expectedKm": 21250,
-          "deviationKm": 1750,
-          "adjustment": 180
+          "expectedKm": 22500,
+          "deviationKm": 500,
+          "adjustment": 50
         },
-        "effectivePrice": 33580
+        "effectivePrice": 33450
       }
     },
     {
@@ -3676,11 +3676,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 31250,
-          "deviationKm": 11713,
-          "adjustment": 1170
+          "expectedKm": 32500,
+          "deviationKm": 10463,
+          "adjustment": 1050
         },
-        "effectivePrice": 30140
+        "effectivePrice": 30020
       }
     },
     {
@@ -4040,11 +4040,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 51250,
-          "deviationKm": -2850,
-          "adjustment": -280
+          "expectedKm": 52500,
+          "deviationKm": -4100,
+          "adjustment": -410
         },
-        "effectivePrice": 28620
+        "effectivePrice": 28490
       }
     },
     {
@@ -4725,11 +4725,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 40000,
-          "deviationKm": -309,
-          "adjustment": -30
+          "expectedKm": 41250,
+          "deviationKm": -1559,
+          "adjustment": -160
         },
-        "effectivePrice": 30630
+        "effectivePrice": 30500
       }
     },
     {
@@ -5143,11 +5143,11 @@
         ],
         "retrofitCost": 1600,
         "mileageAdjustment": {
-          "expectedKm": 46250,
-          "deviationKm": -5954,
-          "adjustment": -600
+          "expectedKm": 47500,
+          "deviationKm": -7204,
+          "adjustment": -720
         },
-        "effectivePrice": 29990
+        "effectivePrice": 29870
       }
     },
     {
@@ -6244,11 +6244,11 @@
         ],
         "retrofitCost": 1200,
         "mileageAdjustment": {
-          "expectedKm": 46250,
-          "deviationKm": -12850,
-          "adjustment": -1280
+          "expectedKm": 47500,
+          "deviationKm": -14100,
+          "adjustment": -1410
         },
-        "effectivePrice": 29900
+        "effectivePrice": 29770
       }
     },
     {
@@ -6583,11 +6583,11 @@
         ],
         "retrofitCost": 1600,
         "mileageAdjustment": {
-          "expectedKm": 45000,
-          "deviationKm": 5960,
-          "adjustment": 600
+          "expectedKm": 46250,
+          "deviationKm": 4710,
+          "adjustment": 470
         },
-        "effectivePrice": 27995
+        "effectivePrice": 27865
       }
     },
     {
@@ -6957,11 +6957,11 @@
         ],
         "retrofitCost": 2800,
         "mileageAdjustment": {
-          "expectedKm": 68750,
-          "deviationKm": -11402,
-          "adjustment": -1140
+          "expectedKm": 70000,
+          "deviationKm": -12652,
+          "adjustment": -1270
         },
-        "effectivePrice": 29018
+        "effectivePrice": 28888
       }
     },
     {
@@ -8715,11 +8715,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 52500,
-          "deviationKm": 11829,
-          "adjustment": 1180
+          "expectedKm": 53750,
+          "deviationKm": 10579,
+          "adjustment": 1060
         },
-        "effectivePrice": 28660
+        "effectivePrice": 28540
       }
     },
     {
@@ -9134,11 +9134,11 @@
         ],
         "retrofitCost": 1600,
         "mileageAdjustment": {
-          "expectedKm": 61250,
-          "deviationKm": -19487,
-          "adjustment": -1950
+          "expectedKm": 62500,
+          "deviationKm": -20737,
+          "adjustment": -2070
         },
-        "effectivePrice": 27300
+        "effectivePrice": 27180
       }
     },
     {
@@ -9503,11 +9503,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 81250,
-          "deviationKm": -37850,
-          "adjustment": -3780
+          "expectedKm": 82500,
+          "deviationKm": -39100,
+          "adjustment": -3910
         },
-        "effectivePrice": 24710
+        "effectivePrice": 24580
       },
       "availability": {
         "status": "sold",
@@ -10299,11 +10299,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 51250,
-          "deviationKm": 3712,
-          "adjustment": 370
+          "expectedKm": 52500,
+          "deviationKm": 2462,
+          "adjustment": 250
         },
-        "effectivePrice": 30205
+        "effectivePrice": 30085
       }
     },
     {
@@ -10654,11 +10654,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 12500,
-          "deviationKm": -3210,
-          "adjustment": -320
+          "expectedKm": 13750,
+          "deviationKm": -4460,
+          "adjustment": -450
         },
-        "effectivePrice": 33660
+        "effectivePrice": 33530
       },
       "availability": {
         "status": "sold",
@@ -11026,11 +11026,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 27500,
-          "deviationKm": -8100,
-          "adjustment": -810
+          "expectedKm": 28750,
+          "deviationKm": -9350,
+          "adjustment": -930
         },
-        "effectivePrice": 32590
+        "effectivePrice": 32470
       }
     },
     {
@@ -11453,11 +11453,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 28750,
-          "deviationKm": -11770,
-          "adjustment": -1180
+          "expectedKm": 30000,
+          "deviationKm": -13020,
+          "adjustment": -1300
         },
-        "effectivePrice": 32720
+        "effectivePrice": 32600
       }
     },
     {
@@ -11820,11 +11820,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 20000,
-          "deviationKm": -300,
-          "adjustment": -30
+          "expectedKm": 21250,
+          "deviationKm": -1550,
+          "adjustment": -150
         },
-        "effectivePrice": 34150
+        "effectivePrice": 34030
       }
     },
     {
@@ -12182,11 +12182,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 27500,
-          "deviationKm": 2300,
-          "adjustment": 230
+          "expectedKm": 28750,
+          "deviationKm": 1050,
+          "adjustment": 110
         },
-        "effectivePrice": 33130
+        "effectivePrice": 33010
       }
     },
     {
@@ -12559,11 +12559,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 33750,
-          "deviationKm": -5150,
-          "adjustment": -510
+          "expectedKm": 35000,
+          "deviationKm": -6400,
+          "adjustment": -640
         },
-        "effectivePrice": 33380
+        "effectivePrice": 33250
       }
     },
     {
@@ -12926,11 +12926,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 13750,
-          "deviationKm": -1891,
-          "adjustment": -190
+          "expectedKm": 15000,
+          "deviationKm": -3141,
+          "adjustment": -310
         },
-        "effectivePrice": 34710
+        "effectivePrice": 34590
       }
     },
     {
@@ -13294,11 +13294,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 27500,
-          "deviationKm": 7400,
-          "adjustment": 740
+          "expectedKm": 28750,
+          "deviationKm": 6150,
+          "adjustment": 620
         },
-        "effectivePrice": 32730
+        "effectivePrice": 32610
       }
     },
     {
@@ -13657,11 +13657,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 48750,
-          "deviationKm": -11430,
-          "adjustment": -1140
+          "expectedKm": 50000,
+          "deviationKm": -12680,
+          "adjustment": -1270
         },
-        "effectivePrice": 31310
+        "effectivePrice": 31180
       }
     },
     {
@@ -14079,11 +14079,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 61250,
-          "deviationKm": -27050,
-          "adjustment": -2700
+          "expectedKm": 62500,
+          "deviationKm": -28300,
+          "adjustment": -2830
         },
-        "effectivePrice": 30200
+        "effectivePrice": 30070
       }
     },
     {
@@ -14455,11 +14455,11 @@
         ],
         "retrofitCost": 2800,
         "mileageAdjustment": {
-          "expectedKm": 71250,
-          "deviationKm": -26670,
-          "adjustment": -2670
+          "expectedKm": 72500,
+          "deviationKm": -27920,
+          "adjustment": -2790
         },
-        "effectivePrice": 27720
+        "effectivePrice": 27600
       }
     },
     {
@@ -14845,11 +14845,11 @@
         ],
         "retrofitCost": 1600,
         "mileageAdjustment": {
-          "expectedKm": 78750,
-          "deviationKm": -47343,
-          "adjustment": -4730
+          "expectedKm": 80000,
+          "deviationKm": -48593,
+          "adjustment": -4860
         },
-        "effectivePrice": 24820
+        "effectivePrice": 24690
       }
     },
     {
@@ -15202,11 +15202,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 50000,
-          "deviationKm": 17572,
-          "adjustment": 1760
+          "expectedKm": 51250,
+          "deviationKm": 16322,
+          "adjustment": 1630
         },
-        "effectivePrice": 31259
+        "effectivePrice": 31129
       }
     },
     {
@@ -15572,11 +15572,11 @@
         ],
         "retrofitCost": 1600,
         "mileageAdjustment": {
-          "expectedKm": 51250,
-          "deviationKm": -18550,
-          "adjustment": -1850
+          "expectedKm": 52500,
+          "deviationKm": -19800,
+          "adjustment": -1980
         },
-        "effectivePrice": 27540
+        "effectivePrice": 27410
       }
     },
     {
@@ -15899,11 +15899,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 48750,
-          "deviationKm": -14250,
-          "adjustment": -1420
+          "expectedKm": 50000,
+          "deviationKm": -15500,
+          "adjustment": -1550
         },
-        "effectivePrice": 28380
+        "effectivePrice": 28250
       }
     },
     {
@@ -16252,11 +16252,11 @@
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
-          "expectedKm": 48750,
-          "deviationKm": -12250,
-          "adjustment": -1220
+          "expectedKm": 50000,
+          "deviationKm": -13500,
+          "adjustment": -1350
         },
-        "effectivePrice": 30250
+        "effectivePrice": 30120
       }
     },
     {
@@ -16567,11 +16567,11 @@
         ],
         "retrofitCost": 1600,
         "mileageAdjustment": {
-          "expectedKm": 26250,
-          "deviationKm": -6250,
-          "adjustment": -620
+          "expectedKm": 27500,
+          "deviationKm": -7500,
+          "adjustment": -750
         },
-        "effectivePrice": 29970
+        "effectivePrice": 29840
       }
     },
     {
@@ -17771,8 +17771,8 @@
       ],
       "ref": 49,
       "assessment": {
-        "verdict": null,
-        "note": null,
+        "verdict": "top",
+        "note": "Günstigster Wagen im vollen Zielprofil (ACC, Kamera, Teilleder, LCI bestätigt) — die 36.300 km sind dabei nur Mittelfeld, der Vorsprung kommt aus dem Preis. M Sport fehlt, AHK auch. Unfallfrei ist nicht belegt: beim Händler klären.",
         "retrofit": [
           {
             "key": "ahk",
