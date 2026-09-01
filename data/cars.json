@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T16:44:35.865Z",
+  "updatedAt": "2026-09-01T16:56:08.045Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -17767,6 +17767,382 @@
           "adjustment": -1240
         },
         "effectivePrice": 27359
+      }
+    },
+    {
+      "id": "42944541372224",
+      "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-headup-pano-d-memory-ad-led-bopfingen/42944541372224.html",
+      "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=42944541372224&scopeId=C&action=compareItem",
+      "fetchedAt": "2026-09-01T16:54:18.608Z",
+      "title": "BMW 318I Touring M Sport/HeadUp/Pano-D/Memory/ad.LED",
+      "shortTitle": "BMW 318",
+      "subTitle": "I Touring M Sport/HeadUp/Pano-D/Memory/ad.LED",
+      "make": "BMW",
+      "model": "318",
+      "category": "EstateCar",
+      "isNew": true,
+      "kba": {
+        "hsn": "0005",
+        "tsn": "CYW"
+      },
+      "price": {
+        "gross": 29790,
+        "net": 25033.61,
+        "currency": "EUR",
+        "localized": "29.790 €",
+        "vatRate": 19,
+        "vatNote": "19,00% MwSt.",
+        "type": "FIXED"
+      },
+      "priceRating": {
+        "rating": "GOOD_PRICE",
+        "label": "Guter Preis",
+        "offset": 16,
+        "thresholds": [
+          "22.600 €",
+          "29.400 €",
+          "31.700 €",
+          "35.200 €",
+          "37.800 €",
+          "42.000 €"
+        ]
+      },
+      "facts": {
+        "damageCondition": {
+          "label": "Fahrzeugzustand",
+          "value": "Gebrauchtfahrzeug, Unfallfrei",
+          "group": "vehicle"
+        },
+        "category": {
+          "label": "Kategorie",
+          "value": "Kombi",
+          "group": "vehicle"
+        },
+        "modelRange": {
+          "label": "Baureihe",
+          "value": "G21",
+          "group": "vehicle"
+        },
+        "trimLine": {
+          "label": "Ausstattungslinie",
+          "value": "318 i M Sport",
+          "group": "vehicle"
+        },
+        "countryVersion": {
+          "label": "Herkunft",
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
+        },
+        "mileage": {
+          "label": "Kilometerstand",
+          "value": "49.679 km",
+          "group": "vehicle"
+        },
+        "cubicCapacity": {
+          "label": "Hubraum",
+          "value": "1.998 cm³",
+          "group": "vehicle"
+        },
+        "power": {
+          "label": "Leistung",
+          "value": "115 kW (156 PS)",
+          "group": "vehicle"
+        },
+        "envkv.engineType": {
+          "label": "Antriebsart",
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
+        },
+        "fuel": {
+          "label": "Kraftstoffart",
+          "value": "Benzin, E10-geeignet",
+          "group": "vehicle"
+        },
+        "envkv.energyConsumption": {
+          "label": "Energieverbrauch (komb.)",
+          "value": "-- l/100km",
+          "group": "envkv"
+        },
+        "numSeats": {
+          "label": "Anzahl Sitzplätze",
+          "value": "5",
+          "group": "vehicle"
+        },
+        "doorCount": {
+          "label": "Anzahl der Türen",
+          "value": "4/5",
+          "group": "vehicle"
+        },
+        "transmission": {
+          "label": "Getriebe",
+          "value": "Automatik",
+          "group": "vehicle"
+        },
+        "emissionClass": {
+          "label": "Schadstoffklasse",
+          "value": "Euro6d",
+          "group": "vehicle"
+        },
+        "emissionsSticker": {
+          "label": "Umweltplakette",
+          "value": "4 (Grün)",
+          "group": "vehicle"
+        },
+        "firstRegistration": {
+          "label": "Erstzulassung",
+          "value": "09/2023",
+          "group": "vehicle"
+        },
+        "numberOfPreviousOwners": {
+          "label": "Anzahl der Fahrzeughalter",
+          "value": "1",
+          "group": "vehicle"
+        },
+        "hu": {
+          "label": "HU",
+          "value": "03/2027",
+          "group": "vehicle"
+        },
+        "climatisation": {
+          "label": "Klimatisierung",
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
+        },
+        "parkAssists": {
+          "label": "Einparkhilfe",
+          "value": "Selbstlenkende Systeme, Vorne, Kamera, Hinten",
+          "group": "vehicle"
+        },
+        "airbag": {
+          "label": "Airbags",
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
+        },
+        "manufacturerColorName": {
+          "label": "Farbe (Hersteller)",
+          "value": "BLACK SAPPHIRE",
+          "group": "vehicle"
+        },
+        "color": {
+          "label": "Farbe",
+          "value": "Schwarz Metallic",
+          "group": "vehicle"
+        },
+        "interior": {
+          "label": "Innenausstattung",
+          "value": "Alcantara, Schwarz",
+          "group": "vehicle"
+        },
+        "trailerLoadBraked": {
+          "label": "Anhängelast gebremst",
+          "value": "1.300 kg",
+          "group": "vehicle"
+        },
+        "trailerLoadUnbraked": {
+          "label": "Anhängelast ungebremst",
+          "value": "750 kg",
+          "group": "vehicle"
+        },
+        "netWeight": {
+          "label": "Gewicht",
+          "value": "1.650 kg",
+          "group": "vehicle"
+        },
+        "cylinder": {
+          "label": "Zylinder",
+          "value": "4",
+          "group": "vehicle"
+        },
+        "fuelTankVolume": {
+          "label": "Tankgröße",
+          "value": "59 l",
+          "group": "vehicle"
+        }
+      },
+      "derived": {
+        "mileageKm": 49679,
+        "powerKw": 115,
+        "powerHp": 156,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2023-09",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 1,
+        "weightKg": 1650,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": 100,
+        "distanceFromHomeKm": 82,
+        "generation": "G21",
+        "facelift": "lci",
+        "faceliftBasis": "Erstzulassung 09/2023, nach der Umstellung"
+      },
+      "features": [
+        "Abgedunkelte Scheiben",
+        "ABS",
+        "Abstandstempomat",
+        "Abstandswarner",
+        "Adaptives Kurvenlicht",
+        "Android Auto",
+        "Apple CarPlay",
+        "Armlehne",
+        "Ausparkassistent",
+        "Blendfreies Fernlicht",
+        "Bluetooth",
+        "Bordcomputer",
+        "Dachreling",
+        "Elektr. Fensterheber",
+        "Elektr. Heckklappe",
+        "Elektr. Seitenspiegel",
+        "Elektr. Seitenspiegel anklappbar",
+        "Elektr. Sitzeinstellung",
+        "Elektr. Sitzeinstellung mit Memory-Funktion",
+        "Elektr. Wegfahrsperre",
+        "ESP",
+        "Fernlichtassistent",
+        "Freisprecheinrichtung",
+        "Garantie",
+        "Gepäckraumabtrennung",
+        "Geschwindigkeitsbegrenzer",
+        "Head-Up Display",
+        "Heckantrieb",
+        "Innenspiegel autom. abblendend",
+        "Isofix",
+        "Lederlenkrad",
+        "LED-Scheinwerfer",
+        "LED-Tagfahrlicht",
+        "Leichtmetallfelgen",
+        "Lichtsensor",
+        "Lordosenstütze",
+        "Müdigkeitswarner",
+        "Multifunktionslenkrad",
+        "Navigationssystem",
+        "Nichtraucher-Fahrzeug",
+        "Notbremsassistent",
+        "Notrufsystem",
+        "Panorama-Dach",
+        "Partikelfilter",
+        "Radio DAB",
+        "Regensensor",
+        "Reifendruckkontrolle",
+        "Schaltwippen",
+        "Scheckheftgepflegt",
+        "Schiebedach",
+        "Schlüssellose Zentralverriegelung (Keyless)",
+        "Servolenkung",
+        "Sitzheizung",
+        "Skisack",
+        "Sommerreifen",
+        "Soundsystem",
+        "Sportfahrwerk",
+        "Sportpaket",
+        "Sportsitze",
+        "Sprachsteuerung",
+        "Spurhalteassistent",
+        "Start/Stopp-Automatik",
+        "Totwinkel-Assistent",
+        "Touchscreen",
+        "Traktionskontrolle",
+        "Tuner/Radio",
+        "USB",
+        "Verkehrszeichenerkennung",
+        "Volldigitales Kombiinstrument",
+        "Zentralverriegelung"
+      ],
+      "highlights": [],
+      "images": [
+        "https://img.classistatic.de/api/v1/mo-prod/images/bc/bc26e074-de80-4961-8caa-e5f5be08186a",
+        "https://img.classistatic.de/api/v1/mo-prod/images/c1/c1421675-684a-46a0-a8de-1671fea7f705",
+        "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a11c6a3-ba27-4e2e-bd87-46085aab5214",
+        "https://img.classistatic.de/api/v1/mo-prod/images/bc/bc8a0f74-2688-4955-b174-077637609fab",
+        "https://img.classistatic.de/api/v1/mo-prod/images/04/0436359b-eacc-4070-a612-3bc7aa16eb70",
+        "https://img.classistatic.de/api/v1/mo-prod/images/d2/d22d6d37-897c-4dd8-bacc-de2066db0836",
+        "https://img.classistatic.de/api/v1/mo-prod/images/17/17e1a1bc-33d0-4f73-830b-fe50f549916a",
+        "https://img.classistatic.de/api/v1/mo-prod/images/22/22680188-59b0-4bbe-9d4b-f853a55c4941",
+        "https://img.classistatic.de/api/v1/mo-prod/images/14/1424d550-fefe-407b-9b6d-1619dd0b2e4d",
+        "https://img.classistatic.de/api/v1/mo-prod/images/59/5929d430-d18b-47a4-beb3-b279d364e247",
+        "https://img.classistatic.de/api/v1/mo-prod/images/b9/b92e9401-e6d0-4c2d-a3e8-8a0e6d185e12",
+        "https://img.classistatic.de/api/v1/mo-prod/images/31/31b5ffad-712d-46ce-9694-0ce3d397400d",
+        "https://img.classistatic.de/api/v1/mo-prod/images/82/82ad34a7-5044-4b9b-a9a7-a53fb333b27c",
+        "https://img.classistatic.de/api/v1/mo-prod/images/db/db7f7e4f-0ca8-42a2-b664-44c3bf582482",
+        "https://img.classistatic.de/api/v1/mo-prod/images/42/42c7ca63-3aa0-47a0-b3f3-d9c70c7e0816"
+      ],
+      "dealer": {
+        "name": "Andreas Dorn Automobile",
+        "type": "Händler",
+        "street": "Ellwanger Str. 100",
+        "city": "DE-73441 Bopfingen",
+        "country": "DE",
+        "phone": "+49 (0)7362 956697",
+        "homepage": "https://home.mobile.de/home/redirect.html?customerId=2381263",
+        "location": {
+          "lat": 48.87303,
+          "lon": 10.34748
+        },
+        "openingHours": [],
+        "rating": {
+          "score": 5,
+          "count": 209,
+          "recommendationRate": 100
+        }
+      },
+      "financePlans": [
+        {
+          "type": "AO",
+          "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=42944541372224",
+          "shortFlow": true,
+          "promotion": false,
+          "showInGallery": false,
+          "offer": {
+            "bankName": "Openbank Deutschland AG",
+            "loanBroker": "Check24 GmbH",
+            "loanType": "BALLOON",
+            "downPayment": 5958,
+            "creditTerm": 60,
+            "yearlyMileage": 10000,
+            "creditAmount": 23832,
+            "interestRateNominal": 5.41,
+            "interestRateEffective": 5.55,
+            "monthlyInstallment": 315.83,
+            "finalInstallment": 9830.7,
+            "totalInterest": 4632.58,
+            "totalAmount": 28464.58,
+            "localized": {
+              "downPayment": "5.958,00 €",
+              "downPaymentInPercent": "20%",
+              "creditTerm": "60",
+              "creditTermInYears": "5",
+              "yearlyMileage": "10.000",
+              "creditAmount": "23.832,00 €",
+              "interestRateNominal": "5,41%",
+              "interestRateEffective": "5,55%",
+              "monthlyInstallment": "316 €",
+              "finalInstallment": "9.830,70 €",
+              "totalInterest": "4.632,58 €",
+              "totalAmount": "28.464,58 €",
+              "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+            }
+          }
+        }
+      ],
+      "ref": 50,
+      "assessment": {
+        "verdict": "kandidat",
+        "note": "M Sport, Panorama-Dach, Memory und HUD, Unfallfrei ausdrücklich ausgewiesen, mit 82 km das nächstgelegene Auto — aber 49.679 km bei EZ 09/2023, und nach der AHK 31.860 €. Wird von #31 geschlagen: nur 610 € mehr für 30.279 km weniger, 13 Monate jünger, AHK und 360°-Kamera ab Werk.",
+        "retrofit": [
+          {
+            "key": "ahk",
+            "label": "AHK abnehmbar, Nachrüstung Fürth",
+            "cost": 1600
+          }
+        ],
+        "retrofitCost": 1600,
+        "mileageAdjustment": {
+          "expectedKm": 45000,
+          "deviationKm": 4679,
+          "adjustment": 470
+        },
+        "effectivePrice": 31860
       }
     }
   ]
