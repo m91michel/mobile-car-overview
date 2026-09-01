@@ -295,21 +295,11 @@
   ],
   "ref": 46,
   "assessment": {
-    "verdict": null,
-    "note": null,
-    "retrofit": [
-      {
-        "key": "ahk",
-        "label": "AHK abnehmbar, Nachrüstung Fürth",
-        "cost": 1600
-      }
-    ],
-    "retrofitCost": 1600,
-    "mileageAdjustment": {
-      "expectedKm": 27500,
-      "deviationKm": -7500,
-      "adjustment": -750
-    },
-    "effectivePrice": 29840
+    "verdict": "raus",
+    "note": "Raus: Weiß. Sonst stark — M-Sportpaket, ACC, Kamera, 20.000 km, LCI 11/2024.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "mileageAdjustment": null,
+    "effectivePrice": 28990
   }
 }

@@ -400,8 +400,8 @@
   ],
   "ref": 48,
   "assessment": {
-    "verdict": null,
-    "note": null,
+    "verdict": "top",
+    "note": "Einziger Wagen im Zielprofil mit Hochglanz Shadow Line (schwarze Nieren, nur im Händlertitel, nicht in den Features) — dazu BMW Premium Selection beim Vertragshändler, 28.650 km, blendfreies Fernlicht. Kostet 1.481 € mehr als #49.",
     "retrofit": [
       {
         "key": "ahk",

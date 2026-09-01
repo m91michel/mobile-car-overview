@@ -376,21 +376,11 @@
   ],
   "ref": 47,
   "assessment": {
-    "verdict": null,
-    "note": null,
-    "retrofit": [
-      {
-        "key": "camera",
-        "label": "Rückfahrkamera, Nachrüstung",
-        "cost": 1200
-      }
-    ],
-    "retrofitCost": 1200,
-    "mileageAdjustment": {
-      "expectedKm": 42500,
-      "deviationKm": -19800,
-      "adjustment": -1980
-    },
-    "effectivePrice": 29120
+    "verdict": "raus",
+    "note": "Raus: Weiß. ACC und Kamera ab Werk, 22.700 km.",
+    "retrofit": [],
+    "retrofitCost": 0,
+    "mileageAdjustment": null,
+    "effectivePrice": 29900
   }
 }
