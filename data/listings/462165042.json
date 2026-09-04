@@ -1,0 +1,451 @@
+{
+  "id": "462165042",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318-i-tour-m-sportp-ahk-acc-ad-led-headup-hifi-vaihingen-enz/462165042.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=462165042&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-03T19:53:43.496Z",
+  "title": "BMW 318 i Tour M Sportp. AHK°ACC*-Ad.LED°Headup+HIFI",
+  "shortTitle": "BMW 318",
+  "subTitle": "i Tour M Sportp. AHK°ACC*-Ad.LED°Headup+HIFI",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "61166",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 34900,
+    "net": 29327.73,
+    "currency": "EUR",
+    "localized": "34.900 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 19,
+    "thresholds": [
+      "26.500 €",
+      "34.400 €",
+      "37.000 €",
+      "41.200 €",
+      "44.200 €",
+      "49.100 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G 21",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "M Sportpaket",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "61166",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "19.580 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "7,1 l/100km",
+      "group": "envkv"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "159 g/km",
+      "group": "envkv"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": "7,1 l/100km (kombiniert)",
+      "group": "envkv"
+    },
+    "envkv.consumptionCosts": {
+      "label": "Energiekosten bei 15.000 km Jahresfahrleistung",
+      "value": "1.906 €/Jahr",
+      "group": "envkv"
+    },
+    "envkv.fuel.price": {
+      "label": "Kraftstoffpreis",
+      "value": "1,79 €/l (Jahresdurchschnitt 2025)",
+      "group": "envkv"
+    },
+    "envkv.co2Costs": {
+      "label": "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)",
+      "value": "2.743 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 115 €/t) · 1.192 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 50 €/t) · 4.532 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 190 €/t)",
+      "values": [
+        "2.743 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 115 €/t)",
+        "1.192 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 50 €/t)",
+        "4.532 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 190 €/t)"
+      ],
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro 6e",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "06/2025",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Vorne, Hinten, Selbstlenkende Systeme, 360°-Kamera",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "black saphirschwarz",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Stoff, Schwarz",
+      "group": "vehicle"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.300 kg",
+      "group": "vehicle"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg",
+      "group": "vehicle"
+    },
+    "maxNoseWeight": {
+      "label": "Stützlast",
+      "value": "75 kg",
+      "group": "vehicle"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.650 kg",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "58 l",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 19580,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2025-06",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1650,
+    "fuelTankLitres": 58,
+    "co2GramsPerKm": 159,
+    "consumptionL100km": 7.1,
+    "distanceFromHomeKm": 159,
+    "generation": null,
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 06/2025, nach der Umstellung"
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Adaptives Kurvenlicht",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Android Auto",
+    "Anhängerkupplung schwenkbar",
+    "Apple CarPlay",
+    "Armlehne",
+    "Ausparkassistent",
+    "Berganfahrassistent",
+    "Blendfreies Fernlicht",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Sitzeinstellung",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Head-Up Display",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Inspektion neu",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Navigationsvorbereitung",
+    "Nebelscheinwerfer",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sommerreifen",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [
+    "Headup+HIFI Soundsyst.",
+    "Driv.Assist-ACC°18Zoll",
+    "Parkass.360°+Rf-cam."
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/94/9412dd3c-3ef6-4b67-9506-1031f55b355e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ed/edb05fa8-1eba-41e2-b353-c5e7047fab52",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0f89961-edef-4829-a335-f6bbbe20d77e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/54/540928ba-bd47-40e3-910c-5b2e59e871ee",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e2/e278e7fe-8991-41ab-a6d5-cbe7fa353b6f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/73/7394d6b0-48a4-46ba-9c99-c7ba9c0e4fd4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6f/6f459c05-d122-43fc-9c07-6601f1fa06d0",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c5/c5fe3e90-3522-4bcb-a40c-80c19d532c3c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/32/3278ec97-ef81-4d79-b242-6990e8a554cd",
+    "https://img.classistatic.de/api/v1/mo-prod/images/43/433afe39-c35e-4c21-a5f3-f6c69db13eaf",
+    "https://img.classistatic.de/api/v1/mo-prod/images/54/54b9a789-4b5f-4363-9ecf-87146776dbaf",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e3/e32a376a-d79f-4cbf-8675-726967867564",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3d/3dca3bcf-b138-4681-8c7c-8fd2a992bd49",
+    "https://img.classistatic.de/api/v1/mo-prod/images/eb/ebfa2f82-2693-4d66-99a9-24cc0d1dc291",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0b/0b04cddd-e4a8-4099-acbd-564c40a2693e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9b/9b859b13-2eeb-48e7-aa31-525f0621adfb",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6c/6c0719ca-fa95-4704-9716-6b21deffc2d7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/58/58c74127-11fc-4bab-849b-8acd9ba162d1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ed/edc87c18-c83e-488d-bd4b-53e0e084495f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3a/3a917bb3-8aab-4d87-8c55-eaa606835da5",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca514b19-8341-4f57-b697-3b3b2afad750",
+    "https://img.classistatic.de/api/v1/mo-prod/images/18/185d4fad-8f07-491d-a858-ed5040ebb51d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b4/b4d1d0c1-e36c-4cc1-87ac-560730022171",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e7/e77fc8c5-afdd-4ff1-9a44-84f45bf6bda9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a1/a156c52b-0220-457a-9655-7da5d90ccc9b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fd/fde432e0-0fb5-4d97-b9d2-71aa61e27028",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3d/3d7ffc2d-e10e-4341-9e89-fd30eb3cc780",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f1/f18608ce-b3a6-42ea-91d6-1b241b69e428",
+    "https://img.classistatic.de/api/v1/mo-prod/images/34/34dddf4f-c6ba-4147-ae94-8fa47a8581a4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/db/dbfe56ea-2265-45a5-bc64-bf68e3af5967"
+  ],
+  "dealer": {
+    "name": "Autohaus Kupfer GmbH",
+    "type": "Händler",
+    "street": "Planckstr. 8",
+    "city": "DE-71665 Vaihingen / Enz",
+    "country": "DE",
+    "phone": "+49 (0)7042 15363",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=452402",
+    "location": {
+      "lat": 48.9274522,
+      "lon": 8.968404699999999
+    },
+    "openingHours": [
+      {
+        "day": "Mo - Fr",
+        "time": "09:00 Uhr - 18:30 Uhr"
+      },
+      {
+        "day": "Sa",
+        "time": "09:00 Uhr - 13:30 Uhr"
+      }
+    ],
+    "rating": {
+      "score": 4.7,
+      "count": 332,
+      "recommendationRate": 96
+    }
+  },
+  "financePlans": [
+    {
+      "type": "DF",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=462165042",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": true,
+      "bankId": "Santander",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 6980,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 27920,
+        "interestRateNominal": 5.83,
+        "interestRateEffective": 5.99,
+        "monthlyInstallment": 317,
+        "finalInstallment": 15705,
+        "totalInterest": 6439.92,
+        "totalAmount": 34359.92,
+        "localized": {
+          "downPayment": "6.980,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "27.920,00 €",
+          "interestRateNominal": "5,83%",
+          "interestRateEffective": "5,99%",
+          "monthlyInstallment": "317 €",
+          "finalInstallment": "15.705,00 €",
+          "totalInterest": "6.439,92 €",
+          "totalAmount": "34.359,92 €",
+          "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 55,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [],
+    "retrofitCost": 0,
+    "mileageAdjustment": {
+      "expectedKm": 18750,
+      "deviationKm": 830,
+      "adjustment": 80
+    },
+    "effectivePrice": 34980
+  }
+}

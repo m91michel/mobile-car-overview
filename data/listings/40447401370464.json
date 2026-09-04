@@ -1,25 +1,25 @@
 {
-  "id": "459209462",
-  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-lci-headup-acc-ahk-360-ka-b%C3%B6blingen/459209462.html",
-  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=459209462&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-09-03T19:56:13.994Z",
-  "title": "BMW 318i Touring M Sport LCI HeadUp ACC AHK 360°Ka",
+  "id": "40447401370464",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-dab-komfortzg-acc-stop-go-shz-sinsheim/40447401370464.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40447401370464&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-03T19:51:48.478Z",
+  "title": "BMW 318i Touring DAB Komfortzg. ACC + Stop&Go Shz",
   "shortTitle": "BMW 318",
-  "subTitle": "i Touring M Sport LCI HeadUp ACC AHK 360°Ka",
+  "subTitle": "i Touring DAB Komfortzg. ACC + Stop&Go Shz",
   "make": "BMW",
   "model": "318",
   "category": "EstateCar",
-  "sku": "07237A",
+  "sku": "B04784029263",
   "isNew": false,
   "kba": {
     "hsn": "0005",
     "tsn": "CYW"
   },
   "price": {
-    "gross": 31990,
-    "net": 26882.35,
+    "gross": 30900,
+    "net": 25966.39,
     "currency": "EUR",
-    "localized": "31.990 €",
+    "localized": "30.900 €",
     "vatRate": 19,
     "vatNote": "19,00% MwSt.",
     "type": "FIXED"
@@ -27,20 +27,20 @@
   "priceRating": {
     "rating": "VERY_GOOD_PRICE",
     "label": "Sehr guter Preis",
-    "offset": 90,
+    "offset": 86,
     "thresholds": [
-      "25.100 €",
-      "32.700 €",
-      "35.200 €",
-      "39.100 €",
-      "42.000 €",
-      "46.700 €"
+      "24.500 €",
+      "31.900 €",
+      "34.300 €",
+      "38.200 €",
+      "41.000 €",
+      "45.500 €"
     ]
   },
   "facts": {
     "damageCondition": {
       "label": "Fahrzeugzustand",
-      "value": "Gebrauchtfahrzeug",
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
       "group": "vehicle"
     },
     "category": {
@@ -50,27 +50,27 @@
     },
     "modelRange": {
       "label": "Baureihe",
-      "value": "G 21",
+      "value": "G21",
       "group": "vehicle"
     },
     "trimLine": {
       "label": "Ausstattungslinie",
-      "value": "M Sportpaket LCI",
+      "value": "Touring DAB Komfortzg. ACC + Stop&Go Shz",
       "group": "vehicle"
     },
     "sku": {
       "label": "Fahrzeugnummer",
-      "value": "07237A",
+      "value": "B04784029263",
       "group": "vehicle"
     },
-    "countryVersion": {
-      "label": "Herkunft",
-      "value": "Deutsche Ausführung",
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
       "group": "vehicle"
     },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "34.900 km",
+      "value": "16.754 km",
       "group": "vehicle"
     },
     "cubicCapacity": {
@@ -110,17 +110,17 @@
     },
     "emissionClass": {
       "label": "Schadstoffklasse",
-      "value": "Euro 6e",
-      "group": "vehicle"
-    },
-    "emissionsSticker": {
-      "label": "Umweltplakette",
-      "value": "4 (Grün)",
+      "value": "Euro6",
       "group": "vehicle"
     },
     "firstRegistration": {
       "label": "Erstzulassung",
-      "value": "10/2024",
+      "value": "03/2025",
+      "group": "vehicle"
+    },
+    "constructionYear": {
+      "label": "Baujahr",
+      "value": "2025",
       "group": "vehicle"
     },
     "numberOfPreviousOwners": {
@@ -130,7 +130,7 @@
     },
     "hu": {
       "label": "HU",
-      "value": "Neu",
+      "value": "03/2028",
       "group": "vehicle"
     },
     "climatisation": {
@@ -140,7 +140,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "360°-Kamera, Vorne, Selbstlenkende Systeme, Hinten",
+      "value": "Vorne, Kamera, Selbstlenkende Systeme, Hinten",
       "group": "vehicle"
     },
     "airbag": {
@@ -150,61 +150,75 @@
     },
     "manufacturerColorName": {
       "label": "Farbe (Hersteller)",
-      "value": "Black Saphir Metallic",
+      "value": "Schwarz uni",
       "group": "vehicle"
     },
     "color": {
       "label": "Farbe",
-      "value": "Schwarz Metallic",
+      "value": "Schwarz",
       "group": "vehicle"
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Teilleder, Andere",
+      "value": "Schwarz",
+      "group": "vehicle"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.300 kg",
+      "group": "vehicle"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg",
+      "group": "vehicle"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.650 kg",
       "group": "vehicle"
     },
     "cylinder": {
       "label": "Zylinder",
       "value": "4",
       "group": "vehicle"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "59 l",
+      "group": "vehicle"
     }
   },
   "derived": {
-    "mileageKm": 34900,
+    "mileageKm": 16754,
     "powerKw": 115,
     "powerHp": 156,
     "cubicCapacityCcm": 1998,
-    "firstRegistration": "2024-10",
-    "constructionYear": null,
+    "firstRegistration": "2025-03",
+    "constructionYear": 2025,
     "seats": 5,
     "previousOwners": 1,
-    "weightKg": null,
-    "fuelTankLitres": null,
+    "weightKg": 1650,
+    "fuelTankLitres": 59,
     "co2GramsPerKm": null,
     "consumptionL100km": null,
-    "distanceFromHomeKm": 167,
-    "generation": null,
+    "distanceFromHomeKm": 155,
+    "generation": "G21",
     "facelift": "lci",
-    "faceliftBasis": "Inserat nennt LCI/Facelift ausdrücklich"
+    "faceliftBasis": "Erstzulassung 03/2025, nach der Umstellung"
   },
   "features": [
     "Abgedunkelte Scheiben",
     "ABS",
     "Abstandstempomat",
     "Abstandswarner",
-    "Adaptives Fahrwerk",
-    "Adaptives Kurvenlicht",
     "Alarmanlage",
     "Ambiente-Beleuchtung",
     "Android Auto",
     "Anhängerkupplung schwenkbar",
-    "Anhängerrangierassistent",
     "Apple CarPlay",
     "Armlehne",
-    "Ausparkassistent",
-    "Beheizbare Frontscheibe",
     "Berganfahrassistent",
-    "Blendfreies Fernlicht",
     "Bluetooth",
     "Bordcomputer",
     "Dachreling",
@@ -214,12 +228,11 @@
     "Elektr. Seitenspiegel anklappbar",
     "Elektr. Wegfahrsperre",
     "ESP",
-    "Fernlichtassistent",
     "Freisprecheinrichtung",
-    "Garantie",
     "Gepäckraumabtrennung",
-    "Head-Up Display",
+    "Geschwindigkeitsbegrenzer",
     "Heckantrieb",
+    "Induktionsladen für Smartphones",
     "Innenspiegel autom. abblendend",
     "Isofix",
     "Lederlenkrad",
@@ -232,8 +245,6 @@
     "Multifunktionslenkrad",
     "Musikstreaming integriert",
     "Navigationssystem",
-    "Nebelscheinwerfer",
-    "Nichtraucher-Fahrzeug",
     "Notbremsassistent",
     "Notrufsystem",
     "Partikelfilter",
@@ -241,13 +252,9 @@
     "Regensensor",
     "Reifendruckkontrolle",
     "Schaltwippen",
-    "Scheckheftgepflegt",
     "Schlüssellose Zentralverriegelung (Keyless)",
     "Servolenkung",
     "Sitzheizung",
-    "Soundsystem",
-    "Sportfahrwerk",
-    "Sportpaket",
     "Sportsitze",
     "Sprachsteuerung",
     "Spurhalteassistent",
@@ -259,64 +266,59 @@
     "USB",
     "Verkehrszeichenerkennung",
     "Volldigitales Kombiinstrument",
-    "Winterpaket",
-    "Winterreifen",
     "WLAN / Wifi Hotspot",
     "Zentralverriegelung"
   ],
-  "highlights": [
-    "LCI Mod. 2025+ Sound"
-  ],
+  "highlights": [],
   "images": [
-    "https://img.classistatic.de/api/v1/mo-prod/images/65/657689b0-9f01-4de2-b205-a410bc61d02d",
-    "https://img.classistatic.de/api/v1/mo-prod/images/74/748b7684-162a-4758-9cd3-9119951429db",
-    "https://img.classistatic.de/api/v1/mo-prod/images/01/0146a7cd-7330-4f69-b9fb-3ed057e5f160",
-    "https://img.classistatic.de/api/v1/mo-prod/images/33/339d3e9c-3f34-4ec0-b3a7-71d31274ed7e",
-    "https://img.classistatic.de/api/v1/mo-prod/images/28/28666016-5cd6-4977-bbb6-0a8a0892992b",
-    "https://img.classistatic.de/api/v1/mo-prod/images/e7/e795f8b9-ab85-47b8-a31d-b5b878657fd3",
-    "https://img.classistatic.de/api/v1/mo-prod/images/7c/7c5c72ba-d511-4e20-9df7-16d81b601659",
-    "https://img.classistatic.de/api/v1/mo-prod/images/08/08262b74-8275-4188-ae8b-59c55ef6c26e",
-    "https://img.classistatic.de/api/v1/mo-prod/images/ca/caabe4da-8f4b-41a4-86d7-d5ff420720da",
-    "https://img.classistatic.de/api/v1/mo-prod/images/0d/0db15e7a-488a-4e8c-8524-820c6938c58c",
-    "https://img.classistatic.de/api/v1/mo-prod/images/04/04deae99-774d-4eb1-955c-baf667fb3fc2",
-    "https://img.classistatic.de/api/v1/mo-prod/images/02/028f8635-8dc9-40b2-ab18-77ef807c7bce",
-    "https://img.classistatic.de/api/v1/mo-prod/images/33/3374c309-41f2-4a4b-b41f-0643abc7d256",
-    "https://img.classistatic.de/api/v1/mo-prod/images/60/60e03074-9ac5-4c95-9edf-16f558ba970a",
-    "https://img.classistatic.de/api/v1/mo-prod/images/b5/b5a9c4cc-0d56-4ffe-93bc-347da48c2e92",
-    "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bd76a12-dd78-460d-9dec-a9067150125b"
+    "https://img.classistatic.de/api/v1/mo-prod/images/85/858cc796-37b6-42ab-8dc0-34962b3a0828",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e1/e1c3b856-16ae-4890-9ad5-ed43a71efd8d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/25/25eaa57f-9ed8-40af-93c3-7eb64d8250f2",
+    "https://img.classistatic.de/api/v1/mo-prod/images/26/26bcf279-b122-4a98-a827-6fa6be5dcb47",
+    "https://img.classistatic.de/api/v1/mo-prod/images/20/20955020-46bd-44e3-ae3e-466a6f78e2d7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d70e896-053c-4967-b467-8431b89ce518",
+    "https://img.classistatic.de/api/v1/mo-prod/images/00/001d4c67-3cbc-4743-bdcf-519899bad8f5",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d8/d88d3459-6a51-4711-a0dd-873fd84134c1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d2/d24ec380-9f81-4c3c-abb9-490340155b3b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/14/144676c5-f3d7-4674-b7b0-1bf58b9fc3b4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/79/7924e04c-3459-4ea9-b4d5-25e37843a739",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5c/5c212997-c0b2-4f59-87d6-bae3dc9f0cd6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7e/7ed30bfa-8a2e-4aaa-9972-c69f0e3fa38f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f7/f737077e-cbdc-46da-8579-2e3133fb4b53",
+    "https://img.classistatic.de/api/v1/mo-prod/images/33/339087f4-ca5a-478d-ae8a-b642b66ca7d6"
   ],
   "dealer": {
-    "name": "Jargstorf-Automobile",
+    "name": "Autohaus Krauth GmbH & Co. KG",
     "type": "Händler",
-    "street": "Stuttgarter Straße 134-136",
-    "city": "DE-71032 Böblingen",
+    "street": "Neulandstr. 26",
+    "city": "DE-74889 Sinsheim",
     "country": "DE",
-    "phone": "+49 (0)7031 222077",
-    "homepage": "https://home.mobile.de/home/redirect.html?customerId=466856",
+    "phone": "+49 (0)7261 92510",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=462749",
     "location": {
-      "lat": 48.6926105,
-      "lon": 9.0253148
+      "lat": 49.2444362,
+      "lon": 8.8840715
     },
     "openingHours": [
       {
-        "time": "09:30 Uhr - 18:00 Uhr",
+        "time": "08:00 Uhr - 18:00 Uhr",
         "day": "Mo - Fr"
       },
       {
-        "time": "10:00 Uhr - 14:00 Uhr",
+        "time": "10:00 Uhr - 13:00 Uhr",
         "day": "Sa"
       }
     ],
     "rating": {
-      "score": 4.5,
-      "count": 391,
-      "recommendationRate": 91
+      "score": 5,
+      "count": 25,
+      "recommendationRate": 100
     }
   },
   "financePlans": [
     {
       "type": "AO",
-      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=459209462",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=40447401370464",
       "shortFlow": true,
       "promotion": false,
       "showInGallery": false,
@@ -324,45 +326,45 @@
         "bankName": "Openbank Deutschland AG",
         "loanBroker": "Check24 GmbH",
         "loanType": "BALLOON",
-        "downPayment": 6398,
+        "downPayment": 6180,
         "creditTerm": 60,
         "yearlyMileage": 10000,
-        "creditAmount": 25592,
-        "interestRateNominal": 5.26,
-        "interestRateEffective": 5.39,
-        "monthlyInstallment": 332.5,
-        "finalInstallment": 10556.7,
-        "totalInterest": 4914.43,
-        "totalAmount": 30506.43,
+        "creditAmount": 24720,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 327.6,
+        "finalInstallment": 10197,
+        "totalInterest": 4805.19,
+        "totalAmount": 29525.19,
         "localized": {
-          "downPayment": "6.398,00 €",
+          "downPayment": "6.180,00 €",
           "downPaymentInPercent": "20%",
           "creditTerm": "60",
           "creditTermInYears": "5",
           "yearlyMileage": "10.000",
-          "creditAmount": "25.592,00 €",
-          "interestRateNominal": "5,26%",
-          "interestRateEffective": "5,39%",
-          "monthlyInstallment": "333 €",
-          "finalInstallment": "10.556,70 €",
-          "totalInterest": "4.914,43 €",
-          "totalAmount": "30.506,43 €",
-          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,39%, fester Sollzinssatz 5,26% p.a., Laufzeit 60 Monate, 60 monatliche Raten à 141,71 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.802,55 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+          "creditAmount": "24.720,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "328 €",
+          "finalInstallment": "10.197,00 €",
+          "totalInterest": "4.805,19 €",
+          "totalAmount": "29.525,19 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
         }
       }
     }
   ],
-  "ref": 37,
+  "ref": 54,
   "assessment": {
     "verdict": null,
     "note": null,
     "retrofit": [],
     "retrofitCost": 0,
     "mileageAdjustment": {
-      "expectedKm": 28750,
-      "deviationKm": 6150,
-      "adjustment": 620
+      "expectedKm": 22500,
+      "deviationKm": -5746,
+      "adjustment": -570
     },
-    "effectivePrice": 32610
+    "effectivePrice": 30330
   }
 }

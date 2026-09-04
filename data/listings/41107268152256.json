@@ -170,8 +170,10 @@
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Stoff, Schwarz",
-      "group": "vehicle"
+      "value": "Teilleder, Schwarz",
+      "group": "vehicle",
+      "listedValue": "Stoff, Schwarz",
+      "corrected": true
     },
     "trailerLoadBraked": {
       "label": "Anhängelast gebremst",
@@ -377,7 +379,7 @@
   "ref": 47,
   "assessment": {
     "verdict": "raus",
-    "note": "Raus: Weiß. ACC und Kamera ab Werk, 22.700 km.",
+    "note": "Raus: Weiß. ACC und Kamera ab Werk, 22.700 km. Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat).",
     "retrofit": [],
     "retrofitCost": 0,
     "mileageAdjustment": null,

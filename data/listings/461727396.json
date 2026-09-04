@@ -1,25 +1,25 @@
 {
-  "id": "459209462",
-  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-lci-headup-acc-ahk-360-ka-b%C3%B6blingen/459209462.html",
-  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=459209462&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-09-03T19:56:13.994Z",
-  "title": "BMW 318i Touring M Sport LCI HeadUp ACC AHK 360°Ka",
+  "id": "461727396",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-pano-hud-acc-ahk-360-kam-b%C3%B6blingen/461727396.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461727396&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-03T19:54:43.515Z",
+  "title": "BMW 318i Touring M Sport Pano HUD ACC AHK 360°Kam",
   "shortTitle": "BMW 318",
-  "subTitle": "i Touring M Sport LCI HeadUp ACC AHK 360°Ka",
+  "subTitle": "i Touring M Sport Pano HUD ACC AHK 360°Kam",
   "make": "BMW",
   "model": "318",
   "category": "EstateCar",
-  "sku": "07237A",
+  "sku": "07277",
   "isNew": false,
   "kba": {
     "hsn": "0005",
     "tsn": "CYW"
   },
   "price": {
-    "gross": 31990,
-    "net": 26882.35,
+    "gross": 33980,
+    "net": 28554.62,
     "currency": "EUR",
-    "localized": "31.990 €",
+    "localized": "33.980 €",
     "vatRate": 19,
     "vatNote": "19,00% MwSt.",
     "type": "FIXED"
@@ -27,14 +27,14 @@
   "priceRating": {
     "rating": "VERY_GOOD_PRICE",
     "label": "Sehr guter Preis",
-    "offset": 90,
+    "offset": 93,
     "thresholds": [
-      "25.100 €",
-      "32.700 €",
-      "35.200 €",
-      "39.100 €",
-      "42.000 €",
-      "46.700 €"
+      "26.500 €",
+      "34.500 €",
+      "37.100 €",
+      "41.300 €",
+      "44.300 €",
+      "49.300 €"
     ]
   },
   "facts": {
@@ -55,12 +55,12 @@
     },
     "trimLine": {
       "label": "Ausstattungslinie",
-      "value": "M Sportpaket LCI",
+      "value": "M Sportpaket",
       "group": "vehicle"
     },
     "sku": {
       "label": "Fahrzeugnummer",
-      "value": "07237A",
+      "value": "07277",
       "group": "vehicle"
     },
     "countryVersion": {
@@ -70,7 +70,7 @@
     },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "34.900 km",
+      "value": "23.700 km",
       "group": "vehicle"
     },
     "cubicCapacity": {
@@ -110,7 +110,7 @@
     },
     "emissionClass": {
       "label": "Schadstoffklasse",
-      "value": "Euro 6e",
+      "value": "Euro6d",
       "group": "vehicle"
     },
     "emissionsSticker": {
@@ -120,7 +120,7 @@
     },
     "firstRegistration": {
       "label": "Erstzulassung",
-      "value": "10/2024",
+      "value": "11/2024",
       "group": "vehicle"
     },
     "numberOfPreviousOwners": {
@@ -140,7 +140,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "360°-Kamera, Vorne, Selbstlenkende Systeme, Hinten",
+      "value": "Selbstlenkende Systeme, 360°-Kamera, Hinten, Vorne",
       "group": "vehicle"
     },
     "airbag": {
@@ -170,11 +170,11 @@
     }
   },
   "derived": {
-    "mileageKm": 34900,
+    "mileageKm": 23700,
     "powerKw": 115,
     "powerHp": 156,
     "cubicCapacityCcm": 1998,
-    "firstRegistration": "2024-10",
+    "firstRegistration": "2024-11",
     "constructionYear": null,
     "seats": 5,
     "previousOwners": 1,
@@ -185,7 +185,7 @@
     "distanceFromHomeKm": 167,
     "generation": null,
     "facelift": "lci",
-    "faceliftBasis": "Inserat nennt LCI/Facelift ausdrücklich"
+    "faceliftBasis": "Erstzulassung 11/2024, nach der Umstellung"
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -212,6 +212,8 @@
     "Elektr. Heckklappe",
     "Elektr. Seitenspiegel",
     "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Sitzeinstellung",
+    "Elektr. Sitzeinstellung mit Memory-Funktion",
     "Elektr. Wegfahrsperre",
     "ESP",
     "Fernlichtassistent",
@@ -236,12 +238,14 @@
     "Nichtraucher-Fahrzeug",
     "Notbremsassistent",
     "Notrufsystem",
+    "Panorama-Dach",
     "Partikelfilter",
     "Radio DAB",
     "Regensensor",
     "Reifendruckkontrolle",
     "Schaltwippen",
     "Scheckheftgepflegt",
+    "Schiebedach",
     "Schlüssellose Zentralverriegelung (Keyless)",
     "Servolenkung",
     "Sitzheizung",
@@ -265,7 +269,7 @@
     "Zentralverriegelung"
   ],
   "highlights": [
-    "LCI Mod. 2025+ Sound"
+    "Facelift LCI Modell 25"
   ],
   "images": [
     "https://img.classistatic.de/api/v1/mo-prod/images/65/657689b0-9f01-4de2-b205-a410bc61d02d",
@@ -273,17 +277,20 @@
     "https://img.classistatic.de/api/v1/mo-prod/images/01/0146a7cd-7330-4f69-b9fb-3ed057e5f160",
     "https://img.classistatic.de/api/v1/mo-prod/images/33/339d3e9c-3f34-4ec0-b3a7-71d31274ed7e",
     "https://img.classistatic.de/api/v1/mo-prod/images/28/28666016-5cd6-4977-bbb6-0a8a0892992b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/91/91501f04-c3f9-4e91-87d4-f27ca68b6ef7",
     "https://img.classistatic.de/api/v1/mo-prod/images/e7/e795f8b9-ab85-47b8-a31d-b5b878657fd3",
     "https://img.classistatic.de/api/v1/mo-prod/images/7c/7c5c72ba-d511-4e20-9df7-16d81b601659",
     "https://img.classistatic.de/api/v1/mo-prod/images/08/08262b74-8275-4188-ae8b-59c55ef6c26e",
-    "https://img.classistatic.de/api/v1/mo-prod/images/ca/caabe4da-8f4b-41a4-86d7-d5ff420720da",
     "https://img.classistatic.de/api/v1/mo-prod/images/0d/0db15e7a-488a-4e8c-8524-820c6938c58c",
-    "https://img.classistatic.de/api/v1/mo-prod/images/04/04deae99-774d-4eb1-955c-baf667fb3fc2",
-    "https://img.classistatic.de/api/v1/mo-prod/images/02/028f8635-8dc9-40b2-ab18-77ef807c7bce",
     "https://img.classistatic.de/api/v1/mo-prod/images/33/3374c309-41f2-4a4b-b41f-0643abc7d256",
-    "https://img.classistatic.de/api/v1/mo-prod/images/60/60e03074-9ac5-4c95-9edf-16f558ba970a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f2/f2e50ab8-5e38-46a3-b38b-7e9f8ae4467a",
     "https://img.classistatic.de/api/v1/mo-prod/images/b5/b5a9c4cc-0d56-4ffe-93bc-347da48c2e92",
-    "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bd76a12-dd78-460d-9dec-a9067150125b"
+    "https://img.classistatic.de/api/v1/mo-prod/images/7b/7bd76a12-dd78-460d-9dec-a9067150125b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/53/53e21cb2-baa4-403f-b30e-f32138e8b3c6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/11/11c2f40f-0963-46c0-9f0d-473228e281ab",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9b40a56-ef5f-4d6d-b217-eafb170eb733",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b9/b9aee72a-e5ef-4ef2-8cf6-342fa32045e1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/60/60e03074-9ac5-4c95-9edf-16f558ba970a"
   ],
   "dealer": {
     "name": "Jargstorf-Automobile",
@@ -316,7 +323,7 @@
   "financePlans": [
     {
       "type": "AO",
-      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=459209462",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=461727396",
       "shortFlow": true,
       "promotion": false,
       "showInGallery": false,
@@ -324,45 +331,45 @@
         "bankName": "Openbank Deutschland AG",
         "loanBroker": "Check24 GmbH",
         "loanType": "BALLOON",
-        "downPayment": 6398,
+        "downPayment": 6796,
         "creditTerm": 60,
         "yearlyMileage": 10000,
-        "creditAmount": 25592,
-        "interestRateNominal": 5.26,
-        "interestRateEffective": 5.39,
-        "monthlyInstallment": 332.5,
-        "finalInstallment": 10556.7,
-        "totalInterest": 4914.43,
-        "totalAmount": 30506.43,
+        "creditAmount": 27184,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 360.25,
+        "finalInstallment": 11213.4,
+        "totalInterest": 5284.16,
+        "totalAmount": 32468.16,
         "localized": {
-          "downPayment": "6.398,00 €",
+          "downPayment": "6.796,00 €",
           "downPaymentInPercent": "20%",
           "creditTerm": "60",
           "creditTermInYears": "5",
           "yearlyMileage": "10.000",
-          "creditAmount": "25.592,00 €",
-          "interestRateNominal": "5,26%",
-          "interestRateEffective": "5,39%",
-          "monthlyInstallment": "333 €",
-          "finalInstallment": "10.556,70 €",
-          "totalInterest": "4.914,43 €",
-          "totalAmount": "30.506,43 €",
-          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,39%, fester Sollzinssatz 5,26% p.a., Laufzeit 60 Monate, 60 monatliche Raten à 141,71 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.802,55 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+          "creditAmount": "27.184,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "361 €",
+          "finalInstallment": "11.213,40 €",
+          "totalInterest": "5.284,16 €",
+          "totalAmount": "32.468,16 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
         }
       }
     }
   ],
-  "ref": 37,
+  "ref": 56,
   "assessment": {
     "verdict": null,
     "note": null,
     "retrofit": [],
     "retrofitCost": 0,
     "mileageAdjustment": {
-      "expectedKm": 28750,
-      "deviationKm": 6150,
-      "adjustment": 620
+      "expectedKm": 27500,
+      "deviationKm": -3800,
+      "adjustment": -380
     },
-    "effectivePrice": 32610
+    "effectivePrice": 33600
   }
 }

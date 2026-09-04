@@ -174,8 +174,10 @@
     "consumptionL100km": null,
     "distanceFromHomeKm": 56,
     "generation": "G81",
-    "facelift": "unknown",
-    "faceliftBasis": "Zulassung im Umstellungsfenster – aus den Daten nicht entscheidbar"
+    "facelift": "lci",
+    "faceliftBasis": "Foto zeigt gebogenes Kombiinstrument (Curved Display) — nur bei der LCI serienmäßig",
+    "faceliftBasisListed": "Zulassung im Umstellungsfenster – aus den Daten nicht entscheidbar",
+    "faceliftCorrected": true
   },
   "features": [
     "Abgedunkelte Scheiben",
@@ -332,7 +334,7 @@
   "ref": 20,
   "assessment": {
     "verdict": "raus",
-    "note": "Raus: Diesel. Wäre mit ACC, AHK, Kamera und M Sport sonst komplett.",
+    "note": "Raus: Diesel. Wäre mit ACC, AHK, Kamera und M Sport sonst komplett. Ist trotz Erstzulassung im Umstellungsfenster (09/2022) laut Foto (Curved Display) tatsächlich LCI.",
     "retrofit": [],
     "retrofitCost": 0,
     "mileageAdjustment": null,

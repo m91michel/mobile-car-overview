@@ -1,0 +1,419 @@
+{
+  "id": "458893960",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-aut-touring-m-sport-ahk-head-up-adapt-led-lonnerstadt/458893960.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=458893960&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-03T19:50:41.308Z",
+  "title": "BMW 320i Aut. Touring M Sport/AHK/Head-Up/Adapt.LED",
+  "shortTitle": "BMW 320",
+  "subTitle": "i Aut. Touring M Sport/AHK/Head-Up/Adapt.LED",
+  "make": "BMW",
+  "model": "320",
+  "category": "EstateCar",
+  "sku": "297",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CVS"
+  },
+  "price": {
+    "gross": 36280,
+    "net": 30487.4,
+    "currency": "EUR",
+    "localized": "36.280 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "VERY_GOOD_PRICE",
+    "label": "Sehr guter Preis",
+    "offset": 97,
+    "thresholds": [
+      "28.100 €",
+      "36.500 €",
+      "39.300 €",
+      "43.700 €",
+      "46.900 €",
+      "52.100 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G81",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "320 i M Sport",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "297",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "28.905 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "135 kW (184 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "7,2 l/100km",
+      "group": "envkv"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "163 g/km",
+      "group": "envkv"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": "7,2 l/100km (kombiniert)",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro 6e",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "10/2024",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Vorne, 360°-Kamera, Selbstlenkende Systeme, Hinten",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Saphirschwarz Metallic",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Alcantara, Schwarz",
+      "group": "vehicle"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.600 kg",
+      "group": "vehicle"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg",
+      "group": "vehicle"
+    },
+    "maxNoseWeight": {
+      "label": "Stützlast",
+      "value": "75 kg",
+      "group": "vehicle"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.660 kg",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "59 l",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 28905,
+    "powerKw": 135,
+    "powerHp": 184,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2024-10",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1660,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": 163,
+    "consumptionL100km": 7.2,
+    "distanceFromHomeKm": 29,
+    "generation": "G81",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 10/2024, nach der Umstellung"
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Adaptives Fahrwerk",
+    "Adaptives Kurvenlicht",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Android Auto",
+    "Anhängerkupplung schwenkbar",
+    "Apple CarPlay",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Blendfreies Fernlicht",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Head-Up Display",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Skisack",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "Winterreifen",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/e2/e2a7f404-e737-452d-a2ed-46061af11c6a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8b/8b3e739a-5eaa-4383-8e7e-2d096052e13f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fd/fd120a14-19a4-4509-833f-ba5b36e1bf19",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e1/e1bf64fb-82ca-4869-a195-6eb0cecadc84",
+    "https://img.classistatic.de/api/v1/mo-prod/images/87/8784b610-7621-4611-8009-41b01db4a6f7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4b/4bcb4faf-1a9b-4caf-b888-d9bc8dd68424",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa116ff3-0d82-4010-8e26-70a71f400fe4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/25/25f572ea-cd19-42e4-94c3-1334425c6783",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c4/c4c5c59e-354d-468e-8028-3403d90674d7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca9fe6b1-a995-460d-8bf1-e54e9a8bacc9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/97/9748bcd7-c5ac-49b8-af55-7b1ef23db137",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae8246ac-cdf1-47b1-9b85-487c3e9a2261",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3c/3cea1d6d-2432-4bf1-9f76-ec51eb7d7afd",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8e02f928-86aa-4403-a455-28516117517f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d9/d9194f95-528a-4fba-aded-95bcd48286dc",
+    "https://img.classistatic.de/api/v1/mo-prod/images/db/db6dde06-be66-480f-95c6-94106988d56d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c3/c3c67602-bfde-414a-bf10-b24f3c214c76",
+    "https://img.classistatic.de/api/v1/mo-prod/images/af/aff9d5e0-cee3-4774-bbea-bcbd194b1204",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f0/f0c2833a-91c0-42a2-9a22-e483c0a7816f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/82/829d1b29-7806-4ef5-845f-75543d23c0f4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bf/bf50e6b1-616f-46f9-a5f8-b73d22d0d19d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a3/a32d5202-db48-4bfc-af35-f85c60c1732a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/08/081c3bcd-f273-4604-90a7-70dc89ea6500"
+  ],
+  "dealer": {
+    "name": "Zeiler Car & Bike Handel",
+    "type": "Händler",
+    "street": "Höchstadter Straße 11",
+    "city": "DE-91475 Lonnerstadt",
+    "country": "DE",
+    "phone": "+49 (0)9193 5047301",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=6795333",
+    "location": {
+      "lat": 49.7012714,
+      "lon": 10.7781141
+    },
+    "openingHours": [
+      {
+        "time": "08:00 Uhr - 19:00 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "09:00 Uhr - 13:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 5,
+      "count": 142,
+      "recommendationRate": 100
+    }
+  },
+  "financePlans": [
+    {
+      "type": "DF",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=458893960",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "bankId": "CreditPlus",
+      "offer": {
+        "bankId": "CreditPlus",
+        "bankName": "Creditplus Bank AG",
+        "loanType": "BALLOON",
+        "downPayment": 7256,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 29024,
+        "interestRateNominal": 5.83,
+        "interestRateEffective": 5.99,
+        "monthlyInstallment": 303.43,
+        "finalInstallment": 18140,
+        "totalInterest": 7018.37,
+        "totalAmount": 36042.37,
+        "localized": {
+          "downPayment": "7.256,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "29.024,00 €",
+          "interestRateNominal": "5,83%",
+          "interestRateEffective": "5,99%",
+          "monthlyInstallment": "304 €",
+          "finalInstallment": "18.140,00 €",
+          "totalInterest": "7.018,37 €",
+          "totalAmount": "36.042,37 €",
+          "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Creditplus Bank AG (Darlehensgeber), Augustenstraße 7, 70178 Stuttgart. Bonität vorausgesetzt."
+        }
+      }
+    },
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=458893960",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false
+    }
+  ],
+  "ref": 53,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [],
+    "retrofitCost": 0,
+    "mileageAdjustment": {
+      "expectedKm": 28750,
+      "deviationKm": 155,
+      "adjustment": 20
+    },
+    "effectivePrice": 36300
+  }
+}
