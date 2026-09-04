@@ -178,6 +178,12 @@
     "456478795": {
       "verdict": "raus",
       "note": "Raus: laut Inserat reine Stoffausstattung. Wäre mit 27.190 € effektiv sonst Platz 1 im Zielprofil, 169 € unter #49 — ACC, Kamera, LCI 05/2023, 47.000 km, BMW-Service-Betrieb, 106 km. Der Sitz-Check am Foto lohnt sich hier also, bevor er endgültig rausfällt."
+    },
+    "40022702478304": {
+      "factOverrides": {
+        "interior": "Teilleder, Schwarz"
+      },
+      "note": "Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat)."
     }
   }
 }

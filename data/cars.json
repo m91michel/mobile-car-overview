@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T06:48:07.423Z",
+  "updatedAt": "2026-09-04T07:02:20.808Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -15738,8 +15738,10 @@
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Stoff, Schwarz",
-          "group": "vehicle"
+          "value": "Teilleder, Schwarz",
+          "group": "vehicle",
+          "listedValue": "Stoff, Schwarz",
+          "corrected": true
         }
       },
       "derived": {
@@ -15898,7 +15900,7 @@
       "ref": 44,
       "assessment": {
         "verdict": null,
-        "note": null,
+        "note": "Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat).",
         "retrofit": [],
         "retrofitCost": 0,
         "mileageAdjustment": {
