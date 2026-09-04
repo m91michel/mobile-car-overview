@@ -74,7 +74,11 @@
     },
     "460807870": {
       "verdict": "raus",
-      "note": "Raus: Diesel. Wäre mit ACC, AHK, Kamera und M Sport sonst komplett."
+      "faceliftOverride": {
+        "facelift": "lci",
+        "basis": "Foto zeigt gebogenes Kombiinstrument (Curved Display) — nur bei der LCI serienmäßig"
+      },
+      "note": "Raus: Diesel. Wäre mit ACC, AHK, Kamera und M Sport sonst komplett. Ist trotz Erstzulassung im Umstellungsfenster (09/2022) laut Foto (Curved Display) tatsächlich LCI."
     },
     "460854078": {
       "verdict": "raus",
@@ -158,7 +162,10 @@
     },
     "41107268152256": {
       "verdict": "raus",
-      "note": "Raus: Weiß. ACC und Kamera ab Werk, 22.700 km."
+      "factOverrides": {
+        "interior": "Teilleder, Schwarz"
+      },
+      "note": "Raus: Weiß. ACC und Kamera ab Werk, 22.700 km. Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat)."
     },
     "460777203": {
       "verdict": "top",

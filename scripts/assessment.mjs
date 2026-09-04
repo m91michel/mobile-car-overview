@@ -137,6 +137,25 @@ export function applyAssessment(registry, car) {
     fact.corrected = true;
   }
 
+  // Same idea as factOverrides, but for deriveModel's facelift guess: the
+  // listing data alone can leave a registration month genuinely undecidable
+  // (see extract.mjs), and a human check (dealer confirmation, curved-display
+  // photo, VIN decode) can settle it. `derived` is recomputed from scratch on
+  // every scrape/renormalize, so there is no stale `...Listed` value to worry
+  // about carrying forward.
+  if (entry?.faceliftOverride) {
+    const { facelift, basis } = entry.faceliftOverride;
+    if (!['lci', 'pre-lci', 'unknown', 'other-generation'].includes(facelift)) {
+      throw new Error(`Car ${car.id}: faceliftOverride.facelift has an invalid value "${facelift}".`);
+    }
+    if (car.derived) {
+      car.derived.faceliftBasisListed = car.derived.faceliftBasis;
+      car.derived.facelift = facelift;
+      car.derived.faceliftBasis = basis ?? car.derived.faceliftBasis;
+      car.derived.faceliftCorrected = true;
+    }
+  }
+
   const retrofitCost = retrofit.reduce((sum, item) => sum + item.cost, 0);
   const gross = car.price?.gross;
 
