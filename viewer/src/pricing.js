@@ -14,6 +14,12 @@ export const DEFAULT_PRICING = {
   // contracts, DAT valuation), matching scripts/assessment.mjs's default.
   referenceKmPerYear: 15000,
   ratePerKm: 0.1,
+  // Whether a missing AHK counts towards the Effektivpreis at all. Some
+  // buyers don't want a tow bar and would rather compare on the asking price
+  // for that part, so this only ever removes the "ahk" retrofit item
+  // (scripts/assessment.mjs's deriveRetrofit) — it never adds one back that
+  // the server didn't derive.
+  ahkEnabled: true,
   lciMalusEnabled: true,
   // A starting guess, not a market-derived number: the 47-car set has only 3
   // pre-facelift cars once "raus" is excluded, too few to fit a reliable
@@ -81,15 +87,26 @@ export function applyPricingSettings(car, settings) {
   const mileageAdjustment = skip ? null : computeMileageAdjustment(car, settings);
   const lciMalus = skip ? 0 : computeLciMalus(car, settings);
 
+  // Only ever drops the server-derived "ahk" item, never adds one it didn't
+  // derive — see the ahkEnabled comment on DEFAULT_PRICING. Checked against
+  // `=== false`, not falsy, so a pricing object saved to localStorage before
+  // this setting existed still defaults to enabled instead of silently
+  // dropping AHK for everyone who already has settings stored.
+  const ahkEnabled = settings.ahkEnabled !== false;
+  const retrofit = ahkEnabled ? assessment.retrofit : assessment.retrofit.filter((item) => item.key !== 'ahk');
+  const retrofitCost = ahkEnabled ? assessment.retrofitCost : retrofit.reduce((sum, item) => sum + item.cost, 0);
+
   return {
     ...car,
     assessment: {
       ...assessment,
+      retrofit,
+      retrofitCost,
       mileageAdjustment,
       lciMalus,
       effectivePrice:
         typeof gross === 'number'
-          ? Math.round(gross + assessment.retrofitCost + (mileageAdjustment?.adjustment ?? 0) + lciMalus)
+          ? Math.round(gross + retrofitCost + (mileageAdjustment?.adjustment ?? 0) + lciMalus)
           : null,
     },
   };

@@ -59,6 +59,7 @@ body {
 }
 .bar h1 { font-size: 17px; margin: 0; letter-spacing: -0.01em; }
 .check { display: flex; align-items: center; gap: 6px; color: var(--muted); cursor: pointer; }
+.editor-body .check { justify-content: flex-start; width: 100%; }
 
 button {
   font: inherit;

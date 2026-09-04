@@ -190,6 +190,15 @@ function PricingSettings({ pricing, onChange, onReset, onClose }) {
         <label className="check">
           <input
             type="checkbox"
+            checked={pricing.ahkEnabled !== false}
+            onChange={(e) => onChange({ ahkEnabled: e.target.checked })}
+          />
+          Fehlende AHK als Nachrüstung berücksichtigen
+        </label>
+
+        <label className="check">
+          <input
+            type="checkbox"
             checked={pricing.lciMalusEnabled}
             onChange={(e) => onChange({ lciMalusEnabled: e.target.checked })}
           />
