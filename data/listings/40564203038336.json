@@ -1,0 +1,428 @@
+{
+  "id": "40564203038336",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-m-sport-kamera-hud-dab-hifi-fernlichtassist-celle/40564203038336.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40564203038336&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-04T15:40:46.066Z",
+  "title": "BMW 318i M Sport Kamera HUD DAB HiFi Fernlichtassist",
+  "shortTitle": "BMW 318",
+  "subTitle": "i M Sport Kamera HUD DAB HiFi Fernlichtassist",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "08930-CPEF",
+  "isNew": true,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 29999,
+    "net": 25209.24,
+    "currency": "EUR",
+    "localized": "29.999 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 72,
+    "thresholds": [
+      "21.800 €",
+      "28.400 €",
+      "30.600 €",
+      "34.000 €",
+      "36.500 €",
+      "40.600 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "M Sportpaket",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "08930-CPEF",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "61.306 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "6,8 l/100km",
+      "group": "envkv"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "153 g/km",
+      "group": "envkv"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": "6,8 l/100km (kombiniert)",
+      "group": "envkv"
+    },
+    "envkv.consumptionCosts": {
+      "label": "Energiekosten bei 15.000 km Jahresfahrleistung",
+      "value": "1.825 €/Jahr",
+      "group": "envkv"
+    },
+    "envkv.fuel.price": {
+      "label": "Kraftstoffpreis",
+      "value": "1,79 €/l (Jahresdurchschnitt 2025)",
+      "group": "envkv"
+    },
+    "envkv.co2Costs": {
+      "label": "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)",
+      "value": "2.639 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 115 €/t) · 1.148 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 50 €/t) · 4.360 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 190 €/t)",
+      "values": [
+        "2.639 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 115 €/t)",
+        "1.148 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 50 €/t)",
+        "4.360 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 190 €/t)"
+      ],
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "04/2024",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "04/2027",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Hinten, Selbstlenkende Systeme, Kamera, Vorne",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Saphirsxhwarz metallic-475",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Kunstleder, Schwarz",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 61306,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2024-04",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": 153,
+    "consumptionL100km": 6.8,
+    "distanceFromHomeKm": 355,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 04/2024, nach der Umstellung"
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Android Auto",
+    "Apple CarPlay",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Blendfreies Fernlicht",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Head-Up Display",
+    "Heckantrieb",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Pannenkit",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Servolenkung",
+    "Sitzheizung",
+    "Skisack",
+    "Sommerreifen",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [
+    "Finanzierung",
+    "Inzahlungnahme ",
+    "Lieferung"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/d2/d2f29e82-5398-4605-825d-03303f856cc5",
+    "https://img.classistatic.de/api/v1/mo-prod/images/13/130099c8-0bf2-4de5-b231-6f58e34a1fa4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/db/dbb790dc-69cc-40d1-b414-e0293b63d1b3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/04/042bc87a-24f2-41b0-a53f-f8179995ea6f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6f/6f24a9bb-3e25-4a83-869b-3229ec1d1623",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5f/5ffd692f-6381-4169-8ee6-2877316a6cd5",
+    "https://img.classistatic.de/api/v1/mo-prod/images/07/07a3e371-0413-4313-af13-f4711d324643",
+    "https://img.classistatic.de/api/v1/mo-prod/images/14/143e44b3-136f-4a93-90a2-52dd1ef5018c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c6/c646658b-122f-4d49-b390-a09b8c6f0a29",
+    "https://img.classistatic.de/api/v1/mo-prod/images/89/89c10bf0-d7e7-44f9-824b-9fdbac3a18a8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/29/29deac3e-35b6-4035-bdbc-f0d0aa12bfdf",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0b/0b4e1b42-3c6e-49b6-a338-7f899bf92cd9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad9ee03f-f700-4abb-9cc0-9f03e8508311",
+    "https://img.classistatic.de/api/v1/mo-prod/images/96/96908d50-b399-44d2-a9f6-f9a7f7139b71",
+    "https://img.classistatic.de/api/v1/mo-prod/images/70/703838d3-2209-4141-8b55-907ddb5d3b9a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b8/b85060c7-fc95-48fa-9b45-7680e960ebd4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e8/e8e635f2-b793-4dea-817b-3ffe57456bcd",
+    "https://img.classistatic.de/api/v1/mo-prod/images/04/04e5e9ce-70b5-4a07-a44f-146ae0208010",
+    "https://img.classistatic.de/api/v1/mo-prod/images/cc/ccbf3dfe-ed91-4316-990a-e2c0e67e6a6c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f5/f513caba-bd9e-426f-9466-3457774cff72",
+    "https://img.classistatic.de/api/v1/mo-prod/images/44/44cfb0b8-3ea2-4d68-825f-b3c07953c8c4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/22/22c2d43c-9aa7-4c5c-9ce4-2d3d126619f8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b6/b67660fe-cce0-47e1-8196-abc91dc5f468",
+    "https://img.classistatic.de/api/v1/mo-prod/images/24/24ac401b-e146-4fa2-ba8d-030d904d2d03",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e8/e89c8219-69e9-4ad2-972d-128c78c2e147",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b7/b7a20119-1374-4292-a893-69c827bbd698",
+    "https://img.classistatic.de/api/v1/mo-prod/images/14/14314610-67f5-403e-84a6-a374c74dffb3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/88/88fdc024-da33-41bd-b39c-201ad42f1048",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a3/a391f0f7-edfc-462a-a8b0-ece54a76f302",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ea/ea67ac82-d116-43c7-91d0-a2662be00227",
+    "https://img.classistatic.de/api/v1/mo-prod/images/61/61269fb8-5054-4b8a-b335-a533f25a7577",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2b/2b235699-f2d8-44b8-8cf5-dc1e6d85a1af",
+    "https://img.classistatic.de/api/v1/mo-prod/images/31/3124b603-4711-439a-8ea8-be4474051a7c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/91/91c899b2-9ed9-4f61-857e-3f6fabf33022",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5d/5d751687-acd9-4453-a3c1-86a37d1d4a6a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9c/9ce4d9b2-48a0-453b-a229-5d28788167c7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/33/335a67b1-9c2e-4fcd-8ddf-103e19a53d60",
+    "https://img.classistatic.de/api/v1/mo-prod/images/80/807d0556-51a5-47c1-b3ea-cbcbb56eaa2a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/54/54ce7012-f985-43af-b967-df0676d6e61d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/50/50afc68a-a2e1-4be2-97d5-241745f5a663",
+    "https://img.classistatic.de/api/v1/mo-prod/images/08/08c182bb-5eaa-484a-80ed-92386068137c"
+  ],
+  "dealer": {
+    "name": "Autoland Celle GmbH & Co. KG",
+    "type": "Händler",
+    "street": "Gut Wietzenbruch 2-4",
+    "city": "DE-29225 Celle",
+    "country": "DE",
+    "phone": "+49 (0)5141 5989981",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=34028665",
+    "location": {
+      "lat": 52.60464649999999,
+      "lon": 9.9980099
+    },
+    "openingHours": [
+      {
+        "time": "09:00 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "09:00 Uhr - 14:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 4.5,
+      "count": 408,
+      "recommendationRate": 93
+    }
+  },
+  "financePlans": [
+    {
+      "type": "DF",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=40564203038336",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": true,
+      "bankId": "CreditPlus",
+      "offer": {
+        "bankId": "CreditPlus",
+        "bankName": "Creditplus Bank AG",
+        "loanType": "BALLOON",
+        "downPayment": 5999,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 24000,
+        "interestRateNominal": 6.78,
+        "interestRateEffective": 6.99,
+        "monthlyInstallment": 267.03,
+        "finalInstallment": 14999.5,
+        "totalInterest": 6754.27,
+        "totalAmount": 30754.27,
+        "localized": {
+          "downPayment": "5.999,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "24.000,00 €",
+          "interestRateNominal": "6,78%",
+          "interestRateEffective": "6,99%",
+          "monthlyInstallment": "268 €",
+          "finalInstallment": "14.999,50 €",
+          "totalInterest": "6.754,27 €",
+          "totalAmount": "30.754,27 €",
+          "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Creditplus Bank AG (Darlehensgeber), Augustenstraße 7, 70178 Stuttgart. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 57,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "mileageAdjustment": {
+      "expectedKm": 36250,
+      "deviationKm": 25056,
+      "adjustment": 2510
+    },
+    "effectivePrice": 34109
+  }
+}
