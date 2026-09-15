@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T18:45:53.701Z",
+  "updatedAt": "2026-09-15T18:46:59.369Z",
   "unavailable": {
     "452732524": "2026-08-28T06:38:33.934Z",
     "453385756": "2026-08-28T06:30:00.000Z",
@@ -16574,7 +16574,7 @@
       "id": "41107268152256",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-abstandstempomat-ahk-sportsitze-pressath/41107268152256.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=41107268152256&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-09-01T06:49:10.093Z",
+      "fetchedAt": "2026-09-15T18:46:59.359Z",
       "title": "BMW 318i ABSTANDSTEMPOMAT AHK SPORTSITZE",
       "shortTitle": "BMW 318",
       "subTitle": "i ABSTANDSTEMPOMAT AHK SPORTSITZE",
@@ -16597,16 +16597,16 @@
         "type": "FIXED"
       },
       "priceRating": {
-        "rating": "GOOD_PRICE",
-        "label": "Guter Preis",
-        "offset": 81,
+        "rating": "REASONABLE_PRICE",
+        "label": "Fairer Preis",
+        "offset": 6,
         "thresholds": [
-          "21.600 €",
-          "28.100 €",
-          "30.300 €",
-          "33.700 €",
-          "36.200 €",
-          "40.200 €"
+          "21.200 €",
+          "27.600 €",
+          "29.700 €",
+          "33.000 €",
+          "35.500 €",
+          "39.400 €"
         ]
       },
       "facts": {
@@ -16647,7 +16647,7 @@
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "22.700 km",
+          "value": "24.050 km",
           "group": "vehicle"
         },
         "cubicCapacity": {
@@ -16722,7 +16722,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, Vorne",
+          "value": "Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -16774,7 +16774,7 @@
         }
       },
       "derived": {
-        "mileageKm": 22700,
+        "mileageKm": 24050,
         "powerKw": 115,
         "powerHp": 156,
         "cubicCapacityCcm": 1998,
@@ -16796,7 +16796,9 @@
         "ABS",
         "Abstandstempomat",
         "Abstandswarner",
+        "Android Auto",
         "Anhängerkupplung schwenkbar",
+        "Apple CarPlay",
         "Armlehne",
         "Berganfahrassistent",
         "Bluetooth",
@@ -16842,6 +16844,7 @@
         "Sprachsteuerung",
         "Spurhalteassistent",
         "Start/Stopp-Automatik",
+        "Touchscreen",
         "Traktionskontrolle",
         "Tuner/Radio",
         "USB",
@@ -16851,34 +16854,34 @@
       ],
       "highlights": [],
       "images": [
-        "https://img.classistatic.de/api/v1/mo-prod/images/8d/8d3e27c6-40d2-4e6b-b601-4c9145fb9d90",
-        "https://img.classistatic.de/api/v1/mo-prod/images/54/5444e3d0-8557-47a6-a2f7-202ef453a22c",
-        "https://img.classistatic.de/api/v1/mo-prod/images/93/93ed3ace-5b56-4420-b178-235e83cbda1a",
-        "https://img.classistatic.de/api/v1/mo-prod/images/67/67681251-32b9-4c1e-ac19-88619fa163f7",
-        "https://img.classistatic.de/api/v1/mo-prod/images/9b/9b97366e-c673-4648-a83f-17b89d57e8ea",
-        "https://img.classistatic.de/api/v1/mo-prod/images/be/bec830eb-fcb0-4639-a10c-20a0d451f170",
-        "https://img.classistatic.de/api/v1/mo-prod/images/0a/0a8d723c-3a70-4335-b621-fe2b574bc27c",
-        "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e6f4fa7-f95b-40af-9862-fa8b71f1e6fa",
-        "https://img.classistatic.de/api/v1/mo-prod/images/d3/d3108712-d49c-46e2-b93c-a737800badcb",
-        "https://img.classistatic.de/api/v1/mo-prod/images/f6/f675f2a6-d96f-4098-a29f-0f2e8b1b9e11",
-        "https://img.classistatic.de/api/v1/mo-prod/images/66/66738936-7eca-4cd3-8598-26f1e2b2b032",
-        "https://img.classistatic.de/api/v1/mo-prod/images/50/50de3b44-f5d3-48b3-93ee-4264520ff4f8",
-        "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb958c71-98ff-47fb-9c94-130575701365",
-        "https://img.classistatic.de/api/v1/mo-prod/images/c0/c09b7766-409e-4846-ac32-cd057ded30fe",
-        "https://img.classistatic.de/api/v1/mo-prod/images/74/7482dad0-fc7a-4b0c-96b7-b235700a144a",
-        "https://img.classistatic.de/api/v1/mo-prod/images/2f/2f4bec8e-0611-4864-b25c-e21333854177",
-        "https://img.classistatic.de/api/v1/mo-prod/images/8f/8f00b5eb-c02a-4fd2-aaa9-f320c7d0c10c",
-        "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff38a41c-2ac0-410f-8d84-97a2580d018e",
-        "https://img.classistatic.de/api/v1/mo-prod/images/8f/8fa0beae-041f-4fea-913c-dd0381b59094",
-        "https://img.classistatic.de/api/v1/mo-prod/images/0f/0ff53ce0-8915-498c-8e1a-32641c27c83c",
-        "https://img.classistatic.de/api/v1/mo-prod/images/85/85d2c105-0e5b-489c-a1ac-c0ae9d6003b4",
-        "https://img.classistatic.de/api/v1/mo-prod/images/04/045760a0-3234-45fc-b28b-7284556a529a",
-        "https://img.classistatic.de/api/v1/mo-prod/images/f1/f120eafd-0404-4ab6-be03-d525ab21d4f4",
-        "https://img.classistatic.de/api/v1/mo-prod/images/0c/0c37f30e-ee91-4d10-ae01-d05b656e8e9a",
-        "https://img.classistatic.de/api/v1/mo-prod/images/c8/c8ce6f42-8cfe-4abe-94f3-ae3f28c84118",
-        "https://img.classistatic.de/api/v1/mo-prod/images/f8/f8c316a7-d75d-4f3c-99d4-5a200cc2d27e",
-        "https://img.classistatic.de/api/v1/mo-prod/images/13/13ba6279-7683-4754-a4bd-8e8fe6a257d3",
-        "https://img.classistatic.de/api/v1/mo-prod/images/d3/d32526b0-a86f-4ba6-bded-b4ffd97b8c2a"
+        "https://img.classistatic.de/api/v1/mo-prod/images/25/25155476-2c7b-4693-b7f5-71bc598b7d9d",
+        "https://img.classistatic.de/api/v1/mo-prod/images/ae/ae595a88-dcaf-4b0b-ac59-99f2da15d02f",
+        "https://img.classistatic.de/api/v1/mo-prod/images/cf/cf5ea112-9b23-4cfd-a4ed-255456307b8c",
+        "https://img.classistatic.de/api/v1/mo-prod/images/28/28216f6d-3d4b-4e8f-8565-3276b1fc7043",
+        "https://img.classistatic.de/api/v1/mo-prod/images/7b/7b64cbb4-6923-45e8-b5f7-33403a2fa38b",
+        "https://img.classistatic.de/api/v1/mo-prod/images/bc/bc6acee1-5369-49ea-a021-a6c24a104b89",
+        "https://img.classistatic.de/api/v1/mo-prod/images/95/95c0d028-dd34-434a-bb52-6a784f0080ac",
+        "https://img.classistatic.de/api/v1/mo-prod/images/80/800480bd-5e2f-4760-8bfe-b292dcea0d53",
+        "https://img.classistatic.de/api/v1/mo-prod/images/2c/2c176f95-7188-406e-b615-7b9ff1b66b54",
+        "https://img.classistatic.de/api/v1/mo-prod/images/99/994557c4-3f6f-4e2e-96b7-5efa90ac44f7",
+        "https://img.classistatic.de/api/v1/mo-prod/images/9d/9d4a7341-7269-44ad-8bde-5cdfe07872cd",
+        "https://img.classistatic.de/api/v1/mo-prod/images/ef/efa033b5-15d0-412f-b5e6-091df4c1287d",
+        "https://img.classistatic.de/api/v1/mo-prod/images/64/64380878-a0a7-4c05-ae8f-71647b4cf765",
+        "https://img.classistatic.de/api/v1/mo-prod/images/b8/b868d20e-d081-434a-b4bc-e4061345cc99",
+        "https://img.classistatic.de/api/v1/mo-prod/images/87/8767ad5d-5d30-4837-98e3-2547ca83c2db",
+        "https://img.classistatic.de/api/v1/mo-prod/images/26/26b7a864-faf1-40e4-b60c-64b2389df5a0",
+        "https://img.classistatic.de/api/v1/mo-prod/images/7b/7b0f896a-ff9b-44b7-976d-c64e1aa19275",
+        "https://img.classistatic.de/api/v1/mo-prod/images/ea/ea0d51a6-d08c-47d9-905c-abd83aa6b68d",
+        "https://img.classistatic.de/api/v1/mo-prod/images/07/072c3449-7d17-492a-ac16-91f205b6d31d",
+        "https://img.classistatic.de/api/v1/mo-prod/images/e7/e718292d-5b12-4541-9ce2-fd513f33df0b",
+        "https://img.classistatic.de/api/v1/mo-prod/images/50/50eac4cd-d28c-49df-91ec-ccd564a88ce4",
+        "https://img.classistatic.de/api/v1/mo-prod/images/cf/cf88cf48-88c7-4a91-bd33-050a2b5def3e",
+        "https://img.classistatic.de/api/v1/mo-prod/images/aa/aa02cfc9-984a-4c66-858b-2349be7f915a",
+        "https://img.classistatic.de/api/v1/mo-prod/images/66/66f96161-e96a-48bd-9cb9-4d186033f6b2",
+        "https://img.classistatic.de/api/v1/mo-prod/images/12/12b12554-d4ab-4c2a-aaf3-ff6a238907c5",
+        "https://img.classistatic.de/api/v1/mo-prod/images/9f/9f8f53ca-20e0-4987-9b6e-2855c1dff0bc",
+        "https://img.classistatic.de/api/v1/mo-prod/images/d1/d1e5c4c7-e073-44d2-b01c-2f8ea23306ff",
+        "https://img.classistatic.de/api/v1/mo-prod/images/5b/5ba343e4-b08a-4e32-adab-efcb672791e4"
       ],
       "dealer": {
         "name": "Autohaus Graser GmbH",
@@ -16904,7 +16907,7 @@
         ],
         "rating": {
           "score": 4.9,
-          "count": 291,
+          "count": 293,
           "recommendationRate": 94
         }
       },
