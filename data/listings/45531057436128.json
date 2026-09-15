@@ -1,0 +1,349 @@
+{
+  "id": "45531057436128",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318ia-touring-kamera-sportsitze-carplay-led-pdc-baiersdorf/45531057436128.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=45531057436128&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-15T18:45:53.696Z",
+  "title": "BMW 318iA Touring -KAMERA-SPORTSITZE-CARPLAY-LED-PDC",
+  "shortTitle": "BMW 318",
+  "subTitle": "iA Touring -KAMERA-SPORTSITZE-CARPLAY-LED-PDC",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "isNew": true,
+  "kba": null,
+  "price": {
+    "gross": 23999,
+    "net": 20167.23,
+    "currency": "EUR",
+    "localized": "23.999 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "VERY_GOOD_PRICE",
+    "label": "Sehr guter Preis",
+    "offset": 85,
+    "thresholds": [
+      "19.100 €",
+      "24.800 €",
+      "26.800 €",
+      "29.800 €",
+      "31.900 €",
+      "35.500 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "BUSINESS-Paket",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "40.000 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "-- l/100km",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "06/2023",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Hinten, Vorne, Kamera",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Schwarz 2",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Teilleder, Schwarz",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 40000,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-06",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": 100,
+    "distanceFromHomeKm": 21,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 06/2023, nach der Umstellung"
+  },
+  "features": [
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Android Auto",
+    "Apple CarPlay",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Blendfreies Fernlicht",
+    "Bluetooth",
+    "Bordcomputer",
+    "CD-Spieler",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Isofix Beifahrersitz",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Pannenkit",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sommerreifen",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/95/95d3f615-ae59-46ed-b51f-64dd44b188d7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/dd/dd04af10-445a-4233-837b-8aa3452f4c69",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e8/e83b4107-60eb-4d2b-beca-7ec10a43a3d8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f1/f10b797c-9628-4816-88ff-9bd1ffb90fb8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d7557f0-3e2d-4fa5-8c09-40724cd41bf3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/cb/cb275817-8687-4721-8575-107b0077f3df",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fe/fe82f707-e8e4-4e48-a4c8-c038930e1d8f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d7100e7-1cf5-41d9-8935-13b43f2cb992",
+    "https://img.classistatic.de/api/v1/mo-prod/images/33/33fd242b-495e-4449-85e7-666cb8b59266",
+    "https://img.classistatic.de/api/v1/mo-prod/images/10/10f1acfe-e314-4cc1-bb59-af36b9d6804e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/36/36615ecd-b18f-41b9-acbb-0b7cac6e0869",
+    "https://img.classistatic.de/api/v1/mo-prod/images/98/981b64cc-5e08-4a76-a977-3ab8fc827863",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a4/a4552fb4-8a3e-4f00-a1d8-99b4b82c2f29",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fc/fcda582e-ef00-4924-a166-3587ba0b4cef",
+    "https://img.classistatic.de/api/v1/mo-prod/images/21/21ab1e0f-6b85-4ecf-a478-6213c5f9f991"
+  ],
+  "dealer": {
+    "name": "1.Autohaus M.Loew",
+    "type": "Händler",
+    "street": "Industriestr. 33",
+    "city": "DE-91083 Baiersdorf",
+    "country": "DE",
+    "phone": "+49 (0)9133 767640",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=459118",
+    "location": {
+      "lat": 49.6650851,
+      "lon": 11.0430439
+    },
+    "openingHours": [
+      {
+        "day": "Mo - Fr",
+        "time": "09:00 Uhr - 17:00 Uhr"
+      },
+      {
+        "day": "Sa",
+        "time": "08:00 Uhr - 12:00 Uhr"
+      }
+    ],
+    "rating": {
+      "score": 4.8,
+      "count": 1475,
+      "recommendationRate": 99
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=45531057436128",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 4799,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 19200,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 254.45,
+        "finalInstallment": 7919.67,
+        "totalInterest": 3732.15,
+        "totalAmount": 22932.15,
+        "localized": {
+          "downPayment": "4.799,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "19.200,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "255 €",
+          "finalInstallment": "7.919,67 €",
+          "totalInterest": "3.732,15 €",
+          "totalAmount": "22.932,15 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 60,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "mileageAdjustment": {
+      "expectedKm": 48750,
+      "deviationKm": -8750,
+      "adjustment": -870
+    },
+    "effectivePrice": 24729
+  }
+}

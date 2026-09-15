@@ -1,0 +1,392 @@
+{
+  "id": "438388660",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318-i-touring-park-assistent-ahk-r%C3%BCckfahrkamera-suhl/438388660.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=438388660&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-15T18:44:59.942Z",
+  "title": "BMW 318 i Touring Park-Assistent AHK Rückfahrkamera",
+  "shortTitle": "BMW 318",
+  "subTitle": "i Touring Park-Assistent AHK Rückfahrkamera",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "007976",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 27950,
+    "net": 23487.4,
+    "currency": "EUR",
+    "localized": "27.950 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 82,
+    "thresholds": [
+      "20.200 €",
+      "26.300 €",
+      "28.300 €",
+      "31.500 €",
+      "33.800 €",
+      "37.600 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "007976",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "59.950 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "7,5 l/100km",
+      "group": "envkv"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "168 g/km",
+      "group": "envkv"
+    },
+    "envkv.co2Class": {
+      "label": "CO₂-Klasse",
+      "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "group": "envkv"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": "7,5 l/100km (kombiniert) · 10,0 l/100km (Innenstadt) · 7,6 l/100km (Stadtrand) · 6,4 l/100km (Landstraße) · 7,4 l/100km (Autobahn)",
+      "values": [
+        "7,5 l/100km (kombiniert)",
+        "10,0 l/100km (Innenstadt)",
+        "7,6 l/100km (Stadtrand)",
+        "6,4 l/100km (Landstraße)",
+        "7,4 l/100km (Autobahn)"
+      ],
+      "group": "envkv"
+    },
+    "envkv.consumptionCosts": {
+      "label": "Energiekosten bei 15.000 km Jahresfahrleistung",
+      "value": "1.962 €/Jahr",
+      "group": "envkv"
+    },
+    "envkv.fuel.price": {
+      "label": "Kraftstoffpreis",
+      "value": "1,74 €/l (Jahresdurchschnitt 2025)",
+      "group": "envkv"
+    },
+    "envkv.co2Costs": {
+      "label": "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)",
+      "value": "3.591 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 142 €/t) · 1.512 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t) · 5.544 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 220 €/t)",
+      "values": [
+        "3.591 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 142 €/t)",
+        "1.512 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t)",
+        "5.544 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 220 €/t)"
+      ],
+      "group": "envkv"
+    },
+    "envkv.tax": {
+      "label": "Kraftfahrzeugsteuer",
+      "value": "211 €/Jahr",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "07/2023",
+      "group": "vehicle"
+    },
+    "constructionYear": {
+      "label": "Baujahr",
+      "value": "2023",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Vorne, Selbstlenkende Systeme, Hinten, Kamera",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Skyscraper Grau metallic",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Grau Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Stoff, Schwarz",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 59950,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-07",
+    "constructionYear": 2023,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": 168,
+    "consumptionL100km": 7.5,
+    "distanceFromHomeKm": 125,
+    "generation": null,
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 07/2023, nach der Umstellung"
+  },
+  "features": [
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Adaptives Kurvenlicht",
+    "Alarmanlage",
+    "Anhängerkupplung schwenkbar",
+    "Armlehne",
+    "Ausparkassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Geschwindigkeitsbegrenzer",
+    "Head-Up Display",
+    "Heckantrieb",
+    "Innenspiegel autom. abblendend",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/d4/d4590856-ba35-46b7-9632-88f061761b62",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4c/4cc64666-b329-4310-9012-5531b46f8db1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/36/36fa91cd-a51e-4f64-9b05-b109dc0b0978",
+    "https://img.classistatic.de/api/v1/mo-prod/images/08/08fffc68-e2ba-4f2e-82d9-b458c9eba5d2",
+    "https://img.classistatic.de/api/v1/mo-prod/images/64/64d26900-d86c-4dc2-adcb-835e6d02d35a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a8/a89403b1-fa91-4a8c-93dd-ace671439530",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b9/b97ef162-dbdc-4773-b6df-fb8c6d506e8f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fa/fa2e3a2d-08d7-4580-b8dc-72f10f18f877",
+    "https://img.classistatic.de/api/v1/mo-prod/images/53/53f7348a-1ada-482c-8dc0-c003c25794f9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b339327-2d1e-4c3c-be28-79e140f7f403",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1c/1cea7820-caec-468a-81d6-d504c1911f03",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba42816b-e444-4bf7-ad1e-6a76312ad55f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff353953-80fe-4a47-bd88-3ee81d493d38",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e8/e849c5b5-0dc5-418e-95e1-7ce760df29ba",
+    "https://img.classistatic.de/api/v1/mo-prod/images/79/797900eb-47aa-4a38-a707-258f6425cb92",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f8/f86fa204-f9c6-46e4-b442-8cf3c2ccdbff"
+  ],
+  "dealer": {
+    "name": "Autosalon Suhl - Zweigniederlassung der Autohaus Matthes GmbH",
+    "type": "Händler",
+    "street": "Hubertusstr. 6",
+    "city": "DE-98527 Suhl",
+    "country": "DE",
+    "phone": "+49 (0)3681 800000",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=464396",
+    "location": {
+      "lat": 50.5871274,
+      "lon": 10.7154822
+    },
+    "openingHours": [
+      {
+        "time": "09:00 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "09:00 Uhr - 12:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 5,
+      "count": 50,
+      "recommendationRate": 100
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=438388660",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 5590,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 22360,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 296.32,
+        "finalInstallment": 9223.5,
+        "totalInterest": 4346.44,
+        "totalAmount": 26706.44,
+        "localized": {
+          "downPayment": "5.590,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "22.360,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "297 €",
+          "finalInstallment": "9.223,50 €",
+          "totalInterest": "4.346,44 €",
+          "totalAmount": "26.706,44 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 58,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [],
+    "retrofitCost": 0,
+    "mileageAdjustment": {
+      "expectedKm": 47500,
+      "deviationKm": 12450,
+      "adjustment": 1250
+    },
+    "effectivePrice": 29200
+  }
+}
