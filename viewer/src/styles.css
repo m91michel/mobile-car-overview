@@ -431,9 +431,12 @@ thead th .price { display: block; color: var(--muted); font-weight: 400; }
    are already in. */
 .status[data-status='to-contact'] { color: var(--warn); border-color: var(--warn); }
 .status[data-status='contacted'] { color: var(--accent); border-color: var(--accent); }
+.status[data-status='waiting'] { color: var(--muted); border-color: var(--muted); }
+.status[data-status='replied'] { color: var(--star); border-color: var(--star); }
 .status[data-status='appointment'] { color: var(--info); border-color: var(--info); }
 .status[data-status='viewed'] { color: var(--good); border-color: var(--good); }
 .status[data-status='declined'] { color: var(--bad); border-color: var(--bad); }
+.status[data-status='sold'] { color: var(--bad); border-color: var(--bad); }
 
 .star { color: var(--star); }
 

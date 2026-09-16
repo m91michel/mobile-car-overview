@@ -90,9 +90,14 @@ export const STATUSES = [
   { key: '', label: 'Offen' },
   { key: 'to-contact', label: 'Anschreiben' },
   { key: 'contacted', label: 'Angeschrieben' },
+  { key: 'waiting', label: 'Warten' },
+  { key: 'replied', label: 'Rückmeldung' },
   { key: 'appointment', label: 'Termin vereinbart' },
   { key: 'viewed', label: 'Besichtigt' },
   { key: 'declined', label: 'Abgesagt' },
+  // Hand-set, and deliberately its own key: `isSold` above reads the scraped
+  // availability, this one says you found out yourself.
+  { key: 'sold', label: 'Verkauft' },
 ];
 
 export function buildRows(cars) {
