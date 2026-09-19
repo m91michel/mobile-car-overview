@@ -2,7 +2,7 @@
   "id": "450754039",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-aut-waldshut-tiengen/450754039.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=450754039&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-31T16:23:00.875Z",
+  "fetchedAt": "2026-09-19T15:42:15.831Z",
   "title": "BMW 318i Touring Aut.",
   "shortTitle": "BMW 318",
   "subTitle": "i Touring Aut.",
@@ -16,18 +16,18 @@
     "tsn": "CYW"
   },
   "price": {
-    "gross": 30660,
-    "net": 25764.71,
+    "gross": 28890,
+    "net": 24277.31,
     "currency": "EUR",
-    "localized": "30.660 €",
+    "localized": "28.890 €",
     "vatRate": 19,
     "vatNote": "19,00% MwSt.",
     "type": "FIXED"
   },
   "priceRating": {
-    "rating": "REASONABLE_PRICE",
-    "label": "Fairer Preis",
-    "offset": 32,
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 66,
     "thresholds": [
       "21.100 €",
       "27.500 €",
@@ -70,7 +70,7 @@
     },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "39.691 km",
+      "value": "39.692 km",
       "group": "vehicle"
     },
     "cubicCapacity": {
@@ -140,7 +140,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Hinten, Kamera, Vorne",
+      "value": "Selbstlenkende Systeme, Kamera, Hinten, Vorne",
       "group": "vehicle"
     },
     "airbag": {
@@ -190,7 +190,7 @@
     }
   },
   "derived": {
-    "mileageKm": 39691,
+    "mileageKm": 39692,
     "powerKw": 115,
     "powerHp": 156,
     "cubicCapacityCcm": 1998,
@@ -307,29 +307,29 @@
         "bankName": "Openbank Deutschland AG",
         "loanBroker": "Check24 GmbH",
         "loanType": "BALLOON",
-        "downPayment": 6132,
+        "downPayment": 5778,
         "creditTerm": 60,
         "yearlyMileage": 10000,
-        "creditAmount": 24528,
+        "creditAmount": 23112,
         "interestRateNominal": 5.41,
         "interestRateEffective": 5.55,
-        "monthlyInstallment": 325.05,
-        "finalInstallment": 10117.8,
-        "totalInterest": 4767.87,
-        "totalAmount": 29295.87,
+        "monthlyInstallment": 306.29,
+        "finalInstallment": 9533.7,
+        "totalInterest": 4492.62,
+        "totalAmount": 27604.62,
         "localized": {
-          "downPayment": "6.132,00 €",
+          "downPayment": "5.778,00 €",
           "downPaymentInPercent": "20%",
           "creditTerm": "60",
           "creditTermInYears": "5",
           "yearlyMileage": "10.000",
-          "creditAmount": "24.528,00 €",
+          "creditAmount": "23.112,00 €",
           "interestRateNominal": "5,41%",
           "interestRateEffective": "5,55%",
-          "monthlyInstallment": "326 €",
-          "finalInstallment": "10.117,80 €",
-          "totalInterest": "4.767,87 €",
-          "totalAmount": "29.295,87 €",
+          "monthlyInstallment": "307 €",
+          "finalInstallment": "9.533,70 €",
+          "totalInterest": "4.492,62 €",
+          "totalAmount": "27.604,62 €",
           "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
         }
       }
@@ -343,9 +343,9 @@
     "retrofitCost": 0,
     "mileageAdjustment": {
       "expectedKm": 41250,
-      "deviationKm": -1559,
+      "deviationKm": -1558,
       "adjustment": -160
     },
-    "effectivePrice": 30500
+    "effectivePrice": 28730
   }
 }
