@@ -2,7 +2,7 @@
   "id": "41107268152256",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-abstandstempomat-ahk-sportsitze-pressath/41107268152256.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=41107268152256&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-09-15T18:46:59.359Z",
+  "fetchedAt": "2026-09-19T15:51:24.639Z",
   "title": "BMW 318i ABSTANDSTEMPOMAT AHK SPORTSITZE",
   "shortTitle": "BMW 318",
   "subTitle": "i ABSTANDSTEMPOMAT AHK SPORTSITZE",
@@ -325,12 +325,12 @@
     },
     "openingHours": [
       {
-        "time": "09:00 Uhr - 18:00 Uhr",
-        "day": "Mo - Fr"
+        "day": "Mo - Fr",
+        "time": "09:00 Uhr - 18:00 Uhr"
       },
       {
-        "time": "09:00 Uhr - 13:00 Uhr",
-        "day": "Sa"
+        "day": "Sa",
+        "time": "09:00 Uhr - 13:00 Uhr"
       }
     ],
     "rating": {
@@ -381,11 +381,21 @@
   ],
   "ref": 47,
   "assessment": {
-    "verdict": "raus",
-    "note": "Raus: Weiß. ACC und Kamera ab Werk, 22.700 km. Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat).",
-    "retrofit": [],
-    "retrofitCost": 0,
-    "mileageAdjustment": null,
-    "effectivePrice": 29900
+    "verdict": "kandidat",
+    "note": "Weiß (Alpinweiß III) — seit 09/2026 kein Ausschluss mehr, kostet aber Optikpunkte. ACC und schwenkbare AHK ab Werk, 24.050 km (Neuinserat 09/2026, vorher 22.700 km). Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat). Kein M Sport. Kamera ungeklaert: parkAssists nennt nur Vorne/Hinten, keine Kamera in den Features — beim Haendler nachfragen, das sind 1.200 EUR Unterschied.",
+    "retrofit": [
+      {
+        "key": "camera",
+        "label": "Rückfahrkamera, Nachrüstung",
+        "cost": 1200
+      }
+    ],
+    "retrofitCost": 1200,
+    "mileageAdjustment": {
+      "expectedKm": 42500,
+      "deviationKm": -18450,
+      "adjustment": -1840
+    },
+    "effectivePrice": 29260
   }
 }

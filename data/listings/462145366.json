@@ -371,11 +371,21 @@
   ],
   "ref": 1,
   "assessment": {
-    "verdict": "raus",
-    "note": "Raus: Alpinweiß. Sonst M Sport, Alcantara und Kamera — aber kein ACC.",
-    "retrofit": [],
-    "retrofitCost": 0,
-    "mileageAdjustment": null,
-    "effectivePrice": 31890
+    "verdict": "kandidat",
+    "note": "Alpinweiß — seit 09/2026 kein Ausschluss mehr, kostet aber Optikpunkte. M Sport, Alcantara und Kamera; kein ACC, und das ist am G21 nicht wirtschaftlich nachrüstbar.",
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "mileageAdjustment": {
+      "expectedKm": 33750,
+      "deviationKm": 9535,
+      "adjustment": 950
+    },
+    "effectivePrice": 34440
   }
 }
