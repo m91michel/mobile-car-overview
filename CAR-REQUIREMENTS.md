@@ -9,7 +9,6 @@ Wir suchen einen **BMW 3er Touring G21** als Familienauto. Das Auto soll in den 
 - Automatik
 - Unfallfrei
 - Saubere Fahrzeughistorie / nachvollziehbarer Zustand
-- Keine weißen Fahrzeuge
 - Innenraum darf **Leder, Alcantara, Sensatec oder Teilleder** sein
 - Reine Stoffsitze möchten wir nicht
 - Preis möglichst **um 30.000 €**
@@ -130,7 +129,9 @@ Besonders gefallen uns z. B.:
 - Tanzanitblau
 - Skyscraper Grau
 
-Weiß möchten wir nicht.
+Weiß gefällt uns deutlich weniger, ist aber **kein Ausschlusskriterium mehr**. Ein
+weißes Fahrzeug muss den Nachteil über Ausstattung, Laufleistung oder Preis
+wieder hereinholen, so wie ein fehlendes M Sport auch.
 
 M Sport gefällt uns außen klar besser, aber wir sind inzwischen bereit zu prüfen, ob uns ein normaler G21 trotzdem gut genug gefällt.
 

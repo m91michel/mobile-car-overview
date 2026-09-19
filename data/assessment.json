@@ -110,8 +110,8 @@
       "note": "320i mit Vollleder, Panorama und Memory — aber kein ACC und 423 km Anfahrt."
     },
     "462145366": {
-      "verdict": "raus",
-      "note": "Raus: Alpinweiß. Sonst M Sport, Alcantara und Kamera — aber kein ACC."
+      "verdict": "kandidat",
+      "note": "Alpinweiß — seit 09/2026 kein Ausschluss mehr, kostet aber Optikpunkte. M Sport, Alcantara und Kamera; kein ACC, und das ist am G21 nicht wirtschaftlich nachrüstbar."
     },
     "462155994": {
       "verdict": "raus",
@@ -157,15 +157,15 @@
       "note": "Günstigster Wagen im vollen Zielprofil (ACC, Kamera, Teilleder, LCI belegt), Platz 1 von 20. Die Laufleistung ist NICHT das Argument — 10 der 20 Profil-Autos haben weniger als 36.300 km; der Vorsprung kommt allein aus dem Preis. Chrom-Niere statt Shadow Line, am Inseratsfoto geprüft. M Sport und AHK fehlen. Unfallfrei ist nicht belegt: beim Händler klären."
     },
     "459860190": {
-      "verdict": "raus",
-      "note": "Raus: Weiß. Sonst stark — M-Sportpaket, ACC, Kamera, 20.000 km, LCI 11/2024."
+      "verdict": "kandidat",
+      "note": "Weiß — seit 09/2026 kein Ausschluss mehr, kostet aber Optikpunkte. Sonst stark: M-Sportpaket, ACC, Kamera, 20.000 km, LCI 11/2024."
     },
     "41107268152256": {
-      "verdict": "raus",
+      "verdict": "kandidat",
       "factOverrides": {
         "interior": "Teilleder, Schwarz"
       },
-      "note": "Raus: Weiß. ACC und Kamera ab Werk, 22.700 km. Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat)."
+      "note": "Weiß (Alpinweiß III) — seit 09/2026 kein Ausschluss mehr, kostet aber Optikpunkte. ACC und schwenkbare AHK ab Werk, 24.050 km (Neuinserat 09/2026, vorher 22.700 km). Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat). Kein M Sport. Kamera ungeklaert: parkAssists nennt nur Vorne/Hinten, keine Kamera in den Features — beim Haendler nachfragen, das sind 1.200 EUR Unterschied."
     },
     "460777203": {
       "verdict": "top",
