@@ -267,6 +267,18 @@ Vite + React in `viewer/`, started with `pnpm viewer`.
   Neu laden, CSV-Export, JSON-Export, JSON-Import. It is a native `<details>`,
   for the same reason the drawers are `<dialog>`s — only closing on an outside
   click and on Escape is wired up by hand.
+- **A render crash shows a page, not a blank one.** `viewer/src/ErrorBoundary.jsx`
+  wraps the whole app. It exists because a settings export carrying filter
+  lists (`{name, rules}`), imported into a build that only knew `{name, ids}`,
+  threw on `list.ids.length` during the first render — and React unmounted the
+  tree, including the render that would have drawn the way out. The fallback
+  prints the error and offers "Sichern und zurücksetzen", which downloads the
+  settings before clearing the `car-compare/` prefix, since notes and lists
+  exist nowhere else. The same lesson applies to reading a stored setting at
+  all: a list with neither `rules` nor `ids` reads as empty rather than
+  throwing, so a format from a future build is at worst inert. An old viewer
+  is a real target — Vercel serves the last pushed commit, so an export from
+  the dev server routinely lands somewhere behind it.
 - **Plain CSS**, one file, palette in custom properties, light and dark via
   `prefers-color-scheme`. No framework, no component library.
 - **Photos are hotlinked.** mobile.de's CDN sizes them by query rule

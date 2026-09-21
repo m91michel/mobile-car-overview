@@ -661,3 +661,32 @@ td.sold, .car-option.sold .car-option .fav {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* The error boundary's fallback. Deliberately plain: it has to render even
+   when whatever broke sits in the middle of the table. */
+.crash {
+  max-width: 44rem;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.crash h1 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+}
+
+.crash pre {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.75rem;
+  overflow-x: auto;
+  color: var(--bad);
+}
+
+.crash-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}

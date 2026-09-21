@@ -1302,9 +1302,13 @@ export default function App() {
               // "Ausgeblendet" without having to store that anywhere. A plain
               // list carries a fixed `ids` snapshot instead, filtered the
               // same way.
+              //
+              // Anything else reads as an empty list rather than throwing: an
+              // import can carry a shape this build predates, and a crash here
+              // takes the whole page down (see ErrorBoundary.jsx).
               const ids = list.rules
                 ? filteredIds(visibleCars, list.rules)
-                : list.ids.filter((id) => !removed.includes(id));
+                : (list.ids ?? []).filter((id) => !removed.includes(id));
               return (
                 <li key={list.name}>
                   <div className={`list-row ${sameAsSelection(ids) ? 'on' : ''}`}>
@@ -1336,7 +1340,7 @@ export default function App() {
                     {!list.rules && (
                       <button
                         onClick={() => saveList(list.name, selectedIds)}
-                        disabled={sameAsSelection(list.ids)}
+                        disabled={sameAsSelection(list.ids ?? [])}
                         title="Liste auf die aktuelle Auswahl setzen"
                       >
                         Aktualisieren
