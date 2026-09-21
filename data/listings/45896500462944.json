@@ -1,8 +1,8 @@
 {
-  "id": "460647403",
-  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-driving-assistant-karlsfeld-b-m%C3%BCnchen/460647403.html",
-  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460647403&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-09-15T18:45:26.554Z",
+  "id": "45896500462944",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-driving-assistant-karlsfeld-b-m%C3%BCnchen/45896500462944.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=45896500462944&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-18T07:24:23.235Z",
   "title": "BMW 318i Touring Driving Assistant",
   "shortTitle": "BMW 318",
   "subTitle": "i Touring Driving Assistant",
@@ -10,7 +10,7 @@
   "model": "318",
   "category": "EstateCar",
   "sku": "8518",
-  "isNew": false,
+  "isNew": true,
   "kba": {
     "hsn": "0005",
     "tsn": "CYW"
@@ -140,7 +140,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Vorne, Hinten",
+      "value": "Hinten, Vorne, Selbstlenkende Systeme",
       "group": "vehicle"
     },
     "airbag": {
@@ -330,16 +330,16 @@
     },
     "openingHours": [
       {
-        "time": "08:30 Uhr - 18:30 Uhr",
-        "day": "Mo - Fr"
+        "day": "Mo - Fr",
+        "time": "08:30 Uhr - 18:30 Uhr"
       },
       {
-        "time": "09:30 Uhr - 13:30 Uhr",
-        "day": "Sa"
+        "day": "Sa",
+        "time": "09:30 Uhr - 13:30 Uhr"
       },
       {
-        "time": "10:12 Uhr - 13:00 Uhr (Schautag)",
-        "day": "So"
+        "day": "So",
+        "time": "10:12 Uhr - 13:00 Uhr (Schautag)"
       }
     ],
     "rating": {
@@ -351,7 +351,7 @@
   "financePlans": [
     {
       "type": "DF",
-      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=460647403",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=45896500462944",
       "shortFlow": true,
       "promotion": false,
       "showInGallery": false,
@@ -389,19 +389,23 @@
     },
     {
       "type": "AO",
-      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=460647403",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=45896500462944",
       "shortFlow": true,
       "promotion": false,
       "showInGallery": false
     }
   ],
-  "ref": 59,
+  "ref": 63,
   "assessment": {
     "verdict": "raus",
-    "note": "Raus: reine Stoffsitze (Stoff, Schwarz).",
+    "note": "Raus: reine Stoffsitze (Stoff, Schwarz). Re-Listing desselben Fahrzeugs wie #59 (selber Händler, Fahrzeugnummer 8518).",
     "retrofit": [],
     "retrofitCost": 0,
     "mileageAdjustment": null,
     "effectivePrice": 25599
+  },
+  "availability": {
+    "status": "sold",
+    "checkedAt": "2026-09-20T07:56:31.952Z"
   }
 }

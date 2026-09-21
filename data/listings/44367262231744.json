@@ -1,0 +1,339 @@
+{
+  "id": "44367262231744",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-330e-xdrive-touring-automatic-klimaaut-pdc-hifi-b%C3%B6blingen/44367262231744.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=44367262231744&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-16T19:34:39.633Z",
+  "title": "BMW 330e xDrive Touring Automatic Klimaaut. PDC HIFI",
+  "shortTitle": "BMW 330",
+  "subTitle": "e xDrive Touring Automatic Klimaaut. PDC HIFI",
+  "make": "BMW",
+  "model": "330",
+  "category": "EstateCar",
+  "sku": "FN51978",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CZA"
+  },
+  "price": {
+    "gross": 29930,
+    "net": 25151.26,
+    "currency": "EUR",
+    "localized": "29.930 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 69,
+    "thresholds": [
+      "21.800 €",
+      "28.400 €",
+      "30.600 €",
+      "34.000 €",
+      "36.500 €",
+      "40.600 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "FN51978",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "60.654 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "215 kW (292 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "0,0 l/100km",
+      "group": "envkv"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "0 g/km",
+      "group": "envkv"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": "0,0 l/100km (kombiniert)",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d-TEMP",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "09/2022",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Hinten, Vorne",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "PHYTONICBLAU METALLIC",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Blau Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Stoff, Schwarz",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 60654,
+    "powerKw": 215,
+    "powerHp": 292,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2022-09",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": 0,
+    "consumptionL100km": 0,
+    "distanceFromHomeKm": 170,
+    "generation": null,
+    "facelift": "pre-lci",
+    "faceliftBasis": "Zulassung im Umstellungsfenster, kein volldigitales Kombiinstrument"
+  },
+  "features": [
+    "ABS",
+    "Abstandstempomat",
+    "Allradantrieb",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Seitenspiegel",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Isofix",
+    "LED-Scheinwerfer",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Multifunktionslenkrad",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Scheckheftgepflegt",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sportsitze",
+    "Standheizung",
+    "Start/Stopp-Automatik",
+    "Tagfahrlicht",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/ab/ab510423-926b-458f-92c2-e44aff6f0bd3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/73/73e3f9e6-8e9a-4c1b-9af8-8203b162b982",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9291f77-cc72-425d-ae26-d882ecee233d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d7/d74b4cab-764c-49cf-963e-73da32ee25c3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b3/b34c6d08-3cbb-447a-958d-ae844e2bf4b5",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0f/0fead317-a27d-42c4-9bcf-4c9fb8742fbc",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d6/d6dcb0e5-d960-4317-9833-2d96751bdbd7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3c/3c042ad8-0938-46fa-a8df-61c1e455f385",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3c/3cb454f4-b0a6-4946-bc16-b91d6b01efd2",
+    "https://img.classistatic.de/api/v1/mo-prod/images/58/5842ad4d-49df-4d35-a14a-1d3575587a78",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a1/a17df98e-467c-457e-a657-e589c6781f40",
+    "https://img.classistatic.de/api/v1/mo-prod/images/fb/fbf2a97d-fea6-4389-8869-85efadf33736",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7b/7b993559-24b8-45ab-a5a3-6563660d0588",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4f/4f70f012-05db-472b-822a-60f9723ac8f1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff2d6e6f-04a1-49e9-983a-479147907229",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9c/9c3f991d-1458-4a12-b5df-aa6a763c80a3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f7/f770a567-e5a3-4073-a9f0-33dc8b8137c9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a3/a37077f0-9cf7-4334-b8ac-fe56ee01b056",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f5/f5626d33-26bc-4c4e-a844-c4ba4f55f040",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ce/ce9d332c-5ffe-4238-9ee5-abd954121586",
+    "https://img.classistatic.de/api/v1/mo-prod/images/33/3382720e-0de3-43ae-aad6-44a962760eec"
+  ],
+  "dealer": {
+    "name": "ahg Böblingen",
+    "type": "Händler",
+    "street": "Herrenberger Straße 60",
+    "city": "DE-71034 Böblingen",
+    "country": "DE",
+    "phone": "+49 (0)7031 727771",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=25273325",
+    "location": {
+      "lat": 48.682324,
+      "lon": 8.9982172
+    },
+    "openingHours": [
+      {
+        "day": "Mo - Fr",
+        "time": "08:00 Uhr - 18:00 Uhr"
+      },
+      {
+        "day": "Sa",
+        "time": "09:00 Uhr - 12:00 Uhr"
+      }
+    ],
+    "rating": {
+      "score": 4.7,
+      "count": 27,
+      "recommendationRate": 100
+    }
+  },
+  "financePlans": [
+    {
+      "type": "DF",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=44367262231744",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": true,
+      "bankId": "Santander",
+      "offer": {
+        "bankId": "Santander",
+        "bankName": "Openbank Deutschland AG",
+        "loanType": "BALLOON",
+        "downPayment": 5986,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 23944,
+        "interestRateNominal": 5.83,
+        "interestRateEffective": 5.99,
+        "monthlyInstallment": 272,
+        "finalInstallment": 13468.5,
+        "totalInterest": 5523.91,
+        "totalAmount": 29467.91,
+        "localized": {
+          "downPayment": "5.986,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "23.944,00 €",
+          "interestRateNominal": "5,83%",
+          "interestRateEffective": "5,99%",
+          "monthlyInstallment": "272 €",
+          "finalInstallment": "13.468,50 €",
+          "totalInterest": "5.523,91 €",
+          "totalAmount": "29.467,91 €",
+          "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 61,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      },
+      {
+        "key": "camera",
+        "label": "Rückfahrkamera, Nachrüstung",
+        "cost": 1200
+      }
+    ],
+    "retrofitCost": 2800,
+    "mileageAdjustment": {
+      "expectedKm": 60000,
+      "deviationKm": 654,
+      "adjustment": 70
+    },
+    "effectivePrice": 32800
+  },
+  "availability": {
+    "status": "available",
+    "checkedAt": "2026-09-20T07:54:41.311Z"
+  }
+}

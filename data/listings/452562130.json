@@ -363,5 +363,9 @@
     "retrofitCost": 0,
     "mileageAdjustment": null,
     "effectivePrice": 18990
+  },
+  "availability": {
+    "status": "sold",
+    "checkedAt": "2026-09-20T07:55:17.043Z"
   }
 }

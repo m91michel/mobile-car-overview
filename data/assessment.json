@@ -184,6 +184,26 @@
         "interior": "Teilleder, Schwarz"
       },
       "note": "Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat)."
+    },
+    "460520128": {
+      "factOverrides": {
+        "interior": "Teilleder, Schwarz"
+      },
+      "note": "Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat)."
+    },
+    "460647403": {
+      "verdict": "raus",
+      "note": "Raus: reine Stoffsitze (Stoff, Schwarz)."
+    },
+    "45896500462944": {
+      "verdict": "raus",
+      "note": "Raus: reine Stoffsitze (Stoff, Schwarz). Re-Listing desselben Fahrzeugs wie #59 (selber Händler, Fahrzeugnummer 8518)."
+    },
+    "438388660": {
+      "factOverrides": {
+        "interior": "Teilleder, Schwarz"
+      },
+      "note": "Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat)."
     }
   }
 }

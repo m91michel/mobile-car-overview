@@ -366,5 +366,9 @@
       "adjustment": -570
     },
     "effectivePrice": 30330
+  },
+  "availability": {
+    "status": "sold",
+    "checkedAt": "2026-09-20T07:53:35.052Z"
   }
 }

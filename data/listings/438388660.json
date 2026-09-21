@@ -207,8 +207,10 @@
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Stoff, Schwarz",
-      "group": "vehicle"
+      "value": "Teilleder, Schwarz",
+      "group": "vehicle",
+      "listedValue": "Stoff, Schwarz",
+      "corrected": true
     },
     "cylinder": {
       "label": "Zylinder",
@@ -379,7 +381,7 @@
   "ref": 58,
   "assessment": {
     "verdict": null,
-    "note": null,
+    "note": "Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat).",
     "retrofit": [],
     "retrofitCost": 0,
     "mileageAdjustment": {
@@ -388,5 +390,9 @@
       "adjustment": 1250
     },
     "effectivePrice": 29200
+  },
+  "availability": {
+    "status": "sold",
+    "checkedAt": "2026-09-20T07:54:35.883Z"
   }
 }

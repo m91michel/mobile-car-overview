@@ -1,8 +1,8 @@
 {
-  "id": "40564203038336",
-  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-m-sport-kamera-hud-dab-hifi-fernlichtassist-celle/40564203038336.html",
-  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40564203038336&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-09-04T15:40:46.066Z",
+  "id": "45584871586368",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-m-sport-kamera-hud-dab-hifi-fernlichtassist-celle/45584871586368.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=45584871586368&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-16T20:22:52.031Z",
   "title": "BMW 318i M Sport Kamera HUD DAB HiFi Fernlichtassist",
   "shortTitle": "BMW 318",
   "subTitle": "i M Sport Kamera HUD DAB HiFi Fernlichtassist",
@@ -27,14 +27,14 @@
   "priceRating": {
     "rating": "GOOD_PRICE",
     "label": "Guter Preis",
-    "offset": 72,
+    "offset": 77,
     "thresholds": [
       "21.800 €",
-      "28.400 €",
-      "30.600 €",
-      "34.000 €",
-      "36.500 €",
-      "40.600 €"
+      "28.300 €",
+      "30.500 €",
+      "33.900 €",
+      "36.400 €",
+      "40.400 €"
     ]
   },
   "facts": {
@@ -180,7 +180,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Hinten, Selbstlenkende Systeme, Kamera, Vorne",
+      "value": "Selbstlenkende Systeme, Kamera, Hinten, Vorne",
       "group": "vehicle"
     },
     "airbag": {
@@ -352,24 +352,24 @@
     },
     "openingHours": [
       {
-        "time": "09:00 Uhr - 18:00 Uhr",
-        "day": "Mo - Fr"
+        "day": "Mo - Fr",
+        "time": "09:00 Uhr - 18:00 Uhr"
       },
       {
-        "time": "09:00 Uhr - 14:00 Uhr",
-        "day": "Sa"
+        "day": "Sa",
+        "time": "09:00 Uhr - 14:00 Uhr"
       }
     ],
     "rating": {
       "score": 4.5,
-      "count": 408,
+      "count": 409,
       "recommendationRate": 93
     }
   },
   "financePlans": [
     {
       "type": "DF",
-      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=40564203038336",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=45584871586368",
       "shortFlow": true,
       "promotion": false,
       "showInGallery": true,
@@ -406,7 +406,7 @@
       }
     }
   ],
-  "ref": 57,
+  "ref": 62,
   "assessment": {
     "verdict": null,
     "note": null,
@@ -426,7 +426,7 @@
     "effectivePrice": 34109
   },
   "availability": {
-    "status": "sold",
-    "checkedAt": "2026-09-20T07:53:39.876Z"
+    "status": "available",
+    "checkedAt": "2026-09-20T07:55:48.907Z"
   }
 }

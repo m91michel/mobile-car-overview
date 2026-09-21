@@ -160,8 +160,10 @@
     },
     "interior": {
       "label": "Innenausstattung",
-      "value": "Stoff, Schwarz",
-      "group": "vehicle"
+      "value": "Teilleder, Schwarz",
+      "group": "vehicle",
+      "listedValue": "Stoff, Schwarz",
+      "corrected": true
     },
     "trailerLoadBraked": {
       "label": "Anhängelast gebremst",
@@ -352,7 +354,7 @@
   "ref": 40,
   "assessment": {
     "verdict": null,
-    "note": null,
+    "note": "Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat).",
     "retrofit": [
       {
         "key": "ahk",
