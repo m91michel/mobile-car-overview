@@ -233,6 +233,33 @@ Vite + React in `viewer/`, started with `pnpm viewer`.
 - **Rows move.** Drag a row by its label, or use ⤒ / ↑ / ↓; ✕ hides it. Order is
   stored as a full key list, and moves target the next *visible* row, so hidden
   rows never swallow a click.
+- **Lists can be filters instead of snapshots.** A list saved with a fixed
+  `ids` array (like Favoriten) never changes on its own, so a "unter 30k" list
+  went stale the moment a newer, cheaper car was scraped — nobody remembered to
+  hit "Aktualisieren". `viewer/src/filters.js` adds a second shape, `{name,
+  rules}`: AND-combined rules evaluated against every known car on every
+  render, in the Listen drawer. Rule types are deliberately narrow —
+  Preis/Kilometerstand (unter/über), Erstzulassung (vor/nach a `MM/YYYY`),
+  Kraftstoff/Fahrzeugzustand (each categorized from its free-text fact value —
+  "Hybrid (Benzin/Elektro)" would otherwise also match a plain "enthält
+  Benzin" text search), Abstandstempomat/Anhängerkupplung/M Sport (vorhanden/
+  nicht vorhanden), and a generic free-text search over title/fuel/features as
+  a fallback. A filter's name is always free text — the Abstandstempomat/
+  Anhängerkupplung fields match mobile.de's own wording directly rather than
+  through a translation table, so nobody has to maintain a mapping from "ACC"
+  to the string mobile.de actually uses. M Sport and Fahrzeugzustand are the
+  exceptions: `filters.js` exports `hasMSport()` and `conditionCategory()`
+  (both checked against all 56 listings — see the filter trap below for
+  M Sport), which `wishlist.js`'s table-cell colouring also imports, so the
+  filter and the 🟢/🟡/🔴 marks (Unfallfrei/Gebrauchtfahrzeug/repariert) or the
+  M-Sport badge can never disagree about which cars match.
+  The builder itself is hidden until "+ Neue Liste" opens it blank, or
+  clicking an existing filter's row opens it pre-filled with that filter's
+  rules — the same click that applies it. There is no separate edit button:
+  seeing a filter's rules and changing them is one action, and "Filter
+  speichern" renames in place rather than leaving the old name behind as a
+  second entry (`editingName` in `App.jsx` tracks which saved filter, if any,
+  the open builder belongs to).
 - **Settings persist** per key in localStorage via `useLocalStorage` from
   `usehooks-ts`, all under the `car-compare/` prefix: selected cars, row order,
   hidden rows, both filters, favourites, named lists, notes and per-car status.
@@ -245,6 +272,24 @@ Vite + React in `viewer/`, started with `pnpm viewer`.
 - **Photos are hotlinked.** mobile.de's CDN sizes them by query rule
   (`?rule=mo-240`, `mo-360`, `mo-1024`, `mo-1600`), which is why `images[]` is
   stored without a size. Nothing is downloaded.
+- **Hiding a car is a localStorage list, not a delete.** For a car you've
+  decided against for good (too old, accident, sold) but don't want to
+  permanently drop from `data/` yet, the 🗑 button — in the car picker and on
+  each car's photo card above the table — adds its id to `car-compare/removed`,
+  one click to undo (↺), never touching `data/listings/*.json`. A hidden car
+  drops out of *every* list: the default "nothing chosen yet" view, the "Alle"
+  entry in the Listen drawer (`visibleIds`), Favoriten, and every saved
+  filter's matches (`visibleCars` in `App.jsx`, not the raw car set) — a
+  filter's own rules never get a say in whether a hidden car reappears. The
+  only two ways to see one again are the dedicated "Ausgeblendet" entry in the
+  Listen drawer, and a manually ticked checkbox in the picker. A sold car
+  (`car.availability.status === 'sold'`, set by `pnpm available`) is folded
+  into the same list automatically on every load — it only ever adds ids, so
+  manually restoring one is not undone by the next reload unless that reload
+  is what re-discovers it as sold. `pnpm remove-car -- <id | '#ref'>`
+  (`scripts/remove-car.mjs`) is the actual, permanent version of this, for
+  when you are sure: it deletes the listing file and the index entry, keeping
+  the reference number reserved rather than reused.
 
 ## Exporting and importing the setup
 
@@ -519,6 +564,14 @@ Filter traps, each already got wrong:
   facelift; exclude only `other-generation`.
 - Check the exterior colour. White is a hard exclusion and easy to miss while
   comparing equipment lists.
+- `features` sometimes omits `Sportpaket` even though `Sportfahrwerk` and
+  `Sportsitze` are both present (#461917102) — mobile.de's checkbox limitation
+  again, not a car that lacks M Sport. Both `viewer/src/wishlist.js`'s
+  permanent-gap check and the Listen drawer's M-Sport filter go through
+  `hasMSport()` in `filters.js`, which treats that combination as M Sport too;
+  a literal text filter on "Sportpaket" still misses it. The title is not used
+  as a signal — it is inconsistent both ways ("Sport Line" vs. a genuine M
+  Sport, "M Sport" absent from a title whose features do carry `Sportpaket`).
 
 Shadow Line appears only in the dealer's free-text title, never in
 `features[]` — take optical claims from the photos, not the feature list.

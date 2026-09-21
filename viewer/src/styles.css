@@ -202,15 +202,42 @@ button:disabled { opacity: 0.45; cursor: default; border-color: var(--line); }
 }
 .car-option .fav.on { color: var(--star); }
 .car-option .fav:hover { color: var(--star); }
+.car-option .remove {
+  flex: none;
+  padding: 2px 6px;
+  border: 0;
+  background: none;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--muted);
+  opacity: 0.6;
+}
+.car-option .remove:hover, .car-option .remove.on { opacity: 1; }
+/* Hidden (not sold -- see .sold above), but still one click from back in the
+   comparison, so it stays legible rather than vanishing from the picker. */
+.car-option.removed .car-option-title,
+.car-option.removed .muted { opacity: 0.5; }
 
 .drawer-empty { padding: 20px 16px; }
 
-.list-save {
+.filter-builder {
   display: flex;
+  flex-direction: column;
   gap: 8px;
   padding: 10px 14px;
   border-bottom: 1px solid var(--line);
 }
+.filter-builder-head { display: flex; align-items: center; gap: 8px; }
+.filter-builder-head input { flex: 1; min-width: 0; }
+.filter-rule {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.4fr auto;
+  gap: 6px;
+}
+.filter-rule select { font: inherit; color: inherit; padding: 5px 6px; border: 1px solid var(--line); border-radius: 7px; background: var(--bg); }
+.filter-rule-remove { padding: 4px 8px; }
+.filter-rule-novalue { display: block; } /* keeps the grid column when a rule (acc/ahk) needs no value */
+.filter-builder-actions { display: flex; justify-content: space-between; gap: 8px; }
 /* Note editor ------------------------------------------------------------ */
 .editor {
   width: min(560px, 92vw);
@@ -237,7 +264,7 @@ button.primary { border-color: var(--accent); background: var(--accent); color: 
 
 .editor textarea,
 .editor input,
-.list-save input {
+.filter-builder input {
   flex: 1;
   min-width: 0;
   font: inherit;
@@ -251,7 +278,8 @@ button.primary { border-color: var(--accent); background: var(--accent); color: 
 .editor input { flex: 1; min-width: 0; }
 .editor textarea:focus,
 .editor input:focus,
-.list-save input:focus { outline: none; border-color: var(--accent); }
+.filter-builder input:focus,
+.filter-rule select:focus { outline: none; border-color: var(--accent); }
 
 .list-row {
   display: flex;
@@ -277,7 +305,17 @@ button.primary { border-color: var(--accent); background: var(--accent); color: 
 .list-name {
   flex: 1;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-filter-summary {
+  font-weight: 400;
+  font-size: 11px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -415,6 +453,27 @@ thead th .price { display: block; color: var(--muted); font-weight: 400; }
 .col-note.on { color: var(--accent); }
 .col-note:hover { background: var(--panel); }
 
+/* Fourth and last corner: hide the car for good (until restored), the same
+   action as the 🗑 in the car picker. */
+.col-hide {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+  z-index: 1;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--panel) 72%, transparent);
+  backdrop-filter: blur(4px);
+}
+.col-hide.on { color: var(--accent); }
+.col-hide:hover { background: var(--panel); }
+
 .note-link { display: block; color: var(--accent); }
 
 /* Where a car stands in the process, changed straight from the table. */
@@ -522,6 +581,9 @@ td.sold, .car-option.sold .car-option .fav {
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+/* Hidden is a decision, not a fault -- unlike "verkauft" it gets a neutral
+   badge instead of the same red as a rejected fact. */
+.gone-neutral { background: var(--muted); }
 
 /* A green tick reads as "has it" at a glance; ✅ / ❌ are reserved for the
    high-priority wishes and the judged facts, where absence matters as much

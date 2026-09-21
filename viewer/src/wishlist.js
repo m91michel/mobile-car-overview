@@ -1,6 +1,8 @@
 // The machine-readable half of CAR-REQUIREMENTS.md. That file is prose for a
 // human; this is what the table colours by. Keep the two in step.
 
+import { hasMSport, conditionCategory, fuelCategory } from './filters.js';
+
 /**
  * "Ausstattung – hohe Priorität". These get the loud ✅ and ❌ — a missing ACC
  * has to be as visible as a present one, since that is the recurring reason a
@@ -56,8 +58,6 @@ const swatchFor = (value) => {
  */
 const FACT_RULES = {
   parkAssists: (value) => (/kamera/i.test(value) ? 'good' : 'bad'),
-  // "Benziner" is one of the non-negotiables; Diesel is an outright no.
-  fuel: (value) => (/diesel/i.test(value) ? 'bad' : /benzin/i.test(value) ? 'good' : null),
   color: paint,
   manufacturerColorName: paint,
   // Leder, Alcantara, Sensatec und Teilleder sind ok, reine Stoffsitze nicht.
@@ -79,7 +79,7 @@ const FACT_RULES = {
  */
 const PERMANENT_GAPS = [
   { label: 'ACC', missing: (car) => !car.features?.includes('Abstandstempomat') },
-  { label: 'M Sport', missing: (car) => !car.features?.includes('Sportpaket') },
+  { label: 'M Sport', missing: (car) => !hasMSport(car) },
   {
     label: 'Sitzmaterial',
     missing: (car) => FACT_RULES.interior(car.facts?.interior?.value ?? '') === 'bad',
@@ -242,6 +242,37 @@ export function cellFor(row, car) {
     if (state === 'lci') return { mark: '✅', text: raw, tone: 'good' };
     if (state === 'unknown') return { mark: '❓', text: raw, tone: null };
     return { mark: '❌', text: raw, tone: 'bad' };
+  }
+
+  // Fahrzeugzustand has three values, not two, so it gets its own case rather
+  // than a FACT_RULES entry: the plain "Gebrauchtfahrzeug" (nothing stated) is
+  // a caution, not a pass, and FACT_RULES' good/bad tone can't say that.
+  // conditionCategory() is shared with the Fahrzeugzustand filter so the
+  // colour here and a filter's match can never disagree.
+  if (row.key === 'fact:damageCondition') {
+    const category = conditionCategory(raw);
+    if (category === 'Unfallfrei') return { mark: '🟢', text: raw, tone: 'good' };
+    if (category === 'Unfallschaden') return { mark: '🔴', text: raw, tone: 'bad' };
+    return { mark: '🟡', text: raw, tone: null };
+  }
+
+  // "Benziner" is one of the non-negotiables and Diesel an outright no, but a
+  // Hybrid has a petrol engine without being one — a third colour, not a
+  // silent fallback, so it reads as its own case rather than as "neither".
+  // Rendered as a swatch chip, the same mechanism the paint rows use, rather
+  // than a mark: three colours scan faster than three emoji at a glance.
+  // fuelCategory() is shared with the Kraftstoff filter for the same reason
+  // conditionCategory() is: the colour here and a filter's match must agree.
+  if (row.key === 'fact:fuel') {
+    const category = fuelCategory(raw);
+    const chip = { Benzin: '#2f7d4f', Diesel: '#6d4a30', Hybrid: '#2a5db0' }[category];
+    const tone = category === 'Benzin' ? 'good' : category === 'Diesel' ? 'bad' : null;
+    return {
+      mark: tone === 'bad' ? '❌' : '',
+      text: raw,
+      tone,
+      swatch: chip ? { color: chip, metallic: false } : null,
+    };
   }
 
   const fact = row.key.startsWith('fact:') ? row.key.slice('fact:'.length) : null;
