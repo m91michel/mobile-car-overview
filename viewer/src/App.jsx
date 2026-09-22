@@ -680,7 +680,7 @@ export default function App() {
       <header className="bar">
         <h1>Fahrzeugvergleich</h1>
         <button className="drawer-open" onClick={() => setOpenDrawer('cars')}>
-          Fahrzeuge <strong>{shown.length}</strong>
+          <span className="bar-text hide-narrow">Fahrzeuge</span> <strong>{shown.length}</strong>
           <span className="muted">/ {cars.length}</span>
         </button>
         <button className="drawer-open" onClick={() => setOpenDrawer('favourites')}>
@@ -691,7 +691,7 @@ export default function App() {
         </button>
         {view === 'table' && (
           <button className="drawer-open" onClick={() => setOpenDrawer('rows')}>
-            Zeilen <strong>{visibleRows.length}</strong>
+            <span className="bar-text hide-narrow">Zeilen</span> <strong>{visibleRows.length}</strong>
             <span className="muted">/ {allRows.length}</span>
           </button>
         )}
@@ -708,7 +708,7 @@ export default function App() {
         </div>
         <div className="spacer" />
         {view === 'table' && (
-          <>
+          <div className="table-tools">
             <label className="check">
               <input
                 type="checkbox"
@@ -740,7 +740,7 @@ export default function App() {
               desc={columnDesc}
               setDesc={setColumnDesc}
             />
-          </>
+          </div>
         )}
         <Menu label="⚙" title="Einstellungen">
           <button onClick={load}>Neu laden</button>

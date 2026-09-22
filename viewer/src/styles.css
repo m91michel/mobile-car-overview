@@ -44,7 +44,14 @@ body {
   display: flex;
   flex-direction: column;
   height: 100dvh;
+  overflow: hidden;
   padding: 16px 20px;
+  gap: 14px;
+}
+.table-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 14px;
 }
 .notice { padding: 32px 20px; color: var(--muted); }
@@ -351,6 +358,8 @@ button.primary { border-color: var(--accent); background: var(--accent); color: 
   border: 1px solid var(--line);
   border-radius: 10px;
   background: var(--panel);
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 table { border-collapse: separate; border-spacing: 0; width: max-content; min-width: 100%; }
 
@@ -516,6 +525,7 @@ thead th .price { display: block; color: var(--muted); font-weight: 400; }
   background: var(--panel);
   font-weight: 500;
   border-right: 1px solid var(--line);
+  box-shadow: 6px 0 8px -6px rgb(0 0 0 / 0.18);
 }
 thead .row-head { z-index: 3; }
 
@@ -818,3 +828,57 @@ td.sold, .car-option.sold .car-option .fav {
 }
 .map-popup-text .muted { white-space: nowrap; }
 .map-popup-card.sold { opacity: 0.55; }
+
+/* Phone: keep the comparison table, just leave room for one car plus a
+   peek of the next so sideways scroll is obvious. Hover-only row moves
+   and the 200px label column are what made it unusable. */
+@media (max-width: 720px) {
+  .app {
+    padding: 8px max(8px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
+    gap: 8px;
+  }
+  .bar {
+    gap: 6px;
+  }
+  .bar h1 { display: none; }
+  .hide-narrow { display: none; }
+  .spacer { display: none; }
+  .table-tools {
+    flex-basis: 100%;
+    order: 2;
+    gap: 8px 12px;
+  }
+  .menu { margin-left: auto; }
+  .menu-items { min-width: min(260px, calc(100vw - 24px)); }
+  .drawer-open,
+  .bar button,
+  .menu summary {
+    padding: 6px 8px;
+  }
+
+  .hero-wrap,
+  .hero { width: 128px; }
+  .hero { height: 72px; }
+  .head-title { max-width: 128px; min-height: 2.4em; font-size: 13px; }
+  td { min-width: 128px; }
+  .cell { max-width: 128px; }
+  .label { max-width: 6.5rem; }
+  .grip,
+  .row-actions { display: none; }
+  th, td { padding: 6px 8px; }
+
+  .car-option img { width: 96px; height: 64px; }
+  .car-option .muted {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .filter-rule { grid-template-columns: 1fr; }
+  .editor input,
+  .editor textarea,
+  .filter-builder input,
+  .filter-rule select,
+  .status {
+    font-size: 16px; /* iOS zooms the page if inputs stay at 14px */
+  }
+}
