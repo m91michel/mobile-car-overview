@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T07:04:33.346Z",
+  "updatedAt": "2026-09-22T05:57:06.970Z",
   "unavailable": {
     "424825114": "2026-09-20T07:59:59.444Z",
     "438388660": "2026-09-20T07:59:59.444Z",
@@ -17126,7 +17126,7 @@
       "id": "460777203",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318-i-touring-adapt-led-temp-shz-shadow-line-fulda/460777203.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460777203&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-09-01T06:49:37.621Z",
+      "fetchedAt": "2026-09-22T05:57:06.960Z",
       "title": "BMW 318 i Touring Adapt.LED+Temp+SHZ+Shadow-Line",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring Adapt.LED+Temp+SHZ+Shadow-Line",
@@ -17140,10 +17140,10 @@
         "tsn": "CYW"
       },
       "price": {
-        "gross": 29250,
-        "net": 24579.83,
+        "gross": 28750,
+        "net": 24159.66,
         "currency": "EUR",
-        "localized": "29.250 €",
+        "localized": "28.750 €",
         "vatRate": 19,
         "vatNote": "19,00% MwSt.",
         "type": "FIXED"
@@ -17151,14 +17151,14 @@
       "priceRating": {
         "rating": "GOOD_PRICE",
         "label": "Guter Preis",
-        "offset": 56,
+        "offset": 69,
         "thresholds": [
-          "21.600 €",
-          "28.000 €",
-          "30.200 €",
-          "33.600 €",
-          "36.000 €",
-          "40.000 €"
+          "21.000 €",
+          "27.300 €",
+          "29.400 €",
+          "32.700 €",
+          "35.100 €",
+          "39.000 €"
         ]
       },
       "facts": {
@@ -17311,7 +17311,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Kamera, Selbstlenkende Systeme, Vorne, Hinten",
+          "value": "Selbstlenkende Systeme, Kamera, Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -17479,7 +17479,7 @@
         ],
         "rating": {
           "score": 5,
-          "count": 1042,
+          "count": 1044,
           "recommendationRate": 100
         }
       },
@@ -17494,29 +17494,29 @@
             "bankName": "Openbank Deutschland AG",
             "loanBroker": "Check24 GmbH",
             "loanType": "BALLOON",
-            "downPayment": 5850,
+            "downPayment": 5750,
             "creditTerm": 60,
             "yearlyMileage": 10000,
-            "creditAmount": 23400,
+            "creditAmount": 23000,
             "interestRateNominal": 5.41,
             "interestRateEffective": 5.55,
-            "monthlyInstallment": 310.1,
-            "finalInstallment": 9652.5,
-            "totalInterest": 4548.6,
-            "totalAmount": 27948.6,
+            "monthlyInstallment": 304.8,
+            "finalInstallment": 9487.5,
+            "totalInterest": 4470.85,
+            "totalAmount": 27470.85,
             "localized": {
-              "downPayment": "5.850,00 €",
+              "downPayment": "5.750,00 €",
               "downPaymentInPercent": "20%",
               "creditTerm": "60",
               "creditTermInYears": "5",
               "yearlyMileage": "10.000",
-              "creditAmount": "23.400,00 €",
+              "creditAmount": "23.000,00 €",
               "interestRateNominal": "5,41%",
               "interestRateEffective": "5,55%",
-              "monthlyInstallment": "311 €",
-              "finalInstallment": "9.652,50 €",
-              "totalInterest": "4.548,60 €",
-              "totalAmount": "27.948,60 €",
+              "monthlyInstallment": "305 €",
+              "finalInstallment": "9.487,50 €",
+              "totalInterest": "4.470,85 €",
+              "totalAmount": "27.470,85 €",
               "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
             }
           }
@@ -17539,7 +17539,7 @@
           "deviationKm": -20100,
           "adjustment": -2010
         },
-        "effectivePrice": 28840
+        "effectivePrice": 28340
       }
     },
     {
