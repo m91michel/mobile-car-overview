@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useLocalStorage } from 'usehooks-ts';
 import {
   SORTS,
@@ -25,6 +25,8 @@ import {
   filteredIds,
   summarizeFilter,
 } from './filters.js';
+
+const MapView = lazy(() => import('./MapView.jsx'));
 
 function SortControl({ className, label, sortKey, setSortKey, desc, setDesc }) {
   return (
@@ -362,6 +364,10 @@ export default function App() {
   // The Effektivpreis's mileage/facelift knobs -- see PricingSettings above.
   const [pricing, setPricing] = useLocalStorage(key('pricing'), DEFAULT_PRICING);
   const [pricingOpen, setPricingOpen] = useState(false);
+  // Table is the comparison; the map is the same `shown` set, just plotted
+  // on dealer coordinates. Persisted so a reload after picking Favoriten
+  // stays on the map.
+  const [view, setView] = useLocalStorage(key('view'), 'table');
   const [dragKey, setDragKey] = useState(null);
   const [openDrawer, setOpenDrawer] = useState(null); // 'cars' | 'favourites' | 'lists' | 'rows'
   const carDrawer = useDrawer(openDrawer === 'cars');
@@ -683,42 +689,59 @@ export default function App() {
         <button className="drawer-open" onClick={() => setOpenDrawer('lists')}>
           Listen <strong>{lists.length}</strong>
         </button>
-        <button className="drawer-open" onClick={() => setOpenDrawer('rows')}>
-          Zeilen <strong>{visibleRows.length}</strong>
-          <span className="muted">/ {allRows.length}</span>
-        </button>
+        {view === 'table' && (
+          <button className="drawer-open" onClick={() => setOpenDrawer('rows')}>
+            Zeilen <strong>{visibleRows.length}</strong>
+            <span className="muted">/ {allRows.length}</span>
+          </button>
+        )}
+        <div className="sort view-switch" role="group" aria-label="Ansicht">
+          <button
+            className={view === 'table' ? 'on' : ''}
+            onClick={() => setView('table')}
+          >
+            Tabelle
+          </button>
+          <button className={view === 'map' ? 'on' : ''} onClick={() => setView('map')}>
+            Karte
+          </button>
+        </div>
         <div className="spacer" />
-        <label className="check">
-          <input
-            type="checkbox"
-            checked={diffOnly}
-            onChange={(e) => setDiffOnly(e.target.checked)}
-          />
-          Nur Unterschiede
-        </label>
-        <label className="check">
-          <input
-            type="checkbox"
-            checked={featuresOnly}
-            onChange={(e) => setFeaturesOnly(e.target.checked)}
-          />
-          Nur Ausstattung
-        </label>
-        <label className="check" title="Favoriten stehen links, unabhängig von der Spaltensortierung">
-          <input
-            type="checkbox"
-            checked={favouritesFirst}
-            onChange={(e) => setFavouritesFirst(e.target.checked)}
-          />
-          <span className="star">★</span> zuerst
-        </label>
-        <SortControl
-          label="Spalten"
-          sortKey={columnSort}
-          setSortKey={setColumnSort}
-          desc={columnDesc}
-          setDesc={setColumnDesc}
-        />
+        {view === 'table' && (
+          <>
+            <label className="check">
+              <input
+                type="checkbox"
+                checked={diffOnly}
+                onChange={(e) => setDiffOnly(e.target.checked)}
+              />
+              Nur Unterschiede
+            </label>
+            <label className="check">
+              <input
+                type="checkbox"
+                checked={featuresOnly}
+                onChange={(e) => setFeaturesOnly(e.target.checked)}
+              />
+              Nur Ausstattung
+            </label>
+            <label className="check" title="Favoriten stehen links, unabhängig von der Spaltensortierung">
+              <input
+                type="checkbox"
+                checked={favouritesFirst}
+                onChange={(e) => setFavouritesFirst(e.target.checked)}
+              />
+              <span className="star">★</span> zuerst
+            </label>
+            <SortControl
+              label="Spalten"
+              sortKey={columnSort}
+              setSortKey={setColumnSort}
+              desc={columnDesc}
+              setDesc={setColumnDesc}
+            />
+          </>
+        )}
         <Menu label="⚙" title="Einstellungen">
           <button onClick={load}>Neu laden</button>
           <button onClick={() => setPricingOpen(true)}>
@@ -878,6 +901,10 @@ export default function App() {
           Kein Fahrzeug ausgewählt.{' '}
           <button onClick={() => setOpenDrawer('cars')}>Fahrzeuge wählen</button>
         </p>
+      ) : view === 'map' ? (
+        <Suspense fallback={<p className="notice">Lade Karte…</p>}>
+          <MapView cars={shown} favourites={favourites} />
+        </Suspense>
       ) : (
         <div className="table-wrap">
           <table>

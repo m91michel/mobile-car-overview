@@ -690,3 +690,131 @@ td.sold, .car-option.sold .car-option .fav {
   gap: 0.5rem;
   margin: 1rem 0;
 }
+
+/* Map view -------------------------------------------------------------- */
+.map-view {
+  position: relative;
+  isolation: isolate;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--panel);
+}
+.map-host {
+  flex: 1;
+  min-height: 0;
+}
+.map-view .leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: var(--bg);
+  font: inherit;
+  z-index: 0;
+}
+.map-legend {
+  margin: 0;
+  padding: 6px 12px;
+  border-top: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.leaflet-div-icon.map-pin,
+.leaflet-div-icon.map-home {
+  background: none;
+  border: 0;
+}
+.map-pin span,
+.map-home span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font: 600 11px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.28);
+}
+.map-pin.fav span {
+  box-shadow: 0 0 0 2px var(--star), 0 2px 8px rgb(0 0 0 / 0.28);
+}
+.map-pin.sold span { opacity: 0.45; }
+.map-home span {
+  width: 28px;
+  height: 28px;
+  background: var(--ink);
+  color: var(--bg);
+  font-size: 14px;
+}
+
+.map-view .leaflet-popup-content-wrapper,
+.map-view .leaflet-popup-tip {
+  background: var(--panel);
+  color: var(--ink);
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgb(0 0 0 / 0.16);
+}
+.map-view .leaflet-popup-content {
+  margin: 10px 12px;
+  font: inherit;
+}
+.map-view .leaflet-container a { color: inherit; }
+.map-view .leaflet-control-attribution {
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+  color: var(--muted);
+}
+.map-view .leaflet-control-attribution a { color: var(--muted); }
+
+@media (prefers-color-scheme: dark) {
+  /* OSM raster tiles are light; invert the tile pane only so markers stay
+     in the accent colour. Labels remain readable after the hue flip. */
+  .map-view .leaflet-tile-pane {
+    filter: invert(1) hue-rotate(180deg) saturate(0.55) brightness(0.95);
+  }
+}
+
+.map-popup-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 220px;
+}
+.map-popup-place {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+.map-popup-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+.map-popup-card:hover { background: var(--accent-soft); }
+.map-popup-card img {
+  width: 88px;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 5px;
+  flex: none;
+}
+.map-popup-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.3;
+}
+.map-popup-title {
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.map-popup-text .muted { white-space: nowrap; }
+.map-popup-card.sold { opacity: 0.55; }
