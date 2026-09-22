@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T05:57:06.970Z",
+  "updatedAt": "2026-09-22T06:03:01.110Z",
   "unavailable": {
     "424825114": "2026-09-20T07:59:59.444Z",
     "438388660": "2026-09-20T07:59:59.444Z",
@@ -31,6 +31,7 @@
     "461243027": "2026-08-28T06:30:00.000Z",
     "461427786": "2026-08-28T06:30:00.000Z",
     "461805828": "2026-08-28T06:30:00.000Z",
+    "45531057436128": "2026-09-22T06:01:13.421Z",
     "42077822262016": "2026-08-28T06:30:00.000Z",
     "40935871674400": "2026-08-28T10:48:43.856Z",
     "40586751728608": "2026-09-04T06:47:21.097Z",
@@ -40,7 +41,7 @@
     "40447401370464": "2026-09-20T07:59:59.444Z",
     "40622847776352": "2026-09-20T07:59:59.444Z",
     "41809805709888": "2026-09-20T07:59:59.444Z",
-    "42893780168864": "2026-09-20T07:59:59.444Z",
+    "42893780168864": "2026-09-22T06:00:23.014Z",
     "42944541372224": "2026-09-20T07:59:59.444Z",
     "45896500462944": "2026-09-20T07:59:59.444Z"
   },
@@ -4446,7 +4447,7 @@
       "id": "450754039",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-aut-waldshut-tiengen/450754039.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=450754039&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-09-19T15:42:15.831Z",
+      "fetchedAt": "2026-09-22T05:59:02.731Z",
       "title": "BMW 318i Touring Aut.",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring Aut.",
@@ -4584,7 +4585,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Kamera, Hinten, Vorne",
+          "value": "Hinten, Vorne, Kamera, Selbstlenkende Systeme",
           "group": "vehicle"
         },
         "airbag": {
@@ -4791,10 +4792,6 @@
           "adjustment": -160
         },
         "effectivePrice": 28730
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-09-20T07:54:59.885Z"
       }
     },
     {
@@ -8434,7 +8431,7 @@
       "id": "41966966984672",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-led-head-up-display-r%C3%BCckfahrkamera-st-wendel/41966966984672.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=41966966984672&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-31T16:26:34.523Z",
+      "fetchedAt": "2026-09-22T05:59:04.953Z",
       "title": "BMW 318i TOURING LED HEAD UP DISPLAY RÜCKFAHRKAMERA",
       "shortTitle": "BMW 318",
       "subTitle": "i TOURING LED HEAD UP DISPLAY RÜCKFAHRKAMERA",
@@ -8459,14 +8456,14 @@
       "priceRating": {
         "rating": "REASONABLE_PRICE",
         "label": "Fairer Preis",
-        "offset": 15,
+        "offset": 30,
         "thresholds": [
-          "19.300 €",
-          "25.100 €",
-          "27.000 €",
-          "30.100 €",
-          "32.300 €",
-          "35.900 €"
+          "19.000 €",
+          "24.700 €",
+          "26.600 €",
+          "29.500 €",
+          "31.700 €",
+          "35.200 €"
         ]
       },
       "facts": {
@@ -8507,7 +8504,7 @@
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "64.329 km",
+          "value": "64.339 km",
           "group": "vehicle"
         },
         "cubicCapacity": {
@@ -8577,7 +8574,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
+          "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme",
           "group": "vehicle"
         },
         "airbag": {
@@ -8629,7 +8626,7 @@
         }
       },
       "derived": {
-        "mileageKm": 64329,
+        "mileageKm": 64339,
         "powerKw": 115,
         "powerHp": 156,
         "cubicCapacityCcm": 1998,
@@ -8807,14 +8804,10 @@
         "retrofitCost": 0,
         "mileageAdjustment": {
           "expectedKm": 53750,
-          "deviationKm": 10579,
+          "deviationKm": 10589,
           "adjustment": 1060
         },
         "effectivePrice": 28540
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-09-20T07:54:18.046Z"
       }
     },
     {
@@ -10025,7 +10018,7 @@
       "id": "461144700",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-led-lc-prof-hud-ahk-360-hk-alarm-shz-pdc-t-unstruttal/461144700.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461144700&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-31T16:27:43.660Z",
+      "fetchedAt": "2026-09-22T05:59:27.668Z",
       "title": "BMW 320i LED LC Prof HUD AHK 360° HK Alarm SHZ PDC T",
       "shortTitle": "BMW 320",
       "subTitle": "i LED LC Prof HUD AHK 360° HK Alarm SHZ PDC T",
@@ -10047,16 +10040,16 @@
         "type": "FIXED"
       },
       "priceRating": {
-        "rating": "VERY_GOOD_PRICE",
-        "label": "Sehr guter Preis",
-        "offset": 93,
+        "rating": "GOOD_PRICE",
+        "label": "Guter Preis",
+        "offset": 1,
         "thresholds": [
-          "23.300 €",
-          "30.300 €",
-          "32.600 €",
-          "36.300 €",
-          "39.000 €",
-          "43.300 €"
+          "22.900 €",
+          "29.800 €",
+          "32.000 €",
+          "35.600 €",
+          "38.300 €",
+          "42.500 €"
         ]
       },
       "facts": {
@@ -10092,7 +10085,7 @@
         },
         "mileage": {
           "label": "Kilometerstand",
-          "value": "54.962 km",
+          "value": "54.964 km",
           "group": "vehicle"
         },
         "cubicCapacity": {
@@ -10167,7 +10160,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten, Selbstlenkende Systeme, 360°-Kamera",
+          "value": "Selbstlenkende Systeme, 360°-Kamera, Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -10219,7 +10212,7 @@
         }
       },
       "derived": {
-        "mileageKm": 54962,
+        "mileageKm": 54964,
         "powerKw": 135,
         "powerHp": 184,
         "cubicCapacityCcm": 1998,
@@ -10399,7 +10392,7 @@
         "retrofitCost": 0,
         "mileageAdjustment": {
           "expectedKm": 52500,
-          "deviationKm": 2462,
+          "deviationKm": 2464,
           "adjustment": 250
         },
         "effectivePrice": 30085
@@ -13044,7 +13037,7 @@
       "id": "459209462",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-lci-headup-acc-ahk-360-ka-b%C3%B6blingen/459209462.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=459209462&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-09-03T19:56:13.994Z",
+      "fetchedAt": "2026-09-22T05:59:30.276Z",
       "title": "BMW 318i Touring M Sport LCI HeadUp ACC AHK 360°Ka",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring M Sport LCI HeadUp ACC AHK 360°Ka",
@@ -13182,7 +13175,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "360°-Kamera, Vorne, Selbstlenkende Systeme, Hinten",
+          "value": "360°-Kamera, Hinten, Selbstlenkende Systeme, Vorne",
           "group": "vehicle"
         },
         "airbag": {
@@ -13341,12 +13334,12 @@
         },
         "openingHours": [
           {
-            "time": "09:30 Uhr - 18:00 Uhr",
-            "day": "Mo - Fr"
+            "day": "Mo - Fr",
+            "time": "09:30 Uhr - 18:00 Uhr"
           },
           {
-            "time": "10:00 Uhr - 14:00 Uhr",
-            "day": "Sa"
+            "day": "Sa",
+            "time": "10:00 Uhr - 14:00 Uhr"
           }
         ],
         "rating": {
@@ -13406,10 +13399,6 @@
           "adjustment": 620
         },
         "effectivePrice": 32610
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-09-20T07:56:42.737Z"
       }
     },
     {
@@ -14981,7 +14970,7 @@
       "id": "39885009550112",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320-e-touring-m-sport-opf-shadow-line-ahk-wagenfeld-str%C3%B6hen/39885009550112.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=39885009550112&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-08-31T16:31:24.025Z",
+      "fetchedAt": "2026-09-22T05:59:52.773Z",
       "title": "BMW 320 e Touring, M Sport OPF, Shadow-Line, AHK",
       "shortTitle": "BMW 320",
       "subTitle": "e Touring, M Sport OPF, Shadow-Line, AHK",
@@ -15005,14 +14994,14 @@
       "priceRating": {
         "rating": "GOOD_PRICE",
         "label": "Guter Preis",
-        "offset": 4,
+        "offset": 40,
         "thresholds": [
-          "22.600 €",
-          "29.400 €",
-          "31.700 €",
-          "35.200 €",
-          "37.800 €",
-          "42.000 €"
+          "22.000 €",
+          "28.600 €",
+          "30.800 €",
+          "34.200 €",
+          "36.700 €",
+          "40.800 €"
         ]
       },
       "facts": {
@@ -15113,7 +15102,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Kamera, Selbstlenkende Systeme, Hinten",
+          "value": "Selbstlenkende Systeme, Kamera, Vorne, Hinten",
           "group": "vehicle"
         },
         "airbag": {
@@ -15271,8 +15260,8 @@
         },
         "openingHours": [
           {
-            "time": "08:00 Uhr - 17:00 Uhr",
-            "day": "Mo - Fr"
+            "day": "Mo - Fr",
+            "time": "08:00 Uhr - 17:00 Uhr"
           }
         ],
         "rating": {
@@ -15332,10 +15321,6 @@
           "adjustment": 1630
         },
         "effectivePrice": 31129
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-09-20T07:53:08.426Z"
       }
     },
     {
@@ -16721,7 +16706,7 @@
       "id": "41107268152256",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-abstandstempomat-ahk-sportsitze-pressath/41107268152256.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=41107268152256&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-09-19T15:51:24.639Z",
+      "fetchedAt": "2026-09-22T05:59:55.736Z",
       "title": "BMW 318i ABSTANDSTEMPOMAT AHK SPORTSITZE",
       "shortTitle": "BMW 318",
       "subTitle": "i ABSTANDSTEMPOMAT AHK SPORTSITZE",
@@ -16869,7 +16854,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, Hinten",
+          "value": "Hinten, Vorne",
           "group": "vehicle"
         },
         "airbag": {
@@ -17116,17 +17101,13 @@
           "adjustment": -1840
         },
         "effectivePrice": 29260
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-09-20T07:54:08.813Z"
       }
     },
     {
       "id": "460777203",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318-i-touring-adapt-led-temp-shz-shadow-line-fulda/460777203.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460777203&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-09-22T05:57:06.960Z",
+      "fetchedAt": "2026-09-22T06:00:19.539Z",
       "title": "BMW 318 i Touring Adapt.LED+Temp+SHZ+Shadow-Line",
       "shortTitle": "BMW 318",
       "subTitle": "i Touring Adapt.LED+Temp+SHZ+Shadow-Line",
@@ -17311,7 +17292,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Kamera, Vorne, Hinten",
+          "value": "Hinten, Vorne, Kamera, Selbstlenkende Systeme",
           "group": "vehicle"
         },
         "airbag": {
@@ -19056,7 +19037,7 @@
       "id": "458893960",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-aut-touring-m-sport-ahk-head-up-adapt-led-lonnerstadt/458893960.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=458893960&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-09-03T19:50:41.308Z",
+      "fetchedAt": "2026-09-22T06:00:47.121Z",
       "title": "BMW 320i Aut. Touring M Sport/AHK/Head-Up/Adapt.LED",
       "shortTitle": "BMW 320",
       "subTitle": "i Aut. Touring M Sport/AHK/Head-Up/Adapt.LED",
@@ -19209,7 +19190,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Vorne, 360°-Kamera, Selbstlenkende Systeme, Hinten",
+          "value": "Hinten, Vorne, Selbstlenkende Systeme, 360°-Kamera",
           "group": "vehicle"
         },
         "airbag": {
@@ -19396,17 +19377,17 @@
         },
         "openingHours": [
           {
-            "time": "08:00 Uhr - 19:00 Uhr",
-            "day": "Mo - Fr"
+            "day": "Mo - Fr",
+            "time": "08:00 Uhr - 19:00 Uhr"
           },
           {
-            "time": "09:00 Uhr - 13:00 Uhr",
-            "day": "Sa"
+            "day": "Sa",
+            "time": "09:00 Uhr - 13:00 Uhr"
           }
         ],
         "rating": {
           "score": 5,
-          "count": 142,
+          "count": 143,
           "recommendationRate": 100
         }
       },
@@ -19469,10 +19450,6 @@
           "adjustment": 20
         },
         "effectivePrice": 36300
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-09-20T07:56:27.050Z"
       }
     },
     {
@@ -22608,7 +22585,7 @@
       "id": "45584871586368",
       "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-m-sport-kamera-hud-dab-hifi-fernlichtassist-celle/45584871586368.html",
       "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=45584871586368&scopeId=C&action=compareItem",
-      "fetchedAt": "2026-09-16T20:22:52.031Z",
+      "fetchedAt": "2026-09-22T06:01:13.414Z",
       "title": "BMW 318i M Sport Kamera HUD DAB HiFi Fernlichtassist",
       "shortTitle": "BMW 318",
       "subTitle": "i M Sport Kamera HUD DAB HiFi Fernlichtassist",
@@ -22616,7 +22593,7 @@
       "model": "318",
       "category": "EstateCar",
       "sku": "08930-CPEF",
-      "isNew": true,
+      "isNew": false,
       "kba": {
         "hsn": "0005",
         "tsn": "CYW"
@@ -22786,7 +22763,7 @@
         },
         "parkAssists": {
           "label": "Einparkhilfe",
-          "value": "Selbstlenkende Systeme, Kamera, Hinten, Vorne",
+          "value": "Kamera, Hinten, Vorne, Selbstlenkende Systeme",
           "group": "vehicle"
         },
         "airbag": {
@@ -23030,10 +23007,6 @@
           "adjustment": 2510
         },
         "effectivePrice": 34109
-      },
-      "availability": {
-        "status": "available",
-        "checkedAt": "2026-09-20T07:55:48.907Z"
       }
     },
     {

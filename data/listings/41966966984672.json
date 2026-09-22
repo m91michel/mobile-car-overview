@@ -2,7 +2,7 @@
   "id": "41966966984672",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-led-head-up-display-r%C3%BCckfahrkamera-st-wendel/41966966984672.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=41966966984672&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-31T16:26:34.523Z",
+  "fetchedAt": "2026-09-22T05:59:04.953Z",
   "title": "BMW 318i TOURING LED HEAD UP DISPLAY RÜCKFAHRKAMERA",
   "shortTitle": "BMW 318",
   "subTitle": "i TOURING LED HEAD UP DISPLAY RÜCKFAHRKAMERA",
@@ -27,14 +27,14 @@
   "priceRating": {
     "rating": "REASONABLE_PRICE",
     "label": "Fairer Preis",
-    "offset": 15,
+    "offset": 30,
     "thresholds": [
-      "19.300 €",
-      "25.100 €",
-      "27.000 €",
-      "30.100 €",
-      "32.300 €",
-      "35.900 €"
+      "19.000 €",
+      "24.700 €",
+      "26.600 €",
+      "29.500 €",
+      "31.700 €",
+      "35.200 €"
     ]
   },
   "facts": {
@@ -75,7 +75,7 @@
     },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "64.329 km",
+      "value": "64.339 km",
       "group": "vehicle"
     },
     "cubicCapacity": {
@@ -145,7 +145,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Hinten, Vorne, Selbstlenkende Systeme, Kamera",
+      "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme",
       "group": "vehicle"
     },
     "airbag": {
@@ -197,7 +197,7 @@
     }
   },
   "derived": {
-    "mileageKm": 64329,
+    "mileageKm": 64339,
     "powerKw": 115,
     "powerHp": 156,
     "cubicCapacityCcm": 1998,
@@ -375,13 +375,9 @@
     "retrofitCost": 0,
     "mileageAdjustment": {
       "expectedKm": 53750,
-      "deviationKm": 10579,
+      "deviationKm": 10589,
       "adjustment": 1060
     },
     "effectivePrice": 28540
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-09-20T07:54:18.046Z"
   }
 }

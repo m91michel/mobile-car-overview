@@ -2,7 +2,7 @@
   "id": "458893960",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-aut-touring-m-sport-ahk-head-up-adapt-led-lonnerstadt/458893960.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=458893960&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-09-03T19:50:41.308Z",
+  "fetchedAt": "2026-09-22T06:00:47.121Z",
   "title": "BMW 320i Aut. Touring M Sport/AHK/Head-Up/Adapt.LED",
   "shortTitle": "BMW 320",
   "subTitle": "i Aut. Touring M Sport/AHK/Head-Up/Adapt.LED",
@@ -155,7 +155,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, 360°-Kamera, Selbstlenkende Systeme, Hinten",
+      "value": "Hinten, Vorne, Selbstlenkende Systeme, 360°-Kamera",
       "group": "vehicle"
     },
     "airbag": {
@@ -342,17 +342,17 @@
     },
     "openingHours": [
       {
-        "time": "08:00 Uhr - 19:00 Uhr",
-        "day": "Mo - Fr"
+        "day": "Mo - Fr",
+        "time": "08:00 Uhr - 19:00 Uhr"
       },
       {
-        "time": "09:00 Uhr - 13:00 Uhr",
-        "day": "Sa"
+        "day": "Sa",
+        "time": "09:00 Uhr - 13:00 Uhr"
       }
     ],
     "rating": {
       "score": 5,
-      "count": 142,
+      "count": 143,
       "recommendationRate": 100
     }
   },
@@ -415,9 +415,5 @@
       "adjustment": 20
     },
     "effectivePrice": 36300
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-09-20T07:56:27.050Z"
   }
 }

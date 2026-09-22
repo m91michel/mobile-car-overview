@@ -2,7 +2,7 @@
   "id": "461144700",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-led-lc-prof-hud-ahk-360-hk-alarm-shz-pdc-t-unstruttal/461144700.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461144700&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-31T16:27:43.660Z",
+  "fetchedAt": "2026-09-22T05:59:27.668Z",
   "title": "BMW 320i LED LC Prof HUD AHK 360° HK Alarm SHZ PDC T",
   "shortTitle": "BMW 320",
   "subTitle": "i LED LC Prof HUD AHK 360° HK Alarm SHZ PDC T",
@@ -24,16 +24,16 @@
     "type": "FIXED"
   },
   "priceRating": {
-    "rating": "VERY_GOOD_PRICE",
-    "label": "Sehr guter Preis",
-    "offset": 93,
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 1,
     "thresholds": [
-      "23.300 €",
-      "30.300 €",
-      "32.600 €",
-      "36.300 €",
-      "39.000 €",
-      "43.300 €"
+      "22.900 €",
+      "29.800 €",
+      "32.000 €",
+      "35.600 €",
+      "38.300 €",
+      "42.500 €"
     ]
   },
   "facts": {
@@ -69,7 +69,7 @@
     },
     "mileage": {
       "label": "Kilometerstand",
-      "value": "54.962 km",
+      "value": "54.964 km",
       "group": "vehicle"
     },
     "cubicCapacity": {
@@ -144,7 +144,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Hinten, Selbstlenkende Systeme, 360°-Kamera",
+      "value": "Selbstlenkende Systeme, 360°-Kamera, Vorne, Hinten",
       "group": "vehicle"
     },
     "airbag": {
@@ -196,7 +196,7 @@
     }
   },
   "derived": {
-    "mileageKm": 54962,
+    "mileageKm": 54964,
     "powerKw": 135,
     "powerHp": 184,
     "cubicCapacityCcm": 1998,
@@ -376,7 +376,7 @@
     "retrofitCost": 0,
     "mileageAdjustment": {
       "expectedKm": 52500,
-      "deviationKm": 2462,
+      "deviationKm": 2464,
       "adjustment": 250
     },
     "effectivePrice": 30085

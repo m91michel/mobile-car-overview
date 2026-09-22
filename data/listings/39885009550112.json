@@ -2,7 +2,7 @@
   "id": "39885009550112",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-320-e-touring-m-sport-opf-shadow-line-ahk-wagenfeld-str%C3%B6hen/39885009550112.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=39885009550112&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-08-31T16:31:24.025Z",
+  "fetchedAt": "2026-09-22T05:59:52.773Z",
   "title": "BMW 320 e Touring, M Sport OPF, Shadow-Line, AHK",
   "shortTitle": "BMW 320",
   "subTitle": "e Touring, M Sport OPF, Shadow-Line, AHK",
@@ -26,14 +26,14 @@
   "priceRating": {
     "rating": "GOOD_PRICE",
     "label": "Guter Preis",
-    "offset": 4,
+    "offset": 40,
     "thresholds": [
-      "22.600 €",
-      "29.400 €",
-      "31.700 €",
-      "35.200 €",
-      "37.800 €",
-      "42.000 €"
+      "22.000 €",
+      "28.600 €",
+      "30.800 €",
+      "34.200 €",
+      "36.700 €",
+      "40.800 €"
     ]
   },
   "facts": {
@@ -134,7 +134,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Vorne, Kamera, Selbstlenkende Systeme, Hinten",
+      "value": "Selbstlenkende Systeme, Kamera, Vorne, Hinten",
       "group": "vehicle"
     },
     "airbag": {
@@ -292,8 +292,8 @@
     },
     "openingHours": [
       {
-        "time": "08:00 Uhr - 17:00 Uhr",
-        "day": "Mo - Fr"
+        "day": "Mo - Fr",
+        "time": "08:00 Uhr - 17:00 Uhr"
       }
     ],
     "rating": {
@@ -353,9 +353,5 @@
       "adjustment": 1630
     },
     "effectivePrice": 31129
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-09-20T07:53:08.426Z"
   }
 }

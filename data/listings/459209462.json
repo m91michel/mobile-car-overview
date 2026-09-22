@@ -2,7 +2,7 @@
   "id": "459209462",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-lci-headup-acc-ahk-360-ka-b%C3%B6blingen/459209462.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=459209462&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-09-03T19:56:13.994Z",
+  "fetchedAt": "2026-09-22T05:59:30.276Z",
   "title": "BMW 318i Touring M Sport LCI HeadUp ACC AHK 360°Ka",
   "shortTitle": "BMW 318",
   "subTitle": "i Touring M Sport LCI HeadUp ACC AHK 360°Ka",
@@ -140,7 +140,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "360°-Kamera, Vorne, Selbstlenkende Systeme, Hinten",
+      "value": "360°-Kamera, Hinten, Selbstlenkende Systeme, Vorne",
       "group": "vehicle"
     },
     "airbag": {
@@ -299,12 +299,12 @@
     },
     "openingHours": [
       {
-        "time": "09:30 Uhr - 18:00 Uhr",
-        "day": "Mo - Fr"
+        "day": "Mo - Fr",
+        "time": "09:30 Uhr - 18:00 Uhr"
       },
       {
-        "time": "10:00 Uhr - 14:00 Uhr",
-        "day": "Sa"
+        "day": "Sa",
+        "time": "10:00 Uhr - 14:00 Uhr"
       }
     ],
     "rating": {
@@ -364,9 +364,5 @@
       "adjustment": 620
     },
     "effectivePrice": 32610
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-09-20T07:56:42.737Z"
   }
 }

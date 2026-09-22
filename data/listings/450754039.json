@@ -2,7 +2,7 @@
   "id": "450754039",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-aut-waldshut-tiengen/450754039.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=450754039&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-09-19T15:42:15.831Z",
+  "fetchedAt": "2026-09-22T05:59:02.731Z",
   "title": "BMW 318i Touring Aut.",
   "shortTitle": "BMW 318",
   "subTitle": "i Touring Aut.",
@@ -140,7 +140,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Kamera, Hinten, Vorne",
+      "value": "Hinten, Vorne, Kamera, Selbstlenkende Systeme",
       "group": "vehicle"
     },
     "airbag": {
@@ -347,9 +347,5 @@
       "adjustment": -160
     },
     "effectivePrice": 28730
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-09-20T07:54:59.885Z"
   }
 }

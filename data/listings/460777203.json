@@ -2,7 +2,7 @@
   "id": "460777203",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318-i-touring-adapt-led-temp-shz-shadow-line-fulda/460777203.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=460777203&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-09-22T05:57:06.960Z",
+  "fetchedAt": "2026-09-22T06:00:19.539Z",
   "title": "BMW 318 i Touring Adapt.LED+Temp+SHZ+Shadow-Line",
   "shortTitle": "BMW 318",
   "subTitle": "i Touring Adapt.LED+Temp+SHZ+Shadow-Line",
@@ -187,7 +187,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Kamera, Vorne, Hinten",
+      "value": "Hinten, Vorne, Kamera, Selbstlenkende Systeme",
       "group": "vehicle"
     },
     "airbag": {

@@ -2,7 +2,7 @@
   "id": "45584871586368",
   "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-m-sport-kamera-hud-dab-hifi-fernlichtassist-celle/45584871586368.html",
   "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=45584871586368&scopeId=C&action=compareItem",
-  "fetchedAt": "2026-09-16T20:22:52.031Z",
+  "fetchedAt": "2026-09-22T06:01:13.414Z",
   "title": "BMW 318i M Sport Kamera HUD DAB HiFi Fernlichtassist",
   "shortTitle": "BMW 318",
   "subTitle": "i M Sport Kamera HUD DAB HiFi Fernlichtassist",
@@ -10,7 +10,7 @@
   "model": "318",
   "category": "EstateCar",
   "sku": "08930-CPEF",
-  "isNew": true,
+  "isNew": false,
   "kba": {
     "hsn": "0005",
     "tsn": "CYW"
@@ -180,7 +180,7 @@
     },
     "parkAssists": {
       "label": "Einparkhilfe",
-      "value": "Selbstlenkende Systeme, Kamera, Hinten, Vorne",
+      "value": "Kamera, Hinten, Vorne, Selbstlenkende Systeme",
       "group": "vehicle"
     },
     "airbag": {
@@ -424,9 +424,5 @@
       "adjustment": 2510
     },
     "effectivePrice": 34109
-  },
-  "availability": {
-    "status": "available",
-    "checkedAt": "2026-09-20T07:55:48.907Z"
   }
 }
