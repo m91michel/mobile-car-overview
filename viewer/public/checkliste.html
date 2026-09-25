@@ -101,6 +101,33 @@
   .hidden { display: none; }
   .quote { font-size: 14px; background: var(--bg); border-left: 3px solid var(--accent); padding: 8px 10px; margin: 8px 0 0; border-radius: 4px; }
   .copy { margin-top: 8px; font: inherit; font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+  .head { display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
+  .info-btn {
+    flex: none; width: 30px; height: 30px; border-radius: 50%; padding: 0;
+    font: inherit; font-size: 15px; font-weight: 600; font-style: italic; font-family: Georgia, serif;
+    border: 1px solid var(--line); background: var(--bg); color: var(--accent);
+  }
+  dialog {
+    width: min(560px, calc(100vw - 24px)); max-height: 85vh; padding: 0;
+    border: 1px solid var(--line); border-radius: 14px; background: var(--panel); color: var(--ink);
+  }
+  dialog::backdrop { background: rgb(0 0 0 / 0.5); }
+  .dlg-head {
+    position: sticky; top: 0; display: flex; gap: 10px; align-items: flex-start; justify-content: space-between;
+    padding: 14px 16px; background: var(--panel); border-bottom: 1px solid var(--line);
+  }
+  .dlg-head h2 { font-size: 16px; margin: 0; }
+  .dlg-close {
+    flex: none; width: 32px; height: 32px; border-radius: 50%; padding: 0; font: inherit; font-size: 16px;
+    border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+  }
+  .dlg-body { padding: 4px 16px 18px; font-size: 15px; }
+  .dlg-body p { margin: 12px 0 0; }
+  .dlg-body h3 { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin: 18px 0 6px; }
+  .dlg-body ul { margin: 0; padding-left: 18px; }
+  .dlg-body li { margin: 6px 0; }
+  .dlg-body a { color: var(--accent); }
+  .dlg-body .nosrc { color: var(--muted); font-size: 13px; margin-top: 18px; }
   footer { max-width: 640px; margin: 0 auto; padding: 0 12px; }
   footer button { width: 100%; font: inherit; padding: 12px; border-radius: 10px; border: 1px solid var(--bad); background: transparent; color: var(--bad); }
 </style>
@@ -133,6 +160,11 @@
 <footer>
   <button id="reset">Alle Häkchen zurücksetzen</button>
 </footer>
+
+<dialog id="info">
+  <div class="dlg-head"><h2 id="info-title"></h2><button class="dlg-close" id="info-close" aria-label="Schließen">✕</button></div>
+  <div class="dlg-body" id="info-body"></div>
+</dialog>
 
 <script>
 // Item ids are stable strings, so rewording or reordering an item never moves
@@ -232,6 +264,131 @@ const SECTIONS = [
   },
 ];
 
+// Sources actually consulted for this checklist. Items without a source say
+// so in the modal instead of pointing at a link that does not back them up.
+const SRC = {
+  adac: ['ADAC: Gebrauchtwagen kaufen – Checkliste', 'https://www.adac.de/rund-ums-fahrzeug/auto-kaufen-verkaufen/gebrauchtwagenkauf/gebrauchtwagen-kaufen/'],
+  as24: ['AutoScout24: Unfallwagen erkennen – Spaltmaße, Lackdichte', 'https://www.autoscout24.de/informieren/ratgeber/vor-dem-kauf/unfallwagen-erkennen-spaltmasse-lackdichte-and-versteckte-maengel-entlarven/'],
+  az: ['Autozeitung: Unfallfahrzeug erkennen', 'https://www.autozeitung.de/unfallwagen-unfallfahrzeug-erkennen-139548.html'],
+  g2x: ['gebrauchtwagenberater.de: BMW 3er G20/G21 – Probleme', 'https://gebrauchtwagenberater.de/bmw-3er-g20-g21-probleme/'],
+  b48: ['gebrauchtwagenberater.de: BMW B48 – Schwachstellen', 'https://gebrauchtwagenberater.de/bmw-b48-probleme/'],
+  autobild: ['AUTO BILD: BMW 3er/4er gebraucht – Schwachstellen', 'https://www.autobild.de/artikel/bmw-3er-4er-gebraucht-schwachstellen-maengel-staerken-28158815.html'],
+  zf: ['hh-autos.com: BMW 3er G20 – wo B48 und ZF-8HP teuer werden', 'https://hh-autos.com/bmw-3er-g20-gebrauchtwagen-schwachstellen/'],
+  ps: ['BMW: Premium Selection Garantie', 'https://www.bmw.de/de/mehr-bmw/bmw-gebrauchte/garantie.html'],
+  psDealer: ['Rhein BMW: Leistungen BMW Premium Selection', 'https://www.rhein-bmw.de/gebrauchtwagen/leistungen/bmw-premium-selection/'],
+  ra: ['rechtsanwalt.com: Haftet der Händler für unbekannte Unfallschäden?', 'https://www.rechtsanwalt.com/news/unfallschaeden-unbekannt-auto-haftung/'],
+  anwalt: ['anwalt.de: Wenn der Händler einen Unfallschaden verschweigt', 'https://www.anwalt.de/rechtstipps/wenn-der-haendler-beim-autokauf-einen-unfallschaden-verschweigt-236769.html'],
+  hanke: ['Hanke.Legal: Unfallschaden verschwiegen – Schadensersatz', 'https://hanke.legal/blog/gebrauchtwagenkauf-unfallschaden-verschwiegen-schadensersatz'],
+  meister: ['Meistercheck: Probefahrt beim Gebrauchtwagenkauf', 'https://www.meistercheck.de/ratgeber/probefahrt-gebrauchtwagenkauf'],
+};
+
+const INFO = {
+  cold: [['Bei kaltem Motor sind Kaltstart-Rasseln, unrunder Leerlauf und Undichtigkeiten am besten zu hören und zu sehen. Warm gelaufen verschwindet vieles davon.', 'Sag vorher am Telefon, dass ihr den Kaltstart selbst machen wollt. Bei Ankunft kurz die Motorhaube anfassen: Ist sie warm, lief der Motor schon.'], ['adac', 'meister']],
+  invoice: [['Die Rechnung zeigt, was wirklich gemacht wurde. Stehen nur Lackierarbeiten und Kleinmaterial drauf, war es ein Kratzer oder Steinschlag.', 'Tauchen Positionen wie Halter, Clips, PDC-Sensor, Radar oder Scheinwerfer auf, war es mehr als Lack. Dann nachfragen, was passiert ist.', 'Gibt es keine Rechnung, lass „ausschließlich Lackierung“ zumindest in den Kaufvertrag schreiben.'], ['anwalt']],
+  calib: [['Beim G21 sitzt der Radarsensor für Abstandstempomat und Notbremsassistent hinter der Frontverkleidung. Zum Lackieren wird die Stoßstange in der Regel abgebaut.', 'Ein zu dicker Lackaufbau im Radarbereich oder ein beim Wiederanbau verschobener Halter kann die Erkennung stören. Eine BMW-Werkstatt kann die Radarfunktion mit dem Diagnosesystem prüfen und bei Bedarf kalibrieren.', 'Den Praxistest machst du auf der Autobahn (ACC-Punkte unter „Probefahrt“).'], []],
+  faults: [['Im Fehlerspeicher stehen auch Fehler, die gerade keine Warnleuchte auslösen, zum Beispiel sporadische Sensorfehler. Eine BMW-Werkstatt liest ihn in ein paar Minuten aus.', 'Lass dir den Ausdruck geben. Ein komplett leerer Speicher kann heißen, dass kurz vorher gelöscht wurde. Frag, wann das zuletzt passiert ist.'], []],
+  recalls: [['Für G20/G21 gab es unter anderem Rückrufe zum Gurtstraffer (Produktion Januar bis März 2022) und zum Startermotor (Mai 2020 bis Oktober 2024). Mit Erstzulassung 06/2023 kann das Auto vom Starter-Rückruf betroffen sein.', 'Der BMW-Händler sieht offene Rückrufaktionen über die FIN. Lass dir bestätigen, dass alle erledigt sind.'], ['g2x']],
+  'ps-report': [['BMW Premium Selection Fahrzeuge durchlaufen laut BMW einen 360°-Fahrzeugcheck. Das Protokoll zeigt, was geprüft und was dabei gemacht wurde, etwa an Bremsen, Reifen oder Lack.', 'Dazu gehört die 24-monatige Premium-Selection-Garantie auf mechanische und elektrische Teile.'], ['ps', 'psDealer']],
+
+  start: [['Beim Kaltstart auf Geräusche achten: Ein Starter, der hakt, kratzt oder mehrere Anläufe braucht, passt zum bekannten Starter-Rückruf.', 'Ein kurzes Hochdrehen direkt nach dem Start ist normal. Danach sollte der Motor ruhig und gleichmäßig laufen.'], ['g2x']],
+  idle: [['Im Stand die Drehzahl beobachten: ruhig, ohne Vibrationen in Lenkrad oder Sitz. Klima an- und ausschalten, die Drehzahl reagiert kurz und wird wieder ruhig.', 'Unrunder Lauf kann bei Direkteinspritzern auf Ablagerungen an den Einlassventilen deuten. Bei 28.650 km ist das eher unwahrscheinlich.'], ['b48']],
+  'coolant-before': [['Kühlmittelverlust ist die meistgenannte Schwachstelle des B48-Motors: undichte Kühlmittelschläuche oder ein gerissenes Ölfiltergehäuse.', 'Motorhaube auf, Ausgleichsbehälter ansehen: Der Stand liegt zwischen den Markierungen. Den Deckel bei warmem Motor geschlossen lassen.'], ['b48', 'g2x']],
+  'drip-before': [['Auf dem Stellplatz nach Flecken schauen und mit der Handy-Taschenlampe unter die Front leuchten.', 'Die Farbe verrät die Quelle: grünlich oder bläulich und süßlich riechend ist Kühlmittel, braun bis schwarz ist Motoröl, rötlich ist Getriebeöl. Klares Wasser ist Kondenswasser der Klimaanlage und normal.'], ['b48']],
+  cc: [['Check-Control-Meldungen sind aktive Hinweise des Fahrzeugs, etwa zu Sensoren, Ölstand oder Reifendruck. Du findest sie im iDrive unter Fahrzeugstatus.', 'Alles, was dort steht, vor dem Kauf erklären oder beheben lassen.'], []],
+  history: [['BMW speichert die Wartungen digital im Fahrzeug und im Händlersystem. Im iDrive unter Fahrzeugstatus → Service-Historie stehen die Einträge mit Datum und Kilometerstand.', 'Prüfe, ob die Kilometerstände plausibel steigen und ob Ölservice und Fahrzeugcheck in den vorgesehenen Abständen gemacht wurden.'], ['adac']],
+
+  'bumper-paint': [['Nachlackierte Teile erkennst du im Streiflicht: Stell dich schräg zur Stoßstange und vergleich die Spiegelung mit Haube und Kotflügel. Achte auf Orangenhaut (leicht wellige Oberfläche), Staubeinschlüsse, Läufer und matte Stellen.', 'Bei Schwarz fallen Unterschiede in Farbton und Glanz besonders auf.', 'Ein Lackschichtdickenmessgerät zeigt es sicher: Originallack liegt etwa bei 80 bis 150 µm, über 200 µm deutet auf Nachlackierung. Einfache Geräte messen nur auf Metall, also an Haube und Kotflügel, auf der Kunststoff-Stoßstange meist nicht.'], ['as24', 'az']],
+  'bumper-fit': [['Zum Lackieren wird die Stoßstange meist abgebaut. Beim Wiederanbau bleiben gern Clips locker oder brechen ab.', 'Vergleich die Spalten zu Scheinwerfern und Kotflügeln links und rechts. Drück leicht an den Ecken und an der Unterkante: Die Stoßstange sitzt fest und klappert nicht.'], ['as24']],
+  'hood-paint': [['Beim Lackieren einer Stoßstange werden angrenzende Teile oft beilackiert, damit der Farbton passt. Das ist unkritisch, sollte aber auf der Rechnung stehen.', 'Ohne Messgerät: Farbton und Glanz von Haube und Kotflügeln im Streiflicht mit den Türen vergleichen. Mit Messgerät lässt es sich auf diesen Metallteilen sicher prüfen.'], ['as24', 'az']],
+  'hood-gap': [['Die Spalten zwischen Motorhaube und Kotflügeln sind links und rechts gleich breit und über die ganze Länge gleichmäßig.', 'Ein ungleicher Spalt deutet auf ein verzogenes oder falsch eingestelltes Teil, meist nach einem Frontschaden.'], ['as24']],
+  grille: [['Die Nieren sind bei Shadow Line hochglanzschwarz. Beim Abbauen der Stoßstange werden sie oft mit ausgebaut.', 'Prüfe, ob sie fest und gerade sitzen, kratzerfrei sind und im Glanz zu den übrigen schwarzen Teilen passen (Fensterrahmen, Spiegelkappen). Die Shadow Line ist einer der Gründe für dieses Auto.'], []],
+  'pdc-flush': [['Die Parksensoren sitzen in der Stoßstange und werden beim Lackieren abgeklebt oder mitlackiert.', 'Sie sitzen bündig, haben den Farbton der Stoßstange und zeigen keine Lackkanten oder Risse. Ein schief sitzender Sensor fällt beim PDC-Test als Fehlalarm oder fehlende Reaktion auf.'], []],
+  overspray: [['Sprühnebel ist feiner Lackstaub auf Teilen, die nicht lackiert werden sollten: Gummidichtungen, Kunststoffleisten, Kennzeichenhalter, Sensoren.', 'Er fühlt sich rau an und zeigt, wo lackiert wurde. Bei einer sauberen Werkstattlackierung ist kaum etwas zu finden.'], ['az', 'as24']],
+  underbody: [['Die Unterkante der Stoßstange ist mit Clips und Schrauben an der Unterbodenverkleidung befestigt. Nach dem Ab- und Anbau fehlen dort gern einzelne Clips.', 'In die Hocke gehen und mit der Taschenlampe schauen: Die Kante sitzt fest und hängt nicht herunter.'], []],
+
+  gaps: [['Einmal ums Auto gehen: Alle Spalten zwischen Türen, Kotflügeln, Heckklappe und Seitenwänden sind gleich breit und gleichmäßig.', 'Ungleiche Spaltmaße gehören zu den deutlichsten Hinweisen auf einen Unfallschaden.'], ['as24', 'adac']],
+  panels: [['Jedes Karosserieteil im Streiflicht und aus flachem Winkel ansehen. Unterschiede in Farbton, Glanz oder Struktur zeigen nachlackierte Teile.', 'Hier geht es darum, ob außer der Stoßstange noch etwas lackiert wurde. Das müsste der Händler dann ebenfalls angeben.'], ['az', 'as24']],
+  glass: [['Auf jeder Scheibe steht ein kleiner Aufdruck mit Hersteller und Herstellungsdatum. Die Frontscheibe hat normalerweise denselben Hersteller wie die Seitenscheiben.', 'Eine Frontscheibe von einem anderen Hersteller bedeutet meist nur einen Steinschlag. Frag trotzdem nach: Nach einem Scheibentausch muss die Kamera hinter dem Innenspiegel neu kalibriert werden.'], ['az']],
+  trunk: [['Kofferraumboden hochheben und in die Mulde schauen. Falten im Blech, nicht werkseitige Schweißnähte oder frische, unregelmäßige Dichtmasse deuten auf einen Heckschaden.', 'Auch die Kanten unter den Gummidichtungen der Heckklappe ansehen.'], ['as24', 'az']],
+  'tire-age': [['Die DOT-Nummer auf der Reifenflanke endet mit vier Ziffern für Woche und Jahr der Herstellung, zum Beispiel 2322 = Woche 23 im Jahr 2022.', 'Auf einer Achse sollten gleiche Reifen sein, am besten rundum. Unterschiedliche Marken oder deutlich unterschiedliches Alter zeigen, dass einzeln ersetzt wurde.', 'Im Inserat sind nur Sommerreifen genannt, also nach Winterrädern fragen.'], ['adac']],
+  'tire-wear': [['Profiltiefe innen, mittig und außen vergleichen. Gleichmäßiger Abrieb ist normal.', 'Stärkerer Verschleiß nur innen oder außen deutet auf eine verstellte Spur oder einen Sturzfehler. Tritt das nur an einem Rad auf, kann ein Anprall die Ursache sein, im schlimmsten Fall mit verzogenem Fahrwerksteil.'], ['adac']],
+  rims: [['Bordsteinschäden an Felgen sind vor allem optisch und ein Verhandlungsargument. Tiefe Kerben oder Risse sind ein Sicherheitsthema.', 'Eine einzelne stark beschädigte Felge kann auf einen harten Anprall hindeuten. Dann besonders auf Geradeauslauf und Lenkradstellung achten.'], []],
+  interior: [['Bei 28.650 km zeigen Lenkrad, Fahrersitzwange, Wählhebel und Pedale kaum Gebrauchsspuren.', 'Deutlich abgegriffene Stellen passen nicht zur Laufleistung. Dann die Kilometerstände in der Service-Historie genau vergleichen.'], ['adac']],
+  mirrors: [['Beim G20/G21 wird gelegentlich berichtet, dass die Außenspiegel beim Abschließen nicht einklappen.', 'Einmal abschließen und schauen, ob beide Spiegel einklappen und beim Aufschließen wieder ausklappen. Klappt keiner, ist die Funktion vielleicht nur im iDrive abgeschaltet. Dort nachsehen, bevor du es als Mangel notierst.'], ['g2x']],
+
+  gearbox: [['Das 8-Gang-Automatikgetriebe von ZF schaltet im normalen Fahren kaum spürbar. Im Stadtverkehr mehrmals sanft anfahren und leicht beschleunigen.', 'Auffällig sind ein Ruck zwischen den unteren Gängen, verzögertes Einlegen oder Drehzahlsprünge. Oft hilft eine Getriebe-Adaption per Software, manchmal steckt mehr dahinter.'], ['zf']],
+  reverse: [['Beim Wählen von R oder D im Stand schließt im Getriebe eine Kupplung. Ein leichtes, weiches Einrücken ist normal.', 'Ein deutlicher Schlag, Klacken oder Ruck durchs Auto deutet auf verschlissene Motor- oder Getriebelager, Spiel im Antriebsstrang (zum Beispiel Hardyscheibe oder Differenzial) oder eine fällige Getriebe-Adaption.', 'So testest du: Fuß fest auf der Bremse, von N nach R, dann von N nach D. Mehrmals wiederholen, einmal davon bei kaltem Motor.'], ['zf']],
+  cobbles: [['Über Kopfsteinpflaster, Bodenwellen oder abgesenkte Bordsteine fahren, Radio aus, Fenster einen Spalt offen.', 'Poltern oder Klopfen deutet auf Koppelstangen, Stabilisator- oder Querlenkerlager oder Stoßdämpfer. Bei dieser Laufleistung ist das selten, Folgen eines Anpralls zeigen sich aber genau hier.'], ['meister']],
+  rattle: [['Klappern im Innenraum ist beim G20/G21 ein bekannter Kleinkram-Punkt, oft an Verkleidungen oder im Armaturenbrett.', 'Meist harmlos, aber lästig. Wenn dir etwas auffällt, den Händler vor dem Kauf um Nachbesserung bitten.'], ['g2x']],
+  lock: [['Auf dem Parkplatz das Lenkrad voll einschlagen und langsam im Kreis fahren, in beide Richtungen und auch rückwärts.', 'Knacken oder Knarzen kann von Antriebswellen, Lenkungsteilen oder Lagern kommen. Die Lenkung dreht sich gleichmäßig und ohne Rucken.'], ['g2x']],
+  straight: [['Auf gerader, ebener Straße das Lenkrad locker halten. Das Auto fährt geradeaus, das Lenkrad steht dabei gerade.', 'Zieht es zu einer Seite oder steht das Lenkrad schief, ist die Spur verstellt. Ursache kann ein Bordsteinkontakt sein, im schlimmsten Fall ein verzogenes Fahrwerksteil.', 'Leichtes Ziehen kann auch von der Neigung der Straße kommen. Auf einer zweiten Straße gegenprüfen.'], ['meister']],
+  brake: [['Nur wenn hinter dir frei ist: aus etwa 100 km/h kräftig bremsen, ohne Vollbremsung. Das Auto bleibt in der Spur, das Pedal fühlt sich fest und ruhig an.', 'Zieht das Auto zur Seite, stimmt an einer Bremse etwas nicht. Pulsieren im Pedal oder Zittern im Lenkrad deutet auf verzogene Bremsscheiben.'], ['meister', 'adac']],
+  vibration: [['Auf der Autobahn bei 120, 140 und 160 km/h auf das Lenkrad achten.', 'Zittern in einem bestimmten Tempobereich ist meist eine Unwucht an einem Rad. Wird es beim Bremsen stärker, sind eher die Bremsscheiben die Ursache.'], ['meister']],
+  'acc-follow': [['Der wichtigste Test für die Front: ACC einschalten, einem Auto mit gleichmäßigem Tempo folgen und die Abstandsstufen durchschalten.', 'ACC hält den Abstand konstant und reagiert rechtzeitig und weich, wenn der Vordermann bremst oder jemand einschert. Spätes oder ruckartiges Bremsen kann auf einen gestörten oder verstellten Radar deuten.'], []],
+  'acc-msg': [['Während der ganzen Fahrt auf Meldungen im Kombiinstrument achten, etwa „ACC eingeschränkt“, „nicht verfügbar“ oder „Sensor verschmutzt“.', 'Bei Regen oder Schmutz auf der Front kann das vorkommen. Bei trockenem Wetter und sauberer Stoßstange deutet es auf ein Problem mit dem Radar.'], []],
+  'acc-lane': [['Auf mehrspurigen Straßen beobachten: Bremst ACC wegen eines Autos auf der Nebenspur? Oder reagiert es spät auf ein Auto direkt vor dir?', 'Beides kann heißen, dass der Radar minimal schief schaut, etwa weil die Stoßstange beim Wiederanbau leicht verschoben wurde. Die Werkstatt behebt das per Kalibrierung.'], []],
+  'pdc-wall': [['Langsam auf eine Wand oder ein anderes Auto zufahren. Die Warntöne setzen früh ein und werden gleichmäßig schneller, die Grafik im iDrive passt zum Abstand.', 'Setzt ein Bereich aus oder warnt ohne Hindernis, ist ein Sensor defekt oder sitzt nach dem Lackieren schief.'], []],
+  'pdc-corner': [['Mit der linken und der rechten vorderen Ecke an einen Pfosten oder Poller heranfahren. Beide Ecksensoren reagieren.', 'Die Ecken sind bei Arbeiten an der Stoßstange am ehesten betroffen.'], []],
+  camera: [['Rückwärtsgang einlegen: Das Kamerabild ist scharf, gerade und frei von Streifen oder Flecken. Die Hilfslinien bewegen sich mit dem Lenkrad.', 'Falls das Auto weitere Kameraansichten hat, zum Beispiel eine Draufsicht, diese ebenfalls durchschalten.'], []],
+  blindspot: [['Die Radarsensoren für den Totwinkel-Assistenten sitzen hinten in den Ecken der Stoßstange. Überholt dich jemand, leuchtet im Außenspiegel ein Warnlicht.', 'Setzt du den Blinker, während ein Auto im toten Winkel ist, blinkt die Anzeige zusätzlich. Je nach Einstellung vibriert auch das Lenkrad.'], []],
+  ac: [['Klima auf 16 °C und hohes Gebläse. Nach ein bis zwei Minuten kommt deutlich kalte Luft aus den Düsen.', 'Bleibt die Luft lauwarm, fehlt Kältemittel oder der Kompressor arbeitet nicht. Der Klimakondensator sitzt zwar vorne hinter der Stoßstange, bei einer reinen Lackierung wird er aber nicht angefasst.'], ['adac']],
+  lights: [['Adaptives LED-Licht und blendfreies Fernlicht lassen sich tagsüber schwer beurteilen. Licht einschalten, auf Fehlermeldungen achten und schauen, ob beide Scheinwerfer gleich hell leuchten.', 'Eine Tiefgarage oder ein Tunnel reicht für einen kurzen Blick. Im Zweifel überspringen.'], []],
+  epb: [['Am Hang anhalten, die elektrische Parkbremse per Taste ziehen und die Fußbremse lösen: Das Auto bleibt stehen. Beim Anfahren löst sie sich automatisch und ohne Ruckeln.', 'Laut TÜV-Report fällt die Feststellbremse beim 3er etwas häufiger auf. Auf Fehlermeldungen dazu achten.'], ['g2x', 'autobild']],
+  heating: [['Sitzheizung auf beiden Seiten auf höchste Stufe stellen. Nach ein paar Minuten sind Sitzfläche und Lehne fühlbar warm.', 'Einfacher Test, der vor Ort leicht vergessen wird.'], []],
+
+  smell: [['Nach der Fahrt ist der Motor warm, und Undichtigkeiten riechen jetzt am deutlichsten. Motorhaube öffnen und riechen.', 'Süßlicher Geruch ist Kühlmittel, verbrannter Geruch ist meist Öl auf heißen Teilen. Beides passt zu den bekannten B48-Schwachstellen Kühlmittelschlauch und Ölfiltergehäuse.'], ['b48']],
+  'coolant-after': [['Den Ausgleichsbehälter nach der Fahrt nochmal ansehen, Deckel dabei geschlossen lassen. Warm steht das Kühlmittel etwas höher, unter die Markierung fällt es nicht.', 'Ein spürbar niedrigerer Stand nach kurzer Fahrt ist ein klares Warnsignal.'], ['b48']],
+  'drip-after': [['Das Auto nach der Fahrt ein paar Minuten auf trockenem Boden stehen lassen und dann darunter schauen.', 'Wassertropfen unter der Fahrzeugmitte sind Kondenswasser der Klimaanlage und normal. Für alles andere gelten die Farben aus dem ersten Tropftest.'], ['b48']],
+
+  zb2: [['In der Zulassungsbescheinigung Teil II (Fahrzeugbrief) steht, wie viele Halter das Auto hatte. Laut Inserat ist es einer.', 'Frag, wer das war: Privatperson, Firma, Leasing oder Autovermietung. Leasing-Rückläufer sind meist gut gewartet, Mietwagen hatten viele Fahrer.'], ['adac']],
+  hu: [['Die HU ist laut Inserat neu. Im Prüfbericht stehen auch geringe Mängel und Hinweise, mit denen das Auto trotzdem bestanden hat.', 'So siehst du, ob der Prüfer etwas an Bremsen, Fahrwerk oder Beleuchtung angemerkt hat.'], []],
+  warranty: [['Die BMW Premium Selection Garantie läuft 24 Monate und deckt mechanische und elektrische Teile mit 100 % Lohn- und Materialkosten ohne Selbstbeteiligung. Sie gilt europaweit, ist an das Fahrzeug gebunden und geht bei einem Weiterverkauf auf den neuen Besitzer über.', 'Lass dir die Garantieurkunde mit Startdatum geben. Für Unfallschäden gilt die gesetzliche Gewährleistung des Händlers, die Garantie deckt sie nicht ab.'], ['ps', 'psDealer']],
+  contract: [['Ein gewerblicher Händler haftet für Unfallschäden auch dann, wenn er sie selbst nicht kannte. Entscheidend ist, was im Vertrag steht.', 'Mit „ausschließlich Lackierung“ und dem Zusatz „darüber hinaus keine weiteren Unfall- oder Lackschäden“ ist der Zustand vereinbart. Taucht später ein größerer Schaden auf, kannst du Nachbesserung, Minderung oder Rücktritt verlangen.'], ['ra', 'anwalt', 'hanke']],
+  deal: [['Eine Nachlackierung mindert den Wert nur wenig. Als Argument reicht sie eher für eine Zugabe als für einen großen Nachlass.', 'Sinnvolle Zugaben: Winterräder auf Felgen, die AHK-Nachrüstung zum Vorzugspreis (im Effektivpreis sind 1.600 € angesetzt), ein voller Tank oder neue Wischerblätter.'], []],
+  keys: [['Bei der Übergabe prüfen: zwei Funkschlüssel (beide ausprobieren), Bordmappe, Warndreieck, Verbandkasten mit gültigem Haltbarkeitsdatum, Warnweste und Pannenset.', 'Ein fehlender Zweitschlüssel kostet bei BMW mehrere Hundert Euro. Das vor der Unterschrift klären.'], ['adac']],
+};
+
+const dlg = document.getElementById('info');
+document.getElementById('info-close').addEventListener('click', () => dlg.close());
+// A click on the dialog element itself is a click on the backdrop.
+dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+
+function openInfo(id, title) {
+  const [paras, srcs] = INFO[id];
+  document.getElementById('info-title').textContent = title;
+  const body = document.getElementById('info-body');
+  body.innerHTML = '';
+  for (const t of paras) {
+    const p = document.createElement('p');
+    p.textContent = t;
+    body.append(p);
+  }
+  if (srcs.length) {
+    const h = document.createElement('h3');
+    h.textContent = 'Quellen';
+    const ul = document.createElement('ul');
+    for (const key of srcs) {
+      const [label, url] = SRC[key];
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = url;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = label;
+      li.append(a);
+      ul.append(li);
+    }
+    body.append(h, ul);
+  } else {
+    const p = document.createElement('p');
+    p.className = 'nosrc';
+    p.textContent = 'Keine verlinkte Quelle: allgemeines Werkstatt- und Fahrzeugwissen.';
+    body.append(p);
+  }
+  dlg.showModal();
+  body.scrollTop = 0;
+}
+
 const CONTRACT_TEXT = 'Stoßfänger vorne nachlackiert (ausschließlich Lackierung, Original-Teil) lt. Rechnung vom [Datum]. Darüber hinaus keine weiteren Unfall- oder Lackschäden.';
 
 // Under the viewer's `car-compare/` prefix, so the ⚙ JSON export carries it
@@ -269,8 +426,16 @@ function render() {
       const el = document.createElement('div');
       el.className = 'item';
       el.dataset.state = entry.state || '';
-      el.innerHTML = `<div class="text"></div>${why ? '<div class="why"></div>' : ''}`;
+      el.innerHTML = `<div class="head"><div class="text"></div></div>${why ? '<div class="why"></div>' : ''}`;
       el.querySelector('.text').textContent = text;
+      if (INFO[id]) {
+        const ib = document.createElement('button');
+        ib.className = 'info-btn';
+        ib.textContent = 'i';
+        ib.setAttribute('aria-label', 'Mehr Infos');
+        ib.addEventListener('click', () => openInfo(id, text));
+        el.querySelector('.head').append(ib);
+      }
       if (why) el.querySelector('.why').textContent = why;
 
       if (extra === 'contract') {
