@@ -1,0 +1,371 @@
+{
+  "id": "40724374044128",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-livecockpitprof-kamera-driv-assist-stuttgart/40724374044128.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=40724374044128&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-25T06:42:44.386Z",
+  "title": "BMW 318i Touring LiveCockpitProf Kamera Driv.Assist",
+  "shortTitle": "BMW 318",
+  "subTitle": "i Touring LiveCockpitProf Kamera Driv.Assist",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "A1315026",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 31270,
+    "net": 26277.31,
+    "currency": "EUR",
+    "localized": "31.270 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "VERY_GOOD_PRICE",
+    "label": "Sehr guter Preis",
+    "offset": 98,
+    "thresholds": [
+      "24.200 €",
+      "31.400 €",
+      "33.800 €",
+      "37.600 €",
+      "40.400 €",
+      "44.900 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "3-er (G21)",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "Touring LiveCockpitProf Kamera Driv.Assist",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "A1315026",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "14.025 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "06/2025",
+      "group": "vehicle"
+    },
+    "constructionYear": {
+      "label": "Baujahr",
+      "value": "2025",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "07/2027",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Hinten, Vorne, 360°-Kamera, Selbstlenkende Systeme",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "saphirschwarz",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Vollleder, Schwarz",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 14025,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2025-06",
+    "constructionYear": 2025,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 161,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 06/2025, nach der Umstellung"
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Android Auto",
+    "Apple CarPlay",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Seitenspiegel",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Geschwindigkeitsbegrenzer",
+    "Head-Up Display",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Soundsystem",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [
+    "HiFi"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/fc/fc4c103d-84cd-4711-997b-441c1b1a0142",
+    "https://img.classistatic.de/api/v1/mo-prod/images/04/042367bb-207c-4301-93f4-c511e93c8ca4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d9/d931f495-c8f6-4e0f-818e-0f463661cc0e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f8/f8fa959e-6ddb-40c1-8840-5ec9b2e66c38",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8a/8a538672-ec6a-48f8-8a92-699b4ae7cfc6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5a/5a2c8a96-f932-4632-b666-6fcb889224fa",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ff/fff82da7-917f-4f31-a720-299865c803e4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/66/66afcba6-1b48-464d-9756-093e05747d8a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c5/c569eede-fd9e-472d-9542-bb4f83d7c9bd",
+    "https://img.classistatic.de/api/v1/mo-prod/images/27/27f52436-c024-4117-918a-c7ec9744400a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b0/b04885c1-1ed1-4926-a38c-50fd26aee83d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d2/d26d6e75-22d0-4156-a017-6c38717e6edb",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2f/2f350785-fd4c-4f32-acd1-c87a786ca7df",
+    "https://img.classistatic.de/api/v1/mo-prod/images/39/392d70c3-4b58-4b4b-a612-8477b56d9139",
+    "https://img.classistatic.de/api/v1/mo-prod/images/76/7629990d-a7ca-4d78-ab97-95d8eb748637",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b0/b0a2e550-43a9-490b-9b18-f98a72155bab",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b6/b6925a37-78ad-4e90-b0ba-264cc4ab6806",
+    "https://img.classistatic.de/api/v1/mo-prod/images/11/11ab3e48-bb99-41ce-bc60-a24f7a8dd82d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/41/41d3698a-f79e-41c3-ad8c-22504334016c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f9/f94f6192-e4a4-47c4-acef-8887db428326",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0d/0ddf582d-1452-42eb-94f3-5ba2023d7ed5",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c1/c19bfaa5-a672-4122-8053-07fa749c746b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ef5aa1f-a5ff-44d2-aef3-59663cf97bb4"
+  ],
+  "dealer": {
+    "name": "BMW AG, Niederlassung Stuttgart, Zentrum Gebrauchte Automobile",
+    "type": "Händler",
+    "street": "Untere Waldplätze 3",
+    "city": "DE-70569 Stuttgart",
+    "country": "DE",
+    "phone": "+49 (0)711 975731330",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=452821",
+    "location": {
+      "lat": 48.7307328,
+      "lon": 9.087323
+    },
+    "openingHours": [
+      {
+        "time": "08:00 Uhr - 18:30 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "09:00 Uhr - 16:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 4.4,
+      "count": 520,
+      "recommendationRate": 76
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=40724374044128",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 6254,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 25016,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 331.52,
+        "finalInstallment": 10319.1,
+        "totalInterest": 4862.73,
+        "totalAmount": 29878.73,
+        "localized": {
+          "downPayment": "6.254,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "25.016,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "332 €",
+          "finalInstallment": "10.319,10 €",
+          "totalInterest": "4.862,73 €",
+          "totalAmount": "29.878,73 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 67,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "mileageAdjustment": {
+      "expectedKm": 18750,
+      "deviationKm": -4725,
+      "adjustment": -470
+    },
+    "effectivePrice": 32400
+  }
+}
