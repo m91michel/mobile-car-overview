@@ -1,0 +1,372 @@
+{
+  "id": "458899879",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-ledersportsitze-acc-360-drivassis-genderkingen/458899879.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=458899879&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-25T06:53:03.982Z",
+  "title": "BMW 318i Touring *LederSportsitze*ACC*360°*DrivAssis",
+  "shortTitle": "BMW 318",
+  "subTitle": "i Touring *LederSportsitze*ACC*360°*DrivAssis",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 31999,
+    "net": 26889.92,
+    "currency": "EUR",
+    "localized": "31.999 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 45,
+    "thresholds": [
+      "23.800 €",
+      "30.900 €",
+      "33.300 €",
+      "37.100 €",
+      "39.800 €",
+      "44.200 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "11.000 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "6,8 l/100km",
+      "group": "envkv"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "153 g/km",
+      "group": "envkv"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": "6,8 l/100km (kombiniert)",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro 6e",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "04/2025",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "04/2028",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Selbstlenkende Systeme, Vorne, Hinten, 360°-Kamera",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Black-Sapphire",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Kunstleder, Schwarz",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 11000,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2025-04",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": 153,
+    "consumptionL100km": 6.8,
+    "distanceFromHomeKm": 86,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 04/2025, nach der Umstellung"
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Android Auto",
+    "Apple CarPlay",
+    "Armlehne",
+    "Ausparkassistent",
+    "Berganfahrassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Head-Up Display",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Pannenkit",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Soundsystem",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/d7/d76576f8-bebd-457f-b1dd-e7ec9ce26ff2",
+    "https://img.classistatic.de/api/v1/mo-prod/images/14/141aa133-19dd-429b-b7e8-932134be4933",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9e/9efeb9b8-70fc-4538-bf5c-faff5d4cc061",
+    "https://img.classistatic.de/api/v1/mo-prod/images/75/75a87366-6372-471a-9179-f63b8cd25772",
+    "https://img.classistatic.de/api/v1/mo-prod/images/26/26beff59-9bda-4de1-8dba-3ac2a2bc5890",
+    "https://img.classistatic.de/api/v1/mo-prod/images/44/441265b1-7299-48f1-9fc2-452b82c64dc0",
+    "https://img.classistatic.de/api/v1/mo-prod/images/52/5298cb31-b7a8-4664-99e5-eff803cb03c4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3f/3f5322a8-689b-4052-b5ee-92f9dc70d877",
+    "https://img.classistatic.de/api/v1/mo-prod/images/46/46b5754c-35a1-46c6-b0af-55dc7f517b81",
+    "https://img.classistatic.de/api/v1/mo-prod/images/50/50359343-3ece-47d1-9f68-551e16df38f9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/02/0220f483-098c-4f49-8b7a-64da279af7cf",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f3/f3c9879d-4207-4199-9403-a1c18281e22b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/eb/eb7fd200-38fe-4442-ab1c-23fed22ffda8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b9/b929793b-2217-4ad0-a46b-49f81ce41772",
+    "https://img.classistatic.de/api/v1/mo-prod/images/85/8505efe9-13df-43b9-8a80-d3a6b5fd0c2a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4b/4b76461d-71fc-41bc-9d93-6014b1897636",
+    "https://img.classistatic.de/api/v1/mo-prod/images/80/805be5b0-3313-479b-b574-95226f6863c8"
+  ],
+  "dealer": {
+    "name": "Autohaus Franz Wanner",
+    "type": "Händler",
+    "street": "Hauptstrasse 10",
+    "city": "DE-86682 Genderkingen",
+    "country": "DE",
+    "phone": "+49 (0)9090 90045",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=457388",
+    "location": {
+      "lat": 48.70599379999999,
+      "lon": 10.87782
+    },
+    "openingHours": [],
+    "rating": {
+      "score": 5,
+      "count": 104,
+      "recommendationRate": 100
+    }
+  },
+  "financePlans": [
+    {
+      "type": "DF",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=458899879",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "bankId": "CreditPlus",
+      "offer": {
+        "bankId": "CreditPlus",
+        "bankName": "Creditplus Bank AG",
+        "loanType": "BALLOON",
+        "downPayment": 6399,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 25600,
+        "interestRateNominal": 6.21,
+        "interestRateEffective": 6.39,
+        "monthlyInstallment": 274.52,
+        "finalInstallment": 15999.5,
+        "totalInterest": 6596.18,
+        "totalAmount": 32196.18,
+        "localized": {
+          "downPayment": "6.399,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "25.600,00 €",
+          "interestRateNominal": "6,21%",
+          "interestRateEffective": "6,39%",
+          "monthlyInstallment": "275 €",
+          "finalInstallment": "15.999,50 €",
+          "totalInterest": "6.596,18 €",
+          "totalAmount": "32.196,18 €",
+          "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Creditplus Bank AG (Darlehensgeber), Augustenstraße 7, 70178 Stuttgart. Bonität vorausgesetzt."
+        }
+      }
+    },
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/3?adId=458899879",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false
+    }
+  ],
+  "ref": 68,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "mileageAdjustment": {
+      "expectedKm": 21250,
+      "deviationKm": -10250,
+      "adjustment": -1020
+    },
+    "effectivePrice": 32579
+  }
+}

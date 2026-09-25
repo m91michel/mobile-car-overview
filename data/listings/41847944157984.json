@@ -1,0 +1,360 @@
+{
+  "id": "41847944157984",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318d-a-tou-lcpro-hud-360-pano-shz-klimaa-18-lm-ulm/41847944157984.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=41847944157984&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-25T06:53:27.111Z",
+  "title": "BMW 318d A Tou LCPro HUD 360° Pano SHZ KlimaA 18\"LM",
+  "shortTitle": "BMW 318",
+  "subTitle": "d A Tou LCPro HUD 360° Pano SHZ KlimaA 18\"LM",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "160262",
+  "isNew": false,
+  "kba": null,
+  "price": {
+    "gross": 31999,
+    "net": 26889.92,
+    "currency": "EUR",
+    "localized": "31.999 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 86,
+    "thresholds": [
+      "23.100 €",
+      "30.000 €",
+      "32.300 €",
+      "36.000 €",
+      "38.600 €",
+      "42.900 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "160262",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "29.852 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.995 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "110 kW (150 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "5,2 l/100km",
+      "group": "envkv"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "137 g/km",
+      "group": "envkv"
+    },
+    "envkv.co2Class": {
+      "label": "CO₂-Klasse",
+      "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "group": "envkv"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": "5,2 l/100km (kombiniert) · 6,4 l/100km (Innenstadt) · 5,0 l/100km (Stadtrand) · 4,7 l/100km (Landstraße) · 5,4 l/100km (Autobahn)",
+      "values": [
+        "5,2 l/100km (kombiniert)",
+        "6,4 l/100km (Innenstadt)",
+        "5,0 l/100km (Stadtrand)",
+        "4,7 l/100km (Landstraße)",
+        "5,4 l/100km (Autobahn)"
+      ],
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d-TEMP",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "11/2024",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Vorne, 360°-Kamera, Hinten, Selbstlenkende Systeme",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "Skyscraper Grau metallic",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Grau Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Stoff, Schwarz",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 29852,
+    "powerKw": 110,
+    "powerHp": 150,
+    "cubicCapacityCcm": 1995,
+    "firstRegistration": "2024-11",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": 137,
+    "consumptionL100km": 5.2,
+    "distanceFromHomeKm": 141,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 11/2024, nach der Umstellung"
+  },
+  "features": [
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Android Auto",
+    "Anhängerkupplung schwenkbar",
+    "Apple CarPlay",
+    "Beheizbares Lenkrad",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lordosenstütze",
+    "Navigationssystem",
+    "Nebelscheinwerfer",
+    "Notrufsystem",
+    "Panorama-Dach",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Scheckheftgepflegt",
+    "Schiebedach",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Soundsystem",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/ad/ad44beb8-0285-44c9-916a-4c12633529bc",
+    "https://img.classistatic.de/api/v1/mo-prod/images/03/0380f372-277d-4a1c-8ead-de9f3e7665f6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/84/84d6284c-0e3c-43e2-86d0-40bb3475b14d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6e/6e857087-1f1d-4219-9ee4-9451281b653f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3f/3fef6cde-8550-4a19-97dc-e8fddf5f2e86",
+    "https://img.classistatic.de/api/v1/mo-prod/images/53/5365e455-babb-4235-b643-7c10fadffd12",
+    "https://img.classistatic.de/api/v1/mo-prod/images/90/904feaaf-64a6-423f-97ad-f51d353b6a81",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d5/d54c079a-43c2-4b7f-8249-af602ceb1d62",
+    "https://img.classistatic.de/api/v1/mo-prod/images/33/331a4a00-d3ff-41d8-a034-e6c46d21055f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bb/bb956abb-f90a-41d6-8c3a-79a0e1d0f5f4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c3/c307b0cd-91cf-4856-8569-9bd5d11ab5ef",
+    "https://img.classistatic.de/api/v1/mo-prod/images/cb/cb43b61c-e58f-43f2-8867-e26291770e05",
+    "https://img.classistatic.de/api/v1/mo-prod/images/23/23bad518-4b2b-407a-9181-a77434b1abf8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/37/37df6c8f-7936-4281-89a8-8a35bf5ed191",
+    "https://img.classistatic.de/api/v1/mo-prod/images/43/431d603a-6fd8-41bb-b0e2-479c25e6b1b4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c4/c419f48c-9e0f-442a-bea5-2c626923f11a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/98/98f2ec64-fba5-4d2c-ad57-97b0150f5999",
+    "https://img.classistatic.de/api/v1/mo-prod/images/bd/bdb90ec4-aa77-424d-a247-a157b1f2ab1d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ec/ec4f205e-6cf3-4105-8cac-fe2c6693f084"
+  ],
+  "dealer": {
+    "name": "Autohaus Reisacher GmbH",
+    "type": "Händler",
+    "street": "Blaubeurer  Strasse 110",
+    "city": "DE-89077 Ulm",
+    "country": "DE",
+    "phone": "+49 (0)731 18999661",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=462876",
+    "location": {
+      "lat": 48.4013097,
+      "lon": 9.9598537
+    },
+    "openingHours": [
+      {
+        "time": "08:00 Uhr - 18:00 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "09:00 Uhr - 14:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 4.6,
+      "count": 238,
+      "recommendationRate": 88
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=41847944157984",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 6399,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 25600,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 339.26,
+        "finalInstallment": 10559.67,
+        "totalInterest": 4976.21,
+        "totalAmount": 30576.21,
+        "localized": {
+          "downPayment": "6.399,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "25.600,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "340 €",
+          "finalInstallment": "10.559,67 €",
+          "totalInterest": "4.976,21 €",
+          "totalAmount": "30.576,21 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 69,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [],
+    "retrofitCost": 0,
+    "mileageAdjustment": {
+      "expectedKm": 27500,
+      "deviationKm": 2352,
+      "adjustment": 240
+    },
+    "effectivePrice": 32239
+  }
+}
