@@ -281,6 +281,15 @@ Vite + React in `viewer/`, started with `pnpm viewer`.
   the dev server routinely lands somewhere behind it.
 - **Plain CSS**, one file, palette in custom properties, light and dark via
   `prefers-color-scheme`. No framework, no component library.
+- **Installable, and usable offline.** `manifest.webmanifest` (table) and
+  `checkliste.webmanifest` (the standalone test-drive checklist in
+  `viewer/public/checkliste.html`) make both home-screen apps with their own
+  icon. `viewer/public/sw.js` is network-first with the cache as fallback, so
+  online nothing is ever stale and at a dealer without reception the last
+  loaded state still opens. It pre-caches the checklist, skips cross-origin
+  requests (the hotlinked photos) and is not registered on `localhost`, where
+  it would fight hot reload. The table works offline from its second visit,
+  because the first one loads before the worker controls the page.
 - **Photos are hotlinked.** mobile.de's CDN sizes them by query rule
   (`?rule=mo-240`, `mo-360`, `mo-1024`, `mo-1600`), which is why `images[]` is
   stored without a size. Nothing is downloaded.

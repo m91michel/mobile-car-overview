@@ -1,0 +1,15 @@
+{
+  "id": "/checkliste.html",
+  "name": "Probefahrt-Checkliste #48",
+  "short_name": "Probefahrt",
+  "start_url": "/checkliste.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#14161a",
+  "theme_color": "#1c1f25",
+  "lang": "de",
+  "icons": [
+    { "src": "/icons/checkliste-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/checkliste-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

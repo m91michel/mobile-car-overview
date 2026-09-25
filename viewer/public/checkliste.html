@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1c1f25" media="(prefers-color-scheme: dark)">
-<meta name="apple-mobile-web-app-title" content="Probefahrt #48">
+<meta name="apple-mobile-web-app-title" content="Probefahrt">
+<link rel="manifest" href="/checkliste.webmanifest">
+<link rel="apple-touch-icon" href="/icons/checkliste-180.png">
 <title>Probefahrt-Checkliste #48</title>
 <style>
   :root {
@@ -623,6 +625,12 @@ document.getElementById('reset').addEventListener('click', () => {
 });
 
 render();
+
+// Offline fallback for the dealer's forecourt. Skipped on the dev server,
+// where a caching worker would only get in the way of hot reload.
+if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
+  navigator.serviceWorker.register('/sw.js');
+}
 </script>
 </body>
 </html>
