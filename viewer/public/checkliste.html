@@ -18,6 +18,9 @@
     --bad: #dc2626;
     --bad-soft: #fee2e2;
     --skip-soft: #eceef2;
+    --prio-high: #ea580c;
+    --prio-mid: #2f5bff;
+    --prio-low: #c9ccd3;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -32,6 +35,9 @@
       --bad: #f87171;
       --bad-soft: #3a1d1f;
       --skip-soft: #23262d;
+      --prio-high: #fb923c;
+      --prio-mid: #6f95ff;
+      --prio-low: #3a3f49;
     }
   }
   * { box-sizing: border-box; }
@@ -71,8 +77,24 @@
   details.section { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
   details.section > summary {
     list-style: none; cursor: pointer; padding: 14px; font-weight: 600;
-    display: flex; justify-content: space-between; align-items: center; gap: 8px;
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px;
   }
+  /* Per-section progress in the same three colours as the header bar. */
+  .sbar { flex-basis: 100%; height: 4px; border-radius: 2px; background: var(--line); display: flex; overflow: hidden; }
+  .sbar span { display: block; height: 100%; }
+  .sbar .b-done { background: var(--good); }
+  .sbar .b-problem { background: var(--bad); }
+  .sbar .b-skip { background: var(--muted); }
+  .badge { font-size: 12px; font-weight: 600; border-radius: 10px; padding: 1px 7px; margin-right: 6px; }
+  .badge.problem { background: var(--bad-soft); color: var(--bad); }
+  .badge.complete { background: var(--good-soft); color: var(--good); }
+  /* Importance as a left stripe, so it stays visible whatever the state tint. */
+  .item { border-left: 4px solid transparent; }
+  .item[data-prio="high"] { border-left-color: var(--prio-high); }
+  .item[data-prio="mid"] { border-left-color: var(--prio-mid); }
+  .item[data-prio="low"] { border-left-color: var(--prio-low); }
+  .legend { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; font-size: 13px; color: var(--muted); }
+  .legend i { display: inline-block; width: 4px; height: 14px; border-radius: 2px; vertical-align: -2px; margin-right: 5px; }
   details.section > summary::-webkit-details-marker { display: none; }
   details.section > summary .n { font-weight: 400; color: var(--muted); font-size: 13px; white-space: nowrap; }
   details.section[open] > summary { border-bottom: 1px solid var(--line); }
@@ -162,6 +184,11 @@
     <a href="https://maps.apple.com/?q=Kohlh%C3%A4user+Strasse+49,+36043+Fulda">Karte</a><br>
     Bekannt: Stoßstange <strong>vorne nachlackiert</strong> (Original-Teil, nur Lack), keine AHK, 1 Vorbesitzer, 28.650 km, EZ 06/2023.
     Tippe ✓ erledigt, ⚠ auffällig (mit Notiz) oder ⏭ überspringen. Alles wird auf diesem Handy gespeichert.
+    <div class="legend">
+      <span><i style="background:var(--prio-high)"></i>wichtig</span>
+      <span><i style="background:var(--prio-mid)"></i>normal</span>
+      <span><i style="background:var(--prio-low)"></i>Kleinkram</span>
+    </div>
   </div>
   <div class="toolbar"><button id="toggle-all"></button></div>
   <div id="sections"></div>
@@ -181,7 +208,7 @@
 // a tick onto a different item. Only change an id if the check itself changes.
 const SECTIONS = [
   {
-    title: 'Beim Verkäufer, vor der Fahrt',
+    title: '🧾 Beim Verkäufer, vor der Fahrt',
     items: [
       ['cold', 'Motor soll bis zur Probefahrt kalt bleiben', 'Ein warmgelaufener Motor verdeckt Kaltstart-Geräusche. Am besten schon am Telefon sagen.'],
       ['invoice', 'Lackierrechnung Stoßstange vorne zeigen lassen: Warum wurde lackiert?', 'Kratzer oder Steinschläge = Bagatelle. Steht mehr als Lack drauf (Halter, Clips, Sensoren), nachfragen.'],
@@ -192,7 +219,7 @@ const SECTIONS = [
     ],
   },
   {
-    title: 'Kaltstart & Motorraum',
+    title: '🔧 Kaltstart & Motorraum',
     items: [
       ['start', 'Kaltstart: kein Rasseln, Starter dreht sauber', 'Starter-Rückruf betrifft Baujahre 2020–2024.'],
       ['idle', 'Leerlauf ruhig, kein Ruckeln'],
@@ -203,7 +230,7 @@ const SECTIONS = [
     ],
   },
   {
-    title: 'Front (Stoßstange nachlackiert)',
+    title: '🎨 Front (Stoßstange nachlackiert)',
     items: [
       ['bumper-paint', 'Lack der Stoßstange: gleicher Farbton wie Haube und Kotflügel, glatt, ohne Staubeinschlüsse oder Läufer', 'Im Streiflicht und schräg von der Seite ansehen. Schwarz zeigt jede Abweichung.'],
       ['bumper-fit', 'Stoßstange sitzt bündig: gleicher Spalt zu Scheinwerfern und Kotflügeln, links wie rechts', 'Zum Lackieren wird die Stoßstange meist abgebaut. Beim Wiederanbau bleiben gern Clips locker.'],
@@ -216,7 +243,7 @@ const SECTIONS = [
     ],
   },
   {
-    title: 'Rundgang Karosserie & Innenraum',
+    title: '🔍 Rundgang Karosserie & Innenraum',
     items: [
       ['gaps', 'Spaltmaße Türen und Heckklappe gleichmäßig'],
       ['panels', 'Alle Teile im Streiflicht gleicher Farbton, keine Farbläufer'],
@@ -230,7 +257,7 @@ const SECTIONS = [
     ],
   },
   {
-    title: 'Probefahrt',
+    title: '🚗 Probefahrt',
     items: [
       ['gearbox', 'Stadt: Automatik schaltet weich, kein Ruck 1→2→3'],
       ['reverse', 'Im Stand mit Fuß auf der Bremse von N nach R und nach D: greift weich, ohne harten Ruck oder Klacken', 'Ein leichtes Einrücken ist normal. Ein deutlicher Schlag deutet auf Motor- oder Getriebelager, Spiel im Antriebsstrang oder eine fällige Getriebe-Adaption.'],
@@ -254,7 +281,7 @@ const SECTIONS = [
     ],
   },
   {
-    title: 'Nach der Fahrt',
+    title: '💧 Nach der Fahrt',
     items: [
       ['smell', 'Motorhaube auf: kein Öl- oder süßlicher Kühlmittelgeruch'],
       ['coolant-after', 'Kühlmittelstand unverändert'],
@@ -262,7 +289,7 @@ const SECTIONS = [
     ],
   },
   {
-    title: 'Papiere & Vertrag',
+    title: '📄 Papiere & Vertrag',
     items: [
       ['zb2', 'Zulassungsbescheinigung Teil II: 1 Vorbesitzer, Halterart (privat/Firma/Leasing)?'],
       ['hu', 'HU-Bericht (HU neu) zeigen lassen'],
@@ -399,6 +426,17 @@ function openInfo(id, title) {
   body.scrollTop = 0;
 }
 
+// How much a finding would matter for the purchase decision. Anything not
+// listed is normal. High: accident history, the repainted front and its
+// radar, the known B48 coolant weakness, the drivetrain and the contract.
+const PRIO = {
+  high: ['cold', 'invoice', 'calib', 'faults', 'recalls', 'start', 'coolant-before', 'drip-before', 'history',
+    'bumper-paint', 'bumper-fit', 'gaps', 'panels', 'trunk', 'gearbox', 'reverse', 'straight', 'brake',
+    'acc-follow', 'acc-msg', 'acc-lane', 'smell', 'coolant-after', 'zb2', 'warranty', 'contract'],
+  low: ['grille', 'rims', 'mirrors', 'rattle', 'camera', 'lights', 'heating', 'deal'],
+};
+const prioOf = (id) => (PRIO.high.includes(id) ? 'high' : PRIO.low.includes(id) ? 'low' : 'mid');
+
 const CONTRACT_TEXT = 'Stoßfänger vorne nachlackiert (ausschließlich Lackierung, Original-Teil) lt. Rechnung vom [Datum]. Darüber hinaus keine weiteren Unfall- oder Lackschäden.';
 
 // Under the viewer's `car-compare/` prefix, so the ⚙ JSON export carries it
@@ -426,7 +464,17 @@ function render() {
     // everything still relevant has been handled.
     const relevant = section.items.filter(([id]) => !store[id]?.hidden);
     const handled = relevant.filter(([id]) => store[id]?.state).length;
-    summary.innerHTML = `<span class="title"><span class="chev">›</span>${section.title}</span><span class="n">${handled}/${relevant.length}</span>`;
+    const cnt = (st) => relevant.filter(([id]) => store[id]?.state === st).length;
+    const problems = cnt('problem');
+    const pctOf = (n) => `${relevant.length ? (n / relevant.length) * 100 : 0}%`;
+    const badge = problems
+      ? `<span class="badge problem">⚠ ${problems}</span>`
+      : relevant.length && handled === relevant.length ? '<span class="badge complete">✓ fertig</span>' : '';
+    summary.innerHTML = `<span class="title"><span class="chev">›</span>${section.title}</span>` +
+      `<span class="n">${badge}${handled}/${relevant.length}</span>` +
+      `<span class="sbar"><span class="b-done" style="width:${pctOf(cnt('done'))}"></span>` +
+      `<span class="b-problem" style="width:${pctOf(problems)}"></span>` +
+      `<span class="b-skip" style="width:${pctOf(cnt('skip'))}"></span></span>`;
     det.append(summary);
 
     let shown = 0;
@@ -440,6 +488,7 @@ function render() {
       const el = document.createElement('div');
       el.className = 'item';
       el.dataset.state = entry.state || '';
+      el.dataset.prio = prioOf(id);
       el.innerHTML = `<div class="head"><div class="text"></div></div>${why ? '<div class="why"></div>' : ''}`;
       el.querySelector('.text').textContent = text;
       const icons = document.createElement('div');
