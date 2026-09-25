@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14161a">
+<title>Probefahrt-Checkliste #48</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --panel: #ffffff;
+    --ink: #1a1c20;
+    --muted: #6b7280;
+    --line: #e2e4e9;
+    --accent: #2f5bff;
+    --good: #16a34a;
+    --good-soft: #dcfce7;
+    --bad: #dc2626;
+    --bad-soft: #fee2e2;
+    --skip-soft: #eceef2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --panel: #1c1f25;
+      --ink: #e8e9ec;
+      --muted: #8f949e;
+      --line: #2c3038;
+      --accent: #6f95ff;
+      --good: #4ade80;
+      --good-soft: #163322;
+      --bad: #f87171;
+      --bad-soft: #3a1d1f;
+      --skip-soft: #23262d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font: 16px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    padding-bottom: calc(40px + env(safe-area-inset-bottom));
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+    padding: calc(10px + env(safe-area-inset-top)) 16px 10px;
+  }
+  h1 { font-size: 17px; margin: 0; }
+  .sub { color: var(--muted); font-size: 13px; }
+  .bar { height: 6px; background: var(--line); border-radius: 3px; margin-top: 8px; overflow: hidden; display: flex; }
+  .bar span { display: block; height: 100%; }
+  .bar .b-done { background: var(--good); }
+  .bar .b-problem { background: var(--bad); }
+  .bar .b-skip { background: var(--muted); }
+  .counts { font-size: 13px; color: var(--muted); margin-top: 4px; display: flex; gap: 12px; }
+  .filter { margin-top: 8px; display: flex; gap: 6px; }
+  .filter button {
+    flex: 1; font: inherit; font-size: 13px; padding: 6px; border-radius: 8px;
+    border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+  }
+  .filter button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  main { padding: 12px; max-width: 640px; margin: 0 auto; }
+  .intro { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; font-size: 14px; margin-bottom: 12px; }
+  .intro a { color: var(--accent); }
+  details.section { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
+  details.section > summary {
+    list-style: none; cursor: pointer; padding: 14px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 8px;
+  }
+  details.section > summary::-webkit-details-marker { display: none; }
+  details.section > summary .n { font-weight: 400; color: var(--muted); font-size: 13px; white-space: nowrap; }
+  details.section[open] > summary { border-bottom: 1px solid var(--line); }
+  .item { padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  .item:last-child { border-bottom: 0; }
+  .item[data-state="done"] { background: var(--good-soft); }
+  .item[data-state="problem"] { background: var(--bad-soft); }
+  .item[data-state="skip"] { background: var(--skip-soft); }
+  .item[data-state="skip"] .text, .item[data-state="done"] .text { color: var(--muted); }
+  .item[data-state="done"] .text { text-decoration: line-through; }
+  .text { font-weight: 500; }
+  .why { font-size: 13px; color: var(--muted); margin-top: 2px; }
+  .actions { display: flex; gap: 6px; margin-top: 10px; }
+  .actions button {
+    flex: 1; min-height: 40px; font: inherit; font-size: 14px; border-radius: 8px;
+    border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+  }
+  .actions button[data-set="done"][aria-pressed="true"] { background: var(--good); border-color: var(--good); color: #fff; }
+  .actions button[data-set="problem"][aria-pressed="true"] { background: var(--bad); border-color: var(--bad); color: #fff; }
+  .actions button[data-set="skip"][aria-pressed="true"] { background: var(--muted); border-color: var(--muted); color: #fff; }
+  textarea {
+    width: 100%; margin-top: 8px; font: inherit; font-size: 14px; padding: 8px;
+    border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+    min-height: 60px; resize: vertical;
+  }
+  .hidden { display: none; }
+  .quote { font-size: 14px; background: var(--bg); border-left: 3px solid var(--accent); padding: 8px 10px; margin: 8px 0 0; border-radius: 4px; }
+  .copy { margin-top: 8px; font: inherit; font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+  footer { max-width: 640px; margin: 0 auto; padding: 0 12px; }
+  footer button { width: 100%; font: inherit; padding: 12px; border-radius: 10px; border: 1px solid var(--bad); background: transparent; color: var(--bad); }
+</style>
+</head>
+<body>
+<header>
+  <h1>#48 · BMW 318i Touring · Probefahrt</h1>
+  <div class="sub">Autohaus Fulda Krah &amp; Enders · FR19374</div>
+  <div class="bar" id="bar"></div>
+  <div class="counts" id="counts"></div>
+  <div class="filter" role="group" aria-label="Filter">
+    <button data-filter="all" aria-pressed="true">Alle</button>
+    <button data-filter="open" aria-pressed="false">Offen</button>
+    <button data-filter="problem" aria-pressed="false">Auffällig</button>
+  </div>
+</header>
+
+<main>
+  <div class="intro">
+    Kohlhäuser Strasse 49, 36043 Fulda ·
+    <a href="tel:+4966194149260">0661 94149260</a> ·
+    <a href="https://maps.apple.com/?q=Kohlh%C3%A4user+Strasse+49,+36043+Fulda">Karte</a><br>
+    Bekannt: Stoßstange <strong>vorne</strong> repariert, keine AHK, 1 Vorbesitzer, 28.650 km, EZ 06/2023.
+    Tippe ✓ erledigt, ⚠ auffällig (mit Notiz) oder ⏭ überspringen. Alles wird auf diesem Handy gespeichert.
+  </div>
+  <div id="sections"></div>
+</main>
+
+<footer>
+  <button id="reset">Alle Häkchen zurücksetzen</button>
+</footer>
+
+<script>
+// Item ids are stable strings, so rewording or reordering an item never moves
+// a tick onto a different item. Only change an id if the check itself changes.
+const SECTIONS = [
+  {
+    title: 'Beim Verkäufer, vor der Fahrt',
+    items: [
+      ['cold', 'Motor soll bis zur Probefahrt kalt bleiben', 'Ein warmgelaufener Motor verdeckt Kaltstart-Geräusche. Am besten schon am Telefon sagen.'],
+      ['invoice', 'Reparaturrechnung Stoßstange vorne mit Teileliste zeigen lassen', 'Nur Verkleidung = Bagatelle. Stehen Querträger, Pralldämpfer, Kühler oder Scheinwerfer drauf, war der Aufprall stärker.'],
+      ['calib', 'Nachweis Radar-Kalibrierung (ACC-Sensor sitzt vorne in der Stoßstange)', 'Kalibrierprotokoll oder Position „Radarsensor kalibriert“ auf der Rechnung.'],
+      ['faults', 'Fehlerspeicher auslesen und ausdrucken lassen', 'Kein Eintrag zu Radar, PDC, Licht oder Kühlung.'],
+      ['recalls', 'Rückrufe per FIN erledigt? (Starter, Gurtstraffer)', 'Bekannte G20/G21-Rückrufe; BMW-Händler sieht das im System.'],
+      ['ps-report', 'Protokoll des Premium-Selection-360°-Checks zeigen lassen'],
+      ['lift', 'Fragen: Kurz auf die Hebebühne? (Front von unten ansehen)', 'Lehnt der Händler ab, ist das auch eine Information.'],
+    ],
+  },
+  {
+    title: 'Kaltstart & Motorraum',
+    items: [
+      ['start', 'Kaltstart: kein Rasseln, Starter dreht sauber', 'Starter-Rückruf betrifft Baujahre 2020–2024.'],
+      ['idle', 'Leerlauf ruhig, kein Ruckeln'],
+      ['coolant-before', 'Kühlmittelstand im Ausgleichsbehälter ok', 'Kühlmittelverlust ist die bekannte B48-Schwachstelle.'],
+      ['drip-before', 'Unter der Front keine Tropfen oder Flecken', 'Kühler und Klimakondensator sitzen direkt hinter der Stoßstange.'],
+      ['cc', 'iDrive: keine Check-Control-Meldungen'],
+      ['history', 'iDrive: Service-Historie lückenlos (Fahrzeugstatus → Service-Historie)'],
+    ],
+  },
+  {
+    title: 'Front-Schaden (Stoßstange vorne)',
+    items: [
+      ['hl-flush', 'Beide Scheinwerfer bündig, gleicher Spalt zu Stoßstange und Haube'],
+      ['hl-firm', 'Scheinwerfer fest: leicht draufdrücken, nichts gibt nach', 'Bei Reparaturen brechen gern die Befestigungslaschen.'],
+      ['hl-age', 'Beide Scheinwerfer gleich alt (keiner klarer/neuer)', 'Ein getauschter Scheinwerfer gehört auf die Rechnung.'],
+      ['hood-paint', 'Haube und Kotflügel im Streiflicht gleicher Farbton wie Türen', 'Schwarz zeigt Orangenhaut und Farbunterschiede deutlich.'],
+      ['hood-gap', 'Spalt Haube ↔ Kotflügel links und rechts gleich'],
+      ['fender-bolts', 'Kotflügel-Schrauben unter der Haube ohne Werkzeugspuren'],
+      ['grille', 'Nieren fest, gerade, gleiches Hochglanzschwarz wie restliche Shadow Line'],
+      ['pdc-flush', 'PDC-Sensoren vorne bündig und im Stoßstangen-Farbton'],
+      ['overspray', 'Kein Sprühnebel an Gummis, Kennzeichenhalter, Sensoren'],
+      ['underbody', 'Unterbodenverkleidung vorne: keine Risse, alle Clips da'],
+      ['beam', 'Hebebühne: Querträger und Pralldämpfer gerade/original', 'Nur möglich, wenn der Händler das Auto hochnimmt.'],
+    ],
+  },
+  {
+    title: 'Rundgang Karosserie & Innenraum',
+    items: [
+      ['gaps', 'Spaltmaße Türen und Heckklappe gleichmäßig'],
+      ['panels', 'Alle Teile im Streiflicht gleicher Farbton, keine Farbläufer'],
+      ['glass', 'Frontscheibe hat dasselbe Logo wie die übrigen Scheiben', 'Eine fremde Frontscheibe kann auf Frontschaden oder Steinschlag deuten.'],
+      ['trunk', 'Kofferraumboden & Mulde: keine Falten, Schweißnähte, frische Dichtmasse'],
+      ['tire-age', 'Reifen: DOT-Alter, gleiche Marke rundum'],
+      ['tire-wear', 'Reifen gleichmäßig abgefahren (kein Innen-/Außenverschleiß)', 'Einseitiger Verschleiß deutet auf verstellte oder verzogene Achse.'],
+      ['rims', 'Felgen ohne Bordsteinschäden'],
+      ['interior', 'Lenkrad, Fahrersitz, Schalthebel passen zu 28.650 km'],
+      ['mirrors', 'Außenspiegel klappen beim Abschließen ein', 'Bekannter G20/G21-Kleinkram.'],
+    ],
+  },
+  {
+    title: 'Probefahrt',
+    items: [
+      ['gearbox', 'Stadt: Automatik schaltet weich, kein Ruck 1→2→3'],
+      ['reverse', 'Rückwärtsgang legt ohne Schlag ein'],
+      ['cobbles', 'Schlechte Straße: kein Poltern aus dem Fahrwerk'],
+      ['rattle', 'Kein Klappern im Innenraum'],
+      ['lock', 'Parkplatz: voll eingeschlagen im Kreis, kein Knacken', 'Knacken kommt von Antriebswelle oder Lenkung.'],
+      ['straight', 'Lenkrad locker halten: fährt geradeaus, Lenkrad steht gerade', 'Zieht er zur Seite: Spur, im schlimmsten Fall Unfallfolge.'],
+      ['brake', 'Kräftig bremsen aus 100: zieht nicht, Pedal pulsiert nicht'],
+      ['vibration', 'Autobahn bis ca. 160: keine Vibration im Lenkrad'],
+      ['acc-follow', 'ACC: hinter einem Auto herfahren, Abstand bleibt konstant, bremst sauber', 'Wichtigster Test nach dem Front-Schaden.'],
+      ['acc-msg', 'ACC: keine Meldung „eingeschränkt“ oder „Sensor blockiert“'],
+      ['acc-lane', 'ACC reagiert nur aufs eigene Auto vorne, nicht auf die Nebenspur', 'Ein schief sitzender Radar zeigt sich genau hier.'],
+      ['pdc-wall', 'Langsam auf Wand zu: PDC vorne reagiert gleichmäßig'],
+      ['pdc-corner', 'Pfosten an beiden vorderen Ecken: Ecksensoren reagieren'],
+      ['camera', 'Rückfahrkamera: Bild klar und gerade'],
+      ['blindspot', 'Totwinkel-Assistent leuchtet beim Überholen im Spiegel'],
+      ['ac', 'Klima auf 16 °C: nach kurzer Zeit wirklich kalt', 'Klimakondensator sitzt hinter der Stoßstange.'],
+      ['lights', 'Adaptives LED-Licht und Fernlichtassistent ohne Fehlermeldung', 'Tagsüber schwer zu testen, im Zweifel überspringen.'],
+      ['epb', 'Parkbremse hält am Hang, löst sauber'],
+      ['heating', 'Sitzheizung beide Seiten warm'],
+    ],
+  },
+  {
+    title: 'Nach der Fahrt',
+    items: [
+      ['smell', 'Motorhaube auf: kein Öl- oder süßlicher Kühlmittelgeruch'],
+      ['coolant-after', 'Kühlmittelstand unverändert'],
+      ['drip-after', 'Nach ein paar Minuten Stand: keine Tropfen unter dem Auto'],
+    ],
+  },
+  {
+    title: 'Papiere & Vertrag',
+    items: [
+      ['zb2', 'Zulassungsbescheinigung Teil II: 1 Vorbesitzer, Halterart (privat/Firma/Leasing)?'],
+      ['hu', 'HU-Bericht (HU neu) zeigen lassen'],
+      ['warranty', 'Premium-Selection-Garantie schriftlich: 24 Monate, Startdatum'],
+      ['contract', 'Vorschaden im Kaufvertrag eingetragen', null, 'contract'],
+      ['deal', 'Verhandelt: Nachlass, Winterräder oder AHK-Nachrüstung', 'Reparierter Vorschaden mindert den Wiederverkaufswert.'],
+      ['keys', 'Zwei Schlüssel, Bordmappe, Warndreieck, Verbandkasten, Pannenkit'],
+    ],
+  },
+];
+
+const CONTRACT_TEXT = 'Vorschaden: Stoßfänger vorne, fachgerecht instand gesetzt lt. Rechnung vom [Datum]. Darüber hinaus keine weiteren Unfall- oder Lackschäden.';
+
+// Under the viewer's `car-compare/` prefix, so the ⚙ JSON export carries it
+// along. Stored as JSON, the same way useLocalStorage writes.
+const KEY = 'car-compare/probefahrt-460777203';
+
+let store = {};
+try { store = JSON.parse(localStorage.getItem(KEY)) || {}; } catch { store = {}; }
+const save = () => localStorage.setItem(KEY, JSON.stringify(store));
+
+let filter = 'all';
+const root = document.getElementById('sections');
+
+function render() {
+  root.innerHTML = '';
+  for (const [si, section] of SECTIONS.entries()) {
+    const det = document.createElement('details');
+    det.className = 'section';
+    const openKey = `__open${si}`;
+    det.open = store[openKey] !== false;
+    det.addEventListener('toggle', () => { store[openKey] = det.open; save(); });
+
+    const summary = document.createElement('summary');
+    const handled = section.items.filter(([id]) => store[id]?.state).length;
+    summary.innerHTML = `<span>${section.title}</span><span class="n">${handled}/${section.items.length}</span>`;
+    det.append(summary);
+
+    let shown = 0;
+    for (const [id, text, why, extra] of section.items) {
+      const entry = store[id] || {};
+      if (filter === 'open' && entry.state) continue;
+      if (filter === 'problem' && entry.state !== 'problem') continue;
+      shown++;
+
+      const el = document.createElement('div');
+      el.className = 'item';
+      el.dataset.state = entry.state || '';
+      el.innerHTML = `<div class="text"></div>${why ? '<div class="why"></div>' : ''}`;
+      el.querySelector('.text').textContent = text;
+      if (why) el.querySelector('.why').textContent = why;
+
+      if (extra === 'contract') {
+        const q = document.createElement('div');
+        q.className = 'quote';
+        q.textContent = CONTRACT_TEXT;
+        const b = document.createElement('button');
+        b.className = 'copy';
+        b.textContent = 'Text kopieren';
+        b.addEventListener('click', async () => {
+          try { await navigator.clipboard.writeText(CONTRACT_TEXT); b.textContent = 'Kopiert ✓'; }
+          catch { b.textContent = 'Kopieren nicht möglich'; }
+        });
+        el.append(q, b);
+      }
+
+      const actions = document.createElement('div');
+      actions.className = 'actions';
+      for (const [state, label] of [['done', '✓ Erledigt'], ['problem', '⚠ Auffällig'], ['skip', '⏭ Skip']]) {
+        const b = document.createElement('button');
+        b.dataset.set = state;
+        b.textContent = label;
+        b.setAttribute('aria-pressed', String(entry.state === state));
+        b.addEventListener('click', () => {
+          const current = store[id] || {};
+          const next = { ...current, state: current.state === state ? undefined : state };
+          if (!next.state && !next.note) delete store[id]; else store[id] = next;
+          save();
+          render();
+        });
+        actions.append(b);
+      }
+      el.append(actions);
+
+      // A note field for anything flagged, and for any item that already has
+      // a note, so un-flagging does not hide what was written.
+      if (entry.state === 'problem' || entry.note) {
+        const ta = document.createElement('textarea');
+        ta.placeholder = 'Was ist aufgefallen?';
+        ta.value = entry.note || '';
+        ta.addEventListener('input', () => {
+          store[id] = { ...(store[id] || {}), note: ta.value };
+          save();
+        });
+        el.append(ta);
+      }
+      det.append(el);
+    }
+    if (shown || filter === 'all') root.append(det);
+  }
+  renderProgress();
+}
+
+function renderProgress() {
+  const ids = SECTIONS.flatMap((s) => s.items.map(([id]) => id));
+  const count = (st) => ids.filter((id) => store[id]?.state === st).length;
+  const done = count('done'), problem = count('problem'), skip = count('skip');
+  const pct = (n) => `${(n / ids.length) * 100}%`;
+  document.getElementById('bar').innerHTML =
+    `<span class="b-done" style="width:${pct(done)}"></span>` +
+    `<span class="b-problem" style="width:${pct(problem)}"></span>` +
+    `<span class="b-skip" style="width:${pct(skip)}"></span>`;
+  document.getElementById('counts').innerHTML =
+    `<span>✓ ${done}</span><span>⚠ ${problem}</span><span>⏭ ${skip}</span>` +
+    `<span>offen ${ids.length - done - problem - skip}</span>`;
+}
+
+document.querySelectorAll('.filter button').forEach((b) => b.addEventListener('click', () => {
+  filter = b.dataset.filter;
+  document.querySelectorAll('.filter button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+  render();
+}));
+
+document.getElementById('reset').addEventListener('click', () => {
+  if (!confirm('Alle Häkchen und Notizen löschen?')) return;
+  store = {};
+  save();
+  render();
+});
+
+render();
+</script>
+</body>
+</html>
