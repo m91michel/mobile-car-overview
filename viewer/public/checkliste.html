@@ -76,6 +76,11 @@
   details.section > summary::-webkit-details-marker { display: none; }
   details.section > summary .n { font-weight: 400; color: var(--muted); font-size: 13px; white-space: nowrap; }
   details.section[open] > summary { border-bottom: 1px solid var(--line); }
+  details.section > summary .title { display: flex; align-items: center; gap: 8px; }
+  .chev { display: inline-block; color: var(--muted); font-size: 18px; line-height: 1; transition: transform 0.15s ease; }
+  details.section[open] > summary .chev { transform: rotate(90deg); }
+  .toolbar { display: flex; justify-content: flex-end; margin: -4px 2px 8px; }
+  .toolbar button { font: inherit; font-size: 13px; color: var(--accent); background: none; border: 0; padding: 4px 2px; }
   .item { padding: 12px 14px; border-bottom: 1px solid var(--line); }
   .item:last-child { border-bottom: 0; }
   .item[data-state="done"] { background: var(--good-soft); }
@@ -158,6 +163,7 @@
     Bekannt: Stoßstange <strong>vorne nachlackiert</strong> (Original-Teil, nur Lack), keine AHK, 1 Vorbesitzer, 28.650 km, EZ 06/2023.
     Tippe ✓ erledigt, ⚠ auffällig (mit Notiz) oder ⏭ überspringen. Alles wird auf diesem Handy gespeichert.
   </div>
+  <div class="toolbar"><button id="toggle-all"></button></div>
   <div id="sections"></div>
 </main>
 
@@ -413,14 +419,14 @@ function render() {
     det.className = 'section';
     const openKey = `__open${si}`;
     det.open = store[openKey] !== false;
-    det.addEventListener('toggle', () => { store[openKey] = det.open; save(); });
+    det.addEventListener('toggle', () => { store[openKey] = det.open; save(); renderToggleAll(); });
 
     const summary = document.createElement('summary');
     // Hidden items leave the count entirely, so a section is complete once
     // everything still relevant has been handled.
     const relevant = section.items.filter(([id]) => !store[id]?.hidden);
     const handled = relevant.filter(([id]) => store[id]?.state).length;
-    summary.innerHTML = `<span>${section.title}</span><span class="n">${handled}/${relevant.length}</span>`;
+    summary.innerHTML = `<span class="title"><span class="chev">›</span>${section.title}</span><span class="n">${handled}/${relevant.length}</span>`;
     det.append(summary);
 
     let shown = 0;
@@ -516,6 +522,7 @@ function render() {
     root.append(empty);
   }
   renderProgress();
+  renderToggleAll();
 }
 
 function renderProgress() {
@@ -540,6 +547,18 @@ document.querySelectorAll('.filter button').forEach((b) => b.addEventListener('c
   document.querySelectorAll('.filter button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
   render();
 }));
+
+const sectionKeys = SECTIONS.map((_, si) => `__open${si}`);
+const allOpen = () => sectionKeys.every((k) => store[k] !== false);
+function renderToggleAll() {
+  document.getElementById('toggle-all').textContent = allOpen() ? 'Alle einklappen' : 'Alle ausklappen';
+}
+document.getElementById('toggle-all').addEventListener('click', () => {
+  const open = !allOpen();
+  for (const k of sectionKeys) store[k] = open;
+  save();
+  render();
+});
 
 document.getElementById('reset').addEventListener('click', () => {
   if (!confirm('Alle Häkchen, Notizen und ausgeblendeten Punkte zurücksetzen?')) return;
