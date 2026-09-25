@@ -51,6 +51,7 @@
     padding: calc(10px + env(safe-area-inset-top)) 16px 10px;
   }
   h1 { font-size: 17px; margin: 0; }
+  .back { display: inline-block; font-size: 13px; color: var(--accent); text-decoration: none; margin-bottom: 2px; }
   .sub { color: var(--muted); font-size: 13px; }
   .bar { height: 6px; background: var(--line); border-radius: 3px; margin-top: 8px; overflow: hidden; display: flex; }
   .bar span { display: block; height: 100%; }
@@ -106,6 +107,7 @@
 </head>
 <body>
 <header>
+  <a class="back" href="/">← Zur Vergleichstabelle</a>
   <h1>#48 · BMW 318i Touring · Probefahrt</h1>
   <div class="sub">Autohaus Fulda Krah &amp; Enders · FR19374</div>
   <div class="bar" id="bar"></div>
