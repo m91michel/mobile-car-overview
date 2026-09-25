@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#14161a">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c1f25" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-title" content="Probefahrt #48">
 <title>Probefahrt-Checkliste #48</title>
 <style>
   :root {
@@ -41,6 +43,8 @@
     }
   }
   * { box-sizing: border-box; }
+  button, summary, a { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+  body:has(dialog[open]) { overflow: hidden; }
   body {
     margin: 0;
     font: 16px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -63,16 +67,17 @@
   .bar span { display: block; height: 100%; }
   .bar .b-done { background: var(--good); }
   .bar .b-problem { background: var(--bad); }
-  .bar .b-skip { background: var(--muted); }
   .counts { font-size: 13px; color: var(--muted); margin-top: 4px; display: flex; gap: 12px; }
   .filter { margin-top: 8px; display: flex; gap: 6px; }
   .filter button {
-    flex: 1; font: inherit; font-size: 13px; padding: 6px; border-radius: 8px;
+    flex: 1 1 auto; white-space: nowrap; font: inherit; font-size: 13px; padding: 6px 8px; border-radius: 8px;
     border: 1px solid var(--line); background: var(--bg); color: var(--ink);
   }
   .filter button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
   main { padding: 12px; max-width: 640px; margin: 0 auto; }
   .intro { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; font-size: 14px; margin-bottom: 12px; }
+  .intro .facts { margin-top: 6px; }
+  .intro .howto { margin-top: 8px; font-size: 13px; color: var(--muted); }
   .intro a { color: var(--accent); }
   details.section { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
   details.section > summary {
@@ -84,7 +89,6 @@
   .sbar span { display: block; height: 100%; }
   .sbar .b-done { background: var(--good); }
   .sbar .b-problem { background: var(--bad); }
-  .sbar .b-skip { background: var(--muted); }
   .badge { font-size: 12px; font-weight: 600; border-radius: 10px; padding: 1px 7px; margin-right: 6px; }
   .badge.problem { background: var(--bad-soft); color: var(--bad); }
   .badge.complete { background: var(--good-soft); color: var(--good); }
@@ -98,7 +102,8 @@
   details.section > summary::-webkit-details-marker { display: none; }
   details.section > summary .n { font-weight: 400; color: var(--muted); font-size: 13px; white-space: nowrap; }
   details.section[open] > summary { border-bottom: 1px solid var(--line); }
-  details.section > summary .title { display: flex; align-items: center; gap: 8px; }
+  details.section > summary .title { display: flex; align-items: center; gap: 8px; flex: 1 1 0; min-width: 0; }
+  details.section > summary .n { flex: none; }
   .chev { display: inline-block; color: var(--muted); font-size: 18px; line-height: 1; transition: transform 0.15s ease; }
   details.section[open] > summary .chev { transform: rotate(90deg); }
   .toolbar { display: flex; justify-content: flex-end; margin: -4px 2px 8px; }
@@ -130,12 +135,11 @@
   .copy { margin-top: 8px; font: inherit; font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
   .head { display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
   .icons { display: flex; gap: 6px; flex: none; }
-  .info-btn, .hide-btn {
+  .info-btn {
     flex: none; width: 30px; height: 30px; border-radius: 50%; padding: 0;
     font: inherit; font-size: 15px; font-weight: 600; font-style: italic; font-family: Georgia, serif;
     border: 1px solid var(--line); background: var(--bg); color: var(--accent);
   }
-  .hide-btn { font-family: inherit; font-style: normal; font-weight: 400; color: var(--muted); }
   .empty { color: var(--muted); font-size: 14px; text-align: center; padding: 24px 12px; }
   dialog {
     width: min(560px, calc(100vw - 24px)); max-height: 85vh; padding: 0;
@@ -173,22 +177,24 @@
     <button data-filter="all" aria-pressed="true">Alle</button>
     <button data-filter="open" aria-pressed="false">Offen</button>
     <button data-filter="problem" aria-pressed="false">Auffällig</button>
-    <button data-filter="hidden" aria-pressed="false" id="hidden-filter">Ausgeblendet</button>
+    <button data-filter="hidden" aria-pressed="false" id="hidden-filter">Übersprungen</button>
   </div>
 </header>
 
 <main>
   <div class="intro">
-    Kohlhäuser Strasse 49, 36043 Fulda ·
-    <a href="tel:+4966194149260">0661 94149260</a> ·
-    <a href="https://maps.apple.com/?q=Kohlh%C3%A4user+Strasse+49,+36043+Fulda">Karte</a><br>
-    Bekannt: Stoßstange <strong>vorne nachlackiert</strong> (Original-Teil, nur Lack), keine AHK, 1 Vorbesitzer, 28.650 km, EZ 06/2023.
-    Tippe ✓ erledigt, ⚠ auffällig (mit Notiz) oder ⏭ überspringen. Alles wird auf diesem Handy gespeichert.
+    <div>Kohlhäuser Strasse 49, 36043 Fulda ·
+      <a href="tel:+4966194149260">0661 94149260</a> ·
+      <a href="https://maps.apple.com/?q=Kohlh%C3%A4user+Strasse+49,+36043+Fulda">Karte</a></div>
+    <div class="facts">Stoßstange <strong>vorne nachlackiert</strong> (Original-Teil)&nbsp;· keine&nbsp;AHK&nbsp;·
+      1&nbsp;Vorbesitzer&nbsp;· 28.650&nbsp;km&nbsp;· EZ&nbsp;06/2023&nbsp;· 🛡&nbsp;24&nbsp;Monate Premium&nbsp;Selection</div>
     <div class="legend">
       <span><i style="background:var(--prio-high)"></i>wichtig</span>
       <span><i style="background:var(--prio-mid)"></i>normal</span>
       <span><i style="background:var(--prio-low)"></i>Kleinkram</span>
+      <span>🛡 Garantie</span>
     </div>
+    <div class="howto">✓&nbsp;erledigt&nbsp;· ⚠&nbsp;auffällig&nbsp;· ⏭&nbsp;überspringen (blendet&nbsp;aus)&nbsp;· ⓘ&nbsp;Details. Gespeichert auf diesem Handy.</div>
   </div>
   <div class="toolbar"><button id="toggle-all"></button></div>
   <div id="sections"></div>
@@ -223,8 +229,7 @@ const SECTIONS = [
     items: [
       ['start', 'Kaltstart: kein Rasseln, Starter dreht sauber', 'Starter-Rückruf betrifft Baujahre 2020–2024.'],
       ['idle', 'Leerlauf ruhig, kein Ruckeln'],
-      ['coolant-before', 'Kühlmittelstand im Ausgleichsbehälter ok', 'Kühlmittelverlust ist die bekannte B48-Schwachstelle.'],
-      ['drip-before', 'Unter der Front keine Tropfen oder Flecken', 'Kühlmittelverlust ist die bekannte B48-Schwachstelle.'],
+      ['coolant-before', 'Kühlmittelstand ok, keine Tropfen unter der Front', 'Kurzer Blick reicht, bei 28.650 km unwahrscheinlich.'],
       ['cc', 'iDrive: keine Check-Control-Meldungen'],
       ['history', 'iDrive: Service-Historie lückenlos (Fahrzeugstatus → Service-Historie)'],
     ],
@@ -243,7 +248,7 @@ const SECTIONS = [
     ],
   },
   {
-    title: '🔍 Rundgang Karosserie & Innenraum',
+    title: '🔍 Rundgang & Innenraum',
     items: [
       ['gaps', 'Spaltmaße Türen und Heckklappe gleichmäßig'],
       ['panels', 'Alle Teile im Streiflicht gleicher Farbton, keine Farbläufer'],
@@ -252,6 +257,7 @@ const SECTIONS = [
       ['tire-age', 'Reifen: DOT-Alter, gleiche Marke rundum'],
       ['tire-wear', 'Reifen gleichmäßig abgefahren (kein Innen-/Außenverschleiß)', 'Einseitiger Verschleiß deutet auf verstellte oder verzogene Achse.'],
       ['rims', 'Felgen ohne Bordsteinschäden'],
+      ['brake-discs', 'Bremsscheiben durch die Felgen: keine Rostränder, keine tiefen Riefen', 'Standzeit beim Händler setzt Scheiben zu. Verschleißteil, keine Garantie.'],
       ['interior', 'Lenkrad, Fahrersitz, Schalthebel passen zu 28.650 km'],
       ['mirrors', 'Außenspiegel klappen beim Abschließen ein', 'Bekannter G20/G21-Kleinkram.'],
     ],
@@ -283,9 +289,7 @@ const SECTIONS = [
   {
     title: '💧 Nach der Fahrt',
     items: [
-      ['smell', 'Motorhaube auf: kein Öl- oder süßlicher Kühlmittelgeruch'],
-      ['coolant-after', 'Kühlmittelstand unverändert'],
-      ['drip-after', 'Nach ein paar Minuten Stand: keine Tropfen unter dem Auto'],
+      ['smell', 'Motorhaube auf: kein Öl- oder Kühlmittelgeruch, keine frischen Tropfen'],
     ],
   },
   {
@@ -313,6 +317,7 @@ const SRC = {
   zf: ['hh-autos.com: BMW 3er G20 – wo B48 und ZF-8HP teuer werden', 'https://hh-autos.com/bmw-3er-g20-gebrauchtwagen-schwachstellen/'],
   ps: ['BMW: Premium Selection Garantie', 'https://www.bmw.de/de/mehr-bmw/bmw-gebrauchte/garantie.html'],
   psDealer: ['Rhein BMW: Leistungen BMW Premium Selection', 'https://www.rhein-bmw.de/gebrauchtwagen/leistungen/bmw-premium-selection/'],
+  psBrochure: ['AHG BMW: Garantiebroschüre Premium Selection (PDF)', 'https://www.ahg.bmw/export/shared/pdf/2021-BPS-Preisliste/Garantiebroschuere_2021.pdf'],
   ra: ['rechtsanwalt.com: Haftet der Händler für unbekannte Unfallschäden?', 'https://www.rechtsanwalt.com/news/unfallschaeden-unbekannt-auto-haftung/'],
   anwalt: ['anwalt.de: Wenn der Händler einen Unfallschaden verschweigt', 'https://www.anwalt.de/rechtstipps/wenn-der-haendler-beim-autokauf-einen-unfallschaden-verschweigt-236769.html'],
   hanke: ['Hanke.Legal: Unfallschaden verschwiegen – Schadensersatz', 'https://hanke.legal/blog/gebrauchtwagenkauf-unfallschaden-verschwiegen-schadensersatz'],
@@ -329,8 +334,7 @@ const INFO = {
 
   start: [['Beim Kaltstart auf Geräusche achten: Ein Starter, der hakt, kratzt oder mehrere Anläufe braucht, passt zum bekannten Starter-Rückruf.', 'Ein kurzes Hochdrehen direkt nach dem Start ist normal. Danach sollte der Motor ruhig und gleichmäßig laufen.'], ['g2x']],
   idle: [['Im Stand die Drehzahl beobachten: ruhig, ohne Vibrationen in Lenkrad oder Sitz. Klima an- und ausschalten, die Drehzahl reagiert kurz und wird wieder ruhig.', 'Unrunder Lauf kann bei Direkteinspritzern auf Ablagerungen an den Einlassventilen deuten. Bei 28.650 km ist das eher unwahrscheinlich.'], ['b48']],
-  'coolant-before': [['Kühlmittelverlust ist die meistgenannte Schwachstelle des B48-Motors: undichte Kühlmittelschläuche oder ein gerissenes Ölfiltergehäuse.', 'Motorhaube auf, Ausgleichsbehälter ansehen: Der Stand liegt zwischen den Markierungen. Den Deckel bei warmem Motor geschlossen lassen.'], ['b48', 'g2x']],
-  'drip-before': [['Auf dem Stellplatz nach Flecken schauen und mit der Handy-Taschenlampe unter die Front leuchten.', 'Die Farbe verrät die Quelle: grünlich oder bläulich und süßlich riechend ist Kühlmittel, braun bis schwarz ist Motoröl, rötlich ist Getriebeöl. Klares Wasser ist Kondenswasser der Klimaanlage und normal.'], ['b48']],
+  'coolant-before': [['Kühlmittelverlust ist die meistgenannte Schwachstelle des B48-Motors: undichte Kühlmittelschläuche oder ein gerissenes Ölfiltergehäuse.', 'Bei 28.650 km ist das unwahrscheinlich: Das Schlauchproblem betrifft vor allem B48 bis etwa Baujahr 2017, und das Ölfiltergehäuse altert über viele Wärmezyklen.', 'Motorhaube auf, Ausgleichsbehälter ansehen: Der Stand liegt zwischen den Markierungen. Dazu mit der Handy-Taschenlampe unter die Front leuchten. Grünlich oder bläulich ist Kühlmittel, braun bis schwarz Motoröl. Klares Wasser ist Kondenswasser der Klimaanlage und normal.'], ['b48', 'g2x']],
   cc: [['Check-Control-Meldungen sind aktive Hinweise des Fahrzeugs, etwa zu Sensoren, Ölstand oder Reifendruck. Du findest sie im iDrive unter Fahrzeugstatus.', 'Alles, was dort steht, vor dem Kauf erklären oder beheben lassen.'], []],
   history: [['BMW speichert die Wartungen digital im Fahrzeug und im Händlersystem. Im iDrive unter Fahrzeugstatus → Service-Historie stehen die Einträge mit Datum und Kilometerstand.', 'Prüfe, ob die Kilometerstände plausibel steigen und ob Ölservice und Fahrzeugcheck in den vorgesehenen Abständen gemacht wurden.'], ['adac']],
 
@@ -349,6 +353,7 @@ const INFO = {
   trunk: [['Kofferraumboden hochheben und in die Mulde schauen. Falten im Blech, nicht werkseitige Schweißnähte oder frische, unregelmäßige Dichtmasse deuten auf einen Heckschaden.', 'Auch die Kanten unter den Gummidichtungen der Heckklappe ansehen.'], ['as24', 'az']],
   'tire-age': [['Die DOT-Nummer auf der Reifenflanke endet mit vier Ziffern für Woche und Jahr der Herstellung, zum Beispiel 2322 = Woche 23 im Jahr 2022.', 'Auf einer Achse sollten gleiche Reifen sein, am besten rundum. Unterschiedliche Marken oder deutlich unterschiedliches Alter zeigen, dass einzeln ersetzt wurde.', 'Im Inserat sind nur Sommerreifen genannt, also nach Winterrädern fragen.'], ['adac']],
   'tire-wear': [['Profiltiefe innen, mittig und außen vergleichen. Gleichmäßiger Abrieb ist normal.', 'Stärkerer Verschleiß nur innen oder außen deutet auf eine verstellte Spur oder einen Sturzfehler. Tritt das nur an einem Rad auf, kann ein Anprall die Ursache sein, im schlimmsten Fall mit verzogenem Fahrwerksteil.'], ['adac']],
+  'brake-discs': [['Durch die Speichen der Felgen auf die Bremsscheiben schauen. Ein schmaler Rostrand außen ist normal. Fleckiger Rost auf der Reibfläche oder tiefe Riefen sind ein Befund.', 'Bei wenig Laufleistung und Standzeit beim Händler setzen Scheiben gern Rost an und laufen danach ungleich. Das ist bei jungen Autos häufiger als bei alten.', 'Bremsscheiben und -beläge sind Verschleißteile und damit üblicherweise nicht durch die Garantie gedeckt. Wenn es beim Bremsen rubbelt, das vor der Übergabe ansprechen.'], []],
   rims: [['Bordsteinschäden an Felgen sind vor allem optisch und ein Verhandlungsargument. Tiefe Kerben oder Risse sind ein Sicherheitsthema.', 'Eine einzelne stark beschädigte Felge kann auf einen harten Anprall hindeuten. Dann besonders auf Geradeauslauf und Lenkradstellung achten.'], []],
   interior: [['Bei 28.650 km zeigen Lenkrad, Fahrersitzwange, Wählhebel und Pedale kaum Gebrauchsspuren.', 'Deutlich abgegriffene Stellen passen nicht zur Laufleistung. Dann die Kilometerstände in der Service-Historie genau vergleichen.'], ['adac']],
   mirrors: [['Beim G20/G21 wird gelegentlich berichtet, dass die Außenspiegel beim Abschließen nicht einklappen.', 'Einmal abschließen und schauen, ob beide Spiegel einklappen und beim Aufschließen wieder ausklappen. Klappt keiner, ist die Funktion vielleicht nur im iDrive abgeschaltet. Dort nachsehen, bevor du es als Mangel notierst.'], ['g2x']],
@@ -373,13 +378,11 @@ const INFO = {
   epb: [['Am Hang anhalten, die elektrische Parkbremse per Taste ziehen und die Fußbremse lösen: Das Auto bleibt stehen. Beim Anfahren löst sie sich automatisch und ohne Ruckeln.', 'Laut TÜV-Report fällt die Feststellbremse beim 3er etwas häufiger auf. Auf Fehlermeldungen dazu achten.'], ['g2x', 'autobild']],
   heating: [['Sitzheizung auf beiden Seiten auf höchste Stufe stellen. Nach ein paar Minuten sind Sitzfläche und Lehne fühlbar warm.', 'Einfacher Test, der vor Ort leicht vergessen wird.'], []],
 
-  smell: [['Nach der Fahrt ist der Motor warm, und Undichtigkeiten riechen jetzt am deutlichsten. Motorhaube öffnen und riechen.', 'Süßlicher Geruch ist Kühlmittel, verbrannter Geruch ist meist Öl auf heißen Teilen. Beides passt zu den bekannten B48-Schwachstellen Kühlmittelschlauch und Ölfiltergehäuse.'], ['b48']],
-  'coolant-after': [['Den Ausgleichsbehälter nach der Fahrt nochmal ansehen, Deckel dabei geschlossen lassen. Warm steht das Kühlmittel etwas höher, unter die Markierung fällt es nicht.', 'Ein spürbar niedrigerer Stand nach kurzer Fahrt ist ein klares Warnsignal.'], ['b48']],
-  'drip-after': [['Das Auto nach der Fahrt ein paar Minuten auf trockenem Boden stehen lassen und dann darunter schauen.', 'Wassertropfen unter der Fahrzeugmitte sind Kondenswasser der Klimaanlage und normal. Für alles andere gelten die Farben aus dem ersten Tropftest.'], ['b48']],
+  smell: [['Nach der Fahrt ist der Motor warm, und Undichtigkeiten riechen jetzt am deutlichsten. Motorhaube öffnen und riechen, dann kurz unter das Auto schauen.', 'Süßlicher Geruch ist Kühlmittel, verbrannter Geruch meist Öl auf heißen Teilen. Bei dieser Laufleistung ist beides unwahrscheinlich, der Blick dauert aber nur Sekunden.'], ['b48']],
 
   zb2: [['In der Zulassungsbescheinigung Teil II (Fahrzeugbrief) steht, wie viele Halter das Auto hatte. Laut Inserat ist es einer.', 'Frag, wer das war: Privatperson, Firma, Leasing oder Autovermietung. Leasing-Rückläufer sind meist gut gewartet, Mietwagen hatten viele Fahrer.'], ['adac']],
   hu: [['Die HU ist laut Inserat neu. Im Prüfbericht stehen auch geringe Mängel und Hinweise, mit denen das Auto trotzdem bestanden hat.', 'So siehst du, ob der Prüfer etwas an Bremsen, Fahrwerk oder Beleuchtung angemerkt hat.'], []],
-  warranty: [['Die BMW Premium Selection Garantie läuft 24 Monate und deckt mechanische und elektrische Teile mit 100 % Lohn- und Materialkosten ohne Selbstbeteiligung. Sie gilt europaweit, ist an das Fahrzeug gebunden und geht bei einem Weiterverkauf auf den neuen Besitzer über.', 'Lass dir die Garantieurkunde mit Startdatum geben. Für Unfallschäden gilt die gesetzliche Gewährleistung des Händlers, die Garantie deckt sie nicht ab.'], ['ps', 'psDealer']],
+  warranty: [['Die BMW Premium Selection Garantie läuft 24 Monate und deckt mechanische und elektrische Teile mit 100 % Lohn- und Materialkosten ohne Selbstbeteiligung. Sie gilt europaweit, ist an das Fahrzeug gebunden und geht bei einem Weiterverkauf auf den neuen Besitzer über.', 'Im Garantiefall hilft jeder BMW-Vertragshändler, du musst dafür nicht nach Fulda.', 'Bei Autos über 3 Jahren startet sie mit der Übergabe. Dieses Auto ist seit 06/2023 zugelassen, die 24 Monate sollten also ab Übergabe laufen. Das Startdatum auf der Urkunde prüfen und nach den Bedingungen fragen, etwa zur Wartung.', 'Unfallschäden, Lack und Verschleißteile deckt sie nicht ab. Dafür gilt die gesetzliche Gewährleistung, und die nur gegenüber dem Verkäufer in Fulda.'], ['ps', 'psBrochure', 'psDealer']],
   contract: [['Ein gewerblicher Händler haftet für Unfallschäden auch dann, wenn er sie selbst nicht kannte. Entscheidend ist, was im Vertrag steht.', 'Mit „ausschließlich Lackierung“ und dem Zusatz „darüber hinaus keine weiteren Unfall- oder Lackschäden“ ist der Zustand vereinbart. Taucht später ein größerer Schaden auf, kannst du Nachbesserung, Minderung oder Rücktritt verlangen.'], ['ra', 'anwalt', 'hanke']],
   deal: [['Eine Nachlackierung mindert den Wert nur wenig. Als Argument reicht sie eher für eine Zugabe als für einen großen Nachlass.', 'Sinnvolle Zugaben: Winterräder auf Felgen, die AHK-Nachrüstung zum Vorzugspreis (im Effektivpreis sind 1.600 € angesetzt), ein voller Tank oder neue Wischerblätter.'], []],
   keys: [['Bei der Übergabe prüfen: zwei Funkschlüssel (beide ausprobieren), Bordmappe, Warndreieck, Verbandkasten mit gültigem Haltbarkeitsdatum, Warnweste und Pannenset.', 'Ein fehlender Zweitschlüssel kostet bei BMW mehrere Hundert Euro. Das vor der Unterschrift klären.'], ['adac']],
@@ -395,7 +398,10 @@ function openInfo(id, title) {
   document.getElementById('info-title').textContent = title;
   const body = document.getElementById('info-body');
   body.innerHTML = '';
-  for (const t of paras) {
+  const extra = WARRANTY.includes(id)
+    ? ['🛡 Deckt die Premium-Selection-Garantie ab. Fällt dir heute etwas auf, vor der Übergabe beheben lassen.']
+    : [];
+  for (const t of [...paras, ...extra]) {
     const p = document.createElement('p');
     p.textContent = t;
     body.append(p);
@@ -423,18 +429,23 @@ function openInfo(id, title) {
     body.append(p);
   }
   dlg.showModal();
-  body.scrollTop = 0;
+  dlg.scrollTop = 0;
 }
 
-// How much a finding would matter for the purchase decision. Anything not
-// listed is normal. High: accident history, the repainted front and its
-// radar, the known B48 coolant weakness, the drivetrain and the contract.
+// Weighted for this car: what the warranty leaves uncovered (the repainted
+// front, paint, wear parts, papers) and what is realistic at 28.650 km.
+// Anything not listed is normal.
 const PRIO = {
-  high: ['cold', 'invoice', 'calib', 'faults', 'recalls', 'start', 'coolant-before', 'drip-before', 'history',
-    'bumper-paint', 'bumper-fit', 'gaps', 'panels', 'trunk', 'gearbox', 'reverse', 'straight', 'brake',
-    'acc-follow', 'acc-msg', 'acc-lane', 'smell', 'coolant-after', 'zb2', 'warranty', 'contract'],
-  low: ['grille', 'rims', 'mirrors', 'rattle', 'camera', 'lights', 'heating', 'deal'],
+  high: ['invoice', 'calib', 'faults', 'recalls', 'history', 'bumper-paint', 'bumper-fit', 'hood-paint',
+    'gaps', 'panels', 'trunk', 'tire-wear', 'brake-discs', 'brake', 'acc-follow', 'acc-msg', 'acc-lane',
+    'zb2', 'warranty', 'contract'],
+  low: ['idle', 'coolant-before', 'smell', 'grille', 'rims', 'mirrors', 'rattle', 'camera', 'lights',
+    'ac', 'epb', 'heating', 'deal'],
 };
+// Mechanical and electrical parts the Premium Selection warranty covers.
+// Still worth testing, so the dealer fixes a finding before handover.
+const WARRANTY = ['start', 'idle', 'coolant-before', 'smell', 'gearbox', 'reverse', 'pdc-wall', 'pdc-corner',
+  'camera', 'blindspot', 'ac', 'lights', 'epb', 'heating', 'mirrors'];
 const prioOf = (id) => (PRIO.high.includes(id) ? 'high' : PRIO.low.includes(id) ? 'low' : 'mid');
 
 const CONTRACT_TEXT = 'Stoßfänger vorne nachlackiert (ausschließlich Lackierung, Original-Teil) lt. Rechnung vom [Datum]. Darüber hinaus keine weiteren Unfall- oder Lackschäden.';
@@ -445,6 +456,11 @@ const KEY = 'car-compare/probefahrt-460777203';
 
 let store = {};
 try { store = JSON.parse(localStorage.getItem(KEY)) || {}; } catch { store = {}; }
+// Skip used to be a third state next to a separate hide toggle. Both now mean
+// the same thing, so an old skip becomes hidden and keeps its note.
+for (const entry of Object.values(store)) {
+  if (entry && entry.state === 'skip') { entry.hidden = true; delete entry.state; }
+}
 const save = () => localStorage.setItem(KEY, JSON.stringify(store));
 
 let filter = 'all';
@@ -460,7 +476,7 @@ function render() {
     det.addEventListener('toggle', () => { store[openKey] = det.open; save(); renderToggleAll(); });
 
     const summary = document.createElement('summary');
-    // Hidden items leave the count entirely, so a section is complete once
+    // Skipped items leave the count entirely, so a section is complete once
     // everything still relevant has been handled.
     const relevant = section.items.filter(([id]) => !store[id]?.hidden);
     const handled = relevant.filter(([id]) => store[id]?.state).length;
@@ -473,8 +489,7 @@ function render() {
     summary.innerHTML = `<span class="title"><span class="chev">›</span>${section.title}</span>` +
       `<span class="n">${badge}${handled}/${relevant.length}</span>` +
       `<span class="sbar"><span class="b-done" style="width:${pctOf(cnt('done'))}"></span>` +
-      `<span class="b-problem" style="width:${pctOf(problems)}"></span>` +
-      `<span class="b-skip" style="width:${pctOf(cnt('skip'))}"></span></span>`;
+      `<span class="b-problem" style="width:${pctOf(problems)}"></span></span>`;
     det.append(summary);
 
     let shown = 0;
@@ -487,9 +502,10 @@ function render() {
 
       const el = document.createElement('div');
       el.className = 'item';
-      el.dataset.state = entry.state || '';
+      el.dataset.state = entry.hidden ? 'skip' : entry.state || '';
       el.dataset.prio = prioOf(id);
-      el.innerHTML = `<div class="head"><div class="text"></div></div>${why ? '<div class="why"></div>' : ''}`;
+      const hint = why || (WARRANTY.includes(id) ? 'Garantie' : '');
+      el.innerHTML = `<div class="head"><div class="text"></div></div>${hint ? '<div class="why"></div>' : ''}`;
       el.querySelector('.text').textContent = text;
       const icons = document.createElement('div');
       icons.className = 'icons';
@@ -501,20 +517,8 @@ function render() {
         ib.addEventListener('click', () => openInfo(id, text));
         icons.append(ib);
       }
-      // ✕ hides and ↺ restores, the same pair the comparison table uses.
-      const hb = document.createElement('button');
-      hb.className = 'hide-btn';
-      hb.textContent = entry.hidden ? '↺' : '✕';
-      hb.setAttribute('aria-label', entry.hidden ? 'Wieder einblenden' : 'Ausblenden');
-      hb.addEventListener('click', () => {
-        const next = { ...(store[id] || {}), hidden: !entry.hidden || undefined };
-        if (!next.state && !next.note && !next.hidden) delete store[id]; else store[id] = next;
-        save();
-        render();
-      });
-      icons.append(hb);
       el.querySelector('.head').append(icons);
-      if (why) el.querySelector('.why').textContent = why;
+      if (hint) el.querySelector('.why').textContent = (WARRANTY.includes(id) ? '🛡 ' : '') + hint;
 
       if (extra === 'contract') {
         const q = document.createElement('div');
@@ -536,10 +540,13 @@ function render() {
         const b = document.createElement('button');
         b.dataset.set = state;
         b.textContent = label;
-        b.setAttribute('aria-pressed', String(entry.state === state));
+        b.setAttribute('aria-pressed', String(state === 'skip' ? Boolean(entry.hidden) : entry.state === state));
         b.addEventListener('click', () => {
           const current = store[id] || {};
-          const next = { ...current, state: current.state === state ? undefined : state };
+          // Skip toggles the item out of the list; ✓ and ⚠ bring it back.
+          const next = state === 'skip'
+            ? { ...current, state: undefined, hidden: !current.hidden || undefined }
+            : { ...current, state: current.state === state ? undefined : state, hidden: undefined };
           if (!next.state && !next.note && !next.hidden) delete store[id]; else store[id] = next;
           save();
           render();
@@ -567,7 +574,7 @@ function render() {
   if (!root.children.length) {
     const empty = document.createElement('div');
     empty.className = 'empty';
-    empty.textContent = { open: 'Nichts mehr offen.', problem: 'Nichts als auffällig markiert.', hidden: 'Nichts ausgeblendet.' }[filter] || 'Alle Punkte sind ausgeblendet.';
+    empty.textContent = { open: 'Nichts mehr offen.', problem: 'Nichts als auffällig markiert.', hidden: 'Nichts übersprungen.' }[filter] || 'Alle Punkte sind übersprungen.';
     root.append(empty);
   }
   renderProgress();
@@ -577,18 +584,17 @@ function render() {
 function renderProgress() {
   const all = SECTIONS.flatMap((s) => s.items.map(([id]) => id));
   const ids = all.filter((id) => !store[id]?.hidden);
-  const hidden = all.length - ids.length;
-  document.getElementById('hidden-filter').textContent = hidden ? `Ausgeblendet (${hidden})` : 'Ausgeblendet';
+  const skip = all.length - ids.length;
+  document.getElementById('hidden-filter').textContent = skip ? `Übersprungen (${skip})` : 'Übersprungen';
   const count = (st) => ids.filter((id) => store[id]?.state === st).length;
-  const done = count('done'), problem = count('problem'), skip = count('skip');
+  const done = count('done'), problem = count('problem');
   const pct = (n) => `${ids.length ? (n / ids.length) * 100 : 0}%`;
   document.getElementById('bar').innerHTML =
     `<span class="b-done" style="width:${pct(done)}"></span>` +
-    `<span class="b-problem" style="width:${pct(problem)}"></span>` +
-    `<span class="b-skip" style="width:${pct(skip)}"></span>`;
+    `<span class="b-problem" style="width:${pct(problem)}"></span>`;
   document.getElementById('counts').innerHTML =
     `<span>✓ ${done}</span><span>⚠ ${problem}</span><span>⏭ ${skip}</span>` +
-    `<span>offen ${ids.length - done - problem - skip}</span>`;
+    `<span>offen ${ids.length - done - problem}</span>`;
 }
 
 document.querySelectorAll('.filter button').forEach((b) => b.addEventListener('click', () => {
@@ -610,7 +616,7 @@ document.getElementById('toggle-all').addEventListener('click', () => {
 });
 
 document.getElementById('reset').addEventListener('click', () => {
-  if (!confirm('Alle Häkchen, Notizen und ausgeblendeten Punkte zurücksetzen?')) return;
+  if (!confirm('Alle Häkchen, Notizen und übersprungenen Punkte zurücksetzen?')) return;
   store = {};
   save();
   render();
