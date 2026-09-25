@@ -102,11 +102,14 @@
   .quote { font-size: 14px; background: var(--bg); border-left: 3px solid var(--accent); padding: 8px 10px; margin: 8px 0 0; border-radius: 4px; }
   .copy { margin-top: 8px; font: inherit; font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
   .head { display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
-  .info-btn {
+  .icons { display: flex; gap: 6px; flex: none; }
+  .info-btn, .hide-btn {
     flex: none; width: 30px; height: 30px; border-radius: 50%; padding: 0;
     font: inherit; font-size: 15px; font-weight: 600; font-style: italic; font-family: Georgia, serif;
     border: 1px solid var(--line); background: var(--bg); color: var(--accent);
   }
+  .hide-btn { font-family: inherit; font-style: normal; font-weight: 400; color: var(--muted); }
+  .empty { color: var(--muted); font-size: 14px; text-align: center; padding: 24px 12px; }
   dialog {
     width: min(560px, calc(100vw - 24px)); max-height: 85vh; padding: 0;
     border: 1px solid var(--line); border-radius: 14px; background: var(--panel); color: var(--ink);
@@ -143,6 +146,7 @@
     <button data-filter="all" aria-pressed="true">Alle</button>
     <button data-filter="open" aria-pressed="false">Offen</button>
     <button data-filter="problem" aria-pressed="false">Auffällig</button>
+    <button data-filter="hidden" aria-pressed="false" id="hidden-filter">Ausgeblendet</button>
   </div>
 </header>
 
@@ -158,7 +162,7 @@
 </main>
 
 <footer>
-  <button id="reset">Alle Häkchen zurücksetzen</button>
+  <button id="reset">Alles zurücksetzen</button>
 </footer>
 
 <dialog id="info">
@@ -412,13 +416,17 @@ function render() {
     det.addEventListener('toggle', () => { store[openKey] = det.open; save(); });
 
     const summary = document.createElement('summary');
-    const handled = section.items.filter(([id]) => store[id]?.state).length;
-    summary.innerHTML = `<span>${section.title}</span><span class="n">${handled}/${section.items.length}</span>`;
+    // Hidden items leave the count entirely, so a section is complete once
+    // everything still relevant has been handled.
+    const relevant = section.items.filter(([id]) => !store[id]?.hidden);
+    const handled = relevant.filter(([id]) => store[id]?.state).length;
+    summary.innerHTML = `<span>${section.title}</span><span class="n">${handled}/${relevant.length}</span>`;
     det.append(summary);
 
     let shown = 0;
     for (const [id, text, why, extra] of section.items) {
       const entry = store[id] || {};
+      if ((filter === 'hidden') !== Boolean(entry.hidden)) continue;
       if (filter === 'open' && entry.state) continue;
       if (filter === 'problem' && entry.state !== 'problem') continue;
       shown++;
@@ -428,14 +436,29 @@ function render() {
       el.dataset.state = entry.state || '';
       el.innerHTML = `<div class="head"><div class="text"></div></div>${why ? '<div class="why"></div>' : ''}`;
       el.querySelector('.text').textContent = text;
+      const icons = document.createElement('div');
+      icons.className = 'icons';
       if (INFO[id]) {
         const ib = document.createElement('button');
         ib.className = 'info-btn';
         ib.textContent = 'i';
         ib.setAttribute('aria-label', 'Mehr Infos');
         ib.addEventListener('click', () => openInfo(id, text));
-        el.querySelector('.head').append(ib);
+        icons.append(ib);
       }
+      // ✕ hides and ↺ restores, the same pair the comparison table uses.
+      const hb = document.createElement('button');
+      hb.className = 'hide-btn';
+      hb.textContent = entry.hidden ? '↺' : '✕';
+      hb.setAttribute('aria-label', entry.hidden ? 'Wieder einblenden' : 'Ausblenden');
+      hb.addEventListener('click', () => {
+        const next = { ...(store[id] || {}), hidden: !entry.hidden || undefined };
+        if (!next.state && !next.note && !next.hidden) delete store[id]; else store[id] = next;
+        save();
+        render();
+      });
+      icons.append(hb);
+      el.querySelector('.head').append(icons);
       if (why) el.querySelector('.why').textContent = why;
 
       if (extra === 'contract') {
@@ -462,7 +485,7 @@ function render() {
         b.addEventListener('click', () => {
           const current = store[id] || {};
           const next = { ...current, state: current.state === state ? undefined : state };
-          if (!next.state && !next.note) delete store[id]; else store[id] = next;
+          if (!next.state && !next.note && !next.hidden) delete store[id]; else store[id] = next;
           save();
           render();
         });
@@ -484,16 +507,25 @@ function render() {
       }
       det.append(el);
     }
-    if (shown || filter === 'all') root.append(det);
+    if (shown) root.append(det);
+  }
+  if (!root.children.length) {
+    const empty = document.createElement('div');
+    empty.className = 'empty';
+    empty.textContent = { open: 'Nichts mehr offen.', problem: 'Nichts als auffällig markiert.', hidden: 'Nichts ausgeblendet.' }[filter] || 'Alle Punkte sind ausgeblendet.';
+    root.append(empty);
   }
   renderProgress();
 }
 
 function renderProgress() {
-  const ids = SECTIONS.flatMap((s) => s.items.map(([id]) => id));
+  const all = SECTIONS.flatMap((s) => s.items.map(([id]) => id));
+  const ids = all.filter((id) => !store[id]?.hidden);
+  const hidden = all.length - ids.length;
+  document.getElementById('hidden-filter').textContent = hidden ? `Ausgeblendet (${hidden})` : 'Ausgeblendet';
   const count = (st) => ids.filter((id) => store[id]?.state === st).length;
   const done = count('done'), problem = count('problem'), skip = count('skip');
-  const pct = (n) => `${(n / ids.length) * 100}%`;
+  const pct = (n) => `${ids.length ? (n / ids.length) * 100 : 0}%`;
   document.getElementById('bar').innerHTML =
     `<span class="b-done" style="width:${pct(done)}"></span>` +
     `<span class="b-problem" style="width:${pct(problem)}"></span>` +
@@ -510,7 +542,7 @@ document.querySelectorAll('.filter button').forEach((b) => b.addEventListener('c
 }));
 
 document.getElementById('reset').addEventListener('click', () => {
-  if (!confirm('Alle Häkchen und Notizen löschen?')) return;
+  if (!confirm('Alle Häkchen, Notizen und ausgeblendeten Punkte zurücksetzen?')) return;
   store = {};
   save();
   render();
