@@ -110,7 +110,8 @@ button:disabled { opacity: 0.45; cursor: default; border-color: var(--line); }
   box-shadow: 0 10px 28px rgb(0 0 0 / 0.16);
 }
 /* Full-width rows rather than pills: this is a list of commands, not a toolbar. */
-.menu-items button {
+.menu-items button,
+.menu-items a {
   display: flex;
   gap: 8px;
   align-items: baseline;
@@ -121,7 +122,9 @@ button:disabled { opacity: 0.45; cursor: default; border-color: var(--line); }
   text-align: left;
   white-space: nowrap;
 }
-.menu-items button:hover:not(:disabled) { background: var(--accent-soft); }
+.menu-items button:hover:not(:disabled),
+.menu-items a:hover { background: var(--accent-soft); }
+.menu-items a { color: inherit; text-decoration: none; }
 
 .flash {
   margin: 0;

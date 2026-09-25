@@ -756,6 +756,9 @@ export default function App() {
           <button onClick={() => fileInput.current?.click()}>
             JSON-Import <span className="muted">ersetzt die Einstellungen</span>
           </button>
+          <a href="/checkliste.html">
+            Probefahrt-Checkliste <span className="muted">#48, fürs Handy</span>
+          </a>
         </Menu>
       </header>
 
