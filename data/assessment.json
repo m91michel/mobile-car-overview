@@ -204,6 +204,12 @@
         "interior": "Teilleder, Schwarz"
       },
       "note": "Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat)."
+    },
+    "47161563424160": {
+      "factOverrides": {
+        "interior": "Teilleder, Schwarz"
+      },
+      "note": "Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat)."
     }
   }
 }

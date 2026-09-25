@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T06:53:27.118Z",
+  "updatedAt": "2026-09-25T06:56:58.273Z",
   "unavailable": {
     "424825114": "2026-09-20T07:59:59.444Z",
     "438388660": "2026-09-20T07:59:59.444Z",
@@ -23935,8 +23935,10 @@
         },
         "interior": {
           "label": "Innenausstattung",
-          "value": "Stoff, Schwarz",
-          "group": "vehicle"
+          "value": "Teilleder, Schwarz",
+          "group": "vehicle",
+          "listedValue": "Stoff, Schwarz",
+          "corrected": true
         },
         "cylinder": {
           "label": "Zylinder",
@@ -24123,7 +24125,7 @@
       "ref": 65,
       "assessment": {
         "verdict": null,
-        "note": null,
+        "note": "Sitze laut Nutzer Teilleder (nicht Stoff, wie im Inserat).",
         "retrofit": [
           {
             "key": "ahk",
