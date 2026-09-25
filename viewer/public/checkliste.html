@@ -122,7 +122,7 @@
     Kohlhäuser Strasse 49, 36043 Fulda ·
     <a href="tel:+4966194149260">0661 94149260</a> ·
     <a href="https://maps.apple.com/?q=Kohlh%C3%A4user+Strasse+49,+36043+Fulda">Karte</a><br>
-    Bekannt: Stoßstange <strong>vorne</strong> repariert, keine AHK, 1 Vorbesitzer, 28.650 km, EZ 06/2023.
+    Bekannt: Stoßstange <strong>vorne nachlackiert</strong> (Original-Teil, nur Lack), keine AHK, 1 Vorbesitzer, 28.650 km, EZ 06/2023.
     Tippe ✓ erledigt, ⚠ auffällig (mit Notiz) oder ⏭ überspringen. Alles wird auf diesem Handy gespeichert.
   </div>
   <div id="sections"></div>
@@ -140,12 +140,11 @@ const SECTIONS = [
     title: 'Beim Verkäufer, vor der Fahrt',
     items: [
       ['cold', 'Motor soll bis zur Probefahrt kalt bleiben', 'Ein warmgelaufener Motor verdeckt Kaltstart-Geräusche. Am besten schon am Telefon sagen.'],
-      ['invoice', 'Reparaturrechnung Stoßstange vorne mit Teileliste zeigen lassen', 'Nur Verkleidung = Bagatelle. Stehen Querträger, Pralldämpfer, Kühler oder Scheinwerfer drauf, war der Aufprall stärker.'],
-      ['calib', 'Nachweis Radar-Kalibrierung (ACC-Sensor sitzt vorne in der Stoßstange)', 'Kalibrierprotokoll oder Position „Radarsensor kalibriert“ auf der Rechnung.'],
+      ['invoice', 'Lackierrechnung Stoßstange vorne zeigen lassen: Warum wurde lackiert?', 'Kratzer oder Steinschläge = Bagatelle. Steht mehr als Lack drauf (Halter, Clips, Sensoren), nachfragen.'],
+      ['calib', 'Fragen: Wurde nach der Lackierung die Radarfunktion geprüft?', 'Der ACC-Radar sitzt hinter der Stoßstange. Zu dicker Lack oder ein verstellter Halter nach dem Ab- und Anbauen kann ihn stören.'],
       ['faults', 'Fehlerspeicher auslesen und ausdrucken lassen', 'Kein Eintrag zu Radar, PDC, Licht oder Kühlung.'],
       ['recalls', 'Rückrufe per FIN erledigt? (Starter, Gurtstraffer)', 'Bekannte G20/G21-Rückrufe; BMW-Händler sieht das im System.'],
       ['ps-report', 'Protokoll des Premium-Selection-360°-Checks zeigen lassen'],
-      ['lift', 'Fragen: Kurz auf die Hebebühne? (Front von unten ansehen)', 'Lehnt der Händler ab, ist das auch eine Information.'],
     ],
   },
   {
@@ -154,25 +153,22 @@ const SECTIONS = [
       ['start', 'Kaltstart: kein Rasseln, Starter dreht sauber', 'Starter-Rückruf betrifft Baujahre 2020–2024.'],
       ['idle', 'Leerlauf ruhig, kein Ruckeln'],
       ['coolant-before', 'Kühlmittelstand im Ausgleichsbehälter ok', 'Kühlmittelverlust ist die bekannte B48-Schwachstelle.'],
-      ['drip-before', 'Unter der Front keine Tropfen oder Flecken', 'Kühler und Klimakondensator sitzen direkt hinter der Stoßstange.'],
+      ['drip-before', 'Unter der Front keine Tropfen oder Flecken', 'Kühlmittelverlust ist die bekannte B48-Schwachstelle.'],
       ['cc', 'iDrive: keine Check-Control-Meldungen'],
       ['history', 'iDrive: Service-Historie lückenlos (Fahrzeugstatus → Service-Historie)'],
     ],
   },
   {
-    title: 'Front-Schaden (Stoßstange vorne)',
+    title: 'Front (Stoßstange nachlackiert)',
     items: [
-      ['hl-flush', 'Beide Scheinwerfer bündig, gleicher Spalt zu Stoßstange und Haube'],
-      ['hl-firm', 'Scheinwerfer fest: leicht draufdrücken, nichts gibt nach', 'Bei Reparaturen brechen gern die Befestigungslaschen.'],
-      ['hl-age', 'Beide Scheinwerfer gleich alt (keiner klarer/neuer)', 'Ein getauschter Scheinwerfer gehört auf die Rechnung.'],
+      ['bumper-paint', 'Lack der Stoßstange: gleicher Farbton wie Haube und Kotflügel, glatt, ohne Staubeinschlüsse oder Läufer', 'Im Streiflicht und schräg von der Seite ansehen. Schwarz zeigt jede Abweichung.'],
+      ['bumper-fit', 'Stoßstange sitzt bündig: gleicher Spalt zu Scheinwerfern und Kotflügeln, links wie rechts', 'Zum Lackieren wird die Stoßstange meist abgebaut. Beim Wiederanbau bleiben gern Clips locker.'],
       ['hood-paint', 'Haube und Kotflügel im Streiflicht gleicher Farbton wie Türen', 'Schwarz zeigt Orangenhaut und Farbunterschiede deutlich.'],
       ['hood-gap', 'Spalt Haube ↔ Kotflügel links und rechts gleich'],
-      ['fender-bolts', 'Kotflügel-Schrauben unter der Haube ohne Werkzeugspuren'],
       ['grille', 'Nieren fest, gerade, gleiches Hochglanzschwarz wie restliche Shadow Line'],
       ['pdc-flush', 'PDC-Sensoren vorne bündig und im Stoßstangen-Farbton'],
       ['overspray', 'Kein Sprühnebel an Gummis, Kennzeichenhalter, Sensoren'],
-      ['underbody', 'Unterbodenverkleidung vorne: keine Risse, alle Clips da'],
-      ['beam', 'Hebebühne: Querträger und Pralldämpfer gerade/original', 'Nur möglich, wenn der Händler das Auto hochnimmt.'],
+      ['underbody', 'Unterkante der Stoßstange: sitzt fest, alle Clips da'],
     ],
   },
   {
@@ -200,14 +196,14 @@ const SECTIONS = [
       ['straight', 'Lenkrad locker halten: fährt geradeaus, Lenkrad steht gerade', 'Zieht er zur Seite: Spur, im schlimmsten Fall Unfallfolge.'],
       ['brake', 'Kräftig bremsen aus 100: zieht nicht, Pedal pulsiert nicht'],
       ['vibration', 'Autobahn bis ca. 160: keine Vibration im Lenkrad'],
-      ['acc-follow', 'ACC: hinter einem Auto herfahren, Abstand bleibt konstant, bremst sauber', 'Wichtigster Test nach dem Front-Schaden.'],
+      ['acc-follow', 'ACC: hinter einem Auto herfahren, Abstand bleibt konstant, bremst sauber', 'Der Radar sitzt hinter der nachlackierten Stoßstange.'],
       ['acc-msg', 'ACC: keine Meldung „eingeschränkt“ oder „Sensor blockiert“'],
-      ['acc-lane', 'ACC reagiert nur aufs eigene Auto vorne, nicht auf die Nebenspur', 'Ein schief sitzender Radar zeigt sich genau hier.'],
+      ['acc-lane', 'ACC reagiert nur aufs eigene Auto vorne, nicht auf die Nebenspur', 'Ein nach dem Wiederanbau leicht verstellter Radar zeigt sich genau hier.'],
       ['pdc-wall', 'Langsam auf Wand zu: PDC vorne reagiert gleichmäßig'],
       ['pdc-corner', 'Pfosten an beiden vorderen Ecken: Ecksensoren reagieren'],
       ['camera', 'Rückfahrkamera: Bild klar und gerade'],
       ['blindspot', 'Totwinkel-Assistent leuchtet beim Überholen im Spiegel'],
-      ['ac', 'Klima auf 16 °C: nach kurzer Zeit wirklich kalt', 'Klimakondensator sitzt hinter der Stoßstange.'],
+      ['ac', 'Klima auf 16 °C: nach kurzer Zeit wirklich kalt'],
       ['lights', 'Adaptives LED-Licht und Fernlichtassistent ohne Fehlermeldung', 'Tagsüber schwer zu testen, im Zweifel überspringen.'],
       ['epb', 'Parkbremse hält am Hang, löst sauber'],
       ['heating', 'Sitzheizung beide Seiten warm'],
@@ -228,13 +224,13 @@ const SECTIONS = [
       ['hu', 'HU-Bericht (HU neu) zeigen lassen'],
       ['warranty', 'Premium-Selection-Garantie schriftlich: 24 Monate, Startdatum'],
       ['contract', 'Vorschaden im Kaufvertrag eingetragen', null, 'contract'],
-      ['deal', 'Verhandelt: Nachlass, Winterräder oder AHK-Nachrüstung', 'Reparierter Vorschaden mindert den Wiederverkaufswert.'],
+      ['deal', 'Verhandelt: Nachlass, Winterräder oder AHK-Nachrüstung', 'Eine Nachlackierung ist nur ein kleines Argument. Eher für Winterräder oder AHK nutzen.'],
       ['keys', 'Zwei Schlüssel, Bordmappe, Warndreieck, Verbandkasten, Pannenkit'],
     ],
   },
 ];
 
-const CONTRACT_TEXT = 'Vorschaden: Stoßfänger vorne, fachgerecht instand gesetzt lt. Rechnung vom [Datum]. Darüber hinaus keine weiteren Unfall- oder Lackschäden.';
+const CONTRACT_TEXT = 'Stoßfänger vorne nachlackiert (ausschließlich Lackierung, Original-Teil) lt. Rechnung vom [Datum]. Darüber hinaus keine weiteren Unfall- oder Lackschäden.';
 
 // Under the viewer's `car-compare/` prefix, so the ⚙ JSON export carries it
 // along. Stored as JSON, the same way useLocalStorage writes.
