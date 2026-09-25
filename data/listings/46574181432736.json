@@ -1,0 +1,403 @@
+{
+  "id": "46574181432736",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-m-sport-acc-ahk-hifi-hud-360-shz-buchschwabach-bei-n%C3%BCrnberg/46574181432736.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=46574181432736&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-25T06:39:40.452Z",
+  "title": "BMW 318i Touring M Sport ACC AHK HiFi HuD 360° SHZ",
+  "shortTitle": "BMW 318",
+  "subTitle": "i Touring M Sport ACC AHK HiFi HuD 360° SHZ",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "177",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 32680,
+    "net": 27462.18,
+    "currency": "EUR",
+    "localized": "32.680 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 31,
+    "thresholds": [
+      "24.600 €",
+      "31.900 €",
+      "34.400 €",
+      "38.300 €",
+      "41.100 €",
+      "45.600 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "M Sport",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "177",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "36.900 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "-- l/100km",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro 6e",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "10/2024",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "Neu",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "360°-Kamera, Hinten, Selbstlenkende Systeme, Vorne",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "SAPHIRSCHWARZ",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Teilleder, Schwarz",
+      "group": "vehicle"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.300 kg",
+      "group": "vehicle"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg",
+      "group": "vehicle"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.650 kg",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "59 l",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 36900,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2024-10",
+    "constructionYear": null,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1650,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": 100,
+    "distanceFromHomeKm": 15,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 10/2024, nach der Umstellung"
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Adaptives Kurvenlicht",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Android Auto",
+    "Anhängerkupplung schwenkbar",
+    "Apple CarPlay",
+    "Armlehne",
+    "Ausparkassistent",
+    "Berganfahrassistent",
+    "Blendfreies Fernlicht",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Sitzeinstellung",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Geschwindigkeitsbegrenzer",
+    "Head-Up Display",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [
+    "Innovations-Paket",
+    "Comfort-Paket",
+    "Driving Assistant"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/35/354c02f7-4b02-4157-88c8-17e37438174d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ab/abceb9c6-518e-4751-8242-e4034943774b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/35/35428e1f-d24d-4e4e-885b-69d30a08ef22",
+    "https://img.classistatic.de/api/v1/mo-prod/images/de/de404046-c0fa-4ea4-8424-d5f678c40dca",
+    "https://img.classistatic.de/api/v1/mo-prod/images/58/58cc9ee8-c784-4a30-b0a5-8e7267a3f566",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d3/d34db563-6747-4a2f-954a-9324b688458b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/be/be339b83-331b-4bc4-ada6-4909f978d0d6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/38/38f29011-ad93-41f0-b480-ff8aa75d2f56",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a9/a90cbf2f-a2f8-4e71-926f-caa21ea96163",
+    "https://img.classistatic.de/api/v1/mo-prod/images/be/bea2c340-ed25-4c7d-b7bf-2b448d3c9dd1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/48/48c7afce-78bd-4d69-ba1f-49c9347a83f5"
+  ],
+  "dealer": {
+    "name": "Autohaus Straußberger",
+    "type": "Händler",
+    "street": "Stuttgarter Strasse 2-6",
+    "city": "DE-90574 Buchschwabach bei Nürnberg",
+    "country": "DE",
+    "phone": "+49 (0)9127 9532500",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=894253",
+    "location": {
+      "lat": 49.36368,
+      "lon": 10.87225
+    },
+    "openingHours": [
+      {
+        "time": "08:30 Uhr - 18:30 Uhr",
+        "day": "Mo"
+      },
+      {
+        "time": "08:30 Uhr - 18:30 Uhr",
+        "day": "Di"
+      },
+      {
+        "time": "08:30 Uhr - 18:30 Uhr",
+        "day": "Mi"
+      },
+      {
+        "time": "08:30 Uhr - 18:30 Uhr",
+        "day": "Do"
+      },
+      {
+        "time": "08:30 Uhr - 18:30 Uhr",
+        "day": "Fr"
+      },
+      {
+        "time": "09:00 Uhr - 15:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 4.9,
+      "count": 1678,
+      "recommendationRate": 98
+    }
+  },
+  "financePlans": [
+    {
+      "type": "DF",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=46574181432736",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": true,
+      "bankId": "Bank11",
+      "offer": {
+        "bankId": "Bank11",
+        "bankName": "Bank11 für Privatkunden und Handel GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 6536,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 26144,
+        "interestRateNominal": 7.71,
+        "interestRateEffective": 7.99,
+        "monthlyInstallment": 283.93,
+        "finalInstallment": 17974,
+        "totalInterest": 8581.96,
+        "totalAmount": 34725.96,
+        "localized": {
+          "downPayment": "6.536,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "26.144,00 €",
+          "interestRateNominal": "7,71%",
+          "interestRateEffective": "7,99%",
+          "monthlyInstallment": "284 €",
+          "finalInstallment": "17.974,00 €",
+          "totalInterest": "8.581,96 €",
+          "totalAmount": "34.725,96 €",
+          "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Bank11 für Privatkunden und Handel GmbH (Darlehensgeber), Hammer Landstraße 91, 41460 Neuss. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 66,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [],
+    "retrofitCost": 0,
+    "mileageAdjustment": {
+      "expectedKm": 28750,
+      "deviationKm": 8150,
+      "adjustment": 820
+    },
+    "effectivePrice": 33500
+  }
+}
