@@ -1,0 +1,357 @@
+{
+  "id": "461694949",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-318i-touring-livecockpitprof-kamera-driv-assist-stuttgart/461694949.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=461694949&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-26T11:07:51.616Z",
+  "title": "BMW 318i Touring LiveCockpitProf Kamera Driv.Assist",
+  "shortTitle": "BMW 318",
+  "subTitle": "i Touring LiveCockpitProf Kamera Driv.Assist",
+  "make": "BMW",
+  "model": "318",
+  "category": "EstateCar",
+  "sku": "A1214726",
+  "isNew": false,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CYW"
+  },
+  "price": {
+    "gross": 31750,
+    "net": 26680.67,
+    "currency": "EUR",
+    "localized": "31.750 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 6,
+    "thresholds": [
+      "24.300 €",
+      "31.600 €",
+      "34.000 €",
+      "37.800 €",
+      "40.600 €",
+      "45.100 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "3-er (G21)",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "Touring LiveCockpitProf Kamera Driv.Assist",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "A1214726",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "18.048 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "115 kW (156 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "06/2025",
+      "group": "vehicle"
+    },
+    "constructionYear": {
+      "label": "Baujahr",
+      "value": "2025",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "06/2028",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "360°-Kamera, Selbstlenkende Systeme, Hinten, Vorne",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "saphirschwarz",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Vollleder, Schwarz",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 18048,
+    "powerKw": 115,
+    "powerHp": 156,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2025-06",
+    "constructionYear": 2025,
+    "seats": null,
+    "previousOwners": 1,
+    "weightKg": null,
+    "fuelTankLitres": null,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 161,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 06/2025, nach der Umstellung"
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Android Auto",
+    "Apple CarPlay",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Seitenspiegel",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Geschwindigkeitsbegrenzer",
+    "Head-Up Display",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Soundsystem",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [
+    "HiFi"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/f8/f82d13e5-1361-478b-a3a5-2c1ed7e6c362",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ef/ef2a88cb-ba4e-4a76-828b-cd84413b745a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9e/9e887be0-cfbe-4833-8c47-1293c775c47c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/91/91e07b79-80f6-466f-b2e1-55e5f44bace1",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d2/d24c88ee-a142-4dec-8629-2d23ceb2dd2f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f5/f5bb1113-af80-4d14-9e88-01212c46ffb7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/12/12eeda95-ac13-4e98-8923-111d0f30e2e6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/28/28298ad1-4134-4021-bee4-51e9955735f5",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c7/c7f42cd1-8515-4865-91b7-d784b3fb764a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b9/b9652f4d-c36a-474c-8190-b2a4a196d4bc",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7d/7d328f26-a32d-4d03-a18d-5668e430429c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/db/db3d6cad-7ca4-49b2-8ff3-3866f01ecae7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/63/63027a29-f1f4-444a-a30b-11a4cbd7be94",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c0/c0f2520c-e8ad-4be2-9cfa-de63a89114c4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1a/1a8e4e90-9479-4098-92d9-32a5c3806d8f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a0/a069a826-fce1-48b4-b316-e05f5a59eb09",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4e/4ec278bb-7d4b-4a8a-9a67-85e57d3b402d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0f/0f095bdb-bd2d-41e4-b941-581a35da6ae7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/06/06b35c46-5803-482c-adfc-4f7b970f6318",
+    "https://img.classistatic.de/api/v1/mo-prod/images/07/0775023c-85be-4e8f-a81e-be79cb197640",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5f/5ff5234c-3b34-4b2c-b276-c1f655353e9f",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f8/f8491a4d-b11f-4763-b418-875add952c98",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c1/c19bfaa5-a672-4122-8053-07fa749c746b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/8e/8ef5aa1f-a5ff-44d2-aef3-59663cf97bb4"
+  ],
+  "dealer": {
+    "name": "BMW AG, Niederlassung Stuttgart, Zentrum Gebrauchte Automobile",
+    "type": "Händler",
+    "street": "Untere Waldplätze 3",
+    "city": "DE-70569 Stuttgart",
+    "country": "DE",
+    "phone": "+49 (0)711 975731330",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=452821",
+    "location": {
+      "lat": 48.7307328,
+      "lon": 9.087323
+    },
+    "openingHours": [
+      {
+        "time": "08:00 Uhr - 18:30 Uhr",
+        "day": "Mo - Fr"
+      },
+      {
+        "time": "09:00 Uhr - 16:00 Uhr",
+        "day": "Sa"
+      }
+    ],
+    "rating": {
+      "score": 4.4,
+      "count": 520,
+      "recommendationRate": 76
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=461694949",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 6350,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 25400,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 336.61,
+        "finalInstallment": 10477.5,
+        "totalInterest": 4937.37,
+        "totalAmount": 30337.37,
+        "localized": {
+          "downPayment": "6.350,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "25.400,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "337 €",
+          "finalInstallment": "10.477,50 €",
+          "totalInterest": "4.937,37 €",
+          "totalAmount": "30.337,37 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 76,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "mileageAdjustment": {
+      "expectedKm": 18750,
+      "deviationKm": -702,
+      "adjustment": -70
+    },
+    "effectivePrice": 33280
+  }
+}
