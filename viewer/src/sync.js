@@ -1,4 +1,4 @@
-// Keeps favourites, lists, notes and status in step with the shared copy
+// Keeps favourites, lists, notes, status and the Effektivpreis settings in step with the shared copy
 // behind /api/settings, so a second machine or browser sees the same ones.
 //
 // Off until a sync key is entered. localStorage stays the working copy: every
@@ -34,10 +34,13 @@ export const LABELS = {
   lists: 'Listen',
   notes: 'Notizen',
   status: 'Status',
+  // The Effektivpreis settings. One object, merged per knob like notes are per
+  // car, so a bonus switched on here and a rate changed there both survive.
+  pricing: 'Preisanpassung',
 };
 
 /**
- * What travels. Only the judgements about cars: which car is open, which list
+ * What travels. Only the judgements about cars and how to price them: which car is open, which list
  * is shown, sorting and the table/map switch stay with the tab you are in
  * (useTabStorage.js), so two windows can show two different comparisons.
  */

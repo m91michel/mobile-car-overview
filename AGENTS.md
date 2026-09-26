@@ -397,8 +397,8 @@ it stands on screen (`toCsv` in `rows.js`), not the setup that produced it.
 ## Syncing the setup across devices
 
 Export/import is a manual carry. The **Sync** entry in the ⚙ menu makes it
-automatic for the judgements about cars: **favourites, lists, notes and
-status** (`SYNCED` in `viewer/src/sync.js`) live on the server as well, and
+automatic for the judgements about cars: **favourites, lists, notes,
+status and the Preisanpassung** (`SYNCED` in `viewer/src/sync.js`) live on the server as well, and
 every browser holding the sync key keeps in step with them.
 
 - **What is open stays with the tab.** Which cars are selected (and so which
@@ -406,8 +406,8 @@ every browser holding the sync key keeps in step with them.
   through `viewer/src/useTabStorage.js`: sessionStorage per tab, mirrored to
   localStorage so a new tab starts from the last view. `useLocalStorage` would
   have pulled every open tab along through the cross-tab `storage` event.
-  Hidden rows, row order, hidden cars and Preisanpassung are per browser and
-  do not sync either. Keys an earlier build synced are ignored on read and
+  Hidden rows, row order and hidden cars are per browser and do not sync
+  either. Keys an earlier build synced are ignored on read and
   drop off the server with the next write.
 
 - **Off until a key is entered.** Without one the viewer behaves exactly as
@@ -628,7 +628,7 @@ with garage-queen mileage) from producing an outsized bonus the linear
 km/year model was never meant to price; that model breaks down at the
 extremes, where warranty and tech age matter more than kilometers.
 
-### Facelift negative points and per-browser pricing settings
+### Facelift negative points, boni and the pricing settings
 
 The viewer re-derives the mileage adjustment client-side and adds a second,
 optional one: flat negative points ("Negativpunkte" in the settings dialog —
@@ -640,18 +640,32 @@ It adds to the effective price the same direction the mileage deviation does,
 not a discount off it: a pre-LCI car is worth less at the same asking price,
 so it takes more money to reach an equivalent LCI car.
 
-Both the mileage reference/rate and the facelift negative points are editable
-from the **Preisanpassung** dialog (⚙ menu) and persisted in `localStorage`
-under `car-compare/pricing` — `viewer/src/pricing.js` (`applyPricingSettings`)
-overrides the `car.assessment` the server baked into `data/cars.json` with
-whatever this browser's settings compute, so two people comparing the same
-cars can each weigh mileage or the facelift gap differently without touching
-`data/assessment.json`. Because `settings.js` collects everything by the
+**Boni** are the other direction: a car worth more at the same asking price
+gets a flat amount *subtracted* from its effective price. Three are
+configurable, each off by default: **330er** (`is330`: `model` starting with
+330, title as fallback — 330i and 330e), **M Sport** (`hasMSport()` from
+`filters.js`, so it agrees with the filter and the gap column) and **Hybrid**
+(`isHybrid`: the fuel fact, or an `e` after the model number in the title,
+because #61 is a 330e listed as plain `Benzin`). A 330e collects both the 330
+and the Hybrid bonus. The 330 amount starts at a guessed 2.000 €; M Sport and
+Hybrid start at 0 on purpose, since nobody has decided yet what they are worth.
+Like the other adjustments, a `raus` car gets none.
+
+The mileage reference/rate, the AHK switch, the facelift negative points and
+the boni are editable from the **Preisanpassung** dialog (⚙ menu) and
+persisted in `localStorage` under `car-compare/pricing` —
+`viewer/src/pricing.js` (`applyPricingSettings`) overrides the
+`car.assessment` the server baked into `data/cars.json` with what these
+settings compute, without touching `data/assessment.json`. They **sync**
+across devices with favourites and notes (`pricing` in `SYNCED`), merged per
+knob, so every device shows the same Effektivpreis. A stored object is always
+read on top of `DEFAULT_PRICING` (`withPricingDefaults`), so settings saved
+before a knob existed pick up its default instead of `undefined`. Because `settings.js` collects everything by the
 `car-compare/` prefix, `pricing` rides along in the existing JSON export/import
 with no extra code.
 
 The breakdown (each retrofit item, the mileage deviation, the facelift
-negative points) is not its own row — three components would mean three
+negative points, each bonus) is not its own row — three components would mean three
 mostly-empty rows. It lives in a hover tooltip on the Effektivpreis cell
 instead (the ⓘ icon, `effectivePriceBreakdown` in `viewer/src/wishlist.js`),
 and that row carries the same price meter bar as the plain `Preis` row above

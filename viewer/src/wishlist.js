@@ -194,6 +194,9 @@ function effectivePriceBreakdown(car) {
   if (lciMalus) {
     lines.push(`+ ${euros(lciMalus)} kein Facelift (LCI)`);
   }
+  for (const bonus of car.assessment?.bonuses ?? []) {
+    lines.push(`− ${euros(bonus.amount)} Bonus ${bonus.label}`);
+  }
   return lines;
 }
 

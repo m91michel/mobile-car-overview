@@ -295,6 +295,10 @@ button:disabled { opacity: 0.45; cursor: default; border-color: var(--line); }
 .editor::backdrop { background: rgb(0 0 0 / 0.45); }
 .editor-body { display: flex; flex-direction: column; gap: 16px; padding: 16px 14px; }
 .field { display: flex; flex-direction: column; gap: 6px; }
+.pricing-section { margin: 4px 0 -6px; font-size: 13px; }
+.pricing-bonus { display: flex; align-items: center; gap: 8px; }
+.editor-body .pricing-bonus .check { width: auto; flex: 1; }
+.pricing-bonus input[type='number'] { width: 90px; }
 .link-row { display: flex; gap: 6px; }
 .link-row input:first-child { flex: 0 0 33%; }
 .editor-foot {

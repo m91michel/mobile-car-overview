@@ -1,12 +1,14 @@
 // The mileage/age and facelift adjustments to the effective price, computed
 // client-side so they can be tuned per browser instead of only in
-// data/assessment.json. Pure and dependency-free — no fs, no localStorage —
+// data/assessment.json. Pure — no fs, no localStorage —
 // so App.jsx can freely recompute it on every settings change.
 //
 // scripts/assessment.mjs computes the same mileage formula server-side and
 // bakes it into data/cars.json; that stays the shared default the settings
 // dialog starts from. Retrofit cost and verdict stay server-authored editorial
 // data and are only ever read here, never recomputed.
+
+import { fuelCategory, hasMSport } from './filters.js';
 
 export const DEFAULT_PRICING = {
   mileageEnabled: true,
@@ -27,7 +29,49 @@ export const DEFAULT_PRICING = {
   // in this tool (camera retrofit is €1.200, AHK €1.600) — tune it in the
   // settings dialog once more pre-LCI cars are in the set.
   lciMalus: 1200,
+  // Boni for what makes a car worth more at the same asking price. They lower
+  // the Effektivpreis, the same direction a below-expectation mileage does.
+  // Off by default, so switching one on is a deliberate judgement. The 330
+  // amount is a starting guess; M Sport and Hybrid are left at 0 on purpose
+  // until someone decides what they are worth.  A bonus of 0 does nothing.
+  bonus330Enabled: false,
+  bonus330: 2000,
+  bonusMSportEnabled: false,
+  bonusMSport: 0,
+  bonusHybridEnabled: false,
+  bonusHybrid: 0,
 };
+
+/**
+ * Settings stored before a key existed lack it, so the stored object is always
+ * read on top of the defaults rather than instead of them.
+ */
+export const withPricingDefaults = (stored) => ({ ...DEFAULT_PRICING, ...stored });
+
+/** `model` is "318"/"320"/"330" on every listing; the title is the fallback. */
+export const is330 = (car) => /^330/.test(car.model ?? '') || /\b330\s?[a-z]?\b/i.test(car.title ?? '');
+
+/**
+ * The fuel fact first, the title second: one 330e is listed as plain "Benzin"
+ * (#61), but no petrol-only G21 carries an "e" after its number.
+ */
+export const isHybrid = (car) =>
+  fuelCategory(car.facts?.fuel?.value) === 'Hybrid' || /\b3\d0\s?e\b/i.test(car.title ?? '');
+
+/** Each applicable bonus as `{key, label, amount}`, amount positive. */
+export function computeBonuses(car, settings) {
+  const bonuses = [];
+  if (settings.bonus330Enabled && is330(car)) {
+    bonuses.push({ key: '330', label: '330er', amount: settings.bonus330 });
+  }
+  if (settings.bonusMSportEnabled && hasMSport(car)) {
+    bonuses.push({ key: 'msport', label: 'M Sport', amount: settings.bonusMSport });
+  }
+  if (settings.bonusHybridEnabled && isHybrid(car)) {
+    bonuses.push({ key: 'hybrid', label: 'Hybrid', amount: settings.bonusHybrid });
+  }
+  return bonuses.filter((bonus) => bonus.amount > 0);
+}
 
 /**
  * Same anchor-on-expected-mileage formula as deriveMileageAdjustment in
@@ -86,6 +130,8 @@ export function applyPricingSettings(car, settings) {
   const skip = assessment.verdict === 'raus';
   const mileageAdjustment = skip ? null : computeMileageAdjustment(car, settings);
   const lciMalus = skip ? 0 : computeLciMalus(car, settings);
+  const bonuses = skip ? [] : computeBonuses(car, settings);
+  const bonusTotal = bonuses.reduce((sum, bonus) => sum + bonus.amount, 0);
 
   // Only ever drops the server-derived "ahk" item, never adds one it didn't
   // derive — see the ahkEnabled comment on DEFAULT_PRICING. Checked against
@@ -104,9 +150,10 @@ export function applyPricingSettings(car, settings) {
       retrofitCost,
       mileageAdjustment,
       lciMalus,
+      bonuses,
       effectivePrice:
         typeof gross === 'number'
-          ? Math.round(gross + retrofitCost + (mileageAdjustment?.adjustment ?? 0) + lciMalus)
+          ? Math.round(gross + retrofitCost + (mileageAdjustment?.adjustment ?? 0) + lciMalus - bonusTotal)
           : null,
     },
   };

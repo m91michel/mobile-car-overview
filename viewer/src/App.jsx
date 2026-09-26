@@ -17,7 +17,7 @@ import {
 } from './rows.js';
 import { cellFor } from './wishlist.js';
 import { download, exportSettings, importSettings, key, today } from './settings.js';
-import { DEFAULT_PRICING, applyPricingSettings } from './pricing.js';
+import { DEFAULT_PRICING, applyPricingSettings, withPricingDefaults } from './pricing.js';
 import SyncDialog, { syncSummary, useSyncStatus } from './SyncDialog.jsx';
 import { useTabStorage } from './useTabStorage.js';
 import {
@@ -143,10 +143,9 @@ function NoteEditor({ car, onSave, onClose }) {
 }
 
 /**
- * The Effektivpreis's mileage/facelift knobs, per browser via localStorage
- * (car-compare/pricing) rather than the data/assessment.json server default
- * -- so two people comparing the same 47 cars can each weigh mileage or the
- * facelift gap the way they personally would.
+ * The Effektivpreis's knobs (mileage, AHK, facelift, boni) in localStorage
+ * (car-compare/pricing) rather than the data/assessment.json server default,
+ * and synced across devices along with favourites and notes (sync.js).
  */
 function PricingSettings({ pricing, onChange, onReset, onClose }) {
   const ref = useDrawer(true);
@@ -163,7 +162,7 @@ function PricingSettings({ pricing, onChange, onReset, onClose }) {
     >
       <header className="drawer-head">
         <strong>Preisanpassung</strong>
-        <span className="muted">wirkt auf den Effektivpreis, nur in diesem Browser</span>
+        <span className="muted">wirkt auf den Effektivpreis, wird mit Sync geteilt</span>
         <div className="spacer" />
         <button onClick={onClose} title="Schließen">
           ✕
@@ -230,6 +229,39 @@ function PricingSettings({ pricing, onChange, onReset, onClose }) {
             onChange={num('lciMalus')}
           />
         </label>
+
+        <p className="muted pricing-section">
+          Boni senken den Effektivpreis: ein Auto, das bei gleichem Preis mehr wert ist, wird
+          effektiv günstiger.
+        </p>
+        {[
+          ['bonus330', '330er (330i/330e)'],
+          ['bonusMSport', 'M Sportpaket'],
+          ['bonusHybrid', 'Hybrid (320e/330e)'],
+        ].map(([key, label]) => (
+          <div className="pricing-bonus" key={key}>
+            <label className="check">
+              <input
+                type="checkbox"
+                checked={pricing[`${key}Enabled`]}
+                onChange={(e) => onChange({ [`${key}Enabled`]: e.target.checked })}
+              />
+              Bonus {label}
+            </label>
+            <input
+              type="number"
+              min="0"
+              step="100"
+              aria-label={`Bonus ${label} (€)`}
+              disabled={!pricing[`${key}Enabled`]}
+              // 0 shows as an empty field: not configured yet, not "worth 0".
+              value={pricing[key] || ''}
+              placeholder="0"
+              onChange={num(key)}
+            />
+            <span className="muted">€</span>
+          </div>
+        ))}
       </div>
 
       <footer className="editor-foot">
@@ -439,9 +471,10 @@ export default function App() {
 
   // Re-derives the Effektivpreis with the live pricing settings, overriding
   // the server default baked into data/cars.json (scripts/assessment.mjs).
+  const pricingSettings = useMemo(() => withPricingDefaults(pricing), [pricing]);
   const priced = useMemo(
-    () => (cars ?? []).map((car) => applyPricingSettings(car, pricing)),
-    [cars, pricing],
+    () => (cars ?? []).map((car) => applyPricingSettings(car, pricingSettings)),
+    [cars, pricingSettings],
   );
 
   // Notes are yours, not scraped, so they live beside the view state rather
@@ -821,7 +854,7 @@ export default function App() {
 
       {pricingOpen && (
         <PricingSettings
-          pricing={pricing}
+          pricing={pricingSettings}
           onChange={(patch) => setPricing((current) => ({ ...current, ...patch }))}
           onReset={() => setPricing(DEFAULT_PRICING)}
           onClose={() => setPricingOpen(false)}
