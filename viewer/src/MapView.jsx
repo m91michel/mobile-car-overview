@@ -1,6 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+// Extends the global L that leaflet sets on window, i.e. the same object as
+// the import above. Only the structural CSS: the cluster looks like our pins.
+import 'leaflet.markercluster';
+import 'leaflet.markercluster/dist/MarkerCluster.css';
 import { carLabel, carRef, carSubline, isSold, photo } from './rows.js';
 
 // Same default as scripts/geo.mjs. The viewer never re-runs geo.mjs, and the
@@ -45,12 +49,26 @@ const attr = (text) => String(text).replace(/&/g, '&amp;').replace(/"/g, '&quot;
  * without photos falls back to the round number pin.
  */
 function pinIcon(group, favourites) {
-  const fav = group.cars.some((car) => favourites.includes(car.id));
-  const sold = group.cars.every(isSold);
   const label =
     group.cars.length === 1 ? carRef(group.cars[0]) || '·' : String(group.cars.length);
-  const cover = group.cars.find((car) => car.images?.[0]);
-  const className = `map-pin${fav ? ' fav' : ''}${sold ? ' sold' : ''}`;
+  return photoPin(group.cars, label, favourites);
+}
+
+/**
+ * Zoomed out, nearby pins merge into one: the first car's photo with the car
+ * count, so the map shows "7 around Stuttgart" rather than a pile of
+ * thumbnails. A click zooms in until they separate.
+ */
+function clusterIcon(cluster, favourites) {
+  const cars = cluster.getAllChildMarkers().flatMap((marker) => marker.options.cars ?? []);
+  return photoPin(cars, String(cars.length), favourites, ' cluster');
+}
+
+function photoPin(cars, label, favourites, extra = '') {
+  const fav = cars.some((car) => favourites.includes(car.id));
+  const sold = cars.every(isSold);
+  const cover = cars.find((car) => car.images?.[0]);
+  const className = `map-pin${fav ? ' fav' : ''}${sold ? ' sold' : ''}${extra}`;
   if (!cover) {
     return L.divIcon({
       className,
@@ -186,6 +204,15 @@ export default function MapView({ cars, favourites = [] }) {
     if (!map || !layer) return;
 
     layer.clearLayers();
+    // Rebuilt rather than cleared, so iconCreateFunction sees the current
+    // favourites.
+    const clusters = L.markerClusterGroup({
+      maxClusterRadius: 60,
+      showCoverageOnHover: false,
+      spiderfyOnMaxZoom: true,
+      iconCreateFunction: (cluster) => clusterIcon(cluster, favourites),
+    });
+    clusters.addTo(layer);
 
     L.marker([HOME.lat, HOME.lon], { icon: homeIcon(), zIndexOffset: -200, keyboard: false })
       .bindPopup(
@@ -198,6 +225,7 @@ export default function MapView({ cars, favourites = [] }) {
       bounds.extend([group.lat, group.lon]);
       L.marker([group.lat, group.lon], {
         icon: pinIcon(group, favourites),
+        cars: group.cars,
         title: group.cars.map((car) => `${carRef(car)} ${car.shortTitle ?? carLabel(car)}`.trim()).join(', '),
       })
         .bindPopup(popupFor(group), {
@@ -205,7 +233,7 @@ export default function MapView({ cars, favourites = [] }) {
           className: 'map-popup',
           autoPanPadding: [40, 40],
         })
-        .addTo(layer);
+        .addTo(clusters);
     }
 
     if (bounds.isValid()) {

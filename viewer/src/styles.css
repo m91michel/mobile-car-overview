@@ -800,7 +800,9 @@ td.sold, .car-option.sold .car-option .fav {
 }
 .map-pin.sold span { opacity: 0.45; }
 .map-pin.photo {
-  position: relative;
+  /* No position here: Leaflet places markers with its own position: absolute,
+     which also anchors the badge. position: relative stacked the pins in flow
+     and slid them off their coordinates. */
   border-radius: 7px;
   box-shadow: 0 0 0 2px var(--accent), 0 2px 8px rgb(0 0 0 / 0.35);
   background: var(--panel);
@@ -824,6 +826,12 @@ td.sold, .car-option.sold .car-option .fav {
 }
 .map-pin.photo.fav { box-shadow: 0 0 0 2px var(--star), 0 2px 8px rgb(0 0 0 / 0.35); }
 .map-pin.photo.sold { opacity: 0.45; }
+/* A cluster reads as a stack: the same thumbnail with a second card behind it. */
+.map-pin.photo.cluster {
+  box-shadow: 0 0 0 2px var(--accent), 4px 4px 0 0 var(--panel), 4px 4px 0 2px var(--accent),
+    0 2px 10px rgb(0 0 0 / 0.4);
+}
+.map-pin.photo.cluster b { font-size: 11px; padding: 3px 5px; }
 .map-pin.photo:hover { z-index: 1000 !important; } /* overlapping thumbnails */
 .map-home span {
   width: 28px;

@@ -123,7 +123,13 @@ export function matchesSearch(car, query) {
  */
 export const photo = (url, rule = 'mo-360') => {
   if (!url) return null;
-  if (url.includes('pixel-base.de')) return `${url}&w=${rule.replace('mo-', '')}`;
+  if (url.includes('pixel-base.de')) {
+    // Width alone is unreliable: one dealer's uploads come back as a blank
+    // white frame (#73), another's ignore it and serve the full image. Width
+    // plus height resizes both; 4:3 matches the source photos.
+    const w = Number(rule.replace('mo-', ''));
+    return `${url}&w=${w}&h=${Math.round((w * 3) / 4)}`;
+  }
   return `${url.replace(/\$_\d+\.[A-Za-z]+$/, '')}?rule=${rule}`;
 };
 

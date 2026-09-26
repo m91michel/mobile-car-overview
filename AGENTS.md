@@ -239,7 +239,8 @@ opens such a page in the scraping Chrome, reads the widget's own
   as `car.reservedUntil`.
 - Ids are `pb-<dealer id>` and the car carries `source`, so `pnpm refresh` and
   `pnpm available` skip it; `pnpm dealer -- --refresh` re-imports those.
-  Photos are sized by `&w=` instead of `?rule=`, which `photo()` in `rows.js`
+  Photos are sized by `&w=…&h=…` instead of `?rule=` (width alone serves a
+  blank frame for some dealers), which `photo()` in `rows.js`
   translates. There is no `priceRating`, dealer rating or opening hours.
 
 ## The viewer

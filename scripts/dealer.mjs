@@ -240,7 +240,7 @@ export function normalizePixelBase(v, pageUrl) {
       unmapped: items.filter((i) => !FEATURES[i.optionId] && !COVERED.has(i.optionId)).map((i) => `${i.optionId}: ${i.title1}`),
     },
 
-    // pixel-base sizes by `&w=<px>`; stored unsized, like the mobile.de photos.
+    // pixel-base sizes by `&w=<px>&h=<px>`; stored unsized, like the mobile.de photos.
     images: (v.mediaItems ?? []).filter((m) => m.type === 'Image').map((m) => m.downloadUrl),
 
     dealer: {
