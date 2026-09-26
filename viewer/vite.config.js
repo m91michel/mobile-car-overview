@@ -1,7 +1,8 @@
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
+import { handleSettings } from '../api/_settings-store.js';
 
 const LISTINGS = path.resolve(import.meta.dirname, '../data/listings');
 
@@ -61,7 +62,52 @@ const carsApi = () => {
   };
 };
 
-export default defineConfig({
-  plugins: [react(), carsApi()],
+/**
+ * The settings sync, answered by the same handler Vercel runs. With the Redis
+ * and SYNC_TOKEN variables in the repo's `.env.local` (`vercel env pull`), the
+ * dev server reads and writes the very store the deployed site uses, so
+ * localhost and the Vercel URL show the same notes.
+ */
+const settingsApi = (env) => {
+  const middleware = async (req, res, next) => {
+    if (!req.url.startsWith('/api/settings')) return next();
+    let raw = '';
+    for await (const chunk of req) raw += chunk;
+    let body;
+    try {
+      body = raw ? JSON.parse(raw) : undefined;
+    } catch {
+      body = undefined; // handleSettings answers 400 for a missing body.
+    }
+    const result = await handleSettings({
+      method: req.method,
+      authorization: req.headers.authorization,
+      body,
+      env,
+    });
+    res.statusCode = result.status;
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Cache-Control', 'no-store');
+    res.end(JSON.stringify(result.body));
+  };
+  return {
+    name: 'settings-api',
+    configureServer(server) {
+      server.middlewares.use(middleware);
+    },
+    configurePreviewServer(server) {
+      server.middlewares.use(middleware);
+    },
+  };
+};
+
+export default defineConfig(({ mode }) => ({
+  plugins: [
+    react(),
+    carsApi(),
+    // '' loads every variable, not only VITE_*. They stay on the server: only
+    // the middleware sees them, nothing is handed to the client bundle.
+    settingsApi({ ...process.env, ...loadEnv(mode, path.resolve(import.meta.dirname, '..'), '') }),
+  ],
   server: { port: 5180 },
-});
+}));

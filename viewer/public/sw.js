@@ -1,6 +1,6 @@
 // Network first, cache as the fallback. Online, every page is as current as a
 // plain reload; at a dealer with no reception, the last loaded state still
-// opens. Only same-origin GETs are handled: the hotlinked mobile.de photos
+// opens. Only same-origin GETs are handled, minus the settings sync: the hotlinked mobile.de photos
 // pass straight through and are never stored.
 const CACHE = 'car-compare-v1';
 
@@ -21,7 +21,11 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   const { request } = event;
-  if (request.method !== 'GET' || new URL(request.url).origin !== self.location.origin) return;
+  const url = new URL(request.url);
+  if (request.method !== 'GET' || url.origin !== self.location.origin) return;
+  // The sync must see the server or nothing: a cached answer would look like
+  // an older server state. sync.js keeps working offline on its own.
+  if (url.pathname.startsWith('/api/settings')) return;
   event.respondWith(
     fetch(request)
       .then((response) => {

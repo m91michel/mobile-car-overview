@@ -2,6 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
 import ErrorBoundary from './ErrorBoundary.jsx';
+import { startSync } from './sync.js';
 import './styles.css';
 
 // Offline fallback, see public/sw.js. Skipped on the dev server, where a
@@ -9,6 +10,9 @@ import './styles.css';
 if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
   navigator.serviceWorker.register('/sw.js');
 }
+
+// Does nothing until a sync key is entered, see sync.js.
+startSync();
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

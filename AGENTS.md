@@ -351,6 +351,42 @@ Four decisions worth keeping:
 The CSV export is a different thing and stays separate: it is the comparison as
 it stands on screen (`toCsv` in `rows.js`), not the setup that produced it.
 
+## Syncing the setup across devices
+
+Export/import is a manual carry. The **Sync** entry in the ⚙ menu makes it
+automatic: the whole `car-compare/` prefix (notes, status, favourites, lists,
+hidden cars and rows, row order, pricing, view state) lives on the server as
+well, and every browser holding the sync key keeps in step with it.
+
+- **Off until a key is entered.** Without one the viewer behaves exactly as
+  before. The key and the last agreed state live under `car-compare-sync/`,
+  outside the settings prefix, so they never ride along in an export.
+- **Server:** `api/settings.js` (Vercel function) and the dev-server middleware
+  in `viewer/vite.config.js` both call `api/_settings-store.js`. It stores one
+  document plus a revision counter in Upstash Redis over its REST API (plain
+  `fetch`, no dependency) and writes compare-and-set, so a write based on a
+  stale revision gets a 409 instead of overwriting another device.
+- **Environment:** `SYNC_TOKEN` (the key you type into the dialog) plus
+  `KV_REST_API_URL`/`KV_REST_API_TOKEN` from Vercel's Upstash integration
+  (`UPSTASH_REDIS_REST_URL`/`_TOKEN` work too). For the dev server put them in
+  the repo's `.env.local` (`vercel env pull .env.local`); localhost then uses
+  the same store as the deployed site.
+- **The first connect decides, and you decide it.** An empty server simply
+  receives this browser's state. Otherwise the dialog lists every difference,
+  one line per car for notes and status, and each line gets its own choice
+  between this browser and the server. That is how the laptop's notes win
+  while another device's view settings survive.
+- **After that it merges on its own** (`viewer/src/sync.js`): pushes 1.5 s after
+  a local write, pulls on load, on tab focus, when coming back online and once
+  a minute. A three-way merge against the last agreed state takes whatever only
+  one side changed; notes and status merge per car. Only the same setting (or
+  the same car's note) changed on both sides at once goes to the device that
+  is syncing, which is the one you are typing on.
+- **Offline keeps working.** localStorage stays the working copy, and
+  `public/sw.js` leaves `/api/settings` alone so a cached answer can never pose
+  as the server state. Edits made at a dealer go up with the next round.
+
+
 ## Reference numbers
 
 Every car carries a short internal number (`car.ref`) so a human can say "#7"

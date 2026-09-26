@@ -16,6 +16,7 @@ import {
 import { cellFor } from './wishlist.js';
 import { download, exportSettings, importSettings, key, today } from './settings.js';
 import { DEFAULT_PRICING, applyPricingSettings } from './pricing.js';
+import SyncDialog, { syncSummary, useSyncStatus } from './SyncDialog.jsx';
 import {
   RULE_TYPES,
   FUEL_OPTIONS,
@@ -364,6 +365,8 @@ export default function App() {
   // The Effektivpreis's mileage/facelift knobs -- see PricingSettings above.
   const [pricing, setPricing] = useLocalStorage(key('pricing'), DEFAULT_PRICING);
   const [pricingOpen, setPricingOpen] = useState(false);
+  const [syncOpen, setSyncOpen] = useState(false);
+  const syncStatus = useSyncStatus();
   // Table is the comparison; the map is the same `shown` set, just plotted
   // on dealer coordinates. Persisted so a reload after picking Favoriten
   // stays on the map.
@@ -747,6 +750,9 @@ export default function App() {
           <button onClick={() => setPricingOpen(true)}>
             Preisanpassung <span className="muted">Effektivpreis</span>
           </button>
+          <button onClick={() => setSyncOpen(true)}>
+            Sync <span className="muted">{syncSummary(syncStatus)}</span>
+          </button>
           <button onClick={exportCsv} disabled={shown.length === 0}>
             CSV-Export <span className="muted">sichtbarer Vergleich</span>
           </button>
@@ -789,6 +795,17 @@ export default function App() {
           onChange={(patch) => setPricing((current) => ({ ...current, ...patch }))}
           onReset={() => setPricing(DEFAULT_PRICING)}
           onClose={() => setPricingOpen(false)}
+        />
+      )}
+
+      {syncOpen && (
+        <SyncDialog
+          cars={cars}
+          onClose={() => setSyncOpen(false)}
+          onDone={(message) => {
+            setSyncOpen(false);
+            setFlash(message);
+          }}
         />
       )}
 

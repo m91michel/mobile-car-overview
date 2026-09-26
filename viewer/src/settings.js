@@ -7,7 +7,7 @@
 // dev server) starts empty and there is no way to carry a setup across. Hence a
 // settings file.
 
-const PREFIX = 'car-compare/';
+export const PREFIX = 'car-compare/';
 
 /** The localStorage key for one setting, e.g. key('favourites'). */
 export const key = (name) => `${PREFIX}${name}`;
@@ -38,7 +38,7 @@ const names = () => {
  * escaped inside JSON. `useLocalStorage` always writes `JSON.stringify`, so
  * anything that fails to parse was not written by the viewer and is skipped.
  */
-export function exportSettings() {
+export function readSettings() {
   const settings = {};
   for (const name of names()) {
     try {
@@ -47,12 +47,32 @@ export function exportSettings() {
       // Not ours, or hand-edited into something invalid. Leave it behind.
     }
   }
+  return settings;
+}
+
+export function exportSettings() {
   return {
     format: FORMAT,
     version: VERSION,
     exportedAt: new Date().toISOString(),
-    settings,
+    settings: readSettings(),
   };
+}
+
+/**
+ * Replace every stored setting with `settings`. Shared by the file import and
+ * the sync (sync.js), which both mean "this is the setup now".
+ */
+export function writeSettings(settings) {
+  for (const name of names()) localStorage.removeItem(key(name));
+  for (const [name, value] of Object.entries(settings)) {
+    localStorage.setItem(key(name), JSON.stringify(value));
+  }
+
+  // usehooks-ts re-reads on its own "local-storage" event and, with no key on
+  // the event, every hook re-reads. So the table updates in place and no page
+  // reload is needed -- which also keeps a "geladen" message on screen.
+  window.dispatchEvent(new StorageEvent('local-storage'));
 }
 
 /**
@@ -83,16 +103,7 @@ export function importSettings(text) {
     throw new Error('Die Datei enthält kein settings-Objekt.');
   }
 
-  for (const name of names()) localStorage.removeItem(key(name));
-  for (const [name, value] of Object.entries(settings)) {
-    localStorage.setItem(key(name), JSON.stringify(value));
-  }
-
-  // usehooks-ts re-reads on its own "local-storage" event and, with no key on
-  // the event, every hook re-reads. So the table updates in place and no page
-  // reload is needed -- which also keeps a "geladen" message on screen.
-  window.dispatchEvent(new StorageEvent('local-storage'));
-
+  writeSettings(settings);
   return Object.keys(settings).length;
 }
 

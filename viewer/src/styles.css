@@ -885,3 +885,35 @@ td.sold, .car-option.sold .car-option .fav {
     font-size: 16px; /* iOS zooms the page if inputs stay at 14px */
   }
 }
+
+/* Sync dialog ------------------------------------------------------------ */
+.sync-dialog { width: min(720px, 94vw); }
+.sync-dialog p { margin: 0; }
+.sync-error { color: #c0392b; }
+.sync-choices { max-height: 65vh; overflow-y: auto; }
+.sync-all, .sync-group-all { display: flex; gap: 6px; }
+.sync-group { display: flex; flex-direction: column; gap: 8px; }
+.sync-group > header { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.sync-group-all button { padding: 2px 8px; font-size: 0.85em; }
+.sync-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+.sync-item-name { grid-column: 1 / -1; font-weight: 600; }
+.sync-side {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 7px 9px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.sync-side.on { border-color: var(--accent); background: var(--accent-soft); }
+.sync-side input { flex: 0 0 auto; margin-top: 3px; padding: 0; } /* not .editor input's text-field sizing */
+.sync-side > span { flex: 1; text-align: left; }
+@media (max-width: 560px) { .sync-item { grid-template-columns: 1fr; } }
