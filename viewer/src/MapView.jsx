@@ -103,7 +103,7 @@ function homeIcon() {
  * A click on a pin hands its cars to `onSelect` -- App opens them as a table
  * in a drawer -- instead of a popup, which could only ever show a summary.
  */
-export default function MapView({ cars, favourites = [], pins = 'photo', onPinsChange, onSelect }) {
+export default function MapView({ cars, favourites = [], pins = 'photo', cluster = true, onSelect }) {
   const host = useRef(null);
   const mapRef = useRef(null);
   const layerRef = useRef(null);
@@ -157,12 +157,15 @@ export default function MapView({ cars, favourites = [], pins = 'photo', onPinsC
     layer.clearLayers();
     // Rebuilt rather than cleared, so iconCreateFunction sees the current
     // favourites.
-    const clusters = L.markerClusterGroup({
-      maxClusterRadius: 60,
-      showCoverageOnHover: false,
-      spiderfyOnMaxZoom: true,
-      iconCreateFunction: (cluster) => clusterIcon(cluster, favourites, pins),
-    });
+    // Without grouping the pins go straight onto the plain layer.
+    const clusters = cluster
+      ? L.markerClusterGroup({
+          maxClusterRadius: 60,
+          showCoverageOnHover: false,
+          spiderfyOnMaxZoom: true,
+          iconCreateFunction: (group) => clusterIcon(group, favourites, pins),
+        })
+      : L.layerGroup();
     clusters.addTo(layer);
 
     L.marker([HOME.lat, HOME.lon], { icon: homeIcon(), zIndexOffset: -200, keyboard: false })
@@ -188,20 +191,12 @@ export default function MapView({ cars, favourites = [], pins = 'photo', onPinsC
       fittedFor.current = groups;
     }
     map.invalidateSize();
-  }, [mapReady, groups, favourites, pins]);
+  }, [mapReady, groups, favourites, pins, cluster]);
 
   return (
     <div className="map-view">
       <div className="map-host" ref={host} />
       <p className="map-legend muted">
-        <span className="sort map-pins" role="group" aria-label="Pins">
-          <button className={pins === 'photo' ? 'on' : ''} onClick={() => onPinsChange?.('photo')}>
-            Bilder
-          </button>
-          <button className={pins === 'number' ? 'on' : ''} onClick={() => onPinsChange?.('number')}>
-            Nummern
-          </button>
-        </span>
         {groups.length} {groups.length === 1 ? 'Standort' : 'Standorte'}
         {missing.length > 0 && (
           <>

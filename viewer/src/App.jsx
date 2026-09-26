@@ -448,6 +448,7 @@ export default function App() {
   const mapCarDrawer = useDrawer(openDrawer === 'map-cars');
   // Photos or the #ref as map pins -- a per-browser taste, like row order.
   const [mapPins, setMapPins] = useLocalStorage(key('map-pins'), 'photo');
+  const [mapCluster, setMapCluster] = useLocalStorage(key('map-cluster'), true);
   // Ids, not cars: the drawer then follows live edits (★, status, notes).
   const [mapCarIds, setMapCarIds] = useState([]);
   const listDrawer = useDrawer(openDrawer === 'lists');
@@ -1033,6 +1034,27 @@ export default function App() {
             />
           </div>
         )}
+        {view === 'map' && (
+          <div className="table-tools">
+            <div className="sort" role="group" aria-label="Pins">
+              <span className="muted">Pins</span>
+              <button className={mapPins === 'photo' ? 'on' : ''} onClick={() => setMapPins('photo')}>
+                Bilder
+              </button>
+              <button className={mapPins === 'number' ? 'on' : ''} onClick={() => setMapPins('number')}>
+                Nummern
+              </button>
+            </div>
+            <label className="check" title="Nahe Standorte beim Rauszoomen zusammenfassen">
+              <input
+                type="checkbox"
+                checked={mapCluster}
+                onChange={(e) => setMapCluster(e.target.checked)}
+              />
+              Gruppieren
+            </label>
+          </div>
+        )}
         <Menu label="⚙" title="Einstellungen">
           <button onClick={load}>Neu laden</button>
           <button onClick={() => setPricingOpen(true)}>
@@ -1242,7 +1264,7 @@ export default function App() {
             cars={shown}
             favourites={favourites}
             pins={mapPins}
-            onPinsChange={setMapPins}
+            cluster={mapCluster}
             onSelect={(cars) => {
               setMapCarIds(cars.map((car) => car.id));
               setOpenDrawer('map-cars');
