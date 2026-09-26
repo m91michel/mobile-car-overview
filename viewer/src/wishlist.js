@@ -2,6 +2,7 @@
 // human; this is what the table colours by. Keep the two in step.
 
 import { hasMSport, conditionCategory, fuelCategory } from './filters.js';
+import { DEFAULT_PRICING } from './pricing.js';
 
 /**
  * "Ausstattung – hohe Priorität". These get the loud ✅ and ❌ — a missing ACC
@@ -97,13 +98,9 @@ const MILEAGE_WARN = 60000;
 const MILEAGE_LIMIT = 100000; // "deutlich über 100.000 km kommen nicht infrage"
 const AGE_TARGET_YEARS = 4; // Zielbild: ca. 2022-2024
 const AGE_LIMIT_YEARS = 8;
-// The price scale starts at 20.000 rather than zero: nothing in this field is
-// cheaper, and a bar from zero would squeeze the whole comparison into its
-// last third.
-const PRICE_FLOOR = 20000;
-const PRICE_TARGET = 30000; // "Preis möglichst um 30.000 EUR"
-const PRICE_WARN = 32000; // 30-32k: "interessant, wenn es einen echten Mehrwert bietet"
-const PRICE_LIMIT = 35000; // beyond this the car has to be near the Zielbild
+// The price limits live in the pricing settings (DEFAULT_PRICING in
+// pricing.js), editable and synced, since the budget is the knob most likely
+// to move.
 
 /**
  * `warn` adds a middle band between target and limit, for ranges the
@@ -112,6 +109,7 @@ const PRICE_LIMIT = 35000; // beyond this the car has to be near the Zielbild
  */
 const meter = (value, { target, warn = null, max, min = 0 }) => {
   if (typeof value !== 'number' || !Number.isFinite(value)) return null;
+  if (!(max > min)) return null; // a hand-set scale that ends where it starts
   const at = (n) => Math.min(1, Math.max(0, (n - min) / (max - min)));
   const zone =
     value <= target ? 'good' : warn !== null && value <= warn ? 'warn' : 'bad';
@@ -135,7 +133,7 @@ const ageYears = (car) => {
   return (Date.now() - from.getTime()) / (365.25 * 24 * 3600 * 1000);
 };
 
-function meterFor(row, car) {
+function meterFor(row, car, pricing = DEFAULT_PRICING) {
   if (row.key === 'fact:mileage') {
     const bar = meter(car.derived?.mileageKm, {
       target: MILEAGE_TARGET,
@@ -155,16 +153,17 @@ function meterFor(row, car) {
   if (row.key === 'price' || row.key === 'assessment:effectivePrice') {
     const gross =
       row.key === 'price' ? car.price?.gross : car.assessment?.effectivePrice ?? car.price?.gross;
+    const { priceFloor, priceTarget, priceWarn, priceLimit } = pricing;
     const bar = meter(gross, {
-      target: PRICE_TARGET,
-      warn: PRICE_WARN,
-      max: PRICE_LIMIT,
-      min: PRICE_FLOOR,
+      target: priceTarget,
+      warn: priceWarn,
+      max: priceLimit,
+      min: priceFloor,
     });
     return (
       bar && {
         ...bar,
-        hint: `Ziel bis ${euros(PRICE_TARGET)}, bis ${euros(PRICE_WARN)} mit Mehrwert`,
+        hint: `Ziel bis ${euros(priceTarget)}, bis ${euros(priceWarn)} mit Mehrwert`,
       }
     );
   }
@@ -201,7 +200,7 @@ function effectivePriceBreakdown(car) {
 }
 
 /** What one table cell shows: an optional mark, the text, and its tone. */
-export function cellFor(row, car) {
+export function cellFor(row, car, pricing = DEFAULT_PRICING) {
   const raw = row.value(car);
 
   if (row.key === 'assessment:effectivePrice' && raw) {
@@ -211,7 +210,7 @@ export function cellFor(row, car) {
       text: raw,
       tone: null,
       hint: lines.length ? lines.join('\n') : null,
-      meter: meterFor(row, car),
+      meter: meterFor(row, car, pricing),
     };
   }
 
@@ -292,6 +291,6 @@ export function cellFor(row, car) {
     mark: tone === 'good' ? '✅' : tone === 'bad' ? '❌' : '',
     text: raw,
     tone,
-    meter: meterFor(row, car),
+    meter: meterFor(row, car, pricing),
   };
 }

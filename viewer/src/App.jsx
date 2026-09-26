@@ -231,6 +231,24 @@ function PricingSettings({ pricing, onChange, onReset, onClose }) {
         </label>
 
         <p className="muted pricing-section">
+          Preisgrenzen für den Balken bei Preis und Effektivpreis: grün bis Ziel, gelb bis
+          Mehrwert-Grenze, danach rot.
+        </p>
+        <div className="pricing-limits">
+          {[
+            ['priceFloor', 'Skala ab'],
+            ['priceTarget', 'Ziel bis'],
+            ['priceWarn', 'mit Mehrwert bis'],
+            ['priceLimit', 'Skala bis'],
+          ].map(([key, label]) => (
+            <label className="field" key={key}>
+              <span className="muted">{label} (€)</span>
+              <input type="number" min="0" step="500" value={pricing[key]} onChange={num(key)} />
+            </label>
+          ))}
+        </div>
+
+        <p className="muted pricing-section">
           Boni senken den Effektivpreis: ein Auto, das bei gleichem Preis mehr wert ist, wird
           effektiv günstiger.
         </p>
@@ -1163,7 +1181,7 @@ export default function App() {
                         </td>
                       );
                     }
-                    const { mark, text, tone, swatch, meter, hint } = cellFor(row, car);
+                    const { mark, text, tone, swatch, meter, hint } = cellFor(row, car, pricingSettings);
                     return (
                       <td
                         key={car.id}

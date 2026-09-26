@@ -40,6 +40,13 @@ export const DEFAULT_PRICING = {
   bonusMSport: 0,
   bonusHybridEnabled: false,
   bonusHybrid: 0,
+  // The price meter on Preis and Effektivpreis. The scale starts at the floor
+  // rather than zero: nothing in this field is cheaper, and a bar from zero
+  // would squeeze the whole comparison into its last third.
+  priceFloor: 20000,
+  priceTarget: 30000, // "Preis möglichst um 30.000 EUR" -- green up to here
+  priceWarn: 34000, // amber up to here: "interessant, wenn es einen echten Mehrwert bietet"
+  priceLimit: 36000, // end of the bar; red past the warn mark, with room to show it
 };
 
 /**

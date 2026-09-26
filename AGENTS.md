@@ -651,8 +651,9 @@ and the Hybrid bonus. The 330 amount starts at a guessed 2.000 €; M Sport and
 Hybrid start at 0 on purpose, since nobody has decided yet what they are worth.
 Like the other adjustments, a `raus` car gets none.
 
-The mileage reference/rate, the AHK switch, the facelift negative points and
-the boni are editable from the **Preisanpassung** dialog (⚙ menu) and
+The mileage reference/rate, the AHK switch, the facelift negative points, the
+boni and the **price limits** of the Preis/Effektivpreis meter (green up to
+30.000 €, amber up to 34.000 €, red beyond; scale 20.000-36.000 €) are editable from the **Preisanpassung** dialog (⚙ menu) and
 persisted in `localStorage` under `car-compare/pricing` —
 `viewer/src/pricing.js` (`applyPricingSettings`) overrides the
 `car.assessment` the server baked into `data/cars.json` with what these
