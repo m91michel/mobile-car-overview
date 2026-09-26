@@ -1,0 +1,478 @@
+{
+  "id": "47338524815584",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-330-i-touring-m-sport-acc-hud-kam-curved-display-w%C3%BCrzburg/47338524815584.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=47338524815584&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-26T08:58:59.964Z",
+  "title": "BMW 330 i Touring M Sport ACC HUD KAM Curved Display",
+  "shortTitle": "BMW 330",
+  "subTitle": "i Touring M Sport ACC HUD KAM Curved Display",
+  "make": "BMW",
+  "model": "330",
+  "category": "EstateCar",
+  "isNew": true,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "DIM"
+  },
+  "price": {
+    "gross": 32970,
+    "net": 27705.88,
+    "currency": "EUR",
+    "localized": "32.970 €",
+    "vatRate": 19,
+    "vatNote": "19,00% MwSt.",
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "VERY_GOOD_PRICE",
+    "label": "Sehr guter Preis",
+    "offset": 78,
+    "thresholds": [
+      "26.700 €",
+      "34.700 €",
+      "37.300 €",
+      "41.500 €",
+      "44.600 €",
+      "49.500 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G80",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "330 i M Sport",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "60.300 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "180 kW (245 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "envkv.energyConsumption": {
+      "label": "Energieverbrauch (komb.)",
+      "value": "7,2 l/100km",
+      "group": "envkv"
+    },
+    "envkv.co2Emissions": {
+      "label": "CO₂-Emissionen (komb.)",
+      "value": "163 g/km",
+      "group": "envkv"
+    },
+    "envkv.co2Class": {
+      "label": "CO₂-Klasse",
+      "value": "Auf Grundlage der CO₂-Emissionen (kombiniert)",
+      "group": "envkv"
+    },
+    "envkv.consumptionDetails.fuel": {
+      "label": "Kraftstoffverbrauch",
+      "value": "7,2 l/100km (kombiniert) · 9,7 l/100km (Innenstadt) · 7,4 l/100km (Stadtrand) · 6,3 l/100km (Landstraße) · 7,1 l/100km (Autobahn)",
+      "values": [
+        "7,2 l/100km (kombiniert)",
+        "9,7 l/100km (Innenstadt)",
+        "7,4 l/100km (Stadtrand)",
+        "6,3 l/100km (Landstraße)",
+        "7,1 l/100km (Autobahn)"
+      ],
+      "group": "envkv"
+    },
+    "envkv.consumptionCosts": {
+      "label": "Energiekosten bei 15.000 km Jahresfahrleistung",
+      "value": "1.823 €/Jahr",
+      "group": "envkv"
+    },
+    "envkv.fuel.price": {
+      "label": "Kraftstoffpreis",
+      "value": "1,69 €/l (Jahresdurchschnitt 2025)",
+      "group": "envkv"
+    },
+    "envkv.co2Costs": {
+      "label": "Mögliche CO₂-Kosten über die nächsten 10 Jahre (15.000 km/Jahr)",
+      "value": "3.105 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 127 €/t) · 1.467 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t) · 4.890 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 200 €/t)",
+      "values": [
+        "3.105 € (bei einem angenommenen mittleren durchschnittlichen CO₂-Preis von 127 €/t)",
+        "1.467 € (bei einem angenommenen niedrigen durchschnittlichen CO₂-Preis von 60 €/t)",
+        "4.890 € (bei einem angenommenen hohen durchschnittlichen CO₂-Preis von 200 €/t)"
+      ],
+      "group": "envkv"
+    },
+    "envkv.tax": {
+      "label": "Kraftfahrzeugsteuer",
+      "value": "197 €/Jahr",
+      "group": "envkv"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "4",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d",
+      "group": "vehicle"
+    },
+    "emissionsSticker": {
+      "label": "Umweltplakette",
+      "value": "4 (Grün)",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "08/2023",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "2",
+      "group": "vehicle"
+    },
+    "hu": {
+      "label": "HU",
+      "value": "09/2028",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Selbstlenkende Systeme, Kamera, Vorne, Hinten",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "SAPHIRSCHWARZ",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Schwarz Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Alcantara, Schwarz",
+      "group": "vehicle"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.600 kg",
+      "group": "vehicle"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg",
+      "group": "vehicle"
+    },
+    "maxNoseWeight": {
+      "label": "Stützlast",
+      "value": "75 kg",
+      "group": "vehicle"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.675 kg",
+      "group": "vehicle"
+    },
+    "cylinder": {
+      "label": "Zylinder",
+      "value": "4",
+      "group": "vehicle"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "59 l",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 60300,
+    "powerKw": 180,
+    "powerHp": 245,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-08",
+    "constructionYear": null,
+    "seats": 4,
+    "previousOwners": 2,
+    "weightKg": 1675,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": 163,
+    "consumptionL100km": 7.2,
+    "distanceFromHomeKm": 80,
+    "generation": "G80",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 08/2023, nach der Umstellung"
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Adaptives Kurvenlicht",
+    "Alarmanlage",
+    "Allwetterreifen",
+    "Ambiente-Beleuchtung",
+    "Android Auto",
+    "Apple CarPlay",
+    "Armlehne",
+    "Ausparkassistent",
+    "Berganfahrassistent",
+    "Blendfreies Fernlicht",
+    "Bluetooth",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Sitzeinstellung",
+    "Elektr. Sitzeinstellung mit Memory-Funktion",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Fernlichtassistent",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Head-Up Display",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Lordosenstütze",
+    "Müdigkeitswarner",
+    "Multifunktionslenkrad",
+    "Musikstreaming integriert",
+    "Navigationssystem",
+    "Navigationsvorbereitung",
+    "Nichtraucher-Fahrzeug",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Scheckheftgepflegt",
+    "Schlüssellose Zentralverriegelung (Keyless)",
+    "Servolenkung",
+    "Sitzheizung",
+    "Sommerreifen",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Sprachsteuerung",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Totwinkel-Assistent",
+    "Touchscreen",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "USB",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "Winterreifen",
+    "WLAN / Wifi Hotspot",
+    "Zentralverriegelung"
+  ],
+  "highlights": [
+    "ehem. UPE 72.049,00 €"
+  ],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/94/94f1541e-b5e5-40a9-8060-f03cac72ffcf",
+    "https://img.classistatic.de/api/v1/mo-prod/images/e7/e761e493-5c04-4063-aefa-e679b77c2dec",
+    "https://img.classistatic.de/api/v1/mo-prod/images/16/16772d66-19a2-4c62-b824-9dce032f9ca6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ce/ce0edeca-cf00-4275-8e7a-e6caa8c8d910",
+    "https://img.classistatic.de/api/v1/mo-prod/images/05/05daf8fd-8e6e-470f-b453-60f6fe5ab796",
+    "https://img.classistatic.de/api/v1/mo-prod/images/de/deb50a50-1173-41b1-ad9d-db65536c5849",
+    "https://img.classistatic.de/api/v1/mo-prod/images/10/10e0a848-ef12-4bc9-bdcf-d2cd1a790664",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a5/a5033a31-f2d7-4697-b50f-18e176bf1750",
+    "https://img.classistatic.de/api/v1/mo-prod/images/3f/3fdcda0a-74c6-4d11-b71a-7468af977ed9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b2/b2558d27-e192-4846-b575-58533088004d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/51/5171841a-0c43-4f0b-b22c-9558c96a0d7c",
+    "https://img.classistatic.de/api/v1/mo-prod/images/70/70ce39e2-6ec5-4d82-9848-9eb1dbfe8d86",
+    "https://img.classistatic.de/api/v1/mo-prod/images/7f/7f9a1179-0cd9-450c-a06f-bbefe794a350",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5d/5d23d935-d97f-4f92-9c79-7abe15658ae6",
+    "https://img.classistatic.de/api/v1/mo-prod/images/49/49e66a59-4f2a-42dc-98c0-f1f98c42998d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ff/ff0ac36a-9557-47e5-86d3-013a01701baa",
+    "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9e1154e-84da-49e7-9642-b84d44891e56",
+    "https://img.classistatic.de/api/v1/mo-prod/images/df/df83da7e-0e18-4819-8a5f-36c90d64e05e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1c/1ca767dc-8c9b-41ea-88b5-8afd176639ee",
+    "https://img.classistatic.de/api/v1/mo-prod/images/27/27e70296-7a77-48d9-8ee3-91e50924c621",
+    "https://img.classistatic.de/api/v1/mo-prod/images/07/071bd97a-45c7-41cc-be2e-4fd7156f43c3",
+    "https://img.classistatic.de/api/v1/mo-prod/images/81/81c02018-0666-4583-a369-c98fa4b7a696",
+    "https://img.classistatic.de/api/v1/mo-prod/images/2c/2c9c634c-a879-4ca3-8ce6-8d6ef61ff3d0",
+    "https://img.classistatic.de/api/v1/mo-prod/images/c6/c643c13c-51e1-4b8b-a761-479624d997ed",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b2/b222c2e0-a41b-4b5d-9c1b-27ee89c22760",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ac/aca02c24-db3e-46ff-bc8f-6a8ffadf6b5b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f6/f654e63c-da5b-40e5-a667-e7ca015f7057",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1e/1ea3883a-8d2b-40e0-b474-06259c2a68fa",
+    "https://img.classistatic.de/api/v1/mo-prod/images/85/85ca42e3-a716-4e44-92fa-b7b4138f5fae",
+    "https://img.classistatic.de/api/v1/mo-prod/images/03/035d1c05-a079-4d66-9e36-353d48887e96",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ba/ba51c5ec-fe20-4def-9719-33c3b37dec4d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1d/1dfcad06-aaef-44fb-8724-2b91184b0e18"
+  ],
+  "dealer": {
+    "name": "JB Automotive GmbH",
+    "type": "Händler",
+    "street": "Nürnberger Straße 109",
+    "city": "DE-97076 Würzburg",
+    "country": "DE",
+    "phone": "+49 (0)931 230097940",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=46632297",
+    "location": {
+      "lat": 49.7991699,
+      "lon": 9.9927345
+    },
+    "openingHours": [
+      {
+        "day": "Mo",
+        "time": "08:00 Uhr - 20:00 Uhr"
+      },
+      {
+        "day": "Di",
+        "time": "08:00 Uhr - 20:00 Uhr"
+      },
+      {
+        "day": "Mi",
+        "time": "08:00 Uhr - 20:00 Uhr"
+      },
+      {
+        "day": "Do",
+        "time": "08:00 Uhr - 20:00 Uhr"
+      },
+      {
+        "day": "Fr",
+        "time": "08:00 Uhr - 20:00 Uhr"
+      },
+      {
+        "day": "Sa",
+        "time": "08:00 Uhr - 15:00 Uhr"
+      }
+    ],
+    "rating": {
+      "score": 5,
+      "count": 2,
+      "recommendationRate": 100
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=47338524815584",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": false,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 6594,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 26376,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 349.54,
+        "finalInstallment": 10880.1,
+        "totalInterest": 5127.09,
+        "totalAmount": 31503.09,
+        "localized": {
+          "downPayment": "6.594,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "26.376,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "350 €",
+          "finalInstallment": "10.880,10 €",
+          "totalInterest": "5.127,09 €",
+          "totalAmount": "31.503,09 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 70,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "mileageAdjustment": {
+      "expectedKm": 46250,
+      "deviationKm": 14050,
+      "adjustment": 1410
+    },
+    "effectivePrice": 35980
+  }
+}
