@@ -2,7 +2,7 @@
   "id": "pb-6846250",
   "url": "https://www.autohaus-wormser.de/bmw/gebrauchtwagenbestand/#!/vehicles/6846250/BMW_318i_Head-Up+AHK+Navi+Kamera+ACC+WR_UPE:_61.390%E2%82%AC_Skyscraper_Grau",
   "sourceUrl": "https://www.autohaus-wormser.de/bmw/gebrauchtwagenbestand/#!/vehicles/6846250/BMW_318i_Head-Up+AHK+Navi+Kamera+ACC+WR_UPE:_61.390%E2%82%AC_Skyscraper_Grau",
-  "fetchedAt": "2026-09-26T10:51:45.671Z",
+  "fetchedAt": "2026-09-26T10:59:55.036Z",
   "source": {
     "kind": "pixel-base",
     "dealerVehicleId": 6846250,
@@ -470,6 +470,18 @@
       "Spiegel-Paket",
       "Wärmeschutzverglasung getönt",
       "Warndreieck"
+    ],
+    "unmapped": [
+      "221: Driving Assistant",
+      "222: Driving Assistant Plus",
+      "223: Driving Assistant Professional",
+      "230: Live Cockpit Plus",
+      "217: Live Cockpit Professional",
+      "224: Memory seats",
+      "73: MP3 interface",
+      "218: Parking Assistant",
+      "219: Parking Assistant Plus",
+      "106: Lane change assist"
     ]
   },
   "images": [
