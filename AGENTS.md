@@ -288,9 +288,10 @@ Vite + React in `viewer/`, started with `pnpm viewer`.
   speichern" renames in place rather than leaving the old name behind as a
   second entry (`editingName` in `App.jsx` tracks which saved filter, if any,
   the open builder belongs to).
-- **Settings persist** per key in localStorage via `useLocalStorage` from
-  `usehooks-ts`, all under the `car-compare/` prefix: selected cars, row order,
-  hidden rows, both filters, favourites, named lists, notes and per-car status.
+- **Settings persist** per key under the `car-compare/` prefix: row order,
+  hidden rows, favourites, named lists, notes and per-car status in
+  localStorage via `useLocalStorage` from `usehooks-ts`; selected cars, sorting
+  and table/map per tab via `useTabStorage` (see the sync section).
 - **The ⚙ menu** in the header holds everything that is not a view control:
   Neu laden, CSV-Export, JSON-Export, JSON-Import. It is a native `<details>`,
   for the same reason the drawers are `<dialog>`s — only closing on an outside
@@ -382,9 +383,18 @@ it stands on screen (`toCsv` in `rows.js`), not the setup that produced it.
 ## Syncing the setup across devices
 
 Export/import is a manual carry. The **Sync** entry in the ⚙ menu makes it
-automatic: the whole `car-compare/` prefix (notes, status, favourites, lists,
-hidden cars and rows, row order, pricing, view state) lives on the server as
-well, and every browser holding the sync key keeps in step with it.
+automatic for the judgements about cars: **favourites, lists, notes and
+status** (`SYNCED` in `viewer/src/sync.js`) live on the server as well, and
+every browser holding the sync key keeps in step with them.
+
+- **What is open stays with the tab.** Which cars are selected (and so which
+  list is shown), table or map, sorting and the Nur-Unterschiede toggles go
+  through `viewer/src/useTabStorage.js`: sessionStorage per tab, mirrored to
+  localStorage so a new tab starts from the last view. `useLocalStorage` would
+  have pulled every open tab along through the cross-tab `storage` event.
+  Hidden rows, row order, hidden cars and Preisanpassung are per browser and
+  do not sync either. Keys an earlier build synced are ignored on read and
+  drop off the server with the next write.
 
 - **Off until a key is entered.** Without one the viewer behaves exactly as
   before. The key and the last agreed state live under `car-compare-sync/`,
@@ -397,13 +407,16 @@ well, and every browser holding the sync key keeps in step with it.
 - **Environment:** `SYNC_TOKEN` (the key you type into the dialog) plus
   `KV_REST_API_URL`/`KV_REST_API_TOKEN` from Vercel's Upstash integration
   (`UPSTASH_REDIS_REST_URL`/`_TOKEN` work too). For the dev server put them in
-  the repo's `.env.local` (`vercel env pull .env.local`); localhost then uses
-  the same store as the deployed site.
+  the repo's `.env` or `.env.local` (both git-ignored); localhost then uses the
+  same store as the deployed site. **Testing against a scratch store:** shell
+  variables win over the files, so `KV_REST_API_URL=http://localhost:… pnpm
+  viewer` points the dev server elsewhere. Without that, a local test writes
+  into the real notes.
 - **The first connect decides, and you decide it.** An empty server simply
   receives this browser's state. Otherwise the dialog lists every difference,
   one line per car for notes and status, and each line gets its own choice
   between this browser and the server. That is how the laptop's notes win
-  while another device's view settings survive.
+  while another device's favourites survive.
 - **After that it merges on its own** (`viewer/src/sync.js`): pushes 1.5 s after
   a local write, pulls on load, on tab focus, when coming back online and once
   a minute. A three-way merge against the last agreed state takes whatever only

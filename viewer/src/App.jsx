@@ -17,6 +17,7 @@ import { cellFor } from './wishlist.js';
 import { download, exportSettings, importSettings, key, today } from './settings.js';
 import { DEFAULT_PRICING, applyPricingSettings } from './pricing.js';
 import SyncDialog, { syncSummary, useSyncStatus } from './SyncDialog.jsx';
+import { useTabStorage } from './useTabStorage.js';
 import {
   RULE_TYPES,
   FUEL_OPTIONS,
@@ -338,17 +339,19 @@ export default function App() {
   const [error, setError] = useState(null);
   // Every view setting is persisted, so a reload after `pnpm scrape` lands on
   // the same comparison. null selection = "nothing picked yet" -> show all.
-  const [selected, setSelected] = useLocalStorage(key('selected'), null);
+  // Which cars are open, sorting and table/map are per tab (useTabStorage), so
+  // two windows can show two comparisons; everything else is per browser.
+  const [selected, setSelected] = useTabStorage(key('selected'), null);
   const [order, setOrder] = useLocalStorage(key('order'), []);
   const [hiddenKeys, setHiddenKeys] = useLocalStorage(key('hidden'), []);
-  const [diffOnly, setDiffOnly] = useLocalStorage(key('diff-only'), false);
-  const [featuresOnly, setFeaturesOnly] = useLocalStorage(key('features-only'), false);
+  const [diffOnly, setDiffOnly] = useTabStorage(key('diff-only'), false);
+  const [featuresOnly, setFeaturesOnly] = useTabStorage(key('features-only'), false);
   // Two independent orders: the drawer is for finding a car, the columns are
   // for reading the comparison, and those want different sorts.
-  const [listSort, setListSort] = useLocalStorage(key('sort-list'), 'ref');
-  const [listDesc, setListDesc] = useLocalStorage(key('sort-list-desc'), false);
-  const [columnSort, setColumnSort] = useLocalStorage(key('sort-columns'), 'price');
-  const [columnDesc, setColumnDesc] = useLocalStorage(key('sort-columns-desc'), false);
+  const [listSort, setListSort] = useTabStorage(key('sort-list'), 'ref');
+  const [listDesc, setListDesc] = useTabStorage(key('sort-list-desc'), false);
+  const [columnSort, setColumnSort] = useTabStorage(key('sort-columns'), 'price');
+  const [columnDesc, setColumnDesc] = useTabStorage(key('sort-columns-desc'), false);
   // A shortlist you keep while working through the field, independent of which
   // cars happen to be in the table right now.
   const [favourites, setFavourites] = useLocalStorage(key('favourites'), []);
@@ -361,7 +364,7 @@ export default function App() {
   const [removed, setRemoved] = useLocalStorage(key('removed'), []);
   const [notes, setNotes] = useLocalStorage(key('notes'), {});
   const [statuses, setStatuses] = useLocalStorage(key('status'), {});
-  const [favouritesFirst, setFavouritesFirst] = useLocalStorage(key('favourites-first'), false);
+  const [favouritesFirst, setFavouritesFirst] = useTabStorage(key('favourites-first'), false);
   // The Effektivpreis's mileage/facelift knobs -- see PricingSettings above.
   const [pricing, setPricing] = useLocalStorage(key('pricing'), DEFAULT_PRICING);
   const [pricingOpen, setPricingOpen] = useState(false);
@@ -370,7 +373,7 @@ export default function App() {
   // Table is the comparison; the map is the same `shown` set, just plotted
   // on dealer coordinates. Persisted so a reload after picking Favoriten
   // stays on the map.
-  const [view, setView] = useLocalStorage(key('view'), 'table');
+  const [view, setView] = useTabStorage(key('view'), 'table');
   const [dragKey, setDragKey] = useState(null);
   const [openDrawer, setOpenDrawer] = useState(null); // 'cars' | 'favourites' | 'lists' | 'rows'
   const carDrawer = useDrawer(openDrawer === 'cars');

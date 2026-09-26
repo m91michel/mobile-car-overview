@@ -1,6 +1,5 @@
-// Keeps the `car-compare/` settings in step with the shared copy behind
-// /api/settings, so a second machine or browser sees the same notes, lists and
-// hidden rows.
+// Keeps favourites, lists, notes and status in step with the shared copy
+// behind /api/settings, so a second machine or browser sees the same ones.
 //
 // Off until a sync key is entered. localStorage stays the working copy: every
 // hook keeps reading and writing it as before, and this module sits beside
@@ -17,7 +16,7 @@
 // automatically. `diffForConnect` lists every difference and the sync dialog
 // lets you pick a side for each one -- per car for notes and status.
 
-import { PREFIX, readSettings, writeSettings } from './settings.js';
+import { PREFIX, key, readSettings } from './settings.js';
 
 // Deliberately outside `car-compare/`: the key and the base must not travel
 // along in a settings export, and must not sync themselves.
@@ -31,24 +30,24 @@ const POLL_MS = 60_000;
 export const PER_ENTRY = ['notes', 'status'];
 
 export const LABELS = {
-  notes: 'Notizen',
-  status: 'Status',
   favourites: 'Favoriten',
   lists: 'Listen',
-  removed: 'Ausgeblendete Autos',
-  hidden: 'Ausgeblendete Zeilen',
-  order: 'Zeilenreihenfolge',
-  selected: 'Auswahl in der Tabelle',
-  pricing: 'Preisanpassung',
-  view: 'Ansicht (Tabelle/Karte)',
-  'diff-only': 'Nur Unterschiede',
-  'features-only': 'Nur Ausstattung',
-  'favourites-first': 'Favoriten zuerst',
-  'sort-list': 'Sortierung Fahrzeugliste',
-  'sort-list-desc': 'Sortierung Fahrzeugliste absteigend',
-  'sort-columns': 'Sortierung Spalten',
-  'sort-columns-desc': 'Sortierung Spalten absteigend',
+  notes: 'Notizen',
+  status: 'Status',
 };
+
+/**
+ * What travels. Only the judgements about cars: which car is open, which list
+ * is shown, sorting and the table/map switch stay with the tab you are in
+ * (useTabStorage.js), so two windows can show two different comparisons.
+ */
+export const SYNCED = Object.keys(LABELS);
+
+/** Just the synced settings out of a full settings object. */
+export const pick = (settings) =>
+  Object.fromEntries(SYNCED.filter((k) => settings?.[k] !== undefined).map((k) => [k, settings[k]]));
+
+export const readLocal = () => pick(readSettings());
 
 // --- comparison and merge ---------------------------------------------------
 
@@ -150,6 +149,9 @@ async function request(method, token, body) {
     throw new SyncError('offline', 0);
   }
   const data = await res.json().catch(() => ({}));
+  // The server may still hold keys an earlier build synced (view state and
+  // the like). They are ignored here and dropped with the next write.
+  if (data.settings) data.settings = pick(data.settings);
   if (res.status === 409) return { conflict: true, ...data };
   if (!res.ok) throw new SyncError(data.error || `Server antwortet mit ${res.status}.`, res.status);
   return data;
@@ -163,7 +165,8 @@ export const getToken = () => localStorage.getItem(TOKEN);
 
 const readBase = () => {
   try {
-    return JSON.parse(localStorage.getItem(BASE)) ?? { rev: 0, settings: {} };
+    const base = JSON.parse(localStorage.getItem(BASE)) ?? { rev: 0, settings: {} };
+    return { ...base, settings: pick(base.settings) };
   } catch {
     return { rev: 0, settings: {} };
   }
@@ -189,7 +192,14 @@ let applying = false;
 const applyLocal = (settings) => {
   applying = true;
   try {
-    writeSettings(settings);
+    for (const name of SYNCED) {
+      const full = key(name);
+      if (settings[name] === undefined) localStorage.removeItem(full);
+      else localStorage.setItem(full, JSON.stringify(settings[name]));
+      // One event per key, so the useLocalStorage hooks re-read these four
+      // and nothing else.
+      window.dispatchEvent(new StorageEvent('local-storage', { key: full }));
+    }
   } finally {
     applying = false;
   }
@@ -216,7 +226,7 @@ export async function syncNow() {
     for (let round = 0; round < 3; round++) {
       const base = readBase();
       const remote = await request('GET', token);
-      const local = readSettings();
+      const local = readLocal();
       const merged = remote.rev === base.rev ? local : merge3(base.settings, local, remote.settings);
       if (!same(merged, local)) applyLocal(merged);
       if (same(merged, remote.settings)) {
@@ -258,7 +268,8 @@ export function startSync() {
   // usehooks-ts announces each of its writes with this event.
   window.addEventListener('local-storage', (event) => {
     if (applying) return;
-    if (event.key && !event.key.startsWith(PREFIX)) return;
+    // No key means every setting changed at once (a settings import).
+    if (event.key && !SYNCED.some((name) => event.key === `${PREFIX}${name}`)) return;
     schedule();
   });
   window.addEventListener('online', () => schedule(0));

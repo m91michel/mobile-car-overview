@@ -1,12 +1,12 @@
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { carLabel, carRef, STATUSES } from './rows.js';
-import { readSettings } from './settings.js';
 import {
   LABELS,
   connect,
   diffForConnect,
   disconnect,
   fetchRemote,
+  readLocal,
   getStatus,
   itemId,
   resolveConnect,
@@ -94,7 +94,7 @@ export default function SyncDialog({ cars, onClose, onDone }) {
     setError(null);
     try {
       const remote = await fetchRemote(key);
-      const local = readSettings();
+      const local = readLocal();
       if (remote.rev === 0) {
         await finish(key, remote, local, 'Sync an. Der Server war leer, dieser Browser wurde hochgeladen.');
         return;
@@ -207,9 +207,9 @@ export default function SyncDialog({ cars, onClose, onDone }) {
         <form onSubmit={start}>
           <div className="editor-body">
             <p className="muted">
-              Ohne Schlüssel bleibt alles nur in diesem Browser. Mit Schlüssel gleicht der Viewer Notizen,
-              Status, Favoriten, Listen, Zeilen und Ansicht mit dem Server ab. Beim ersten Verbinden
-              wählst du bei jedem Unterschied, welcher Stand gilt.
+              Ohne Schlüssel bleibt alles nur in diesem Browser. Mit Schlüssel gleicht der Viewer Favoriten,
+              Listen, Notizen und Status mit dem Server ab. Welche Autos und welche Liste offen sind,
+              bleibt pro Tab. Beim ersten Verbinden wählst du bei jedem Unterschied, welcher Stand gilt.
             </p>
             <label className="field">
               <span className="muted">Sync-Schlüssel</span>

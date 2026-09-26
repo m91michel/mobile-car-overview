@@ -106,8 +106,10 @@ export default defineConfig(({ mode }) => ({
     react(),
     carsApi(),
     // '' loads every variable, not only VITE_*. They stay on the server: only
-    // the middleware sees them, nothing is handed to the client bundle.
-    settingsApi({ ...process.env, ...loadEnv(mode, path.resolve(import.meta.dirname, '..'), '') }),
+    // the middleware sees them, nothing is handed to the client bundle. The
+    // shell wins over the .env files, as in Vite itself, so a one-off
+    // `KV_REST_API_URL=… pnpm viewer` can point at a test store.
+    settingsApi({ ...loadEnv(mode, path.resolve(import.meta.dirname, '..'), ''), ...process.env }),
   ],
   server: { port: 5180 },
 }));
