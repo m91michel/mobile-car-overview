@@ -12,6 +12,7 @@ import { DEFAULT_PRICING } from './pricing.js';
 const KEY_FEATURES = new Set([
   'Abstandstempomat', // ACC, kaum wirtschaftlich nachrüstbar
   'Apple CarPlay',
+  'Abgedunkelte Scheiben',
 ]);
 
 /**
