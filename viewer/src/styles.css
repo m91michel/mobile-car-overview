@@ -299,7 +299,7 @@ button:disabled { opacity: 0.45; cursor: default; border-color: var(--line); }
 .pricing-limits { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; }
 .pricing-bonus { display: flex; align-items: center; gap: 8px; }
 .editor-body .pricing-bonus .check { width: auto; flex: 1; }
-.pricing-bonus input[type='number'] { width: 90px; }
+.editor .pricing-bonus input[type='number'] { flex: 0 0 110px; }
 .link-row { display: flex; gap: 6px; }
 .link-row input:first-child { flex: 0 0 33%; }
 .editor-foot {
@@ -325,6 +325,9 @@ button.primary { border-color: var(--accent); background: var(--accent); color: 
 }
 .editor textarea { resize: vertical; min-height: 90px; }
 .editor input { flex: 1; min-width: 0; }
+/* The text-field sizing above would stretch a checkbox across the row and
+   push its label to the far edge. */
+.editor input[type='checkbox'] { flex: none; margin: 0; padding: 0; }
 .editor textarea:focus,
 .editor input:focus,
 .filter-builder input:focus,
