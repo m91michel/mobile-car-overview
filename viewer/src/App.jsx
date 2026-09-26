@@ -5,9 +5,11 @@ import {
   STATUSES,
   buildRows,
   carLabel,
+  carPlace,
   carRef,
   carSubline,
   isSold,
+  matchesSearch,
   photo,
   rowDiffers,
   sortCars,
@@ -260,7 +262,21 @@ function CarOption({ car, active, onToggle, favourite, onFavourite, removed, onR
           {isSold(car) && <span className="gone">verkauft</span>}
           {removed && <span className="gone gone-neutral">ausgeblendet</span>}
         </span>
+        {carPlace(car) && <span className="car-option-place">📍 {carPlace(car)}</span>}
       </span>
+      {car.url && (
+        <a
+          className="open"
+          href={car.url}
+          target="_blank"
+          rel="noreferrer"
+          // Opening the listing must not also tick the checkbox.
+          onClick={(event) => event.stopPropagation()}
+          title="Inserat öffnen"
+        >
+          ↗
+        </a>
+      )}
       <button
         className={`fav ${favourite ? 'on' : ''}`}
         // Inside a <label>, a click would otherwise reach the checkbox too.
@@ -463,6 +479,17 @@ export default function App() {
     () => sortCars(withNotes, listSort, listDesc),
     [withNotes, listSort, listDesc],
   );
+
+  // Picker search. Not persisted: a stale term would hide cars on the next open.
+  const [search, setSearch] = useState('');
+  const searchInput = useRef(null);
+  const pickerCars = useMemo(
+    () => listCars.filter((car) => matchesSearch(car, search)),
+    [listCars, search],
+  );
+  useEffect(() => {
+    if (openDrawer === 'cars') searchInput.current?.focus();
+  }, [openDrawer]);
 
   // Every car minus the hidden ones -- the "Alle" list, the picker's own
   // "Alle" button, and the default ("nothing chosen yet") view all mean the
@@ -856,8 +883,35 @@ export default function App() {
           desc={listDesc}
           setDesc={setListDesc}
         />
+        <div className="drawer-search">
+          <input
+            ref={searchInput}
+            type="search"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            onKeyDown={(e) => {
+              // Enter opens the top hit's listing -- "#74 ⏎" is the fast path.
+              if (e.key === 'Enter' && pickerCars[0]?.url) {
+                window.open(pickerCars[0].url, '_blank', 'noreferrer');
+              }
+              // First Escape clears the term, the second closes the drawer.
+              if (e.key === 'Escape' && search) {
+                e.preventDefault();
+                setSearch('');
+              }
+            }}
+            placeholder="Suche: #74, ID, Name, Ort, PLZ, Händler …"
+            aria-label="Fahrzeuge durchsuchen"
+          />
+          {search && (
+            <span className="muted">
+              {pickerCars.length} Treffer{pickerCars[0]?.url ? ' · ⏎ öffnet den ersten' : ''}
+            </span>
+          )}
+        </div>
         <ul className="drawer-list">
-          {listCars.map((car) => (
+          {pickerCars.length === 0 && <li className="drawer-empty muted">Kein Treffer.</li>}
+          {pickerCars.map((car) => (
             <li key={car.id}>
               <CarOption
                 car={car}

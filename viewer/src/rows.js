@@ -77,6 +77,43 @@ export const isSold = (car) => car.availability?.status === 'sold';
 export const carSubline = (car) =>
   [car.facts?.firstRegistration?.value, car.facts?.mileage?.value].filter(Boolean).join(' · ');
 
+/** "DE-57076 Siegen" -> "Siegen"; the postcode only matters to the search. */
+export const carCity = (car) => car.dealer?.city?.replace(/^[A-Z]{2}-\d+\s*/, '') || null;
+
+/** Where the car stands, for the picker: city, distance, dealer. */
+export const carPlace = (car) => {
+  const km = car.derived?.distanceFromHomeKm;
+  return [carCity(car), typeof km === 'number' ? `${km} km` : null, car.dealer?.name]
+    .filter(Boolean)
+    .join(' · ');
+};
+
+/**
+ * Picker search: every whitespace-separated term must match. "#7" means ref 7
+ * exactly (not #72); anything else is a substring of ref, id, title, dealer,
+ * address or postcode.
+ */
+export function matchesSearch(car, query) {
+  const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+  if (terms.length === 0) return true;
+  const haystack = [
+    carRef(car),
+    car.id,
+    car.title,
+    car.make,
+    car.model,
+    car.dealer?.name,
+    car.dealer?.city,
+    car.dealer?.street,
+  ]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase();
+  return terms.every((term) =>
+    /^#\d+$/.test(term) ? carRef(car) === term : haystack.includes(term),
+  );
+}
+
 /**
  * Listing photos stay on mobile.de's CDN — nothing is downloaded here.
  * It sizes per `?rule=`; known values are mo-240, mo-360, mo-1024 and mo-1600.

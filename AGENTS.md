@@ -258,6 +258,11 @@ Vite + React in `viewer/`, started with `pnpm viewer`.
   trapping come free) holding the full list with photo, title and price. It
   used to be a chip grid above the table, which cost four rows of height once
   the comparison passed a handful of cars.
+  Each entry shows where the car stands (city, Luftlinie, dealer) and an ↗
+  that opens the listing. A search field on top matches ref, id, title,
+  dealer, street and postcode (every term must match; `#7` means exactly #7,
+  never #72), and Enter opens the top hit's listing, so `#74 ⏎` is the fast
+  way to a car.
 - **Rows move.** Drag a row by its label, or use ⤒ / ↑ / ↓; ✕ hides it. Order is
   stored as a full key list, and moves target the next *visible* row, so hidden
   rows never swallow a click.
