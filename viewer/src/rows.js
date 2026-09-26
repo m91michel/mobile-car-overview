@@ -81,9 +81,14 @@ export const carSubline = (car) =>
  * Listing photos stay on mobile.de's CDN — nothing is downloaded here.
  * It sizes per `?rule=`; known values are mo-240, mo-360, mo-1024 and mo-1600.
  * The suffix strip keeps JSON written by an older fetcher working.
+ * Dealer-site photos (pnpm dealer) come from pixel-base, which sizes by
+ * `&w=<px>` instead, so the same rule is translated to its width.
  */
-export const photo = (url, rule = 'mo-360') =>
-  url ? `${url.replace(/\$_\d+\.[A-Za-z]+$/, '')}?rule=${rule}` : null;
+export const photo = (url, rule = 'mo-360') => {
+  if (!url) return null;
+  if (url.includes('pixel-base.de')) return `${url}&w=${rule.replace('mo-', '')}`;
+  return `${url.replace(/\$_\d+\.[A-Za-z]+$/, '')}?rule=${rule}`;
+};
 
 /** Where a car stands in the process. Nothing stored yet means "Offen". */
 export const STATUSES = [

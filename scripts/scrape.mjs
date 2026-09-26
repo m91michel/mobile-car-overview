@@ -232,7 +232,8 @@ const { cars: index, unavailable } = readIndex();
 
 let ids = collectIds(options.inputs);
 if (options.from) ids.push(...readIdFile(options.from));
-if (options.refresh) ids.push(...index.map((car) => car.id));
+// Dealer-site cars (pnpm dealer) have no mobile.de listing to re-fetch.
+if (options.refresh) ids.push(...index.filter((car) => !car.source).map((car) => car.id));
 
 const { started } = await ensureChrome();
 if (started) console.log('Started a Chrome window for scraping (leave it open).');

@@ -65,6 +65,7 @@ pnpm refresh                  # re-fetch every car already in data/
 pnpm scrape -- 462145366 459175992
 pnpm scrape -- 'https://www.mobile.de/park/compare?id=462145366&id=459175992'
 pnpm scrape -- --from cars.txt
+pnpm dealer -- '<dealer url>' # a car that is only on a dealer's own site
 pnpm chrome                   # start the scraping Chrome on its own
 pnpm chrome:stop              # shut it down
 
@@ -213,6 +214,28 @@ can be refreshed without pasting URLs.
 `scripts/parkplatz.mjs` harvests ids from three places at once — detail links,
 the compare-button URL, and the RSC payload — and dedupes, so a markup change in
 any one of them does not break the run.
+
+### Cars that are not on mobile.de: `pnpm dealer`
+
+Many BMW dealer sites embed the same stock widget (pixel-base, loaded from
+`cdn.dein.auto`, URLs ending in `#!/vehicles/<id>/…`). `scripts/dealer.mjs`
+opens such a page in the scraping Chrome, reads the widget's own
+`api.pixel-base.de/…/vehicles/<id>?apikey=…` request back from Resource Timing
+(so no key is hard-coded), and maps that JSON onto the mobile.de shape:
+
+- **mobile.de's wording, not the dealer's.** pixel-base's feature list is
+  mobile.de's checkbox catalogue in English, so `FEATURES` translates it one to
+  one and the car joins the existing union rows. Anything without a
+  counterpart is dropped from `features` and kept in `equipment` (the dealer's
+  full option list, e.g. Shadow Line, Driving Assistant Professional).
+- **Sensatec is `Kunstleder`**, as on mobile.de, even though BMW's own
+  `seatCoverMaterial` calls it Leather.
+- **A reservation shows as the `availability` fact** (`Reserviert bis …`) and
+  as `car.reservedUntil`.
+- Ids are `pb-<dealer id>` and the car carries `source`, so `pnpm refresh` and
+  `pnpm available` skip it; `pnpm dealer -- --refresh` re-imports those.
+  Photos are sized by `&w=` instead of `?rule=`, which `photo()` in `rows.js`
+  translates. There is no `priceRating`, dealer rating or opening hours.
 
 ## The viewer
 

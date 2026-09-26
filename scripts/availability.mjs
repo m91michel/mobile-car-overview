@@ -82,10 +82,14 @@ if (!existsSync(OUT_DIR)) {
 }
 
 const files = readdirSync(OUT_DIR).filter((f) => f.endsWith('.json'));
-let cars = files.map((file) => ({
-  path: resolve(OUT_DIR, file),
-  car: JSON.parse(readFileSync(resolve(OUT_DIR, file), 'utf8')),
-}));
+let cars = files
+  .map((file) => ({
+    path: resolve(OUT_DIR, file),
+    car: JSON.parse(readFileSync(resolve(OUT_DIR, file), 'utf8')),
+  }))
+  // Dealer-site cars (pnpm dealer) are not on mobile.de, so the probe below
+  // could only ever report them unknown. `pnpm dealer -- --refresh` covers them.
+  .filter(({ car }) => !car.source);
 
 let skipped = 0;
 if (options.maxAgeHours) {
