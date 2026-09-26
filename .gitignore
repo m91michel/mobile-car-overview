@@ -2,5 +2,6 @@ node_modules/
 .chrome-profile/
 cars.txt
 dist/
+.env
 .env*.local
 .vercel/
