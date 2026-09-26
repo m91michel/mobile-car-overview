@@ -218,18 +218,23 @@ any one of them does not break the run.
 ### Cars that are not on mobile.de: `pnpm dealer`
 
 Many BMW dealer sites embed the same stock widget (pixel-base, loaded from
-`cdn.dein.auto`, URLs ending in `#!/vehicles/<id>/…`). `scripts/dealer.mjs`
+`cdn.dein.auto`; URLs ending in `#!/vehicles/<id>/…` or carrying
+`?pxc-view=vehicle-details&vehicle-id=<id>`). `scripts/dealer.mjs`
 opens such a page in the scraping Chrome, reads the widget's own
 `api.pixel-base.de/…/vehicles/<id>?apikey=…` request back from Resource Timing
 (so no key is hard-coded), and maps that JSON onto the mobile.de shape:
 
-- **mobile.de's wording, not the dealer's.** pixel-base's feature list is
-  mobile.de's checkbox catalogue in English, so `FEATURES` translates it one to
-  one and the car joins the existing union rows. Anything without a
-  counterpart is dropped from `features` and kept in `equipment` (the dealer's
-  full option list, e.g. Shadow Line, Driving Assistant Professional).
+- **mobile.de's wording.** pixel-base's feature list is mobile.de's checkbox
+  catalogue, served in whatever language the dealer configured (English at
+  Wormser, German at Sperber). `FEATURES` is therefore keyed by the
+  language-independent `optionId`, and the car joins the existing union rows.
+  Checkbox items without a counterpart land in `equipment.unmapped`; the
+  dealer's full option list (Shadow Line, Driving Assistant Professional, …)
+  stays in `equipment.optional`/`.standard`. `Mietwagen` is kept as a feature
+  although mobile.de has no such box, since a rental past is history.
 - **Sensatec is `Kunstleder`**, as on mobile.de, even though BMW's own
-  `seatCoverMaterial` calls it Leather.
+  `seatCoverMaterial` calls it Leather; an Alcantara/Sensatec combination is
+  `Alcantara`.
 - **A reservation shows as the `availability` fact** (`Reserviert bis …`) and
   as `car.reservedUntil`.
 - Ids are `pb-<dealer id>` and the car carries `source`, so `pnpm refresh` and
