@@ -799,6 +799,32 @@ td.sold, .car-option.sold .car-option .fav {
   box-shadow: 0 0 0 2px var(--star), 0 2px 8px rgb(0 0 0 / 0.28);
 }
 .map-pin.sold span { opacity: 0.45; }
+.map-pin.photo {
+  position: relative;
+  border-radius: 7px;
+  box-shadow: 0 0 0 2px var(--accent), 0 2px 8px rgb(0 0 0 / 0.35);
+  background: var(--panel);
+}
+.map-pin.photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+.map-pin.photo b {
+  position: absolute;
+  right: -8px;
+  top: -9px;
+  padding: 2px 4px;
+  border-radius: 5px;
+  background: var(--accent);
+  color: #fff;
+  font: 600 10px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.map-pin.photo.fav { box-shadow: 0 0 0 2px var(--star), 0 2px 8px rgb(0 0 0 / 0.35); }
+.map-pin.photo.sold { opacity: 0.45; }
+.map-pin.photo:hover { z-index: 1000 !important; } /* overlapping thumbnails */
 .map-home span {
   width: 28px;
   height: 28px;

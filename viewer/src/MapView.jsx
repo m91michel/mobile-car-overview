@@ -37,17 +37,37 @@ function groupByLocation(cars) {
   return [...groups.values()];
 }
 
+const attr = (text) => String(text).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+
+/**
+ * A thumbnail of the car instead of a bare number, so the map reads at a
+ * glance. A shared pin shows its first car with the count as the badge; a car
+ * without photos falls back to the round number pin.
+ */
 function pinIcon(group, favourites) {
   const fav = group.cars.some((car) => favourites.includes(car.id));
   const sold = group.cars.every(isSold);
   const label =
     group.cars.length === 1 ? carRef(group.cars[0]) || '·' : String(group.cars.length);
+  const cover = group.cars.find((car) => car.images?.[0]);
+  const className = `map-pin${fav ? ' fav' : ''}${sold ? ' sold' : ''}`;
+  if (!cover) {
+    return L.divIcon({
+      className,
+      html: `<span>${label}</span>`,
+      iconSize: [34, 34],
+      iconAnchor: [17, 17],
+      popupAnchor: [0, 14],
+    });
+  }
   return L.divIcon({
-    className: `map-pin${fav ? ' fav' : ''}${sold ? ' sold' : ''}`,
-    html: `<span>${label}</span>`,
-    iconSize: [34, 34],
-    iconAnchor: [17, 17],
-    popupAnchor: [0, 14],
+    className: `${className} photo`,
+    html:
+      `<img src="${attr(photo(cover.images[0], 'mo-240'))}" alt="" referrerpolicy="no-referrer">` +
+      `<b>${attr(label)}</b>`,
+    iconSize: [60, 42],
+    iconAnchor: [30, 21],
+    popupAnchor: [0, -18],
   });
 }
 
