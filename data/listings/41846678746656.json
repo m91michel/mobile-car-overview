@@ -1,0 +1,373 @@
+{
+  "id": "41846678746656",
+  "url": "https://suchen.mobile.de/auto-inserat/bmw-320-m-sport-acc-parking-assistant-witten/41846678746656.html",
+  "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=41846678746656&scopeId=C&action=compareItem",
+  "fetchedAt": "2026-09-26T09:08:18.215Z",
+  "title": "BMW 320 M-Sport | ACC | Parking Assistant",
+  "shortTitle": "BMW 320",
+  "subTitle": "M-Sport | ACC | Parking Assistant",
+  "make": "BMW",
+  "model": "320",
+  "category": "EstateCar",
+  "sku": "B01861050920",
+  "isNew": true,
+  "kba": {
+    "hsn": "0005",
+    "tsn": "CVS"
+  },
+  "price": {
+    "gross": 32400,
+    "net": null,
+    "currency": "EUR",
+    "localized": "32.400 €",
+    "vatRate": null,
+    "vatNote": null,
+    "type": "FIXED"
+  },
+  "priceRating": {
+    "rating": "GOOD_PRICE",
+    "label": "Guter Preis",
+    "offset": 20,
+    "thresholds": [
+      "24.500 €",
+      "31.900 €",
+      "34.300 €",
+      "38.200 €",
+      "41.000 €",
+      "45.500 €"
+    ]
+  },
+  "facts": {
+    "damageCondition": {
+      "label": "Fahrzeugzustand",
+      "value": "Gebrauchtfahrzeug, Unfallfrei",
+      "group": "vehicle"
+    },
+    "category": {
+      "label": "Kategorie",
+      "value": "Kombi",
+      "group": "vehicle"
+    },
+    "modelRange": {
+      "label": "Baureihe",
+      "value": "G21",
+      "group": "vehicle"
+    },
+    "trimLine": {
+      "label": "Ausstattungslinie",
+      "value": "M-Sport | ACC | Parking Assistant",
+      "group": "vehicle"
+    },
+    "sku": {
+      "label": "Fahrzeugnummer",
+      "value": "B01861050920",
+      "group": "vehicle"
+    },
+    "availability": {
+      "label": "Verfügbarkeit",
+      "value": "Sofort",
+      "group": "vehicle"
+    },
+    "countryVersion": {
+      "label": "Herkunft",
+      "value": "Deutsche Ausführung",
+      "group": "vehicle"
+    },
+    "mileage": {
+      "label": "Kilometerstand",
+      "value": "52.036 km",
+      "group": "vehicle"
+    },
+    "cubicCapacity": {
+      "label": "Hubraum",
+      "value": "1.998 cm³",
+      "group": "vehicle"
+    },
+    "power": {
+      "label": "Leistung",
+      "value": "135 kW (184 PS)",
+      "group": "vehicle"
+    },
+    "envkv.engineType": {
+      "label": "Antriebsart",
+      "value": "Verbrennungsmotor",
+      "group": "envkv"
+    },
+    "fuel": {
+      "label": "Kraftstoffart",
+      "value": "Benzin, E10-geeignet",
+      "group": "vehicle"
+    },
+    "numSeats": {
+      "label": "Anzahl Sitzplätze",
+      "value": "5",
+      "group": "vehicle"
+    },
+    "doorCount": {
+      "label": "Anzahl der Türen",
+      "value": "4/5",
+      "group": "vehicle"
+    },
+    "transmission": {
+      "label": "Getriebe",
+      "value": "Automatik",
+      "group": "vehicle"
+    },
+    "emissionClass": {
+      "label": "Schadstoffklasse",
+      "value": "Euro6d",
+      "group": "vehicle"
+    },
+    "firstRegistration": {
+      "label": "Erstzulassung",
+      "value": "12/2023",
+      "group": "vehicle"
+    },
+    "constructionYear": {
+      "label": "Baujahr",
+      "value": "2023",
+      "group": "vehicle"
+    },
+    "numberOfPreviousOwners": {
+      "label": "Anzahl der Fahrzeughalter",
+      "value": "1",
+      "group": "vehicle"
+    },
+    "climatisation": {
+      "label": "Klimatisierung",
+      "value": "3-Zonen-Klimaautomatik",
+      "group": "vehicle"
+    },
+    "parkAssists": {
+      "label": "Einparkhilfe",
+      "value": "Vorne, Kamera, Hinten, Selbstlenkende Systeme",
+      "group": "vehicle"
+    },
+    "airbag": {
+      "label": "Airbags",
+      "value": "Front-, Seiten- und weitere Airbags",
+      "group": "vehicle"
+    },
+    "manufacturerColorName": {
+      "label": "Farbe (Hersteller)",
+      "value": "M Brooklyn Grau",
+      "group": "vehicle"
+    },
+    "color": {
+      "label": "Farbe",
+      "value": "Grau Metallic",
+      "group": "vehicle"
+    },
+    "interior": {
+      "label": "Innenausstattung",
+      "value": "Andere",
+      "group": "vehicle"
+    },
+    "trailerLoadBraked": {
+      "label": "Anhängelast gebremst",
+      "value": "1.600 kg",
+      "group": "vehicle"
+    },
+    "trailerLoadUnbraked": {
+      "label": "Anhängelast ungebremst",
+      "value": "750 kg",
+      "group": "vehicle"
+    },
+    "netWeight": {
+      "label": "Gewicht",
+      "value": "1.660 kg",
+      "group": "vehicle"
+    },
+    "fuelTankVolume": {
+      "label": "Tankgröße",
+      "value": "59 l",
+      "group": "vehicle"
+    }
+  },
+  "derived": {
+    "mileageKm": 52036,
+    "powerKw": 135,
+    "powerHp": 184,
+    "cubicCapacityCcm": 1998,
+    "firstRegistration": "2023-12",
+    "constructionYear": 2023,
+    "seats": 5,
+    "previousOwners": 1,
+    "weightKg": 1660,
+    "fuelTankLitres": 59,
+    "co2GramsPerKm": null,
+    "consumptionL100km": null,
+    "distanceFromHomeKm": 340,
+    "generation": "G21",
+    "facelift": "lci",
+    "faceliftBasis": "Erstzulassung 12/2023, nach der Umstellung"
+  },
+  "features": [
+    "Abgedunkelte Scheiben",
+    "ABS",
+    "Abstandstempomat",
+    "Abstandswarner",
+    "Alarmanlage",
+    "Ambiente-Beleuchtung",
+    "Armlehne",
+    "Berganfahrassistent",
+    "Bordcomputer",
+    "Dachreling",
+    "Elektr. Fensterheber",
+    "Elektr. Heckklappe",
+    "Elektr. Seitenspiegel",
+    "Elektr. Seitenspiegel anklappbar",
+    "Elektr. Wegfahrsperre",
+    "ESP",
+    "Freisprecheinrichtung",
+    "Garantie",
+    "Gepäckraumabtrennung",
+    "Geschwindigkeitsbegrenzer",
+    "Heckantrieb",
+    "Induktionsladen für Smartphones",
+    "Innenspiegel autom. abblendend",
+    "Isofix",
+    "Lederlenkrad",
+    "LED-Scheinwerfer",
+    "LED-Tagfahrlicht",
+    "Leichtmetallfelgen",
+    "Lichtsensor",
+    "Müdigkeitswarner",
+    "Navigationssystem",
+    "Notbremsassistent",
+    "Notrufsystem",
+    "Partikelfilter",
+    "Radio DAB",
+    "Regensensor",
+    "Reifendruckkontrolle",
+    "Schaltwippen",
+    "Servolenkung",
+    "Sitzheizung",
+    "Soundsystem",
+    "Sportfahrwerk",
+    "Sportpaket",
+    "Sportsitze",
+    "Spurhalteassistent",
+    "Start/Stopp-Automatik",
+    "Traktionskontrolle",
+    "Tuner/Radio",
+    "Verkehrszeichenerkennung",
+    "Volldigitales Kombiinstrument",
+    "Zentralverriegelung"
+  ],
+  "highlights": [],
+  "images": [
+    "https://img.classistatic.de/api/v1/mo-prod/images/df/df53c336-60b8-4807-84d4-ce2157c313a9",
+    "https://img.classistatic.de/api/v1/mo-prod/images/b4/b4ccd4ae-5fc0-4a0a-b075-26f3494f21c0",
+    "https://img.classistatic.de/api/v1/mo-prod/images/05/05a4106e-ff42-4fa9-97e2-346aee30e6e7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/58/58ed260c-2bde-45c1-a356-be7d163c77f2",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6f/6f841b6a-563e-49fa-b48e-169c5ccb5ce8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/6b/6b8875a2-9a4d-4bef-b0b0-eb7cbbfa65a8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f5/f5edce72-bd5d-4e86-8a82-3b0d6ad796fb",
+    "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0368c6f-d52f-48a1-bfe1-92d49f2cfb5d",
+    "https://img.classistatic.de/api/v1/mo-prod/images/37/37681a04-1a79-474b-b2af-3b83cf76e4d4",
+    "https://img.classistatic.de/api/v1/mo-prod/images/5e/5e6f8be1-0237-41aa-b0b3-1011ba6e7c41",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f4/f4c20290-abfd-4f74-a768-b5a093ef2a00",
+    "https://img.classistatic.de/api/v1/mo-prod/images/08/08adaa15-b6b9-406f-8dcf-44d335724a2a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/0e/0eea51eb-9c19-44f4-9168-90535dd401ca",
+    "https://img.classistatic.de/api/v1/mo-prod/images/af/af753e4d-ec00-4435-bd2a-e010df05e7f8",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1c/1c592983-ea77-47f9-b417-1cf666f4e22a",
+    "https://img.classistatic.de/api/v1/mo-prod/images/9b/9bb624fa-7ec6-445f-ae7b-91b21d50824b",
+    "https://img.classistatic.de/api/v1/mo-prod/images/1d/1d4b7ad4-60ff-479e-93d2-5ee4e9c3be47",
+    "https://img.classistatic.de/api/v1/mo-prod/images/66/66de5fb0-2280-4786-8650-389ebfb890e5",
+    "https://img.classistatic.de/api/v1/mo-prod/images/59/597af999-b3bd-45b1-a467-2936f350f19e",
+    "https://img.classistatic.de/api/v1/mo-prod/images/35/3516dcc9-55a6-4270-a4c9-f6b05ed1e289",
+    "https://img.classistatic.de/api/v1/mo-prod/images/ac/ac896283-0104-42ce-8903-ecebc2a39ef7",
+    "https://img.classistatic.de/api/v1/mo-prod/images/50/5018ce1f-a360-4918-8864-9def5e86fc67",
+    "https://img.classistatic.de/api/v1/mo-prod/images/4b/4ba5a519-075f-45a1-bcd4-2587666a4026",
+    "https://img.classistatic.de/api/v1/mo-prod/images/60/6053828b-0262-4833-a139-71c53777e428",
+    "https://img.classistatic.de/api/v1/mo-prod/images/44/44d560e1-063d-4e35-b0c8-17f2b1860417",
+    "https://img.classistatic.de/api/v1/mo-prod/images/f6/f6fb4ac3-1808-4c90-80aa-87221a3b386c"
+  ],
+  "dealer": {
+    "name": "Auto-Zentrum Bernhard Ernst GmbH & Co. KG",
+    "type": "Händler",
+    "street": "Crengeldanzstrasse 83",
+    "city": "DE-58455 Witten",
+    "country": "DE",
+    "phone": "+49 (0)2302 2005310",
+    "homepage": "https://home.mobile.de/home/redirect.html?customerId=455002",
+    "location": {
+      "lat": 51.4506757,
+      "lon": 7.3252466
+    },
+    "openingHours": [
+      {
+        "day": "Mo - Fr",
+        "time": "08:00 Uhr - 18:00 Uhr"
+      },
+      {
+        "day": "Sa",
+        "time": "09:00 Uhr - 14:00 Uhr"
+      }
+    ],
+    "rating": {
+      "score": 4.6,
+      "count": 313,
+      "recommendationRate": 83
+    }
+  },
+  "financePlans": [
+    {
+      "type": "AO",
+      "url": "https://www.mobile.de/finanzierung/route/outlink/1?adId=41846678746656",
+      "shortFlow": true,
+      "promotion": false,
+      "showInGallery": true,
+      "offer": {
+        "bankName": "Openbank Deutschland AG",
+        "loanBroker": "Check24 GmbH",
+        "loanType": "BALLOON",
+        "downPayment": 6480,
+        "creditTerm": 60,
+        "yearlyMileage": 10000,
+        "creditAmount": 25920,
+        "interestRateNominal": 5.41,
+        "interestRateEffective": 5.55,
+        "monthlyInstallment": 343.5,
+        "finalInstallment": 10692,
+        "totalInterest": 5038.45,
+        "totalAmount": 30958.45,
+        "localized": {
+          "downPayment": "6.480,00 €",
+          "downPaymentInPercent": "20%",
+          "creditTerm": "60",
+          "creditTermInYears": "5",
+          "yearlyMileage": "10.000",
+          "creditAmount": "25.920,00 €",
+          "interestRateNominal": "5,41%",
+          "interestRateEffective": "5,55%",
+          "monthlyInstallment": "344 €",
+          "finalInstallment": "10.692,00 €",
+          "totalInterest": "5.038,45 €",
+          "totalAmount": "30.958,45 €",
+          "disclaimer": "Repräsentatives Beispiel gemäß § 17 Abs. 4 PAngV: Nettodarlehensbetrag von 10.000,00 €, effektiver Jahreszins 5,55%, fester Sollzinssatz 5,41% p.a., Laufzeit 60 Monate, 59 monatliche Raten à 144,70 € und eine Schlussrate à 3.300,00 €, Gesamtbetrag 11.837,52 €. Ein Angebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+        }
+      }
+    }
+  ],
+  "ref": 72,
+  "assessment": {
+    "verdict": null,
+    "note": null,
+    "retrofit": [
+      {
+        "key": "ahk",
+        "label": "AHK abnehmbar, Nachrüstung Fürth",
+        "cost": 1600
+      }
+    ],
+    "retrofitCost": 1600,
+    "mileageAdjustment": {
+      "expectedKm": 41250,
+      "deviationKm": 10786,
+      "adjustment": 1080
+    },
+    "effectivePrice": 35080
+  }
+}
