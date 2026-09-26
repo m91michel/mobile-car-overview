@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 // the import above. Only the structural CSS: the cluster looks like our pins.
 import 'leaflet.markercluster';
 import 'leaflet.markercluster/dist/MarkerCluster.css';
-import { carLabel, carRef, carSubline, isSold, photo } from './rows.js';
+import { carLabel, carRef, isSold, photo } from './rows.js';
 
 // Same default as scripts/geo.mjs. The viewer never re-runs geo.mjs, and the
 // scrape already baked distanceFromHomeKm into each car, so the home pin is
@@ -44,14 +44,14 @@ function groupByLocation(cars) {
 const attr = (text) => String(text).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
 /**
- * A thumbnail of the car instead of a bare number, so the map reads at a
- * glance. A shared pin shows its first car with the count as the badge; a car
- * without photos falls back to the round number pin.
+ * `pins` is 'photo' (a thumbnail, so the map reads at a glance) or 'number'
+ * (the round #ref pin). A shared pin shows its first car with the count as the
+ * label; a car without photos always gets the round pin.
  */
-function pinIcon(group, favourites) {
+function pinIcon(group, favourites, pins) {
   const label =
     group.cars.length === 1 ? carRef(group.cars[0]) || '·' : String(group.cars.length);
-  return photoPin(group.cars, label, favourites);
+  return carPin(group.cars, label, favourites, pins);
 }
 
 /**
@@ -59,15 +59,15 @@ function pinIcon(group, favourites) {
  * count, so the map shows "7 around Stuttgart" rather than a pile of
  * thumbnails. A click zooms in until they separate.
  */
-function clusterIcon(cluster, favourites) {
+function clusterIcon(cluster, favourites, pins) {
   const cars = cluster.getAllChildMarkers().flatMap((marker) => marker.options.cars ?? []);
-  return photoPin(cars, String(cars.length), favourites, ' cluster');
+  return carPin(cars, String(cars.length), favourites, pins, ' cluster');
 }
 
-function photoPin(cars, label, favourites, extra = '') {
+function carPin(cars, label, favourites, pins, extra = '') {
   const fav = cars.some((car) => favourites.includes(car.id));
   const sold = cars.every(isSold);
-  const cover = cars.find((car) => car.images?.[0]);
+  const cover = pins === 'photo' && cars.find((car) => car.images?.[0]);
   const className = `map-pin${fav ? ' fav' : ''}${sold ? ' sold' : ''}${extra}`;
   if (!cover) {
     return L.divIcon({
@@ -99,72 +99,22 @@ function homeIcon() {
   });
 }
 
-function popupFor(group) {
-  const wrap = document.createElement('div');
-  wrap.className = 'map-popup-list';
-
-  const place = document.createElement('p');
-  place.className = 'map-popup-place';
-  const first = group.cars[0];
-  const city = (first.dealer?.city ?? first.dealer?.name ?? '').replace(/\u00a0/g, ' ');
-  const km = first.derived?.distanceFromHomeKm;
-  place.textContent = [city, km != null ? `${km} km Luftlinie` : null].filter(Boolean).join(' · ');
-  wrap.append(place);
-
-  for (const car of group.cars) {
-    const card = document.createElement('a');
-    card.className = `map-popup-card${isSold(car) ? ' sold' : ''}`;
-    card.href = car.url;
-    card.target = '_blank';
-    card.rel = 'noreferrer';
-
-    if (car.images?.[0]) {
-      const img = document.createElement('img');
-      img.src = photo(car.images[0], 'mo-240');
-      img.alt = '';
-      img.referrerPolicy = 'no-referrer';
-      card.append(img);
-    }
-
-    const text = document.createElement('span');
-    text.className = 'map-popup-text';
-
-    const title = document.createElement('span');
-    title.className = 'map-popup-title';
-    const ref = carRef(car);
-    if (ref) {
-      const badge = document.createElement('span');
-      badge.className = 'ref';
-      badge.textContent = ref;
-      title.append(badge, '\u00a0');
-    }
-    title.append(car.shortTitle ?? carLabel(car));
-    text.append(title);
-
-    const meta = document.createElement('span');
-    meta.className = 'muted';
-    meta.textContent = [car.price?.localized ?? '—', carSubline(car)].filter(Boolean).join(' · ');
-    if (isSold(car)) {
-      const gone = document.createElement('span');
-      gone.className = 'gone';
-      gone.textContent = 'verkauft';
-      meta.append(gone);
-    }
-    text.append(meta);
-    card.append(text);
-    wrap.append(card);
-  }
-
-  return wrap;
-}
-
-export default function MapView({ cars, favourites = [] }) {
+/**
+ * A click on a pin hands its cars to `onSelect` -- App opens them as a table
+ * in a drawer -- instead of a popup, which could only ever show a summary.
+ */
+export default function MapView({ cars, favourites = [], pins = 'photo', onPinsChange, onSelect }) {
   const host = useRef(null);
   const mapRef = useRef(null);
   const layerRef = useRef(null);
   // Bumped after the map exists so the marker effect re-runs after React
   // StrictMode's mount/unmount/remount (the map ref is new; groups are not).
   const [mapReady, setMapReady] = useState(0);
+  // Refit only when the set of cars changes, not when favourites or the pin
+  // style do -- otherwise every ★ click would throw away the current zoom.
+  const fittedFor = useRef(null);
+  const selectRef = useRef(onSelect);
+  selectRef.current = onSelect;
 
   const groups = useMemo(() => groupByLocation(cars), [cars]);
   const missing = useMemo(() => cars.filter((car) => !carLocation(car)), [cars]);
@@ -185,6 +135,7 @@ export default function MapView({ cars, favourites = [] }) {
 
     mapRef.current = map;
     layerRef.current = layer;
+    fittedFor.current = null;
     setMapReady((n) => n + 1);
 
     const ro = new ResizeObserver(() => map.invalidateSize());
@@ -210,7 +161,7 @@ export default function MapView({ cars, favourites = [] }) {
       maxClusterRadius: 60,
       showCoverageOnHover: false,
       spiderfyOnMaxZoom: true,
-      iconCreateFunction: (cluster) => clusterIcon(cluster, favourites),
+      iconCreateFunction: (cluster) => clusterIcon(cluster, favourites, pins),
     });
     clusters.addTo(layer);
 
@@ -224,28 +175,33 @@ export default function MapView({ cars, favourites = [] }) {
     for (const group of groups) {
       bounds.extend([group.lat, group.lon]);
       L.marker([group.lat, group.lon], {
-        icon: pinIcon(group, favourites),
+        icon: pinIcon(group, favourites, pins),
         cars: group.cars,
         title: group.cars.map((car) => `${carRef(car)} ${car.shortTitle ?? carLabel(car)}`.trim()).join(', '),
       })
-        .bindPopup(popupFor(group), {
-          maxWidth: 340,
-          className: 'map-popup',
-          autoPanPadding: [40, 40],
-        })
+        .on('click', () => selectRef.current?.(group.cars))
         .addTo(clusters);
     }
 
-    if (bounds.isValid()) {
+    if (bounds.isValid() && fittedFor.current !== groups) {
       map.fitBounds(bounds.pad(0.16), { maxZoom: 11, animate: false });
+      fittedFor.current = groups;
     }
     map.invalidateSize();
-  }, [mapReady, groups, favourites]);
+  }, [mapReady, groups, favourites, pins]);
 
   return (
     <div className="map-view">
       <div className="map-host" ref={host} />
       <p className="map-legend muted">
+        <span className="sort map-pins" role="group" aria-label="Pins">
+          <button className={pins === 'photo' ? 'on' : ''} onClick={() => onPinsChange?.('photo')}>
+            Bilder
+          </button>
+          <button className={pins === 'number' ? 'on' : ''} onClick={() => onPinsChange?.('number')}>
+            Nummern
+          </button>
+        </span>
         {groups.length} {groups.length === 1 ? 'Standort' : 'Standorte'}
         {missing.length > 0 && (
           <>

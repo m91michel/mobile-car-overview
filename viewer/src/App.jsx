@@ -4,6 +4,7 @@ import {
   SORTS,
   STATUSES,
   buildRows,
+  carCity,
   carLabel,
   carPlace,
   carRef,
@@ -444,6 +445,11 @@ export default function App() {
   const [openDrawer, setOpenDrawer] = useState(null); // 'cars' | 'favourites' | 'lists' | 'rows'
   const carDrawer = useDrawer(openDrawer === 'cars');
   const favDrawer = useDrawer(openDrawer === 'favourites');
+  const mapCarDrawer = useDrawer(openDrawer === 'map-cars');
+  // Photos or the #ref as map pins -- a per-browser taste, like row order.
+  const [mapPins, setMapPins] = useLocalStorage(key('map-pins'), 'photo');
+  // Ids, not cars: the drawer then follows live edits (★, status, notes).
+  const [mapCarIds, setMapCarIds] = useState([]);
   const listDrawer = useDrawer(openDrawer === 'lists');
   const rowDrawer = useDrawer(openDrawer === 'rows');
   // The filter builder's draft, kept outside `lists` until it is saved (or
@@ -614,6 +620,13 @@ export default function App() {
     [orderedRows, hidden, diffOnly, featuresOnly, shown],
   );
 
+  // The cars behind the pin clicked on the map, from `shown` so they carry
+  // the same notes, status and pricing as the main table.
+  const mapCars = useMemo(
+    () => shown.filter((car) => mapCarIds.includes(car.id)),
+    [shown, mapCarIds],
+  );
+
   const toggleCar = (id) =>
     setSelected((current) => {
       // Same "everything but hidden" starting point as selectedIds' default,
@@ -753,6 +766,200 @@ export default function App() {
 
   const pinRow = (rowKey) =>
     setOrder([rowKey, ...orderedRows.map((r) => r.key).filter((k) => k !== rowKey)]);
+
+  // The comparison table for any set of cars: the main view, and the drawer
+  // the map opens for the cars behind a pin. Same rows, order and hidden rows.
+  const renderTable = (cars) => (
+    <div className="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th className="row-head">Merkmal</th>
+            {cars.map((car) => (
+              <th key={car.id} className={isSold(car) ? 'sold' : ''}>
+                <div className="hero-wrap">
+                  {car.images?.[0] && (
+                    <img
+                      className="hero"
+                      src={photo(car.images[0], 'mo-1024')}
+                      alt=""
+                      referrerPolicy="no-referrer"
+                    />
+                  )}
+                  <button
+                    className={`col-fav ${isFavourite(car.id) ? 'on' : ''}`}
+                    onClick={() => toggleFavourite(car.id)}
+                    title={isFavourite(car.id) ? 'Favorit entfernen' : 'Als Favorit merken'}
+                  >
+                    {isFavourite(car.id) ? '★' : '☆'}
+                  </button>
+                  <button
+                    className={`col-note ${car.notes ? 'on' : ''}`}
+                    onClick={() => setEditing(car.id)}
+                    title={car.notes ? 'Notiz bearbeiten' : 'Notiz hinzufügen'}
+                  >
+                    ✎
+                  </button>
+                  <button
+                    className="col-remove"
+                    onClick={() => toggleCar(car.id)}
+                    title="Fahrzeug aus dem Vergleich nehmen"
+                  >
+                    ✕
+                  </button>
+                  <button
+                    className={`col-hide ${isRemoved(car.id) ? 'on' : ''}`}
+                    onClick={() => toggleRemoved(car.id)}
+                    title={
+                      isRemoved(car.id)
+                        ? 'Wiederherstellen'
+                        : 'Ausblenden (zu alt, Unfall, verkauft, ...)'
+                    }
+                  >
+                    {isRemoved(car.id) ? '↺' : '🗑'}
+                  </button>
+                </div>
+                <a
+                  className="head-title"
+                  href={car.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  title={`${carRef(car)} ${carLabel(car)}`.trim()}
+                >
+                  {carRef(car) && <span className="ref">{carRef(car)}</span>}
+                  {carLabel(car)}
+                </a>
+                <span className="price">
+                  {car.price?.localized ?? '—'}
+                  {isSold(car) && <span className="gone">verkauft</span>}
+                </span>
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {visibleRows.map((row) => (
+            <tr
+              key={row.key}
+              className={dragKey === row.key ? 'dragging' : ''}
+              onDragOver={(e) => {
+                if (dragKey) e.preventDefault();
+              }}
+              onDrop={(e) => {
+                e.preventDefault();
+                if (dragKey) dropRow(dragKey, row.key);
+                setDragKey(null);
+              }}
+            >
+              <th
+                className="row-head"
+                draggable
+                onDragStart={() => setDragKey(row.key)}
+                onDragEnd={() => setDragKey(null)}
+              >
+                <div className="row-head-inner">
+                  <span className="grip" aria-hidden="true">⠿</span>
+                  <span className="label" title={row.label}>
+                    {row.label}
+                  </span>
+                  <span className="row-actions">
+                    <button onClick={() => pinRow(row.key)} title="Nach ganz oben">⤒</button>
+                    <button onClick={() => moveRow(row.key, -1)} title="Nach oben">↑</button>
+                    <button onClick={() => moveRow(row.key, 1)} title="Nach unten">↓</button>
+                    <button onClick={() => toggleRow(row.key)} title="Zeile ausblenden">✕</button>
+                  </span>
+                </div>
+              </th>
+              {cars.map((car) => {
+                if (row.kind === 'status') {
+                  return (
+                    <td key={car.id} className={isSold(car) ? 'sold' : ''}>
+                      <div className="cell">
+                        <select
+                          className="status"
+                          data-status={car.status ?? ''}
+                          value={car.status ?? ''}
+                          onChange={(e) => setStatus(car.id, e.target.value)}
+                          aria-label="Status"
+                        >
+                          {STATUSES.map((status) => (
+                            <option key={status.key} value={status.key}>
+                              {status.label}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                    </td>
+                  );
+                }
+                if (row.kind === 'links') {
+                  const links = car.notes?.links ?? [];
+                  return (
+                    <td
+                      key={car.id}
+                      className={`${links.length ? '' : 'empty'} ${isSold(car) ? 'sold' : ''}`}
+                    >
+                      <div className="cell">
+                        {links.length === 0
+                          ? '–'
+                          : links.map((link) => (
+                              <a
+                                key={link.url}
+                                className="note-link"
+                                href={link.url}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                {link.label || hostOf(link.url)}
+                              </a>
+                            ))}
+                      </div>
+                    </td>
+                  );
+                }
+                const { mark, text, tone, swatch, meter, hint } = cellFor(row, car, pricingSettings);
+                return (
+                  <td
+                    key={car.id}
+                    className={`${tone === 'empty' ? 'empty' : ''} ${isSold(car) ? 'sold' : ''}`}
+                  >
+                    <div className="cell">
+                      {swatch && (
+                        <span
+                          className={`swatch ${swatch.metallic ? 'metallic' : ''}`}
+                          style={{ '--paint': swatch.color }}
+                        />
+                      )}
+                      {mark && <span className={`mark ${tone}`}>{mark}</span>}
+                      {mark && text ? ' ' : ''}
+                      {text}
+                      {hint && (
+                        <span className="hint" title={hint} aria-label="Aufschlüsselung">
+                          ⓘ
+                        </span>
+                      )}
+                      {meter && (
+                        <span className={`meter ${meter.zone}`} title={meter.hint}>
+                          <span className="meter-fill" style={{ width: `${meter.fill * 100}%` }} />
+                          <span className="meter-target" style={{ left: `${meter.target * 100}%` }} />
+                          {meter.warn !== null && (
+                            <span
+                              className="meter-target warn"
+                              style={{ left: `${meter.warn * 100}%` }}
+                            />
+                          )}
+                        </span>
+                      )}
+                    </div>
+                  </td>
+                );
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 
   if (error) return <p className="notice">Daten konnten nicht geladen werden: {error}</p>;
   if (!cars) return <p className="notice">Lade Fahrzeuge…</p>;
@@ -1031,199 +1238,41 @@ export default function App() {
         </p>
       ) : view === 'map' ? (
         <Suspense fallback={<p className="notice">Lade Karte…</p>}>
-          <MapView cars={shown} favourites={favourites} />
+          <MapView
+            cars={shown}
+            favourites={favourites}
+            pins={mapPins}
+            onPinsChange={setMapPins}
+            onSelect={(cars) => {
+              setMapCarIds(cars.map((car) => car.id));
+              setOpenDrawer('map-cars');
+            }}
+          />
         </Suspense>
       ) : (
-        <div className="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th className="row-head">Merkmal</th>
-                {shown.map((car) => (
-                  <th key={car.id} className={isSold(car) ? 'sold' : ''}>
-                    <div className="hero-wrap">
-                      {car.images?.[0] && (
-                        <img
-                          className="hero"
-                          src={photo(car.images[0], 'mo-1024')}
-                          alt=""
-                          referrerPolicy="no-referrer"
-                        />
-                      )}
-                      <button
-                        className={`col-fav ${isFavourite(car.id) ? 'on' : ''}`}
-                        onClick={() => toggleFavourite(car.id)}
-                        title={isFavourite(car.id) ? 'Favorit entfernen' : 'Als Favorit merken'}
-                      >
-                        {isFavourite(car.id) ? '★' : '☆'}
-                      </button>
-                      <button
-                        className={`col-note ${car.notes ? 'on' : ''}`}
-                        onClick={() => setEditing(car.id)}
-                        title={car.notes ? 'Notiz bearbeiten' : 'Notiz hinzufügen'}
-                      >
-                        ✎
-                      </button>
-                      <button
-                        className="col-remove"
-                        onClick={() => toggleCar(car.id)}
-                        title="Fahrzeug aus dem Vergleich nehmen"
-                      >
-                        ✕
-                      </button>
-                      <button
-                        className={`col-hide ${isRemoved(car.id) ? 'on' : ''}`}
-                        onClick={() => toggleRemoved(car.id)}
-                        title={
-                          isRemoved(car.id)
-                            ? 'Wiederherstellen'
-                            : 'Ausblenden (zu alt, Unfall, verkauft, ...)'
-                        }
-                      >
-                        {isRemoved(car.id) ? '↺' : '🗑'}
-                      </button>
-                    </div>
-                    <a
-                      className="head-title"
-                      href={car.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      title={`${carRef(car)} ${carLabel(car)}`.trim()}
-                    >
-                      {carRef(car) && <span className="ref">{carRef(car)}</span>}
-                      {carLabel(car)}
-                    </a>
-                    <span className="price">
-                      {car.price?.localized ?? '—'}
-                      {isSold(car) && <span className="gone">verkauft</span>}
-                    </span>
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {visibleRows.map((row) => (
-                <tr
-                  key={row.key}
-                  className={dragKey === row.key ? 'dragging' : ''}
-                  onDragOver={(e) => {
-                    if (dragKey) e.preventDefault();
-                  }}
-                  onDrop={(e) => {
-                    e.preventDefault();
-                    if (dragKey) dropRow(dragKey, row.key);
-                    setDragKey(null);
-                  }}
-                >
-                  <th
-                    className="row-head"
-                    draggable
-                    onDragStart={() => setDragKey(row.key)}
-                    onDragEnd={() => setDragKey(null)}
-                  >
-                    <div className="row-head-inner">
-                      <span className="grip" aria-hidden="true">⠿</span>
-                      <span className="label" title={row.label}>
-                        {row.label}
-                      </span>
-                      <span className="row-actions">
-                        <button onClick={() => pinRow(row.key)} title="Nach ganz oben">⤒</button>
-                        <button onClick={() => moveRow(row.key, -1)} title="Nach oben">↑</button>
-                        <button onClick={() => moveRow(row.key, 1)} title="Nach unten">↓</button>
-                        <button onClick={() => toggleRow(row.key)} title="Zeile ausblenden">✕</button>
-                      </span>
-                    </div>
-                  </th>
-                  {shown.map((car) => {
-                    if (row.kind === 'status') {
-                      return (
-                        <td key={car.id} className={isSold(car) ? 'sold' : ''}>
-                          <div className="cell">
-                            <select
-                              className="status"
-                              data-status={car.status ?? ''}
-                              value={car.status ?? ''}
-                              onChange={(e) => setStatus(car.id, e.target.value)}
-                              aria-label="Status"
-                            >
-                              {STATUSES.map((status) => (
-                                <option key={status.key} value={status.key}>
-                                  {status.label}
-                                </option>
-                              ))}
-                            </select>
-                          </div>
-                        </td>
-                      );
-                    }
-                    if (row.kind === 'links') {
-                      const links = car.notes?.links ?? [];
-                      return (
-                        <td
-                          key={car.id}
-                          className={`${links.length ? '' : 'empty'} ${isSold(car) ? 'sold' : ''}`}
-                        >
-                          <div className="cell">
-                            {links.length === 0
-                              ? '–'
-                              : links.map((link) => (
-                                  <a
-                                    key={link.url}
-                                    className="note-link"
-                                    href={link.url}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                  >
-                                    {link.label || hostOf(link.url)}
-                                  </a>
-                                ))}
-                          </div>
-                        </td>
-                      );
-                    }
-                    const { mark, text, tone, swatch, meter, hint } = cellFor(row, car, pricingSettings);
-                    return (
-                      <td
-                        key={car.id}
-                        className={`${tone === 'empty' ? 'empty' : ''} ${isSold(car) ? 'sold' : ''}`}
-                      >
-                        <div className="cell">
-                          {swatch && (
-                            <span
-                              className={`swatch ${swatch.metallic ? 'metallic' : ''}`}
-                              style={{ '--paint': swatch.color }}
-                            />
-                          )}
-                          {mark && <span className={`mark ${tone}`}>{mark}</span>}
-                          {mark && text ? ' ' : ''}
-                          {text}
-                          {hint && (
-                            <span className="hint" title={hint} aria-label="Aufschlüsselung">
-                              ⓘ
-                            </span>
-                          )}
-                          {meter && (
-                            <span className={`meter ${meter.zone}`} title={meter.hint}>
-                              <span className="meter-fill" style={{ width: `${meter.fill * 100}%` }} />
-                              <span className="meter-target" style={{ left: `${meter.target * 100}%` }} />
-                              {meter.warn !== null && (
-                                <span
-                                  className="meter-target warn"
-                                  style={{ left: `${meter.warn * 100}%` }}
-                                />
-                              )}
-                            </span>
-                          )}
-                        </div>
-                      </td>
-                    );
-                  })}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        renderTable(shown)
       )}
+
+      <dialog
+        className="drawer right"
+        ref={mapCarDrawer}
+        onClose={() => setOpenDrawer(null)}
+        onClick={(e) => {
+          if (e.target === mapCarDrawer.current) setOpenDrawer(null); // backdrop
+        }}
+      >
+        <header className="drawer-head">
+          <strong>{mapCars.length === 1 ? 'Fahrzeug' : `${mapCars.length} Fahrzeuge`}</strong>
+          <span className="muted">
+            {[carCity(mapCars[0] ?? {}), mapCars[0]?.dealer?.name].filter(Boolean).join(' · ')}
+          </span>
+          <div className="spacer" />
+          <button onClick={() => setOpenDrawer(null)} title="Schließen">
+            ✕
+          </button>
+        </header>
+        {openDrawer === 'map-cars' && mapCars.length > 0 && renderTable(mapCars)}
+      </dialog>
 
       <dialog
         className="drawer"

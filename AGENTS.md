@@ -334,6 +334,15 @@ Vite + React in `viewer/`, started with `pnpm viewer`.
   keeps an old build for days, since the service worker only swaps code on a
   reload. Off on the dev server and whenever either version is unknown;
   `sw.js` never caches `/api/health`.
+- **The map opens the table.** `viewer/src/MapView.jsx` (Leaflet) draws one
+  pin per seller location, a car photo by default or the `#ref` round pin
+  (Bilder/Nummern under the map, per browser in `car-compare/map-pins`).
+  Zoomed out, nearby pins cluster (`leaflet.markercluster`) into a stack
+  with the car count. A click on a pin opens its cars in a right-hand drawer
+  holding the same table as the main view (`renderTable` in `App.jsx`), so
+  ★, notes and status work there too. Leaflet positions markers with its own
+  `position: absolute`; styling a pin `position: relative` stacks them in
+  flow and slides them off their coordinates.
 - **Photos are hotlinked.** mobile.de's CDN sizes them by query rule
   (`?rule=mo-240`, `mo-360`, `mo-1024`, `mo-1600`), which is why `images[]` is
   stored without a size. Nothing is downloaded.
