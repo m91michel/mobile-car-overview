@@ -1,3 +1,4 @@
+import { execSync } from 'node:child_process';
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { defineConfig, loadEnv } from 'vite';
@@ -101,7 +102,22 @@ const settingsApi = (env) => {
   };
 };
 
+/**
+ * The commit this bundle is built from, compared against /api/health at run
+ * time (UpdateNotice.jsx). Vercel provides it as a variable; a local build
+ * asks git, and a checkout without git gets null, which turns the check off.
+ */
+function buildVersion() {
+  if (process.env.VERCEL_GIT_COMMIT_SHA) return process.env.VERCEL_GIT_COMMIT_SHA;
+  try {
+    return execSync('git rev-parse HEAD', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
+  } catch {
+    return null;
+  }
+}
+
 export default defineConfig(({ mode }) => ({
+  define: { __APP_VERSION__: JSON.stringify(buildVersion()) },
   plugins: [
     react(),
     carsApi(),

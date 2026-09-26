@@ -324,6 +324,15 @@ Vite + React in `viewer/`, started with `pnpm viewer`.
   requests (the hotlinked photos) and is not registered on `localhost`, where
   it would fight hot reload. The table works offline from its second visit,
   because the first one loads before the worker controls the page.
+- **A new deploy announces itself.** The build bakes its commit into the
+  bundle (`__APP_VERSION__`, from `VERCEL_GIT_COMMIT_SHA` or `git rev-parse`
+  in `vite.config.js`), and `api/health.js` returns the commit Vercel is
+  serving now. `viewer/src/UpdateNotice.jsx` compares the two on load, on tab
+  focus and every five minutes, and shows "Neue Version verfügbar" with a
+  reload button once they differ. Without it an open tab or the installed app
+  keeps an old build for days, since the service worker only swaps code on a
+  reload. Off on the dev server and whenever either version is unknown;
+  `sw.js` never caches `/api/health`.
 - **Photos are hotlinked.** mobile.de's CDN sizes them by query rule
   (`?rule=mo-240`, `mo-360`, `mo-1024`, `mo-1600`), which is why `images[]` is
   stored without a size. Nothing is downloaded.

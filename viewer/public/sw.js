@@ -26,6 +26,8 @@ self.addEventListener('fetch', (event) => {
   // The sync must see the server or nothing: a cached answer would look like
   // an older server state. sync.js keeps working offline on its own.
   if (url.pathname.startsWith('/api/settings')) return;
+  // Same for the version check: a cached answer would hide a new deploy.
+  if (url.pathname.startsWith('/api/health')) return;
   event.respondWith(
     fetch(request)
       .then((response) => {

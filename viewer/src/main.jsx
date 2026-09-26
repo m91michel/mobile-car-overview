@@ -2,6 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
 import ErrorBoundary from './ErrorBoundary.jsx';
+import UpdateNotice from './UpdateNotice.jsx';
 import { startSync } from './sync.js';
 import './styles.css';
 
@@ -19,5 +20,6 @@ createRoot(document.getElementById('root')).render(
     <ErrorBoundary>
       <App />
     </ErrorBoundary>
+    <UpdateNotice />
   </StrictMode>,
 );
