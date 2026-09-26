@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T08:58:59.974Z",
+  "updatedAt": "2026-09-26T09:07:30.436Z",
   "unavailable": {
     "424825114": "2026-09-20T07:59:59.444Z",
     "438388660": "2026-09-20T07:59:59.444Z",
@@ -26124,6 +26124,432 @@
           "adjustment": 1410
         },
         "effectivePrice": 35980
+      }
+    },
+    {
+      "id": "458555148",
+      "url": "https://suchen.mobile.de/auto-inserat/bmw-320i-touring-m-sport-led-hud-hifi-r-kam-ahk-key-horb-am-neckar/458555148.html",
+      "sourceUrl": "https://suchen.mobile.de/fahrzeuge/details.html?id=458555148&scopeId=C&action=compareItem",
+      "fetchedAt": "2026-09-26T09:07:30.426Z",
+      "title": "BMW 320i Touring*M SPORT*LED-HUD-HiFi-R.KAM-AHK-KEY",
+      "shortTitle": "BMW 320",
+      "subTitle": "i Touring*M SPORT*LED-HUD-HiFi-R.KAM-AHK-KEY",
+      "make": "BMW",
+      "model": "320",
+      "category": "EstateCar",
+      "sku": "2914DK / #595",
+      "isNew": true,
+      "kba": {
+        "hsn": "0005",
+        "tsn": "CVS"
+      },
+      "price": {
+        "gross": 32280,
+        "net": null,
+        "currency": "EUR",
+        "localized": "32.280 €",
+        "vatRate": null,
+        "vatNote": null,
+        "type": "FIXED"
+      },
+      "priceRating": {
+        "rating": "REASONABLE_PRICE",
+        "label": "Fairer Preis",
+        "offset": 28,
+        "thresholds": [
+          "22.300 €",
+          "29.000 €",
+          "31.300 €",
+          "34.800 €",
+          "37.300 €",
+          "41.500 €"
+        ]
+      },
+      "facts": {
+        "damageCondition": {
+          "label": "Fahrzeugzustand",
+          "value": "Gebrauchtfahrzeug, Unfallfrei",
+          "group": "vehicle"
+        },
+        "category": {
+          "label": "Kategorie",
+          "value": "Kombi",
+          "group": "vehicle"
+        },
+        "modelRange": {
+          "label": "Baureihe",
+          "value": "G81",
+          "group": "vehicle"
+        },
+        "trimLine": {
+          "label": "Ausstattungslinie",
+          "value": "Sport Line",
+          "group": "vehicle"
+        },
+        "sku": {
+          "label": "Fahrzeugnummer",
+          "value": "2914DK / #595",
+          "group": "vehicle"
+        },
+        "countryVersion": {
+          "label": "Herkunft",
+          "value": "Deutsche Ausführung",
+          "group": "vehicle"
+        },
+        "mileage": {
+          "label": "Kilometerstand",
+          "value": "69.998 km",
+          "group": "vehicle"
+        },
+        "cubicCapacity": {
+          "label": "Hubraum",
+          "value": "1.998 cm³",
+          "group": "vehicle"
+        },
+        "power": {
+          "label": "Leistung",
+          "value": "135 kW (184 PS)",
+          "group": "vehicle"
+        },
+        "envkv.engineType": {
+          "label": "Antriebsart",
+          "value": "Verbrennungsmotor",
+          "group": "envkv"
+        },
+        "fuel": {
+          "label": "Kraftstoffart",
+          "value": "Benzin",
+          "group": "vehicle"
+        },
+        "envkv.energyConsumption": {
+          "label": "Energieverbrauch (komb.)",
+          "value": "-- l/100km",
+          "group": "envkv"
+        },
+        "numSeats": {
+          "label": "Anzahl Sitzplätze",
+          "value": "5",
+          "group": "vehicle"
+        },
+        "doorCount": {
+          "label": "Anzahl der Türen",
+          "value": "4/5",
+          "group": "vehicle"
+        },
+        "transmission": {
+          "label": "Getriebe",
+          "value": "Automatik",
+          "group": "vehicle"
+        },
+        "emissionClass": {
+          "label": "Schadstoffklasse",
+          "value": "Euro6d",
+          "group": "vehicle"
+        },
+        "emissionsSticker": {
+          "label": "Umweltplakette",
+          "value": "4 (Grün)",
+          "group": "vehicle"
+        },
+        "firstRegistration": {
+          "label": "Erstzulassung",
+          "value": "10/2022",
+          "group": "vehicle"
+        },
+        "numberOfPreviousOwners": {
+          "label": "Anzahl der Fahrzeughalter",
+          "value": "2",
+          "group": "vehicle"
+        },
+        "hu": {
+          "label": "HU",
+          "value": "11/2027",
+          "group": "vehicle"
+        },
+        "climatisation": {
+          "label": "Klimatisierung",
+          "value": "3-Zonen-Klimaautomatik",
+          "group": "vehicle"
+        },
+        "parkAssists": {
+          "label": "Einparkhilfe",
+          "value": "Hinten, Vorne, Kamera",
+          "group": "vehicle"
+        },
+        "airbag": {
+          "label": "Airbags",
+          "value": "Front-, Seiten- und weitere Airbags",
+          "group": "vehicle"
+        },
+        "manufacturerColorName": {
+          "label": "Farbe (Hersteller)",
+          "value": "BROOKLYN GRAU",
+          "group": "vehicle"
+        },
+        "color": {
+          "label": "Farbe",
+          "value": "Grau Metallic",
+          "group": "vehicle"
+        },
+        "interior": {
+          "label": "Innenausstattung",
+          "value": "Vollleder, Schwarz",
+          "group": "vehicle"
+        },
+        "trailerLoadBraked": {
+          "label": "Anhängelast gebremst",
+          "value": "1.600 kg",
+          "group": "vehicle"
+        },
+        "trailerLoadUnbraked": {
+          "label": "Anhängelast ungebremst",
+          "value": "750 kg",
+          "group": "vehicle"
+        },
+        "netWeight": {
+          "label": "Gewicht",
+          "value": "1.660 kg",
+          "group": "vehicle"
+        },
+        "cylinder": {
+          "label": "Zylinder",
+          "value": "4",
+          "group": "vehicle"
+        },
+        "fuelTankVolume": {
+          "label": "Tankgröße",
+          "value": "59 l",
+          "group": "vehicle"
+        }
+      },
+      "derived": {
+        "mileageKm": 69998,
+        "powerKw": 135,
+        "powerHp": 184,
+        "cubicCapacityCcm": 1998,
+        "firstRegistration": "2022-10",
+        "constructionYear": null,
+        "seats": 5,
+        "previousOwners": 2,
+        "weightKg": 1660,
+        "fuelTankLitres": 59,
+        "co2GramsPerKm": null,
+        "consumptionL100km": 100,
+        "distanceFromHomeKm": 202,
+        "generation": "G81",
+        "facelift": "unknown",
+        "faceliftBasis": "Zulassung im Umstellungsfenster – aus den Daten nicht entscheidbar"
+      },
+      "features": [
+        "Abgedunkelte Scheiben",
+        "ABS",
+        "Abstandstempomat",
+        "Abstandswarner",
+        "Alarmanlage",
+        "Ambiente-Beleuchtung",
+        "Android Auto",
+        "Anhängerkupplung schwenkbar",
+        "Apple CarPlay",
+        "Armlehne",
+        "Berganfahrassistent",
+        "Blendfreies Fernlicht",
+        "Bluetooth",
+        "Bordcomputer",
+        "Dachreling",
+        "Elektr. Fensterheber",
+        "Elektr. Heckklappe",
+        "Elektr. Seitenspiegel",
+        "Elektr. Seitenspiegel anklappbar",
+        "Elektr. Wegfahrsperre",
+        "ESP",
+        "Fernlichtassistent",
+        "Freisprecheinrichtung",
+        "Garantie",
+        "Gepäckraumabtrennung",
+        "Geschwindigkeitsbegrenzer",
+        "Head-Up Display",
+        "Heckantrieb",
+        "Induktionsladen für Smartphones",
+        "Innenspiegel autom. abblendend",
+        "Isofix",
+        "Lederlenkrad",
+        "LED-Scheinwerfer",
+        "LED-Tagfahrlicht",
+        "Leichtmetallfelgen",
+        "Lichtsensor",
+        "Lordosenstütze",
+        "Müdigkeitswarner",
+        "Multifunktionslenkrad",
+        "Navigationssystem",
+        "Nichtraucher-Fahrzeug",
+        "Notbremsassistent",
+        "Notrufsystem",
+        "Partikelfilter",
+        "Radio DAB",
+        "Regensensor",
+        "Reifendruckkontrolle",
+        "Schaltwippen",
+        "Scheckheftgepflegt",
+        "Schlüssellose Zentralverriegelung (Keyless)",
+        "Servolenkung",
+        "Sitzheizung",
+        "Soundsystem",
+        "Sportfahrwerk",
+        "Sportpaket",
+        "Sportsitze",
+        "Sprachsteuerung",
+        "Spurhalteassistent",
+        "Start/Stopp-Automatik",
+        "Totwinkel-Assistent",
+        "Touchscreen",
+        "Traktionskontrolle",
+        "Tuner/Radio",
+        "USB",
+        "Verkehrszeichenerkennung",
+        "Volldigitales Kombiinstrument",
+        "Zentralverriegelung"
+      ],
+      "highlights": [
+        "BESTES KUNDENFEEDBACK",
+        "5 JAHRE GARANTIE*",
+        "500 FAHRZEUGE VERFÜGBA"
+      ],
+      "images": [
+        "https://img.classistatic.de/api/v1/mo-prod/images/4a/4a3363ef-23f1-4147-a92b-28b0158e9357",
+        "https://img.classistatic.de/api/v1/mo-prod/images/0e/0e6e7add-9acb-4ad3-9370-465183b96c28",
+        "https://img.classistatic.de/api/v1/mo-prod/images/7d/7d078e40-e8d4-43f4-ab49-f0c89e1534bd",
+        "https://img.classistatic.de/api/v1/mo-prod/images/3e/3e31771e-8733-40bb-923e-1e0cddb60346",
+        "https://img.classistatic.de/api/v1/mo-prod/images/19/19154468-9238-4c64-b15c-cec8fd845b87",
+        "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d29fd5c-0099-4bb5-aa29-d6cc7284a106",
+        "https://img.classistatic.de/api/v1/mo-prod/images/75/75a3bd2f-8e91-4189-aa99-12e59112dbd7",
+        "https://img.classistatic.de/api/v1/mo-prod/images/6d/6d6ae196-9dda-4fe3-9d78-7a783a8cf332",
+        "https://img.classistatic.de/api/v1/mo-prod/images/45/4520016c-694f-4d2c-b6ef-287fe45cc0c8",
+        "https://img.classistatic.de/api/v1/mo-prod/images/7d/7daf32e5-059f-40be-af89-d14bcd063294",
+        "https://img.classistatic.de/api/v1/mo-prod/images/9a/9a5c930f-5791-4b52-a687-90d703856280",
+        "https://img.classistatic.de/api/v1/mo-prod/images/6f/6f641142-ccf1-4db4-a752-cdbf5e6eae3b",
+        "https://img.classistatic.de/api/v1/mo-prod/images/ad/adfb4856-77aa-4a4e-a66e-b9341f505aef",
+        "https://img.classistatic.de/api/v1/mo-prod/images/83/83a541d8-f5be-4f7c-9234-56bcd4563f30",
+        "https://img.classistatic.de/api/v1/mo-prod/images/2b/2b43b3ed-3cee-4772-85b4-b2b8f31c29cc",
+        "https://img.classistatic.de/api/v1/mo-prod/images/84/842651a3-b229-49a8-9b66-6a5d8601c91d",
+        "https://img.classistatic.de/api/v1/mo-prod/images/7b/7b7e1b1a-bc84-4157-8416-e385f644d19d",
+        "https://img.classistatic.de/api/v1/mo-prod/images/71/71adc02c-7a58-4076-a8e2-306257168085",
+        "https://img.classistatic.de/api/v1/mo-prod/images/57/57c3c838-73b5-4ada-9455-7dbdc9acfe30",
+        "https://img.classistatic.de/api/v1/mo-prod/images/a4/a4eb9ca3-d977-492d-86e2-e9692b36fedb",
+        "https://img.classistatic.de/api/v1/mo-prod/images/bc/bce9ad26-6470-471a-aff7-222ddbea7890",
+        "https://img.classistatic.de/api/v1/mo-prod/images/6c/6c572e37-519d-49c3-a022-6b15ab0a3e63",
+        "https://img.classistatic.de/api/v1/mo-prod/images/84/8486beaf-3bba-426b-ad60-fcb903189d70",
+        "https://img.classistatic.de/api/v1/mo-prod/images/b6/b6c75c96-4352-43a4-aa25-43caf1bcb8bb",
+        "https://img.classistatic.de/api/v1/mo-prod/images/f5/f59d70d0-20a7-47b1-8b03-2d015ee6005e",
+        "https://img.classistatic.de/api/v1/mo-prod/images/b6/b62ea6e4-bb68-4a8b-b223-35701e87f159",
+        "https://img.classistatic.de/api/v1/mo-prod/images/c4/c4ddcbe1-de65-42df-ac21-c31dc37e316f",
+        "https://img.classistatic.de/api/v1/mo-prod/images/84/847a60cc-af2d-4e78-a608-c40832dc657b",
+        "https://img.classistatic.de/api/v1/mo-prod/images/71/71353531-61ed-449c-bcb5-81e29f3ad719",
+        "https://img.classistatic.de/api/v1/mo-prod/images/d1/d1c6bf72-b9db-43a9-b5d7-feb5d109ce1f",
+        "https://img.classistatic.de/api/v1/mo-prod/images/3d/3d33ec75-932f-457a-9e86-ad0381604c98",
+        "https://img.classistatic.de/api/v1/mo-prod/images/02/02fa6d64-6e87-4fab-89a2-4f030abc2fd3",
+        "https://img.classistatic.de/api/v1/mo-prod/images/5f/5fed8995-e185-498f-a9e8-36a901c5efe6",
+        "https://img.classistatic.de/api/v1/mo-prod/images/eb/ebe7522e-2e64-4ef2-9681-e455ad5ed21d",
+        "https://img.classistatic.de/api/v1/mo-prod/images/aa/aa08e33c-2965-4557-a279-d94f811bef44",
+        "https://img.classistatic.de/api/v1/mo-prod/images/a9/a9b31f51-b292-4042-8c4b-8d6d0808deb2",
+        "https://img.classistatic.de/api/v1/mo-prod/images/d8/d8fadcb1-136b-4d7a-af5a-d7e2104c3a94",
+        "https://img.classistatic.de/api/v1/mo-prod/images/7a/7a254b8b-a248-4fe2-a8a9-10c943ec6b3b",
+        "https://img.classistatic.de/api/v1/mo-prod/images/db/dbf7aca5-09ab-4a96-bb22-e5239ce7e9bf",
+        "https://img.classistatic.de/api/v1/mo-prod/images/28/28356f13-655e-40b7-83d5-af43294ca971",
+        "https://img.classistatic.de/api/v1/mo-prod/images/ed/edee93b0-0b5e-4f25-ac73-9cf897af882b",
+        "https://img.classistatic.de/api/v1/mo-prod/images/c3/c34d0de6-9dbb-44a0-894b-9f09a6f74cab",
+        "https://img.classistatic.de/api/v1/mo-prod/images/4d/4d424d40-2f1f-49d2-9e2f-62b523eb62bd",
+        "https://img.classistatic.de/api/v1/mo-prod/images/62/62e2c35d-f386-4bb6-8be4-ed4493ab839e",
+        "https://img.classistatic.de/api/v1/mo-prod/images/32/327c1909-be97-4389-97d7-c7a4eaea35b3",
+        "https://img.classistatic.de/api/v1/mo-prod/images/00/0062a397-c519-48eb-a052-280b15b3d5eb",
+        "https://img.classistatic.de/api/v1/mo-prod/images/d0/d0b889c0-25e6-40b8-a4b6-e75e2bd82ddf",
+        "https://img.classistatic.de/api/v1/mo-prod/images/ca/ca978a06-bdd0-4c81-933b-a979cf361837",
+        "https://img.classistatic.de/api/v1/mo-prod/images/aa/aab76ab6-2853-4683-b856-b7a295135103",
+        "https://img.classistatic.de/api/v1/mo-prod/images/1f/1fbbd5ad-5cc8-4e7e-ad5c-731ddc797a16"
+      ],
+      "dealer": {
+        "name": "Autowelt Prußeit GmbH",
+        "type": "Händler",
+        "street": "Rauher Grund 26",
+        "city": "DE-72160 Horb am Neckar",
+        "country": "DE",
+        "phone": "+49 (0)7451 5569900",
+        "homepage": "https://home.mobile.de/home/redirect.html?customerId=13220294",
+        "location": {
+          "lat": 48.4576838,
+          "lon": 8.7013039
+        },
+        "openingHours": [
+          {
+            "day": "Mo - Fr",
+            "time": "08:00 Uhr - 20:00 Uhr"
+          },
+          {
+            "day": "Sa",
+            "time": "08:00 Uhr - 18:00 Uhr"
+          },
+          {
+            "day": "So",
+            "time": "10:00 Uhr - 16:00 Uhr (Schautag)"
+          }
+        ],
+        "rating": {
+          "score": 4.4,
+          "count": 440,
+          "recommendationRate": 78
+        }
+      },
+      "financePlans": [
+        {
+          "type": "DF",
+          "url": "https://www.mobile.de/finanzierung/route/outlink/2?adId=458555148",
+          "shortFlow": true,
+          "promotion": false,
+          "showInGallery": true,
+          "bankId": "Santander",
+          "offer": {
+            "bankId": "Santander",
+            "bankName": "Openbank Deutschland AG",
+            "loanType": "BALLOON",
+            "downPayment": 6456,
+            "creditTerm": 60,
+            "yearlyMileage": 10000,
+            "creditAmount": 25824,
+            "interestRateNominal": 7.71,
+            "interestRateEffective": 7.99,
+            "monthlyInstallment": 326,
+            "finalInstallment": 14526,
+            "totalInterest": 7903.23,
+            "totalAmount": 33727.23,
+            "localized": {
+              "downPayment": "6.456,00 €",
+              "downPaymentInPercent": "20%",
+              "creditTerm": "60",
+              "creditTermInYears": "5",
+              "yearlyMileage": "10.000",
+              "creditAmount": "25.824,00 €",
+              "interestRateNominal": "7,71%",
+              "interestRateEffective": "7,99%",
+              "monthlyInstallment": "326 €",
+              "finalInstallment": "14.526,00 €",
+              "totalInterest": "7.903,23 €",
+              "totalAmount": "33.727,23 €",
+              "disclaimer": "Repräsentatives Beispiel: Vorstehende Angaben stellen zugleich das 2/3-Beispiel gem. § 17 Abs. 4 PAngV dar. Ein Finanzierungsangebot der Openbank Deutschland AG (Darlehensgeber), Santander-Platz 1, 41061 Mönchengladbach. Bonität vorausgesetzt."
+            }
+          }
+        }
+      ],
+      "ref": 71,
+      "assessment": {
+        "verdict": null,
+        "note": null,
+        "retrofit": [],
+        "retrofitCost": 0,
+        "mileageAdjustment": {
+          "expectedKm": 58750,
+          "deviationKm": 11248,
+          "adjustment": 1120
+        },
+        "effectivePrice": 33400
       }
     }
   ]
