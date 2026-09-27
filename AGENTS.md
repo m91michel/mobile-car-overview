@@ -318,7 +318,8 @@ Vite + React in `viewer/`, started with `pnpm viewer`.
   `prefers-color-scheme`. No framework, no component library.
 - **Installable, and usable offline.** `manifest.webmanifest` (table) and
   `checkliste.webmanifest` (the standalone test-drive checklist in
-  `viewer/public/checkliste.html`) make both home-screen apps with their own
+  `viewer/public/checkliste.html`, one copy per car such as `checkliste-66.html`
+  with its own manifest) make both home-screen apps with their own
   icon. `viewer/public/sw.js` is network-first with the cache as fallback, so
   online nothing is ever stale and at a dealer without reception the last
   loaded state still opens. It pre-caches the checklist, skips cross-origin

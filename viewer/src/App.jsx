@@ -1075,6 +1075,9 @@ export default function App() {
           <a href="/checkliste.html">
             Probefahrt-Checkliste <span className="muted">#48, fürs Handy</span>
           </a>
+          <a href="/checkliste-66.html">
+            Probefahrt-Checkliste <span className="muted">#66, fürs Handy</span>
+          </a>
         </Menu>
       </header>
 

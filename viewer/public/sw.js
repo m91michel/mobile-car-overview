@@ -5,9 +5,9 @@
 const CACHE = 'car-compare-v1';
 
 self.addEventListener('install', (event) => {
-  // The checklist is the page most likely to be needed offline, so it is
+  // The checklists are the pages most likely to be needed offline, so they are
   // stored up front even if only the comparison table was ever opened.
-  event.waitUntil(caches.open(CACHE).then((c) => c.addAll(['/', '/checkliste.html'])).catch(() => {}));
+  event.waitUntil(caches.open(CACHE).then((c) => c.addAll(['/', '/checkliste.html', '/checkliste-66.html'])).catch(() => {}));
   self.skipWaiting();
 });
 
