@@ -88,10 +88,10 @@ function carPin(cars, label, favourites, pins, extra = '') {
   });
 }
 
-function homeIcon() {
+function homeIcon(home) {
   return L.divIcon({
     className: 'map-home',
-    html: `<span title="${HOME.label}">⌂</span>`,
+    html: `<span title="${attr(home.label)}">⌂</span>`,
     iconSize: [28, 28],
     iconAnchor: [14, 14],
     popupAnchor: [0, 14],
@@ -102,7 +102,14 @@ function homeIcon() {
  * A click on a pin hands its cars to `onSelect` -- App opens them as a table
  * in a drawer -- instead of a popup, which could only ever show a summary.
  */
-export default function MapView({ cars, favourites = [], pins = 'photo', cluster = true, onSelect }) {
+export default function MapView({
+  cars,
+  favourites = [],
+  pins = 'photo',
+  cluster = true,
+  home = HOME,
+  onSelect,
+}) {
   const host = useRef(null);
   const mapRef = useRef(null);
   const layerRef = useRef(null);
@@ -167,13 +174,13 @@ export default function MapView({ cars, favourites = [], pins = 'photo', cluster
       : L.layerGroup();
     clusters.addTo(layer);
 
-    L.marker([HOME.lat, HOME.lon], { icon: homeIcon(), zIndexOffset: -200, keyboard: false })
+    L.marker([home.lat, home.lon], { icon: homeIcon(home), zIndexOffset: -200, keyboard: false })
       .bindPopup(
-        `<strong>${HOME.label}</strong><br><span class="muted">Startpunkt der Luftlinie</span>`,
+        `<strong>${attr(home.label)}</strong><br><span class="muted">Startpunkt der Luftlinie</span>`,
       )
       .addTo(layer);
 
-    const bounds = L.latLngBounds([[HOME.lat, HOME.lon]]);
+    const bounds = L.latLngBounds([[home.lat, home.lon]]);
     for (const group of groups) {
       bounds.extend([group.lat, group.lon]);
       L.marker([group.lat, group.lon], {

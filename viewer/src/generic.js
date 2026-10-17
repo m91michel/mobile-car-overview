@@ -24,13 +24,23 @@ export const HOME = { lat: 49.4772, lon: 10.9887, label: 'Fürth' };
 
 const euro = (n) => `${n.toLocaleString('de-DE', { maximumFractionDigits: 2 })} €`;
 
-/** Great-circle km, rounded. The cars get theirs baked in by scripts/geo.mjs. */
-function distanceKm(lat, lon) {
+/**
+ * Great-circle km to the collection's home (collection.json `home`, else
+ * Fürth), one decimal: across a city the whole kilometres would tie. The cars
+ * get theirs baked in by scripts/geo.mjs.
+ */
+function distanceKm(lat, lon, home = HOME) {
   const rad = (deg) => (deg * Math.PI) / 180;
   const a =
-    Math.sin(rad(lat - HOME.lat) / 2) ** 2 +
-    Math.cos(rad(HOME.lat)) * Math.cos(rad(lat)) * Math.sin(rad(lon - HOME.lon) / 2) ** 2;
-  return Math.round(6371 * 2 * Math.asin(Math.sqrt(a)));
+    Math.sin(rad(lat - home.lat) / 2) ** 2 +
+    Math.cos(rad(home.lat)) * Math.cos(rad(lat)) * Math.sin(rad(lon - home.lon) / 2) ** 2;
+  return Math.round(6371 * 2 * Math.asin(Math.sqrt(a)) * 10) / 10;
+}
+
+/** "1,2 km · 15 min" -> 1.2: the first number in a German-formatted text. */
+export function leadingNumber(text) {
+  const match = /-?\d[\d.]*(?:,\d+)?/.exec(String(text ?? ''));
+  return match ? Number(match[0].replace(/\./g, '').replace(',', '.')) : null;
 }
 
 const factText = (value) => {
@@ -68,7 +78,7 @@ function normalizePrice(raw, unit) {
  * because the picker, the search and the map all read the seller's place
  * from there.
  */
-export function normalizeItem(raw) {
+export function normalizeItem(raw, collection) {
   const facts = normalizeFacts(raw.facts);
   const loc = raw.location ?? null;
   const lat = Number(loc?.lat);
@@ -91,7 +101,10 @@ export function normalizeItem(raw) {
     price: normalizePrice(raw.price, raw.priceUnit),
     facts,
     dealer,
-    derived: { ...raw.derived, distanceFromHomeKm: hasCoords ? distanceKm(lat, lon) : null },
+    derived: {
+      ...raw.derived,
+      distanceFromHomeKm: hasCoords ? distanceKm(lat, lon, collection?.home) : null,
+    },
     // Free-text filters search this as well, so "Text enthält Bio" finds a
     // fact value too and not only a feature name (filters.js).
     searchText: [raw.subtitle, raw.description, ...Object.values(facts).map((f) => f.value)]
@@ -106,10 +119,21 @@ export const GENERIC_SORTS = [
   { key: 'price', label: 'Preis', value: (item) => item.price?.gross ?? null },
   {
     key: 'distance',
-    label: 'km',
+    label: 'Luftlinie',
     value: (item) => item.derived?.distanceFromHomeKm ?? null,
   },
 ];
+
+/**
+ * collection.json's `sortFacts` turn facts into sort buttons, by the first
+ * number in their text: "Fußweg" sorts "0,4 km · 5 min" by the 0,4.
+ */
+export const factSorts = (keys = []) =>
+  keys.map((key) => ({
+    key: `fact:${key}`,
+    label: key,
+    value: (item) => leadingNumber(item.facts?.[key]?.value),
+  }));
 
 /** "Offen" plus whatever collection.json names, or the cars' list as a fallback. */
 export function statusesFor(meta) {
@@ -203,16 +227,22 @@ export function buildGenericRows(items, collection) {
       label: 'Adresse',
       kind: 'fact',
       value: (item) =>
-        item.dealer ? [item.dealer.name, item.dealer.street, item.dealer.city].filter(Boolean).join(' · ') : null,
+        item.dealer
+          ? [item.dealer.name !== item.title ? item.dealer.name : null, item.dealer.street, item.dealer.city]
+              .filter(Boolean)
+              .join(' · ')
+          : null,
     });
   }
   if (any((item) => item.derived?.distanceFromHomeKm != null)) {
     rows.push({
       key: 'distance',
-      label: 'Entfernung (Luftlinie)',
+      label: collection.home?.label ? `Luftlinie zu ${collection.home.label}` : 'Entfernung (Luftlinie)',
       kind: 'fact',
       value: (item) =>
-        item.derived?.distanceFromHomeKm != null ? `${item.derived.distanceFromHomeKm} km` : null,
+        item.derived?.distanceFromHomeKm != null
+          ? `${item.derived.distanceFromHomeKm.toLocaleString('de-DE')} km`
+          : null,
     });
   }
 

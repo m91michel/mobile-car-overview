@@ -281,6 +281,17 @@ Only `name` is required. `keyFeatures` get the loud ✅/❌ the cars' must-haves
 get, `statuses` replaces the car workflow in the Status row ("Offen" is always
 first), `factOrder` puts those facts first (by key or label).
 
+Three more keys, used by the Kitas:
+
+- `home` (`{lat, lon, label}`) is where the Luftlinie row and the map's ⌂
+  start. Without it they start at Fürth's centre, like the cars.
+- `sortFacts` turns facts into sort buttons by the first number in their text,
+  so `"Fußweg": "0,4 km · 5 min"` sorts by the 0,4.
+- `defaultSort` picks the sort a fresh tab starts with (`"fact:Fußweg"`).
+
+How the Kita list was put together, and how to refresh it, is in
+`data/kitas/README.md`.
+
 A listing for any collection other than the cars is written by hand (or by
 Claude from a website), so the format is forgiving. `viewer/src/generic.js`
 documents it and normalizes it into the cars' shape:

@@ -7,7 +7,15 @@ import { useEffect, useState } from 'react';
 import { SORTS, STATUSES, buildRows } from './rows.js';
 import { cellFor } from './wishlist.js';
 import { RULE_TYPES } from './filters.js';
-import { GENERIC_SORTS, buildGenericRows, genericCellFor, normalizeItem, statusesFor } from './generic.js';
+import {
+  GENERIC_SORTS,
+  HOME,
+  buildGenericRows,
+  factSorts,
+  genericCellFor,
+  normalizeItem,
+  statusesFor,
+} from './generic.js';
 import { key as settingKey } from './settings.js';
 
 const PROFILES = {
@@ -54,6 +62,12 @@ export function resolveCollection(meta) {
     items: meta.items ?? 'Einträge',
     featuresLabel: meta.featuresLabel ?? 'Merkmale',
     statuses: meta.profile === 'cars' ? STATUSES : statusesFor(meta),
+    // Where Luftlinie and the map's ⌂ start: a Kita search measures from the
+    // flat, not from the city centre.
+    home: meta.home ?? HOME,
+    sorts: [...profile.sorts, ...factSorts(meta.sortFacts)],
+    listSort: meta.defaultSort ?? profile.listSort,
+    columnSort: meta.defaultSort ?? profile.columnSort,
     // The cars keep the bare `car-compare/` keys, so every favourite, note and
     // list stored before collections existed stays exactly where it was, and
     // the sync (which only knows those names) carries on unchanged. Any other

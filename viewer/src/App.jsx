@@ -304,7 +304,8 @@ function CarOption({ car, active, onToggle, favourite, onFavourite, removed, onR
           {carLabel(car)}
         </span>
         <span className="muted">
-          {car.price?.localized ?? '—'} · {carSubline(car)}
+          {/* A collection without prices (Kitas) shows the subline alone. */}
+          {[car.price?.localized ?? (car.subtitle ? null : '—'), carSubline(car)].filter(Boolean).join(' · ')}
           {isSold(car) && <span className="gone">verkauft</span>}
           {removed && <span className="gone gone-neutral">ausgeblendet</span>}
         </span>
@@ -415,9 +416,9 @@ export default function App({ collection }) {
   const [featuresOnly, setFeaturesOnly] = useTabStorage(key('features-only'), false);
   // Two independent orders: the drawer is for finding a car, the columns are
   // for reading the comparison, and those want different sorts.
-  const [listSort, setListSort] = useTabStorage(key('sort-list'), profile.listSort);
+  const [listSort, setListSort] = useTabStorage(key('sort-list'), collection.listSort);
   const [listDesc, setListDesc] = useTabStorage(key('sort-list-desc'), false);
-  const [columnSort, setColumnSort] = useTabStorage(key('sort-columns'), profile.columnSort);
+  const [columnSort, setColumnSort] = useTabStorage(key('sort-columns'), collection.columnSort);
   const [columnDesc, setColumnDesc] = useTabStorage(key('sort-columns-desc'), false);
   // A shortlist you keep while working through the field, independent of which
   // cars happen to be in the table right now.
@@ -472,11 +473,11 @@ export default function App({ collection }) {
     fetch(collection.dataUrl)
       .then((res) => res.json())
       .then((data) => {
-        setCars(data.items.map(profile.normalize));
+        setCars(data.items.map((item) => profile.normalize(item, collection)));
         setError(null);
       })
       .catch((err) => setError(String(err)));
-  }, [collection.dataUrl, profile]);
+  }, [collection, profile]);
   useEffect(load, [load]);
 
   // A sold car is still worth keeping around (see isSold's grey-out styling),
@@ -537,8 +538,8 @@ export default function App({ collection }) {
   };
 
   const listCars = useMemo(
-    () => sortCars(withNotes, listSort, listDesc, profile.sorts),
-    [withNotes, listSort, listDesc, profile],
+    () => sortCars(withNotes, listSort, listDesc, collection.sorts),
+    [withNotes, listSort, listDesc, collection],
   );
 
   // Picker search. Not persisted: a stale term would hide cars on the next open.
@@ -584,7 +585,7 @@ export default function App({ collection }) {
       withNotes.filter((c) => selectedIds.includes(c.id)),
       columnSort,
       columnDesc,
-      profile.sorts,
+      collection.sorts,
     );
     if (!favouritesFirst) return picked;
     // Pulled to the front, but each group keeps the chosen sort.
@@ -592,16 +593,16 @@ export default function App({ collection }) {
       ...picked.filter((c) => favourites.includes(c.id)),
       ...picked.filter((c) => !favourites.includes(c.id)),
     ];
-  }, [withNotes, selectedIds, columnSort, columnDesc, favouritesFirst, favourites, profile]);
+  }, [withNotes, selectedIds, columnSort, columnDesc, favouritesFirst, favourites, collection]);
 
   const allRows = useMemo(() => profile.buildRows(shown, collection), [shown, profile, collection]);
 
   // Only the sort buttons some item has a value for: no "km" for prams that
   // stand nowhere, no "Preis" for a list nobody priced.
   const sorts = useMemo(() => {
-    const usable = profile.sorts.filter((sort) => (cars ?? []).some((car) => sort.value(car) !== null));
-    return usable.length ? usable : profile.sorts.slice(0, 1);
-  }, [cars, profile]);
+    const usable = collection.sorts.filter((sort) => (cars ?? []).some((car) => sort.value(car) !== null));
+    return usable.length ? usable : collection.sorts.slice(0, 1);
+  }, [cars, collection]);
 
   // The map needs coordinates. Every car has a dealer location; a hand-written
   // collection may have none at all, and then the switch would lead nowhere.
@@ -610,6 +611,9 @@ export default function App({ collection }) {
     [cars],
   );
   const currentView = hasMap ? view : 'table';
+  // Same idea for the price under each column title: a dash on every Kita
+  // would read as "price unknown" where there is no price at all.
+  const hasPrice = useMemo(() => (cars ?? []).some((car) => car.price), [cars]);
   const hidden = useMemo(() => new Set(hiddenKeys), [hiddenKeys]);
 
   // Rows follow the stored order; anything new (a freshly scraped car brings
@@ -860,7 +864,7 @@ export default function App({ collection }) {
                   {carLabel(car)}
                 </a>
                 <span className="price">
-                  {car.price?.localized ?? '—'}
+                  {car.price?.localized ?? (hasPrice ? '—' : '')}
                   {isSold(car) && <span className="gone">verkauft</span>}
                 </span>
               </th>
@@ -1332,6 +1336,7 @@ export default function App({ collection }) {
             favourites={favourites}
             pins={mapPins}
             cluster={mapCluster}
+            home={collection.home}
             onSelect={(cars) => {
               setMapCarIds(cars.map((car) => car.id));
               setOpenDrawer('map-cars');
