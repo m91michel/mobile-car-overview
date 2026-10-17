@@ -254,7 +254,9 @@ export function buildGenericRows(items, collection) {
     });
   }
 
-  const features = new Set();
+  // Must-haves get a row even when no item has them: a column of ❌ is the
+  // finding, and without the seed that row would silently not exist.
+  const features = new Set(collection.keyFeatures ?? []);
   for (const item of items) for (const feature of item.features ?? []) features.add(feature);
   for (const feature of [...features].sort((a, b) => a.localeCompare(b, 'de'))) {
     rows.push({
