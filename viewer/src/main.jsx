@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './App.jsx';
+import Root from './Root.jsx';
 import ErrorBoundary from './ErrorBoundary.jsx';
 import UpdateNotice from './UpdateNotice.jsx';
 import { startSync } from './sync.js';
@@ -18,7 +18,7 @@ startSync();
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ErrorBoundary>
-      <App />
+      <Root />
     </ErrorBoundary>
     <UpdateNotice />
   </StrictMode>,

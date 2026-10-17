@@ -20,6 +20,10 @@ The viewer must fix what mobile.de gets wrong:
   features (Ausstattung) belong in a single scrollable table, not split across
   separate tabs the way mobile.de does it.
 
+The same table also compares anything else worth a side-by-side: Kitas,
+Kinderwagen, the next purchase. Each of those is a **collection**, see below;
+the cars are the first one and the only one with a scraper.
+
 ## Why the fetcher works this way
 
 mobile.de is behind **Akamai Bot Manager** and has no consumer API.
@@ -77,7 +81,7 @@ shell. Note that `fetch` is **not** available as a script name: `pnpm fetch` is 
 pnpm built-in and would silently run that instead, which is why the command is
 called `scrape`.
 
-Output is `data/listings/<id>.json` per car, merged into `data/cars.json`.
+Output is `data/cars/listings/<id>.json` per car, merged into `data/cars/cars.json`.
 
 ### Batch options
 
@@ -85,7 +89,7 @@ Output is `data/listings/<id>.json` per car, merged into `data/cars.json`.
 |---|---|
 | `--saved` | read ids from Mein Parkplatz (needs a signed-in profile) |
 | `--from <file>` | newline-delimited ids/urls; blank lines and `#` comments ignored |
-| `--refresh` | re-fetch every id already in `data/cars.json` |
+| `--refresh` | re-fetch every id already in `data/cars/cars.json` |
 | `--recheck-sold` | also re-try listings previously recorded as sold |
 | `--max-age <hours>` | skip cars fetched more recently than this |
 | `--delay <ms>` | pause between listings per worker (default 2500, jittered ±40%) |
@@ -200,7 +204,7 @@ Two corollaries for testing whether a block has lifted:
 
 **Do not kill a blocked run with Ctrl-C.** The index, the ref registry and the
 sold list are all written in one pass at the very end, so killing the process
-leaves `data/listings/*.json` updated while `data/cars.json` still shows the old
+leaves `data/cars/listings/*.json` updated while `data/cars/cars.json` still shows the old
 prices. `pnpm renormalize` rebuilds the index from the listing files and repairs
 exactly that, but letting the run abandon itself avoids the problem entirely.
 
@@ -243,14 +247,93 @@ opens such a page in the scraping Chrome, reads the widget's own
   blank frame for some dealers), which `photo()` in `rows.js`
   translates. There is no `priceRating`, dealer rating or opening hours.
 
+## Collections
+
+Every folder under `data/` with a `collection.json` is one collection, and the
+viewer's start page shows one card per folder:
+
+```
+data/
+  cars/          collection.json, listings/*.json, cars.json, refs.json, assessment.json
+  kitas/         collection.json, listings/*.json
+  kinderwagen/   collection.json, listings/*.json
+```
+
+`collection.json` names the collection and sets its labels:
+
+```json
+{
+  "name": "Kitas",
+  "icon": "🧸",
+  "description": "Krippen und Kindergärten in der Umgebung.",
+  "item": "Kita",
+  "items": "Kitas",
+  "featuresLabel": "Angebot",
+  "priceLabel": "Beitrag",
+  "order": 2,
+  "factOrder": ["Träger", "Alter", "Öffnungszeiten"],
+  "keyFeatures": ["Frische Küche", "Garten"],
+  "statuses": ["Angefragt", "Besichtigt", "Warteliste", "Zusage", "Absage"]
+}
+```
+
+Only `name` is required. `keyFeatures` get the loud ✅/❌ the cars' must-haves
+get, `statuses` replaces the car workflow in the Status row ("Offen" is always
+first), `factOrder` puts those facts first (by key or label).
+
+A listing for any collection other than the cars is written by hand (or by
+Claude from a website), so the format is forgiving. `viewer/src/generic.js`
+documents it and normalizes it into the cars' shape:
+
+```json
+{
+  "id": "kita-sonnenblume",
+  "title": "Kita Sonnenblume",
+  "subtitle": "Krippe und Kindergarten",
+  "url": "https://…",
+  "images": ["https://…"],
+  "price": 320,
+  "priceUnit": "/ Monat",
+  "location": { "name": "…", "street": "…", "city": "90762 Fürth", "lat": 49.47, "lon": 10.99 },
+  "facts": { "Träger": "Kommunal", "Plätze": 75, "Sprachen": ["Deutsch", "Englisch"] },
+  "features": ["Garten", "Frische Küche"]
+}
+```
+
+A fact is a plain value (its key becomes the row label) or `{label, value}`;
+numbers, booleans and arrays are formatted for display. The table is the union
+of every fact and feature any listing has, so adding a fact to one Kita adds a
+row and nothing has to be declared up front. `location` with coordinates turns
+on the map and the Luftlinie row (from the same Fürth home as `scripts/geo.mjs`).
+
+What each collection shares and what stays with the cars:
+
+- **Shared:** the table with row hiding/reordering, sticky header, picker,
+  favourites, notes, status, lists and filters (Preis and Text rules), map,
+  CSV/JSON export.
+- **Cars only** (`profile: "cars"` in `data/cars/collection.json`, see
+  `viewer/src/collections.js`): Effektivpreis and the Preisanpassung dialog,
+  the CAR-REQUIREMENTS colouring in `wishlist.js`, the car filter rules, Sync
+  and the test-drive checklists.
+- **Settings are per collection.** The cars keep the bare `car-compare/<name>`
+  keys, so everything stored before collections existed is untouched and the
+  sync carries on as before. Every other collection stores under
+  `car-compare/<id>/<name>`: inside the prefix, so the JSON export carries it,
+  and outside `SYNCED`, so it does not sync (yet).
+- **Routing is a hash**: `/#/kitas`. A static host needs no rewrite rule, and
+  `/` is the start page.
+
 ## The viewer
 
 Vite + React in `viewer/`, started with `pnpm viewer`.
 
 - **It reads the folder, not a bundle.** A dev-server middleware in
-  `viewer/vite.config.js` serves `data/listings/*.json` from disk on every
-  `/api/cars` request, so a scrape run shows up on a plain reload. Nothing is
-  imported at build time and no data is copied into the app.
+  `viewer/vite.config.js` serves `/api/collections.json` (the start page's
+  cards) and `/api/collections/<id>.json` (that folder's `listings/*.json`)
+  from disk on every request, so a scrape run shows up on a plain reload.
+  Nothing is imported at build time and no data is copied into the app. The
+  build freezes the same responses into files, plus `/api/cars.json` for tabs
+  still running a bundle from before collections.
 - **One flat table.** `viewer/src/rows.js` turns the listings into a single row
   list: price, the union of all `facts` keys, dealer, then the union of all
   features as ✓/–. Union, not intersection — a figure one car is missing shows
@@ -352,7 +435,7 @@ Vite + React in `viewer/`, started with `pnpm viewer`.
   decided against for good (too old, accident, sold) but don't want to
   permanently drop from `data/` yet, the 🗑 button — in the car picker and on
   each car's photo card above the table — adds its id to `car-compare/removed`,
-  one click to undo (↺), never touching `data/listings/*.json`. A hidden car
+  one click to undo (↺), never touching `data/cars/listings/*.json`. A hidden car
   drops out of *every* list: the default "nothing chosen yet" view, the "Alle"
   entry in the Listen drawer (`visibleIds`), Favoriten, and every saved
   filter's matches (`visibleCars` in `App.jsx`, not the raw car set) — a
@@ -459,7 +542,7 @@ every browser holding the sync key keeps in step with them.
 Every car carries a short internal number (`car.ref`) so a human can say "#7"
 instead of quoting `462145366`. The viewer prefixes it to every car label.
 
-The registry lives in `data/refs.json`:
+The registry lives in `data/cars/refs.json`:
 
 ```json
 { "nextRef": 25, "refs": { "462145366": 1, "459175992": 2 } }
@@ -471,7 +554,7 @@ Three properties make the number safe to quote, and all three are deliberate:
   fetched, `pnpm renormalize` backfills anything already on disk.
 - **Never changed.** Adding or removing cars must not shift existing numbers, so
   the registry is the authority and is kept in its own file: regenerating
-  `data/cars.json` cannot lose it.
+  `data/cars/cars.json` cannot lose it.
 - **Never reused.** A sold car keeps its number forever, so **gaps in the
   sequence are normal** — they are sold cars, not bugs.
 
@@ -489,7 +572,7 @@ one-line verdict, and the viewer shows both as rows (`Effektivpreis`,
 `Nachrüstung`, `Bewertung`). `Effektivpreis` is also a sort option.
 
 This is hand-written editorial data, not derived from the listing, so it lives in
-`data/assessment.json` for the same reason `data/refs.json` does: `pnpm scrape`
+`data/cars/assessment.json` for the same reason `data/cars/refs.json` does: `pnpm scrape`
 rebuilds each car from the RSC payload and would otherwise drop it.
 
 ```json
@@ -630,7 +713,7 @@ adjustment  = deviationKm * ratePerKm      // rounded to the nearest 10 €
 
 Fewer km than expected lowers the effective price, more raises it — symmetric
 around zero rather than an arbitrary direction. Both constants live in
-`assessment.mileageAdjustment` in `data/assessment.json`, next to
+`assessment.mileageAdjustment` in `data/cars/assessment.json`, next to
 `retrofitPrices`, for the same reason: change the rate once, every car
 re-prices on the next `pnpm renormalize`.
 
@@ -668,8 +751,8 @@ boni and the **price limits** of the Preis/Effektivpreis meter (green up to
 30.000 €, amber up to 34.000 €, red beyond; scale 20.000-36.000 €) are editable from the **Preisanpassung** dialog (⚙ menu) and
 persisted in `localStorage` under `car-compare/pricing` —
 `viewer/src/pricing.js` (`applyPricingSettings`) overrides the
-`car.assessment` the server baked into `data/cars.json` with what these
-settings compute, without touching `data/assessment.json`. They **sync**
+`car.assessment` the server baked into `data/cars/cars.json` with what these
+settings compute, without touching `data/cars/assessment.json`. They **sync**
 across devices with favourites and notes (`pricing` in `SYNCED`), merged per
 knob, so every device shows the same Effektivpreis. A stored object is always
 read on top of `DEFAULT_PRICING` (`withPricingDefaults`), so settings saved
@@ -726,7 +809,7 @@ pnpm check          # duplicates + normalization report over data/
 pnpm renormalize    # re-apply normalization to already-scraped JSON, in place
 ```
 
-`renormalize` exists because the raw values survive in `data/listings/*.json`, so
+`renormalize` exists because the raw values survive in `data/cars/listings/*.json`, so
 improving `normalizeFacts()` never requires re-fetching 24 cars from mobile.de.
 
 ### What normalization has to handle
@@ -796,9 +879,10 @@ instead of crying duplicate.
   pushed in the meantime. Rebase onto the remote and push again
   (`git pull --rebase origin main`) rather than forcing — and never
   `--force-with-lease` over a commit you did not write.
-- **A `data/` commit is a deploy too.** The build freezes `data/listings/*.json`
-  into `dist/api/cars.json` (`generateBundle` in `viewer/vite.config.js`), so the
-  deployed site shows the cars as of the last pushed commit. A scrape run that is
+- **A `data/` commit is a deploy too.** The build freezes every
+  `data/<collection>/listings/*.json` into `dist/api/collections/<id>.json`
+  (`generateBundle` in `viewer/vite.config.js`), so the deployed site shows the
+  cars, Kitas and the rest as of the last pushed commit. A scrape run that is
   committed but not pushed is invisible online.
 - **Do not commit another session's in-flight changes.** More than one Claude
   session works in this repo, so `git status` regularly shows files you did not

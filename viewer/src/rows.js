@@ -59,14 +59,21 @@ export const SORTS = [
   { key: 'mileage', label: 'km', value: (car) => numberFrom(car.facts?.mileage?.value) },
 ];
 
-/** Cars without the sorted-on value go last, in both directions. */
-export function sortCars(cars, sortKey, desc = false) {
-  const pick = (SORTS.find((s) => s.key === sortKey) ?? SORTS[0]).value;
+/**
+ * Cars without the sorted-on value go last, in both directions. `sorts` is the
+ * collection's own list (see collections.js); text values sort alphabetically.
+ */
+export function sortCars(cars, sortKey, desc = false, sorts = SORTS) {
+  const pick = (sorts.find((s) => s.key === sortKey) ?? sorts[0]).value;
   return [...cars].sort((a, b) => {
     const left = pick(a);
     const right = pick(b);
     if (left === null || right === null) return left === right ? 0 : left === null ? 1 : -1;
-    return desc ? right - left : left - right;
+    const order =
+      typeof left === 'string' || typeof right === 'string'
+        ? String(left).localeCompare(String(right), 'de')
+        : left - right;
+    return desc ? -order : order;
   });
 }
 
@@ -75,7 +82,8 @@ export const isSold = (car) => car.availability?.status === 'sold';
 
 /** Enough to tell two "BMW 318" apart in the picker. */
 export const carSubline = (car) =>
-  [car.facts?.firstRegistration?.value, car.facts?.mileage?.value].filter(Boolean).join(' · ');
+  [car.facts?.firstRegistration?.value, car.facts?.mileage?.value].filter(Boolean).join(' · ') ||
+  (car.subtitle ?? ''); // a hand-written item (generic.js) names its own
 
 /** "DE-57076 Siegen" -> "Siegen"; the postcode only matters to the search. */
 export const carCity = (car) => car.dealer?.city?.replace(/^[A-Z]{2}-\d+\s*/, '') || null;
@@ -130,6 +138,9 @@ export const photo = (url, rule = 'mo-360') => {
     const w = Number(rule.replace('mo-', ''));
     return `${url}&w=${w}&h=${Math.round((w * 3) / 4)}`;
   }
+  // Any other host (a Kita's website, a shop's product photo) is used as is:
+  // `?rule=` would mean nothing there, and could break a signed URL.
+  if (!url.includes('classistatic.de')) return url;
   return `${url.replace(/\$_\d+\.[A-Za-z]+$/, '')}?rule=${rule}`;
 };
 
@@ -170,7 +181,7 @@ export function buildRows(cars) {
     value: (car) => car.priceRating?.label,
   });
 
-  // Hand-kept assessment from data/assessment.json plus the live pricing
+  // Hand-kept assessment from data/cars/assessment.json plus the live pricing
   // settings (viewer/src/pricing.js). The effective price is what the car
   // costs once the missing must-haves are retrofitted and the mileage/facelift
   // adjustments are applied — the only number two differently equipped, aged

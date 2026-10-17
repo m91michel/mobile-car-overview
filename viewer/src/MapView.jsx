@@ -6,11 +6,10 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet.markercluster';
 import 'leaflet.markercluster/dist/MarkerCluster.css';
 import { carLabel, carRef, isSold, photo } from './rows.js';
-
 // Same default as scripts/geo.mjs. The viewer never re-runs geo.mjs, and the
 // scrape already baked distanceFromHomeKm into each car, so the home pin is
 // the documented Fürth fallback rather than an env override.
-const HOME = { lat: 49.4772, lon: 10.9887, label: 'Fürth' };
+import { HOME } from './generic.js';
 
 // Raster tiles from FOSSGIS (OSM.de): no API key. Carto's old public CDN
 // now watermarks "API KEY REQUIRED"; MapLibre + OpenFreeMap would be the
