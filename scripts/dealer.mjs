@@ -32,8 +32,8 @@ import { loadRefs, saveRefs, assignRef } from './refs.mjs';
 import { loadAssessments, applyAssessment } from './assessment.mjs';
 import { writeJsonAtomic } from './atomic.mjs';
 
-const OUT_DIR = resolve('data/listings');
-const INDEX_FILE = resolve('data/cars.json');
+const OUT_DIR = resolve('data/cars/listings');
+const INDEX_FILE = resolve('data/cars/cars.json');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // pixel-base's feature list is mobile.de's checkbox catalogue, served in the

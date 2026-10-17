@@ -3,9 +3,9 @@
 //
 // Two things it is deliberately NOT:
 //   - not derived from the listing, so it cannot be recomputed and has to be
-//     kept by hand in data/assessment.json
-//   - not stored in data/listings/*.json, because pnpm scrape rebuilds those
-//     from the payload and would drop it (same reason data/refs.json exists)
+//     kept by hand in data/cars/assessment.json
+//   - not stored in data/cars/listings/*.json, because pnpm scrape rebuilds those
+//     from the payload and would drop it (same reason data/cars/refs.json exists)
 //
 // Retrofit costs are referenced by key rather than written per car, so changing
 // one price in `retrofitPrices` re-prices every car that needs that part.
@@ -13,7 +13,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 
-const FILE = resolve('data/assessment.json');
+const FILE = resolve('data/cars/assessment.json');
 
 // 15.000 km/Jahr is the standard German market assumption (leasing contracts,
 // DAT valuation) rather than something derived from this specific 47-car set,
@@ -33,7 +33,7 @@ export function loadAssessments() {
     };
   } catch {
     // Hand-written notes are not reproducible, so never silently reset the file.
-    throw new Error('data/assessment.json is corrupt - fix or delete it deliberately.');
+    throw new Error('data/cars/assessment.json is corrupt - fix or delete it deliberately.');
   }
 }
 

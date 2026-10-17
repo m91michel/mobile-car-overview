@@ -19,8 +19,8 @@
 import { readFileSync, writeFileSync, existsSync, unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-const INDEX_FILE = resolve('data/cars.json');
-const REFS_FILE = resolve('data/refs.json');
+const INDEX_FILE = resolve('data/cars/cars.json');
+const REFS_FILE = resolve('data/cars/refs.json');
 
 const args = process.argv.slice(2).filter((arg) => arg !== '--');
 if (!args.length) {
@@ -50,7 +50,7 @@ for (const arg of args) {
   }
 
   index.cars = index.cars.filter((c) => c.id !== id);
-  const file = resolve('data/listings', `${id}.json`);
+  const file = resolve('data/cars/listings', `${id}.json`);
   if (existsSync(file)) unlinkSync(file);
 
   console.log(`  removed #${car.ref} ${car.title?.slice(0, 46) ?? id} (${id})`);

@@ -3,7 +3,7 @@
 //
 //   pnpm renormalize
 //
-// The raw values survive in data/listings/*.json, so improving normalizeFacts()
+// The raw values survive in data/cars/listings/*.json, so improving normalizeFacts()
 // does not require re-fetching every car from mobile.de.
 
 import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
@@ -13,11 +13,11 @@ import { normalizeFacts, deriveNumbers, deriveModel } from './extract.mjs';
 import { loadRefs, saveRefs, assignRef } from './refs.mjs';
 import { loadAssessments, applyAssessment } from './assessment.mjs';
 
-const OUT_DIR = resolve('data/listings');
-const INDEX_FILE = resolve('data/cars.json');
+const OUT_DIR = resolve('data/cars/listings');
+const INDEX_FILE = resolve('data/cars/cars.json');
 
 if (!existsSync(OUT_DIR)) {
-  console.error('No data/listings yet - run pnpm saved or pnpm scrape first.');
+  console.error('No data/cars/listings yet - run pnpm saved or pnpm scrape first.');
   process.exit(1);
 }
 

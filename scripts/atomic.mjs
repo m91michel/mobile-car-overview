@@ -2,7 +2,7 @@
 //
 // The scraper saves its progress after every car now, so Ctrl-C lands
 // mid-write far more often than it used to. A plain writeFileSync that is
-// killed halfway leaves invalid JSON, and for data/refs.json that is the one
+// killed halfway leaves invalid JSON, and for data/cars/refs.json that is the one
 // file whose loss renumbers every car in the comparison.
 //
 // rename(2) is atomic within a filesystem, so a reader sees either the old
