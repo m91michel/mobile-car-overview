@@ -324,16 +324,16 @@ What each collection shares and what stays with the cars:
 
 - **Shared:** the table with row hiding/reordering, sticky header, picker,
   favourites, notes, status, lists and filters (Preis and Text rules), map,
-  CSV/JSON export.
+  CSV/JSON export, Sync.
 - **Cars only** (`profile: "cars"` in `data/cars/collection.json`, see
   `viewer/src/collections.js`): Effektivpreis and the Preisanpassung dialog,
-  the CAR-REQUIREMENTS colouring in `wishlist.js`, the car filter rules, Sync
-  and the test-drive checklists.
+  the CAR-REQUIREMENTS colouring in `wishlist.js`, the car filter rules and
+  the test-drive checklists.
 - **Settings are per collection.** The cars keep the bare `car-compare/<name>`
   keys, so everything stored before collections existed is untouched and the
   sync carries on as before. Every other collection stores under
   `car-compare/<id>/<name>`: inside the prefix, so the JSON export carries it,
-  and outside `SYNCED`, so it does not sync (yet).
+  and synced through a second server document (see the sync section).
 - **Routing is a hash**: `/#/kitas`. A static host needs no rewrite rule, and
   `/` is the start page.
 
@@ -506,9 +506,22 @@ it stands on screen (`toCsv` in `rows.js`), not the setup that produced it.
 ## Syncing the setup across devices
 
 Export/import is a manual carry. The **Sync** entry in the ⚙ menu makes it
-automatic for the judgements about cars: **favourites, lists, notes,
-status and the Preisanpassung** (`SYNCED` in `viewer/src/sync.js`) live on the server as well, and
-every browser holding the sync key keeps in step with them.
+automatic for the judgements about the items of every collection:
+**favourites, lists, notes and status**, plus the cars' **Preisanpassung**
+(`SYNCED` and `DOCS` in `viewer/src/sync.js`), live on the server as well,
+and every browser holding the sync key keeps in step with them. One key, one
+dialog, all collections.
+
+- **Two server documents, on purpose.** The cars' settings stay in the
+  document they always had (`/api/settings`, bare names like `notes`).
+  Every other collection's (`kitas/notes`) goes to `/api/settings?scope=collections`.
+  A build from before collections PUTs the whole document back with only the
+  names it knows, so sharing one document would let a not-yet-reloaded tab
+  or installed app wipe every Kita note on its next sync. It never asks for
+  the second document. Each document has its own revision and its own base
+  (`car-compare-sync/base`, `car-compare-sync/base/collections`); the
+  connect dialog reads both and lists their differences together, labelled
+  per collection ("Notizen · Kitas").
 
 - **What is open stays with the tab.** Which cars are selected (and so which
   list is shown), table or map, sorting and the Nur-Unterschiede toggles go
@@ -524,7 +537,7 @@ every browser holding the sync key keeps in step with them.
   outside the settings prefix, so they never ride along in an export.
 - **Server:** `api/settings.js` (Vercel function) and the dev-server middleware
   in `viewer/vite.config.js` both call `api/_settings-store.js`. It stores one
-  document plus a revision counter in Upstash Redis over its REST API (plain
+  document per scope (`KEYS`; an unknown scope is a 400) plus a revision counter in Upstash Redis over its REST API (plain
   `fetch`, no dependency) and writes compare-and-set, so a write based on a
   stale revision gets a 409 instead of overwriting another device.
 - **Environment:** `SYNC_TOKEN` (the key you type into the dialog) plus

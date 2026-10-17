@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { carLabel, carRef, STATUSES } from './rows.js';
+import { statusesFor } from './generic.js';
 import {
   LABELS,
   connect,
@@ -10,6 +11,7 @@ import {
   getStatus,
   itemId,
   resolveConnect,
+  splitName,
   subscribe,
   syncNow,
 } from './sync.js';
@@ -31,14 +33,15 @@ export function syncSummary(status) {
 const truncate = (text, n = 160) => (text.length > n ? `${text.slice(0, n)}…` : text);
 
 /** What one side of a difference holds, in words rather than JSON. */
-function preview(name, value, carName) {
+function preview(fullName, value, carName, statuses = STATUSES) {
+  const name = splitName(fullName).setting;
   if (value === undefined) return '— nicht vorhanden';
   if (name === 'notes') {
     const parts = [value.note && truncate(value.note), value.links?.length && `${value.links.length} Link(s)`];
     const text = parts.filter(Boolean).join(' · ') || '(leer)';
     return value.updatedAt ? `${text} — ${new Date(value.updatedAt).toLocaleString('de-DE')}` : text;
   }
-  if (name === 'status') return STATUSES.find((s) => s.key === value)?.label ?? String(value);
+  if (name === 'status') return statuses.find((s) => s.key === value)?.label ?? String(value);
   if (typeof value === 'boolean') return value ? 'an' : 'aus';
   if (value === null) return '(nichts gewählt)';
   if (Array.isArray(value)) {
@@ -75,6 +78,26 @@ export default function SyncDialog({ cars, onClose, onDone }) {
   const [choices, setChoices] = useState({});
 
   const byId = useMemo(() => new Map((cars ?? []).map((c) => [c.id, c])), [cars]);
+  // Names and status labels of the other collections, whose settings travel
+  // in the same sync. An entry of a collection not open right now shows its id.
+  const [collections, setCollections] = useState([]);
+  useEffect(() => {
+    fetch('/api/collections.json')
+      .then((res) => res.json())
+      .then((data) => setCollections(data.collections ?? []))
+      .catch(() => {});
+  }, []);
+  const groupLabel = (fullName) => {
+    const { collection, setting } = splitName(fullName);
+    const label = LABELS[setting] ?? setting;
+    if (!collection) return label;
+    return `${label} · ${collections.find((c) => c.id === collection)?.name ?? collection}`;
+  };
+  const statusesOf = (fullName) => {
+    const { collection } = splitName(fullName);
+    const meta = collection && collections.find((c) => c.id === collection);
+    return meta ? statusesFor(meta) : STATUSES;
+  };
   const carName = (id) => {
     const car = byId.get(id);
     return car ? `${carRef(car)} ${carLabel(car)}`.trim() : id;
@@ -95,7 +118,7 @@ export default function SyncDialog({ cars, onClose, onDone }) {
     try {
       const remote = await fetchRemote(key);
       const local = readLocal();
-      if (remote.rev === 0) {
+      if (remote.empty) {
         await finish(key, remote, local, 'Sync an. Der Server war leer, dieser Browser wurde hochgeladen.');
         return;
       }
@@ -208,8 +231,9 @@ export default function SyncDialog({ cars, onClose, onDone }) {
           <div className="editor-body">
             <p className="muted">
               Ohne Schlüssel bleibt alles nur in diesem Browser. Mit Schlüssel gleicht der Viewer Favoriten,
-              Listen, Notizen und Status mit dem Server ab. Welche Autos und welche Liste offen sind,
-              bleibt pro Tab. Beim ersten Verbinden wählst du bei jedem Unterschied, welcher Stand gilt.
+              Listen, Notizen und Status aller Sammlungen (Autos, Kitas, …) mit dem Server ab. Welche
+              Einträge und welche Liste offen sind, bleibt pro Tab. Beim ersten Verbinden wählst du bei
+              jedem Unterschied, welcher Stand gilt.
             </p>
             <label className="field">
               <span className="muted">Sync-Schlüssel</span>
@@ -248,7 +272,7 @@ export default function SyncDialog({ cars, onClose, onDone }) {
             {groups.map(([name, items]) => (
               <section key={name} className="sync-group">
                 <header>
-                  <strong>{LABELS[name] ?? name}</strong>
+                  <strong>{groupLabel(name)}</strong>
                   {items.length > 1 && (
                     <span className="sync-group-all">
                       <button onClick={() => setAll('remote', name)}>alle Server</button>
@@ -272,7 +296,7 @@ export default function SyncDialog({ cars, onClose, onDone }) {
                           <span>
                             <span className="muted">{side === 'local' ? 'Dieser Browser' : 'Server'}</span>
                             <br />
-                            {preview(item.name, item[side], shortName)}
+                            {preview(item.name, item[side], shortName, statusesOf(item.name))}
                           </span>
                         </label>
                       ))}

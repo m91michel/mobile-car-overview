@@ -29,7 +29,6 @@ const PROFILES = {
     listSort: 'ref',
     ruleTypes: RULE_TYPES,
     pricing: true,
-    sync: true,
     checklists: true,
   },
   // Everything else: hand-written JSON, see generic.js for the format.
@@ -44,7 +43,6 @@ const PROFILES = {
     // the two that mean something for any item.
     ruleTypes: RULE_TYPES.filter((rule) => rule.type === 'text' || rule.type === 'price'),
     pricing: false,
-    sync: false,
     checklists: false,
   },
 };
@@ -70,9 +68,9 @@ export function resolveCollection(meta) {
     columnSort: meta.defaultSort ?? profile.columnSort,
     // The cars keep the bare `car-compare/` keys, so every favourite, note and
     // list stored before collections existed stays exactly where it was, and
-    // the sync (which only knows those names) carries on unchanged. Any other
-    // collection gets its own sub-prefix: still inside `car-compare/`, so the
-    // JSON export takes it along, but invisible to the sync.
+    // their sync document is the one it always was. Any other collection gets
+    // its own sub-prefix: still inside `car-compare/`, so the JSON export
+    // takes it along, and synced through the second document (sync.js).
     key: meta.id === 'cars' ? settingKey : (name) => settingKey(`${meta.id}/${name}`),
     dataUrl: `/api/collections/${meta.id}.json`,
   };

@@ -8,6 +8,7 @@ export default async function handler(req, res) {
     method: req.method,
     authorization: req.headers.authorization,
     body: req.body,
+    scope: req.query?.scope,
   });
   res.setHeader('Cache-Control', 'no-store');
   res.status(status).json(body);

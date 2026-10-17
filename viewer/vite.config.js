@@ -131,6 +131,7 @@ const settingsApi = (env) => {
       method: req.method,
       authorization: req.headers.authorization,
       body,
+      scope: new URL(req.url, 'http://localhost').searchParams.get('scope') ?? undefined,
       env,
     });
     res.statusCode = result.status;

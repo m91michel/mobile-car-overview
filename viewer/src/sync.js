@@ -1,5 +1,15 @@
 // Keeps favourites, lists, notes, status and the Effektivpreis settings in step with the shared copy
-// behind /api/settings, so a second machine or browser sees the same ones.
+// behind /api/settings, so a second machine or browser sees the same ones --
+// for the cars and for every other collection (Kitas, Kinderwagen, ...).
+//
+// Two documents on the server, one sync for the user. The cars keep the
+// document they always had, under the bare names (`notes`). Every other
+// collection's settings (`kitas/notes`) live in a second document,
+// `?scope=collections`. They could share one, but a build from before
+// collections only knows the bare names and PUTs the whole document back:
+// an open tab or an installed app that has not reloaded yet would wipe every
+// Kita note on its next sync. It never asks for the second document, so it
+// cannot touch it.
 //
 // Off until a sync key is entered. localStorage stays the working copy: every
 // hook keeps reading and writing it as before, and this module sits beside
@@ -21,12 +31,11 @@ import { PREFIX, key, readSettings } from './settings.js';
 // Deliberately outside `car-compare/`: the key and the base must not travel
 // along in a settings export, and must not sync themselves.
 const TOKEN = 'car-compare-sync/token';
-const BASE = 'car-compare-sync/base';
 
 const DEBOUNCE_MS = 1500;
 const POLL_MS = 60_000;
 
-/** Settings compared per car on connect instead of as one block. */
+/** Settings compared per car (or per Kita) on connect instead of as one block. */
 export const PER_ENTRY = ['notes', 'status'];
 
 export const LABELS = {
@@ -40,17 +49,40 @@ export const LABELS = {
 };
 
 /**
- * What travels. Only the judgements about cars and how to price them: which car is open, which list
+ * What travels. Only the judgements about the items and how to price them: which car is open, which list
  * is shown, sorting and the table/map switch stay with the tab you are in
  * (useTabStorage.js), so two windows can show two different comparisons.
  */
 export const SYNCED = Object.keys(LABELS);
 
-/** Just the synced settings out of a full settings object. */
-export const pick = (settings) =>
-  Object.fromEntries(SYNCED.filter((k) => settings?.[k] !== undefined).map((k) => [k, settings[k]]));
+/** "kitas/notes" -> { collection: 'kitas', setting: 'notes' }; "notes" -> the cars. */
+export const splitName = (name) => {
+  const at = name.lastIndexOf('/');
+  return at === -1
+    ? { collection: null, setting: name }
+    : { collection: name.slice(0, at), setting: name.slice(at + 1) };
+};
 
-export const readLocal = () => pick(readSettings());
+// The Preisanpassung exists for the cars only, so it does not travel per collection.
+const COLLECTION_SETTING = /^[a-z0-9][a-z0-9-]*\/(favourites|lists|notes|status)$/;
+
+/** The two server documents and which settings each one holds. */
+const DOCS = [
+  { scope: null, base: 'car-compare-sync/base', owns: (name) => SYNCED.includes(name) },
+  {
+    scope: 'collections',
+    base: 'car-compare-sync/base/collections',
+    owns: (name) => COLLECTION_SETTING.test(name),
+  },
+];
+
+export const isSynced = (name) => DOCS.some((doc) => doc.owns(name));
+
+/** Just the synced settings out of a full settings object. */
+export const pick = (settings, owns = isSynced) =>
+  Object.fromEntries(Object.entries(settings ?? {}).filter(([k, v]) => v !== undefined && owns(k)));
+
+export const readLocal = (owns = isSynced) => pick(readSettings(), owns);
 
 // --- comparison and merge ---------------------------------------------------
 
@@ -97,7 +129,7 @@ export function diffForConnect(local, remote) {
     const l = local[name];
     const r = remote[name];
     if (same(l, r)) continue;
-    if (PER_ENTRY.includes(name) && (l === undefined || isPlainObject(l)) && (r === undefined || isPlainObject(r))) {
+    if (PER_ENTRY.includes(splitName(name).setting) && (l === undefined || isPlainObject(l)) && (r === undefined || isPlainObject(r))) {
       const lo = l ?? {};
       const ro = r ?? {};
       for (const entry of new Set([...Object.keys(lo), ...Object.keys(ro)])) {
@@ -139,10 +171,10 @@ export class SyncError extends Error {
   }
 }
 
-async function request(method, token, body) {
+async function request(method, token, body, doc = DOCS[0]) {
   let res;
   try {
-    res = await fetch('/api/settings', {
+    res = await fetch(doc.scope ? `/api/settings?scope=${doc.scope}` : '/api/settings', {
       method,
       cache: 'no-store',
       headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
@@ -154,27 +186,41 @@ async function request(method, token, body) {
   const data = await res.json().catch(() => ({}));
   // The server may still hold keys an earlier build synced (view state and
   // the like). They are ignored here and dropped with the next write.
-  if (data.settings) data.settings = pick(data.settings);
+  if (data.settings) data.settings = pick(data.settings, doc.owns);
   if (res.status === 409) return { conflict: true, ...data };
   if (!res.ok) throw new SyncError(data.error || `Server antwortet mit ${res.status}.`, res.status);
   return data;
 }
 
-export const fetchRemote = (token) => request('GET', token);
+/**
+ * Both documents, read as one: the connect dialog shows the differences of
+ * all collections together. `revs` keeps each document's revision for the
+ * write that follows.
+ */
+export async function fetchRemote(token) {
+  const parts = [];
+  for (const doc of DOCS) parts.push(await request('GET', token, undefined, doc));
+  return {
+    revs: parts.map((part) => part.rev),
+    empty: parts.every((part) => part.rev === 0),
+    settings: Object.assign({}, ...parts.map((part) => part.settings)),
+  };
+}
 
 // --- state -------------------------------------------------------------------
 
 export const getToken = () => localStorage.getItem(TOKEN);
 
-const readBase = () => {
+const readBase = (doc) => {
   try {
-    const base = JSON.parse(localStorage.getItem(BASE)) ?? { rev: 0, settings: {} };
-    return { ...base, settings: pick(base.settings) };
+    const base = JSON.parse(localStorage.getItem(doc.base)) ?? { rev: 0, settings: {} };
+    return { ...base, settings: pick(base.settings, doc.owns) };
   } catch {
     return { rev: 0, settings: {} };
   }
 };
-const writeBase = (rev, settings) => localStorage.setItem(BASE, JSON.stringify({ rev, settings }));
+const writeBase = (doc, rev, settings) =>
+  localStorage.setItem(doc.base, JSON.stringify({ rev, settings: pick(settings, doc.owns) }));
 
 // A tiny store for the status line, read with useSyncExternalStore.
 let status = { state: getToken() ? 'idle' : 'off', message: null, at: null };
@@ -192,14 +238,17 @@ export const getStatus = () => status;
 // Set while this module writes localStorage itself, so its own write does not
 // count as a local edit that needs pushing.
 let applying = false;
-const applyLocal = (settings) => {
+const applyLocal = (settings, owns = isSynced) => {
   applying = true;
   try {
-    for (const name of SYNCED) {
+    // Every synced name either side has: a setting the merge dropped must go
+    // from localStorage too.
+    const names = new Set([...Object.keys(pick(settings, owns)), ...Object.keys(readLocal(owns))]);
+    for (const name of names) {
       const full = key(name);
       if (settings[name] === undefined) localStorage.removeItem(full);
       else localStorage.setItem(full, JSON.stringify(settings[name]));
-      // One event per key, so the useLocalStorage hooks re-read these four
+      // One event per key, so the useLocalStorage hooks re-read these
       // and nothing else.
       window.dispatchEvent(new StorageEvent('local-storage', { key: full }));
     }
@@ -224,22 +273,25 @@ export async function syncNow() {
   running = true;
   setStatus({ state: 'syncing' });
   try {
-    // A 409 means another device wrote between our read and our write: pull
-    // again and re-merge. Three rounds is plenty for two or three devices.
-    for (let round = 0; round < 3; round++) {
-      const base = readBase();
-      const remote = await request('GET', token);
-      const local = readLocal();
-      const merged = remote.rev === base.rev ? local : merge3(base.settings, local, remote.settings);
-      if (!same(merged, local)) applyLocal(merged);
-      if (same(merged, remote.settings)) {
-        writeBase(remote.rev, merged);
+    // Each document on its own: own base, own revision. A 409 means another
+    // device wrote between our read and our write: pull again and re-merge.
+    // Three rounds is plenty for two or three devices.
+    for (const doc of DOCS) {
+      for (let round = 0; round < 3; round++) {
+        const base = readBase(doc);
+        const remote = await request('GET', token, undefined, doc);
+        const local = readLocal(doc.owns);
+        const merged = remote.rev === base.rev ? local : merge3(base.settings, local, remote.settings);
+        if (!same(merged, local)) applyLocal(merged, doc.owns);
+        if (same(merged, remote.settings)) {
+          writeBase(doc, remote.rev, merged);
+          break;
+        }
+        const put = await request('PUT', token, { baseRev: remote.rev, settings: merged }, doc);
+        if (put.conflict) continue;
+        writeBase(doc, put.rev, merged);
         break;
       }
-      const put = await request('PUT', token, { baseRev: remote.rev, settings: merged });
-      if (put.conflict) continue;
-      writeBase(put.rev, merged);
-      break;
     }
     setStatus({ state: 'ok', message: null, at: new Date() });
   } catch (err) {
@@ -272,7 +324,7 @@ export function startSync() {
   window.addEventListener('local-storage', (event) => {
     if (applying) return;
     // No key means every setting changed at once (a settings import).
-    if (event.key && !SYNCED.some((name) => event.key === `${PREFIX}${name}`)) return;
+    if (event.key && !(event.key.startsWith(PREFIX) && isSynced(event.key.slice(PREFIX.length)))) return;
     schedule();
   });
   window.addEventListener('online', () => schedule(0));
@@ -291,15 +343,20 @@ export function startSync() {
  * against; if it moved on in the meantime, the write is refused.
  */
 export async function connect(token, remote, settings) {
-  let rev = remote.rev;
-  if (!same(settings, remote.settings)) {
-    const put = await request('PUT', token, { baseRev: remote.rev, settings });
-    if (put.conflict) throw new SyncError('Der Server wurde währenddessen geändert. Bitte erneut verbinden.', 409);
-    rev = put.rev;
+  const revs = [];
+  for (const [i, doc] of DOCS.entries()) {
+    const mine = pick(settings, doc.owns);
+    let rev = remote.revs[i];
+    if (!same(mine, pick(remote.settings, doc.owns))) {
+      const put = await request('PUT', token, { baseRev: rev, settings: mine }, doc);
+      if (put.conflict) throw new SyncError('Der Server wurde währenddessen geändert. Bitte erneut verbinden.', 409);
+      rev = put.rev;
+    }
+    revs.push(rev);
   }
   applyLocal(settings);
   localStorage.setItem(TOKEN, token);
-  writeBase(rev, settings);
+  DOCS.forEach((doc, i) => writeBase(doc, revs[i], settings));
   setStatus({ state: 'ok', message: null, at: new Date() });
   startSync();
 }
@@ -308,6 +365,6 @@ export async function connect(token, remote, settings) {
 export function disconnect() {
   clearTimeout(timer);
   localStorage.removeItem(TOKEN);
-  localStorage.removeItem(BASE);
+  for (const doc of DOCS) localStorage.removeItem(doc.base);
   setStatus({ state: 'off', message: null, at: null });
 }

@@ -1119,11 +1119,9 @@ export default function App({ collection }) {
               Preisanpassung <span className="muted">Effektivpreis</span>
             </button>
           )}
-          {profile.sync && (
-            <button onClick={() => setSyncOpen(true)}>
-              Sync <span className="muted">{syncSummary(syncStatus)}</span>
-            </button>
-          )}
+          <button onClick={() => setSyncOpen(true)}>
+            Sync <span className="muted">{syncSummary(syncStatus)}</span>
+          </button>
           <button onClick={exportCsv} disabled={shown.length === 0}>
             CSV-Export <span className="muted">sichtbarer Vergleich</span>
           </button>

@@ -13,7 +13,11 @@
 
 import { createHash, timingSafeEqual } from 'node:crypto';
 
-const KEY = 'car-compare:settings';
+// One document per scope. No scope is the cars' document as it has always
+// been; `collections` holds every other collection's settings, so a client
+// from before collections, which rewrites the whole cars document, cannot
+// delete them (viewer/src/sync.js).
+const KEYS = { '': 'car-compare:settings', collections: 'car-compare:settings:collections' };
 
 // Upstash rejects bodies over 1 MB on the free plan; stay clear of that with a
 // readable error instead of an opaque 413 from Redis.
@@ -64,7 +68,7 @@ const isPlainObject = (v) => v !== null && typeof v === 'object' && !Array.isArr
  * @param {{ method: string, authorization?: string, body?: unknown, env?: object }} request
  * @returns {Promise<{ status: number, body: object }>}
  */
-export async function handleSettings({ method, authorization, body, env = process.env }) {
+export async function handleSettings({ method, authorization, body, scope, env = process.env }) {
   if (!env.SYNC_TOKEN) {
     return reply(503, { error: 'Sync ist auf dem Server nicht eingerichtet (SYNC_TOKEN fehlt).' });
   }
@@ -75,6 +79,8 @@ export async function handleSettings({ method, authorization, body, env = proces
   if (!authorized(authorization, env.SYNC_TOKEN)) {
     return reply(401, { error: 'Der Sync-Schlüssel ist ungültig.' });
   }
+  const KEY = KEYS[scope ?? ''];
+  if (!KEY) return reply(400, { error: `Unbekannter Bereich: ${scope}` });
 
   try {
     if (method === 'GET') {
