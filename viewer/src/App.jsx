@@ -951,7 +951,7 @@ export default function App({ collection }) {
                     </td>
                   );
                 }
-                const { mark, text, tone, swatch, meter, hint } = profile.cellFor(
+                const { mark, text, tone, swatch, meter, hint, links } = profile.cellFor(
                   row,
                   car,
                   collection,
@@ -972,6 +972,11 @@ export default function App({ collection }) {
                       {mark && <span className={`mark ${tone}`}>{mark}</span>}
                       {mark && text ? ' ' : ''}
                       {text}
+                      {links?.map((link) => (
+                        <a key={link.url} className="note-link" href={link.url} target="_blank" rel="noreferrer">
+                          {link.label}
+                        </a>
+                      ))}
                       {hint && (
                         <span className="hint" title={hint} aria-label="Aufschlüsselung">
                           ⓘ

@@ -312,7 +312,10 @@ documents it and normalizes it into the cars' shape:
 ```
 
 A fact is a plain value (its key becomes the row label) or `{label, value}`;
-numbers, booleans and arrays are formatted for display. The table is the union
+numbers, booleans and arrays are formatted for display. `{value, links:
+[{label, url}]}` shows the links in the cell (only `http(s)`), while `value`
+stays what the CSV export and "Nur Unterschiede" compare; the Kitas' `Quelle`
+uses it to link the city lists. The table is the union
 of every fact and feature any listing has, so adding a fact to one Kita adds a
 row and nothing has to be declared up front. `location` with coordinates turns
 on the map and the Luftlinie row (from the same Fürth home as `scripts/geo.mjs`).

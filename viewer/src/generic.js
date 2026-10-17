@@ -15,7 +15,8 @@
 //
 // Everything else is optional: url, subtitle, description, images[], price
 // (a number, or {gross, localized}), priceUnit, location {name, street, city,
-// lat, lon}. A fact is a plain value (the key is its label) or {label, value}.
+// lat, lon}. A fact is a plain value (the key is its label) or {label, value},
+// optionally with links: [{label, url}] to show in the cell instead of the text.
 
 import { STATUSES } from './rows.js';
 
@@ -51,13 +52,20 @@ const factText = (value) => {
   return String(value);
 };
 
+/** Only http(s) links: a hand-written file must not smuggle in a javascript: URL. */
+const linksOf = (links) =>
+  (Array.isArray(links) ? links : [])
+    .filter((link) => /^https?:\/\//.test(link?.url ?? ''))
+    .map((link) => ({ label: link.label || link.url, url: link.url }));
+
 function normalizeFacts(raw) {
   const facts = {};
   for (const [key, entry] of Object.entries(raw ?? {})) {
     const isObject = entry && typeof entry === 'object' && !Array.isArray(entry);
     const value = factText(isObject ? entry.value : entry);
     if (value === null) continue;
-    facts[key] = { label: (isObject && entry.label) || key, value };
+    const links = isObject ? linksOf(entry.links) : [];
+    facts[key] = { label: (isObject && entry.label) || key, value, ...(links.length ? { links } : {}) };
   }
   return facts;
 }
@@ -272,5 +280,9 @@ export function genericCellFor(row, item, collection) {
     return wanted ? { mark: '❌', text: '', tone: 'bad' } : { mark: '', text: '–', tone: 'empty' };
   }
   if (!raw) return { mark: '', text: '–', tone: 'empty' };
+  // The text stays the row's value (CSV, "Nur Unterschiede"); the cell shows
+  // the links, whose labels say the same thing.
+  const links = row.key.startsWith('fact:') ? item.facts?.[row.key.slice(5)]?.links : null;
+  if (links?.length) return { mark: '', text: '', tone: null, links };
   return { mark: '', text: raw, tone: null };
 }
