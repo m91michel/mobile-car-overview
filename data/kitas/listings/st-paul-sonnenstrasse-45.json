@@ -1,0 +1,27 @@
+{
+  "id": "st-paul-sonnenstrasse-45",
+  "title": "Ev. Kindergarten „St. Paul“ (Sonnenstraße)",
+  "subtitle": "Kindergarten · Östliche Südstadt",
+  "url": "https://www.kita-bayern.de/fue/sonnen/index.html",
+  "location": {
+    "name": "Ev. Kindergarten „St. Paul“ (Sonnenstraße)",
+    "street": "Sonnenstraße 45",
+    "city": "90763 Fürth",
+    "lat": 49.462866,
+    "lon": 10.9995
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Östliche Südstadt",
+    "Träger": "evangelisch",
+    "Fußweg": "0,5 km · 6 min",
+    "Rad": "0,7 km · 2 min",
+    "Auto": "0,7 km · 2 min",
+    "Telefon": "(0911) 70 66 47",
+    "E-Mail": "kita.sonnenstrasse.fue@elkb.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

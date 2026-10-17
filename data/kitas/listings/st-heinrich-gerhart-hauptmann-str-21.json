@@ -1,0 +1,29 @@
+{
+  "id": "st-heinrich-gerhart-hauptmann-str-21",
+  "title": "Kath. Integrativer Montessori-Kindergarten „St. Heinrich“",
+  "subtitle": "Kindergarten · Kalbsiedlung Weikershof",
+  "url": "http://www.montessori-kita-fuerth.de/index.html",
+  "location": {
+    "name": "Kath. Integrativer Montessori-Kindergarten „St. Heinrich“",
+    "street": "Gerhart-Hauptmann-Str. 21",
+    "city": "90763 Fürth",
+    "lat": 49.453998,
+    "lon": 10.994531
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Kalbsiedlung Weikershof",
+    "Träger": "katholisch",
+    "Fußweg": "1,5 km · 19 min",
+    "Rad": "1,5 km · 6 min",
+    "Auto": "1,8 km · 4 min",
+    "Telefon": "(0911) 71 25 83",
+    "E-Mail": "kita.fuerth.mon@erzbistum-bamberg.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)",
+    "Integrativ",
+    "Montessori"
+  ]
+}

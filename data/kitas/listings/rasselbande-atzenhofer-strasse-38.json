@@ -1,0 +1,28 @@
+{
+  "id": "rasselbande-atzenhofer-strasse-38",
+  "title": "Integrativer Kindergarten „Rasselbande“",
+  "subtitle": "Kindergarten · Burgfarrnbach Atzenhof",
+  "url": "https://www.kita-bayern.de/fue/rasselbande/index.html",
+  "location": {
+    "name": "Integrativer Kindergarten „Rasselbande“",
+    "street": "Atzenhofer Straße 38",
+    "city": "90768 Fürth",
+    "lat": 49.505772,
+    "lon": 10.954806
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Burgfarrnbach Atzenhof",
+    "Träger": "Integrativer Kindergarten Rasselbande e. V.",
+    "Fußweg": "8,0 km · 107 min",
+    "Rad": "8,9 km · 15 min",
+    "Auto": "11,1 km · 14 min",
+    "Telefon": "(0911) 76 49 56",
+    "E-Mail": "kindergartenrasselbande@t-online.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)",
+    "Integrativ"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "marsweg-marsweg-17",
+  "title": "Humanistische Kinderkrippe „Marsweg“",
+  "subtitle": "Krippe · Östliche Südstadt",
+  "url": "http://www.hvd-kitas.de/unsere-kindertagesstaetten/fuerth-stadt/krippe-am-marsweg/",
+  "location": {
+    "name": "Humanistische Kinderkrippe „Marsweg“",
+    "street": "Marsweg 17",
+    "city": "90763 Fürth",
+    "lat": 49.460694,
+    "lon": 11.004176
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Östliche Südstadt",
+    "Träger": "Humanistischer Verband Deutschlands",
+    "Fußweg": "0,1 km · 1 min",
+    "Rad": "0,1 km · 1 min",
+    "Auto": "0,4 km · 1 min",
+    "Telefon": "(0911) 80 19 12 90",
+    "E-Mail": "marsweg@hv-kitas.de",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

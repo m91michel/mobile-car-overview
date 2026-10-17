@@ -1,0 +1,27 @@
+{
+  "id": "die-sonnenkaefer-ggmbh-alte-reutstrasse-172",
+  "title": "Kindertagesstätte „Die Sonnenkäfer gGmbH“",
+  "subtitle": "Kindergarten · Ronhof Kronach",
+  "url": "https://www.kita-bayern.de/fue/sonnenkaefer/index.html",
+  "location": {
+    "name": "Kindertagesstätte „Die Sonnenkäfer gGmbH“",
+    "street": "Alte Reutstraße 172",
+    "city": "90765 Fürth",
+    "lat": 49.490126,
+    "lon": 11.01059
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Ronhof Kronach",
+    "Träger": "Die Sonnenkäfer e.V.",
+    "Fußweg": "4,1 km · 52 min",
+    "Rad": "4,2 km · 13 min",
+    "Auto": "5,2 km · 8 min",
+    "Telefon": "(0911) 79 29 16",
+    "E-Mail": "sekretariat@die-sonnenkaefer.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

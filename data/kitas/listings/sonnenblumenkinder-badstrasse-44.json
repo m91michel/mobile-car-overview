@@ -1,0 +1,28 @@
+{
+  "id": "sonnenblumenkinder-badstrasse-44",
+  "title": "Städt. Kita „Sonnenblumenkinder“",
+  "subtitle": "Krippe + Kindergarten · Innenstadt",
+  "url": "http://www.sonnenblumenkinder.fuerth.info/",
+  "location": {
+    "name": "Städt. Kita „Sonnenblumenkinder“",
+    "street": "Badstraße 44",
+    "city": "90762 Fürth",
+    "lat": 49.472224,
+    "lon": 10.982193
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Innenstadt",
+    "Träger": "städtisch",
+    "Fußweg": "2,4 km · 32 min",
+    "Rad": "2,4 km · 8 min",
+    "Auto": "2,3 km · 5 min",
+    "Telefon": "(0911) 77 08 88",
+    "E-Mail": "kita4.sonnenblumenkinder@fuerth.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

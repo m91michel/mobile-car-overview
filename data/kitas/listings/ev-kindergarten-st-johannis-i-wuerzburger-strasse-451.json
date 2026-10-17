@@ -1,0 +1,27 @@
+{
+  "id": "ev-kindergarten-st-johannis-i-wuerzburger-strasse-451",
+  "title": "Ev. Kindergarten St. Johannis I",
+  "subtitle": "Kindergarten · Hardhöhe",
+  "url": "https://www.kita-bayern.de/fue/wuerzburger/index.html",
+  "location": {
+    "name": "Ev. Kindergarten St. Johannis I",
+    "street": "Würzburger Straße 451",
+    "city": "90768 Fürth",
+    "lat": 49.487547,
+    "lon": 10.927912
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Hardhöhe",
+    "Träger": "evangelisch",
+    "Fußweg": "7,6 km · 99 min",
+    "Rad": "8,0 km · 27 min",
+    "Auto": "8,0 km · 11 min",
+    "Telefon": "(0911) 75 38 05",
+    "E-Mail": "kiga.burgfarrnbach@elkb.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

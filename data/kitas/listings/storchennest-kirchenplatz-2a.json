@@ -1,0 +1,27 @@
+{
+  "id": "storchennest-kirchenplatz-2a",
+  "title": "Ev. Kindergarten „Storchennest“",
+  "subtitle": "Kindergarten · Innenstadt",
+  "url": "http://www.kigastorchennest-stmichael.de/",
+  "location": {
+    "name": "Ev. Kindergarten „Storchennest“",
+    "street": "Kirchenplatz 2a",
+    "city": "90762 Fürth",
+    "lat": 49.480269,
+    "lon": 10.988049
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Innenstadt",
+    "Träger": "evangelisch",
+    "Fußweg": "2,7 km · 36 min",
+    "Rad": "3,4 km · 11 min",
+    "Auto": "3,1 km · 6 min",
+    "Telefon": "(0911) 77 59 22",
+    "E-Mail": "kiga.kirchenplatz.fue@elkb.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "human-kindergarten-waldstrasse-waldstrasse-62a",
+  "title": "Human. Kindergarten Waldstraße",
+  "subtitle": "Kindergarten · Östliche Südstadt",
+  "url": "http://www.hvd-kitas.de/unsere-kindertagesstaetten/fuerth-stadt/kindergarten-waldstrasse/",
+  "location": {
+    "name": "Human. Kindergarten Waldstraße",
+    "street": "Waldstraße 62a",
+    "city": "90763 Fürth",
+    "lat": 49.460325,
+    "lon": 11.004422
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Östliche Südstadt",
+    "Träger": "Humanistischer Verband Deutschlands",
+    "Fußweg": "0,2 km · 2 min",
+    "Rad": "0,2 km · 1 min",
+    "Auto": "0,6 km · 2 min",
+    "Telefon": "(0911) 65 00 30 80",
+    "E-Mail": "waldstrasse@hv-kitas.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

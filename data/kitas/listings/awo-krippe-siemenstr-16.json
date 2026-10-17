@@ -1,0 +1,27 @@
+{
+  "id": "awo-krippe-siemenstr-16",
+  "title": "AWO-Krippe",
+  "subtitle": "Krippe · Hardhöhe",
+  "url": "http://www.awo-fuerth.de/navid.255/awo-kinderkrippen-fuerth-kleinkinderbetreuung.htm",
+  "location": {
+    "name": "AWO-Krippe",
+    "street": "Siemenstr. 16",
+    "city": "90766 Fürth",
+    "lat": 49.482328,
+    "lon": 10.95933
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Hardhöhe",
+    "Träger": "Arbeiterwohlfahrt",
+    "Fußweg": "5,0 km · 67 min",
+    "Rad": "4,9 km · 17 min",
+    "Auto": "5,4 km · 8 min",
+    "Telefon": "(0911) 89 108 200",
+    "E-Mail": "kikri02@awo-fuerth.de",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

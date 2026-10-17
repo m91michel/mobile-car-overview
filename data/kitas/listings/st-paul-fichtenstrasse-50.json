@@ -1,0 +1,27 @@
+{
+  "id": "st-paul-fichtenstrasse-50",
+  "title": "Ev. Kindergarten „St. Paul“ (Fichtenstraße)",
+  "subtitle": "Kindergarten · Nördliche Südstadt",
+  "url": "https://www.kita-bayern.de/fue/fichten/index.html",
+  "location": {
+    "name": "Ev. Kindergarten „St. Paul“ (Fichtenstraße)",
+    "street": "Fichtenstraße 50",
+    "city": "90763 Fürth",
+    "lat": 49.466056,
+    "lon": 10.989475
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Nördliche Südstadt",
+    "Träger": "evangelisch",
+    "Fußweg": "1,4 km · 18 min",
+    "Rad": "1,6 km · 4 min",
+    "Auto": "1,4 km · 3 min",
+    "Telefon": "(0911) 77 53 49",
+    "E-Mail": "kita.fichtenstrasse.fue@elkb.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

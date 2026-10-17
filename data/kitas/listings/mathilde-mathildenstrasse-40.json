@@ -1,0 +1,26 @@
+{
+  "id": "mathilde-mathildenstrasse-40",
+  "title": "Kinderhaus „Mathilde“",
+  "subtitle": "Kindergarten · Innenstadt",
+  "location": {
+    "name": "Kinderhaus „Mathilde“",
+    "street": "Mathildenstraße 40",
+    "city": "90762 Fürth",
+    "lat": 49.475557,
+    "lon": 10.983183
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Innenstadt",
+    "Träger": "Internationaler Bund e.V.",
+    "Fußweg": "2,6 km · 34 min",
+    "Rad": "2,9 km · 9 min",
+    "Auto": "3,6 km · 7 min",
+    "Telefon": "(0911) 766 108 0",
+    "E-Mail": "theresa.beyrich@ib.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

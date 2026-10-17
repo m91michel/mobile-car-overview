@@ -1,13 +1,14 @@
 {
   "name": "Kitas",
   "icon": "🧸",
-  "description": "Krippen und Kindergärten in der Umgebung. Beispieldaten, durch echte Einträge ersetzen.",
+  "description": "Alle Krippen und Kindergärten in Fürth, mit Fußweg, Rad und Auto zur Waldstraße 48.",
   "item": "Kita",
   "items": "Kitas",
   "featuresLabel": "Angebot",
-  "priceLabel": "Beitrag",
   "order": 2,
-  "factOrder": ["Träger", "Alter", "Öffnungszeiten", "Plätze", "Gruppen", "Betreuungsschlüssel", "Schließtage pro Jahr", "Konzept"],
-  "keyFeatures": ["Frische Küche", "Garten"],
+  "home": { "lat": 49.4615095, "lon": 11.0031515, "label": "Waldstraße 48" },
+  "sortFacts": ["Fußweg", "Rad", "Auto"],
+  "defaultSort": "fact:Fußweg",
+  "factOrder": ["Art", "Stadtteil", "Träger", "Fußweg", "Rad", "Auto", "Telefon", "E-Mail", "Hinweis", "Quelle"],
   "statuses": ["Angefragt", "Besichtigt", "Warteliste", "Zusage", "Absage"]
 }

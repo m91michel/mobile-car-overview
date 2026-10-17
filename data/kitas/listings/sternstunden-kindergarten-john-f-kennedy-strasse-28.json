@@ -1,0 +1,28 @@
+{
+  "id": "sternstunden-kindergarten-john-f-kennedy-strasse-28",
+  "title": "Lebenshilfe „Sternstunden-Kindergarten“",
+  "subtitle": "Kindergarten · Kalbsiedlung Weikershof",
+  "url": "https://www.lebenshilfe-fuerth.de/unsere-angebote/fruehe-hilfen/sternstunden-kindergarten#/detail/27",
+  "location": {
+    "name": "Lebenshilfe „Sternstunden-Kindergarten“",
+    "street": "John-F.-Kennedy-Straße 28",
+    "city": "90763 Fürth",
+    "lat": 49.455213,
+    "lon": 10.99336
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Kalbsiedlung Weikershof",
+    "Träger": "Lebenshilfe Fürth e.V.",
+    "Fußweg": "1,4 km · 18 min",
+    "Rad": "1,5 km · 6 min",
+    "Auto": "1,7 km · 3 min",
+    "Telefon": "(0911) 71 02 811",
+    "E-Mail": "kiga@lebenshilfe-fuerth.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)",
+    "Integrativ"
+  ]
+}

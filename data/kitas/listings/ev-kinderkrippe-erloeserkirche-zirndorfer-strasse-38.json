@@ -1,0 +1,28 @@
+{
+  "id": "ev-kinderkrippe-erloeserkirche-zirndorfer-strasse-38",
+  "title": "Ev. Kinderkrippe Erlöserkirche",
+  "subtitle": "Krippe · Dambach Unterfürberg",
+  "url": "https://www.kindergarten-erloeserkirche.com/",
+  "location": {
+    "name": "Ev. Kinderkrippe Erlöserkirche",
+    "street": "Zirndorfer Straße 38",
+    "city": "90768 Fürth",
+    "lat": 49.458098,
+    "lon": 10.975062
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Dambach Unterfürberg",
+    "Träger": "evangelisch",
+    "Fußweg": "3,0 km · 39 min",
+    "Rad": "3,0 km · 10 min",
+    "Auto": "3,6 km · 5 min",
+    "Telefon": "(0911) 72 95 38",
+    "E-Mail": "kita.erloeserkirche.fue@elkb.de",
+    "Hinweis": "Lage auf der Karte nur ungefähr (Hausnummer nicht gefunden).",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

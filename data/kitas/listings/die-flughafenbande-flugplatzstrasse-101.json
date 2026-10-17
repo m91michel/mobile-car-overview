@@ -1,0 +1,28 @@
+{
+  "id": "die-flughafenbande-flugplatzstrasse-101",
+  "title": "Haus für Kinder „Die Flughafenbande“",
+  "subtitle": "Krippe + Kindergarten · Unterfarrnbach",
+  "url": "http://www.die-flughafenbande.fuerth.info/",
+  "location": {
+    "name": "Haus für Kinder „Die Flughafenbande“",
+    "street": "Flugplatzstraße 101",
+    "city": "90768 Fürth",
+    "lat": 49.503833,
+    "lon": 10.962866
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Unterfarrnbach",
+    "Träger": "städtisch",
+    "Fußweg": "6,3 km · 78 min",
+    "Rad": "7,1 km · 16 min",
+    "Auto": "7,2 km · 12 min",
+    "Telefon": "(0911) 97 370 56",
+    "E-Mail": "kita17.flughafenbande@jugendamt-fuerth.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

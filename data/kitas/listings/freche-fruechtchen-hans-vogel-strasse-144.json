@@ -1,0 +1,27 @@
+{
+  "id": "freche-fruechtchen-hans-vogel-strasse-144",
+  "title": "Städt. Kita „Freche Früchtchen“",
+  "subtitle": "Kindergarten · Ronhof Kronach",
+  "url": "http://www.freche-fruechtchen.fuerth.info/",
+  "location": {
+    "name": "Städt. Kita „Freche Früchtchen“",
+    "street": "Hans-Vogel-Straße 144",
+    "city": "90765 Fürth",
+    "lat": 49.487163,
+    "lon": 11.008615
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Ronhof Kronach",
+    "Träger": "städtisch",
+    "Fußweg": "3,7 km · 47 min",
+    "Rad": "3,9 km · 12 min",
+    "Auto": "4,7 km · 7 min",
+    "Telefon": "(0911) 79 05 352",
+    "E-Mail": "kita14.freche-fruechtchen@jugendamt-fuerth.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

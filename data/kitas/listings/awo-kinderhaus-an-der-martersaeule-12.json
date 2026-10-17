@@ -1,0 +1,27 @@
+{
+  "id": "awo-kinderhaus-an-der-martersaeule-12",
+  "title": "AWO Kinderhaus",
+  "subtitle": "Kindergarten · Eigenes Heim Schwand",
+  "url": "https://www.kita-bayern.de/fue/hort-ebert/index.html",
+  "location": {
+    "name": "AWO Kinderhaus",
+    "street": "An der Martersäule 12",
+    "city": "90766 Fürth",
+    "lat": 49.482852,
+    "lon": 10.968474
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Eigenes Heim Schwand",
+    "Träger": "Arbeiterwohlfahrt",
+    "Fußweg": "4,2 km · 56 min",
+    "Rad": "4,3 km · 13 min",
+    "Auto": "5,0 km · 8 min",
+    "Telefon": "(0911) 89 10 81 01",
+    "E-Mail": "kiho@awo-fuerth.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

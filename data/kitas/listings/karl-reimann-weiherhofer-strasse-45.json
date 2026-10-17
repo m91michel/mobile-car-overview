@@ -1,0 +1,28 @@
+{
+  "id": "karl-reimann-weiherhofer-strasse-45",
+  "title": "Lebenshilfe Kindergarten „Karl-Reimann“",
+  "subtitle": "Kindergarten · Dambach Unterfürberg",
+  "url": "https://www.lebenshilfe-fuerth.de/unsere-angebote/fruehe-hilfen/karl-reinmann-kindergarten",
+  "location": {
+    "name": "Lebenshilfe Kindergarten „Karl-Reimann“",
+    "street": "Weiherhofer Straße 45",
+    "city": "90768 Fürth",
+    "lat": 49.461074,
+    "lon": 10.971448
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Dambach Unterfürberg",
+    "Träger": "Lebenshilfe Fürth e.V.",
+    "Fußweg": "2,9 km · 37 min",
+    "Rad": "2,9 km · 10 min",
+    "Auto": "4,1 km · 6 min",
+    "Telefon": "(0911) 72 02 50",
+    "E-Mail": "kiga@lebenshilfe-fuerth.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)",
+    "Integrativ"
+  ]
+}

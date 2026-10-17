@@ -1,0 +1,28 @@
+{
+  "id": "knoblauchsland-kreuzsteinweg-15",
+  "title": "Kinderkrippe & Kindergartengruppe „Knoblauchsland“",
+  "subtitle": "Krippe + Kindergarten · Poppenreuth",
+  "url": "https://sportverein-poppenreuth.de/index.php/kinderkrippe-knoblauchsland/",
+  "location": {
+    "name": "Kinderkrippe & Kindergartengruppe „Knoblauchsland“",
+    "street": "Kreuzsteinweg 15",
+    "city": "90765 Fürth",
+    "lat": 49.47627,
+    "lon": 11.023547
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Poppenreuth",
+    "Träger": "SV Fürth-Poppenreuth e.V.",
+    "Fußweg": "2,7 km · 37 min",
+    "Rad": "3,5 km · 13 min",
+    "Auto": "3,2 km · 6 min",
+    "Telefon": "(0911) 7940 488",
+    "E-Mail": "kinderkrippe-knoblauchsland@web.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

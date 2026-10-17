@@ -1,0 +1,27 @@
+{
+  "id": "ebert-maeuse-friedrich-ebert-str-158",
+  "title": "AWO-Krippe „Ebert-Mäuse“",
+  "subtitle": "Krippe · Eigenes Heim Schwand",
+  "url": "http://www.awo-fuerth.de/navid.256/kinderkrippe-fuerth-awo-kinderbetreuung.htm",
+  "location": {
+    "name": "AWO-Krippe „Ebert-Mäuse“",
+    "street": "Friedrich-Ebert-Str. 158",
+    "city": "90766 Fürth",
+    "lat": 49.489635,
+    "lon": 10.975113
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Eigenes Heim Schwand",
+    "Träger": "Arbeiterwohlfahrt",
+    "Fußweg": "4,4 km · 55 min",
+    "Rad": "4,9 km · 12 min",
+    "Auto": "5,2 km · 8 min",
+    "Telefon": "(0911) 89 108 300",
+    "E-Mail": "kikri@awo-fuerth.de",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

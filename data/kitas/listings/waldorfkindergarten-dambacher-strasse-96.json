@@ -1,0 +1,28 @@
+{
+  "id": "waldorfkindergarten-dambacher-strasse-96",
+  "title": "Waldorfkindergarten",
+  "subtitle": "Kindergarten · Nördliche Südstadt",
+  "url": "https://www.waldorfkindergarten-fuerth.de",
+  "location": {
+    "name": "Waldorfkindergarten",
+    "street": "Dambacher Straße 96",
+    "city": "90763 Fürth",
+    "lat": 49.463821,
+    "lon": 10.983696
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Nördliche Südstadt",
+    "Träger": "Waldorfkindergartenverein e. V.",
+    "Fußweg": "1,9 km · 25 min",
+    "Rad": "1,9 km · 6 min",
+    "Auto": "2,6 km · 5 min",
+    "Telefon": "(0911) 77 05 57",
+    "E-Mail": "info@waldorfkindergarten-fuerth.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)",
+    "Waldorf"
+  ]
+}

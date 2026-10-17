@@ -1,0 +1,28 @@
+{
+  "id": "gruene-halle-raum-fuer-kinder-krautheimerstrasse-11",
+  "title": "KJHZ Kindergarten „Grüne Halle – Raum für Kinder“",
+  "subtitle": "Krippe + Kindergarten · Östliche Südstadt",
+  "url": "https://www.kjhz.de/kindertagesstaette-gruene-halle/",
+  "location": {
+    "name": "KJHZ Kindergarten „Grüne Halle – Raum für Kinder“",
+    "street": "Krautheimerstraße 11",
+    "city": "90763 Fürth",
+    "lat": 49.461529,
+    "lon": 10.995676
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Östliche Südstadt",
+    "Träger": "Kinder- und Jugendhilfezentrum Fürth",
+    "Fußweg": "0,7 km · 9 min",
+    "Rad": "1,1 km · 3 min",
+    "Auto": "1,1 km · 3 min",
+    "Telefon": "(0911) 75 66 28 101",
+    "E-Mail": "gruenehalle@kjhz.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

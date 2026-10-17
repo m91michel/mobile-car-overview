@@ -1,0 +1,26 @@
+{
+  "id": "kiba-schwabacher-strasse-76",
+  "title": "Großtagespflege „KiBa“",
+  "subtitle": "Großtagespflege · Nördliche Südstadt",
+  "location": {
+    "name": "Großtagespflege „KiBa“",
+    "street": "Schwabacher Straße 76",
+    "city": "90763 Fürth",
+    "lat": 49.469489,
+    "lon": 10.986635
+  },
+  "facts": {
+    "Art": "Großtagespflege",
+    "Stadtteil": "Nördliche Südstadt",
+    "Träger": "Großtagespflege (Tagespflegepersonen)",
+    "Fußweg": "1,8 km · 23 min",
+    "Rad": "1,8 km · 7 min",
+    "Auto": "1,8 km · 3 min",
+    "Telefon": "017055448110 0162782865",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Großtagespflege"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "kindervilla-st-martin-jakob-henle-strasse-44",
+  "title": "Ev. Kindergarten „Kindervilla St. Martin“",
+  "subtitle": "Kindergarten · Eigenes Heim Schwand",
+  "url": "https://www.kita-bayern.de/fue/henle/index.html",
+  "location": {
+    "name": "Ev. Kindergarten „Kindervilla St. Martin“",
+    "street": "Jakob-Henle-Straße 44",
+    "city": "90766 Fürth",
+    "lat": 49.482492,
+    "lon": 10.977155
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Eigenes Heim Schwand",
+    "Träger": "evangelisch",
+    "Fußweg": "3,7 km · 49 min",
+    "Rad": "4,6 km · 11 min",
+    "Auto": "4,2 km · 7 min",
+    "Telefon": "(0911) 73 18 22",
+    "E-Mail": "kiga.jakob-henle.fue@elkb.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

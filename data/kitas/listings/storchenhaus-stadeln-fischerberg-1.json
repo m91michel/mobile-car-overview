@@ -1,0 +1,27 @@
+{
+  "id": "storchenhaus-stadeln-fischerberg-1",
+  "title": "Ev. Kinderkrippe „Storchenhaus Stadeln“",
+  "subtitle": "Krippe · Stadeln Mannhof",
+  "url": "https://kitas.rummelsberger-diakonie.de/standorte/kinderkrippe-storchenhaus/ueber-uns/",
+  "location": {
+    "name": "Ev. Kinderkrippe „Storchenhaus Stadeln“",
+    "street": "Fischerberg 1",
+    "city": "90765 Fürth",
+    "lat": 49.512256,
+    "lon": 10.974329
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Stadeln Mannhof",
+    "Träger": "evangelisch",
+    "Fußweg": "7,2 km · 90 min",
+    "Rad": "6,9 km · 12 min",
+    "Auto": "7,4 km · 12 min",
+    "Telefon": "(0911) 47 00 84 01",
+    "E-Mail": "kinderkrippe_storchenhaus@rummelsberger.net",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

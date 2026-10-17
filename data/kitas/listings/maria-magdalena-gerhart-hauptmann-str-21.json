@@ -1,0 +1,28 @@
+{
+  "id": "maria-magdalena-gerhart-hauptmann-str-21",
+  "title": "Ev. Kindergarten „Maria Magdalena“",
+  "subtitle": "Krippe + Kindergarten · Kalbsiedlung Weikershof",
+  "url": "http://www.maria-magdalena-fuerth.de/index.php?id=115",
+  "location": {
+    "name": "Ev. Kindergarten „Maria Magdalena“",
+    "street": "Gerhart-Hauptmann-Str. 21",
+    "city": "90763 Fürth",
+    "lat": 49.453998,
+    "lon": 10.994531
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Kalbsiedlung Weikershof",
+    "Träger": "evangelisch",
+    "Fußweg": "1,5 km · 19 min",
+    "Rad": "1,5 km · 6 min",
+    "Auto": "1,8 km · 4 min",
+    "Telefon": "(0911) 71 85 00",
+    "E-Mail": "kiga.maria-magdalena.fue@elkb.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

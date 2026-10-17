@@ -1,0 +1,27 @@
+{
+  "id": "waldringstrolche-westl-waldringstrasse-13",
+  "title": "Städt. Kita „Waldringstrolche“",
+  "subtitle": "Kindergarten · Stadeln Mannhof",
+  "url": "http://www.waldringstrolche.fuerth.info/",
+  "location": {
+    "name": "Städt. Kita „Waldringstrolche“",
+    "street": "Westl. Waldringstraße 13",
+    "city": "90765 Fürth",
+    "lat": 49.503954,
+    "lon": 10.981548
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Stadeln Mannhof",
+    "Träger": "städtisch",
+    "Fußweg": "5,9 km · 78 min",
+    "Rad": "6,2 km · 15 min",
+    "Auto": "6,9 km · 11 min",
+    "Telefon": "(0911) 76 33 61",
+    "E-Mail": "kita2.waldringstrolche@jugendamt-fuerth.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

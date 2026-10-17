@@ -1,0 +1,27 @@
+{
+  "id": "unsere-liebe-frau-koenigsstrasse-113",
+  "title": "Kath. Kindergarten „Unsere liebe Frau“",
+  "subtitle": "Kindergarten · Innenstadt",
+  "url": "https://gkg-fuerth.de/kindertagesstaetten/KiGa-Unsere-Liebe-Frau/index.html",
+  "location": {
+    "name": "Kath. Kindergarten „Unsere liebe Frau“",
+    "street": "Königsstraße 113",
+    "city": "90762 Fürth",
+    "lat": 49.475945,
+    "lon": 10.992618
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Innenstadt",
+    "Träger": "katholisch",
+    "Fußweg": "2,1 km · 27 min",
+    "Rad": "2,3 km · 7 min",
+    "Auto": "2,2 km · 4 min",
+    "Telefon": "(0911) 77 76 20",
+    "E-Mail": "kita.fuerth.ulf@erzbistum-bamberg.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

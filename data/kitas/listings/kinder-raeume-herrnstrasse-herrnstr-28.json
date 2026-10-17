@@ -1,0 +1,28 @@
+{
+  "id": "kinder-raeume-herrnstrasse-herrnstr-28",
+  "title": "KINDER-RÄUME Herrnstraße",
+  "subtitle": "Krippe + Kindergarten · Westliche Südstadt",
+  "url": "https://kita-kinderraeume.de/",
+  "location": {
+    "name": "KINDER-RÄUME Herrnstraße",
+    "street": "Herrnstr. 28",
+    "city": "90763 Fürth",
+    "lat": 49.463824,
+    "lon": 10.987872
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Westliche Südstadt",
+    "Träger": "KINDER-RÄUME gGmbH",
+    "Fußweg": "1,6 km · 20 min",
+    "Rad": "1,6 km · 5 min",
+    "Auto": "1,5 km · 3 min",
+    "Telefon": "(0911) 9756510",
+    "E-Mail": "info@kr-fuerth.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

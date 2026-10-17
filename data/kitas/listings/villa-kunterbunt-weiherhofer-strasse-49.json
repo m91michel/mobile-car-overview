@@ -1,0 +1,27 @@
+{
+  "id": "villa-kunterbunt-weiherhofer-strasse-49",
+  "title": "Städt. Kita „Villa Kunterbunt“",
+  "subtitle": "Kindergarten · Dambach Unterfürberg",
+  "url": "http://www.villa-kunterbunt.fuerth.info/",
+  "location": {
+    "name": "Städt. Kita „Villa Kunterbunt“",
+    "street": "Weiherhofer Straße 49",
+    "city": "90768 Fürth",
+    "lat": 49.461049,
+    "lon": 10.971081
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Dambach Unterfürberg",
+    "Träger": "städtisch",
+    "Fußweg": "2,8 km · 36 min",
+    "Rad": "2,8 km · 9 min",
+    "Auto": "3,1 km · 7 min",
+    "Telefon": "(0911) 72 18 10",
+    "E-Mail": "kita5.villa-kunterbunt@jugendamt-fuerth.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

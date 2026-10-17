@@ -1,0 +1,27 @@
+{
+  "id": "ev-kinderkrippe-st-matthaeus-zedernstr-7",
+  "title": "Ev. Kinderkrippe St. Matthäus",
+  "subtitle": "Krippe · Vach Ritzmannshof",
+  "url": "https://www.kirchevach.de/kindertagesstaetten/kinderkrippe/",
+  "location": {
+    "name": "Ev. Kinderkrippe St. Matthäus",
+    "street": "Zedernstr. 7",
+    "city": "90768 Fürth",
+    "lat": 49.52478,
+    "lon": 10.961946
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Vach Ritzmannshof",
+    "Träger": "evangelisch",
+    "Fußweg": "8,6 km · 111 min",
+    "Rad": "9,1 km · 20 min",
+    "Auto": "9,6 km · 17 min",
+    "Telefon": "(0911) 9779 6053",
+    "E-Mail": "krippe.vach@elkb.de",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

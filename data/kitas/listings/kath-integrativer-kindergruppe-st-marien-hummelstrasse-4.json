@@ -1,0 +1,28 @@
+{
+  "id": "kath-integrativer-kindergruppe-st-marien-hummelstrasse-4",
+  "title": "Kath. Integrativer Kindergruppe St. Marien",
+  "subtitle": "Krippe · Burgfarrnbach Atzenhof",
+  "url": "https://www.st-marien-burgfarrnbach.de/",
+  "location": {
+    "name": "Kath. Integrativer Kindergruppe St. Marien",
+    "street": "Hummelstraße 4",
+    "city": "90768 Fürth",
+    "lat": 49.487901,
+    "lon": 10.923832
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Burgfarrnbach Atzenhof",
+    "Träger": "katholisch",
+    "Fußweg": "8,0 km · 104 min",
+    "Rad": "12,7 km · 27 min",
+    "Auto": "8,6 km · 13 min",
+    "Telefon": "(0911) 75 58 57",
+    "E-Mail": "kita.fuerth.mar@erzbistum-bamberg.de",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Integrativ"
+  ]
+}

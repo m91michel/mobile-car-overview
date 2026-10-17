@@ -1,0 +1,27 @@
+{
+  "id": "hopfenspeicher-otto-seeling-promenade-10-a",
+  "title": "Ev. Kinderkrippe „Hopfenspeicher“",
+  "subtitle": "Krippe · Stadtpark und Stadtgrenze",
+  "url": "https://kitas.rummelsberger-diakonie.de/standorte/kinderkrippe-hopfenspeicher/ueber-uns/",
+  "location": {
+    "name": "Ev. Kinderkrippe „Hopfenspeicher“",
+    "street": "Otto-Seeling-Promenade 10 a",
+    "city": "90762 Fürth",
+    "lat": 49.471852,
+    "lon": 10.99739
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Stadtpark und Stadtgrenze",
+    "Träger": "evangelisch",
+    "Fußweg": "1,6 km · 21 min",
+    "Rad": "1,6 km · 6 min",
+    "Auto": "1,7 km · 3 min",
+    "Telefon": "(0911) 9779 7142",
+    "E-Mail": "kinderkrippe_hopfenspeicher@rummelsberger.net",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

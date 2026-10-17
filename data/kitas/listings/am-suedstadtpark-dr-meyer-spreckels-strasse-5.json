@@ -1,0 +1,28 @@
+{
+  "id": "am-suedstadtpark-dr-meyer-spreckels-strasse-5",
+  "title": "Haus für Kinder „Am Südstadtpark“",
+  "subtitle": "Krippe + Kindergarten · Westliche Südstadt",
+  "url": "http://www.hvd-kitas.de/unsere-kindertagesstaetten/fuerth-stadt/haus-fuer-kinder-am-suedstadtpark/",
+  "location": {
+    "name": "Haus für Kinder „Am Südstadtpark“",
+    "street": "Dr.-Meyer-Spreckels-Straße 5",
+    "city": "90763 Fürth",
+    "lat": 49.460839,
+    "lon": 10.993971
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Westliche Südstadt",
+    "Träger": "Humanistischer Verband Deutschlands",
+    "Fußweg": "0,9 km · 12 min",
+    "Rad": "1,3 km · 4 min",
+    "Auto": "1,1 km · 3 min",
+    "Telefon": "(0911) 97 79 10 31",
+    "E-Mail": "suedstadtpark@hv-kitas.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

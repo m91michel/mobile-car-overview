@@ -1,0 +1,28 @@
+{
+  "id": "uferstaedtchen-dr-mack-strasse-97",
+  "title": "Kita „Uferstädtchen“",
+  "subtitle": "Krippe + Kindergarten · Stadtpark und Stadtgrenze",
+  "url": "https://www.kita-uferstaedtchen.de/",
+  "location": {
+    "name": "Kita „Uferstädtchen“",
+    "street": "Dr.-Mack-Straße 97",
+    "city": "90762 Fürth",
+    "lat": 49.469302,
+    "lon": 11.012002
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Stadtpark und Stadtgrenze",
+    "Träger": "KiTa Uferstädtchen gGmbH",
+    "Fußweg": "1,7 km · 22 min",
+    "Rad": "2,5 km · 7 min",
+    "Auto": "1,9 km · 4 min",
+    "Telefon": "(0911) 97 92 98 10",
+    "E-Mail": "info@kita-uferstaedtchen.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

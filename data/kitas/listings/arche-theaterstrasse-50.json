@@ -1,0 +1,26 @@
+{
+  "id": "arche-theaterstrasse-50",
+  "title": "Christlicher Kindergarten „Arche“",
+  "subtitle": "Kindergarten · Innenstadt",
+  "location": {
+    "name": "Christlicher Kindergarten „Arche“",
+    "street": "Theaterstraße 50",
+    "city": "90762 Fürth",
+    "lat": 49.473787,
+    "lon": 10.983255
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Innenstadt",
+    "Träger": "Sozialwerk der Chapel Fürth",
+    "Fußweg": "2,4 km · 32 min",
+    "Rad": "2,6 km · 9 min",
+    "Auto": "2,5 km · 5 min",
+    "Telefon": "(0911) 74 99 680",
+    "E-Mail": "info-arche@sozialwerk-fuerth.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "kinderreich-grillparzerstr-1",
+  "title": "Kinderkrippe „KinderReich“",
+  "subtitle": "Krippe · Poppenreuth",
+  "url": "https://www.kinderreich-fuerth.de/",
+  "location": {
+    "name": "Kinderkrippe „KinderReich“",
+    "street": "Grillparzerstr. 1",
+    "city": "90765 Fürth",
+    "lat": 49.475653,
+    "lon": 11.014144
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Poppenreuth",
+    "Träger": "KinderReich GmbH",
+    "Fußweg": "2,6 km · 35 min",
+    "Rad": "3,2 km · 11 min",
+    "Auto": "3,0 km · 6 min",
+    "Telefon": "(0911) 93 28 99 53",
+    "E-Mail": "info@kinderreich-fuerth.de",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

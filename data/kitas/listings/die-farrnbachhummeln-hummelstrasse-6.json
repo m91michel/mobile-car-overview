@@ -1,0 +1,28 @@
+{
+  "id": "die-farrnbachhummeln-hummelstrasse-6",
+  "title": "Kath. Integrativer Kindergarten St. Marien „Die Farrnbachhummeln“",
+  "subtitle": "Kindergarten · Burgfarrnbach Atzenhof",
+  "url": "https://www.kita-bayern.de/fue/hummel/index.html",
+  "location": {
+    "name": "Kath. Integrativer Kindergarten St. Marien „Die Farrnbachhummeln“",
+    "street": "Hummelstraße 6",
+    "city": "90768 Fürth",
+    "lat": 49.488057,
+    "lon": 10.923048
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Burgfarrnbach Atzenhof",
+    "Träger": "katholisch",
+    "Fußweg": "8,1 km · 105 min",
+    "Rad": "12,6 km · 27 min",
+    "Auto": "8,9 km · 14 min",
+    "Telefon": "(0911) 75 58 57",
+    "E-Mail": "kita.fuerth.mar@erzbistum-bamberg.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)",
+    "Integrativ"
+  ]
+}

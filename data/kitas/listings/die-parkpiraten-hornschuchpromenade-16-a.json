@@ -1,0 +1,26 @@
+{
+  "id": "die-parkpiraten-hornschuchpromenade-16-a",
+  "title": "Großtagespflege „Die Parkpiraten“",
+  "subtitle": "Großtagespflege · Innenstadt",
+  "location": {
+    "name": "Großtagespflege „Die Parkpiraten“",
+    "street": "Hornschuchpromenade 16 a",
+    "city": "90762 Fürth",
+    "lat": 49.469226,
+    "lon": 11.000503
+  },
+  "facts": {
+    "Art": "Großtagespflege",
+    "Stadtteil": "Innenstadt",
+    "Träger": "Großtagespflege (Tagespflegepersonen)",
+    "Fußweg": "1,0 km · 13 min",
+    "Rad": "1,0 km · 4 min",
+    "Auto": "2,1 km · 4 min",
+    "Telefon": "(0911) 47 89 93 66",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Großtagespflege"
+  ]
+}

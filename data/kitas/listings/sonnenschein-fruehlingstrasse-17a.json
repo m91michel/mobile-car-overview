@@ -1,0 +1,26 @@
+{
+  "id": "sonnenschein-fruehlingstrasse-17a",
+  "title": "Ev. Kindergarten St. Michael „Sonnenschein“",
+  "subtitle": "Kindergarten · Ronhof Kronach",
+  "location": {
+    "name": "Ev. Kindergarten St. Michael „Sonnenschein“",
+    "street": "Frühlingstraße 17a",
+    "city": "90765 Fürth",
+    "lat": 49.483158,
+    "lon": 10.999349
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Ronhof Kronach",
+    "Träger": "evangelisch",
+    "Fußweg": "3,2 km · 42 min",
+    "Rad": "4,0 km · 11 min",
+    "Auto": "3,7 km · 6 min",
+    "Telefon": "(0911) 79 06 480",
+    "E-Mail": "kiga.sonnenschein.fue@elkb.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

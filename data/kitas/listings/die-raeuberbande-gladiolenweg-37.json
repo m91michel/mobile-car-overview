@@ -1,0 +1,28 @@
+{
+  "id": "die-raeuberbande-gladiolenweg-37",
+  "title": "Kinderladen Burgfarrnbach „Die Räuberbande“",
+  "subtitle": "Kindergarten · Burgfarrnbach Atzenhof",
+  "url": "https://www.kita-bayern.de/fue/raeuberbande/index.html",
+  "location": {
+    "name": "Kinderladen Burgfarrnbach „Die Räuberbande“",
+    "street": "Gladiolenweg 37",
+    "city": "90768 Fürth",
+    "lat": 49.494179,
+    "lon": 10.910825
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Burgfarrnbach Atzenhof",
+    "Träger": "Elterninitiative für emanzipatorische Kindergartenarbeit Fürth e.V.",
+    "Fußweg": "9,3 km · 123 min",
+    "Rad": "13,5 km · 31 min",
+    "Auto": "9,6 km · 15 min",
+    "Telefon": "(0911) 75 30 434",
+    "E-Mail": "mail@kinderladenraeuberbande.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)",
+    "Elterninitiative"
+  ]
+}

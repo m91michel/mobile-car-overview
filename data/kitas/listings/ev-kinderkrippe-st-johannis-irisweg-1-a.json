@@ -1,0 +1,27 @@
+{
+  "id": "ev-kinderkrippe-st-johannis-irisweg-1-a",
+  "title": "Ev. Kinderkrippe St. Johannis",
+  "subtitle": "Krippe · Burgfarrnbach Atzenhof",
+  "url": "https://fuerth-stjohannis.de/kindergaerten-und-kinderkrippe/kinderkrippe-st-johannis",
+  "location": {
+    "name": "Ev. Kinderkrippe St. Johannis",
+    "street": "Irisweg 1 a",
+    "city": "90768 Fürth",
+    "lat": 49.492808,
+    "lon": 10.912242
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Burgfarrnbach Atzenhof",
+    "Träger": "evangelisch",
+    "Fußweg": "9,2 km · 121 min",
+    "Rad": "13,4 km · 30 min",
+    "Auto": "9,5 km · 14 min",
+    "Telefon": "(0911) 97 79 43 40",
+    "E-Mail": "kita.st-johannis.fuerth@elkb.de",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

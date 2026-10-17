@@ -1,0 +1,28 @@
+{
+  "id": "bambinibande-karolinenstrasse-62",
+  "title": "Großtagespflege „Bambinibande“",
+  "subtitle": "Großtagespflege · Nördliche Südstadt",
+  "location": {
+    "name": "Großtagespflege „Bambinibande“",
+    "street": "Karolinenstraße 62",
+    "city": "90763 Fürth",
+    "lat": 49.464462,
+    "lon": 11.010962
+  },
+  "facts": {
+    "Art": "Großtagespflege",
+    "Stadtteil": "Nördliche Südstadt",
+    "Träger": "Großtagespflege (Tagespflegepersonen)",
+    "Fußweg": "1,1 km · 14 min",
+    "Rad": "1,1 km · 4 min",
+    "Auto": "1,1 km · 2 min",
+    "Telefon": "(0911) 25 52 290",
+    "E-Mail": "info@fmf-familienbuero.de",
+    "Hinweis": "Lage auf der Karte nur ungefähr (Hausnummer nicht gefunden).",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Großtagespflege"
+  ]
+}

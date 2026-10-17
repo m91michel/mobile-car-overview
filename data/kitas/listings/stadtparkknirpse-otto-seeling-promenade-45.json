@@ -1,0 +1,27 @@
+{
+  "id": "stadtparkknirpse-otto-seeling-promenade-45",
+  "title": "Städt. Kita „Stadtparkknirpse“",
+  "subtitle": "Kindergarten · Stadtpark und Stadtgrenze",
+  "url": "http://stadtparkknirpse.fuerth.info/",
+  "location": {
+    "name": "Städt. Kita „Stadtparkknirpse“",
+    "street": "Otto-Seeling-Promenade 45",
+    "city": "90762 Fürth",
+    "lat": 49.472061,
+    "lon": 11.00292
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Stadtpark und Stadtgrenze",
+    "Träger": "städtisch",
+    "Fußweg": "1,3 km · 16 min",
+    "Rad": "1,3 km · 6 min",
+    "Auto": "1,4 km · 4 min",
+    "Telefon": "(0911) 77 42 29",
+    "E-Mail": "kita6.stadtparkknirpse@fuerth.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

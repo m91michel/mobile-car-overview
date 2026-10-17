@@ -1,0 +1,29 @@
+{
+  "id": "little-friends-rennweg-85",
+  "title": "Deutsch-englischer BRK-Kindergarten „Little Friends“",
+  "subtitle": "Krippe + Kindergarten · Oberfürberg",
+  "url": "https://www.kita-bayern.de/fue/little-friends/index.html",
+  "location": {
+    "name": "Deutsch-englischer BRK-Kindergarten „Little Friends“",
+    "street": "Rennweg 85",
+    "city": "90768 Fürth",
+    "lat": 49.471525,
+    "lon": 10.938814
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Oberfürberg",
+    "Träger": "Bayerisches Rotes Kreuz, Kreisverband Fürth",
+    "Fußweg": "5,9 km · 77 min",
+    "Rad": "5,9 km · 19 min",
+    "Auto": "6,8 km · 9 min",
+    "Telefon": "(0911) 75 934 94",
+    "E-Mail": "kita-littlefriends@kvfuerth.brk.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)",
+    "Zweisprachig (Deutsch/Englisch)"
+  ]
+}

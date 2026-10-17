@@ -1,0 +1,27 @@
+{
+  "id": "sacker-dorfstrolche-sacker-hauptstrasse-38",
+  "title": "Städt. Kita „Sacker Dorfstrolche“",
+  "subtitle": "Kindergarten · Sack Bislohe Braunsbach",
+  "url": "http://www.sacker-dorfstrolche.fuerth.info/",
+  "location": {
+    "name": "Städt. Kita „Sacker Dorfstrolche“",
+    "street": "Sacker Hauptstraße 38",
+    "city": "90765 Fürth",
+    "lat": 49.501138,
+    "lon": 11.014971
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Sack Bislohe Braunsbach",
+    "Träger": "städtisch",
+    "Fußweg": "5,9 km · 77 min",
+    "Rad": "6,9 km · 20 min",
+    "Auto": "7,0 km · 10 min",
+    "Telefon": "(0911) 30 23 26",
+    "E-Mail": "kita3.sacker-dorfstrolche@jugendamt-fuerth.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

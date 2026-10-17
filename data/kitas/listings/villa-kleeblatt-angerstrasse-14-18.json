@@ -1,0 +1,28 @@
+{
+  "id": "villa-kleeblatt-angerstrasse-14-18",
+  "title": "Ev. Kita Rummelsberger Diakonie „Villa Kleeblatt“",
+  "subtitle": "Krippe + Kindergarten · Innenstadt",
+  "url": "https://kitas.rummelsberger-diakonie.de/alle-standorte/kita-villa-kleeblatt/",
+  "location": {
+    "name": "Ev. Kita Rummelsberger Diakonie „Villa Kleeblatt“",
+    "street": "Angerstraße 14-18",
+    "city": "90762 Fürth",
+    "lat": 49.480548,
+    "lon": 10.986887
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Innenstadt",
+    "Träger": "evangelisch",
+    "Fußweg": "2,7 km · 36 min",
+    "Rad": "4,3 km · 11 min",
+    "Auto": "3,2 km · 6 min",
+    "Telefon": "(0911) 97 79 78 15",
+    "E-Mail": "hausfuerkinder_villa_kleeblatt@rummelsberger.net",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

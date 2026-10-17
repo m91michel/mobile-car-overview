@@ -1,0 +1,27 @@
+{
+  "id": "awo-kindergarten-riemenschneiderstrasse-52",
+  "title": "AWO Kindergarten",
+  "subtitle": "Kindergarten · Eigenes Heim Schwand",
+  "location": {
+    "name": "AWO Kindergarten",
+    "street": "Riemenschneiderstraße 52",
+    "city": "90766 Fürth",
+    "lat": 49.490879,
+    "lon": 10.972793
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Eigenes Heim Schwand",
+    "Träger": "Arbeiterwohlfahrt",
+    "Fußweg": "4,7 km · 59 min",
+    "Rad": "5,2 km · 14 min",
+    "Auto": "5,8 km · 9 min",
+    "Telefon": "(0911) 89 10 84 00",
+    "E-Mail": "info@awo-fuerth.de",
+    "Hinweis": "Lage auf der Karte nur ungefähr (Hausnummer nicht gefunden).",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

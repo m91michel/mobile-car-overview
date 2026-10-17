@@ -1,0 +1,27 @@
+{
+  "id": "glueckskaefer-amalienstr-45",
+  "title": "Johanniter-Unfallhilfe e.V. Kinderkrippe „Glückskäfer“",
+  "subtitle": "Krippe · Nördliche Südstadt",
+  "url": "https://www.johanniter.de/einrichtungen/fuer-kinder-und-jugendliche/kindertageseinrichtungen/kinderkrippe-glueckskaefer/",
+  "location": {
+    "name": "Johanniter-Unfallhilfe e.V. Kinderkrippe „Glückskäfer“",
+    "street": "Amalienstr. 45",
+    "city": "90763 Fürth",
+    "lat": 49.46797,
+    "lon": 10.989988
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Nördliche Südstadt",
+    "Träger": "Johanniter-Unfall-Hilfe e.V.",
+    "Fußweg": "1,4 km · 19 min",
+    "Rad": "1,4 km · 5 min",
+    "Auto": "1,4 km · 3 min",
+    "Telefon": "(0911) 47 0118 63",
+    "E-Mail": "Beatrice.buschek@johanniter.de",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

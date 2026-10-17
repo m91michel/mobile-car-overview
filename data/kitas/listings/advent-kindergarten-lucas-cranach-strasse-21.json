@@ -1,0 +1,27 @@
+{
+  "id": "advent-kindergarten-lucas-cranach-strasse-21",
+  "title": "Advent-Kindergarten",
+  "subtitle": "Kindergarten · Eigenes Heim Schwand",
+  "url": "https://www.kita-bayern.de/fue/advent/index.html",
+  "location": {
+    "name": "Advent-Kindergarten",
+    "street": "Lucas-Cranach-Straße 21",
+    "city": "90766 Fürth",
+    "lat": 49.492755,
+    "lon": 10.975019
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Eigenes Heim Schwand",
+    "Träger": "Advent-Wohlfahrtswerk e.V.",
+    "Fußweg": "4,7 km · 59 min",
+    "Rad": "6,2 km · 13 min",
+    "Auto": "5,9 km · 9 min",
+    "Telefon": "(0911) 73 89 80",
+    "E-Mail": "Advent-Kindergarten@aww.info",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

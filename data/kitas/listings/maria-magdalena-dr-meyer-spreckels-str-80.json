@@ -1,0 +1,27 @@
+{
+  "id": "maria-magdalena-dr-meyer-spreckels-str-80",
+  "title": "Ev. Krippengruppe „Maria Magdalena“",
+  "subtitle": "Krippe · Westliche Südstadt",
+  "url": "http://www.maria-magdalena-fuerth.de/index.php?id=83",
+  "location": {
+    "name": "Ev. Krippengruppe „Maria Magdalena“",
+    "street": "Dr.-Meyer-Spreckels-Str. 80",
+    "city": "90763 Fürth",
+    "lat": 49.46098,
+    "lon": 10.992621
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Westliche Südstadt",
+    "Träger": "evangelisch",
+    "Fußweg": "0,9 km · 12 min",
+    "Rad": "1,4 km · 4 min",
+    "Auto": "1,2 km · 3 min",
+    "Telefon": "(0911) 97 12 404",
+    "E-Mail": "kita.krippe.maria-magdalena.fue@elkb.de",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "kleeblaeddla-baeumenstr-11",
+  "title": "Kinderkrippe „Kleebläddla“",
+  "subtitle": "Krippe · Innenstadt",
+  "url": "https://www.kjhz.de/kinderkrippe-kleeblaeddla/",
+  "location": {
+    "name": "Kinderkrippe „Kleebläddla“",
+    "street": "Bäumenstr. 11",
+    "city": "90762 Fürth",
+    "lat": 49.476363,
+    "lon": 10.990029
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Innenstadt",
+    "Träger": "Kinder- und Jugendhilfezentrum Fürth",
+    "Fußweg": "2,2 km · 30 min",
+    "Rad": "2,6 km · 9 min",
+    "Auto": "2,6 km · 5 min",
+    "Telefon": "(0911) 75 66 28 80",
+    "E-Mail": "kinderkrippe@kjhz.de",
+    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

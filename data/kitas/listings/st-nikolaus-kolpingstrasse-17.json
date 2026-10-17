@@ -1,0 +1,27 @@
+{
+  "id": "st-nikolaus-kolpingstrasse-17",
+  "title": "Kath. Kindergarten „St. Nikolaus“",
+  "subtitle": "Kindergarten · Oberfürberg",
+  "url": "https://www.kita-bayern.de/fue/kolping/index.html",
+  "location": {
+    "name": "Kath. Kindergarten „St. Nikolaus“",
+    "street": "Kolpingstraße 17",
+    "city": "90768 Fürth",
+    "lat": 49.465455,
+    "lon": 10.95253
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Oberfürberg",
+    "Träger": "katholisch",
+    "Fußweg": "4,6 km · 60 min",
+    "Rad": "4,8 km · 15 min",
+    "Auto": "6,5 km · 9 min",
+    "Telefon": "(0911) 72 04 25",
+    "E-Mail": "kita.fuerth.nik@erzbistum-bamberg.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

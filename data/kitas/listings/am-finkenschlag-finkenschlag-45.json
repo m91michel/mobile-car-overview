@@ -1,0 +1,27 @@
+{
+  "id": "am-finkenschlag-finkenschlag-45",
+  "title": "Städt. Kita „Am Finkenschlag“",
+  "subtitle": "Kindergarten · Eigenes Heim Schwand",
+  "url": "http://www.finkenschlag.fuerth.info/",
+  "location": {
+    "name": "Städt. Kita „Am Finkenschlag“",
+    "street": "Finkenschlag 45",
+    "city": "90766 Fürth",
+    "lat": 49.490336,
+    "lon": 10.969046
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Eigenes Heim Schwand",
+    "Träger": "städtisch",
+    "Fußweg": "5,1 km · 68 min",
+    "Rad": "5,4 km · 15 min",
+    "Auto": "5,7 km · 9 min",
+    "Telefon": "(0911) 73 62 39",
+    "E-Mail": "kita9.finkenschlag@jugendamt-fuerth.de",
+    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}
