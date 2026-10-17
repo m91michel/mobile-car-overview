@@ -19,8 +19,28 @@
     "Auto": "7,7 km · 12 min",
     "Telefon": "(0911) 92 30 03 74",
     "E-Mail": "kontakt@moggerla.de",
-    "Hinweis": "Adresse laut moggerla.de. Die Stadtliste 01/2022 nennt die Vereinsadresse Oberfürberger Straße 46.",
-    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022, Website 2026"
+    "Hinweis": {
+      "value": "Adresse laut moggerla.de. Die Stadtliste 01/2022 nennt die Vereinsadresse Oberfürberger Straße 46.",
+      "links": [
+        {
+          "label": "Adresse laut moggerla.de. Die Stadtliste 01/2022 nennt die Vereinsadresse Oberfürberger Straße 46.",
+          "url": "https://www.moggerla.de/"
+        }
+      ]
+    },
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022, Website 2026",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
   },
   "features": [
     "Kindergarten (3 bis 6 Jahre)",

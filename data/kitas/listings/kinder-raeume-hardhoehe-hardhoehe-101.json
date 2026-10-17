@@ -19,7 +19,23 @@
     "Telefon": "(0911) 97 56 51 22",
     "E-Mail": "info@kr-fuerth.de",
     "Hinweis": "Stadtliste 07/2023: Eröffnung für Mai 2021 geplant. Adresse „Hardhöhe 101“ nur auf den Stadtteil genau verortet.",
-    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023"
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
   },
   "features": [
     "Krippe (unter 3 Jahren)",

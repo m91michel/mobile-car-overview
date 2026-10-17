@@ -19,7 +19,19 @@
     "Auto": "2,6 km · 5 min",
     "Telefon": "(0911) 77 05 57",
     "E-Mail": "info@waldorfkindergarten-fuerth.de",
-    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
   },
   "features": [
     "Kindergarten (3 bis 6 Jahre)",

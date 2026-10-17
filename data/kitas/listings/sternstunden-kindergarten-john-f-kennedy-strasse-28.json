@@ -1,28 +1,54 @@
 {
   "id": "sternstunden-kindergarten-john-f-kennedy-strasse-28",
-  "title": "Lebenshilfe „Sternstunden-Kindergarten“",
-  "subtitle": "Kindergarten · Kalbsiedlung Weikershof",
+  "title": "Lebenshilfe „Sternstunden-Kindergarten“ & Krippe „Haus der kleinen Füße“",
+  "subtitle": "Krippe + Kindergarten · Kalbsiedlung Weikershof",
   "url": "https://www.lebenshilfe-fuerth.de/unsere-angebote/fruehe-hilfen/sternstunden-kindergarten#/detail/27",
   "location": {
-    "name": "Lebenshilfe „Sternstunden-Kindergarten“",
+    "name": "Lebenshilfe „Sternstunden-Kindergarten“ & Krippe „Haus der kleinen Füße“",
     "street": "John-F.-Kennedy-Straße 28",
     "city": "90763 Fürth",
     "lat": 49.455213,
     "lon": 10.99336
   },
   "facts": {
-    "Art": "Kindergarten",
+    "Art": "Krippe + Kindergarten",
     "Stadtteil": "Kalbsiedlung Weikershof",
     "Träger": "Lebenshilfe Fürth e.V.",
     "Fußweg": "1,4 km · 18 min",
     "Rad": "1,5 km · 6 min",
     "Auto": "1,7 km · 3 min",
-    "Telefon": "(0911) 71 02 811",
+    "Telefon": "(0911) 71 02 811 (Kindergarten), (0911) 71 02 822 (Krippe)",
     "E-Mail": "kiga@lebenshilfe-fuerth.de",
-    "Quelle": "Stadt Fürth, Kindergartenliste 01/2022"
+    "Hinweis": {
+      "value": "Ein Haus, zwei Gruppen: Sternstunden-Kindergarten und Krippe „Haus der kleinen Füße“.",
+      "links": [
+        {
+          "label": "Ein Haus, zwei Gruppen. Website der Krippe",
+          "url": "https://www.lebenshilfe-fuerth.de/unsere-angebote/fruehe-hilfen/kinderkrippe-1"
+        }
+      ]
+    },
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
   },
   "features": [
-    "Kindergarten (3 bis 6 Jahre)",
-    "Integrativ"
+    "Krippe (unter 3 Jahren)",
+    "Integrativ",
+    "Kindergarten (3 bis 6 Jahre)"
   ]
 }

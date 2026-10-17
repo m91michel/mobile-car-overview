@@ -18,7 +18,19 @@
     "Rad": "7,1 km · 21 min",
     "Auto": "7,1 km · 10 min",
     "E-Mail": "anmeldung-fue@kinderkrippe-bullerbue.de",
-    "Quelle": "Stadt Fürth, Krippenliste 07/2023"
+    "Quelle": {
+      "value": "Stadt Fürth, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
   },
   "features": [
     "Krippe (unter 3 Jahren)"

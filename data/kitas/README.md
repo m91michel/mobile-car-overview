@@ -1,6 +1,6 @@
 # Kitas in Fürth
 
-103 Krippen, Kindergärten und Großtagespflegen im Stadtgebiet Fürth, eine Datei
+99 Krippen, Kindergärten und Großtagespflegen im Stadtgebiet Fürth, eine Datei
 pro Einrichtung in `listings/`. Zusammengestellt am 17.10.2026.
 
 ## Quellen
@@ -30,7 +30,15 @@ fuerth.de selbst sitzt hinter einer Cloudflare-Abfrage und wurde nicht gelesen.
   [Little Bird](https://portal.little-bird.de/Suche-Vorausgefuellt/F%C3%BCrth),
   das Anmeldeportal der Stadt, anzeigt.
 - Horte (Schulkinder) sind bewusst nicht enthalten.
-- Gleiche Adresse heißt eine Einrichtung: Krippe und Kindergarten unter einem
-  Dach sind ein Eintrag mit `Art: Krippe + Kindergarten`.
+- Eine Einrichtung, ein Eintrag. Die Stadtlisten führen Krippe und
+  Kindergarten getrennt. Zusammengelegt (`Art: Krippe + Kindergarten`) wurde,
+  was dieselbe Adresse und denselben Träger hat, oder was in Nachbarhäusern mit
+  derselben Telefonnummer und E-Mail läuft (Storchennest, Erlöserkirche,
+  St. Marien). Der `Hinweis` nennt dann beide Häuser.
+- Getrennt geblieben sind zwei Paare, die sich eine Adresse teilen, aber
+  verschiedene Träger, Telefonnummern und Websites haben: Pusteblume und
+  St. Heinrich (Marsweg 20) sowie Maria Magdalena und das Montessori-Haus
+  St. Heinrich (Gerhart-Hauptmann-Str. 21). Beide Einträge zeigen das unter
+  `Gleiche Adresse wie`.
 - Moggerla: Der Waldkindergarten steht laut moggerla.de in der Sperberstraße 68,
   die Krippe in der Oberfürberger Straße 46.
