@@ -1,10 +1,10 @@
 // The mileage/age and facelift adjustments to the effective price, computed
 // client-side so they can be tuned per browser instead of only in
-// data/assessment.json. Pure — no fs, no localStorage —
+// data/cars/assessment.json. Pure — no fs, no localStorage —
 // so App.jsx can freely recompute it on every settings change.
 //
 // scripts/assessment.mjs computes the same mileage formula server-side and
-// bakes it into data/cars.json; that stays the shared default the settings
+// bakes it into data/cars/cars.json; that stays the shared default the settings
 // dialog starts from. Retrofit cost and verdict stay server-authored editorial
 // data and are only ever read here, never recomputed.
 
@@ -83,7 +83,7 @@ export function computeBonuses(car, settings) {
 /**
  * Same anchor-on-expected-mileage formula as deriveMileageAdjustment in
  * scripts/assessment.mjs, parameterised by the live settings instead of
- * data/assessment.json. See AGENTS.md "Mileage/age adjustment" for the
+ * data/cars/assessment.json. See AGENTS.md "Mileage/age adjustment" for the
  * reasoning: fewer km than expected for the car's age lowers the effective
  * price, more raises it, symmetric around zero.
  */
@@ -122,7 +122,7 @@ export function computeLciMalus(car, settings) {
 
 /**
  * Re-derives `car.assessment` with the live pricing settings, leaving verdict,
- * note and retrofit (hand-edited in data/assessment.json) untouched.
+ * note and retrofit (hand-edited in data/cars/assessment.json) untouched.
  *
  * A "raus" car keeps the server's as-is price: the same reason its retrofit
  * list is skipped applies here — weighing an already-rejected car only adds

@@ -1,0 +1,39 @@
+{
+  "id": "die-krabbelmaeuse-gebrueder-grimm-str-32",
+  "title": "Kinderkrippe „Die Krabbelmäuse“",
+  "subtitle": "Krippe · Stadeln Mannhof",
+  "url": "https://krabbelmäuse-fürth.de/",
+  "location": {
+    "name": "Kinderkrippe „Die Krabbelmäuse“",
+    "street": "Gebrüder-Grimm-Str. 32",
+    "city": "90765 Fürth",
+    "lat": 49.508776,
+    "lon": 10.979713
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Stadeln Mannhof",
+    "Träger": "Kinderkrippe Krabbelmäuse GbR",
+    "Fußweg": "6,7 km · 88 min",
+    "Rad": "7,0 km · 14 min",
+    "Auto": "7,2 km · 12 min",
+    "Telefon": "(0911) 76 20 762",
+    "E-Mail": "info@krabbelmäuse-fürth.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

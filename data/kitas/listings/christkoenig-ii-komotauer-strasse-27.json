@@ -1,0 +1,39 @@
+{
+  "id": "christkoenig-ii-komotauer-strasse-27",
+  "title": "Kath. Kindergarten „Christkönig II“",
+  "subtitle": "Kindergarten · Hardhöhe",
+  "url": "https://www.kita-bayern.de/fue/komotauer/index.html",
+  "location": {
+    "name": "Kath. Kindergarten „Christkönig II“",
+    "street": "Komotauer Straße 27",
+    "city": "90766 Fürth",
+    "lat": 49.479996,
+    "lon": 10.958326
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Hardhöhe",
+    "Träger": "katholisch",
+    "Fußweg": "5,1 km · 69 min",
+    "Rad": "5,0 km · 16 min",
+    "Auto": "5,6 km · 9 min",
+    "Telefon": "(0911) 73 10 66",
+    "E-Mail": "kita.fuerth.ck2@erzbistum-bamberg.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "bunte-klexe-kaiserstrasse-3",
+  "title": "Kinderhaus „Bunte Klexe“",
+  "subtitle": "Krippe + Kindergarten · Westliche Südstadt",
+  "url": "http://www.bunte-klexe.de/",
+  "location": {
+    "name": "Kinderhaus „Bunte Klexe“",
+    "street": "Kaiserstraße 3",
+    "city": "90763 Fürth",
+    "lat": 49.462063,
+    "lon": 10.98388
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Westliche Südstadt",
+    "Träger": "Kinderhaus Bunte Klexe e. V.",
+    "Fußweg": "1,7 km · 23 min",
+    "Rad": "1,8 km · 6 min",
+    "Auto": "1,8 km · 4 min",
+    "Telefon": "(0911) 71 10 16",
+    "E-Mail": "info@bunte-klexe.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

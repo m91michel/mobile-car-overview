@@ -1,0 +1,12 @@
+{
+  "name": "Kinderwagen",
+  "icon": "👶",
+  "description": "Kombi-Kinderwagen und Buggys. Beispieldaten, durch echte Modelle ersetzen.",
+  "item": "Kinderwagen",
+  "items": "Kinderwagen",
+  "featuresLabel": "Ausstattung",
+  "order": 3,
+  "factOrder": ["Typ", "Gewicht", "Faltmaß", "Liegefläche", "Max. Belastung", "Räder", "Federung"],
+  "keyFeatures": ["Einhändig faltbar", "Babywanne inklusive"],
+  "statuses": ["Angeschaut", "Probe geschoben", "Bestellt", "Verworfen"]
+}

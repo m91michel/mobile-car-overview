@@ -1,0 +1,39 @@
+{
+  "id": "ein-haus-fuer-kinder-und-eltern-otto-seeling-promenade-25",
+  "title": "Ev. Kindergarten Auferstehungskirche „Ein Haus für Kinder und Eltern“",
+  "subtitle": "Kindergarten · Stadtpark und Stadtgrenze",
+  "url": "https://www.kita-bayern.de/fue/kindelt/index.html",
+  "location": {
+    "name": "Ev. Kindergarten Auferstehungskirche „Ein Haus für Kinder und Eltern“",
+    "street": "Otto-Seeling-Promenade 25",
+    "city": "90762 Fürth",
+    "lat": 49.472248,
+    "lon": 10.998938
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Stadtpark und Stadtgrenze",
+    "Träger": "evangelisch",
+    "Fußweg": "1,5 km · 20 min",
+    "Rad": "1,6 km · 5 min",
+    "Auto": "1,7 km · 4 min",
+    "Telefon": "(0911) 77 36 33",
+    "E-Mail": "kita.auferstehung.fuerth@elkb.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

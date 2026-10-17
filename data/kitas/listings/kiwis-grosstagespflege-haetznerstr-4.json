@@ -1,0 +1,40 @@
+{
+  "id": "kiwis-grosstagespflege-haetznerstr-4",
+  "title": "KIWIS-Großtagespflege",
+  "subtitle": "Großtagespflege · Westliche Südstadt",
+  "url": "https://www.fuerth.de/bildung-soziales/bildungseinrichtungen/kindertageseinrichtungen/grosstagespflege-kiwis/",
+  "location": {
+    "name": "KIWIS-Großtagespflege",
+    "street": "Hätznerstr. 4",
+    "city": "90763 Fürth",
+    "lat": 49.460935,
+    "lon": 10.988353
+  },
+  "facts": {
+    "Art": "Großtagespflege",
+    "Stadtteil": "Westliche Südstadt",
+    "Träger": "Großtagespflege (Tagespflegepersonen)",
+    "Fußweg": "1,3 km · 17 min",
+    "Rad": "1,4 km · 3 min",
+    "Auto": "1,4 km · 3 min",
+    "Telefon": "015731850016",
+    "E-Mail": "kiwis.kinderbetreuung.fuerth@gmail.com",
+    "Quelle": {
+      "value": "Stadt Fürth, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Großtagespflege"
+  ]
+}

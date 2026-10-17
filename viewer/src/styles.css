@@ -396,7 +396,7 @@ button.primary { border-color: var(--accent); background: var(--accent); color: 
   overflow: hidden;
 }
 
-/* Stable internal reference (#7) from data/refs.json, quotable across sessions. */
+/* Stable internal reference (#7) from data/cars/refs.json, quotable across sessions. */
 .ref {
   display: inline-block;
   margin-right: 6px;
@@ -971,3 +971,54 @@ td.sold, .car-option.sold .car-option .fav {
 .sync-side input { flex: 0 0 auto; margin-top: 3px; padding: 0; } /* not .editor input's text-field sizing */
 .sync-side > span { flex: 1; text-align: left; }
 @media (max-width: 560px) { .sync-item { grid-template-columns: 1fr; } }
+
+/* Start page: one card per collection (Root.jsx). */
+.home { max-width: 960px; margin: 0 auto; padding: 32px 16px 48px; }
+.home-head h1 { font-size: 24px; margin: 0 0 4px; letter-spacing: -0.01em; }
+.home-head p { margin: 0 0 24px; }
+.home-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.home-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.home-card:hover, .home-card:focus-visible { border-color: var(--accent); transform: translateY(-2px); }
+.home-covers {
+  display: flex;
+  height: 120px;
+  background: var(--accent-soft);
+}
+.home-covers img { flex: 1; min-width: 0; object-fit: cover; }
+.home-icon { margin: auto; font-size: 48px; }
+.home-card-text { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px 14px; }
+.home-card-text strong { font-size: 16px; }
+.home-card-desc { font-size: 13px; margin-top: 4px; }
+.home-hint { margin-top: 28px; font-size: 13px; }
+.home-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 4px;
+}
+.home-link:hover { color: var(--accent); }
+.hero.hero-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  font-size: 26px;
+}

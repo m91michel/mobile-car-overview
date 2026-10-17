@@ -1,0 +1,39 @@
+{
+  "id": "st-christophorus-alte-reutstrasse-54",
+  "title": "Kath. Kindergarten „St. Christophorus“",
+  "subtitle": "Kindergarten · Stadeln Mannhof",
+  "url": "https://www.kita-bayern.de/fue/reut/index.html",
+  "location": {
+    "name": "Kath. Kindergarten „St. Christophorus“",
+    "street": "Alte Reutstraße 54",
+    "city": "90765 Fürth",
+    "lat": 49.484101,
+    "lon": 10.999927
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Stadeln Mannhof",
+    "Träger": "katholisch",
+    "Fußweg": "3,2 km · 42 min",
+    "Rad": "4,0 km · 11 min",
+    "Auto": "3,9 km · 6 min",
+    "Telefon": "(0911) 979 730",
+    "E-Mail": "kita.fuerth.chr@erzbistum-bamberg.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

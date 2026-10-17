@@ -1,0 +1,39 @@
+{
+  "id": "die-wilde-13-gradlstrasse-1",
+  "title": "Städt. Kita „Die wilde 13“",
+  "subtitle": "Kindergarten · Ronhof Kronach",
+  "url": "http://www.die-wilde-13.fuerth.info/kontakt/",
+  "location": {
+    "name": "Städt. Kita „Die wilde 13“",
+    "street": "Gradlstraße 1",
+    "city": "90765 Fürth",
+    "lat": 49.493174,
+    "lon": 10.998749
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Ronhof Kronach",
+    "Träger": "städtisch",
+    "Fußweg": "4,3 km · 56 min",
+    "Rad": "4,8 km · 14 min",
+    "Auto": "4,9 km · 9 min",
+    "Telefon": "(0911) 79 05 100",
+    "E-Mail": "kita13.die-wilde-13@jugendamt-fuerth.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

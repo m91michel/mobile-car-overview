@@ -1,0 +1,39 @@
+{
+  "id": "pfiffikus-zehentweg-5",
+  "title": "Städt. Kita „Pfiffikus“",
+  "subtitle": "Kindergarten · Burgfarrnbach Atzenhof",
+  "url": "http://www.pfiffikus.fuerth.info/",
+  "location": {
+    "name": "Städt. Kita „Pfiffikus“",
+    "street": "Zehentweg 5",
+    "city": "90768 Fürth",
+    "lat": 49.48968,
+    "lon": 10.925273
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Burgfarrnbach Atzenhof",
+    "Träger": "städtisch",
+    "Fußweg": "8,1 km · 107 min",
+    "Rad": "12,2 km · 25 min",
+    "Auto": "8,4 km · 13 min",
+    "Telefon": "(0911) 97 79 41 29",
+    "E-Mail": "kita12.pfiffikus@jugendamt-fuerth.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

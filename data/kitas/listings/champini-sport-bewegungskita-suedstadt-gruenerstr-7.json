@@ -1,0 +1,45 @@
+{
+  "id": "champini-sport-bewegungskita-suedstadt-gruenerstr-7",
+  "title": "CHAMPINI Sport- & Bewegungskita Südstadt",
+  "subtitle": "Krippe + Kindergarten · Nördliche Südstadt",
+  "url": "https://www.champini.de/sport-bewegungskitas/fuerth.html",
+  "location": {
+    "name": "CHAMPINI Sport- & Bewegungskita Südstadt",
+    "street": "Grünerstr. 7",
+    "city": "90763 Fürth",
+    "lat": 49.464008,
+    "lon": 10.984677
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Nördliche Südstadt",
+    "Träger": "CHAMPINI gUG",
+    "Fußweg": "1,9 km · 24 min",
+    "Rad": "1,9 km · 6 min",
+    "Auto": "2,2 km · 5 min",
+    "Telefon": "(0911) 78711068",
+    "E-Mail": "fuerth@champini.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)",
+    "Sport & Bewegung"
+  ]
+}

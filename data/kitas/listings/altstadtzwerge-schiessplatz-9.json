@@ -1,0 +1,39 @@
+{
+  "id": "altstadtzwerge-schiessplatz-9",
+  "title": "Städt. Kita „Altstadtzwerge“",
+  "subtitle": "Kindergarten · Innenstadt",
+  "url": "http://www.altstadtzwerge.fuerth.info/",
+  "location": {
+    "name": "Städt. Kita „Altstadtzwerge“",
+    "street": "Schießplatz 9",
+    "city": "90762 Fürth",
+    "lat": 49.481325,
+    "lon": 10.985738
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Innenstadt",
+    "Träger": "städtisch",
+    "Fußweg": "2,9 km · 38 min",
+    "Rad": "4,2 km · 10 min",
+    "Auto": "3,3 km · 6 min",
+    "Telefon": "(0911) 74 79 64",
+    "E-Mail": "kita8.altstadtzwerge@jugendamt-fuerth.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

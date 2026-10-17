@@ -1,0 +1,39 @@
+{
+  "id": "ev-kindergarten-heilig-geist-gaussstrasse-5",
+  "title": "Ev. Kindergarten Heilig-Geist",
+  "subtitle": "Kindergarten · Hardhöhe",
+  "url": "https://www.kita-bayern.de/fue/gauss/index.html",
+  "location": {
+    "name": "Ev. Kindergarten Heilig-Geist",
+    "street": "Gaußstraße 5",
+    "city": "90766 Fürth",
+    "lat": 49.480585,
+    "lon": 10.954571
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Hardhöhe",
+    "Träger": "evangelisch",
+    "Fußweg": "5,1 km · 67 min",
+    "Rad": "5,0 km · 16 min",
+    "Auto": "6,2 km · 10 min",
+    "Telefon": "(0911) 73 21 09",
+    "E-Mail": "kita.heiliggeist.fue@elkb.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

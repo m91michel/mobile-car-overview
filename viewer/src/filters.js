@@ -66,7 +66,7 @@ export function ruleIsValid(rule) {
 
 /** Everything a text rule can search, case-folded once per car. */
 function textHaystack(car) {
-  return [car.title, car.shortTitle, car.subTitle, car.facts?.fuel?.value, ...(car.features ?? [])]
+  return [car.title, car.shortTitle, car.subTitle, car.facts?.fuel?.value, car.searchText, ...(car.features ?? [])]
     .filter(Boolean)
     .join(' \n ')
     .toLowerCase();

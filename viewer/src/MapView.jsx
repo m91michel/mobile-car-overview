@@ -6,11 +6,10 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet.markercluster';
 import 'leaflet.markercluster/dist/MarkerCluster.css';
 import { carLabel, carRef, isSold, photo } from './rows.js';
-
 // Same default as scripts/geo.mjs. The viewer never re-runs geo.mjs, and the
 // scrape already baked distanceFromHomeKm into each car, so the home pin is
 // the documented Fürth fallback rather than an env override.
-const HOME = { lat: 49.4772, lon: 10.9887, label: 'Fürth' };
+import { HOME } from './generic.js';
 
 // Raster tiles from FOSSGIS (OSM.de): no API key. Carto's old public CDN
 // now watermarks "API KEY REQUIRED"; MapLibre + OpenFreeMap would be the
@@ -89,10 +88,10 @@ function carPin(cars, label, favourites, pins, extra = '') {
   });
 }
 
-function homeIcon() {
+function homeIcon(home) {
   return L.divIcon({
     className: 'map-home',
-    html: `<span title="${HOME.label}">⌂</span>`,
+    html: `<span title="${attr(home.label)}">⌂</span>`,
     iconSize: [28, 28],
     iconAnchor: [14, 14],
     popupAnchor: [0, 14],
@@ -103,7 +102,14 @@ function homeIcon() {
  * A click on a pin hands its cars to `onSelect` -- App opens them as a table
  * in a drawer -- instead of a popup, which could only ever show a summary.
  */
-export default function MapView({ cars, favourites = [], pins = 'photo', cluster = true, onSelect }) {
+export default function MapView({
+  cars,
+  favourites = [],
+  pins = 'photo',
+  cluster = true,
+  home = HOME,
+  onSelect,
+}) {
   const host = useRef(null);
   const mapRef = useRef(null);
   const layerRef = useRef(null);
@@ -168,13 +174,13 @@ export default function MapView({ cars, favourites = [], pins = 'photo', cluster
       : L.layerGroup();
     clusters.addTo(layer);
 
-    L.marker([HOME.lat, HOME.lon], { icon: homeIcon(), zIndexOffset: -200, keyboard: false })
+    L.marker([home.lat, home.lon], { icon: homeIcon(home), zIndexOffset: -200, keyboard: false })
       .bindPopup(
-        `<strong>${HOME.label}</strong><br><span class="muted">Startpunkt der Luftlinie</span>`,
+        `<strong>${attr(home.label)}</strong><br><span class="muted">Startpunkt der Luftlinie</span>`,
       )
       .addTo(layer);
 
-    const bounds = L.latLngBounds([[HOME.lat, HOME.lon]]);
+    const bounds = L.latLngBounds([[home.lat, home.lon]]);
     for (const group of groups) {
       bounds.extend([group.lat, group.lon]);
       L.marker([group.lat, group.lon], {

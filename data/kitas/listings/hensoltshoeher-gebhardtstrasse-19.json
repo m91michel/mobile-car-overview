@@ -1,0 +1,40 @@
+{
+  "id": "hensoltshoeher-gebhardtstrasse-19",
+  "title": "Ev. Kindergarten „Hensoltshöher“",
+  "subtitle": "Kindergarten · Stadtpark und Stadtgrenze",
+  "url": "https://www.kita-bayern.de/fue/gebhardt/index.html",
+  "location": {
+    "name": "Ev. Kindergarten „Hensoltshöher“",
+    "street": "Gebhardtstraße 19",
+    "city": "90762 Fürth",
+    "lat": 49.469735,
+    "lon": 10.995157
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Stadtpark und Stadtgrenze",
+    "Träger": "evangelisch",
+    "Fußweg": "1,3 km · 18 min",
+    "Rad": "1,5 km · 6 min",
+    "Auto": "2,3 km · 4 min",
+    "Telefon": "(0911) 77 02 57",
+    "E-Mail": "lkg_kindergarten@gmx.de",
+    "Hinweis": "Stadtliste 01/2022: Übergangsquartier wegen Umbau in der Erlanger Straße 46–48. Die Familieninfo-Seite (2025) verlinkt dieselbe Adresse als „Kindergarten Oase“.",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

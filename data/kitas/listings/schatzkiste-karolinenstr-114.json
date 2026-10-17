@@ -1,0 +1,39 @@
+{
+  "id": "schatzkiste-karolinenstr-114",
+  "title": "Johanniter-Unfallhilfe e.V. Kinderkrippe „Schatzkiste“",
+  "subtitle": "Krippe · Nördliche Südstadt",
+  "url": "https://www.johanniter.de/einrichtungen/fuer-kinder-und-jugendliche/kindertageseinrichtungen/kinderkrippe-schatzkiste/",
+  "location": {
+    "name": "Johanniter-Unfallhilfe e.V. Kinderkrippe „Schatzkiste“",
+    "street": "Karolinenstr. 114",
+    "city": "90763 Fürth",
+    "lat": 49.467056,
+    "lon": 10.99941
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Nördliche Südstadt",
+    "Träger": "Johanniter-Unfall-Hilfe e.V.",
+    "Fußweg": "0,8 km · 10 min",
+    "Rad": "0,8 km · 2 min",
+    "Auto": "0,8 km · 2 min",
+    "Telefon": "(0911) 37 310 668",
+    "E-Mail": "susanne.moninger@johanniter.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

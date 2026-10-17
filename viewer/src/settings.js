@@ -93,7 +93,7 @@ export function importSettings(text) {
     throw new Error('Die Datei ist kein gültiges JSON.');
   }
   if (parsed?.format !== FORMAT) {
-    throw new Error('Das ist keine Einstellungsdatei des Fahrzeugvergleichs.');
+    throw new Error('Das ist keine Einstellungsdatei dieses Vergleichs.');
   }
   if (typeof parsed.version === 'number' && parsed.version > VERSION) {
     throw new Error(`Die Datei ist Version ${parsed.version}, dieser Viewer kennt nur ${VERSION}.`);

@@ -1,0 +1,10 @@
+{
+  "name": "Autos",
+  "icon": "🚗",
+  "description": "BMW 3er Touring (G21) von mobile.de, mit Effektivpreis, Karte und Sync.",
+  "profile": "cars",
+  "item": "Fahrzeug",
+  "items": "Fahrzeuge",
+  "featuresLabel": "Ausstattung",
+  "order": 1
+}

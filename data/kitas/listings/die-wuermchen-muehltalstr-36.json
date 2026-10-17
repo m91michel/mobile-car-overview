@@ -1,0 +1,39 @@
+{
+  "id": "die-wuermchen-muehltalstr-36",
+  "title": "Großtagespflege „Die Würmchen“",
+  "subtitle": "Großtagespflege · Unterfarrnbach",
+  "location": {
+    "name": "Großtagespflege „Die Würmchen“",
+    "street": "Mühltalstr. 36",
+    "city": "90766 Fürth",
+    "lat": 49.495871,
+    "lon": 10.966943
+  },
+  "facts": {
+    "Art": "Großtagespflege",
+    "Stadtteil": "Unterfarrnbach",
+    "Träger": "Großtagespflege (Tagespflegepersonen)",
+    "Fußweg": "5,7 km · 73 min",
+    "Rad": "6,5 km · 14 min",
+    "Auto": "6,5 km · 11 min",
+    "Telefon": "(0911) 733 03 44",
+    "E-Mail": "info@die-wuermchen.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Großtagespflege"
+  ]
+}

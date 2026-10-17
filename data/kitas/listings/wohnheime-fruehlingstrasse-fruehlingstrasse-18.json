@@ -1,0 +1,39 @@
+{
+  "id": "wohnheime-fruehlingstrasse-fruehlingstrasse-18",
+  "title": "Kinderkrippe „Wohnheime Frühlingstraße“",
+  "subtitle": "Krippe · Ronhof Kronach",
+  "url": "https://www.kita-bayern.de/fue/mutter-kind/index.html",
+  "location": {
+    "name": "Kinderkrippe „Wohnheime Frühlingstraße“",
+    "street": "Frühlingstraße 18",
+    "city": "90765 Fürth",
+    "lat": 49.48358,
+    "lon": 11.000117
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Ronhof Kronach",
+    "Träger": "Dt. Ev. Frauenbund, LV Bayern, Freundeskreis Fürth e.V.",
+    "Fußweg": "3,3 km · 43 min",
+    "Rad": "4,0 km · 11 min",
+    "Auto": "3,8 km · 7 min",
+    "Telefon": "(0911) 97 99 66 21",
+    "E-Mail": "kinderkrippe@def-muki.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

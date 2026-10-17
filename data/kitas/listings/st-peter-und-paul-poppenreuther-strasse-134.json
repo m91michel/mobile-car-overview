@@ -1,0 +1,39 @@
+{
+  "id": "st-peter-und-paul-poppenreuther-strasse-134",
+  "title": "Ev. Kindergarten „St. Peter und Paul“",
+  "subtitle": "Kindergarten · Poppenreuth",
+  "url": "https://www.kita-bayern.de/fue/poppenreuther/index.html",
+  "location": {
+    "name": "Ev. Kindergarten „St. Peter und Paul“",
+    "street": "Poppenreuther Straße 134",
+    "city": "90765 Fürth",
+    "lat": 49.48188,
+    "lon": 11.014656
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Poppenreuth",
+    "Träger": "evangelisch",
+    "Fußweg": "3,2 km · 41 min",
+    "Rad": "3,3 km · 12 min",
+    "Auto": "3,6 km · 7 min",
+    "Telefon": "(0911) 79 08 188",
+    "E-Mail": "kita.poppenreuth@elkb.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

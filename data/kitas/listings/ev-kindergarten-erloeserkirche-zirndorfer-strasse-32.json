@@ -1,0 +1,45 @@
+{
+  "id": "ev-kindergarten-erloeserkirche-zirndorfer-strasse-32",
+  "title": "Ev. Kita Erlöserkirche",
+  "subtitle": "Krippe + Kindergarten · Dambach Unterfürberg",
+  "url": "https://www.kindergarten-erloeserkirche.com/",
+  "location": {
+    "name": "Ev. Kita Erlöserkirche",
+    "street": "Zirndorfer Straße 32",
+    "city": "90768 Fürth",
+    "lat": 49.459854,
+    "lon": 10.973316
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Dambach Unterfürberg",
+    "Träger": "evangelisch",
+    "Fußweg": "2,8 km · 36 min",
+    "Rad": "2,8 km · 9 min",
+    "Auto": "4,3 km · 7 min",
+    "Telefon": "(0911) 72 95 38",
+    "E-Mail": "kita.erloeserkirche.fue@elkb.de",
+    "Hinweis": "Kindergarten: Zirndorfer Straße 32, Krippe: Zirndorfer Straße 38 (Fußweg 3,0 km · 39 min). Gleiche Leitung, Telefon und E-Mail.",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

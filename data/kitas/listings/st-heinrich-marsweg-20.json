@@ -1,0 +1,40 @@
+{
+  "id": "st-heinrich-marsweg-20",
+  "title": "Kath. Kindergarten „St. Heinrich“",
+  "subtitle": "Kindergarten · Östliche Südstadt",
+  "url": "https://www.kita-bayern.de/fue/mars/index.html",
+  "location": {
+    "name": "Kath. Kindergarten „St. Heinrich“",
+    "street": "Marsweg 20",
+    "city": "90763 Fürth",
+    "lat": 49.46091,
+    "lon": 11.002775
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Östliche Südstadt",
+    "Träger": "katholisch",
+    "Fußweg": "0,1 km · 1 min",
+    "Rad": "0,1 km · 1 min",
+    "Auto": "0,4 km · 2 min",
+    "Telefon": "(0911) 71 31 01",
+    "E-Mail": "Kita.fuerth.hei@erzbistum-bamberg.de",
+    "Gleiche Adresse wie": "Städt. Kita „Pusteblume“ (eigene Kita: anderer Träger, eigene Telefonnummer)",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

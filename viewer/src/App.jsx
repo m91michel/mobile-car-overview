@@ -1,9 +1,6 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useLocalStorage } from 'usehooks-ts';
 import {
-  SORTS,
-  STATUSES,
-  buildRows,
   carCity,
   carLabel,
   carPlace,
@@ -16,13 +13,11 @@ import {
   sortCars,
   toCsv,
 } from './rows.js';
-import { cellFor } from './wishlist.js';
-import { download, exportSettings, importSettings, key, today } from './settings.js';
+import { download, exportSettings, importSettings, today } from './settings.js';
 import { DEFAULT_PRICING, applyPricingSettings, withPricingDefaults } from './pricing.js';
 import SyncDialog, { syncSummary, useSyncStatus } from './SyncDialog.jsx';
 import { useTabStorage } from './useTabStorage.js';
 import {
-  RULE_TYPES,
   FUEL_OPTIONS,
   CONDITION_OPTIONS,
   emptyRule,
@@ -33,11 +28,11 @@ import {
 
 const MapView = lazy(() => import('./MapView.jsx'));
 
-function SortControl({ className, label, sortKey, setSortKey, desc, setDesc }) {
+function SortControl({ className, label, sorts, sortKey, setSortKey, desc, setDesc }) {
   return (
     <div className={`sort ${className ?? ''}`}>
       <span className="muted">{label}</span>
-      {SORTS.map((sort) => (
+      {sorts.map((sort) => (
         <button
           key={sort.key}
           className={sortKey === sort.key ? 'on' : ''}
@@ -99,7 +94,7 @@ function NoteEditor({ car, onSave, onClose }) {
             rows={5}
             value={note}
             onChange={(e) => setNote(e.target.value)}
-            placeholder="Was du dir zu diesem Fahrzeug merken willst"
+            placeholder="Was du dir hierzu merken willst"
           />
         </label>
 
@@ -145,7 +140,7 @@ function NoteEditor({ car, onSave, onClose }) {
 
 /**
  * The Effektivpreis's knobs (mileage, AHK, facelift, boni) in localStorage
- * (car-compare/pricing) rather than the data/assessment.json server default,
+ * (car-compare/pricing) rather than the data/cars/assessment.json server default,
  * and synced across devices along with favourites and notes (sync.js).
  */
 function PricingSettings({ pricing, onChange, onReset, onClose }) {
@@ -309,7 +304,8 @@ function CarOption({ car, active, onToggle, favourite, onFavourite, removed, onR
           {carLabel(car)}
         </span>
         <span className="muted">
-          {car.price?.localized ?? '—'} · {carSubline(car)}
+          {/* A collection without prices (Kitas) shows the subline alone. */}
+          {[car.price?.localized ?? (car.subtitle ? null : '—'), carSubline(car)].filter(Boolean).join(' · ')}
           {isSold(car) && <span className="gone">verkauft</span>}
           {removed && <span className="gone gone-neutral">ausgeblendet</span>}
         </span>
@@ -345,7 +341,7 @@ function CarOption({ car, active, onToggle, favourite, onFavourite, removed, onR
           event.preventDefault();
           onRemove();
         }}
-        title={removed ? 'Wiederherstellen' : 'Ausblenden (zu alt, Unfall, verkauft, ...)'}
+        title={removed ? 'Wiederherstellen' : 'Ausblenden (aussortiert, verkauft, ...)'}
       >
         {removed ? '↺' : '🗑'}
       </button>
@@ -400,7 +396,12 @@ function useDrawer(open) {
   return ref;
 }
 
-export default function App() {
+/**
+ * The comparison for one collection (see collections.js). Called "cars"
+ * throughout because that is where it started; for a Kita list, read "items".
+ */
+export default function App({ collection }) {
+  const { profile, key } = collection;
   const [cars, setCars] = useState(null);
   const [editing, setEditing] = useState(null); // car id being edited
   const [error, setError] = useState(null);
@@ -415,9 +416,9 @@ export default function App() {
   const [featuresOnly, setFeaturesOnly] = useTabStorage(key('features-only'), false);
   // Two independent orders: the drawer is for finding a car, the columns are
   // for reading the comparison, and those want different sorts.
-  const [listSort, setListSort] = useTabStorage(key('sort-list'), 'ref');
+  const [listSort, setListSort] = useTabStorage(key('sort-list'), collection.listSort);
   const [listDesc, setListDesc] = useTabStorage(key('sort-list-desc'), false);
-  const [columnSort, setColumnSort] = useTabStorage(key('sort-columns'), 'price');
+  const [columnSort, setColumnSort] = useTabStorage(key('sort-columns'), collection.columnSort);
   const [columnDesc, setColumnDesc] = useTabStorage(key('sort-columns-desc'), false);
   // A shortlist you keep while working through the field, independent of which
   // cars happen to be in the table right now.
@@ -427,7 +428,7 @@ export default function App() {
   const [lists, setLists] = useLocalStorage(key('lists'), []);
   // Cars decided against for good (too old, accident, sold) -- kept out of the
   // comparison by default, but not deleted: nothing here ever touches
-  // data/listings/*.json, so a mistaken hide costs one click to undo.
+  // data/cars/listings/*.json, so a mistaken hide costs one click to undo.
   const [removed, setRemoved] = useLocalStorage(key('removed'), []);
   const [notes, setNotes] = useLocalStorage(key('notes'), {});
   const [statuses, setStatuses] = useLocalStorage(key('status'), {});
@@ -469,14 +470,14 @@ export default function App() {
   const fileInput = useRef(null);
 
   const load = useCallback(() => {
-    fetch('/api/cars.json')
+    fetch(collection.dataUrl)
       .then((res) => res.json())
       .then((data) => {
-        setCars(data.cars);
+        setCars(data.items.map((item) => profile.normalize(item, collection)));
         setError(null);
       })
       .catch((err) => setError(String(err)));
-  }, []);
+  }, [collection, profile]);
   useEffect(load, [load]);
 
   // A sold car is still worth keeping around (see isSold's grey-out styling),
@@ -495,11 +496,14 @@ export default function App() {
   }, [cars, setRemoved]);
 
   // Re-derives the Effektivpreis with the live pricing settings, overriding
-  // the server default baked into data/cars.json (scripts/assessment.mjs).
+  // the server default baked into data/cars/cars.json (scripts/assessment.mjs).
   const pricingSettings = useMemo(() => withPricingDefaults(pricing), [pricing]);
   const priced = useMemo(
-    () => (cars ?? []).map((car) => applyPricingSettings(car, pricingSettings)),
-    [cars, pricingSettings],
+    () =>
+      profile.pricing
+        ? (cars ?? []).map((car) => applyPricingSettings(car, pricingSettings))
+        : (cars ?? []),
+    [cars, pricingSettings, profile],
   );
 
   // Notes are yours, not scraped, so they live beside the view state rather
@@ -534,8 +538,8 @@ export default function App() {
   };
 
   const listCars = useMemo(
-    () => sortCars(withNotes, listSort, listDesc),
-    [withNotes, listSort, listDesc],
+    () => sortCars(withNotes, listSort, listDesc, collection.sorts),
+    [withNotes, listSort, listDesc, collection],
   );
 
   // Picker search. Not persisted: a stale term would hide cars on the next open.
@@ -581,6 +585,7 @@ export default function App() {
       withNotes.filter((c) => selectedIds.includes(c.id)),
       columnSort,
       columnDesc,
+      collection.sorts,
     );
     if (!favouritesFirst) return picked;
     // Pulled to the front, but each group keeps the chosen sort.
@@ -588,9 +593,27 @@ export default function App() {
       ...picked.filter((c) => favourites.includes(c.id)),
       ...picked.filter((c) => !favourites.includes(c.id)),
     ];
-  }, [withNotes, selectedIds, columnSort, columnDesc, favouritesFirst, favourites]);
+  }, [withNotes, selectedIds, columnSort, columnDesc, favouritesFirst, favourites, collection]);
 
-  const allRows = useMemo(() => buildRows(shown), [shown]);
+  const allRows = useMemo(() => profile.buildRows(shown, collection), [shown, profile, collection]);
+
+  // Only the sort buttons some item has a value for: no "km" for prams that
+  // stand nowhere, no "Preis" for a list nobody priced.
+  const sorts = useMemo(() => {
+    const usable = collection.sorts.filter((sort) => (cars ?? []).some((car) => sort.value(car) !== null));
+    return usable.length ? usable : collection.sorts.slice(0, 1);
+  }, [cars, collection]);
+
+  // The map needs coordinates. Every car has a dealer location; a hand-written
+  // collection may have none at all, and then the switch would lead nowhere.
+  const hasMap = useMemo(
+    () => (cars ?? []).some((car) => car.dealer?.location?.lat != null),
+    [cars],
+  );
+  const currentView = hasMap ? view : 'table';
+  // Same idea for the price under each column title: a dash on every Kita
+  // would read as "price unknown" where there is no price at all.
+  const hasPrice = useMemo(() => (cars ?? []).some((car) => car.price), [cars]);
   const hidden = useMemo(() => new Set(hiddenKeys), [hiddenKeys]);
 
   // Rows follow the stored order; anything new (a freshly scraped car brings
@@ -742,7 +765,11 @@ export default function App() {
   // The CSV is the comparison as it stands on screen; the JSON is the setup that
   // produced it. Different things, so they are two separate exports.
   const exportCsv = () =>
-    download(`fahrzeugvergleich-${today()}.csv`, toCsv(visibleRows, shown), 'text/csv;charset=utf-8');
+    download(
+      `${collection.id === 'cars' ? 'fahrzeugvergleich' : `${collection.id}-vergleich`}-${today()}.csv`,
+      toCsv(visibleRows, shown),
+      'text/csv;charset=utf-8',
+    );
 
   const exportJson = () =>
     download(
@@ -779,13 +806,19 @@ export default function App() {
             {cars.map((car) => (
               <th key={car.id} className={isSold(car) ? 'sold' : ''}>
                 <div className="hero-wrap">
-                  {car.images?.[0] && (
+                  {car.images?.[0] ? (
                     <img
                       className="hero"
                       src={photo(car.images[0], 'mo-1024')}
                       alt=""
                       referrerPolicy="no-referrer"
                     />
+                  ) : (
+                    // A hand-written item often has no photo; the buttons
+                    // below sit on top of this frame and need it.
+                    <span className="hero hero-empty" aria-hidden="true">
+                      {collection.icon}
+                    </span>
                   )}
                   <button
                     className={`col-fav ${isFavourite(car.id) ? 'on' : ''}`}
@@ -804,7 +837,7 @@ export default function App() {
                   <button
                     className="col-remove"
                     onClick={() => toggleCar(car.id)}
-                    title="Fahrzeug aus dem Vergleich nehmen"
+                    title={`${collection.item} aus dem Vergleich nehmen`}
                   >
                     ✕
                   </button>
@@ -814,7 +847,7 @@ export default function App() {
                     title={
                       isRemoved(car.id)
                         ? 'Wiederherstellen'
-                        : 'Ausblenden (zu alt, Unfall, verkauft, ...)'
+                        : 'Ausblenden (aussortiert, verkauft, ...)'
                     }
                   >
                     {isRemoved(car.id) ? '↺' : '🗑'}
@@ -831,7 +864,7 @@ export default function App() {
                   {carLabel(car)}
                 </a>
                 <span className="price">
-                  {car.price?.localized ?? '—'}
+                  {car.price?.localized ?? (hasPrice ? '—' : '')}
                   {isSold(car) && <span className="gone">verkauft</span>}
                 </span>
               </th>
@@ -883,7 +916,7 @@ export default function App() {
                           onChange={(e) => setStatus(car.id, e.target.value)}
                           aria-label="Status"
                         >
-                          {STATUSES.map((status) => (
+                          {collection.statuses.map((status) => (
                             <option key={status.key} value={status.key}>
                               {status.label}
                             </option>
@@ -918,7 +951,12 @@ export default function App() {
                     </td>
                   );
                 }
-                const { mark, text, tone, swatch, meter, hint } = cellFor(row, car, pricingSettings);
+                const { mark, text, tone, swatch, meter, hint, links } = profile.cellFor(
+                  row,
+                  car,
+                  collection,
+                  pricingSettings,
+                );
                 return (
                   <td
                     key={car.id}
@@ -934,6 +972,11 @@ export default function App() {
                       {mark && <span className={`mark ${tone}`}>{mark}</span>}
                       {mark && text ? ' ' : ''}
                       {text}
+                      {links?.map((link) => (
+                        <a key={link.url} className="note-link" href={link.url} target="_blank" rel="noreferrer">
+                          {link.label}
+                        </a>
+                      ))}
                       {hint && (
                         <span className="hint" title={hint} aria-label="Aufschlüsselung">
                           ⓘ
@@ -963,16 +1006,27 @@ export default function App() {
   );
 
   if (error) return <p className="notice">Daten konnten nicht geladen werden: {error}</p>;
-  if (!cars) return <p className="notice">Lade Fahrzeuge…</p>;
+  if (!cars) return <p className="notice">Lade {collection.items}…</p>;
   if (cars.length === 0)
-    return <p className="notice">Keine JSON-Dateien in <code>data/listings/</code>. Erst <code>pnpm scrape</code> laufen lassen.</p>;
+    return (
+      <p className="notice">
+        <a href="#/">← Übersicht</a> · Keine JSON-Dateien in{' '}
+        <code>data/{collection.id}/listings/</code>.
+        {collection.id === 'cars' && <> Erst <code>pnpm scrape</code> laufen lassen.</>}
+      </p>
+    );
 
   return (
     <div className="app">
       <header className="bar">
-        <h1>Fahrzeugvergleich</h1>
+        <a className="home-link" href="#/" title="Alle Sammlungen">
+          ←
+        </a>
+        <h1>
+          <span aria-hidden="true">{collection.icon}</span> {collection.name}
+        </h1>
         <button className="drawer-open" onClick={() => setOpenDrawer('cars')}>
-          <span className="bar-text hide-narrow">Fahrzeuge</span> <strong>{shown.length}</strong>
+          <span className="bar-text hide-narrow">{collection.items}</span> <strong>{shown.length}</strong>
           <span className="muted">/ {cars.length}</span>
         </button>
         <button className="drawer-open" onClick={() => setOpenDrawer('favourites')}>
@@ -981,25 +1035,27 @@ export default function App() {
         <button className="drawer-open" onClick={() => setOpenDrawer('lists')}>
           Listen <strong>{lists.length}</strong>
         </button>
-        {view === 'table' && (
+        {currentView === 'table' && (
           <button className="drawer-open" onClick={() => setOpenDrawer('rows')}>
             <span className="bar-text hide-narrow">Zeilen</span> <strong>{visibleRows.length}</strong>
             <span className="muted">/ {allRows.length}</span>
           </button>
         )}
-        <div className="sort view-switch" role="group" aria-label="Ansicht">
-          <button
-            className={view === 'table' ? 'on' : ''}
-            onClick={() => setView('table')}
-          >
-            Tabelle
-          </button>
-          <button className={view === 'map' ? 'on' : ''} onClick={() => setView('map')}>
-            Karte
-          </button>
-        </div>
+        {hasMap && (
+          <div className="sort view-switch" role="group" aria-label="Ansicht">
+            <button
+              className={view === 'table' ? 'on' : ''}
+              onClick={() => setView('table')}
+            >
+              Tabelle
+            </button>
+            <button className={view === 'map' ? 'on' : ''} onClick={() => setView('map')}>
+              Karte
+            </button>
+          </div>
+        )}
         <div className="spacer" />
-        {view === 'table' && (
+        {currentView === 'table' && (
           <div className="table-tools">
             <label className="check">
               <input
@@ -1015,7 +1071,7 @@ export default function App() {
                 checked={featuresOnly}
                 onChange={(e) => setFeaturesOnly(e.target.checked)}
               />
-              Nur Ausstattung
+              Nur {collection.featuresLabel}
             </label>
             <label className="check" title="Favoriten stehen links, unabhängig von der Spaltensortierung">
               <input
@@ -1027,6 +1083,7 @@ export default function App() {
             </label>
             <SortControl
               label="Spalten"
+              sorts={sorts}
               sortKey={columnSort}
               setSortKey={setColumnSort}
               desc={columnDesc}
@@ -1034,7 +1091,7 @@ export default function App() {
             />
           </div>
         )}
-        {view === 'map' && (
+        {currentView === 'map' && (
           <div className="table-tools">
             <div className="sort" role="group" aria-label="Pins">
               <span className="muted">Pins</span>
@@ -1057,12 +1114,16 @@ export default function App() {
         )}
         <Menu label="⚙" title="Einstellungen">
           <button onClick={load}>Neu laden</button>
-          <button onClick={() => setPricingOpen(true)}>
-            Preisanpassung <span className="muted">Effektivpreis</span>
-          </button>
-          <button onClick={() => setSyncOpen(true)}>
-            Sync <span className="muted">{syncSummary(syncStatus)}</span>
-          </button>
+          {profile.pricing && (
+            <button onClick={() => setPricingOpen(true)}>
+              Preisanpassung <span className="muted">Effektivpreis</span>
+            </button>
+          )}
+          {profile.sync && (
+            <button onClick={() => setSyncOpen(true)}>
+              Sync <span className="muted">{syncSummary(syncStatus)}</span>
+            </button>
+          )}
           <button onClick={exportCsv} disabled={shown.length === 0}>
             CSV-Export <span className="muted">sichtbarer Vergleich</span>
           </button>
@@ -1072,11 +1133,18 @@ export default function App() {
           <button onClick={() => fileInput.current?.click()}>
             JSON-Import <span className="muted">ersetzt die Einstellungen</span>
           </button>
-          <a href="/checkliste.html">
-            Probefahrt-Checkliste <span className="muted">#48, fürs Handy</span>
-          </a>
-          <a href="/checkliste-66.html">
-            Probefahrt-Checkliste <span className="muted">#66, fürs Handy</span>
+          {profile.checklists && (
+            <>
+              <a href="/checkliste.html">
+                Probefahrt-Checkliste <span className="muted">#48, fürs Handy</span>
+              </a>
+              <a href="/checkliste-66.html">
+                Probefahrt-Checkliste <span className="muted">#66, fürs Handy</span>
+              </a>
+            </>
+          )}
+          <a href="#/">
+            Alle Sammlungen <span className="muted">Startseite</span>
           </a>
         </Menu>
       </header>
@@ -1142,7 +1210,7 @@ export default function App() {
         }}
       >
         <header className="drawer-head">
-          <strong>Fahrzeuge</strong>
+          <strong>{collection.items}</strong>
           <span className="muted">
             {shown.length} von {cars.length}
           </span>
@@ -1161,6 +1229,7 @@ export default function App() {
         <SortControl
           className="drawer-sort"
           label="Liste"
+          sorts={sorts}
           sortKey={listSort}
           setSortKey={setListSort}
           desc={listDesc}
@@ -1183,8 +1252,12 @@ export default function App() {
                 setSearch('');
               }
             }}
-            placeholder="Suche: #74, ID, Name, Ort, PLZ, Händler …"
-            aria-label="Fahrzeuge durchsuchen"
+            placeholder={
+              collection.id === 'cars'
+                ? 'Suche: #74, ID, Name, Ort, PLZ, Händler …'
+                : 'Suche: Name, Ort, Adresse …'
+            }
+            aria-label={`${collection.items} durchsuchen`}
           />
           {search && (
             <span className="muted">
@@ -1235,7 +1308,7 @@ export default function App() {
         </header>
         {favouriteCars.length === 0 ? (
           <p className="drawer-empty muted">
-            Noch keine Favoriten. Der Stern oben links auf dem Fahrzeugbild merkt einen vor.
+            Noch keine Favoriten. Der Stern oben links auf dem Bild in der Tabelle merkt einen vor.
           </p>
         ) : (
           <ul className="drawer-list">
@@ -1258,16 +1331,17 @@ export default function App() {
 
       {shown.length === 0 ? (
         <p className="notice">
-          Kein Fahrzeug ausgewählt.{' '}
-          <button onClick={() => setOpenDrawer('cars')}>Fahrzeuge wählen</button>
+          Nichts ausgewählt.{' '}
+          <button onClick={() => setOpenDrawer('cars')}>{collection.items} wählen</button>
         </p>
-      ) : view === 'map' ? (
+      ) : currentView === 'map' ? (
         <Suspense fallback={<p className="notice">Lade Karte…</p>}>
           <MapView
             cars={shown}
             favourites={favourites}
             pins={mapPins}
             cluster={mapCluster}
+            home={collection.home}
             onSelect={(cars) => {
               setMapCarIds(cars.map((car) => car.id));
               setOpenDrawer('map-cars');
@@ -1287,7 +1361,9 @@ export default function App() {
         }}
       >
         <header className="drawer-head">
-          <strong>{mapCars.length === 1 ? 'Fahrzeug' : `${mapCars.length} Fahrzeuge`}</strong>
+          <strong>
+            {mapCars.length === 1 ? collection.item : `${mapCars.length} ${collection.items}`}
+          </strong>
           <span className="muted">
             {[carCity(mapCars[0] ?? {}), mapCars[0]?.dealer?.name].filter(Boolean).join(' · ')}
           </span>
@@ -1330,7 +1406,7 @@ export default function App() {
             <input
               value={filterName}
               onChange={(e) => setFilterName(e.target.value)}
-              placeholder="z. B. Diesel unter 30k"
+              placeholder={collection.id === 'cars' ? 'z. B. Diesel unter 30k' : 'Name des Filters'}
               aria-label="Name des Filters"
             />
             <button type="button" onClick={() => setBuilderOpen(false)} title="Schließen, ohne zu speichern">
@@ -1348,7 +1424,7 @@ export default function App() {
                 }
                 aria-label="Feld"
               >
-                {RULE_TYPES.map((t) => (
+                {profile.ruleTypes.map((t) => (
                   <option key={t.type} value={t.type}>
                     {t.label}
                   </option>
@@ -1462,7 +1538,7 @@ export default function App() {
               <button
                 className="list-load"
                 onClick={() => setSelected([...visibleIds])}
-                title="Alle Fahrzeuge außer den ausgeblendeten anzeigen"
+                title={`Alle ${collection.items} außer den ausgeblendeten anzeigen`}
               >
                 <span className="list-name">Alle</span>
                 <span className="muted">{visibleIds.length}</span>
@@ -1472,10 +1548,10 @@ export default function App() {
           {lists.length === 0 && visibleFavourites.length === 0 && removed.length === 0 && (
             <li>
               <p className="drawer-empty muted">
-                Noch kein eigener Filter. „+ Neue Liste“ oben lässt sich Regeln zu Preis,
-                Kilometerstand oder einem Suchtext (z. B. „Diesel“, „Sportpaket“) zu einem
-                benannten Filter kombinieren, der sich automatisch an neu hinzugekommene
-                Fahrzeuge anpasst.
+                Noch kein eigener Filter. Mit „+ Neue Liste“ oben lassen sich Regeln (
+                {profile.ruleTypes.map((t) => t.label).join(', ')}) zu einem benannten Filter
+                kombinieren, der sich automatisch an neu hinzugekommene {collection.items}{' '}
+                anpasst.
               </p>
             </li>
           )}
@@ -1511,7 +1587,7 @@ export default function App() {
                   <button
                     className="list-load"
                     onClick={() => setSelected([...removed])}
-                    title="Die ausgeblendeten Fahrzeuge zur Kontrolle anzeigen"
+                    title={`Die ausgeblendeten ${collection.items} zur Kontrolle anzeigen`}
                   >
                     <span className="star">🗑</span>
                     <span className="list-name">Ausgeblendet</span>
@@ -1623,7 +1699,7 @@ export default function App() {
                 <label className={`row-option ${on ? 'on' : ''}`} title={row.label}>
                   <input type="checkbox" checked={on} onChange={() => toggleRow(row.key)} />
                   <span className="row-option-label">{row.label}</span>
-                  {row.kind === 'feature' && <span className="muted">Ausstattung</span>}
+                  {row.kind === 'feature' && <span className="muted">{collection.featuresLabel}</span>}
                 </label>
               </li>
             );

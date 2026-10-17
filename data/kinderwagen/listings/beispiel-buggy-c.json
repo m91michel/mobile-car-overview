@@ -1,0 +1,14 @@
+{
+  "id": "beispiel-buggy-c",
+  "title": "Beispiel-Reisebuggy C",
+  "price": 399,
+  "facts": {
+    "Typ": "Buggy",
+    "Gewicht": "6,8 kg",
+    "Faltmaß": "54 × 44 × 20 cm",
+    "Max. Belastung": "22 kg",
+    "Räder": "Kunststoff",
+    "Handgepäcktauglich": true
+  },
+  "features": ["Einhändig faltbar", "Regenverdeck", "Babyschale-kompatibel"]
+}

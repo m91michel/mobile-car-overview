@@ -1,0 +1,45 @@
+{
+  "id": "finkenpark-albrecht-duerer-str-2",
+  "title": "Integrativer Kindergarten „Finkenpark“",
+  "subtitle": "Krippe + Kindergarten · Eigenes Heim Schwand",
+  "url": "https://www.diakoneo.de/bildung/kindergaerten/kindergarten-fuerth#c52059",
+  "location": {
+    "name": "Integrativer Kindergarten „Finkenpark“",
+    "street": "Albrecht-Dürer-Str. 2",
+    "city": "90766 Fürth",
+    "lat": 49.491159,
+    "lon": 10.973287
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Eigenes Heim Schwand",
+    "Träger": "evangelisch",
+    "Fußweg": "4,7 km · 59 min",
+    "Rad": "5,2 km · 14 min",
+    "Auto": "5,8 km · 9 min",
+    "Telefon": "(0911) 76 62 48 94",
+    "E-Mail": "antje.gippert@diakoneo.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)",
+    "Integrativ"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "christkoenig-iii-leibnitzstrasse-4c",
+  "title": "Kath. Kindergarten „Christkönig III“",
+  "subtitle": "Kindergarten · Hardhöhe",
+  "url": "https://www.kita-bayern.de/fue/hort-leibniz/index.html",
+  "location": {
+    "name": "Kath. Kindergarten „Christkönig III“",
+    "street": "Leibnitzstraße 4c",
+    "city": "90766 Fürth",
+    "lat": 49.48148,
+    "lon": 10.957252
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Hardhöhe",
+    "Träger": "katholisch",
+    "Fußweg": "5,2 km · 69 min",
+    "Rad": "5,3 km · 17 min",
+    "Auto": "5,7 km · 9 min",
+    "Telefon": "(0911) 730037",
+    "E-Mail": "kita.fuerth.ck3@erzbistum-bamberg.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

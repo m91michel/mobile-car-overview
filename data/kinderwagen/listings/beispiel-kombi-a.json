@@ -1,0 +1,15 @@
+{
+  "id": "beispiel-kombi-a",
+  "title": "Beispiel-Kombikinderwagen A",
+  "price": 899,
+  "facts": {
+    "Typ": "Kombikinderwagen",
+    "Gewicht": "11,5 kg",
+    "Faltmaß": "62 × 48 × 30 cm",
+    "Liegefläche": "80 × 35 cm",
+    "Max. Belastung": "22 kg",
+    "Räder": "Gummi, luftlos",
+    "Federung": "Allrad"
+  },
+  "features": ["Babywanne inklusive", "Buggy-Aufsatz", "Höhenverstellbarer Schieber", "Regenverdeck", "Babyschale-kompatibel"]
+}

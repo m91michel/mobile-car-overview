@@ -1,0 +1,39 @@
+{
+  "id": "st-matthaeus-vach-am-vacher-markt-5",
+  "title": "Ev. Kindergarten „St. Matthäus Vach“",
+  "subtitle": "Kindergarten · Vach Ritzmannshof",
+  "url": "https://www.kita-bayern.de/fue/vachermarkt/index.html",
+  "location": {
+    "name": "Ev. Kindergarten „St. Matthäus Vach“",
+    "street": "Am Vacher Markt 5",
+    "city": "90768 Fürth",
+    "lat": 49.526847,
+    "lon": 10.966264
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Vach Ritzmannshof",
+    "Träger": "evangelisch",
+    "Fußweg": "8,9 km · 114 min",
+    "Rad": "9,3 km · 21 min",
+    "Auto": "11,6 km · 17 min",
+    "Telefon": "(0911) 76 26 51",
+    "E-Mail": "kiga.vach@elkb.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

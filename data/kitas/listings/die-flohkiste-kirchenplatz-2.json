@@ -1,0 +1,39 @@
+{
+  "id": "die-flohkiste-kirchenplatz-2",
+  "title": "Städt. Kita „Die Flohkiste“",
+  "subtitle": "Kindergarten · Innenstadt",
+  "url": "http://www.die-flohkiste.fuerth.info/",
+  "location": {
+    "name": "Städt. Kita „Die Flohkiste“",
+    "street": "Kirchenplatz 2",
+    "city": "90762 Fürth",
+    "lat": 49.480329,
+    "lon": 10.988266
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Innenstadt",
+    "Träger": "städtisch",
+    "Fußweg": "2,8 km · 37 min",
+    "Rad": "3,4 km · 11 min",
+    "Auto": "3,1 km · 6 min",
+    "Telefon": "(0911) 74 98 433",
+    "E-Mail": "kita11.flohkiste@jugendamt-fuerth.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

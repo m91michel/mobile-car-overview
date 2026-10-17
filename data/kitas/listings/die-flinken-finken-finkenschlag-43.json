@@ -1,0 +1,39 @@
+{
+  "id": "die-flinken-finken-finkenschlag-43",
+  "title": "Ev. Kindergarten „Die flinken Finken“",
+  "subtitle": "Kindergarten · Eigenes Heim Schwand",
+  "url": "https://www.kita-bayern.de/fue/finkenschlag/index.html",
+  "location": {
+    "name": "Ev. Kindergarten „Die flinken Finken“",
+    "street": "Finkenschlag 43",
+    "city": "90766 Fürth",
+    "lat": 49.490643,
+    "lon": 10.970408
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Eigenes Heim Schwand",
+    "Träger": "evangelisch",
+    "Fußweg": "5,0 km · 67 min",
+    "Rad": "5,3 km · 14 min",
+    "Auto": "5,6 km · 9 min",
+    "Telefon": "(0911) 73 42 92",
+    "E-Mail": "kiga.finkenschlag.fue@elkb.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

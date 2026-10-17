@@ -1,0 +1,44 @@
+{
+  "id": "kinder-raeume-hardhoehe-hardhoehe-101",
+  "title": "KINDER-RÄUME Hardhöhe",
+  "subtitle": "Krippe + Kindergarten · Hardhöhe",
+  "location": {
+    "name": "KINDER-RÄUME Hardhöhe",
+    "street": "Hardhöhe 101",
+    "city": "90766 Fürth",
+    "lat": 49.478273,
+    "lon": 10.956886
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Hardhöhe",
+    "Träger": "KINDER-RÄUME gGmbH",
+    "Fußweg": "4,8 km · 65 min",
+    "Rad": "4,6 km · 15 min",
+    "Auto": "6,3 km · 9 min",
+    "Telefon": "(0911) 97 56 51 22",
+    "E-Mail": "info@kr-fuerth.de",
+    "Hinweis": "Stadtliste 07/2023: Eröffnung für Mai 2021 geplant. Adresse „Hardhöhe 101“ nur auf den Stadtteil genau verortet.",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

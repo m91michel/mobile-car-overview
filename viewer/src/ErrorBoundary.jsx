@@ -26,7 +26,7 @@ export default class ErrorBoundary extends Component {
   }
 
   componentDidCatch(error, info) {
-    console.error('Fahrzeugvergleich ist abgestürzt:', error, info);
+    console.error('Vergleich ist abgestürzt:', error, info);
   }
 
   saveSettings() {

@@ -1,0 +1,49 @@
+{
+  "id": "waldkindergarten-moggerla-e-v-sperberstrasse-68",
+  "title": "Waldkindergarten Moggerla e.V.",
+  "subtitle": "Kindergarten · Oberfürberg",
+  "url": "https://www.moggerla.de/",
+  "location": {
+    "name": "Waldkindergarten Moggerla e.V.",
+    "street": "Sperberstraße 68",
+    "city": "90768 Fürth",
+    "lat": 49.474887,
+    "lon": 10.931351
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Oberfürberg",
+    "Träger": "Kinder(H-)ORT Moggerla e.V.",
+    "Fußweg": "6,5 km · 86 min",
+    "Rad": "6,5 km · 22 min",
+    "Auto": "7,7 km · 12 min",
+    "Telefon": "(0911) 92 30 03 74",
+    "E-Mail": "kontakt@moggerla.de",
+    "Hinweis": {
+      "value": "Adresse laut moggerla.de. Die Stadtliste 01/2022 nennt die Vereinsadresse Oberfürberger Straße 46.",
+      "links": [
+        {
+          "label": "Adresse laut moggerla.de. Die Stadtliste 01/2022 nennt die Vereinsadresse Oberfürberger Straße 46.",
+          "url": "https://www.moggerla.de/"
+        }
+      ]
+    },
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022, Website 2026",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)",
+    "Waldkindergarten"
+  ]
+}

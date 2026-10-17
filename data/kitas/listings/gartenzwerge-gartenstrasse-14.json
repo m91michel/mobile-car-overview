@@ -1,0 +1,45 @@
+{
+  "id": "gartenzwerge-gartenstrasse-14",
+  "title": "Mütterzentrum: Haus für Kinder & Krippe „Gartenzwerge“",
+  "subtitle": "Krippe + Kindergarten · Innenstadt",
+  "url": "https://www.muetterzentrum-fuerth.de/netz-fuer-kinder.html",
+  "location": {
+    "name": "Mütterzentrum: Haus für Kinder & Krippe „Gartenzwerge“",
+    "street": "Gartenstraße 14",
+    "city": "90762 Fürth",
+    "lat": 49.477106,
+    "lon": 10.987602
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Innenstadt",
+    "Träger": "Mütterzentrum Fürth – Das Mehrgenerationenhaus",
+    "Fußweg": "2,4 km · 32 min",
+    "Rad": "2,5 km · 11 min",
+    "Auto": "3,0 km · 7 min",
+    "Telefon": "(0911) 77 27 99",
+    "E-Mail": "info@muetterzentrum-fuerth.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Kindergarten (3 bis 6 Jahre)",
+    "Sprach-Kita"
+  ]
+}

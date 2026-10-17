@@ -1,0 +1,39 @@
+{
+  "id": "heilig-geist-kieselbuehl-wilhelmshavener-strasse-55",
+  "title": "Ev. Kindergarten „Heilig-Geist-Kieselbühl“",
+  "subtitle": "Kindergarten · Unterfarrnbach",
+  "url": "https://www.kita-bayern.de/fue/wilhelmshavener/index.html",
+  "location": {
+    "name": "Ev. Kindergarten „Heilig-Geist-Kieselbühl“",
+    "street": "Wilhelmshavener Straße 55",
+    "city": "90766 Fürth",
+    "lat": 49.487354,
+    "lon": 10.951545
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Unterfarrnbach",
+    "Träger": "evangelisch",
+    "Fußweg": "5,6 km · 74 min",
+    "Rad": "8,2 km · 19 min",
+    "Auto": "6,4 km · 9 min",
+    "Telefon": "(0911) 75 77 93",
+    "E-Mail": "kita.kieselbuehl@elkb.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

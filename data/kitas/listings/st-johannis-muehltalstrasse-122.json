@@ -1,0 +1,39 @@
+{
+  "id": "st-johannis-muehltalstrasse-122",
+  "title": "Ev. Kindergarten „St. Johannis“",
+  "subtitle": "Kindergarten · Unterfarrnbach",
+  "url": "https://www.kita-bayern.de/fue/muehltal/index.html",
+  "location": {
+    "name": "Ev. Kindergarten „St. Johannis“",
+    "street": "Mühltalstraße 122",
+    "city": "90768 Fürth",
+    "lat": 49.492364,
+    "lon": 10.957989
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Unterfarrnbach",
+    "Träger": "evangelisch",
+    "Fußweg": "5,9 km · 78 min",
+    "Rad": "7,5 km · 17 min",
+    "Auto": "6,6 km · 10 min",
+    "Telefon": "(0911) 72 30 37 90",
+    "E-Mail": "kiga.unterfarrnbach@elkb.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

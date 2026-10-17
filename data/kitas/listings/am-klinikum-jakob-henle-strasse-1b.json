@@ -1,0 +1,39 @@
+{
+  "id": "am-klinikum-jakob-henle-strasse-1b",
+  "title": "Städt. Kita „Am Klinikum“",
+  "subtitle": "Kindergarten · Eigenes Heim Schwand",
+  "url": "http://www.am-klinikum.fuerth.info/",
+  "location": {
+    "name": "Städt. Kita „Am Klinikum“",
+    "street": "Jakob-Henle-Straße 1b",
+    "city": "90766 Fürth",
+    "lat": 49.483512,
+    "lon": 10.974831
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Eigenes Heim Schwand",
+    "Träger": "städtisch",
+    "Fußweg": "3,9 km · 52 min",
+    "Rad": "5,1 km · 14 min",
+    "Auto": "5,0 km · 8 min",
+    "Telefon": "(0911) 766 47 28",
+    "E-Mail": "kita10.am-klinikum@jugendamt-fuerth.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

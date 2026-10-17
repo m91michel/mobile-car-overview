@@ -1,0 +1,39 @@
+{
+  "id": "neumannstrasse-neumannstr-65",
+  "title": "HVD – Krippe „Neumannstraße“",
+  "subtitle": "Krippe · Westliche Südstadt",
+  "url": "http://www.hvd-kitas.de/unsere-kindertagesstaetten/fuerth-stadt/krippe-neumannstrasse/",
+  "location": {
+    "name": "HVD – Krippe „Neumannstraße“",
+    "street": "Neumannstr. 65",
+    "city": "90763 Fürth",
+    "lat": 49.458382,
+    "lon": 10.986206
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Westliche Südstadt",
+    "Träger": "Humanistischer Verband Deutschlands",
+    "Fußweg": "1,6 km · 21 min",
+    "Rad": "1,9 km · 6 min",
+    "Auto": "1,9 km · 4 min",
+    "Telefon": "(0911) 92 38 09 42",
+    "E-Mail": "neumannstrasse@hv-kitas.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

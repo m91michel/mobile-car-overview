@@ -1,0 +1,38 @@
+{
+  "id": "bullerbue-bluetenstr-41",
+  "title": "Kinderkrippe „Bullerbü“",
+  "subtitle": "Krippe · Sack Bislohe Braunsbach",
+  "url": "https://www.kinderkrippe-bullerbü.de/einrichtungen/fuerth-sack",
+  "location": {
+    "name": "Kinderkrippe „Bullerbü“",
+    "street": "Blütenstr. 41",
+    "city": "90765 Fürth",
+    "lat": 49.504872,
+    "lon": 11.015358
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Sack Bislohe Braunsbach",
+    "Träger": "Kinderkrippe Bullerbü Fürth GmbH & Co KG",
+    "Fußweg": "6,0 km · 78 min",
+    "Rad": "7,1 km · 21 min",
+    "Auto": "7,1 km · 10 min",
+    "E-Mail": "anmeldung-fue@kinderkrippe-bullerbue.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

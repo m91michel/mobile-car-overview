@@ -1,0 +1,40 @@
+{
+  "id": "am-loewenplatz-geleitsgasse-6",
+  "title": "Humanistische Kinderkrippe „Am Löwenplatz“",
+  "subtitle": "Krippe · Innenstadt",
+  "url": "http://www.hvd-kitas.de/unsere-kindertagesstaetten/fuerth-stadt/krippe-am-loewenplatz/",
+  "location": {
+    "name": "Humanistische Kinderkrippe „Am Löwenplatz“",
+    "street": "Geleitsgasse 6",
+    "city": "90762 Fürth",
+    "lat": 49.479095,
+    "lon": 10.985867
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Innenstadt",
+    "Träger": "Humanistischer Verband Deutschlands",
+    "Fußweg": "2,7 km · 36 min",
+    "Rad": "4,4 km · 12 min",
+    "Auto": "3,4 km · 9 min",
+    "Telefon": "(0911) 1809 1878",
+    "E-Mail": "loewenplatz@hvd-bayern.de",
+    "Hinweis": "Lage auf der Karte nur ungefähr (Hausnummer nicht gefunden).",
+    "Quelle": {
+      "value": "Stadt Fürth, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

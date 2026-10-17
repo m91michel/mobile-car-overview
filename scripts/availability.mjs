@@ -41,8 +41,8 @@ const AVAILABILITY_PROBE = `(() => {
   return title.trim() && title !== 'about:blank' ? 'ready' : 'pending';
 })()`;
 
-const OUT_DIR = resolve('data/listings');
-const INDEX_FILE = resolve('data/cars.json');
+const OUT_DIR = resolve('data/cars/listings');
+const INDEX_FILE = resolve('data/cars/cars.json');
 const DETAIL_URL = (id) =>
   `https://suchen.mobile.de/fahrzeuge/details.html?id=${id}&scopeId=C&action=compareItem`;
 
@@ -77,7 +77,7 @@ function parseArgs(argv) {
 const options = parseArgs(process.argv.slice(2));
 
 if (!existsSync(OUT_DIR)) {
-  console.error('No data/listings yet - run pnpm saved or pnpm scrape first.');
+  console.error('No data/cars/listings yet - run pnpm saved or pnpm scrape first.');
   process.exit(1);
 }
 

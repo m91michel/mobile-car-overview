@@ -1,0 +1,39 @@
+{
+  "id": "koenigskinder-koenigstr-17",
+  "title": "Ev. Kinderkrippe „Königskinder“",
+  "subtitle": "Krippe · Innenstadt",
+  "url": "https://kitas.rummelsberger-diakonie.de/standorte/kinderkrippe-koenigskinder/ueber-uns/",
+  "location": {
+    "name": "Ev. Kinderkrippe „Königskinder“",
+    "street": "Königstr. 17",
+    "city": "90762 Fürth",
+    "lat": 49.480004,
+    "lon": 10.984711
+  },
+  "facts": {
+    "Art": "Krippe",
+    "Stadtteil": "Innenstadt",
+    "Träger": "evangelisch",
+    "Fußweg": "2,8 km · 37 min",
+    "Rad": "4,3 km · 11 min",
+    "Auto": "3,2 km · 6 min",
+    "Telefon": "(0911) 278 707 87",
+    "E-Mail": "kinderkrippe_koenigskinder@rummelsberger.net",
+    "Quelle": {
+      "value": "Stadt Fürth, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)"
+  ]
+}

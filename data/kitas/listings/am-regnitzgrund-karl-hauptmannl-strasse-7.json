@@ -1,0 +1,39 @@
+{
+  "id": "am-regnitzgrund-karl-hauptmannl-strasse-7",
+  "title": "Städt. Kita „Am Regnitzgrund“",
+  "subtitle": "Kindergarten · Stadeln Mannhof",
+  "url": "http://www.am-regnitzgrund.fuerth.info",
+  "location": {
+    "name": "Städt. Kita „Am Regnitzgrund“",
+    "street": "Karl-Hauptmannl-Straße 7",
+    "city": "90765 Fürth",
+    "lat": 49.513619,
+    "lon": 10.97368
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Stadeln Mannhof",
+    "Träger": "städtisch",
+    "Fußweg": "7,3 km · 97 min",
+    "Rad": "7,0 km · 12 min",
+    "Auto": "7,5 km · 12 min",
+    "Telefon": "(0911) 76 33 71",
+    "E-Mail": "kita1@jugendamt-fuerth.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

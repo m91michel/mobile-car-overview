@@ -1,0 +1,46 @@
+{
+  "id": "die-farrnbachhummeln-hummelstrasse-6",
+  "title": "Kath. Integrative Kita St. Marien „Die Farrnbachhummeln“",
+  "subtitle": "Krippe + Kindergarten · Burgfarrnbach Atzenhof",
+  "url": "https://www.kita-bayern.de/fue/hummel/index.html",
+  "location": {
+    "name": "Kath. Integrative Kita St. Marien „Die Farrnbachhummeln“",
+    "street": "Hummelstraße 6",
+    "city": "90768 Fürth",
+    "lat": 49.488057,
+    "lon": 10.923048
+  },
+  "facts": {
+    "Art": "Krippe + Kindergarten",
+    "Stadtteil": "Burgfarrnbach Atzenhof",
+    "Träger": "katholisch",
+    "Fußweg": "8,1 km · 105 min",
+    "Rad": "12,6 km · 27 min",
+    "Auto": "8,9 km · 14 min",
+    "Telefon": "(0911) 75 58 57",
+    "E-Mail": "kita.fuerth.mar@erzbistum-bamberg.de",
+    "Hinweis": "Kindergarten: Hummelstraße 6, Krippe: Hummelstraße 4 (Fußweg 8,0 km · 104 min). Gleiche Leitung, Telefon und E-Mail.",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022, Krippenliste 07/2023",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Krippenliste Stadt Fürth 07/2023 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Krippen-und-Grosstagespflege-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Krippe (unter 3 Jahren)",
+    "Integrativ",
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

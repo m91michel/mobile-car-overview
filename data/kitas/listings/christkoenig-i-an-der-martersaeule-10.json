@@ -1,0 +1,39 @@
+{
+  "id": "christkoenig-i-an-der-martersaeule-10",
+  "title": "Kath. Kindergarten „Christkönig I“",
+  "subtitle": "Kindergarten · Hardhöhe",
+  "url": "https://www.kita-bayern.de/fue/hort-leibniz/index.html",
+  "location": {
+    "name": "Kath. Kindergarten „Christkönig I“",
+    "street": "An der Martersäule 10",
+    "city": "90766 Fürth",
+    "lat": 49.482903,
+    "lon": 10.967798
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Hardhöhe",
+    "Träger": "katholisch",
+    "Fußweg": "4,2 km · 56 min",
+    "Rad": "4,4 km · 14 min",
+    "Auto": "4,9 km · 8 min",
+    "Telefon": "(0911) 75 75 08",
+    "E-Mail": "kita.fuerth.ck1@erzbistum-bamberg.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

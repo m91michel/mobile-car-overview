@@ -1,0 +1,39 @@
+{
+  "id": "nautilus-jahnstrasse-8",
+  "title": "BRK-Kindergarten „Nautilus“",
+  "subtitle": "Kindergarten · Westliche Südstadt",
+  "url": "https://www.kita-bayern.de/fue/nautilus/index.html",
+  "location": {
+    "name": "BRK-Kindergarten „Nautilus“",
+    "street": "Jahnstraße 8",
+    "city": "90763 Fürth",
+    "lat": 49.458753,
+    "lon": 10.986624
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Westliche Südstadt",
+    "Träger": "Bayerisches Rotes Kreuz, Kreisverband Fürth",
+    "Fußweg": "1,5 km · 20 min",
+    "Rad": "1,8 km · 5 min",
+    "Auto": "1,7 km · 3 min",
+    "Telefon": "(0911) 71 02 984",
+    "E-Mail": "kita-nautilus@kvfuerth.brk.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

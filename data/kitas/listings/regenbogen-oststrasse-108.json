@@ -1,0 +1,39 @@
+{
+  "id": "regenbogen-oststrasse-108",
+  "title": "Städt. Kita VII „Regenbogen“",
+  "subtitle": "Kindergarten · Östliche Südstadt",
+  "url": "http://www.regenbogen.fuerth.info/",
+  "location": {
+    "name": "Städt. Kita VII „Regenbogen“",
+    "street": "Oststraße 108",
+    "city": "90763 Fürth",
+    "lat": 49.455276,
+    "lon": 11.007229
+  },
+  "facts": {
+    "Art": "Kindergarten",
+    "Stadtteil": "Östliche Südstadt",
+    "Träger": "städtisch",
+    "Fußweg": "1,0 km · 13 min",
+    "Rad": "1,2 km · 4 min",
+    "Auto": "1,4 km · 3 min",
+    "Telefon": "(0911) 70 74 30",
+    "E-Mail": "kita7.regenbogen@jugendamt-fuerth.de",
+    "Quelle": {
+      "value": "Stadt Fürth, Kindergartenliste 01/2022",
+      "links": [
+        {
+          "label": "Kindergartenliste Stadt Fürth 01/2022 (PDF)",
+          "url": "https://www.familieninfo-fuerth.de/wp-content/uploads/2024/07/Kindergaerten-im-Stadtgebiet-Fuerth.pdf"
+        },
+        {
+          "label": "Übersicht Familieninfo Fürth (Stadtteil, Träger)",
+          "url": "https://www.familieninfo-fuerth.de/betreuung-und-bildung/kindergaerten/"
+        }
+      ]
+    }
+  },
+  "features": [
+    "Kindergarten (3 bis 6 Jahre)"
+  ]
+}

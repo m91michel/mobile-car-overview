@@ -10,7 +10,7 @@
 // Flags:
 //   --saved             read ids from Mein Parkplatz (needs a signed-in profile)
 //   --from <file>       newline-delimited urls/ids; blank lines and # ignored
-//   --refresh           re-fetch every id already present in data/cars.json
+//   --refresh           re-fetch every id already present in data/cars/cars.json
 //   --recheck-sold      also re-try listings previously found sold
 //   --max-age <hours>   skip cars fetched more recently than this
 //   --delay <ms>        pause between listings per worker (default 2500, jittered)
@@ -45,8 +45,8 @@ import {
   ensureParkplatz, clickParkedCard, readListing, backToParkplatz, maybePause,
 } from './human.mjs';
 
-const OUT_DIR = resolve('data/listings');
-const INDEX_FILE = resolve('data/cars.json');
+const OUT_DIR = resolve('data/cars/listings');
+const INDEX_FILE = resolve('data/cars/cars.json');
 const DETAIL_URL = (id) =>
   `https://suchen.mobile.de/fahrzeuge/details.html?id=${id}&scopeId=C&action=compareItem`;
 
@@ -135,7 +135,7 @@ function readIndex() {
     const parsed = JSON.parse(readFileSync(INDEX_FILE, 'utf8'));
     return { cars: parsed.cars ?? [], unavailable: parsed.unavailable ?? {} };
   } catch {
-    console.warn('data/cars.json is unreadable; starting a fresh index.');
+    console.warn('data/cars/cars.json is unreadable; starting a fresh index.');
     return empty;
   }
 }
@@ -330,7 +330,7 @@ const merged = new Map(index.map((car) => [car.id, car]));
  * keeps its work: a blocked or simply long refresh can be stopped at any
  * point and the index, the ref registry and the sold list all agree with the
  * listing files on disk. Doing this only at the end meant a Ctrl-C left
- * data/listings/*.json updated while data/cars.json still showed old prices,
+ * data/cars/listings/*.json updated while data/cars/cars.json still showed old prices,
  * which needed a pnpm renormalize to repair.
  *
  * All three writes are atomic, since interrupting one is now likely rather
@@ -406,7 +406,7 @@ persist();
 console.log(
   `\n${cars.length} fetched, ${failures.length} failed, ${skipped + soldSkipped} skipped.`,
 );
-console.log(`Index: data/cars.json (${merged.size} car(s) total)`);
+console.log(`Index: data/cars/cars.json (${merged.size} car(s) total)`);
 
 if (reachedLimit) {
   console.log(

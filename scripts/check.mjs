@@ -12,8 +12,8 @@ import { resolve } from 'node:path';
 
 import { HOME } from './geo.mjs';
 
-const INDEX_FILE = resolve('data/cars.json');
-const OUT_DIR = resolve('data/listings');
+const INDEX_FILE = resolve('data/cars/cars.json');
+const OUT_DIR = resolve('data/cars/listings');
 
 function loadCars() {
   if (existsSync(INDEX_FILE)) {
@@ -57,8 +57,8 @@ for (const [ref, ids] of collisions) {
   console.log(`  COLLISION #${ref} used by ${ids.length} cars: ${ids.join(', ')}`);
 }
 
-if (existsSync(resolve('data/refs.json'))) {
-  const registry = JSON.parse(readFileSync(resolve('data/refs.json'), 'utf8'));
+if (existsSync(resolve('data/cars/refs.json'))) {
+  const registry = JSON.parse(readFileSync(resolve('data/cars/refs.json'), 'utf8'));
   const assigned = Object.keys(registry.refs ?? {}).length;
   // Any car whose stored number disagrees with the registry has been renumbered.
   const drifted = cars.filter(
@@ -77,7 +77,7 @@ if (existsSync(resolve('data/refs.json'))) {
     );
   }
 } else {
-  console.log('  no data/refs.json yet - run pnpm renormalize to assign numbers.');
+  console.log('  no data/cars/refs.json yet - run pnpm renormalize to assign numbers.');
 }
 
 
