@@ -1,0 +1,25 @@
+{
+  "id": "beispiel-regenbogen",
+  "title": "Beispiel-Kita Regenbogen",
+  "subtitle": "Bilinguale Krippe",
+  "price": { "gross": 450, "localized": "450 € / Monat inkl. Essen" },
+  "location": {
+    "name": "Kita Regenbogen",
+    "street": "Beispielweg 12",
+    "city": "90763 Fürth",
+    "lat": 49.4583,
+    "lon": 11.0021
+  },
+  "facts": {
+    "Träger": "Freier Träger",
+    "Alter": "1–3 Jahre",
+    "Öffnungszeiten": "7:30–18:00",
+    "Plätze": 36,
+    "Gruppen": 3,
+    "Betreuungsschlüssel": "1:3",
+    "Schließtage pro Jahr": 20,
+    "Konzept": "Montessori",
+    "Sprachen": ["Deutsch", "Englisch"]
+  },
+  "features": ["Frische Küche", "Bio-Essen", "Krippe (U3)", "Bilingual", "Turnraum", "Mittagsschlaf"]
+}

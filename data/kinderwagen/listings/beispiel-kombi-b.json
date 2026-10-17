@@ -1,0 +1,15 @@
+{
+  "id": "beispiel-kombi-b",
+  "title": "Beispiel-Kombikinderwagen B",
+  "price": 1149,
+  "facts": {
+    "Typ": "Kombikinderwagen",
+    "Gewicht": "13,2 kg",
+    "Faltmaß": "70 × 55 × 34 cm",
+    "Liegefläche": "84 × 38 cm",
+    "Max. Belastung": "22 kg",
+    "Räder": "Luftreifen",
+    "Federung": "Allrad, einstellbar"
+  },
+  "features": ["Babywanne inklusive", "Buggy-Aufsatz", "Einhändig faltbar", "Höhenverstellbarer Schieber", "Luftreifen", "Getränkehalter"]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "beispiel-waldwichtel",
+  "title": "Beispiel-Waldkindergarten Waldwichtel",
+  "subtitle": "Kindergarten, draußen bei jedem Wetter",
+  "price": 280,
+  "priceUnit": "/ Monat",
+  "location": {
+    "name": "Waldkindergarten Waldwichtel",
+    "street": "Am Forst 3",
+    "city": "90768 Fürth",
+    "lat": 49.4605,
+    "lon": 10.9412
+  },
+  "facts": {
+    "Träger": "Elterninitiative",
+    "Alter": "3–6 Jahre",
+    "Öffnungszeiten": "8:00–14:00",
+    "Plätze": 20,
+    "Gruppen": 1,
+    "Betreuungsschlüssel": "1:8",
+    "Schließtage pro Jahr": 30,
+    "Konzept": "Waldpädagogik",
+    "Elterndienst": "2 Stunden pro Monat"
+  },
+  "features": ["Garten", "Bio-Essen", "Eingewöhnung Berliner Modell"]
+}

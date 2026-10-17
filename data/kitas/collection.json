@@ -1,0 +1,13 @@
+{
+  "name": "Kitas",
+  "icon": "🧸",
+  "description": "Krippen und Kindergärten in der Umgebung. Beispieldaten, durch echte Einträge ersetzen.",
+  "item": "Kita",
+  "items": "Kitas",
+  "featuresLabel": "Angebot",
+  "priceLabel": "Beitrag",
+  "order": 2,
+  "factOrder": ["Träger", "Alter", "Öffnungszeiten", "Plätze", "Gruppen", "Betreuungsschlüssel", "Schließtage pro Jahr", "Konzept"],
+  "keyFeatures": ["Frische Küche", "Garten"],
+  "statuses": ["Angefragt", "Besichtigt", "Warteliste", "Zusage", "Absage"]
+}
